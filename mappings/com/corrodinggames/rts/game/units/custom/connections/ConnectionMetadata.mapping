@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/b com/corrodinggames/rts/game/units/custom/connections/ConnectionMetadata
+	COMMENT Base connection metadata, identified by a single CustomTag (field g). Package = custom/connections. [iOS-confirmed via hierarchy]

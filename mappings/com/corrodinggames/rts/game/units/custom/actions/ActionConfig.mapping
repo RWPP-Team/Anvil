@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/c com/corrodinggames/rts/game/units/custom/actions/ActionConfig
+	COMMENT Runtime action state (extends NoCostAction); built from CustomActionConfig; evaluates condition keys values lockedInGame_1/2/3, isAvailable, isGuiBlinking, plus CustomPrice cost/refund. [evidence-based job name]

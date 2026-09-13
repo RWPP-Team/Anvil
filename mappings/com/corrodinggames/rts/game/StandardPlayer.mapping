@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/c com/corrodinggames/rts/game/StandardPlayer
+	COMMENT Concrete Player subclass constructed via Player(int); the standard player implementation.

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/a/g com/corrodinggames/rts/game/units/buildings/turrets/Turret
+	COMMENT Gun turret T3: cost = turret + dL + dM, damage 13, range 320, alternating dual barrels. [medium-high confidence]

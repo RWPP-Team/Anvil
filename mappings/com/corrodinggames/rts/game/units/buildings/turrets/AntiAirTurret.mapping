@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/a/a com/corrodinggames/rts/game/units/buildings/turrets/AntiAirTurret
+	COMMENT Anti-air turret building (extends Turret): images anti_air_top / anti_air_top_l2, UnitType.antiAirTurret / antiAirTurretT2, only targets air. [iOS-confirmed]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/j com/corrodinggames/rts/game/ai/BaseStates
+	COMMENT Base lifecycle state (Pre, Active...). [iOS-confirmed]

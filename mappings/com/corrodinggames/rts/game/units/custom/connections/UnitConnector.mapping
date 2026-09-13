@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/d com/corrodinggames/rts/game/units/custom/connections/UnitConnector
+	COMMENT One connection endpoint: the connected Unit (a), two state flags (b/c) and a transfer-rate float (d) used when drawing. [iOS-confirmed]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/z com/corrodinggames/rts/game/units/custom/EffectReference
+	COMMENT Lazy by-name reference to an EffectTemplate (z): resolved via CustomUnitMetadata, a(...) spawns the effect. Previously mis-mapped to EffectTemplate (collision with custom/ay). [evidence-based]

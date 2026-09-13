@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/n com/corrodinggames/rts/game/ai/TransporterGroup
+	COMMENT Group of transport units ferrying NeedsTransportGroup units ("TransporterGroup:readIn"). Extends AbstractGroup. [iOS-confirmed]

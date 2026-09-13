@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/e/f com/corrodinggames/rts/game/units/custom/resources/StoredResources
+	COMMENT Collection of resources stored by a unit or team (custom/resources). Locked instances are immutable; static field a is the shared locked empty instance. Implements afford checks, payment, refund, transfer between units and display formatting. [iOS-confirmed]

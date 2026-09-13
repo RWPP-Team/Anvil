@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/appFramework/l com/corrodinggames/rts/appFramework/AndroidCompatReflection
+	COMMENT Holds 10 cached java.lang.reflect.Method fields plus float[]/int[] buffers; a() returns int[]. Android API-version compatibility shim. [evidence-based job name]

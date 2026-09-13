@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/n com/corrodinggames/rts/game/units/custom/UnitAnimationType
+	COMMENT Enum of unit animation slots: move, attack, idle, created, underConstruction, underConstructionWithLinkedBuiltTime, queuedUnits, repair, reclaim. a(String) = valueOf or null. [evidence-based job name]

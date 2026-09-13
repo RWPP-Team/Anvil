@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/utility/d com/corrodinggames/rts/gameFramework/utility/GameTask
+	COMMENT Deferred/runnable task wrapper: holds Runnable + Handler, name String, delay/interval ints and enable flags; run() executes it. [evidence-based job name]

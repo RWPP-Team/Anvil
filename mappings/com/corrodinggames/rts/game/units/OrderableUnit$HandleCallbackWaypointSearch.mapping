@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/z com/corrodinggames/rts/game/units/OrderableUnit
+	COMMENT Waypoint-search holder: two units, flag, SpecialAction; static cache in OrderableUnit. [medium confidence]

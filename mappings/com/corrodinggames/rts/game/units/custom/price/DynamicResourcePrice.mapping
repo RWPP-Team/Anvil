@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/d/c com/corrodinggames/rts/game/units/custom/price/DynamicResourcePrice
+	COMMENT A resource-gated price (custom/price): parses "resource=amount" lists separated by "|", plus the pseudo-resources hasFlag/hasMissingFlag/setFlag/unsetFlag which test/patch the unit's cF bit flags. b(unit) = canAfford, a(unit) = pay, d/e(unit) = grant/refund. Previously mis-mapped (collision with custom/d/d). [evidence-based job name]

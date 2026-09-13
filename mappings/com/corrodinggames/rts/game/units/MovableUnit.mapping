@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/w com/corrodinggames/rts/game/units/MovableUnit
+	COMMENT Movable unit base (ground/sea vehicles that can move). Extends OrderableUnit. [iOS-confirmed]

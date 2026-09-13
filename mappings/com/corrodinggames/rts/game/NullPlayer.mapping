@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/u com/corrodinggames/rts/game/NullPlayer
+	COMMENT Sentinel player instance used as the "no player" default (constructed with -99, no initialization).

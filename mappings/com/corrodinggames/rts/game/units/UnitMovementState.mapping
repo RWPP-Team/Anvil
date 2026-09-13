@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/ap com/corrodinggames/rts/game/units/UnitMovementState
+	COMMENT Movement state container (floats + target Unit). LOW confidence - descriptive name; original class not yet matched.

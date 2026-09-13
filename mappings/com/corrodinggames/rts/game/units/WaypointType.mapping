@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/av com/corrodinggames/rts/game/units/WaypointType
+	COMMENT Waypoint/order kind: move, attack, build, repair, loadInto, unloadAt, reclaim, attackMove, loadUp, patrol, guard, guardAt, touchTarget, follow, triggerAction, ... [iOS-confirmed]

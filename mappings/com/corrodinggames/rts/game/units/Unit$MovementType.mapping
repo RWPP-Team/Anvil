@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/ao com/corrodinggames/rts/game/units/Unit
+	COMMENT Unit movement type: NONE, LAND, BUILDING, AIR, WATER, HOVER, OVER_CLIFF, OVER_CLIFF_WATER. Flattened inner class of Unit. [iOS-confirmed]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/c com/corrodinggames/rts/game/units/BaseUnit
+	COMMENT Empty intermediate base between Unit and OrderableUnit. [iOS: BaseUnit; source may have folded MovableUnit into this hierarchy in the Android build]

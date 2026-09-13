@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/ag com/corrodinggames/rts/game/units/CommandType
+	COMMENT Command kind enum: attack, move, newSelection. LOW confidence - exact original name unverified; may belong to gameFramework.CommandController after flattening.

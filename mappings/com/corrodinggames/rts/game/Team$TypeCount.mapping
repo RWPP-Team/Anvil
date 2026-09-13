@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/r com/corrodinggames/rts/game/Team
+	COMMENT Per-unit-type count entry: UnitTypeInterface + count. Flattened inner class of Team. [iOS-confirmed]

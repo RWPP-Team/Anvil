@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/bp com/corrodinggames/rts/game/units/custom/UnitSpawner
+	COMMENT Ini-defined unit spawner used by produceUnits/spawnUnits/attachments_addNewUnits/takeResources: parses "unitName*count(params)" entries into ProjectileList-style entries, can spawn at a position/heading/team with optional owner, returns created units in a FastArrayList. b() = isEmpty, a() = total count. [evidence-based job name]

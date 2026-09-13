@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/f/a com/corrodinggames/rts/game/units/custom/textsub/StaticStringExpander
+	COMMENT Static ${...} expansion pass over a unit's ini: Pattern "\\\\$\\\\{([^\\\\}]*)\\\\}" and identifier pattern "[A-Za-z_][A-Za-z_.0-9]*". Reads all [section]@global / @define keys into the variable maps, then rewrites every value containing "${". [evidence-based job name]

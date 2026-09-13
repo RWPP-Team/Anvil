@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/java/j com/corrodinggames/rts/java/SlickGameLauncher
+	COMMENT Runnable that boots Slick: GameEngine.aq(), container java/b.start(); on failure reads GL_VERSION (glGetString 0x1F02) via a throwaway 100x100 Display, warns about OpenGL 1.0/1.1 fallback drivers, then Sys.alert and System.exit(1). [evidence-based]

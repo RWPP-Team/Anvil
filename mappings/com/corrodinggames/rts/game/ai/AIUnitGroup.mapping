@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/g com/corrodinggames/rts/game/ai/AIUnitGroup
+	COMMENT Combat group of units with attack/defend/stage logic ("fighting attacker","defending base"). Extends AbstractGroup. [iOS-confirmed]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/java/s com/corrodinggames/rts/java/JavaBitmap
+	COMMENT Desktop bitmap/texture (gameFramework/m/e i.e. BitmapOrTexture implementation) backed by org.newdawn.slick.Image; nested ImageData adapter java/t. [evidence-based job name]

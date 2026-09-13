@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramework/CommonUtils
+	CLASS a CpuFilter

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/a com/corrodinggames/rts/game/map/GroupObject
+	COMMENT Tiled object parsed from an ObjectGroup; may spawn a unit/customUnit at x/y with team/rotation. [iOS-confirmed]

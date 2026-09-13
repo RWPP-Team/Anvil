@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/e com/corrodinggames/rts/game/map/MapLayer
+	COMMENT Tiled map layer: base64/gzip/zlib tile data, drawing, fog overlays. [iOS-confirmed]

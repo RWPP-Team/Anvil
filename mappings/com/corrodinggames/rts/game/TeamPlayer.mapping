@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/d com/corrodinggames/rts/game/TeamPlayer
+	COMMENT Player subclass initialized through the no-arg constructor, then assigns team id (field k) and status -2 (field r) manually.

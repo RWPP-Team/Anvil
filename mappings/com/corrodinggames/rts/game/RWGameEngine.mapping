@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/i com/corrodinggames/rts/game/RWGameEngine
+	COMMENT Rusted Warfare game engine. Extends the framework GameEngine (gameFramework.GameEngine); manages camera movement and replay/screenshot frame saving. [iOS-confirmed]

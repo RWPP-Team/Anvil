@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/librocket/c com/corrodinggames/librocket/RocketTextureHolder
+	COMMENT Abstract text request holder (TextureHolder subclass): resolved path + lazy/thumbnail/nocolor/unit flags + UnitTypeInterface + alpha; LoadTexture() parses "lazy:", "nocolor:", "unit:", "thumbnail:", "alpha(0.5):" prefixes and "base:/drawable:/assets:" roots. Previously mis-mapped to CommonLibRocket (collision). [evidence-based]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/m com/corrodinggames/rts/game/ScorchMark
+	COMMENT Scorch mark size: normal or nuke. Flattened inner class of ScorchMark. [iOS-confirmed]

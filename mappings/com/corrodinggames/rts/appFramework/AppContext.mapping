@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/appFramework/c com/corrodinggames/rts/appFramework/AppContext
+	COMMENT Android app facade: getApplicationContext() (throws if null), Activity/Context capture, immersive full-screen (SDK>=19 setSystemUiVisibility 5894), WRITE_EXTERNAL_STORAGE permission prompts, OPEN_DOCUMENT_TREE folder chooser, map-name prettifier (l1;[..]name.tmx -> Name). Static Handler for runOnUiThread. [evidence-based job name]

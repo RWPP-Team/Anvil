@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/java/a com/corrodinggames/rts/java/JavaGraphicsEngine
+	COMMENT Desktop (JVM/Slick2D) implementation of the game's graphics layer: wraps org.newdawn.slick.Image/ImageData, provides BitmapOrTexture + Bitmap creation, texture upload and render-target helpers. Ctor takes the Java app framework (java/s). [evidence-based job name]

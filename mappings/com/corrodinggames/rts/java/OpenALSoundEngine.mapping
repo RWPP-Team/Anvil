@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/java/l com/corrodinggames/rts/java/OpenALSoundEngine
+	COMMENT OpenAL-backed desktop music/sfx engine (gameFramework/aq subclass): owns the OpenALAudio device, polls update() under a lock, creates OpenALMusicTrack and OpenALSound through it, resolves paths via files API (e/a.e / e/a.k). [evidence-based job name]

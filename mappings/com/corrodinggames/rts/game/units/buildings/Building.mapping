@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/d com/corrodinggames/rts/game/units/buildings/Building
+	COMMENT Building base: static placement, placement checks, factory/crystal parent. Extends OrderableUnit. [iOS-confirmed]

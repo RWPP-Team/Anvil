@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/o com/corrodinggames/rts/game/ai/Zone
+	COMMENT Base AI zone: position S/T, radius U, id Q, registered in AI.bm/bn. Parent of Base/PlainZone/AbstractGroup. [iOS-confirmed]

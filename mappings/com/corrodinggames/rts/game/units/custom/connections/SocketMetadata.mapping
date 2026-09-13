@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/a com/corrodinggames/rts/game/units/custom/connections/SocketMetadata
+	COMMENT Socket metadata (custom/connections): required tag list (a), connect-to-enemies/allies flags (b/c), max connections (d), socket image (e, BitmapOrTexture) and connecting-line paint (f). Extends ConnectionMetadata. NOTE: this Android build predates the SocketOrConnectorMetadata/TransferResourceMetadata split seen in newer iOS builds. [medium-high confidence]

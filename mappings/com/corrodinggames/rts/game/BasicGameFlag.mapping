@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b com/corrodinggames/rts/game/BasicGameFlag
+	COMMENT Concrete empty implementation of GameFlag; defined in the same source file as its superclass.

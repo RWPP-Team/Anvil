@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/d com/corrodinggames/rts/game/units/custom/actions/CustomActionConfig
+	COMMENT All ini keys parsed for one custom action block (~50 fields: target/position/waypoint/resource/effect/projectile/etc, with ActionType aN and BuildType aM). [evidence-based job name]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/java/h com/corrodinggames/rts/java/InGameActivityJava
+	COMMENT Main-menu action dispatcher: selectMenuOption(int) logs 'InGameActivityJava selectMenuOption:' then switch(id 2..23) onto librocket scripts (mp.surrenderPrompt, mp.multiplayerExitPrompt, mp.reinviteAsk, showMainMenu, makeSendMessagePopup, showBattleroom, ...) plus GameEngine flag toggles. [evidence-based, name appears in log literal]

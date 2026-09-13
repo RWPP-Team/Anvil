@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/d com/corrodinggames/rts/game/ai/AIUnitMix
+	COMMENT Weighted mix of unit types for AI production; getRandomUnitType by movementType/price. Flattened inner class of AI. [iOS-confirmed]

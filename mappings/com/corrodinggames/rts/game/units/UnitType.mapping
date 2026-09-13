@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/ar com/corrodinggames/rts/game/units/UnitType
+	COMMENT Built-in unit type enum (52 constants) implementing UnitTypeInterface; static registry of all built-in unit types. [iOS-confirmed]

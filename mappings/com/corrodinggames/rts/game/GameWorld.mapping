@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/GameWorld
+	COMMENT The game world/map. Extends the rotating GameObject (gameFramework.az), holds team-color Paint instances and entity lookup logic.

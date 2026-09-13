@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/a/d com/corrodinggames/rts/game/ai/component/NukingComponent
+	COMMENT AI component that launches nukes ("nuke: launching at", tag nukeLauncher). Extends BaseAIComponentWithUnitList. [iOS-confirmed]

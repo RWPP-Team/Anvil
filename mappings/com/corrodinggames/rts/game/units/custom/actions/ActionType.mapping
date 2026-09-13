@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/e com/corrodinggames/rts/game/units/custom/actions/ActionType
+	COMMENT Enum: auto, disabled, upgrade, movementChange, sameAsBuilding, launch, launchAmmo. [evidence-based]

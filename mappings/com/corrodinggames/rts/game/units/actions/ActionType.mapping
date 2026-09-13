@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/a/u com/corrodinggames/rts/game/units/actions/ActionType
+	COMMENT Action kind returned by SpecialAction.e(): none, placeBuilding, popupQueue, setRally, reclaimTarget, repairTarget, targetGround, attackMove, infoOnly, pingMap, directToAction, guardUnit, patrol. Previously mis-mapped to SpecialAction (collision). [evidence-based job name]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/j com/corrodinggames/rts/game/InGameImage
+	COMMENT In-game placed image (map icon/picture) rendered from a loaded bitmap with an optional image buffer.

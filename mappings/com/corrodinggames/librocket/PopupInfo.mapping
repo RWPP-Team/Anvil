@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/librocket/d com/corrodinggames/librocket/PopupInfo
+	COMMENT Popup/alert descriptor: optional ElementDocument, title, message, input default text, two button objects (label:onclick or GuiAction), plus show/hide flags and an optional on-close Runnable. Used by CommonLibRocket.alert()/showPopup(). Previously mis-mapped to CommonLibRocket (collision). [evidence-based]

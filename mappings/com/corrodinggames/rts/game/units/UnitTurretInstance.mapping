@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/an com/corrodinggames/rts/game/units/UnitTurretInstance
+	COMMENT Turret instance: enabled flag, muzzle id, muzzle-flash effect. Flattened inner class of Unit. [medium confidence]

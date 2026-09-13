@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/m com/corrodinggames/rts/game/ai/PlainZone
+	COMMENT Plain zone with no extra behavior. Extends Zone. [iOS-confirmed]

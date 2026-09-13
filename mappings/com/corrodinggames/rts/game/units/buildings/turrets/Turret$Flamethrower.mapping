@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/a/e com/corrodinggames/rts/game/units/buildings/turrets/Turret
+	COMMENT Flamethrower turret type: damage 5, reload 4 (very fast), range 155, transparent/fire particles, muzzle counter k resets at 10. [medium-high confidence]

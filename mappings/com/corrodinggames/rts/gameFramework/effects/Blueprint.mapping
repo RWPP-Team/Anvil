@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/d/a com/corrodinggames/rts/gameFramework/effects/Blueprint
+	COMMENT Pending/planned unit placement preview ("blueprint"). Static list w of all active blueprints; isTileRectOverBlueprint(Team,RectF,int) collision test; draws a translucent ghost unit plus an animated colored outline (UniquePaint, alpha pulsing). [evidence-based job name]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/k com/corrodinggames/rts/game/map/TileSet
+	COMMENT Cached tileset bitmap entry (used/lazy-loaded/embedded). Flattened inner class of TileSet. [iOS-confirmed]

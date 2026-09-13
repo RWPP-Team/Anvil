@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/h com/corrodinggames/rts/game/ai/AbstractGroup
+	COMMENT Abstract group of units (lists F/G); base of AIUnitGroup, NeedsTransportGroup, TransporterGroup. [iOS-confirmed]

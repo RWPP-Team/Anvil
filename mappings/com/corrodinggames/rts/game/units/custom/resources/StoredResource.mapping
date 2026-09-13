@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/e/e com/corrodinggames/rts/game/units/custom/resources/StoredResource
+	COMMENT One stored resource entry: CustomResource (field a) + double amount (field b). (custom/resources) [iOS-confirmed]

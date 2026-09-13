@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/a/k com/corrodinggames/rts/game/units/actions/MapPingType
+	COMMENT Ping/Marker type enum: normal, attack, defend, nuke, build, upgrade, ok, no, happy, sad, retreat. Locale keys "menus.ingame.ping.type.&lt;name&gt;". Referenced as the payload field of PingMapAction. Previously mis-mapped to PingMapAction (collision). [evidence-based job name]

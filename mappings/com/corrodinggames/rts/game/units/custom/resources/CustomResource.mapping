@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/e/a com/corrodinggames/rts/game/units/custom/resources/CustomResource
+	COMMENT A custom resource type definition (package=custom/resources). Static field D is the built-in credits resource; b(long) looks a resource up by id; a(double,boolean,boolean) formats amounts. [iOS-confirmed]

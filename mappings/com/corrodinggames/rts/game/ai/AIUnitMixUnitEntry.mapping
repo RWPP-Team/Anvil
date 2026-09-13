@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/e com/corrodinggames/rts/game/ai/AIUnitMixUnitEntry
+	COMMENT Unit type + weight entry inside AI.UnitMix. Flattened inner class of AI$UnitMix. [iOS-confirmed]

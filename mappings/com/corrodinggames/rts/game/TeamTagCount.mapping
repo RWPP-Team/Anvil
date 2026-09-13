@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/p com/corrodinggames/rts/game/TeamTagCount
+	COMMENT Per-tag counters (built, in-progress) keyed by CustomTag; aggregated inside TeamUnitCaches. Flattened inner class of Team. [iOS-confirmed]

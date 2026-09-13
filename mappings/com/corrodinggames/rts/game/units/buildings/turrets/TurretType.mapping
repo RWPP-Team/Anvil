@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/a/c com/corrodinggames/rts/game/units/buildings/turrets/TurretType
+	COMMENT Abstract turret weapon type (inner class of Turret, flattened): abstract range a(), damage a(int), reload b(int), image d(int), name c(), muzzle points c(int), fire a(Unit,int), upgrade cost a(TurretType) and d(). [iOS-confirmed]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/utility/am com/corrodinggames/rts/gameFramework/utility/GameException
+	COMMENT Plain custom RuntimeException with (String) and (String, Throwable) constructors. [evidence-based job name]

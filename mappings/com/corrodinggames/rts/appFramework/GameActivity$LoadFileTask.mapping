@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/appFramework/h com/corrodinggames/rts/appFramework/GameActivity
+	COMMENT GameActivity (g) helper Runnable holding a path String; run() loads the selected file. [evidence-based]

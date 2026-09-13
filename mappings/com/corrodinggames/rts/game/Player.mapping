@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/e com/corrodinggames/rts/game/Player
+	COMMENT Human player; a Team subclass that carries a display name (field v). [iOS-confirmed]

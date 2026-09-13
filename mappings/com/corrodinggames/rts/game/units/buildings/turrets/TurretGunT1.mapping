@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/a/h com/corrodinggames/rts/game/units/buildings/turrets/TurretGunT1
+	COMMENT Base gun turret type: cost = UnitType.turret only, damage 30, range 165, single muzzle. Identified via cost-tier ordering (base < +dL < +dL+dM). [medium-high confidence]

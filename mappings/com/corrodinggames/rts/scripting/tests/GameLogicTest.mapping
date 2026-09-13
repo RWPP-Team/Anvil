@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/a/a/a com/corrodinggames/rts/scripting/tests/GameLogicTest
+	COMMENT Script integration test (subclass of the scripting test base): sets GameEngine.by=1000 and spawns units at fixed map coordinates via GameUtils.b()/a(). [evidence-based job name]

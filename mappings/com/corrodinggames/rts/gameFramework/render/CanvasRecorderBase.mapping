@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/m/u com/corrodinggames/rts/gameFramework/render/CanvasRecorderBase
+	COMMENT abstract class implements CanvasLike; base of CanvasRecorder (m/o). Likely render/CanvasProxyRawToAnotherLike or render/CanvasWriter - unconfirmed. [PENDING]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/ay com/corrodinggames/rts/gameFramework/PhysicalObject
+	COMMENT Physical object with width/height (es/et) and half-extents (eu/ev); base of Unit. Extends RenderedObject. [iOS-confirmed]

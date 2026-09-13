@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/j com/corrodinggames/rts/game/units/buildings/BuildQueueItem
+	COMMENT Build-queue entry (a "Factory" item in the old mapping): synced unit-type/price/queue position with versioned (de)serialization. Holds the queued UnitTypeInterface, remaining count/time, price, tags, target point and target unit. Previously mis-mapped to Factory (collision). [evidence-based job name]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/g com/corrodinggames/rts/game/map/MapTile
+	COMMENT Map tile with terrain flags (water, lava, cliff, trees, block-buildings...) and tile-set reference. [iOS-confirmed]

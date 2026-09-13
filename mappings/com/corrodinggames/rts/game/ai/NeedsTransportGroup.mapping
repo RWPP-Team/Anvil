@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/l com/corrodinggames/rts/game/ai/NeedsTransportGroup
+	COMMENT Group of units waiting for transport (G = units needing pickup). Extends AbstractGroup. [iOS-confirmed]

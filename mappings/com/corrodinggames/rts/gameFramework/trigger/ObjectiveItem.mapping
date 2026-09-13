@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/n/m com/corrodinggames/rts/gameFramework/trigger/ObjectiveItem
+	COMMENT Wrapper item exposing a MapTrigger's localised text (a()) and active state (b()); used by the objectives list UI. [evidence-based job name]

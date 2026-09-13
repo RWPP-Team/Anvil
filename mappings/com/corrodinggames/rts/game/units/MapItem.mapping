@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/x com/corrodinggames/rts/game/units/MapItem
+	COMMENT Abstract air unit (movement type AIR, non-transportable). Extends OrderableUnit. [iOS-confirmed]

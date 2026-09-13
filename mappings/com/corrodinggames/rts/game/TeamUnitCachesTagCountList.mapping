@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/t com/corrodinggames/rts/game/TeamUnitCachesTagCountList
+	COMMENT Growable array of TagCount entries (hand-rolled ArrayList). Flattened inner class of TeamUnitCaches. [iOS-confirmed]

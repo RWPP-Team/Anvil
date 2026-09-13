@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/java/i com/corrodinggames/rts/java/DesktopGameHooks
+	COMMENT Desktop source of gameFramework/n: alert(), messageBox(), refreshModDisplay() (queues 'mods.refreshModList()'), onGameCrash() (LWJGL Sys.alert 'Crash', OOM 32-bit hint, System.exit after 1s), quit-check b() and c()->ScriptDebugSocket.isRunning(). Holds the java/Main instance and drives it through librocket ScriptEngine. [evidence-based]

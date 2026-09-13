@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/c com/corrodinggames/rts/game/units/custom/decal/DecalManager
+	COMMENT Parses all decal_ ini keys (layer/order/onlyWhenSelectedByX/onlyTeam/onlyWithZoomLevelOrMore/image/imageStack/total_frames/frame_width/body offsets/teamColors) and draws each decal at the right layer (shadow/beforeBody/afterBody/onTop/beforeUI). [evidence-based job name]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/b/ae com/corrodinggames/rts/gameFramework/gl/PENDING_ae
+	COMMENT Holds a RenderTarget (b/ad) plus floats/ints; methods a(RectF,RectF), g()/h() int, b(K)/c(K)Z, a(RectF). Purpose unclear (likely a deferred/blit draw record). [evidence-based, name unconfirmed]

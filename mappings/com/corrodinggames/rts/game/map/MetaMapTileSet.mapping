@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/h com/corrodinggames/rts/game/map/MetaMapTileSet
+	COMMENT Packs tile bitmaps into 20x20 texture atlases with alpha caching; Map.l / Map.m instances. [iOS-confirmed]

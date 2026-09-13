@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/c com/corrodinggames/rts/game/map/Map
+	COMMENT Sliding buffer of layer bitmaps around the camera; redraws tiles. Flattened inner class of Map. [iOS-confirmed]

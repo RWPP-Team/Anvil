@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/c com/corrodinggames/rts/game/ai/AI
+	COMMENT Accumulates unit counts by UnitTypeInterface across three HashMaps (all / per-agent / per-mix) so the AI can answer "how many of X do I have". Flattened inner class of AI. Previously mis-mapped to AI (collision). [evidence-based job name]

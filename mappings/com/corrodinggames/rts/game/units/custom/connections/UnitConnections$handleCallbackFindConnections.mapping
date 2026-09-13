@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/f com/corrodinggames/rts/game/units/custom/connections/UnitConnections
+	COMMENT UnitGeoIndex search callback that finds the nearest unit matching a socket's tags and team rules. Inner class of UnitConnections (flattened by ProGuard). [iOS-confirmed]

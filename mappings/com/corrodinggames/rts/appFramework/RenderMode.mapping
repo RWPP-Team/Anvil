@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/appFramework/e com/corrodinggames/rts/appFramework/RenderMode
+	COMMENT enum {singleThreadedSurface, singleThreadedSurfaceIfHardware, multiThreadedSurface, multiThreadedNonSurface, opengl, dynamicDefault} - selects the renderer/thread/surface backend. [evidence-based job name]

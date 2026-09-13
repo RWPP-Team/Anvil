@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/k com/corrodinggames/rts/game/ai/BaseType
+	COMMENT Base type enum. [iOS-confirmed; may correspond to Base$BaseUnitType in unobfuscated source]

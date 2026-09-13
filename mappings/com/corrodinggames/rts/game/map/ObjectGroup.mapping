@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/b/i com/corrodinggames/rts/game/map/ObjectGroup
+	COMMENT Tiled <objectgroup>: name/width/height/properties and parsed GroupObjects. [iOS-confirmed]

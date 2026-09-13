@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/a/i com/corrodinggames/rts/game/ai/Base
+	COMMENT AI base/zone that builds units and buildings (factories, turrets, fabricator...). Extends Zone. [iOS-confirmed]

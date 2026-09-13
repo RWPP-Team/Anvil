@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/az com/corrodinggames/rts/gameFramework/RenderedObject
+	COMMENT GameObject with rotation/render-layer; base of Projectile. [iOS-confirmed]

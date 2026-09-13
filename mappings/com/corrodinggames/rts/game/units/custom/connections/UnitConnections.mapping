@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/c com/corrodinggames/rts/game/units/custom/connections/UnitConnections
+	COMMENT Per-unit connection manager (custom/connections): holds UnitConnectorTypes, finds/creates connectors, draws connection lines and socket images, (de)serializes connector state to net streams. [iOS-confirmed]

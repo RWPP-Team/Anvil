@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/be com/corrodinggames/rts/game/units/custom/PlacementRuleSet
+	COMMENT Evaluates all `placementRule_*` ini blocks for a custom unit (PlacementRuleSet/PlacementRule/PlacementGeoIndex): checks each rule group at the target position and returns the rule's error message if placement is forbidden. [evidence-based job name]
