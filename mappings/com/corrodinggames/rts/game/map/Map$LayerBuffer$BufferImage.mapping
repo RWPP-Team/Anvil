@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/rts/game/b/d com/corrodinggames/rts/game/map/Map
-	COMMENT One buffered tile bitmap within Map.LayerBuffer (image + fade-out image). Flattened inner class. [iOS-confirmed]

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/h com/corrodinggames/rts/game/ProjectileMetadataMutator
+	COMMENT Projectile damage/defense mutator keyed by unit type/tag; applied when a projectile hits a matching unit. Flattened inner class of ProjectileMetadata. [iOS-confirmed]

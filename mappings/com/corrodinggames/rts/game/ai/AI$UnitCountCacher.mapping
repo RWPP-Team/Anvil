@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/rts/game/a/c com/corrodinggames/rts/game/ai/AI
-	COMMENT Caches unit counts keyed by UnitTypeInterface across three HashMaps. Flattened inner class of AI. [iOS-confirmed]

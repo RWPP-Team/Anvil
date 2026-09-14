@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/d/a/d com/corrodinggames/rts/game/units/buildings/turrets/Turret
-	COMMENT Artillery turret type: damage 220, range 350, ballistic arc (target point via Unit.a(...)), heavy shell effect. [medium-high confidence]

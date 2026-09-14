@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/h com/corrodinggames/rts/game/units/custom/CustomTag
-	COMMENT Immutable array of CustomTag (inner class of CustomTag, flattened by ProGuard). Provides equals/isEmpty/size. [iOS-confirmed]

@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/rts/java/f com/corrodinggames/rts/java/JavaCanvas
-	COMMENT Size-1 font key: {size:int, bold:boolean, fallback:boolean, org.newdawn.slick.Font, ring buffer of 30 String names}; used as cache key by JavaCanvas. toString "FontKey:(size:.., bold:.. fallback:..)". [evidence-based]

@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/librocket/e com/corrodinggames/librocket/GuiAction
-	COMMENT Named GUI action: label String + Runnable + flag. Put into the document metadata map as "action_&lt;id&gt;" and invoked from RML via runRunnable(...). Previously mis-mapped to CommonLibRocket (collision). [evidence-based]
