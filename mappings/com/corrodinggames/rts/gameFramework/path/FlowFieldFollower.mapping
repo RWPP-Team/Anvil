@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/k/c com/corrodinggames/rts/gameFramework/path/FlowFieldFollower
+	COMMENT FlowFieldFollower - abstract hook a Unit implements to be driven by a FlowFieldPath instead of an explicit node list: a(Unit)/b(Unit) return the follower's current "game/units/af" float pair (start/end of the followed segment) and c(Unit)/d(Unit) update the follow state. [verified from code]

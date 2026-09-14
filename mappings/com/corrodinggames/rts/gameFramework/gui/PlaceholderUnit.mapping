@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/f/x com/corrodinggames/rts/gameFramework/gui/PlaceholderUnit
+	FIELD a resources Lcom/corrodinggames/rts/game/units/custom/e/f;

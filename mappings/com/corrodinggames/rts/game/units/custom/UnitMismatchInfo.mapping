@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/ab com/corrodinggames/rts/game/units/custom/UnitMismatchInfo
+	COMMENT UnitMismatchInfo - how one unit type differs between the client and the server (built during multiplayer checksum comparison). Fields: modName (the mod the unit came from, null for internal units), unitName, serverChecksum (s), localChecksum (c; -1 means the unit was not found locally) and f (the local CustomUnitMetadata, whose I debug text is diffed line by line against the server text). a() formats the user facing message, e.g. "The server requires the unit:&lt;name&gt; that was not found from mod:'&lt;mod&gt;'..." or "Found unit:&lt;name&gt; but it does not match the server's copy ... (checksum c:&lt;local&gt; s:&lt;server&gt;)". [field names verified from code; the f field and e (server text) were left as-is]
+	FIELD a modName Ljava/lang/String;
+	FIELD b unitName Ljava/lang/String;
+	FIELD c serverChecksum I
+	FIELD d localChecksum I

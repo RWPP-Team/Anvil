@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/f/n com/corrodinggames/rts/gameFramework/gui/MessageInterfaceMessageItem
+	FIELD a playerName Ljava/lang/String;
+	FIELD b message Ljava/lang/String;
+	FIELD c time J
+	FIELD d timeText Ljava/lang/String;
+	FIELD e msPerChar I
+	FIELD f color I

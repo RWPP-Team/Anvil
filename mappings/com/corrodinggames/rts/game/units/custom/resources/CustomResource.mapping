@@ -1,2 +1,36 @@
 CLASS com/corrodinggames/rts/game/units/custom/e/a com/corrodinggames/rts/game/units/custom/resources/CustomResource
-	COMMENT A custom resource type definition (package=custom/resources). Static field D is the built-in credits resource; b(long) looks a resource up by id; a(double,boolean,boolean) formats amounts. [iOS-confirmed]
+	COMMENT CustomResource - a resource type (built-in credits/energy/ammo/hp/shield or a mod [resource_x] block). Fields: name, used (set by g() when any unit actually references the resource), isGlobal (team-wide) / isBuiltIn, hidden, valueInStats, displayName/displayNameShort, hideNameWhenIconShownInHUD / hideNameWhenIconShownInText, displayTextPrefix/displayTextPostfix, appendResource (+appendResourceWhenThisZero), displayTextAppendResourceWithGap, displayInHud, displayColor (+displayColorUseInText), displayRoundedDown, displayWhenZero, displayDigitGrouping, displayPos, iconImage (+iconImageUseInText), equivalentGlobalResource. Statics: allResources, usedResources (rebuilt by e()), lookupResources and the built-in instances CREDITS, ENERGY, AMMO, HP, SHIELD. a(String) looks a resource up by name, a(name, bool, bool) creates one, a(long, ResourceSeparator)/a(double, boolean, boolean) format amounts (credits render as "$"). Every field name comes from the matching ResourceReference field assigned in g(). [field names verified from the assignment in g()]
+	FIELD a used Z
+	FIELD A allResources Ljava/util/ArrayList;
+	FIELD b name Ljava/lang/String;
+	FIELD B usedResources Ljava/util/ArrayList;
+	FIELD c displayName Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD C lookupResources Ljava/util/ArrayList;
+	FIELD d displayNameShort Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD D CREDITS Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD e hideNameWhenIconShownInHUD Z
+	FIELD E ENERGY Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD f hideNameWhenIconShownInText Z
+	FIELD F AMMO Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD g displayTextPrefix Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD G HP Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD h displayTextPostfix Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD H SHIELD Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD i appendResource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD j appendResourceWhenThisZero Z
+	FIELD k displayTextAppendResourceWithGap Z
+	FIELD l displayInHud Z
+	FIELD m displayColor Ljava/lang/Integer;
+	FIELD n displayColorUseInText Z
+	FIELD o displayRoundedDown Z
+	FIELD p displayWhenZero Z
+	FIELD q displayDigitGrouping Lcom/corrodinggames/rts/game/units/custom/e/b;
+	FIELD r hidden Z
+	FIELD s valueInStats F
+	FIELD t isGlobal Z
+	FIELD u isBuiltIn Z
+	FIELD v equivalentGlobalResource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD w stackHorizontal Z
+	FIELD x displayPos F
+	FIELD y iconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD z iconImageUseInText Z

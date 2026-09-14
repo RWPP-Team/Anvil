@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/w com/corrodinggames/rts/gameFramework/GameObject
+	COMMENT GameObject - base of every world entity (units, projectiles, trees, scorch marks). Fields: id (long, assigned from GameEngine.bX.y() in the constructor; objects created with the (true) "pre-allocate" ctor keep id 0), renderOrder (int, default 2, set by S(int); first key of renderOrderComparator), renderOrderComparator (the static GameObjectRenderOrderComparator), removed (set true by a() = destroy), x / y / height (the world position; EffectEngine reads w.x, w.y, w.height as eo/ep/eq), fastGameObjectList (the static GameObjectList of every live object), newObjects (the static DeferredArrayList of objects created this frame; drained by dK()). Still obfuscated: ek (boolean, serialized alongside removed), el and en (the secondary render-order key used as the comparator's tiebreaker). dK()/dL() are the deferred-list accessors. [field names verified from code]
+	FIELD a newObjects Lcom/corrodinggames/rts/gameFramework/utility/o;
+	FIELD eh id J
+	FIELD ei renderOrderComparator Lcom/corrodinggames/rts/gameFramework/x;
+	FIELD ej removed Z
+	FIELD em renderOrder I
+	FIELD eo x F
+	FIELD ep y F
+	FIELD eq height F
+	FIELD er fastGameObjectList Lcom/corrodinggames/rts/gameFramework/utility/s;

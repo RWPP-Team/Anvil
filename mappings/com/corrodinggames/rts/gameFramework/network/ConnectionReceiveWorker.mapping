@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/gameFramework/j/d com/corrodinggames/rts/gameFramework/network/ConnectionReceiveWorker
+	FIELD a running Ljava/lang/Boolean;
+	FIELD b connection Lcom/corrodinggames/rts/gameFramework/j/c;

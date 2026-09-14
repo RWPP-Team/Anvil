@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/e/d com/corrodinggames/rts/gameFramework/files/DirectoryBackend
+	FIELD g path Ljava/lang/String;
+	FIELD h name Ljava/lang/String;
+	FIELD i displayPrefix Ljava/lang/String;

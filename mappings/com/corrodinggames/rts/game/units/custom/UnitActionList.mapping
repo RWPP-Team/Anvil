@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/u com/corrodinggames/rts/game/units/custom/UnitActionList
+	COMMENT A list of QueueUnitActions (custom unit "queueUnit"/"onShoot_triggerActions"/"produceUnitsActions" style ini keys). Fields: actionNames (raw action name strings in ini order), actions (the resolved QueueUnitAction list, null until linked), iniKey (the ini key, e.g. "onShoot_triggerActions"), section (the owning ini section). b(metadata) links, throwing "Could not find action:&lt;name&gt; on unit:&lt;unit&gt;" or "... doesn't have the right type" when an action is not a QueueUnitAction; a() returns the linked list (warning "Action on ... has not been linked" over the network when not linked); a(unit,point,source,...) queues every action on the given unit. [field names verified from the code]
+	FIELD a actionNames Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b actions Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD c iniKey Ljava/lang/String;
+	FIELD d section Ljava/lang/String;

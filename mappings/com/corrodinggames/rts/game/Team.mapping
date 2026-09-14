@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
+	COMMENT Team - a player/team (abstract; Player/StandardPlayer/NullPlayer/TeamPlayer are the concrete forms). Field names confirmed by cross-class evidence: teamId ("teamId:" in TriggerActivator, set in the Team(int) constructor), credits (double; initialized to 4000.0, read/written by CustomPrice as the team's credits and by TriggerActivator event_changeCredits), name (set by the Player(int,boolean,String) constructor), unitCaches (TeamUnitCaches, filled by TeamUnitCaches.a/b), teamTags (CustomTagTags; initialized to CustomTag.emptyTags and mutated by event_teamTags via Team.b(CustomTagTags)/c(CustomTagTags)) and storedResources (the team-wide StoredResources returned by V(), initialized in the constructor). The remaining obfuscated fields (a..j, l..u, w..aj, am..ar and the statics) were not renamed because the class body (55 KB on one line) could not be read back through the tooling; the visible constructor prologue/outer-class usage only proves that o=credits(4000.0), p,q (credit accounting), ai=-2 (status), au/av=-9999, T=unitCaches, ak=teamTags and al=storedResources. [partially verified]
+	FIELD ak teamTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD al storedResources Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD k teamId I
+	FIELD o credits D
+	FIELD T unitCaches Lcom/corrodinggames/rts/game/s;
+	FIELD v name Ljava/lang/String;

@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/ac com/corrodinggames/rts/game/units/custom/PENDING_ac
+	COMMENT Undetermined record in custom/ (left as PENDING_ac): String a (name/id) plus ints b, c, d; only constructor stores the string. No usage evidence yet - intentionally not renamed.

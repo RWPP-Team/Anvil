@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/b/a/c com/corrodinggames/rts/gameFramework/glText/CharTexture
+	FIELD a character C
+	FIELD b pageId I
+	FIELD c width F
+	FIELD d u F
+	FIELD e v F
+	FIELD f u2 F
+	FIELD g v2 F

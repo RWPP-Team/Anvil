@@ -1,1 +1,12 @@
 CLASS com/corrodinggames/rts/gameFramework/c/a com/corrodinggames/rts/gameFramework/debug/DebugServer
+	COMMENT DebugServer - the TCP debug console (implements Runnable): enable flag and logs "----- Debug Active ----", then GameEngine.aV=true + GameEngine.B().s(). Static flags: enabled (a), openSocket (b - creates the server socket on port 5677), memoryDebug (c - the GameEngine.bN profiler forces System.gc() twice every 5s), mapDebug (d - calls Map.g() each frame), gcTimer (e), serverStarted (g). Instance: firstTick (f - skips the first ticker call), serverSocket (h, ServerSocket), running (i) and connections (j). a(String) is the text protocol dispatcher: "ping"→"pong", "script"/"function"/"functionNoTimeout"→"todo", anything else → "unknown command". [field names verified from code]
+	FIELD a enabled Z
+	FIELD b openSocket Z
+	FIELD c memoryDebug Z
+	FIELD d mapDebug Z
+	FIELD e gcTimer F
+	FIELD f firstTick Z
+	FIELD g serverStarted Z
+	FIELD h serverSocket Ljava/net/ServerSocket;
+	FIELD i running Z
+	FIELD j connections Ljava/util/ArrayList;

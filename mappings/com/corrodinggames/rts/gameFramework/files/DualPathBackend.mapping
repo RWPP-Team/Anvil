@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/e/e com/corrodinggames/rts/gameFramework/files/DualPathBackend
+	FIELD g primaryBackend Lcom/corrodinggames/rts/gameFramework/e/c;
+	FIELD h secondaryBackend Lcom/corrodinggames/rts/gameFramework/e/c;
+	FIELD i primaryPathTag Ljava/lang/String;
+	FIELD j secondaryPathTag Ljava/lang/String;

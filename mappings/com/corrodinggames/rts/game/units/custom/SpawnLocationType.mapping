@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/ad com/corrodinggames/rts/game/units/custom/SpawnLocationType
+	COMMENT SpawnLocationType - where a spawned unit is placed: emptyResourcePools_asNeutral, emptyOrOccupiedResourcePools_asNeutral, mapCenter_asNeutral, mapCenter_eachActiveTeam, spawnPoint_eachActiveTeam. [verified from the class]

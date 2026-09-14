@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/j/k com/corrodinggames/rts/gameFramework/network/InputNetStream
+	COMMENT InputNetStream - the versioned binary reader used for network packets, save games and replays (the ubiquitous kx.d()/e()/f()/g()/l()/v()/b() calls). Fields: byteStream (ByteArrayInputStream over the packet), rootStream (the DataInputStream of the whole buffer), currentStream (the stream actually read - swapped when a named sub-block starts/ends), blockStack (LinkedList of PacketInputStream, nested blocks), version (the format version; read by b() and checked throughout, e.g. "&gt;= 87" for ScorchMark fields, "&lt; 11" skips blocks entirely) and protocolVersion. a(String) asserts the 12345 "mark" written by OutputNetStream.e(); a(String,boolean)/d(String) open/close a named block; q() decodes a UnitTypeInterface (-1 null, -2 custom mod unit). [field names verified from code]
+	FIELD a byteStream Ljava/io/ByteArrayInputStream;
+	FIELD b version I
+	FIELD c protocolVersion I
+	FIELD e rootStream Ljava/io/DataInputStream;
+	FIELD f currentStream Ljava/io/DataInputStream;
+	FIELD g blockStack Ljava/util/LinkedList;

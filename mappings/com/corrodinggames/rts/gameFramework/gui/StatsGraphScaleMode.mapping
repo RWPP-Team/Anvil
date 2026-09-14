@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/f/z com/corrodinggames/rts/gameFramework/gui/StatsGraphScaleMode
+	COMMENT StatsGraphScaleMode - the vertical scale of the post-battle stats graph, stored in PostBattleStatsInterface.scaleMode: absolute (plot the raw values, drawing the value grid lines) or relative (plot each team's share of the total, no grid). Toggled by the "stats_toggle_relative" button (field p[5]). [evidence-based job name: shape verified from PostBattleStatsInterface]

@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/j/as com/corrodinggames/rts/gameFramework/network/OutputNetStream
+	COMMENT OutputNetStream - the writer matching InputNetStream: byteStream (ByteArrayOutputStream), rootStream (DataOutputStream), currentStream (the stream written to - swapped inside named blocks), blockStack (LinkedList of PacketOutputStream), version (int, default 999999, set by the (int) constructor and read by g()). a(String,boolean)/a(String) open/close a named block (the block is written as name + length + payload); e() writes the 12345 "mark" InputNetStream.a(String) verifies; a(int,int)/b(int) produce a Packet; a(Unit)/a(OrderableUnit) write -1 for null/removed/dead objects. [field names verified from code]
+	FIELD a currentStream Ljava/io/DataOutputStream;
+	FIELD b byteStream Ljava/io/ByteArrayOutputStream;
+	FIELD c rootStream Ljava/io/DataOutputStream;
+	FIELD d version I
+	FIELD e blockStack Ljava/util/LinkedList;

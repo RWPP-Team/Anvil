@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/b/a/b com/corrodinggames/rts/gameFramework/glText/GLText
+	FIELD a assetManager Landroid/content/res/AssetManager;
+	FIELD b textBatch Lcom/corrodinggames/rts/gameFramework/b/a/d;
+	FIELD c paddingX I
+	FIELD d paddingY I
+	FIELD e lineHeight F
+	FIELD f descent F
+	FIELD g bottom F
+	FIELD h maxCharWidth F
+	FIELD i charHeight F
+	FIELD j cellWidth I
+	FIELD k cellHeight I
+	FIELD n scaleX F
+	FIELD o scaleY F
+	FIELD p charSpacing F
+	FIELD q pixelAlignGlyphs Z
+	FIELD r paint Landroid/graphics/Paint;
+	FIELD s pages Ljava/util/ArrayList;
+	FIELD t glyphsByChar [[Lcom/corrodinggames/rts/gameFramework/b/a/c;
+	FIELD u loadGlyphsOnDemand Z
+	FIELD v maxPages I
+	FIELD w checkGlErrors Z
+	FIELD x shaderProgram Lcom/corrodinggames/rts/gameFramework/b/a/a/b;
+	FIELD y colorUniform I
+	FIELD z textureUniform I

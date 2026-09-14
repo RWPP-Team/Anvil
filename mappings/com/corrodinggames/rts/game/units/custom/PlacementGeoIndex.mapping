@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/bf com/corrodinggames/rts/game/units/custom/PlacementGeoIndex
+	COMMENT Single reusable UnitSearchRequest used to count units inside one PlacementRule's search circle: searchX/searchY (the search centre), rule (the rule being evaluated, for searchDistanceSquared/tags/team/filters) and count (number of matching units found, incremented in callback). callback skips the source unit, requires searchTags to match (CustomTag.a) and the distance to be inside rule.searchDistanceSquared, then applies excludeIncompleteBuildings (cm &lt; 1), excludeNonBuildings (!bI()) and searchTeam (Team relation). [field names verified from code]
+	FIELD a searchX F
+	FIELD b searchY F
+	FIELD c rule Lcom/corrodinggames/rts/game/units/custom/bg;
+	FIELD d count I

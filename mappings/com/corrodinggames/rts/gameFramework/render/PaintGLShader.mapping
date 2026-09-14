@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/m/ae com/corrodinggames/rts/gameFramework/render/PaintGLShader
+	FIELD c name Ljava/lang/String;
+	FIELD e vertexSource Ljava/lang/String;
+	FIELD f fragmentSource Ljava/lang/String;
+	FIELD i vertexPath Ljava/lang/String;
+	FIELD j fragmentPath Ljava/lang/String;
+	FIELD k vertexLastModified J
+	FIELD l fragmentLastModified J
+	FIELD m needsReload Z
+	FIELD o errorState I
+	FIELD p values [Lcom/corrodinggames/rts/gameFramework/m/af;
+	FIELD r errorCount I
+	FIELD s reloadCheckCounter I

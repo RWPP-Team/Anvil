@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/k/a com/corrodinggames/rts/gameFramework/path/DirectAccessPathNodeArrayList
+	COMMENT DirectAccessPathNodeArrayList - the PathOpenListNode-specialised version of FastArrayList used by the path solver's pools/queues: EMPTY (shared zero-length array), size (element count), items (backing PathOpenListNode[]). a() exposes the raw array, get(i) is bounds-checked, b(value) appends without the modCount bump (used by the pool), remove-from-end via b(), b() pops the last element. Same "+12 when &lt;6 else +50%" growth policy. [field names verified from code]
+	FIELD a EMPTY [Lcom/corrodinggames/rts/gameFramework/k/n;
+	FIELD b size I
+	FIELD c items [Lcom/corrodinggames/rts/gameFramework/k/n;

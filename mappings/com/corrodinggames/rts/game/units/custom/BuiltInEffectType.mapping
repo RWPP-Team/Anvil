@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/az com/corrodinggames/rts/game/units/custom/BuiltInEffectType
+	COMMENT BuiltInEffectType - the built-in particle presets an EffectTemplate can reference: small, medium, large, smoke, shockwave, largeExplosion, smallExplosion, resourcePoolSmoke, noneExplosion. [verified from the class]

@@ -1,0 +1,18 @@
+CLASS com/corrodinggames/rts/gameFramework/j/ak com/corrodinggames/rts/gameFramework/network/GameChecksum
+	FIELD a total J
+	FIELD b values Ljava/util/ArrayList;
+	FIELD c unitPos Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD d unitDir Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD e unitHp Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD f unitId Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD g waypoints Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD h waypointsPos Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD i teamCredits Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD j unitPaths Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD k unitCount Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD l teamInfo Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD m team1Credits Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD n team2Credits Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD o team3Credits Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD p commandCenter2 Lcom/corrodinggames/rts/gameFramework/j/al;
+	FIELD q commandCenter3 Lcom/corrodinggames/rts/gameFramework/j/al;

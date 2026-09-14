@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/custom/e/c com/corrodinggames/rts/game/units/custom/resources/ResourceList
+	COMMENT ResourceList - collects the CustomResources a unit is missing: resources (FastArrayList). a(CustomResource) adds one if absent; a(StoredResources,unit,scale) and a(CustomPrice,unit,scale) fill the list with every resource the unit cannot afford, a(StoredResources)/a(CustomPrice) test whether one of them is already listed, a() clears. [field name verified from code]
+	FIELD a resources Lcom/corrodinggames/rts/gameFramework/utility/m;

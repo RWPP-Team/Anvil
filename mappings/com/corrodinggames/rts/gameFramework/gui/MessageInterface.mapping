@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/f/m com/corrodinggames/rts/gameFramework/gui/MessageInterface
+	COMMENT MessageInterface - the in-game chat/message overlay (the lines that fade in at the top-left). Fields: interfaceEngine (b), gameEngine (c), paint (d, 16pt white bold), chatMutedWarningShown (e, one-shot "[WARNING: A player send a chat message, but you have chat muted in your settings]") and messages (f, the ArrayList the overlay walks bottom-up, trimmed to 15 by c()). The static a (=95) is the default Y the overlay starts at. [field names verified from code]
+	FIELD b interfaceEngine Lcom/corrodinggames/rts/gameFramework/f/g;
+	FIELD c gameEngine Lcom/corrodinggames/rts/gameFramework/l;
+	FIELD d paint Landroid/graphics/Paint;
+	FIELD e chatMutedWarningShown Z
+	FIELD f messages Ljava/util/ArrayList;

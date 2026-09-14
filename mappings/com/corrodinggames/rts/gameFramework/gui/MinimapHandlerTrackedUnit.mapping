@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/f/u com/corrodinggames/rts/gameFramework/gui/MinimapHandlerTrackedUnit
+	FIELD a unit Lcom/corrodinggames/rts/game/units/am;
+	FIELD b minimapHandler Lcom/corrodinggames/rts/gameFramework/f/o;

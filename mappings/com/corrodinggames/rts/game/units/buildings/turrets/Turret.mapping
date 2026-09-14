@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/d/a/b com/corrodinggames/rts/game/units/buildings/turrets/Turret
+	COMMENT The turret building (UnitType.turret, extends Factory): holds the current TurretType (l, default TurretGunT1), selects turret type from config strings gun/gunT2/gunT3/artillery/flamethrower, upgrade SpecialActions dL..dO, barrel-recoil animation and turret_top* images. Parent of AntiAirTurret. [evidence-based job name]

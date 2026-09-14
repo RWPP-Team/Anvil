@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/gameFramework/j/at com/corrodinggames/rts/gameFramework/network/PacketOutputStream
+	FIELD a gzipStream Ljava/util/zip/GZIPOutputStream;
+	FIELD b bufferedStream Ljava/io/BufferedOutputStream;
+	FIELD c name Ljava/lang/String;
+	FIELD d byteStream Ljava/io/ByteArrayOutputStream;
+	FIELD e dataStream Ljava/io/DataOutputStream;
+	FIELD f wrapped Z

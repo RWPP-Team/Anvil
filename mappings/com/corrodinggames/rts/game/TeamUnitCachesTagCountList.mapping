@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/game/t com/corrodinggames/rts/game/TeamUnitCachesTagCountList
-	COMMENT Growable array of TagCount entries (hand-rolled ArrayList). Flattened inner class of TeamUnitCaches. [iOS-confirmed]
+	COMMENT TeamUnitCachesTagCountList - the hand-rolled growable array TeamUnitCaches uses for its TagCounts: EMPTY (the shared zero-length TeamTagCount[]), items (the backing array) and size. a(entry) appends, growing by "+12 when &lt;6 else +50%" exactly like FastArrayList. [field names verified from code]
+	FIELD a EMPTY [Lcom/corrodinggames/rts/game/p;
+	FIELD b items [Lcom/corrodinggames/rts/game/p;
+	FIELD c size I

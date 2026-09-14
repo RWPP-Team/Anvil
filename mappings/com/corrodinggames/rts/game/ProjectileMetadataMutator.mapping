@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/game/h com/corrodinggames/rts/game/ProjectileMetadataMutator
-	COMMENT Projectile damage/defense mutator keyed by unit type/tag; applied when a projectile hits a matching unit. Flattened inner class of ProjectileMetadata. [iOS-confirmed]
+	COMMENT ProjectileMetadataMutator - a conditional damage modifier of a projectile, built from the "mutator&lt;name&gt;_*" ini keys: ifUnitWithTags / ifUnitWithoutTags (at least one required, CustomTag), directDamageMultiplier, areaDamageMultiplier, addResourcesDirectHit (CustomPrice, incompatible with targetGround), addResourcesAreaHit (requires areaRadius) and changedExplodeEffect (EffectReference). Field names come from the ini key names parsed in ProjectileTemplate. [field names verified from the ini parser]
+	FIELD a ifUnitWithTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD b ifUnitWithoutTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD c directDamageMultiplier F
+	FIELD d areaDamageMultiplier F
+	FIELD e addResourcesDirectHit Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD f addResourcesAreaHit Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD g changedExplodeEffect Lcom/corrodinggames/rts/game/units/custom/z;

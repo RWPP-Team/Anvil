@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/f/w com/corrodinggames/rts/gameFramework/gui/PauseMenuItem
+	COMMENT PauseMenuItem - a minimal android.view.MenuItem used by the in-game pause menu (every method except setTitle/setIcon/setItemId throws "not Implemented"). Fields: title (a, CharSequence), icon (b, Drawable; setIcon(int) is ignored) and itemId (c, set by the package-private a(int)). Built and collected by CommonUI. [field names verified from code]
+	FIELD a title Ljava/lang/CharSequence;
+	FIELD b icon Landroid/graphics/drawable/Drawable;
+	FIELD c itemId I

@@ -1,1 +1,16 @@
 CLASS com/corrodinggames/rts/game/units/custom/bk com/corrodinggames/rts/game/units/custom/ProjectileSpawnEntry
+	COMMENT One "name(*count)(params)" entry of a ProjectileList. Fields, all named after the ini parameters parsed in ProjectileList: projectileReference (ProjectileReference), count, spawnChance (1.0 default), maxSpawnLimit (Integer.MAX_VALUE default), offsetX/offsetY/offsetHeight/offsetDir, xOffsetRelative/yOffsetRelative, offsetRandomX/offsetRandomY/offsetRandomDir and recursionLimit (3 default). [field names verified from the ini parser]
+	FIELD a projectileReference Lcom/corrodinggames/rts/game/units/custom/x;
+	FIELD b count I
+	FIELD c spawnChance F
+	FIELD d maxSpawnLimit I
+	FIELD e offsetX F
+	FIELD f offsetY F
+	FIELD g offsetHeight F
+	FIELD h offsetDir F
+	FIELD i xOffsetRelative F
+	FIELD j yOffsetRelative F
+	FIELD k offsetRandomX F
+	FIELD l offsetRandomY F
+	FIELD m offsetRandomDir F
+	FIELD n recursionLimit I

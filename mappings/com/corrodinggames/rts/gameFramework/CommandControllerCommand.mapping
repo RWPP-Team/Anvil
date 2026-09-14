@@ -1,1 +1,16 @@
 CLASS com/corrodinggames/rts/gameFramework/e com/corrodinggames/rts/gameFramework/CommandControllerCommand
+	COMMENT One command issued by a team (inner class of CommandController). Named fields: source (String, debug origin), team, waypoint, actionId (ActionId), targetPoint (PointF), targetUnit (Unit), attackMode, player (the Player this command is validated against), allowedTeamMask (short bitmask built in l() from every team that p() is true, tested by a(Team,Team)), changeStepRate (float, logged as "issueCommand: changeStepRate"), systemActionId (int: 1=new DebugDesyncDetector, 2=stress test, 5=spawn via build waypoint, 100=team surrender, 200=quick resync), units (FastArrayList of live OrderableUnit), cachedPaths (FastArrayList of CommandControllerCachedCommandPath), unitIdsPending (FastArrayList of Long ids resolved by i()). Remaining obfuscated: a, c, d, e, f, g, h, o, r, t, x and the private PointF z. Serialized with versioned (de)serialization ("c" markers; tags up to v80). [behaviour verified]
+	FIELD A unitIdsPending Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b source Ljava/lang/String;
+	FIELD i team Lcom/corrodinggames/rts/game/n;
+	FIELD j waypoint Lcom/corrodinggames/rts/game/units/au;
+	FIELD k actionId Lcom/corrodinggames/rts/game/units/a/c;
+	FIELD l targetPoint Landroid/graphics/PointF;
+	FIELD m targetUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD n attackMode Lcom/corrodinggames/rts/game/units/a;
+	FIELD p player Lcom/corrodinggames/rts/game/n;
+	FIELD q allowedTeamMask S
+	FIELD s changeStepRate F
+	FIELD u systemActionId I
+	FIELD v units Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD w cachedPaths Lcom/corrodinggames/rts/gameFramework/utility/m;

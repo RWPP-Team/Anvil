@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/m/ab
+	COMMENT BitmapOrTexture draw entry in the render package (UNRESOLVED NAME - left obfuscated): int a, int b, boolean c, BitmapOrTexture d, plus clone()/a() copies. Intentionally not renamed (no decisive evidence).

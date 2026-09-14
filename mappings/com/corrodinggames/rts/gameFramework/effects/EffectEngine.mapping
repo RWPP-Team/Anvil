@@ -1,1 +1,22 @@
 CLASS com/corrodinggames/rts/gameFramework/d/c com/corrodinggames/rts/gameFramework/effects/EffectEngine
+	COMMENT EffectEngine - the pool and draw orchestration of all EffectObjects. Fields: activeCount (live effects), limitVerylow/limitLow/limitHigh/limitVeryhigh (the per-Priority caps checked in a(Priority), derived from the pool size minus 60/30/20/10 and lowered further on device tiers), pool (static EffectObject[]), poolActiveSize (static int), layerUsed (boolean[5], which draw layers have effects this frame), strips (static ImageStrip[20] - the built-in spritesheets: effects, explode_big, light_50, flame, dust, smoke_black, shockwave, fire, lava_bubble, effects2, plasma_shot, shockwave_large, explode_bits, explode_big2, explode_bits_bug, projectiles, projectiles2, effects3, smoke_white, shockwave2), priorityOverride, forceOnscreenCheck, ignoreOnscreenCheckOnce, paint, lavaSpawnTimer, fpsReductionMedium/fpsReductionSevere (extra headroom subtracted when the frame rate is below 28/13 fps), trimInactiveOnUpdate, and the static scratch objects tmpRectF/tmpRectA/tmpRectB. Still obfuscated: k (static PaintGLShader), l/m (BitmapOrTexture), q/r (static Paint). a(String) resolves a strip index by name or number. [field names derived from behaviour in this class]
+	FIELD a activeCount I
+	FIELD b limitVerylow I
+	FIELD c limitLow I
+	FIELD d limitHigh I
+	FIELD e limitVeryhigh I
+	FIELD f pool [Lcom/corrodinggames/rts/gameFramework/d/e;
+	FIELD g poolActiveSize I
+	FIELD h trimInactiveOnUpdate Z
+	FIELD i fpsReductionMedium I
+	FIELD j fpsReductionSevere I
+	FIELD n tmpRectF Landroid/graphics/RectF;
+	FIELD o tmpRectA Landroid/graphics/Rect;
+	FIELD p tmpRectB Landroid/graphics/Rect;
+	FIELD s strips [Lcom/corrodinggames/rts/gameFramework/d/g;
+	FIELD t priorityOverride Lcom/corrodinggames/rts/gameFramework/d/h;
+	FIELD u forceOnscreenCheck Z
+	FIELD v ignoreOnscreenCheckOnce Z
+	FIELD w paint Landroid/graphics/Paint;
+	FIELD x lavaSpawnTimer F
+	FIELD y layerUsed [Z

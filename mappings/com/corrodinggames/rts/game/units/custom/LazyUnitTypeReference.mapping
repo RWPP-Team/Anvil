@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/custom/v com/corrodinggames/rts/game/units/custom/LazyUnitTypeReference
+	COMMENT Lazy by-name reference to a unit type used inside a custom unit's ini ("unitName", or "unitref:..." style). Fields: iniKey (the ini key that produced the reference, e.g. "spawnUnits"/"onShoot_flame"), section (the owning ini section name), unitName (the referenced type name as written), unitType (resolved UnitTypeInterface), resolved (set once linking was performed). a()/a(String) resolve via CustomUnitMetadata.s(name) and throw UnitConfigException "Could not find unit type:&lt;name&gt; used on:&lt;key&gt; in section:&lt;section&gt;"; c() returns the resolved type; d() returns the display name. [field names verified from the error messages and from UnitSpawner's assignment]
+	FIELD a iniKey Ljava/lang/String;
+	FIELD b section Ljava/lang/String;
+	FIELD c unitName Ljava/lang/String;
+	FIELD d unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD e resolved Z

@@ -1,0 +1,21 @@
+CLASS com/corrodinggames/rts/gameFramework/b/aj com/corrodinggames/rts/gameFramework/canvasgl/GLTextRenderer
+	FIELD a meshBuffer Lcom/corrodinggames/rts/gameFramework/b/al;
+	FIELD b vertexData [F
+	FIELD c writeIndex I
+	FIELD d vertexCount I
+	FIELD e capacity I
+	FIELD f canvas Lcom/corrodinggames/rts/gameFramework/b/n;
+	FIELD g defaultShaderId I
+	FIELD h shaderVariables Lcom/corrodinggames/rts/gameFramework/b/ak;
+	FIELD i currentTexture Lcom/corrodinggames/rts/gameFramework/b/b;
+	FIELD j currentShader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD k shaderDirty Z
+	FIELD l drawMode I
+	FIELD m currentColor I
+	FIELD n colorR F
+	FIELD o colorG F
+	FIELD p colorB F
+	FIELD q colorA F
+	FIELD r texU F
+	FIELD s texV F
+	FIELD t lineWidth F

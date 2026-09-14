@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/gameFramework/f/b com/corrodinggames/rts/gameFramework/gui/GuiButton
+	COMMENT GuiButton - the tiny label+action pair the in-game popups use as a button: text (the label shown in the button) and the abstract a()/b() pair (a() supplies the label, b() is the click action). EndGamePopup holds a list of these (its \\"Finish game\\" / \\"Keep playing\\" entries are anonymous subclasses) and invokes b() when the player presses one. [evidence-based job name: shape verified from EndGamePopup]
+	FIELD a text Ljava/lang/String;

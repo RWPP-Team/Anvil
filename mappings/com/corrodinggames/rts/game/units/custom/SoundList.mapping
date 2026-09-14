@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/custom/bl com/corrodinggames/rts/game/units/custom/SoundList
+	COMMENT A comma separated list of sounds (ini keys such as shoot_sound/hitSound/alsoPlaySound). Fields: sounds (ArrayList of SoundListPlayback) and nextIndex (rotating index so repeated plays alternate). a(volume) overrides the playback volume of every entry; a()/a(x,y,vol) play the next sound (optionally positional) and advance nextIndex, returning false when the list is empty. The constructor parses "ROOT:"/"SHARED:" prefixes and "name:volume" entries, throwing "Unknown sound format:"/"Failed to parse volume float:" on bad input; a(meta, value, fallback) keeps the fallback when the value is null/empty.
+	FIELD a sounds Ljava/util/ArrayList;
+	FIELD b nextIndex I

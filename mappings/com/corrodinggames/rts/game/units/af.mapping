@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/af
+	COMMENT Network-synchronised float pair (UNRESOLVED NAME - left obfuscated): fields a,b (F) with a(InputNetStream)/a(OutputNetStream) using 4-byte float read/write. Referenced from the Unit hierarchy, but no evidence for the original name -> intentionally not renamed.

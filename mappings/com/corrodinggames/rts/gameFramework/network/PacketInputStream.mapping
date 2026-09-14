@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/gameFramework/j/l com/corrodinggames/rts/gameFramework/network/PacketInputStream
+	FIELD a name Ljava/lang/String;
+	FIELD b byteStream Ljava/io/ByteArrayInputStream;
+	FIELD c dataStream Ljava/io/DataInputStream;

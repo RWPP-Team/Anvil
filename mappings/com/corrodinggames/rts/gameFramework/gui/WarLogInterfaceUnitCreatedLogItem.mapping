@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ar com/corrodinggames/rts/gameFramework/gui/WarLogInterfaceUnitCreatedLogItem
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD b count I

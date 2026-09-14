@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/r com/corrodinggames/rts/game/units/custom/TriggerConfig
+	COMMENT TriggerConfig - one unit trigger: condition (LogicBoolean evaluated to fire the trigger), b (String, the trigger name/key - left as-is), interval (TickInterval, default everyFrame) and action (ExtraAction = custom/actions/ExtraAction). [field names verified from code except b]
+	FIELD a condition Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD c interval Lcom/corrodinggames/rts/game/units/custom/s;
+	FIELD d action Lcom/corrodinggames/rts/game/units/custom/a/g;

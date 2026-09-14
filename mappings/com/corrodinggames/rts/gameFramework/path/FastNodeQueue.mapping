@@ -1,1 +1,20 @@
 CLASS com/corrodinggames/rts/gameFramework/k/d com/corrodinggames/rts/gameFramework/path/FastNodeQueue
+	COMMENT FastNodeQueue - the original (non-default) A* open list, a hybrid "array cache + overflow heap": buffer (PathOpenListNode[975]) caches the nodes near the best score, overflowQueue (java.util.PriorityQueue) holds the rest. Fields: bufferLastIndex (last used slot in buffer), lowestBufferIndex/lowestBufferScore (best score currently in the buffer), highestBufferIndex/highestBufferScore (worst score in the buffer), lowestQueueScore (score at the head of overflowQueue), consecutiveDrainCount/maxConsecutiveDrainCount (statistics for how long c() had to rescan), and the static profiling counters maxBufferCount, maxQueueSize, totalAddCount, drainCount, sameScoreDrainCount, scoreChangeCount, statTimer1/statTimer2. This class is kept for reference/debugging - FastNodeQueue2 is the one actually used by PathOpenList. Two unused fields remain obfuscated. [field names derived from this class' logic]
+	FIELD a maxBufferCount I
+	FIELD b maxQueueSize I
+	FIELD d totalAddCount I
+	FIELD e drainCount I
+	FIELD f sameScoreDrainCount I
+	FIELD g scoreChangeCount I
+	FIELD h statTimer1 D
+	FIELD i statTimer2 D
+	FIELD j lowestBufferIndex I
+	FIELD k lowestBufferScore I
+	FIELD l highestBufferIndex I
+	FIELD m highestBufferScore I
+	FIELD n bufferLastIndex I
+	FIELD o buffer [Lcom/corrodinggames/rts/gameFramework/k/n;
+	FIELD q overflowQueue Ljava/util/PriorityQueue;
+	FIELD s lowestQueueScore I
+	FIELD t consecutiveDrainCount I
+	FIELD u maxConsecutiveDrainCount I

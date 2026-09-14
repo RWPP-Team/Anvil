@@ -1,0 +1,37 @@
+CLASS com/corrodinggames/rts/gameFramework/i/a com/corrodinggames/rts/gameFramework/mod/ModManager
+	COMMENT Mod manager (UNRESOLVED NAME - left obfuscated): loads/refreshes all installed mods from CustomUnitMetadataLoader dirs, holds the mod list (e), mod->extra-map links (f), disable/enable selection (d/f/g), modSettings (de)serialization, version comparison ("Requires version: %s or higher. (You have: %s)", build suffix "p<build>"), and modSettings/modSettingsVersion write-back to SettingsEngine. Called from librocket/scripts/Mods. Likely original name ModManager, but the iOS symbols list contains no mod package, so per rule the class is intentionally not renamed.
+	FIELD d modListLock Ljava/lang/Object;
+	FIELD e mods Ljava/util/ArrayList;
+	FIELD f extraMaps Ljava/util/ArrayList;
+	METHOD a reloadModsAndSelection ()V
+	METHOD a addExtraMapsForPath ([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+	METHOD a getModBySessionId (I)Lcom/corrodinggames/rts/gameFramework/i/b;
+	METHOD a removeMod (Lcom/corrodinggames/rts/gameFramework/i/b;)V
+	METHOD a checkMinVersionAgainstGame (Ljava/lang/String;)V
+	METHOD a versionPart (Ljava/lang/String;I)I
+	METHOD a addExtraMap (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/i/b;)V
+	METHOD a checkMinVersion (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a registerMod (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZI)Lcom/corrodinggames/rts/gameFramework/i/b;
+	METHOD a scanModFolder (Ljava/lang/String;ZZ)V
+	METHOD a countNotYetLoaded (Z)I
+	METHOD a reloadModDataInternal (ZZ)V
+	METHOD b countErroredEnabledMods ()I
+	METHOD b stripVersionPrefixes (Ljava/lang/String;)Ljava/lang/String;
+	METHOD c countDeletableMods ()I
+	METHOD c getModByHash (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/i/b;
+	METHOD d snapshotSelection ()V
+	METHOD d countModsWithTitle (Ljava/lang/String;)I
+	METHOD e saveSelection ()V
+	METHOD e getModByPath (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/i/b;
+	METHOD f loadSelection ()V
+	METHOD f getModByTitle (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/i/b;
+	METHOD g disableAllMods ()V
+	METHOD g getExtraMapsForPath (Ljava/lang/String;)Ljava/util/ArrayList;
+	METHOD h countEnabledOrErrored ()I
+	METHOD h getLinkedModForFile (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/i/b;
+	METHOD i getAllMusicTracks ()Ljava/util/ArrayList;
+	METHOD j getEnabledMods ()Ljava/util/ArrayList;
+	METHOD k refreshModList ()Ljava/util/ArrayList;
+	METHOD l reloadModData ()V
+	METHOD m notifyModsChanged ()V
+	METHOD n clearExtraMaps ()V

@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/game/units/custom/bq com/corrodinggames/rts/game/units/custom/UnitTypeReferenceCondition
+	COMMENT One entry of a unit list ("spawnUnits"/"produceUnits"/"attachments_addNewUnits"/... ini key): unitType (LazyUnitTypeReference), spawnSource (LogicBoolean selecting the spawning unit), copyWaypointsFrom (LogicBoolean), count ("unitName*N"), neutralTeam/aggressiveTeam/setToTeamOfLastAttacker (mutually exclusive, validated), spawnChance, maxSpawnLimit, gridAlign, skipIfOverlapping, falling, techLevel, alwayStartDirAtZero, offsetX/offsetY/offsetHeight/offsetDir/offsetRandomX/offsetRandomY/offsetRandomDir, addResources (CustomPrice granted via h(unit)), transportedUnitsToTransfer (short). All field names come from the ini parameter names parsed in UnitSpawner.b(...) which assigns them one by one.
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/custom/v;
+	FIELD b spawnSource Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD c copyWaypointsFrom Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD d count I
+	FIELD e neutralTeam Z
+	FIELD f aggressiveTeam Z
+	FIELD g setToTeamOfLastAttacker Z
+	FIELD h spawnChance F
+	FIELD i maxSpawnLimit I
+	FIELD j gridAlign Z
+	FIELD k skipIfOverlapping Z
+	FIELD l falling Z
+	FIELD m techLevel I
+	FIELD n alwayStartDirAtZero Z
+	FIELD o offsetX F
+	FIELD p offsetY F
+	FIELD q offsetHeight F
+	FIELD r offsetDir F
+	FIELD s offsetRandomX F
+	FIELD t offsetRandomY F
+	FIELD u offsetRandomDir F
+	FIELD v addResources Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD w transportedUnitsToTransfer S

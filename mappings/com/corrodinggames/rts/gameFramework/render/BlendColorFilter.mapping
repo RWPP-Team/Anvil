@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/m/v com/corrodinggames/rts/gameFramework/render/BlendColorFilter
+	FIELD a blendMode Lcom/corrodinggames/rts/gameFramework/m/w;

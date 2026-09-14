@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/y com/corrodinggames/rts/game/units/custom/PENDING_y
+	COMMENT Undetermined single-float holder in custom/ (left as PENDING_y): field a (F) only. No usage evidence - intentionally not renamed.

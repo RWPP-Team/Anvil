@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/n com/corrodinggames/rts/game/units/EditorUnitTab
+	COMMENT Editor unit-picker tab enum: all, types, terrain, modded, search, actions. Each constant filters UnitTypeInterface (a(...)); a(boolean)/a(int,int) wrap around skipping disabled tabs (b(), logs "jumpBy recursion limit hit"). Held in EditorUnit's tab field. [evidence-based job name]

@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/gameFramework/b/ae com/corrodinggames/rts/gameFramework/canvasgl/TextureAliasRegion
+	COMMENT TextureAliasRegion - one bitmap packed into a TextureAlias' atlas (also a BasicTexture so it can be drawn directly). Fields, all assigned by TextureAlias.a(Bitmap): renderTarget (the atlas - the region shares its GL texture, so textureId is copied from it), offsetX/offsetY (tile position inside the atlas) and the matching normalized coords u/v (offsetX/textureWidth, offsetY/textureHeight) plus the atlas size (textureWidth/textureHeight/invTextureWidth/invTextureHeight copied from the render target) and sourceWidth/sourceHeight of the original bitmap. [field names verified from code]
+	FIELD l renderTarget Lcom/corrodinggames/rts/gameFramework/b/ad;
+	FIELD m u F
+	FIELD n v F
+	FIELD o offsetX I
+	FIELD p offsetY I

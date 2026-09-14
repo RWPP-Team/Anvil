@@ -1,2 +1,6 @@
 CLASS com/corrodinggames/rts/game/p com/corrodinggames/rts/game/TeamTagCount
-	COMMENT Per-tag counters (built, in-progress) keyed by CustomTag; aggregated inside TeamUnitCaches. Flattened inner class of Team. [iOS-confirmed]
+	COMMENT TeamTagCount - the per-CustomTag counters kept by TeamUnitCaches: tag (the CustomTag), builtCount (finished units with the tag), inProgressCount (units under construction with the tag), queuedCount (tagged units sitting in factory build queues) and a short field e. [field names verified from the update logic in TeamUnitCaches]
+	FIELD a tag Lcom/corrodinggames/rts/game/units/custom/g;
+	FIELD b builtCount I
+	FIELD c inProgressCount I
+	FIELD d queuedCount I

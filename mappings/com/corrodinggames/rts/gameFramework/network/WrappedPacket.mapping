@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ay com/corrodinggames/rts/gameFramework/network/WrappedPacket
+	COMMENT WrappedPacket - a relay packet (type 175) that carries another packet plus the target connection: targetConnectionId (the id the inner packet must be delivered to) and packet (the inner Packet). ConnectionSendWorker unwraps it and re-sends it as type 176 (which omits the inner type) when the previous packet went to the same connection and the connection is a relay. [field names verified from ConnectionSendWorker]
+	FIELD f packet Lcom/corrodinggames/rts/gameFramework/j/au;
+	FIELD g targetConnectionId I

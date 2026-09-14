@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ab com/corrodinggames/rts/gameFramework/gui/PostBattleStatsInterfaceHistoryTypeCache
+	FIELD a historyType Lcom/corrodinggames/rts/gameFramework/bj;
+	FIELD b maxValue I
+	FIELD c minValue I
+	FIELD d maxTime I
+	FIELD e relativeItems Ljava/util/ArrayList;

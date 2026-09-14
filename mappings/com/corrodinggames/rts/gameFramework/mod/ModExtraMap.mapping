@@ -1,0 +1,6 @@
+CLASS com/corrodinggames/rts/gameFramework/i/c com/corrodinggames/rts/gameFramework/mod/ModExtraMap
+	COMMENT Extra map file contributed by a mod (UNRESOLVED NAME - left obfuscated): fields are the display path (a), the mod-relative path (b) and the owning mod (c); created by ModManager.addExtraMapsForPath and emitted as "MOD|&lt;hash&gt;/&lt;path&gt;" entries. Intentionally not renamed (no mod package in the iOS symbols list).
+	FIELD a displayPath Ljava/lang/String;
+	FIELD b modRelativePath Ljava/lang/String;
+	FIELD c mod Lcom/corrodinggames/rts/gameFramework/i/b;
+	FIELD d modManager Lcom/corrodinggames/rts/gameFramework/i/a;

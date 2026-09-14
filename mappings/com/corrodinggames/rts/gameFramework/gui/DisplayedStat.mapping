@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/e com/corrodinggames/rts/gameFramework/gui/DisplayedStat
+	FIELD a title Ljava/lang/String;
+	FIELD b textValue Ljava/lang/String;
+	FIELD c numberValue F

@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/bo com/corrodinggames/rts/gameFramework/StatsHandlerTeamStats
+	COMMENT StatsHandlerTeamStats - per-team statistics for one game (net-serialized; the tag m = StatsHandlerSaveVersion.v220911_added_history gates the history field). Verified names: unitsKilled (c), buildingsKilled (d), experimentalsKilled (e), unitsLost (f), buildingsLost (g), experimentalsLost (h) - taken from the labels DisplayedStat.a() prints, and history (l, StatsHandlerTeamHistory). The remaining ints a, b, i, j and the long k are the built/remaining/gathered counters that DisplayedStat does not label; left obfuscated. [partial field names verified]
+	FIELD c unitsKilled I
+	FIELD d buildingsKilled I
+	FIELD e experimentalsKilled I
+	FIELD f unitsLost I
+	FIELD g buildingsLost I
+	FIELD h experimentalsLost I
+	FIELD l history Lcom/corrodinggames/rts/gameFramework/bn;

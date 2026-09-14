@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/h/a com/corrodinggames/rts/gameFramework/localization/LocaleEngine
+	COMMENT LocaleEngine - the translation engine. Fields: bundle (the loaded ResourceBundle, from translations/Strings[_lang].properties), lastForceEnglish (the forceEnglish setting of the previous load, used to skip reloads), generation (int bumped on every reload, used as the cache tag by LocaleString/DynamicLocaleText/CustomResource), languageOverride (a language code that overrides the system locale), mapNameSuffixPattern (regex "(.*)(\\(.*\\)( *\\[by.*\\])?)" - strips the author suffix off map names) and inlineBlockPattern (regex "\\[i:(...)\\]" - inline translation placeholders expanded by c(String)). [field names verified from code]
+	FIELD a bundle Ljava/util/ResourceBundle;
+	FIELD b lastForceEnglish Z
+	FIELD c generation I
+	FIELD d languageOverride Ljava/lang/String;
+	FIELD e mapNameSuffixPattern Ljava/util/regex/Pattern;
+	FIELD f inlineBlockPattern Ljava/util/regex/Pattern;

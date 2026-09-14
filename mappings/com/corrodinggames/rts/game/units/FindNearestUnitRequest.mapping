@@ -1,0 +1,8 @@
+CLASS com/corrodinggames/rts/game/units/ac com/corrodinggames/rts/game/units/FindNearestUnitRequest
+	FIELD a x F
+	FIELD b y F
+	FIELD c requiredTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD d bestDistance F
+	FIELD e foundUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD f checkAttackable Z
+	FIELD g includeIncomplete Z

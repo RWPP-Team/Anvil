@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/b/a/g com/corrodinggames/rts/gameFramework/glText/MeshBuffer
+	FIELD a positionComponents I
+	FIELD b vertexStride I
+	FIELD c strideBytes I
+	FIELD d vertexBuffer Ljava/nio/IntBuffer;
+	FIELD e indexBuffer Ljava/nio/ShortBuffer;
+	FIELD f vertexCount I
+	FIELD g indexCount I
+	FIELD h scratchInts [I
+	FIELD i texCoordAttribute I
+	FIELD j positionAttribute I

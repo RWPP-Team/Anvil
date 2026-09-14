@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/e/g com/corrodinggames/rts/gameFramework/files/AssetCache
+	FIELD a logDebug Z

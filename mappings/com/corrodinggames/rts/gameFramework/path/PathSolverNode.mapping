@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/gameFramework/k/p com/corrodinggames/rts/gameFramework/path/PathSolverNode
+	COMMENT PathSolverNode - one tile coordinate of a path (also used as a reusable scratch node by the solver). Fields: x and y (short tile coords). Every method indexes the PathSolver's per-tile arrays with x * solver.height + y: total cost, the per-direction cost array l, the packed direction/flags byte array m (bits 0-2 direction, bit 3 a flag, bit 4 another flag), setCurrentDirectionFromAngle (angle -&gt; 8-way direction) and the neighbour-step helpers. [field names verified from code]
+	FIELD a x S
+	FIELD b y S

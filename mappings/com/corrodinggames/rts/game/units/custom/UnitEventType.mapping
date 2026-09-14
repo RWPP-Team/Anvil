@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/af com/corrodinggames/rts/game/units/custom/UnitEventType
+	COMMENT UnitEventType - the unit event hooks a custom unit can react to (enum constants are the original names): created, completeAndActive, destroyed, killedAnyUnit, queuedUnitFinished, queueItemAdded, queueItemCancelled, teleported, touchTargetSuccess, newWaypointGivenByPlayer, teamChanged, transportingNewUnit, transportUnloadedOrRemovedUnit, tookDamage, enteredTransport, leftTransport, newMessage, attachmentRemoved. [verified from the class]

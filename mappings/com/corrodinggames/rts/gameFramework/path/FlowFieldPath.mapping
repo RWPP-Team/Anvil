@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/k/f com/corrodinggames/rts/gameFramework/path/FlowFieldPath
+	COMMENT FlowFieldPath - a path produced by the flow-field (Dijkstra) solver instead of A*; used when OrderableUnit.L is set. Fields: follower (a FlowFieldFollowerDebug wrapping this path, handed to units via a(Unit)), grid (the shared FlowFieldGrid built by PathSolver.g), debugPaint and debugOffsetPoint (statics used by d(), the on-screen flow-field arrow overlay). a(int,int) reads the direction byte for a tile, a(byte,Point) converts a direction+1 into an x/y step. a(Path) considers two FlowFieldPaths equal when they share endX/endY/movementType. [field names verified from code]
+	FIELD a follower Lcom/corrodinggames/rts/gameFramework/k/c;
+	FIELD b grid Lcom/corrodinggames/rts/gameFramework/k/g;
+	FIELD c debugPaint Landroid/graphics/Paint;
+	FIELD d debugOffsetPoint Landroid/graphics/Point;

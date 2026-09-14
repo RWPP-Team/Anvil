@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/bh com/corrodinggames/rts/gameFramework/StatsHandlerHistoryItem
+	FIELD a time I
+	FIELD b value I

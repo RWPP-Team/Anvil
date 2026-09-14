@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/game/l com/corrodinggames/rts/game/ScorchMark
+	FIELD a variant I
+	FIELD b frameIndex I
+	FIELD c width I
+	FIELD e markType Lcom/corrodinggames/rts/game/m;
+	FIELD f createdFrame I
+	FIELD h tmpDestRect Landroid/graphics/Rect;
+	FIELD i tmpSrcRect Landroid/graphics/Rect;
+	FIELD j paint Landroid/graphics/Paint;
+	FIELD k normalTexture Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD l nukeTexture Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD m bloodTexture Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD n tmpRectF Landroid/graphics/RectF;

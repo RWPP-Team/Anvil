@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/f/au com/corrodinggames/rts/gameFramework/gui/WarLogInterfaceWarLogItem
+	FIELD c time J
+	FIELD d duration J
+	FIELD e x F
+	FIELD f y F
+	FIELD g cachedText Ljava/lang/String;
+	FIELD h dimmed Z
+	FIELD i alwaysShow Z

@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/z com/corrodinggames/rts/game/units/custom/EffectReference
-	COMMENT Lazy by-name reference to an EffectTemplate (z): resolved via CustomUnitMetadata, a(...) spawns the effect. Previously mis-mapped to EffectTemplate (collision with custom/ay). [evidence-based]
+	COMMENT By-name reference to one or more EffectTemplates, created from any ini key that takes effect names (only the EffectReference is stored, the templates are linked later). Fields: value (the raw ini text - a comma separated list where each entry may be "name*count", "NONE" maps to the no-effect template array CustomUnitMetadata.gf, null/empty maps to CustomUnitMetadata.ge), effects (the resolved EffectTemplate array). a()/b() test whether anything is set; c() links; a(x,y,h,dir,attachedTo) emits every template and returns the first created EffectObject. [field names verified from the code]
+	FIELD a value Ljava/lang/String;
+	FIELD b effects [Lcom/corrodinggames/rts/game/units/custom/ay;

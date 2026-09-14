@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/au com/corrodinggames/rts/gameFramework/network/Packet
+	FIELD a connection Lcom/corrodinggames/rts/gameFramework/j/c;
+	FIELD b type I
+	FIELD c data [B
+	FIELD d channel I
+	FIELD e reliable Z

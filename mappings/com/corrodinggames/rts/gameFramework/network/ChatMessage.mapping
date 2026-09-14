@@ -1,0 +1,6 @@
+CLASS com/corrodinggames/rts/gameFramework/j/b com/corrodinggames/rts/gameFramework/network/ChatMessage
+	FIELD a teamId I
+	FIELD b playerName Ljava/lang/String;
+	FIELD c message Ljava/lang/String;
+	FIELD d connectionId I
+	FIELD e timeStamp J

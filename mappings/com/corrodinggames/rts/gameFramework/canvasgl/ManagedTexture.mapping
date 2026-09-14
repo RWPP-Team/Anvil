@@ -1,0 +1,9 @@
+CLASS com/corrodinggames/rts/gameFramework/b/ah com/corrodinggames/rts/gameFramework/canvasgl/ManagedTexture
+	FIELD l bitmapCache Ljava/util/HashMap;
+	FIELD m sourceBitmap Landroid/graphics/Bitmap;
+	FIELD n textureFilter I
+	FIELD o reusableCacheKey Lcom/corrodinggames/rts/gameFramework/b/ai;
+	FIELD p loaded Z
+	FIELD t limitUploadAttempts Z
+	FIELD u uploadRetryCount I
+	FIELD v padding I

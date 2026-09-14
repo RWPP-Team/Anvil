@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/b com/corrodinggames/rts/game/units/AttackMovement
+	COMMENT How a unit flies/moves while attacking: normal, strafing, moveaway, bomber (used by air units). [constants verified]

@@ -1,0 +1,15 @@
+CLASS com/corrodinggames/rts/gameFramework/j/ah com/corrodinggames/rts/gameFramework/network/GameSetup
+	COMMENT GameSetup - the multiplayer/skirmish lobby settings (Cloneable, versioned net (de)serialization with tags up to v4). Field names are taken verbatim from the b() debug dump which prints each one with its lobby key: mapType (a, GameSetupMapType), mapName (b, default "[z;p10]Crossing Large (10p).tmx"), startingCredits (c), fogMode (d), revealedMap (e), aiDifficulty (f), startingUnits (g), incomeMultiplier (h), noNukes (i), sharedControl (l), allowSpectators (o), lockedRoom (p) and randomSeed (q). Still obfuscated: j, m, n (extra flags serialized between noNukes and allowSpectators: tags v1/v2 write m/n; the b() dump does not name them) and k. [field names verified from the b() dump]
+	FIELD a mapType Lcom/corrodinggames/rts/gameFramework/j/ai;
+	FIELD b mapName Ljava/lang/String;
+	FIELD c startingCredits I
+	FIELD d fogMode I
+	FIELD e revealedMap Z
+	FIELD f aiDifficulty I
+	FIELD g startingUnits I
+	FIELD h incomeMultiplier F
+	FIELD i noNukes Z
+	FIELD l sharedControl Z
+	FIELD o allowSpectators Z
+	FIELD p lockedRoom Z
+	FIELD q randomSeed I

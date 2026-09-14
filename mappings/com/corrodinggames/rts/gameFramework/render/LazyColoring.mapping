@@ -1,0 +1,13 @@
+CLASS com/corrodinggames/rts/gameFramework/m/h com/corrodinggames/rts/gameFramework/render/LazyColoring
+	FIELD A shadersLoaded Z
+	FIELD B loaded Z
+	FIELD C usingShaders Z
+	FIELD D teamColor I
+	FIELD E teamId I
+	FIELD F teamColorMode Lcom/corrodinggames/rts/game/o;
+	FIELD G totalColorTimeMs F
+	FIELD H sourceImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD I coloredImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD x pureGreenShader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD y hueAddShader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD z hueShiftShader Lcom/corrodinggames/rts/gameFramework/m/ae;

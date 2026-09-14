@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/game/r com/corrodinggames/rts/game/TeamUnitTypeCount
-	COMMENT Per-unit-type count entry: UnitTypeInterface + count. Flattened inner class of Team. [iOS-confirmed]
+	COMMENT TeamUnitTypeCount - one per-unit-type count kept by the team caches: unitType (UnitTypeInterface) and count. [field names verified from code]
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD b count I

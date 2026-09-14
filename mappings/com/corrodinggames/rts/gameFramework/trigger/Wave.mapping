@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/n/g com/corrodinggames/rts/gameFramework/trigger/Wave
+	COMMENT Wave - one survival/wave line of a map, parsed by a(String): "+delay[+minutes:seconds][options][-units]" or "!options". Fields: unitLists (ArrayList of WaveUnitList, one per "count unitName" pair), lockSpawn ("lockSpawn"), unlockSpawn ("unlockSpawn"), time (float seconds, computed from "m:s" or "s"), name (the optional wave name), noTimer ("noTimer") and hasName. Field e (int) is left obfuscated. [field names verified from the parser]
+	FIELD a unitLists Ljava/util/ArrayList;
+	FIELD b lockSpawn Z
+	FIELD c unlockSpawn Z
+	FIELD d time F
+	FIELD f name Ljava/lang/String;
+	FIELD g noTimer Z
+	FIELD h hasName Z

@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/gameFramework/e/b com/corrodinggames/rts/gameFramework/files/FileAccessConfig
+	COMMENT FileAccessConfig - the external-storage capability triple computed by FileLoader.a(boolean) and consumed by FileLoader.a(int) when picking a backend. Fields: useOverriddenExternalPath (true when FileLoader.overriddenExternalPath is set - "FileLoader using overriddenExternalPath:"), useSafExternalAccess (true by default; cleared together with the direct flag when external access is impossible - this is the flag the UI/folder chooser keys off; it is only assigned inside FileLoader in this build) and useDirectExternalAccess (true = read/write the external dir directly - "FileLoader using direct external file access! SDK:" / "using direct external access due to sdk:"). The SDK<19 and !externalStoragePermission branches force useDirectExternalAccess=true, useSafExternalAccess=false. [field names verified from FileLoader]
+	FIELD a useOverriddenExternalPath Z
+	FIELD b useSafExternalAccess Z
+	FIELD c useDirectExternalAccess Z

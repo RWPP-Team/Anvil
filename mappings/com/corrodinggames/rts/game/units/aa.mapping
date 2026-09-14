@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/aa
+	COMMENT Timing/damage record (UNRESOLVED NAME - left obfuscated): floats a,b,c and int d (=1); a() returns (b + c) / 60.0f (ticks -> seconds). No code evidence for the original name -> intentionally not renamed.

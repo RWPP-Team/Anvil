@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/game/s com/corrodinggames/rts/game/TeamUnitCaches
+	COMMENT TeamUnitCaches - the aggregate statistics a Team keeps about its units, updated from a(Unit)/b(Unit) as units are created/destroyed. Fields: buildingCount (units whose type reports "not mobile", i.e. non-mobile units, plus every factory build-queue entry), builtCount (finished units, damage/cm &gt;= 1), inProgressCount (units still under construction, cm &lt; 1), totalCount (all units), queuedBuildCount (entries in the factories' build queues), totalValue (sum of every unit's value cy()), resourceTotal / resourceGained / resourceLost (StoredResources accumulations from the units' stored resources), costPositive / costNegative (the positive/negative parts of every unit's price dq()), hasSeenNonMobileUnitType (sticky flag set for a unit type with y()), tagCounts (TeamUnitCachesTagCountList, per-CustomTag counters) and n/o (int totals split by UnitTypeInterface.j()). Field a (default 5, overwritten by Team with GameEngine.bB) and p are left obfuscated. [field names derived from this class' update logic]
+	FIELD b buildingCount I
+	FIELD c builtCount I
+	FIELD d totalCount I
+	FIELD e queuedBuildCount I
+	FIELD f inProgressCount I
+	FIELD g totalValue I
+	FIELD h resourceTotal Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD i resourceGained Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD j resourceLost Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD k costPositive Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD l costNegative Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD m hasSeenNonMobileUnitType Z
+	FIELD q tagCounts Lcom/corrodinggames/rts/game/t;

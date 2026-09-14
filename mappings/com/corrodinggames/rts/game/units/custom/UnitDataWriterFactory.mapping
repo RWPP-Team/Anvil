@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/custom/au com/corrodinggames/rts/game/units/custom/UnitDataWriterFactory
+	COMMENT UnitDataWriterFactory - builds UnitDataWriterElements from script/ini statements: only =, += and -= are accepted, the field name is looked up in UnitData.s (falling back to "core.&lt;name&gt;"), the value is parsed as a LogicBoolean and its return type must match the field's. metadata is the owning CustomUnitMetadata. [field name verified from code]
+	FIELD a metadata Lcom/corrodinggames/rts/game/units/custom/l;

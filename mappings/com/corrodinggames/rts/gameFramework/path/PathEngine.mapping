@@ -1,1 +1,35 @@
 CLASS com/corrodinggames/rts/gameFramework/k/l com/corrodinggames/rts/gameFramework/path/PathEngine
+	COMMENT PathEngine - the global pathfinding service. Fields: debugLog (the "PathEngine.a" flag that gates the Log.d tracing all over the solver), warnWhenBlocked, debugDrawCosts / debugDrawCostsOnlyOnScreen (draw the Land cost grid; a() is that overlay), debugFlowFieldFollow, debugDrawPathNodes / debugRecentPathNodes (the path-node overlay), tracePathProfiling (enables Debug.startMethodTracing("pathTrace") in PathSolver), lastFlowFieldPath (static; the most recent FlowFieldPath, cleared on map setup), allowQueuedPathSolving (when false a(Path,…) blocks and solves synchronously instead of queueing), defaultSolver (the first PathSolver, also in solvers), running (false disables a(Path,…) with "Cannot start new path, not running"), map / mapChecksum / mapWidth / mapHeight (the map currently cached; the checksum is MapCosts.a(map) and a mismatch logs "PathEngine: Error: Map checksum does not match!!!"), costsList (ArrayList of every MapCosts) + costsArray (the typed view used by a(MovementType)), costsNone/costsLand/costsBuilding/costsWater/costsAir/costsHover/costsOverCliff/costsOverCliffWater (the eight per-MovementType grids built in a(Map,boolean)), debugPaint/debugCostsPaint, solverLock (monitor used while waiting for a solver to finish), solvers (ArrayList of PathSolver threads; extra ones created when Runtime.availableProcessors() &gt; 1), activePaths (LinkedList of paths currently being solved), queuedPaths + queuedPathsLock (the queue of paths waiting for a free solver). a(Path,boolean) computes the per-distance allowedDelay (300/12/16/24/50/100/200/180/360 ms) and doubles it for lowPriority paths. [field names verified from code]
+	FIELD a debugLog Z
+	FIELD A costsWater Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD b warnWhenBlocked Z
+	FIELD B costsAir Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD C costsHover Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD d debugFlowFieldFollow Z
+	FIELD D costsOverCliff Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD e lastFlowFieldPath Lcom/corrodinggames/rts/gameFramework/k/f;
+	FIELD E costsOverCliffWater Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD f debugDrawCosts Z
+	FIELD F debugCostsPaint Landroid/graphics/Paint;
+	FIELD g debugDrawCostsOnlyOnScreen Z
+	FIELD G solverLock Ljava/lang/Object;
+	FIELD H solvers Ljava/util/ArrayList;
+	FIELD I activePaths Ljava/util/LinkedList;
+	FIELD j debugDrawPathNodes Z
+	FIELD J queuedPaths Ljava/util/LinkedList;
+	FIELD k debugRecentPathNodes Ljava/util/ArrayList;
+	FIELD K queuedPathsLock Ljava/lang/Object;
+	FIELD l tracePathProfiling Z
+	FIELD n allowQueuedPathSolving Z
+	FIELD o defaultSolver Lcom/corrodinggames/rts/gameFramework/k/o;
+	FIELD p running Z
+	FIELD q map Lcom/corrodinggames/rts/game/b/b;
+	FIELD r mapChecksum I
+	FIELD s mapWidth S
+	FIELD t mapHeight S
+	FIELD u costsList Ljava/util/ArrayList;
+	FIELD v costsArray [Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD w debugPaint Landroid/graphics/Paint;
+	FIELD x costsNone Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD y costsLand Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD z costsBuilding Lcom/corrodinggames/rts/gameFramework/k/i;

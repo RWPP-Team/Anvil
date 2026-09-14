@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/f/am com/corrodinggames/rts/gameFramework/gui/UnitHotSelectionGroup
+	COMMENT UnitHotSelectionGroup - one numbered control group of BattleInterface (SyncedObject, so it is part of the save/replay stream). Fields: units (a, the member Units, compacted by d()/e() which drop dead units and re-resolve ids), lastJumpTime (c, so a double-tap of the same digit does not re-centre every frame), isMainGroup (g, set by the (BattleInterface,boolean) constructor) and battleInterface (i). Still obfuscated: b, d, e, f, h (the extra GroupController-ish state serialized before the unit list: b and c are the only fields written by a(OutputNetStream)). [partial field names verified]
+	FIELD a units Ljava/util/ArrayList;
+	FIELD c lastJumpTime J
+	FIELD g isMainGroup Z
+	FIELD i battleInterface Lcom/corrodinggames/rts/gameFramework/f/a;

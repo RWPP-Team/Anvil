@@ -1,2 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/x com/corrodinggames/rts/game/units/MapItem
-	COMMENT Abstract air unit (movement type AIR, non-transportable). Extends OrderableUnit. [iOS-confirmed]
+	COMMENT Inert OrderableUnit subclass used as a map/placeholder item: every accessor is stubbed out (v()/k()/d(int) return null, c(float)=false, d(Unit)=false, I()/l()/Q()/F()=false, J()/P()/i()/u()/E()=true), size 20x20, MovementType.AIR, and d()/M fall back to Builder.b (the missing-image placeholder bitmap). CORRECTION: the earlier javadoc calling it "abstract air unit base" was wrong - the air base is air/AirUnit (extends MovableUnit). [iOS: MapItem]

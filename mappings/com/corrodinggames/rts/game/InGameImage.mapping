@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/game/j com/corrodinggames/rts/game/InGameImage
 	COMMENT In-game placed image (map icon/picture) rendered from a loaded bitmap with an optional image buffer.
+	FIELD a image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bitmapGraphics Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD c uniquePaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD d shader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD e paint Landroid/graphics/Paint;
+	FIELD f bounds Landroid/graphics/Rect;
+	FIELD g disabled Z

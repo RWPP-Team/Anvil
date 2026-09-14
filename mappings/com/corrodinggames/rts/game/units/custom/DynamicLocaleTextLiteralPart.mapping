@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/custom/ar com/corrodinggames/rts/game/units/custom/DynamicLocaleTextLiteralPart
+	COMMENT DynamicLocaleTextLiteralPart - a literal (non %{...}) chunk of a DynamicLocaleText: field text. [field name verified from code]
+	FIELD a text Ljava/lang/String;

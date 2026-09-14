@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/q com/corrodinggames/rts/game/units/SetTerrainTypeAction
+	COMMENT Editor SpecialAction named "SetTerrainType"+ordinal: paints one editor terrain type where the player taps; only enabled while EditorUnit's tab is the terrain tab; ActionType.targetGround / SpecialActionCategory.action. [evidence-based job name]

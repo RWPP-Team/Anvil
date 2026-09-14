@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/aj com/corrodinggames/rts/game/units/FindSpreadFireRequest
+	FIELD a x F
+	FIELD b y F
+	FIELD c found Lcom/corrodinggames/rts/game/units/ai;

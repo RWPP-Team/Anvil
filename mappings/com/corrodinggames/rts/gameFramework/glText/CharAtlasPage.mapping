@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/b/a/e com/corrodinggames/rts/gameFramework/glText/CharAtlasPage
+	FIELD a textureId I
+	FIELD b pageSize I
+	FIELD c canvas Landroid/graphics/Canvas;
+	FIELD d bitmap Landroid/graphics/Bitmap;
+	FIELD e cellsPerRow I
+	FIELD f cellsPerColumn I
+	FIELD g nextCell I
+	FIELD j cellWidth I
+	FIELD k cellHeight I
+	FIELD l pageId I
+	FIELD m paddingX I
+	FIELD n paddingY I

@@ -1,2 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/be com/corrodinggames/rts/game/units/custom/PlacementRuleSet
-	COMMENT Evaluates all `placementRule_*` ini blocks for a custom unit (PlacementRuleSet/PlacementRule/PlacementGeoIndex): checks each rule group at the target position and returns the rule's error message if placement is forbidden. [evidence-based job name]
+	COMMENT All [placementRule_*] blocks of a custom unit. Fields: groups (the distinct anyRuleInGroup CustomTags, list order kept), rules (all parsed PlacementRules), hasBlockingRuleWithoutCheckEachTile / hasBlockingRuleWithCheckEachTile (fast-path flags set while parsing) and the shared static geoIndex (PlacementGeoIndex) used for the unit geo query. a(meta, ini) parses every "placementRule_" section (returning null when there are none and warning "[placementRule_X]anyRuleInGroup: No other rule with this same group name found" for a group with a single rule); a(unit,x,y)/a(unit,tileX,tileY) test placement and return the cannotPlaceMessage of the first blocking rule, or null when allowed.
+	FIELD a groups Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b rules Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD c hasBlockingRuleWithoutCheckEachTile Z
+	FIELD d hasBlockingRuleWithCheckEachTile Z
+	FIELD e geoIndex Lcom/corrodinggames/rts/game/units/custom/bf;

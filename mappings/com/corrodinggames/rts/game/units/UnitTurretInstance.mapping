@@ -1,2 +1,5 @@
-CLASS com/corrodinggames/rts/game/units/an com/corrodinggames/rts/game/units/UnitTurretInstance
-	COMMENT Turret instance: enabled flag, muzzle id, muzzle-flash effect. Flattened inner class of Unit. [medium confidence]
+CLASS com/corrodinggames/rts/game/units/ap com/corrodinggames/rts/game/units/UnitTurretInstance
+	COMMENT Per-turret runtime state (element type of Unit's turret array): float a (current turret angle), b, c, d (the value clamped by a(int)/b(int), used as rotation direction/speed - a()==true means d==0 i.e. settled, b()==true means d&lt;0), e (reload/cooldown timer - Turret tests cL[i].e &gt; 0.0f to show the reload progress), f, flags g/m, h/i, target Unit j, k/l. a(float) resets everything. Evidence: Turret (buildings/turrets/Turret) reads exactly float a, float e and the boolean a()/b() from its Unit.cL[] entries, and no other unresolved game/units class has that field+method shape. The class previously carried the low-confidence job name UnitMovementState; renamed to UnitTurretInstance and the withdrawn name of game/units/an.
+	FIELD a angle F
+	FIELD e reloadTimer F
+	FIELD j target Lcom/corrodinggames/rts/game/units/am;

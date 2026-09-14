@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/av com/corrodinggames/rts/game/units/custom/UnitDataWriterElement
+	COMMENT UnitDataWriterElement - one "key = value"/"key += value"/"key -= value" statement of a logic/writer block: field (the resolved UnitDataField), value (the LogicBoolean/number expression) and operator (VariableScope.CachedWriter.Operator: set/add/subtract). writeToUnit(unit) applies it to a CustomUnit (only custom units supported). [field names verified from code]
+	FIELD a field Lcom/corrodinggames/rts/game/units/custom/at;
+	FIELD b value Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD c operator Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$Operator;

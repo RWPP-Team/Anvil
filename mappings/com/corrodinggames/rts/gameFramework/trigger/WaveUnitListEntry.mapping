@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/gameFramework/n/j com/corrodinggames/rts/gameFramework/trigger/WaveUnitListEntry
+	COMMENT WaveUnitListEntry - one "count unitName" pair inside a Wave line: unitType (UnitTypeInterface resolved via UnitType.a) and count (int, default 1). The third field is the synthetic outer WaveUnitList reference. [field names verified from the parser]
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD b count I

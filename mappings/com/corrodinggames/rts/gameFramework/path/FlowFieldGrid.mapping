@@ -1,0 +1,8 @@
+CLASS com/corrodinggames/rts/gameFramework/k/g com/corrodinggames/rts/gameFramework/path/FlowFieldGrid
+	COMMENT FlowFieldGrid - the per-tile result of a flow-field (Dijkstra) path build, shared by every FlowFieldPath that targets the same tile. Fields: width/height (tile counts), targetX/targetY (the goal tile, written by PathSolver.g), direction (byte[]: the 8-way direction to walk from that tile, stored as direction+1 so 0 means "unvisited", -1 means closed) and closed (byte[] flag array; c(node) =&gt; is closed). [field names verified from PathSolver.g and this class]
+	FIELD a width I
+	FIELD b height I
+	FIELD c targetX I
+	FIELD d targetY I
+	FIELD e direction [B
+	FIELD f closed [B

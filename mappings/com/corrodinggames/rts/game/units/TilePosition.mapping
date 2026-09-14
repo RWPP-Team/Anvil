@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/s com/corrodinggames/rts/game/units/TilePosition
+	COMMENT Simple (x,y) index pair into a map tileset, used as the autotile corner/edge variant produced by TerrainTiler. [evidence-based job name]

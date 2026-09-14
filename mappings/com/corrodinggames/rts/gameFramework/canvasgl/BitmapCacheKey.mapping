@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/gameFramework/b/ai com/corrodinggames/rts/gameFramework/canvasgl/BitmapCacheKey
+	COMMENT BitmapCacheKey - the lookup key of ManagedTexture's 1-pixel bitmap cache: vertical (true = 1xN, false = Nx1), config (Bitmap.Config) and size. equals/hashCode use all three; clone() lets the class double as its own reusable scratch key (ManagedTexture.reusableCacheKey). [field names verified from code]
+	FIELD a vertical Z
+	FIELD b config Landroid/graphics/Bitmap$Config;
+	FIELD c size I

@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ao com/corrodinggames/rts/gameFramework/gui/UnitResourceLagHidingFakeUnitResources
+	COMMENT One entry of UnitResourceLagHiding: unitId (the GameObject id of the unit, matched against Unit.id), ammo, energy, createdTick (the NetworkEngine.X tick the entry was created on; entries older than 80 ticks are discarded) and customResources (StoredResources with the predicted custom resource amounts). [field names verified from UnitResourceLagHiding]
+	FIELD a unitId J
+	FIELD b ammo I
+	FIELD c energy I
+	FIELD d createdTick I
+	FIELD e customResources Lcom/corrodinggames/rts/game/units/custom/e/f;

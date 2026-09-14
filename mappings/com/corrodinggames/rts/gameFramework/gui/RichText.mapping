@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ae com/corrodinggames/rts/gameFramework/gui/RichText
+	FIELD a paintNormal Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD b paintAlt Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD c paintSpecial Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD d normalPaint Landroid/graphics/Paint;
+	FIELD e altPaint Landroid/graphics/Paint;
+	FIELD f tempPaint Landroid/graphics/Paint;
+	FIELD g currentPaint Landroid/graphics/Paint;
+	FIELD h outlinePaint Landroid/graphics/Paint;
+	FIELD i elements Lcom/corrodinggames/rts/gameFramework/utility/m;

@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/au com/corrodinggames/rts/game/units/Waypoint
+	COMMENT A single queued order. Fields (descriptive job names verified against usage): type (WaypointType), unitType (UnitTypeInterface, for build), actionId (ActionId), count (build count), x/y (target position), unitId (deferred unit id, converted by c() via GameObject.a(long)), targetUnit (Unit), group (GroupControllerUnitGroup), plus flags j/m/n and positions k/l. Net (de)serialization is versioned: v40 count, v46 k/l, v58 m, v65 j, v79 n, v82 actionId. l() hands out a shared dummy target unit (Team.i.t) for position-only orders; e() resets to a plain move order. [behaviour verified]
+	FIELD a type Lcom/corrodinggames/rts/game/units/av;
+	FIELD b unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD c actionId Lcom/corrodinggames/rts/game/units/a/c;
+	FIELD d count I
+	FIELD e x F
+	FIELD f y F
+	FIELD g unitId J
+	FIELD h targetUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD i group Lcom/corrodinggames/rts/gameFramework/ab;

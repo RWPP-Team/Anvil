@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/an
+	COMMENT Data holder in game/units: boolean a=false, int b, gameFramework/effects/Blueprint c. VERIFIED SHAPE. The previous tentative name UnitTurretInstance was withdrawn because a turret-state class must expose float a + float e and a()/b() (see Unit's turret array used by Turret), which this class does not; and its third field is a Blueprint, not an effect. Left obfuscated per the no-evidence-no-rename rule.

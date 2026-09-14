@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/ai com/corrodinggames/rts/game/units/custom/PENDING_ai
+	COMMENT Undetermined holder in custom/ (left as PENDING_ai): String a plus a HashMap b (lazily allocated). Likely a named value/definition map, but no usage evidence - intentionally not renamed.

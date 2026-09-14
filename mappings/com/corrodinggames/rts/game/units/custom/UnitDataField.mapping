@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/at com/corrodinggames/rts/game/units/custom/UnitDataField
+	COMMENT UnitDataField - abstract base of every per-unit data field (hp/energy/custom fields): id (int, used by the compact net writer) and name (the lower-cased ini/script key; the static UnitData.s map is keyed by it). Subclasses either proxy UnitData (UnitDataModifiedField) or the live unit (UnitEngineField). a(unit, LogicBoolean, Operator) applies =, +=, -= via the double accessors. [field names verified from code]
+	FIELD a id I
+	FIELD b name Ljava/lang/String;

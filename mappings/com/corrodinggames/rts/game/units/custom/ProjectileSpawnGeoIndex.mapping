@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/bj com/corrodinggames/rts/game/units/custom/ProjectileSpawnGeoIndex
+	COMMENT Shared UnitSearchRequest used by ProjectileList when spawning projectiles: sourceWorld (the world the spawn came from, also the unit used as the geo-query source), entry (the ProjectileSpawnEntry being spawned), sourceUnit, targetWorld and targetUnit. All callbacks are no-ops (excludeTeam -2, no team filters); the values are only carried for the spawn call. [field names verified from code]
+	FIELD a sourceWorld Lcom/corrodinggames/rts/game/f;
+	FIELD b entry Lcom/corrodinggames/rts/game/units/custom/bk;
+	FIELD c sourceUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD d targetWorld Lcom/corrodinggames/rts/game/f;
+	FIELD e targetUnit Lcom/corrodinggames/rts/game/units/am;

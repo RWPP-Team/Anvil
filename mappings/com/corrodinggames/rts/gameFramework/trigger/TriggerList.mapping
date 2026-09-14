@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/n/b com/corrodinggames/rts/gameFramework/trigger/TriggerList
+	COMMENT TriggerList - a list of MapTriggers used as an activation reference (the trigger's own activationList, or the second list). Fields: triggers (FastArrayList of MapTrigger) and requireAll (set from the "allToActivate" property; b() then requires every listed trigger to be activated). a() = has any entries, b() = activation result. [field names verified from TriggerLoader/TriggerActivator]
+	FIELD a triggers Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b requireAll Z

@@ -1,2 +1,13 @@
 CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/GameWorld
-	COMMENT The game world/map. Extends the rotating GameObject (gameFramework.az), holds team-color Paint instances and entity lookup logic.
+	COMMENT IMPORTANT SHAPE NOTE: despite the symbol-derived name GameWorld, this class is the RUNTIME PROJECTILE (bullet/shell in flight), not the game world. Evidence: it holds field projectile (type rts/game/Projectile - the definition parsed by ProjectileTemplate), sourceUnit/targetUnit (Unit), parentProjectile (itself, for sub-projectiles/spawnProjectilesOnExplode), onlyHitTags (CustomTagTags), effect (EffectObject) and a static allProjectiles (FastArrayList pool of every live instance); it is created by a factory a(Unit,float,float[,float,int]) and driven by the GameObject update/render overrides a(F)/b(F)/c(F)Z/d(F)/e(F)/f(F)Z plus a(GameEngine)Z. Built-in turrets create one per shot, e.g. TurretGunT1.a(Unit,int)/AntiAirTurret.a(Unit,int) fill targetX/targetY (from the muzzle point: var4.K=point.x, var4.L=point.y), color, reloadTime (U) and damage/range values, then hand it to GameEngine.bR. It also does the area-damage unit query (fields like bi = UnitList, l = best target) and owns the static team-colour Paint objects (bb..bh: black/red/blue/cyan). The class name comes from the iOS symbol list and is left as-is; the body simply does not match a \\"world\\" role. Renamed fields: projectile, sourceUnit, targetUnit, parentProjectile, onlyHitTags, effect, allProjectiles, targetX, targetY, color, reloadTime. [shape verified from code + listMembers]
+	FIELD a allProjectiles Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD aE onlyHitTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD aP effect Lcom/corrodinggames/rts/gameFramework/d/e;
+	FIELD ar color I
+	FIELD bm parentProjectile Lcom/corrodinggames/rts/game/f;
+	FIELD g projectile Lcom/corrodinggames/rts/game/g;
+	FIELD j sourceUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD K targetX F
+	FIELD l targetUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD L targetY F
+	FIELD U reloadTime F

@@ -1,2 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/ag com/corrodinggames/rts/game/units/CommandType
-	COMMENT Command kind enum: attack, move, newSelection. LOW confidence - exact original name unverified; may belong to gameFramework.CommandController after flattening.
+	COMMENT Package-level enum in game/units (job name CommandType - not symbol-verified): attack, move, newSelection. NOTE: the earlier remark that it might be a CommandController inner class is wrong - ProGuard keeps inner classes in their outer class's package, and CommandController lives in gameFramework. So this is an enum of some class in game/units (or a top-level one).

@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/gameFramework/j/e com/corrodinggames/rts/gameFramework/network/ConnectionSendWorker
+	FIELD a running Ljava/lang/Boolean;
+	FIELD b outputStream Ljava/io/OutputStream;
+	FIELD c bufferedStream Ljava/io/BufferedOutputStream;
+	FIELD d dataStream Ljava/io/DataOutputStream;
+	FIELD e scratchStream Lcom/corrodinggames/rts/gameFramework/utility/w;
+	FIELD f connection Lcom/corrodinggames/rts/gameFramework/j/c;

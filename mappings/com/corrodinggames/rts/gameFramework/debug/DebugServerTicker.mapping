@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/c/c com/corrodinggames/rts/gameFramework/debug/DebugServerTicker
+	FIELD a server Lcom/corrodinggames/rts/gameFramework/c/a;

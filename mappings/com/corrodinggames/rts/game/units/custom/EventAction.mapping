@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/ae com/corrodinggames/rts/game/units/custom/EventAction
+	COMMENT EventAction - one entry of a unit's event hook: eventType (UnitEventType), extraAction (ExtraAction to run), metadata (owning CustomUnitMetadata) and filterTag (CustomTag the unit must have). The int field e (default 1) is left obfuscated. [field names verified from code]
+	FIELD a eventType Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD b extraAction Lcom/corrodinggames/rts/game/units/custom/a/g;
+	FIELD c metadata Lcom/corrodinggames/rts/game/units/custom/l;
+	FIELD d filterTag Lcom/corrodinggames/rts/game/units/custom/g;

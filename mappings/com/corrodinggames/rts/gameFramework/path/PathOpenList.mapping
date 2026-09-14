@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/k/m com/corrodinggames/rts/gameFramework/path/PathOpenList
+	COMMENT PathOpenList - the pooled A* open list. Fields: targetX/targetY (the goal tile, stored once and reused for every heuristic computation), poolMissCount (static counter of allocations made after the pool ran dry), nodePool (DirectAccessPathNodeArrayList of 1000 pre-allocated + 100 spare PathOpenListNodes) and queue (FastNodeQueue2, the actual priority queue). a(g,x,y) takes a node from the pool, sets x/y/score and pushes it; c() pops the lowest-score node and returns it to the pool; b() resets the list (clearing the pool above 50000 nodes). [field names verified from code]
+	FIELD a targetX I
+	FIELD b targetY I
+	FIELD c poolMissCount I
+	FIELD d nodePool Lcom/corrodinggames/rts/gameFramework/k/a;
+	FIELD e queue Lcom/corrodinggames/rts/gameFramework/k/e;

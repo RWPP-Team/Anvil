@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/gameFramework/m/e com/corrodinggames/rts/gameFramework/render/BitmapOrTexture
+	COMMENT BitmapOrTexture - the engine's universal image handle (a bitmap, a GL texture or an atlas region). Fields: id (unique, from the static nextId counter), width/height (p/q - the image size; every caller uses m()/l() for these), halfWidth/halfHeight (int) and halfWidthFloat/halfHeightFloat, bitmap (the backing android Bitmap), pixelData (int[] ARGB copy used for CPU pixel access by i()/j()/a(x,y)/a(x,y,argb)), version (bumped whenever the pixels change), name (debug/source name), shader (optional PaintGLShader), teamImagesPureGreen / teamImagesHueAdd / teamImagesHueShift (the per-TeamColorMode recoloured copies selected by a(TeamColorMode)) and keepInGpuMemory (set by b(boolean), read by d(); o() warns "remove with keepInGPUMemory=true"). Still obfuscated: h (Integer), l, m, n, o, v (booleans with no direct evidence) and f. [field names verified from code]
+	FIELD a teamImagesPureGreen [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b teamImagesHueAdd [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c teamImagesHueShift [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d id I
+	FIELD e version I
+	FIELD g name Ljava/lang/String;
+	FIELD i shader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD j pixelData [I
+	FIELD k bitmap Landroid/graphics/Bitmap;
+	FIELD p width I
+	FIELD q height I
+	FIELD r halfWidth I
+	FIELD s halfHeight I
+	FIELD t halfWidthFloat F
+	FIELD u halfHeightFloat F
+	FIELD w keepInGpuMemory Z
+	FIELD x nextId I

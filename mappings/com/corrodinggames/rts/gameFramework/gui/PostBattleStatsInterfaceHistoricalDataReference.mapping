@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/f/aa com/corrodinggames/rts/gameFramework/gui/PostBattleStatsInterfaceHistoricalDataReference
+	FIELD a teamHistory Lcom/corrodinggames/rts/gameFramework/bn;
+	FIELD b name Ljava/lang/String;
+	FIELD c color I
+	FIELD d paints [Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD e paintsHighlighted [Lcom/corrodinggames/rts/gameFramework/m/ag;

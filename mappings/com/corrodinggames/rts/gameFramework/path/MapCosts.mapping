@@ -1,1 +1,18 @@
 CLASS com/corrodinggames/rts/gameFramework/k/i com/corrodinggames/rts/gameFramework/path/MapCosts
+	COMMENT MapCosts - one cost grid per MovementType, used by the A* PathSolver. Fields: engine (the owning PathEngine, also registered in PathEngine.u/v), movementType, width/height (tile counts), terrainCost (byte[]; -1 = impassable for this movement type, otherwise the tile's move cost), unitBlocked (byte[]; -1 = occupied by a unit, rebuilt by c(OrderableUnit)), unitInfluence (byte[]; soft avoidance cost accumulated from nearby units, rebuilt by e()), clearanceCost (byte[]; distance-to-obstacle field built by a()/b(), -1/0 semantics), groupIds (short[] isolated-region id per tile) + groupSizes (HashMap id-&gt;size) + largestGroupSize (built by b()), buildCount/buildSkipped (guard against rebuilding the clearance cost more than 50 times per frame), unitInfluenceCount/unitInfluenceSkipped (same guard for e()), tmpPoint (reusable android Point) and k (constant -99). [field names derived from this class' update logic]
+	FIELD a movementType Lcom/corrodinggames/rts/game/units/ao;
+	FIELD b width I
+	FIELD c height I
+	FIELD d terrainCost [B
+	FIELD e unitBlocked [B
+	FIELD f unitInfluence [B
+	FIELD g groupIds [S
+	FIELD h groupSizes Ljava/util/HashMap;
+	FIELD i largestGroupSize I
+	FIELD j clearanceCost [B
+	FIELD l buildCount I
+	FIELD m buildSkipped Z
+	FIELD n tmpPoint Landroid/graphics/Point;
+	FIELD o unitInfluenceSkipped Z
+	FIELD p unitInfluenceCount I
+	FIELD q engine Lcom/corrodinggames/rts/gameFramework/k/l;

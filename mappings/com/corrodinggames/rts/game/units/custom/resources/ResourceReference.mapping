@@ -1,1 +1,31 @@
 CLASS com/corrodinggames/rts/game/units/custom/e/d com/corrodinggames/rts/game/units/custom/resources/ResourceReference
+	COMMENT ResourceReference - one [resource_&lt;key&gt;] block. Field names are the original ini keys read in a(CustomUnitMetadata, IniFile, section, key): key, isGlobal (constructor flag), displayName/displayNameShort, hideNameWhenIconShownInHUD / hideNameWhenIconShownInText, hidden, valueInStats (0..n, checked against includeInStats), stackHorizontal, priority, displayColor + displayColorUseInText, displayWithRounding, displayRoundedDown, displayWhenZero, displayInHud, displayPos, displayDigitGrouping (ResourceSeparator), displayTextPrefix/displayTextPostfix (aliases displayPrefixInHUD/displayPostfixInHUD), displayTextAppendResource (alias appendResourceInHUD) + appendResource (the resolved CustomResource) + displayTextAppendResourceWithGap + appendResourceWhenThisZero, iconImage (max 100x100) + iconImageUseInText, equivalentGlobalResourceForAI (+ equivalentGlobalResource once linked) and resource (the CustomResource registered as "g_&lt;key&gt;" for global or "l_&lt;key&gt;" for local resources). [field names verified from the ini parser]
+	FIELD a key Ljava/lang/String;
+	FIELD A equivalentGlobalResource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD b resource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD B iconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c priority F
+	FIELD C iconImageUseInText Z
+	FIELD d displayColor Ljava/lang/Integer;
+	FIELD e displayColorUseInText Z
+	FIELD f isGlobal Z
+	FIELD g displayName Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD h displayNameShort Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD i hideNameWhenIconShownInHUD Z
+	FIELD j hideNameWhenIconShownInText Z
+	FIELD k stackHorizontal Z
+	FIELD l hidden Z
+	FIELD m valueInStats F
+	FIELD n displayWithRounding Z
+	FIELD o displayRoundedDown Z
+	FIELD p displayWhenZero Z
+	FIELD q displayInHud Z
+	FIELD r displayDigitGrouping Lcom/corrodinggames/rts/game/units/custom/e/b;
+	FIELD s displayPos I
+	FIELD t displayTextPrefix Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD u displayTextPostfix Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD v displayTextAppendResource Ljava/lang/String;
+	FIELD w appendResource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD x displayTextAppendResourceWithGap Z
+	FIELD y appendResourceWhenThisZero Z
+	FIELD z equivalentGlobalResourceForAI Ljava/lang/String;

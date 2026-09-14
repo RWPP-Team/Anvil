@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/k/e com/corrodinggames/rts/gameFramework/path/FastNodeQueue2
+	COMMENT FastNodeQueue2 - the priority queue behind PathOpenList, a two-bucket approximation instead of a real heap: currentNodes (DirectAccessPathNodeArrayList of 100) holds the nodes whose score equals currentScore, pendingNodes (900) holds everything with a higher score. a(node) appends to the matching bucket (draining currentNodes into pendingNodes when the minimum score improves), a() returns a node of the current score and - when currentNodes is empty - scans pendingNodes for the new minimum (d()). b(PathOpenList) clears both buckets and returns every node to the owning list's pool; cleared records that. [field names derived from this class' logic]
+	FIELD a cleared Z
+	FIELD b currentScore I
+	FIELD c currentNodes Lcom/corrodinggames/rts/gameFramework/k/a;
+	FIELD d pendingNodes Lcom/corrodinggames/rts/gameFramework/k/a;

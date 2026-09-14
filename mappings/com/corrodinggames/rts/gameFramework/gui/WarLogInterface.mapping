@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ap com/corrodinggames/rts/gameFramework/gui/WarLogInterface
+	COMMENT WarLogInterface - the on-screen war log ("Unit created", "Base damaged", ...). Fields: gameEngine (a), paint (b, 14pt) and items (c, the reverse-chronological ArrayList of WarLogInterfaceWarLogItem). a(Unit)/b(Unit)/c(Unit) push created/upgraded/damaged entries (c uses Unit.bI() to pick base-vs-unit text), a(String[,int]) pushes a custom message; d() jumps the camera to the oldest non-dimmed entry. Items live 20s and identical entries within 90k units merge. [field names verified from code]
+	FIELD a gameEngine Lcom/corrodinggames/rts/gameFramework/l;
+	FIELD b paint Landroid/graphics/Paint;
+	FIELD c items Ljava/util/ArrayList;

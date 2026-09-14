@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/bh com/corrodinggames/rts/game/units/custom/ProjectileTemplate
+	COMMENT ProjectileTemplate (extends rts/game/Projectile, whose fields it fills in): name (projectile name used by CustomUnitMetadata.f(name)), id (index into CustomUnitMetadata.fR, referenced by TurretTemplate.projectileId/altProjectileId) and metadata (owning CustomUnitMetadata; written to the net stream by a(ProjectileTemplate, OutputNetStream) and resolved from the stream by b(InputNetStream) which throws "Could not find projectile with name:"). The static a(ProjectileTemplate, CustomUnitMetadata, IniFile, String) is the ini parser that reads every projectile key (directDamage/areaDamage/... - see the Projectile class javadoc).
+	FIELD bh name Ljava/lang/String;
+	FIELD bi id I
+	FIELD bj metadata Lcom/corrodinggames/rts/game/units/custom/l;

@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/p com/corrodinggames/rts/game/units/TerrainTiler
+	COMMENT Editor terrain painting + autotiling helper ("setTerrainType called without map loaded"). Builds the 8-neighbour bitmask of same-terrain tiles (a[256] table, keys offset by +128) and maps it to a TilePosition in the grounddetails/grounddetails2 layers so painted terrain blends with neighbours; also recognises a terrain type from an existing MapTile. [evidence-based job name]

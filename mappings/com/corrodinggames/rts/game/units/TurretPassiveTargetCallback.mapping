@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/ah com/corrodinggames/rts/game/units/TurretPassiveTargetCallback
+	FIELD a matchCount I
+	FIELD b bestDistanceByTurret [F
+	FIELD c turretAvailable [Z
+	FIELD d turretCount I
+	FIELD e filterAttackable Z
+	FIELD f ready Z

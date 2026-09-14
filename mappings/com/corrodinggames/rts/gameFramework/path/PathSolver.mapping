@@ -1,1 +1,28 @@
 CLASS com/corrodinggames/rts/gameFramework/k/o com/corrodinggames/rts/gameFramework/path/PathSolver
+	COMMENT PathSolver - one worker thread running the bidirectional A* (or the flow-field build) for a single Path at a time. Fields: engine (PathEngine), running (the run() loop condition), currentPath (the Path being solved; setupNewPath throws "setupNewPath: last path not yet finished" while idle==false), idle (volatile, set false while a path is queued), mapWidth/mapHeight (tile counts copied from the map), terrainCost/unitBlocked/unitInfluence/groupIds/clearanceCost (the cost grids linked from the MapCosts in a(MovementType,Path)), costs (the MapCosts itself), closedCost/closedFlags (int[2][]/byte[2][] per-tile closed cost and packed direction+flags, one plane per search direction), closedStamp (the iteration stamp used to "clear" those arrays without filling them; wraps back to 5), openListForward/openListBackward (the two PathOpenLists of the bidirectional search), currentNode/neighbourNode (reused scratch PathSolverNodes), threadResultList (static LinkedList of 3 pre-allocated result nodes reused by flow-field paths), threadCount/threadId (static thread counter and this thread's id, used for the "PathSolver-N" thread name), thread, lock (the monitor run() waits on), startTime/endTime (GameEngine.V() timing for the debug logs). Still obfuscated: j, k (never read in this class) and A, B (unused Object/Paint). e() is the bidirectional A* itself and g() the flow-field build. [field names verified from code]
+	FIELD a running Z
+	FIELD b terrainCost [B
+	FIELD c unitBlocked [B
+	FIELD C engine Lcom/corrodinggames/rts/gameFramework/k/l;
+	FIELD d unitInfluence [B
+	FIELD D currentPath Lcom/corrodinggames/rts/gameFramework/k/k;
+	FIELD e groupIds [S
+	FIELD f clearanceCost [B
+	FIELD g mapWidth I
+	FIELD h mapHeight I
+	FIELD i closedStamp I
+	FIELD l closedCost [[I
+	FIELD m closedFlags [[B
+	FIELD n costs Lcom/corrodinggames/rts/gameFramework/k/i;
+	FIELD o openListForward Lcom/corrodinggames/rts/gameFramework/k/m;
+	FIELD p openListBackward Lcom/corrodinggames/rts/gameFramework/k/m;
+	FIELD q currentNode Lcom/corrodinggames/rts/gameFramework/k/p;
+	FIELD r neighbourNode Lcom/corrodinggames/rts/gameFramework/k/p;
+	FIELD s idle Z
+	FIELD t threadResultList Ljava/util/LinkedList;
+	FIELD u threadCount I
+	FIELD v threadId I
+	FIELD w thread Ljava/lang/Thread;
+	FIELD x lock Ljava/lang/Object;
+	FIELD y startTime J
+	FIELD z endTime J

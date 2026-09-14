@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/m com/corrodinggames/rts/gameFramework/utility/FastArrayList
+	COMMENT FastArrayList - the engine's workhorse list (an ArrayList with direct array access). Fields: size (int, the public element count) and items (the backing Object[], initially the shared EmptyArrays.g). a() exposes the raw array, a(i) is the unchecked get, b() removes the last element (bounds-checked) and c() the unchecked variant; growth policy is "+12 when &lt;6, else +50%". Iterator = FastArrayListIterator. [field names verified from code]
+	FIELD a size I
+	FIELD b items [Ljava/lang/Object;

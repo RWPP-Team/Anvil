@@ -1,2 +1,0 @@
-CLASS com/corrodinggames/rts/gameFramework/b/w com/corrodinggames/rts/gameFramework/gl/PENDING_w
-	COMMENT Tiny holder: int[] a and int b with a(int) setter. Purpose unclear (glyph/char code buffer?). [evidence-based, name unconfirmed]

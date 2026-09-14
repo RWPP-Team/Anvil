@@ -1,1 +1,18 @@
 CLASS com/corrodinggames/rts/game/units/custom/bg com/corrodinggames/rts/game/units/custom/PlacementRule
+	COMMENT One [placementRule_&lt;name&gt;] block of a custom unit. Field names are the original ones, taken from the ini keys read in a(CustomUnitMetadata, IniFile, String): name (the section suffix after "placementRule_"), anyRuleInGroup (CustomTag - rules sharing a group are AND-ed, all others OR-ed; a single rule in a group is warned about), searchTags (CustomTagTags), searchTeam (TeamRelation, default own), searchDistance (+ searchDistanceSquared), searchOffsetX/searchOffsetY (search centre offset), excludeIncompleteBuildings, excludeNonBuildings, minCount/maxCount (Integer.MIN_VALUE/MAX_VALUE defaults, the counted units must lie inside [minCount,maxCount]), aiSuggestionOnly and blocksPlacement (mutually exclusive), cannotPlaceMessage (LocaleString shown when placement is blocked, "{0}" when absent) and checkEachTile. a() returns whether the rule affects anything (blocksPlacement || aiSuggestionOnly).
+	FIELD a name Ljava/lang/String;
+	FIELD b anyRuleInGroup Lcom/corrodinggames/rts/game/units/custom/g;
+	FIELD c searchTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD d searchTeam Lcom/corrodinggames/rts/game/q;
+	FIELD e searchDistance F
+	FIELD f searchDistanceSquared F
+	FIELD g searchOffsetX F
+	FIELD h searchOffsetY F
+	FIELD i excludeIncompleteBuildings Z
+	FIELD j excludeNonBuildings Z
+	FIELD k minCount I
+	FIELD l maxCount I
+	FIELD m aiSuggestionOnly Z
+	FIELD n blocksPlacement Z
+	FIELD o cannotPlaceMessage Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD p checkEachTile Z

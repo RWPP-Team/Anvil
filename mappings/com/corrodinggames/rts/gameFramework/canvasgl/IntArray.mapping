@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/gameFramework/b/w com/corrodinggames/rts/gameFramework/canvasgl/IntArray
+	COMMENT IntArray - a minimal growable int array used by the GL text/buffer code: data (int[], doubled on overflow) and size (element count). a(value) appends one int, growing the array when full. [field names verified from code]
+	FIELD a data [I
+	FIELD b size I

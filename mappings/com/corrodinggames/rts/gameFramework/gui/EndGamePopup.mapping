@@ -1,1 +1,21 @@
 CLASS com/corrodinggames/rts/gameFramework/f/f com/corrodinggames/rts/gameFramework/gui/EndGamePopup
+	COMMENT EndGamePopup - the \\"Victory!/Defeat\\" panel shown when a game ends (also hosts the \\"Rate game\\" yes/no prompt that fires once after 5 wins). Fields: titlePaint (a, 34pt green centred Paint), shownOnce (b), timeVisible (c, s; forced large when GameEngine.bx&lt;120 so the panel appears instantly), fireworkTimer (d, spawns a green EffectObject every 0.5s while timeVisible&lt;100), textBounds (e), statsInnerRect (f), panelRect (g), statsInterface (h, the PostBattleStatsInterface built by c()), buttons (i, the two GuiButton entries), buttonHeight (j=30), panelWidth (k=140), buttonGap (l=30), mainRect (m, the click-blocking Rect), consumeUpClick (n)/consumeDownClick (o) and the locale strings rateGameText (p, \\"gui.rategame.text\\"), yesText (q), noText (r) plus showRatePrompt (s). [field names verified from code]
+	FIELD a titlePaint Landroid/graphics/Paint;
+	FIELD b shownOnce Z
+	FIELD c timeVisible F
+	FIELD d fireworkTimer F
+	FIELD e textBounds Landroid/graphics/Rect;
+	FIELD f statsInnerRect Landroid/graphics/Rect;
+	FIELD g panelRect Landroid/graphics/Rect;
+	FIELD h statsInterface Lcom/corrodinggames/rts/gameFramework/f/y;
+	FIELD i buttons Ljava/util/ArrayList;
+	FIELD j buttonHeight I
+	FIELD k panelWidth I
+	FIELD l buttonGap I
+	FIELD m mainRect Landroid/graphics/Rect;
+	FIELD n consumeUpClick Z
+	FIELD o consumeDownClick Z
+	FIELD p rateGameText Ljava/lang/String;
+	FIELD q yesText Ljava/lang/String;
+	FIELD r noText Ljava/lang/String;
+	FIELD s showRatePrompt Z

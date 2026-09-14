@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/e/f com/corrodinggames/rts/game/units/custom/resources/StoredResources
-	COMMENT Collection of resources stored by a unit or team (custom/resources). Locked instances are immutable; static field a is the shared locked empty instance. Implements afford checks, payment, refund, transfer between units and display formatting. [iOS-confirmed]
+	COMMENT StoredResources - a set of resource amounts held by a unit or team. Fields: values (FastArrayList of StoredResource), locked (set by a(); every mutator throws "StoredResources are locked" when true) and the static EMPTY (the shared locked empty instance returned when a diff/copy is empty). Methods cover get/set/add/subtract/multiply, copy/merge/diff (a/a(Unit) returns what is missing), afford checks (b/a(f,unit,…)), payment/refund/transfer between units (c/d/b), RichText display (a(RichText,…)) and net (de)serialization (resource name + double). [field names verified from code]
+	FIELD a EMPTY Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD b values Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD c locked Z

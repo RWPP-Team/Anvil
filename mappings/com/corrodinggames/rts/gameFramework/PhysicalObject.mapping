@@ -1,2 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/ay com/corrodinggames/rts/gameFramework/PhysicalObject
-	COMMENT Physical object with width/height (es/et) and half-extents (eu/ev); base of Unit. Extends RenderedObject. [iOS-confirmed]
+	COMMENT PhysicalObject - RenderedObject with a display/collision box. Fields: width (spriteWidth, set by T(int) which also sets halfWidth) and spriteHeight (set by U(int), which also sets halfHeight), halfWidth/halfHeight (the half extents; the T/U setters use integer division and V/W the float variant), usingTextureSize (true when the box came from a texture via b(BitmapOrTexture), false via a(BitmapOrTexture,int)). NOTE: the obfuscated field e t is named spriteHeight rather than the obvious "height" only because GameObject.height (the z position, eq) already occupies that name in this hierarchy. [field names derived from code]
+	FIELD es spriteWidth I
+	FIELD et spriteHeight I
+	FIELD eu halfWidth F
+	FIELD ev halfHeight F
+	FIELD ew usingTextureSize Z

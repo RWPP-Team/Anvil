@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/gameFramework/j/aj com/corrodinggames/rts/gameFramework/network/BanEntry
+	FIELD b expiryTime J
+	FIELD c reason Ljava/lang/String;

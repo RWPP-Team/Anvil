@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/e/e com/corrodinggames/rts/game/units/custom/resources/StoredResource
-	COMMENT One stored resource entry: CustomResource (field a) + double amount (field b). (custom/resources) [iOS-confirmed]
+	COMMENT StoredResource - one entry of a StoredResources set: resource (the CustomResource) and amount (double). [field names verified from code]
+	FIELD a resource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD b amount D

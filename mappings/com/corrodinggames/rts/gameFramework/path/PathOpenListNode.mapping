@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/k/n com/corrodinggames/rts/gameFramework/path/PathOpenListNode
+	COMMENT PathOpenListNode - an entry of the A* open list with a pre-computed f-score: x, y (tile coords) and score (g + octile heuristic 11*max - 7*min, computed in a(g,x,y) and printed by toString as "PathOpenListNode [x=.., y=.., score=..]"). Implements Comparable so the queue can order by score (ties broken by x then y). [field names verified from code]
+	FIELD a x S
+	FIELD b y S
+	FIELD c score I

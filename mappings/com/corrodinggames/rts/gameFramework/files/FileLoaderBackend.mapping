@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/e/c com/corrodinggames/rts/gameFramework/files/FileLoaderBackend
+	COMMENT FileLoaderBackend - the base file-access implementation (asset/external/directory). Fields: logPrefix (String, default "FileLoader: " - prefixed to every log line), verboseLogging (b - enables "openAssetSteam converted:" logs), debugLogging (c - enables the "fileExists: ... with reader:" / "listDir" debug logs), disableAssets (d - when true the asset backend is skipped entirely: "fileExists: false with disableAssets"), errorMessage (e - last error, handed out and cleared by a()), externalStoragePath (f - cached Environment.getExternalStorageDirectory()). Key methods: f(String) converts an abstract "/SD/..." path to a real one, i(String) opens an apk asset, j(String) opens by abstract path, k(String) mkdirs, l(String) lastModified, a(File,File) rename, b(File) delete. [field names verified from code]
+	FIELD a logPrefix Ljava/lang/String;
+	FIELD b verboseLogging Z
+	FIELD c debugLogging Z
+	FIELD d disableAssets Z
+	FIELD e errorMessage Ljava/lang/String;
+	FIELD f externalStoragePath Ljava/lang/String;

@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/k com/corrodinggames/rts/game/units/custom/UnitEventRequest
+	COMMENT Poolable "run this event action on this unit" request: eventAction (EventAction), customUnit (CustomUnit), unit (Unit), tags (CustomTagTags), scope (VariableScope); a() clears all five so the instance can be reused. Field names are descriptive job names derived from the verified field types. [evidence-based job name]
+	FIELD a eventAction Lcom/corrodinggames/rts/game/units/custom/ae;
+	FIELD b customUnit Lcom/corrodinggames/rts/game/units/custom/j;
+	FIELD c unit Lcom/corrodinggames/rts/game/units/am;
+	FIELD d tags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD e scope Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;

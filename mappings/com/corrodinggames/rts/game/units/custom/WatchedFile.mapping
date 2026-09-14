@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/aa com/corrodinggames/rts/game/units/custom/WatchedFile
+	COMMENT WatchedFile - a file monitored through the FileChangeEngine: path (the absolute/abstract path, also used in "Failed to watch: &lt;path&gt;") and lastModified (the timestamp returned by FileChangeEngine.a(path, create), 0 when the engine is unavailable). a(create) re-reads the timestamp. [field names verified from code]
+	FIELD a lastModified J
+	FIELD b path Ljava/lang/String;

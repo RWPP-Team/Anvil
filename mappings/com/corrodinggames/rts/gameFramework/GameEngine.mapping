@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramework/GameEngine
+	FIELD bL map Lcom/corrodinggames/rts/game/b/b;
+	FIELD bM sound Lcom/corrodinggames/rts/gameFramework/a/e;
+	FIELD bO graphics Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD bQ settings Lcom/corrodinggames/rts/gameFramework/SettingsEngine;
+	FIELD bR effectEngine Lcom/corrodinggames/rts/gameFramework/d/c;
+	FIELD bS interfaceEngine Lcom/corrodinggames/rts/gameFramework/f/g;
+	FIELD bW minimap Lcom/corrodinggames/rts/gameFramework/f/o;
+	FIELD bX networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	FIELD bY statsHandler Lcom/corrodinggames/rts/gameFramework/bg;
+	FIELD cA viewWidth F
+	FIELD cB viewHeight F
+	FIELD cu cameraX I
+	FIELD cv cameraY I

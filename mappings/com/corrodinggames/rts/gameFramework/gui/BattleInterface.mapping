@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/f/a com/corrodinggames/rts/gameFramework/gui/BattleInterface
+	COMMENT The in-game battle HUD/interface (extends SyncedObject): owns the InterfaceEngine, camera/selection state, hot-selection groups (UnitHotSelectionGroup list aA), pause menu, command/order issuing, drag-select and rendering of the in-game UI. Sibling of BattleInterfaceSpecialActionEffect. [evidence-based job name]

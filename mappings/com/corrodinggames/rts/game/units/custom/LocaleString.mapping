@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/custom/bb com/corrodinggames/rts/game/units/custom/LocaleString
+	COMMENT LocaleString - a localised string used all over the custom-unit/mod system. Fields: EMPTY (the shared empty instance), entries (LocaleStringEntry[] - one per language, with a null locale meaning "default"), resolvedText (the text for the currently selected locale, "&lt;NO DEFAULT TEXT FOUND&gt;" if none matched), cachedLocaleId (LocaleEngine.generation at the time resolvedText was computed) and localeKey (set when the string is a translation key to be looked up via LocaleEngine.a). b() resolves/re-resolves, a() tests emptiness, a(search,replace) rewrites every entry. [field names verified from code]
+	FIELD a EMPTY Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD b entries [Lcom/corrodinggames/rts/game/units/custom/bc;
+	FIELD c resolvedText Ljava/lang/String;
+	FIELD d cachedLocaleId I
+	FIELD e localeKey Ljava/lang/String;

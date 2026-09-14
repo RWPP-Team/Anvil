@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/o com/corrodinggames/rts/game/units/custom/AnimationReference
+	COMMENT AnimationReference - lazy by-name reference to an AnimationSet of the owning CustomUnitMetadata: name (the animation name as written in the ini) and animation (the resolved AnimationSet, cached). b() resolves against metadata.dr comparing AnimationSet names case-insensitively; a() throws "Failed to find animation:&lt;name&gt;" when unresolved. The third field is the synthetic outer CustomUnitMetadata reference. [field names verified from code]
+	FIELD a name Ljava/lang/String;
+	FIELD b animation Lcom/corrodinggames/rts/game/units/custom/f;

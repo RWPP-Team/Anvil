@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/f/v com/corrodinggames/rts/gameFramework/gui/CommonUI
+	COMMENT CommonUI - a minimal android.view.Menu implementation backed by GuiButton/PauseMenuItem objects (everything except add(...)/clear()/getItem()/size() throws "not Implemented"). Field: items (a, the ArrayList of PauseMenuItem). Used to build the in-game pause menu without the platform menu. [field names verified from code]
+	FIELD a items Ljava/util/ArrayList;

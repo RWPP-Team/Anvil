@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/ad
+	COMMENT Small resettable unit state block (UNRESOLVED NAME - left obfuscated): 4 booleans + 2 floats, a() resets them (d := true). Roles inferred only from shape; no code evidence for the original name -> intentionally not renamed.

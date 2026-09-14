@@ -1,1 +1,18 @@
 CLASS com/corrodinggames/rts/gameFramework/j/g com/corrodinggames/rts/gameFramework/network/DiscoveredServer
+	FIELD a isLan Z
+	FIELD A serverType I
+	FIELD b serverId Ljava/lang/String;
+	FIELD c host Ljava/lang/String;
+	FIELD d lanAddress Ljava/lang/String;
+	FIELD e url Ljava/lang/String;
+	FIELD f description Ljava/lang/String;
+	FIELD g port I
+	FIELD h portOpen Z
+	FIELD i pingTime J
+	FIELD k gameVersion Ljava/lang/String;
+	FIELD l protocolVersion I
+	FIELD m passwordRequired Z
+	FIELD n playerName Ljava/lang/String;
+	FIELD q mapName Ljava/lang/String;
+	FIELD w maxPlayers I
+	FIELD z requiredMods Ljava/lang/String;

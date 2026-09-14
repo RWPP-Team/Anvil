@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/gameFramework/f/d com/corrodinggames/rts/gameFramework/gui/TextDrawUtils
+	FIELD a tmpRect Landroid/graphics/Rect;
+	FIELD b wrappedLines Ljava/util/ArrayList;
+	FIELD c tmpHighlightRect Landroid/graphics/RectF;
+	FIELD d tmpTextRect Landroid/graphics/RectF;

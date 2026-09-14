@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/h/b com/corrodinggames/rts/gameFramework/localization/FallbackResourceBundle
+	COMMENT FallbackResourceBundle - a ResourceBundle that falls back to a second bundle for missing keys: primary (the locale-specific "Strings_xx.properties") and fallback (the root strings.properties). Used when LocaleEngine finds a locale file, so untranslated keys still resolve. [field names verified from code]
+	FIELD a primary Ljava/util/ResourceBundle;
+	FIELD b fallback Ljava/util/ResourceBundle;

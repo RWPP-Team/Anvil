@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/gameFramework/j/al com/corrodinggames/rts/gameFramework/network/GameChecksumValue
+	FIELD a name Ljava/lang/String;
+	FIELD b value J
+	FIELD c active Z

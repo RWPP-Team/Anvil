@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/ab com/corrodinggames/rts/game/units/UnitSize
+	COMMENT Unit size/impact class passed to Unit's size setter (e.g. Turret and AirFactory constructors call a(UnitSize.large)): verysmall, small, normal, large, largeUnit, building, buildingNoShockwaveOrSmoke, verylargeBuilding - controls shockwave/smoke effects and building scaling. [evidence-based job name]

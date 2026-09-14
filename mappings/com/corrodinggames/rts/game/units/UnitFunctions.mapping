@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/aq com/corrodinggames/rts/game/units/UnitFunctions
+	COMMENT Static unit helper functions: Bresenham line walk over MapCosts to test/clear line-of-sight (a(MovementType,...) returns whether the path is clear), finding the neighbouring open tile when a unit is stuck on a map edge/corner, and target validation (cN==null, k()/h()/i() modifier checks) for attack/reclaim/repair. [behaviour verified]

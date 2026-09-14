@@ -1,0 +1,10 @@
+CLASS com/corrodinggames/rts/game/units/custom/aj com/corrodinggames/rts/game/units/custom/DynamicLocaleText
+	COMMENT DynamicLocaleText - a localised text with embedded "%{logicBoolean}" expressions (used for action names/descriptions). Fields: empty (shared empty instance), parts (the parsed DynamicLocaleTextPart array, null when the text contains no "%{"), entries (the LocaleStringEntry[] localisation table), resolvedText (the text for the current locale, "&lt;NO DEFAULT TEXT FOUND&gt;" when missing), cachedLocaleId (LocaleEngine.c at the time resolvedText was computed), localeKey (the locale key, when the text came from a locale lookup instead of the table), lastError (the "Error: ..." message of the last failed %{ } parse) and metadata (owning CustomUnitMetadata). a() re-splits resolvedText; a(unit)/b(unit) render the parts. [field names verified from code]
+	FIELD a empty Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD b parts [Lcom/corrodinggames/rts/game/units/custom/ak;
+	FIELD c entries [Lcom/corrodinggames/rts/game/units/custom/bc;
+	FIELD d resolvedText Ljava/lang/String;
+	FIELD e cachedLocaleId I
+	FIELD f localeKey Ljava/lang/String;
+	FIELD g lastError Ljava/lang/String;
+	FIELD h metadata Lcom/corrodinggames/rts/game/units/custom/l;

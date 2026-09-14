@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/m/ag com/corrodinggames/rts/gameFramework/render/UniquePaint
+	FIELD r defaults Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD s antiAlias Z
+	FIELD t shader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD u lockedDown Z

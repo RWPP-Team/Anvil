@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/bm com/corrodinggames/rts/game/units/custom/SoundListPlayback
+	COMMENT One sound of a SoundList: sound (SoundHandle resolved via CustomUnitMetadataLoader, including the ROOT:/SHARED: prefix) and volume (default 0.3, optionally overridden by the "name:volume" ini syntax). The third field is the synthetic outer SoundList reference. [field names verified from code]
+	FIELD a sound Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD b volume F

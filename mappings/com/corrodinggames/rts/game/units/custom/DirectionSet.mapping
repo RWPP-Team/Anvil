@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/m com/corrodinggames/rts/game/units/custom/DirectionSet
+	COMMENT DirectionSet - the "&lt;prefix&gt;direction_*" ini block of a custom unit (used for multi-unit formations): useMainTurret (direction_useMainTurret), units (direction_units - spacing/count), strideX (direction_strideX), strideY (direction_strideY), starting (direction_starting). a(meta, ini, section, prefix, required) parses them and returns null when direction_units is 0. [field names verified from the ini parser]
+	FIELD a useMainTurret Z
+	FIELD b units F
+	FIELD c strideX I
+	FIELD d strideY I
+	FIELD e starting F

@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/u com/corrodinggames/rts/game/units/FogRevealer
+	COMMENT FogRevealer - an invisible MapItem that clears the fog of war around its position for a limited time (UnitType.fogRevealer; PlaceholderUnit also reports this type). Fields: a (radius, default 14) and b (time left in ticks, default 60, decremented every frame until the object destroys itself). a(OutputNetStream)/a(InputNetStream) are versioned (tag 0). [field names verified from code]

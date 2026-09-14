@@ -1,1 +1,34 @@
 CLASS com/corrodinggames/rts/gameFramework/a/e com/corrodinggames/rts/gameFramework/sound/SoundEngine
+	COMMENT SoundEngine - the sfx player. Every static SoundHandle field is named after the R.raw resource loaded for it in a(Context): attack, attack2, move, click, clickAdd, clickRemove, warning, message, interfaceError, missileFire, missileHit, unitExplode, buildingExplode, tankFiring, cannonFiring, gunFire, firing3, firing4, largeGunFire1, largeGunFire2, lightingBurst, plasmaFire, plasmaFire2, bugDie, bugAttack, nukeExplode, nukeLaunch, laserDeflect, laserDeflect2. Instance fields: recentSounds (ArrayList used by a(SoundHandle,float) to suppress duplicate sounds in the same frame), disabled, and the static factory (AndroidSoundFactory / NullSoundFactory). Volume handling applies settings.masterVolume*gameVolume/interfaceVolume and scales down with distance (var6.cb.j() = in replay, var6.bt = time scale). [field names verified from the resource loads]
+	FIELD a recentSounds Ljava/util/ArrayList;
+	FIELD A bugDie Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD b disabled Z
+	FIELD B bugAttack Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD c factory Lcom/corrodinggames/rts/gameFramework/a/h;
+	FIELD C nukeExplode Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD d attack2 Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD D nukeLaunch Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD e attack Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD E laserDeflect Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD f move Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD F laserDeflect2 Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD g click Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD h clickAdd Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD i clickRemove Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD j warning Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD k message Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD l interfaceError Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD m missileFire Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD n missileHit Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD o unitExplode Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD p buildingExplode Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD q tankFiring Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD r cannonFiring Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD s gunFire Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD t firing3 Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD u firing4 Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD v largeGunFire1 Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD w largeGunFire2 Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD x lightingBurst Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD y plasmaFire Lcom/corrodinggames/rts/gameFramework/a/i;
+	FIELD z plasmaFire2 Lcom/corrodinggames/rts/gameFramework/a/i;

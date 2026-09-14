@@ -1,0 +1,13 @@
+CLASS com/corrodinggames/rts/gameFramework/b/ac com/corrodinggames/rts/gameFramework/canvasgl/TextureAlias
+	FIELD a canvas Lcom/corrodinggames/rts/gameFramework/b/k;
+	FIELD b renderTarget Lcom/corrodinggames/rts/gameFramework/b/ad;
+	FIELD c emptyBitmap Landroid/graphics/Bitmap;
+	FIELD d regionsByBitmap Ljava/util/HashMap;
+	FIELD e recentBitmaps Ljava/util/ArrayList;
+	FIELD f regionCount I
+	FIELD g full Z
+	FIELD h trackRecent Z
+	FIELD i nextX I
+	FIELD j nextY I
+	FIELD k rowHeight I
+	FIELD l padding I

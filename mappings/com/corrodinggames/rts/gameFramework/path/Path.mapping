@@ -1,1 +1,27 @@
 CLASS com/corrodinggames/rts/gameFramework/k/k com/corrodinggames/rts/gameFramework/path/Path
+	COMMENT Path - one requested/solved path (base class of FlowFieldPath). Fields: engine (PathEngine), id (unique id from the static nextId counter; printed by the debug logs), createdFrame (GameEngine frame the Path was constructed on), startX/startY/endX/endY (tile coords; PathSolver clips them to the map), targetHeight (Float), endRadius (goal is reached within this many tiles), movementType, avoidTightSpaces / requiredClearance (p/q - the clearance weighting and the minimum clearance in the A* cost function), nodes (LinkedList of PathSolverNode, compressed when sent over the network), terrainCost/unitBlocked/unitInfluence/groupIds/clearanceCost (cached copies of the MapCosts grids, filled by e() and released by f()), allowLowPriorityCosts/r etc. Behaviour/state fields: lowPriority (doubles allowedDelay), allowedDelay (the frame budget before a(PathEngine) hands the path to a blocking solve; printed in PathEngine.f() as "allowedDelay:"), remainingTime (counts down by the frame time in PathEngine.d(float)), hasResult (set when the grid was solved or the path arrived over the network), cancelled (set by PathEngine when a path is abandoned) and cancelRequested (volatile-ish flag checked in PathSolver.e()/g() to abort a running solve). Still obfuscated: k (boolean turn-cost mode passed to a(MovementType,short,short,Float,boolean)) and n/m reuse. [field names verified from code + PathEngine string literals]
+	FIELD a engine Lcom/corrodinggames/rts/gameFramework/k/l;
+	FIELD A unitInfluence [B
+	FIELD B groupIds [S
+	FIELD C clearanceCost [B
+	FIELD e id I
+	FIELD f nextId I
+	FIELD g createdFrame I
+	FIELD h startX S
+	FIELD i startY S
+	FIELD j targetHeight Ljava/lang/Float;
+	FIELD l endX S
+	FIELD m endY S
+	FIELD n endRadius S
+	FIELD o movementType Lcom/corrodinggames/rts/game/units/ao;
+	FIELD p avoidTightSpaces Z
+	FIELD q requiredClearance I
+	FIELD r lowPriority Z
+	FIELD s allowedDelay F
+	FIELD t remainingTime F
+	FIELD u hasResult Z
+	FIELD v cancelled Z
+	FIELD w cancelRequested Z
+	FIELD x nodes Ljava/util/LinkedList;
+	FIELD y terrainCost [B
+	FIELD z unitBlocked [B

@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ad com/corrodinggames/rts/gameFramework/gui/PostBattleStatsInterfaceRelativeHistoryItem
+	FIELD a time I
+	FIELD b values [I
+	FIELD c total I

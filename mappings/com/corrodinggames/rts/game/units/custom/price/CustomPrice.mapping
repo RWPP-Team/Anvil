@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/game/units/custom/d/b com/corrodinggames/rts/game/units/custom/price/CustomPrice
+	COMMENT CustomPrice - a resource/flag cost. Every field name is the original ini sub-key, read in b(CustomUnitMetadata, String): credits, energy, hp, shield, ammo, setFlag, unsetFlag, hasFlag, hasMissingFlag and customResources (StoredResources of CustomResource amounts, i.e. mod resources). Statics: emptyPrice (the shared zero price), emptyResources (shared empty StoredResources), unusableColor (red used when the unit cannot afford the price). Supports +, * (a(CustomPrice,float)), combine (a(p1,p2)), affordability/consume/refund (a/b/g/h), RichText rendering, and net (de)serialization. [field names verified from the ini parser]
+	FIELD b credits I
+	FIELD c energy F
+	FIELD d hp F
+	FIELD e shield F
+	FIELD f ammo I
+	FIELD g setFlag I
+	FIELD h unsetFlag I
+	FIELD i hasFlag I
+	FIELD j hasMissingFlag I
+	FIELD k customResources Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD l unusableColor I
+	FIELD m emptyResources Lcom/corrodinggames/rts/game/units/custom/e/f;

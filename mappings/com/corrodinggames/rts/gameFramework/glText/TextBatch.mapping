@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/b/a/d com/corrodinggames/rts/gameFramework/glText/TextBatch
+	FIELD a glText Lcom/corrodinggames/rts/gameFramework/b/a/b;
+	FIELD b meshBuffer Lcom/corrodinggames/rts/gameFramework/b/a/g;
+	FIELD c vertexData [F
+	FIELD d writeIndex I
+	FIELD e maxGlyphs I
+	FIELD f glyphCount I
+	FIELD g currentPage I
+	FIELD h mvpMatrix [F
+	FIELD i mvpUniformLocation I

@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/d com/corrodinggames/rts/gameFramework/CommandControllerCachedCommandPath
+	COMMENT Cached path for one unit of a command group: Path a, unit id b, start c/d, target e/f, an int g (team/step id) and MovementType h. Serialized with the owning CommandControllerCommand. [behaviour verified]
+	FIELD a path Lcom/corrodinggames/rts/gameFramework/k/k;
+	FIELD b unitId J
+	FIELD c startX F
+	FIELD d startY F
+	FIELD e targetX F
+	FIELD f targetY F
+	FIELD h movementType Lcom/corrodinggames/rts/game/units/ao;

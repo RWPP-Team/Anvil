@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/a com/corrodinggames/rts/game/units/AttackMode
+	COMMENT Unit attack/fire mode enum (field n of gameFramework/CommandControllerCommand is of this type): outOfRange, onlyInRange, returnFire, holdFire, guardArea, aggressive, mixed. [name matches the observed usage + constants]

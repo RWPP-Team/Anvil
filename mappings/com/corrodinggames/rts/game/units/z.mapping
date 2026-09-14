@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/z
+	COMMENT Unit + SpecialAction request record (UNRESOLVED NAME - left obfuscated): fields Unit a, Unit b, boolean c, SpecialAction d; a() clears all four and returns this (pool-style reuse). Intentionally not renamed pending a symbols match.

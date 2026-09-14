@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/gameFramework/d/g com/corrodinggames/rts/gameFramework/effects/ImageStrip
+	COMMENT ImageStrip - a spritesheet used by effects (EffectObject/EffectEmitter). Fields: name, frameWidth (default 25), frameHeight (25), offsetX (1), offsetY (1), strideX (26), strideY (26), framesPerRow (Integer.MAX_VALUE), image (the sheet), shadowImage (built by a() as a black silhouette of image), imageIsSingleFrame (set when the whole image is one frame) and the static scratch objects tmpRect/tmpRectF. a(frameIndex, x, y, paint) computes the source rect from offset/stride and draws via the render engine. Frame/offset/stride semantics verified against EffectTemplate's parser which sets frameWidth = image.width()/totalFrames, frameHeight = image.height(), offsetX/Y = 0 and strideX/Y = frameWidth/Height. [field names verified from code]
+	FIELD a name Ljava/lang/String;
+	FIELD b frameWidth I
+	FIELD c frameHeight I
+	FIELD d offsetX I
+	FIELD e offsetY I
+	FIELD f strideX I
+	FIELD g strideY I
+	FIELD h framesPerRow I
+	FIELD i image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD j shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD k imageIsSingleFrame Z
+	FIELD l tmpRect Landroid/graphics/Rect;
+	FIELD m tmpRectF Landroid/graphics/RectF;

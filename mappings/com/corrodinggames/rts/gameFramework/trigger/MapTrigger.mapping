@@ -1,1 +1,27 @@
 CLASS com/corrodinggames/rts/gameFramework/n/a com/corrodinggames/rts/gameFramework/trigger/MapTrigger
+	COMMENT MapTrigger - one trigger block of a map (parsed by TriggerLoader). Named fields, each verified from the assignment in TriggerLoader.a(TriggerEngine, GroupObject): name (the Tiled object's name), id ("id" property, defaults to the object name), uniqueId (id plus "_N" when duplicates exist), type (TriggerType from the object's "type"), sourceObject (the Tiled GroupObject providing read-only properties), activationList (TriggerList of activation conditions), elements (the TriggerElements, e.g. UnitDetectElement / TeamTagDetectElement), allToActivate ("allToActivate"), delay ("delay"), repeatDelay ("repeatDelay"), repeatCount ("repeatCount"), resetActivationAfter ("resetActivationAfter"), warmup ("warmup"), team ("team"), text ("text", only for mapText/objective), globalMessage ("globalMessage"), textOffsetX/textOffsetY ("textOffsetX"/"textOffsetY"), textPaint (the Paint built for mapText: textColor/textSize, bold) and drawArrow ("style"=arrow), plus runtime delayPassed and activationStartTime. Still obfuscated (no assignment evidence): e (second TriggerList), i, j, u (booleans) and k, l (ints). [field names verified from the ini/trigger parser]
+	FIELD a name Ljava/lang/String;
+	FIELD A globalMessage Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD b id Ljava/lang/String;
+	FIELD B textPaint Landroid/graphics/Paint;
+	FIELD c uniqueId Ljava/lang/String;
+	FIELD C drawArrow Z
+	FIELD d activationList Lcom/corrodinggames/rts/gameFramework/n/b;
+	FIELD f elements Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD g type Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD h allToActivate Z
+	FIELD j activated Z
+	FIELD k activationTime I
+	FIELD m delayPassed Z
+	FIELD n activationStartTime I
+	FIELD o repeatCount I
+	FIELD p repeatDelay I
+	FIELD q resetActivationAfter I
+	FIELD r delay I
+	FIELD s warmup I
+	FIELD t sourceObject Lcom/corrodinggames/rts/game/b/a;
+	FIELD v spawner Lcom/corrodinggames/rts/game/units/custom/bp;
+	FIELD w textOffsetX F
+	FIELD x textOffsetY F
+	FIELD y team Lcom/corrodinggames/rts/game/n;
+	FIELD z text Lcom/corrodinggames/rts/game/units/custom/bb;

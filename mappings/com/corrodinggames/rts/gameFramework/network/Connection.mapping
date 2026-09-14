@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramework/network/Connection
+	FIELD a closed Z
+	FIELD A lastPingValue I
+	FIELD b stopping Z
+	FIELD B lastPingTime J
+	FIELD c id I
+	FIELD d socket Ljava/net/Socket;
+	FIELD e address Ljava/net/InetAddress;
+	FIELD E version I
+	FIELD f packetQueue Ljava/util/concurrent/ConcurrentLinkedQueue;
+	FIELD F receiveWorker Lcom/corrodinggames/rts/gameFramework/j/d;
+	FIELD G sendWorker Lcom/corrodinggames/rts/gameFramework/j/e;
+	FIELD H receiveThread Ljava/lang/Thread;
+	FIELD I sendThread Ljava/lang/Thread;
+	FIELD j parent Lcom/corrodinggames/rts/gameFramework/j/c;
+	FIELD l lastSentPacket Lcom/corrodinggames/rts/gameFramework/j/au;
+	FIELD n forwardedHost Ljava/lang/String;
+	FIELD p connected Z
+	FIELD q relayServer Z
+	FIELD R commandCount I
+	FIELD s isRelay Z
+	FIELD S commandRateTime J
+	FIELD T commandLimitReached Z
+	FIELD W engine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	FIELD z player Lcom/corrodinggames/rts/game/e;

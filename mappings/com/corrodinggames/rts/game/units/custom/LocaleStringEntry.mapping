@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/bc com/corrodinggames/rts/game/units/custom/LocaleStringEntry
+	COMMENT LocaleStringEntry - one locale variant of a LocaleString: locale (the language code; null = default fallback) and text. a(regex,replacement) rewrites text in place. [field names verified from code]
+	FIELD a locale Ljava/lang/String;
+	FIELD b text Ljava/lang/String;

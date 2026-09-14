@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/b/e com/corrodinggames/rts/gameFramework/canvasgl/BitmapTexture
+	FIELD l bitmap Landroid/graphics/Bitmap;

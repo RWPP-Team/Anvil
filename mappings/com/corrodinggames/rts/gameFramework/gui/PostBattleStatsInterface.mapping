@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/f/y com/corrodinggames/rts/gameFramework/gui/PostBattleStatsInterface
+	COMMENT PostBattleStatsInterface - the post-battle statistics screen (stats list + per-team / per-team-group line graphs), created by a() from GameEngine.statsHandler.d() (TeamHistory list) + DisplayedStat.a(). Fields: statsList (e, the DisplayedStat rows drawn by a(Rect,float)), graphType (f, default overallStats), scaleMode (g, StatsGraphScaleMode absolute/relative), teamHistoryRefs (h) + teamCaches (i) for the per-team view, mergedTeamHistoryRefs (j) + mergedTeamCaches (k) for the merged-team-group view, currentHistoryRefs (l) / currentCaches (m) pointing at whichever pair is active, hoveredRef (a, the series under the cursor), graphChangeTime (n) and the tooltip state hoverTime (u), hoverX (v), hoverY (w) with tooltipLines (s) / tooltipColors (t). Rendering: graphBackground (o, the panel image), buttonImages (p - stats_button_info/income/armyvalue/buildingvalue/totalvalue/toggle_relative/toggle_teams), buttonSrcRect (r), graphImageRect (q); leftPaint (c) / rightPaint (d) are the label/value paints and tmpRect (b) a scratch Rect. [field names verified from code]
+	FIELD a hoveredRef Lcom/corrodinggames/rts/gameFramework/f/aa;
+	FIELD b tmpRect Landroid/graphics/Rect;
+	FIELD c leftPaint Landroid/graphics/Paint;
+	FIELD d rightPaint Landroid/graphics/Paint;
+	FIELD e statsList Ljava/util/ArrayList;
+	FIELD f graphType Lcom/corrodinggames/rts/gameFramework/f/ac;
+	FIELD g scaleMode Lcom/corrodinggames/rts/gameFramework/f/z;
+	FIELD h teamHistoryRefs Ljava/util/ArrayList;
+	FIELD i teamCaches [Lcom/corrodinggames/rts/gameFramework/f/ab;
+	FIELD j mergedTeamHistoryRefs Ljava/util/ArrayList;
+	FIELD k mergedTeamCaches [Lcom/corrodinggames/rts/gameFramework/f/ab;
+	FIELD l currentHistoryRefs Ljava/util/ArrayList;
+	FIELD m currentCaches [Lcom/corrodinggames/rts/gameFramework/f/ab;
+	FIELD n graphChangeTime J
+	FIELD o graphBackground Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD p buttonImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD q graphImageRect Landroid/graphics/Rect;
+	FIELD r buttonSrcRect Landroid/graphics/Rect;
+	FIELD s tooltipLines Ljava/util/ArrayList;
+	FIELD t tooltipColors Ljava/util/ArrayList;
+	FIELD u hoverTime I
+	FIELD v hoverX I
+	FIELD w hoverY I

@@ -1,0 +1,11 @@
+CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Unit
+	FIELD bE unitList Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD bV dead Z
+	FIELD bW deathTime J
+	FIELD cE ammo I
+	FIELD cF energy I
+	FIELD cg angle F
+	FIELD cj radius F
+	FIELD cu hp F
+	FIELD cv maxHp F
+	FIELD dp damageFlash F

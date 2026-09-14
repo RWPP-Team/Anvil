@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/bo com/corrodinggames/rts/game/units/custom/UnitConfigException
+	COMMENT UnitConfigException - the checked exception used for every custom-unit ini problem. Fields b/c/d are extra context strings set by the (message, detail), (message, section, key) constructors; the 2-arg constructor stores the detail in b, the 3-arg one stores section/key in c/d. Original names unknown -> fields left obfuscated, only the semantics documented. [shape verified]

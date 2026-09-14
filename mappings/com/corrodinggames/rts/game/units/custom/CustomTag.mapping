@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/g com/corrodinggames/rts/game/units/custom/CustomTag
+	COMMENT CustomTag - a global, interned unit tag. Fields: name (the lower-cased tag text, also returned by toString), allTags (static ArrayList registry used by c(name) to intern tags), emptyArray (static CustomTag[0]) and emptyTags (static CustomTagTags.EMPTY). a(String)/a(String, fallback) parse a comma separated tag list into CustomTagTags; b(name) interns exactly one tag (throwing "Expected single tag, got:"); a(CustomTagTags, OutputNetStream)/a(InputNetStream) read/write the comma separated form; a(tags,tags) = intersects, b(tags,tags) = contains-all. [field names verified from code]
+	FIELD a name Ljava/lang/String;
+	FIELD b allTags Ljava/util/ArrayList;
+	FIELD c emptyArray [Lcom/corrodinggames/rts/game/units/custom/g;
+	FIELD d emptyTags Lcom/corrodinggames/rts/game/units/custom/h;

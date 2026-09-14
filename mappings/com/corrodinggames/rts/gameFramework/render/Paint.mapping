@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/gameFramework/m/af com/corrodinggames/rts/gameFramework/render/Paint
+	FIELD a shaderName Ljava/lang/String;
+	FIELD c dirty Z
+	FIELD e shaderValues [F
+	FIELD f texture Lcom/corrodinggames/rts/gameFramework/m/e;

@@ -1,0 +1,14 @@
+CLASS com/corrodinggames/rts/gameFramework/b/b com/corrodinggames/rts/gameFramework/canvasgl/BasicTexture
+	FIELD a textureId I
+	FIELD b textureType I
+	FIELD c sourceWidth I
+	FIELD d sourceHeight I
+	FIELD e textureWidth I
+	FIELD f textureHeight I
+	FIELD g invTextureWidth F
+	FIELD h invTextureHeight F
+	FIELD k canvas Lcom/corrodinggames/rts/gameFramework/b/k;
+	FIELD l recycled Z
+	FIELD m recycleRequested Z
+	FIELD n allTextures Ljava/util/WeakHashMap;
+	FIELD o finalizerThreadMarker Ljava/lang/ThreadLocal;

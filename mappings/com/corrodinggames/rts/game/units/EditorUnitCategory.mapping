@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/o com/corrodinggames/rts/game/units/EditorUnitCategory
+	COMMENT Editor unit-picker category enum: land, air, sea, buildings, bio. Each constant filters UnitTypeInterface by movement type / building flag; same wrap-around selection helpers as EditorUnitTab. [evidence-based job name]

@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/x com/corrodinggames/rts/game/units/custom/ProjectileReference
+	COMMENT A ProjectileReference (extends CustomUnitReference extends LazyUnitTypeReference, so it also carries iniKey/section/unitName/unitType/resolved): projectileName is the projectile name written in the ini and projectile is the ProjectileTemplate resolved through the linked CustomUnitMetadata (f(name)). b() links (throwing "Could not find projectile:&lt;name&gt; on unit target:... used on:... in section:..."), f() returns the template. [field names verified from the error message]
+	FIELD g projectileName Ljava/lang/String;
+	FIELD h projectile Lcom/corrodinggames/rts/game/units/custom/bh;
