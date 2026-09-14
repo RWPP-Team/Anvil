@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/java/b com/corrodinggames/rts/java/SlickGameContainer
+	METHOD a (Lorg/newdawn/slick/Graphics;)V
+		ARG 1 graphics

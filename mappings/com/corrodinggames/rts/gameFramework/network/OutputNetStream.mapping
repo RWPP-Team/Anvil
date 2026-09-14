@@ -5,3 +5,11 @@ CLASS com/corrodinggames/rts/gameFramework/j/as com/corrodinggames/rts/gameFrame
 	FIELD c rootStream Ljava/io/DataOutputStream;
 	FIELD d version I
 	FIELD e blockStack Ljava/util/LinkedList;
+	METHOD a writeDouble (D)V
+	METHOD a writeFloat (F)V
+	METHOD a writeInt (I)V
+	METHOD a writeLong (J)V
+	METHOD a writeTeamId (Lcom/corrodinggames/rts/game/n;)V
+	METHOD a writeBoolean (Z)V
+	METHOD c writeByte (I)V
+	METHOD c writeUTF (Ljava/lang/String;)V
