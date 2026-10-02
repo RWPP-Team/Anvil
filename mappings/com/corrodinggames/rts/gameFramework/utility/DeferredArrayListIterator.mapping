@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/p com/corrodinggames/rts/gameFramework/utility/DeferredArrayListIterator
+	FIELD a list Lcom/corrodinggames/rts/gameFramework/utility/o;
+	FIELD b remaining I
+	FIELD c lastReturned I
+	FIELD d expectedModCount I
+	METHOD hasNext hasNext ()Z
+	METHOD next next ()Ljava/lang/Object;
+	METHOD remove remove ()V

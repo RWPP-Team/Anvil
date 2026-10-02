@@ -6,3 +6,41 @@ CLASS com/corrodinggames/rts/gameFramework/j/k com/corrodinggames/rts/gameFramew
 	FIELD e rootStream Ljava/io/DataInputStream;
 	FIELD f currentStream Ljava/io/DataInputStream;
 	FIELD g blockStack Ljava/util/LinkedList;
+	METHOD a resetToRootStream ()V
+	METHOD a setVersion (I)V
+	METHOD a readUnit (Lcom/corrodinggames/rts/gameFramework/j/m;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD a readGameObjectList (Lcom/corrodinggames/rts/gameFramework/utility/m;Ljava/lang/Class;)V
+	METHOD a readGameObject (Ljava/lang/Class;)Lcom/corrodinggames/rts/gameFramework/w;
+	METHOD a readMark (Ljava/lang/String;)V
+	METHOD a startBlock (Ljava/lang/String;Z)V
+	METHOD a startBlock (Ljava/lang/String;ZZ)V
+	METHOD a startBlockAndGetName (ZZ)Ljava/lang/String;
+	METHOD b getVersion ()I
+	METHOD b setProtocolVersion (I)V
+	METHOD b readEnum (Ljava/lang/Class;)Ljava/lang/Enum;
+	METHOD b startBlock (Ljava/lang/String;)V
+	METHOD c getProtocolVersion ()I
+	METHOD c getBlockRaw (Ljava/lang/String;)[B
+	METHOD d readByte ()B
+	METHOD d endBlock (Ljava/lang/String;)V
+	METHOD e readBoolean ()Z
+	METHOD f readInt ()I
+	METHOD g readFloat ()F
+	METHOD h readDouble ()D
+	METHOD i readLong ()J
+	METHOD j readNullableUTF ()Ljava/lang/String;
+	METHOD k readNullableInt ()Ljava/lang/Integer;
+	METHOD l readUTF ()Ljava/lang/String;
+	METHOD m readCustomTag ()Lcom/corrodinggames/rts/game/units/custom/g;
+	METHOD n readLong2 ()J
+	METHOD o readUnit ()Lcom/corrodinggames/rts/game/units/am;
+	METHOD p readOrderableUnit ()Lcom/corrodinggames/rts/game/units/y;
+	METHOD q readUnitType ()Lcom/corrodinggames/rts/game/units/as;
+	METHOD r readTeam ()Lcom/corrodinggames/rts/game/n;
+	METHOD s readTeamOrNull ()Lcom/corrodinggames/rts/game/n;
+	METHOD t readByteArray ()[B
+	METHOD u readSubStream ()Lcom/corrodinggames/rts/gameFramework/j/k;
+	METHOD v readShort ()S
+	METHOD w getInputStream ()Ljava/io/InputStream;
+	METHOD x startBlockAndGetName ()Ljava/lang/String;
+	METHOD y readNullablePointF ()Landroid/graphics/PointF;

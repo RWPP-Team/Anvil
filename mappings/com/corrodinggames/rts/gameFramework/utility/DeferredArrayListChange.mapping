@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/r com/corrodinggames/rts/gameFramework/utility/DeferredArrayListChange
+	FIELD a type Lcom/corrodinggames/rts/gameFramework/utility/q;
+	FIELD b object Ljava/lang/Object;

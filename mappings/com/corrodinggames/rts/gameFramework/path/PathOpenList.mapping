@@ -5,3 +5,9 @@ CLASS com/corrodinggames/rts/gameFramework/k/m com/corrodinggames/rts/gameFramew
 	FIELD c poolMissCount I
 	FIELD d nodePool Lcom/corrodinggames/rts/gameFramework/k/a;
 	FIELD e queue Lcom/corrodinggames/rts/gameFramework/k/e;
+	METHOD a takeFromPool ()Lcom/corrodinggames/rts/gameFramework/k/n;
+	METHOD a setTarget (II)V
+	METHOD a addNode (ISS)V
+	METHOD a returnToPool (Lcom/corrodinggames/rts/gameFramework/k/n;)V
+	METHOD b resetPool ()V
+	METHOD c poll ()Lcom/corrodinggames/rts/gameFramework/k/n;

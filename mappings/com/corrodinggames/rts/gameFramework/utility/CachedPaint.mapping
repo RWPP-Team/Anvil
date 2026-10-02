@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/z com/corrodinggames/rts/gameFramework/utility/CachedPaint
+	FIELD a color I
+	FIELD b style Landroid/graphics/Paint$Style;
+	FIELD c paint Lcom/corrodinggames/rts/gameFramework/m/ag;

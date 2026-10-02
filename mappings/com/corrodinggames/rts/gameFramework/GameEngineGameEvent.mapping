@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/p com/corrodinggames/rts/gameFramework/GameEngineGameEvent
+	FIELD a timestamp J
+	FIELD b gameEngine Lcom/corrodinggames/rts/gameFramework/l;

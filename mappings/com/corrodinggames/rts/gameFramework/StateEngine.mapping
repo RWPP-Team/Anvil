@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/be com/corrodinggames/rts/gameFramework/StateEngine
+	FIELD a disabled Z
+	FIELD b saveFileName Ljava/lang/String;
+	FIELD c backupFileName Ljava/lang/String;
+	FIELD d saveToExternalStorage Z
+	FIELD e instance Lcom/corrodinggames/rts/gameFramework/be;
+	FIELD f levelStates Ljava/util/HashMap;
+	METHOD a saveState (Landroid/content/Context;)V
+	METHOD a readState (Ljava/io/DataInputStream;)Z
+	METHOD a writeState (Ljava/io/DataOutputStream;)Z
+	METHOD a getLevelKey (Ljava/lang/String;)Ljava/lang/String;
+	METHOD b loadState (Landroid/content/Context;)V
+	METHOD b getOrCreateLevelState (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/bf;
+	METHOD c getInstance (Landroid/content/Context;)Lcom/corrodinggames/rts/gameFramework/be;

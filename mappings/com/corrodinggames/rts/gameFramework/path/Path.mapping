@@ -10,6 +10,7 @@ CLASS com/corrodinggames/rts/gameFramework/k/k com/corrodinggames/rts/gameFramew
 	FIELD h startX S
 	FIELD i startY S
 	FIELD j targetHeight Ljava/lang/Float;
+	FIELD k useAlternateTurnCosts Z
 	FIELD l endX S
 	FIELD m endY S
 	FIELD n endRadius S
@@ -25,3 +26,17 @@ CLASS com/corrodinggames/rts/gameFramework/k/k com/corrodinggames/rts/gameFramew
 	FIELD x nodes Ljava/util/LinkedList;
 	FIELD y terrainCost [B
 	FIELD z unitBlocked [B
+	METHOD a getNodes ()Ljava/util/LinkedList;
+	METHOD a getFollower (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/gameFramework/k/c;
+	METHOD a setPath (Lcom/corrodinggames/rts/game/units/ao;SSLjava/lang/Float;Z)V
+	METHOD a writeOutCompressedPath (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a readInCompressedPath (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD a equalsPath (Lcom/corrodinggames/rts/gameFramework/k/k;)Z
+	METHOD a setNodes (Ljava/util/LinkedList;)V
+	METHOD a setEnd (SSS)V
+	METHOD b isFlowField ()Z
+	METHOD c hasNodes ()Z
+	METHOD e cacheCosts ()V
+	METHOD f clearCachedCosts ()V
+	METHOD g drawDebug ()V
+	METHOD h drawDebugNodes ()V

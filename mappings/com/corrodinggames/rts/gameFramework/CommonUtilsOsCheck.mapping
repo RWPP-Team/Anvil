@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/g com/corrodinggames/rts/gameFramework/CommonUtilsOsCheck
+	FIELD a detectedOS Lcom/corrodinggames/rts/gameFramework/h;
+	METHOD a getOperatingSystemType ()Lcom/corrodinggames/rts/gameFramework/h;

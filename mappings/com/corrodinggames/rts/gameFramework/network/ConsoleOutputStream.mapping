@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ax com/corrodinggames/rts/gameFramework/network/ConsoleOutputStream
+	FIELD a bufferedStream Ljava/io/BufferedOutputStream;
+	FIELD b name Ljava/lang/String;
+	FIELD c byteStream Ljava/io/ByteArrayOutputStream;
+	FIELD d printStream Ljava/io/PrintStream;
+	FIELD e streamWrapped Z
+	METHOD a flush ()V
+	METHOD b close ()V

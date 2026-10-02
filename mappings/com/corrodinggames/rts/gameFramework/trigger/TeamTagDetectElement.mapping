@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/n/a/b com/corrodinggames/rts/gameFramework/trigger/TeamTagDetectElement
+	FIELD a team Lcom/corrodinggames/rts/game/n;
+	FIELD b tag Lcom/corrodinggames/rts/game/units/custom/g;
+	METHOD d parse (Lcom/corrodinggames/rts/gameFramework/n/a;)Lcom/corrodinggames/rts/gameFramework/n/a/b;

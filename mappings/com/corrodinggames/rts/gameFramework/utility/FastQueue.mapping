@@ -1,1 +1,20 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/g com/corrodinggames/rts/gameFramework/utility/FastQueue
+	FIELD b elements [Ljava/lang/Object;
+	FIELD c head I
+	FIELD d tail I
+	METHOD a pollFirst ()Ljava/lang/Object;
+	METHOD a copyElements ([Ljava/lang/Object;)[Ljava/lang/Object;
+	METHOD a delete (I)Z
+	METHOD a addLast (Ljava/lang/Object;)V
+	METHOD add add (Ljava/lang/Object;)Z
+	METHOD b removeFirstOccurrence (Ljava/lang/Object;)Z
+	METHOD c doubleCapacity ()V
+	METHOD clear clear ()V
+	METHOD contains contains (Ljava/lang/Object;)Z
+	METHOD d checkInvariants ()V
+	METHOD isEmpty isEmpty ()Z
+	METHOD iterator iterator ()Ljava/util/Iterator;
+	METHOD remove remove (Ljava/lang/Object;)Z
+	METHOD size size ()I
+	METHOD toArray toArray ()[Ljava/lang/Object;
+	METHOD toArray toArray ([Ljava/lang/Object;)[Ljava/lang/Object;

@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/k/h com/corrodinggames/rts/gameFramework/path/FlowFieldFollowerDebug
+	FIELD a path Lcom/corrodinggames/rts/gameFramework/k/f;
+	FIELD b tmpPoint Lcom/corrodinggames/rts/game/units/af;
+	FIELD c stepPoint Landroid/graphics/Point;
+	METHOD a getFlowTarget (FF)Lcom/corrodinggames/rts/game/units/af;
+	METHOD e getUnitFlowTarget (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/af;

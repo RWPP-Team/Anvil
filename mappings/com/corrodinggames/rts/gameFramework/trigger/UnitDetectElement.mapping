@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/gameFramework/n/a/c com/corrodinggames/rts/gameFramework/trigger/UnitDetectElement
+	FIELD a maxUnits Ljava/lang/Integer;
+	FIELD b minUnits Ljava/lang/Integer;
+	FIELD c team Lcom/corrodinggames/rts/game/n;
+	FIELD d unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD e onlyBuildings Z
+	FIELD f onlyIdle Z
+	FIELD g onlyMainBuildings Z
+	FIELD h onlyOnResourcePool Z
+	FIELD i onlyEmptyQueue Z
+	FIELD j onlyBuilders Z
+	FIELD k onlyTechLevel I
+	FIELD l onlyAttack Z
+	FIELD m onlyAttackAir Z
+	FIELD n onlyIfEmpty Z
+	FIELD o onlyWithTag Lcom/corrodinggames/rts/game/units/custom/g;
+	FIELD p includeIncomplete Z
+	METHOD d parse (Lcom/corrodinggames/rts/gameFramework/n/a;)Lcom/corrodinggames/rts/gameFramework/n/a/c;
+	METHOD e isUnitCountInRange (Lcom/corrodinggames/rts/gameFramework/n/a;)Z

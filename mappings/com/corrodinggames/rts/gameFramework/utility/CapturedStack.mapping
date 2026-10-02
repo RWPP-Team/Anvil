@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/b com/corrodinggames/rts/gameFramework/utility/CapturedStack
+	FIELD a message Ljava/lang/String;
+	FIELD b stackTrace [Ljava/lang/StackTraceElement;
+	METHOD a getTitle (Lcom/corrodinggames/rts/gameFramework/utility/b;)Ljava/lang/String;
+	METHOD b getStackTrace (Lcom/corrodinggames/rts/gameFramework/utility/b;)[Ljava/lang/StackTraceElement;

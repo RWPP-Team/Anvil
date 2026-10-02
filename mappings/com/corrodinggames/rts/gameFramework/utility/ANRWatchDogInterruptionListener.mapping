@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/gameFramework/utility/f com/corrodinggames/rts/gameFramework/utility/ANRWatchDogInterruptionListener
+	METHOD a onInterrupted (Ljava/lang/InterruptedException;)V

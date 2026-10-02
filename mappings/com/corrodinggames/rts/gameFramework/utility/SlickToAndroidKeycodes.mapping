@@ -1,0 +1,17 @@
+CLASS com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes
+	FIELD a slickToAndroidCodes Ljava/util/HashMap;
+	FIELD b gdxToAndroidCodes Ljava/util/HashMap;
+	FIELD c gdxToSlickCodes Ljava/util/HashMap;
+	FIELD d slickCodes Ljava/util/HashMap;
+	FIELD e androidCodes Ljava/util/HashMap;
+	FIELD f gdxCodes Ljava/util/HashMap;
+	FIELD g androidCodeNames Ljava/util/HashMap;
+	METHOD a initSlickToAndroid ()V
+	METHOD a getAndroidKeyName (I)Ljava/lang/String;
+	METHOD a loadKeycodeMap (Ljava/lang/Class;)Ljava/util/HashMap;
+	METHOD a getAndroidKeyCode (Ljava/lang/String;)I
+	METHOD a buildKeycodeMap (Ljava/lang/String;Ljava/util/HashMap;Ljava/util/HashMap;)Ljava/util/HashMap;
+	METHOD b initGdxToAndroid ()V
+	METHOD b slickToAndroid (I)I
+	METHOD c initGdxToSlick ()V
+	METHOD c slickToAndroidFallback (I)Ljava/lang/Integer;

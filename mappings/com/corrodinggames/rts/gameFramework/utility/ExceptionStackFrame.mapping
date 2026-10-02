@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/c com/corrodinggames/rts/gameFramework/utility/ExceptionStackFrame
+	FIELD a capturedStack Lcom/corrodinggames/rts/gameFramework/utility/b;
+	METHOD fillInStackTrace fillInStackTrace ()Ljava/lang/Throwable;

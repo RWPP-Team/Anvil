@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/i com/corrodinggames/rts/gameFramework/utility/AndroidAssetIndex
+	FIELD a context Landroid/content/Context;
+	FIELD b loggedBlockedOnLoad Z
+	FIELD c index Ljava/util/ArrayList;
+	METHOD a createIndexInBackground ()V
+	METHOD a listFilesRecursive (Landroid/content/res/AssetManager;Ljava/lang/String;I)Ljava/util/ArrayList;
+	METHOD a contains (Ljava/lang/String;)Z
+	METHOD b createIndex ()V
+	METHOD b listFiles (Ljava/lang/String;)[Ljava/lang/String;
+	METHOD c getIndex ()Ljava/util/ArrayList;

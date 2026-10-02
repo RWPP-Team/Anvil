@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/t com/corrodinggames/rts/gameFramework/GameEngineMouseWheelGameEvent
+	FIELD c wheelDelta I
+	FIELD d outerEngine Lcom/corrodinggames/rts/gameFramework/l;

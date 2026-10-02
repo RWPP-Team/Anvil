@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/k com/corrodinggames/rts/gameFramework/utility/BooleanHolder
+	FIELD a value Z

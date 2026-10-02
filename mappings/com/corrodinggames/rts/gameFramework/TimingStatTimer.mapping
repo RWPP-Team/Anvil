@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/gameFramework/br com/corrodinggames/rts/gameFramework/TimingStatTimer
+	FIELD a gameEngine Lcom/corrodinggames/rts/gameFramework/l;
+	FIELD e stopwatch Lcom/corrodinggames/rts/gameFramework/bu;
+	FIELD f paint Landroid/graphics/Paint;
+	FIELD g rect Landroid/graphics/Rect;
+	METHOD a timeNow ()J
+	METHOD a formatMillis (D)Ljava/lang/String;
+	METHOD a getElapsedMillis (J)F
+	METHOD a getElapsedMillis (JJ)D
+	METHOD a startTimer (Lcom/corrodinggames/rts/gameFramework/bs;)V
+	METHOD a logTiming (Ljava/lang/String;J)V
+	METHOD b update ()V
+	METHOD b formatNanosAsMillis (D)Ljava/lang/String;
+	METHOD b stopTimer (Lcom/corrodinggames/rts/gameFramework/bs;)V
+	METHOD c draw ()V

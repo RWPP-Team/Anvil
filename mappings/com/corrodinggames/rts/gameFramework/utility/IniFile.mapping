@@ -1,31 +1,85 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ab com/corrodinggames/rts/gameFramework/utility/IniFile
+	FIELD a fileName Ljava/lang/String;
+	FIELD b trackingReads Z
+	FIELD c readKeys Ljava/util/LinkedHashSet;
+	FIELD d duplicateKeys Ljava/util/ArrayList;
+	FIELD e badLines Ljava/util/ArrayList;
+	FIELD f sourcePath Ljava/lang/String;
+	FIELD g hiddenCharPattern Ljava/util/regex/Pattern;
+	FIELD h sectionPattern Ljava/util/regex/Pattern;
+	FIELD i keyValuePattern Ljava/util/regex/Pattern;
 	FIELD j sections Ljava/util/LinkedHashMap;
+	FIELD k locked Z
+	METHOD a lockChanges ()V
+	METHOD a getRequiredLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a getResource (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/e/a;Z)Lcom/corrodinggames/rts/game/units/custom/e/a;
+	METHOD a getTags (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/h;)Lcom/corrodinggames/rts/game/units/custom/h;
 	METHOD a getLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a getLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a getUnitActionList (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/u;)Lcom/corrodinggames/rts/game/units/custom/u;
+	METHOD a getDynamicLocaleText (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/aj;
+	METHOD a copyFrom (Lcom/corrodinggames/rts/gameFramework/utility/ab;)V
+	METHOD a parse (Ljava/io/BufferedReader;)V
 	METHOD a parse (Ljava/io/InputStream;)V
+	METHOD a parseFile (Ljava/lang/String;)V
+	METHOD a parseLogicBoolean (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a parseLogicBoolean (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a throwUnknownValue (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/RuntimeException;
+	METHOD a parseEnum (Ljava/lang/String;Ljava/lang/Enum;Ljava/lang/Class;)Ljava/lang/Enum;
+	METHOD a recordRead (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a getDouble (Ljava/lang/String;Ljava/lang/String;D)D
+	METHOD a getLong (Ljava/lang/String;Ljava/lang/String;J)J
 	METHOD a getPointF (Ljava/lang/String;Ljava/lang/String;Landroid/graphics/PointF;)Landroid/graphics/PointF;
 	METHOD a getRect (Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Rect;)Landroid/graphics/Rect;
+	METHOD a getTag (Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/g;)Lcom/corrodinggames/rts/game/units/custom/g;
 	METHOD a getPoint3F (Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/utility/ai;)Lcom/corrodinggames/rts/gameFramework/utility/ai;
 	METHOD a getBoolean (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 	METHOD a getEnum (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Enum;Ljava/lang/Class;)Ljava/lang/Enum;
+	METHOD a getFloat (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
+	METHOD a getTimeValue (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;Z)Ljava/lang/Float;
 	METHOD a getInteger (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+	METHOD a getShort (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Short;)Ljava/lang/Short;
+	METHOD a recordRead (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a getBooleanExclusive (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 	METHOD a getValueExclusive (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a getLocaleString (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/custom/bb;
 	METHOD a lookupKey (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 	METHOD a getValueOrRecordDefault (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Ljava/lang/String;
+	METHOD a parseTime (Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)F
+	METHOD b checkUnusedKeys ()V
+	METHOD b getUnitLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	METHOD b unescapeNewlines (Ljava/lang/String;)Ljava/lang/String;
 	METHOD b getValueOrNull (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD b getTime (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
+	METHOD b getInt (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
 	METHOD b getStringStrict (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD c getContentHash ()I
+	METHOD c getNumberLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD c getSectionsWithKey (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD c throwKeyNotFound (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD c getTimeInMs (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
 	METHOD c getString (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD d getSections ()Ljava/util/LinkedHashMap;
+	METHOD d getSectionsWithKeyStartingWith (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD d getRequiredBoolean (Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD d getTimeRate (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
+	METHOD d setDefault (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD e getSectionsStartingWith (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD e getRequiredStringStrict (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD e set (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	METHOD f hasSection (Ljava/lang/String;)Z
 	METHOD f getRequiredString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD f getStringList (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD g sectionHasKeys (Ljava/lang/String;)Z
 	METHOD g getIntStrict (Ljava/lang/String;Ljava/lang/String;)I
 	METHOD g parseBooleanStrict (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD h getRequiredTime (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Float;
 	METHOD h parseFloatStrict (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)F
 	METHOD i getFloatStrict (Ljava/lang/String;Ljava/lang/String;)F
 	METHOD i parseIntStrict (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 	METHOD j getDouble (Ljava/lang/String;Ljava/lang/String;)D
+	METHOD j parseSingleTag (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/g;
+	METHOD k getKeysStartingWith (Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD l hasKeyStartingWith (Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD m getSectionsStartingWithEither (Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD n hasKey (Ljava/lang/String;Ljava/lang/String;)Z

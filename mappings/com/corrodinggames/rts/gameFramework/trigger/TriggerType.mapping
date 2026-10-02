@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/n/e com/corrodinggames/rts/gameFramework/trigger/TriggerType
+	FIELD a objective Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD b event_move Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD c event_changeCredits Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD d event_teamTags Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD e event_unitAdd Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD f event_unitRemove Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD g mapText Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD h moveCamera Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD i trigger_unitDetect Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD j trigger_teamTagDetect Lcom/corrodinggames/rts/gameFramework/n/e;
+	FIELD k trigger_basic Lcom/corrodinggames/rts/gameFramework/n/e;
+	METHOD a getSerializedName ()Ljava/lang/String;
+	METHOD a fromString (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/n/e;

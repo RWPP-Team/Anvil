@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ae com/corrodinggames/rts/gameFramework/utility/FileReaderManager
+	FIELD a lock Ljava/lang/Object;
+	FIELD b rwmodFileReader Lcom/corrodinggames/rts/gameFramework/utility/ag;
+	FIELD c mountFileReader Lcom/corrodinggames/rts/gameFramework/utility/af;
+	METHOD a safSupported ()Z
+	METHOD a getFileReader (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/af;
+	METHOD b invalidateAll ()V
+	METHOD b getMountFileReader (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/af;
+	METHOD c closeFileReader (Ljava/lang/String;)V

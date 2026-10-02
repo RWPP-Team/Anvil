@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/bt com/corrodinggames/rts/gameFramework/TimingStatTimerTimeGroup
+	FIELD a enabled Z
+	FIELD b count I
+	FIELD c totalTimeMs D
+	FIELD d peakTimeMs D
+	FIELD e startTime J
+	FIELD f name Ljava/lang/String;
+	METHOD a start ()V
+	METHOD b stop ()V
+	METHOD c getSummary ()Ljava/lang/String;
+	METHOD d stopAndLog ()V
+	METHOD e logAndReset ()V
+	METHOD f reset ()V

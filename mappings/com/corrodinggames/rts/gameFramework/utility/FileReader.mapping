@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/af com/corrodinggames/rts/gameFramework/utility/FileReader
+	METHOD a invalidate ()V
+	METHOD a fileExists (Ljava/lang/String;)Z
+	METHOD a rename (Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD a getEntrySize (Ljava/lang/String;Z)J
+	METHOD b listFiles (Ljava/lang/String;)[Ljava/lang/String;
+	METHOD b openAssetSteam (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD c deleteFile (Ljava/lang/String;)Z
+	METHOD c writableOutputSteam (Ljava/lang/String;Z)Ljava/io/OutputStream;
+	METHOD d isDirectory (Ljava/lang/String;)Z
+	METHOD e createDirectory (Ljava/lang/String;)Z
+	METHOD f convertAbstractPathForDebug (Ljava/lang/String;)Ljava/lang/String;
+	METHOD g lastModified (Ljava/lang/String;)J

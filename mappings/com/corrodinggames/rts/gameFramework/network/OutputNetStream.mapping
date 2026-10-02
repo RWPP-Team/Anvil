@@ -5,15 +5,45 @@ CLASS com/corrodinggames/rts/gameFramework/j/as com/corrodinggames/rts/gameFrame
 	FIELD c rootStream Ljava/io/DataOutputStream;
 	FIELD d version I
 	FIELD e blockStack Ljava/util/LinkedList;
+	METHOD a flushAll ()V
 	METHOD a writeBytesWithLength ([B)V
 	METHOD a writeDouble (D)V
 	METHOD a writeFloat (F)V
 	METHOD a writeInt (I)V
+	METHOD a createPacketOnChannel (II)Lcom/corrodinggames/rts/gameFramework/j/au;
 	METHOD a writeLong (J)V
+	METHOD a writeNullablePointF (Landroid/graphics/PointF;)V
 	METHOD a writeTeamId (Lcom/corrodinggames/rts/game/n;)V
+	METHOD a writeUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a writeUnitType (Lcom/corrodinggames/rts/game/units/as;)V
+	METHOD a writeCustomTag (Lcom/corrodinggames/rts/game/units/custom/g;)V
+	METHOD a writeOrderableUnit (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD a writeConnectionId (Lcom/corrodinggames/rts/gameFramework/j/c;)V
+	METHOD a writeInputNetStream (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD a writeGameObjectList (Lcom/corrodinggames/rts/gameFramework/utility/m;)V
+	METHOD a writeGameObject (Lcom/corrodinggames/rts/gameFramework/w;)V
 	METHOD a writeStream (Ljava/io/ByteArrayOutputStream;)V
+	METHOD a writeFileContents (Ljava/io/File;)V
+	METHOD a writeInputStream (Ljava/io/InputStream;I)V
+	METHOD a writeEnum (Ljava/lang/Enum;)V
+	METHOD a writeNullableInt (Ljava/lang/Integer;)V
+	METHOD a endBlock (Ljava/lang/String;)V
+	METHOD a startBlock (Ljava/lang/String;Z)V
 	METHOD a writeShort (S)V
 	METHOD a writeBoolean (Z)V
+	METHOD b resetToRootStream ()V
 	METHOD b writeBytes ([B)V
+	METHOD b createPacket (I)Lcom/corrodinggames/rts/gameFramework/j/au;
+	METHOD b writeUnitIfAlive (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD b writeGameObjectIfNotRemoved (Lcom/corrodinggames/rts/gameFramework/w;)V
+	METHOD b writeNullableUTF (Ljava/lang/String;)V
+	METHOD c getContentAsString ()Ljava/lang/String;
 	METHOD c writeByte (I)V
 	METHOD c writeUTF (Ljava/lang/String;)V
+	METHOD d toByteArray ()[B
+	METHOD d writeIfDebugOnly (Ljava/lang/String;)V
+	METHOD e writeMark ()V
+	METHOD e startBlock (Ljava/lang/String;)V
+	METHOD f isWriteIfDebugOnlySupported ()Z
+	METHOD g getVersion ()I
+	METHOD h close ()V

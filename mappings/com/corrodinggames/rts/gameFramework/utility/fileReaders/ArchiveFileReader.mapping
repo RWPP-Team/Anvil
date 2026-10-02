@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/a/b com/corrodinggames/rts/gameFramework/utility/fileReaders/ArchiveFileReader
+	FIELD a rootUri Landroid/net/Uri;
+	FIELD b rootDocumentUri Landroid/net/Uri;
+	FIELD c readablePath Ljava/lang/String;
+	FIELD d writable Z
+	FIELD e rootNode Lcom/corrodinggames/rts/gameFramework/utility/a/c;
+	FIELD f invalidated Z
+	FIELD g revision I
+	METHOD a invalidate ()V
+	METHOD a fileExists (Ljava/lang/String;)Z
+	METHOD a renameFile (Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD a writableOutputSteam (Ljava/lang/String;Z)Ljava/io/OutputStream;
+	METHOD b testRoot ()V
+	METHOD b openAssetSteam (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD c getContext ()Landroid/content/Context;
+	METHOD c getLastModified (Ljava/lang/String;)J
+	METHOD d getEntrySize (Ljava/lang/String;)J
+	METHOD e deleteFile (Ljava/lang/String;)Z
+	METHOD f getFileUri (Ljava/lang/String;)Landroid/net/Uri;
+	METHOD g listFiles (Ljava/lang/String;)[Ljava/lang/String;
+	METHOD h isDirectory (Ljava/lang/String;)Z
+	METHOD i getParentUri (Ljava/lang/String;)Landroid/net/Uri;
+	METHOD j createDirectory (Ljava/lang/String;)Z
+	METHOD k getNode (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/a/c;
+	METHOD l findNode (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/a/c;

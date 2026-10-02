@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/a/a com/corrodinggames/rts/gameFramework/utility/fileReaders/MountFileReader
+	FIELD a saf Lcom/corrodinggames/rts/appFramework/android/AndroidSAF;
+	FIELD b openSafLinks Ljava/util/HashMap;
+	FIELD c nextLinkId I
+	METHOD a createSAFLink (Landroid/net/Uri;Z)Ljava/lang/String;
+	METHOD a createSAFLink (Landroid/net/Uri;ZLjava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/a/b;
+	METHOD d getArchiveFileReader (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/utility/a/b;
+	METHOD h log (Ljava/lang/String;)V
+	METHOD i logVerbose (Ljava/lang/String;)V
+	METHOD j logDebug (Ljava/lang/String;)V
+	METHOD k logDebugVerbose (Ljava/lang/String;)V
+	METHOD l isSafLinkPath (Ljava/lang/String;)Z
+	METHOD m getSafLinkPath (Ljava/lang/String;)Ljava/lang/String;
+	METHOD n getPathInZip (Ljava/lang/String;)Ljava/lang/String;

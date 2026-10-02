@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/j com/corrodinggames/rts/gameFramework/FileChangeEngine
+	FIELD a fileModifiedTimes Ljava/util/concurrent/ConcurrentHashMap;
+	FIELD b watcherThread Lcom/corrodinggames/rts/gameFramework/k;
+	METHOD a initWatcher ()V
+	METHOD a readLastModified (Ljava/lang/String;)J
+	METHOD a getLastModified (Ljava/lang/String;Z)J
+	METHOD a setWatcherEnabled (Z)V
+	METHOD b checkForChanges ()V

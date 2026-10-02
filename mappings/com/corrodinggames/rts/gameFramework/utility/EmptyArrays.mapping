@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/x com/corrodinggames/rts/gameFramework/utility/EmptyArrays
+	FIELD a booleans [Z
+	FIELD b bytes [B
+	FIELD c chars [C
+	FIELD d doubles [D
+	FIELD e ints [I
+	FIELD f classes [Ljava/lang/Class;
+	FIELD g objects [Ljava/lang/Object;
+	FIELD h strings [Ljava/lang/String;
+	FIELD i throwables [Ljava/lang/Throwable;
+	FIELD j stackTraceElements [Ljava/lang/StackTraceElement;

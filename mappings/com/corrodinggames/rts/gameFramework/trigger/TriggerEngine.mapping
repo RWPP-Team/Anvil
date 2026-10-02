@@ -1,17 +1,72 @@
 CLASS com/corrodinggames/rts/gameFramework/n/f com/corrodinggames/rts/gameFramework/trigger/TriggerEngine
+	FIELD a debugLogTriggers Z
+	FIELD A waveTextTimer F
+	FIELD b lastTriggerUpdateTime I
+	FIELD B waveTextDelayTimer F
+	FIELD c lastSlowUpdateTime I
+	FIELD d neutralTeam Lcom/corrodinggames/rts/game/n;
+	FIELD D attackPoints Ljava/util/ArrayList;
+	FIELD e winObjective Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD E waveHeaderTextPaint Landroid/graphics/Paint;
+	FIELD f loseObjective Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD F waveUnitsTextPaint Landroid/graphics/Paint;
 	FIELD g objectives Ljava/util/ArrayList;
+	FIELD G waveCountdownTextPaint Landroid/graphics/Paint;
+	FIELD h briefingText Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD H wavePreviewTextPaint Landroid/graphics/Paint;
+	FIELD i hasMapTexts Z
+	FIELD j showBriefingPending Z
 	FIELD J triggers Ljava/util/ArrayList;
+	FIELD k survivalMap Z
+	FIELD K tmpPoint Landroid/graphics/PointF;
+	FIELD l survivalWavesClassic Z
+	FIELD L cameraPanIndex I
+	FIELD m defeat Z
+	FIELD M cameraPanTimer F
+	FIELD n skirmishMap Z
+	FIELD N mapWavesLoaded Z
+	FIELD o shareFogWithAllies Z
 	FIELD O waves Ljava/util/ArrayList;
+	FIELD P waveSpawnPoint Landroid/graphics/PointF;
+	FIELD q hasCameraStart Z
+	FIELD Q spawnPointLocked Z
 	FIELD r currentWaveIndex I
+	FIELD R spawnPointInitialized Z
+	FIELD s currentWaveUnitsText Ljava/lang/String;
 	FIELD S survivalWaveWeights Ljava/util/ArrayList;
+	FIELD t nextWaveUnitsText Ljava/lang/String;
 	FIELD T experimentalWaveWeights Ljava/util/ArrayList;
+	FIELD u waveUnitIndex I
+	FIELD v unitsPerWaveType I
+	FIELD w spawnCycle I
+	FIELD y aiDifficulty I
 	FIELD z nextWaveTimer F
+	METHOD a isSkirmish ()Z
+	METHOD a updateTriggers (I)V
+	METHOD a readFromStream (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD a onTriggerActivated (Lcom/corrodinggames/rts/gameFramework/n/a;)V
+	METHOD a populateWaveUnits (Lcom/corrodinggames/rts/gameFramework/n/i;IF)V
+	METHOD a matchesObjective (Lcom/corrodinggames/rts/gameFramework/n/l;Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD a logMapWarning (Ljava/lang/String;)V
 	METHOD a addWaveUnitWeight (Ljava/util/ArrayList;Lcom/corrodinggames/rts/game/units/as;F)V
 	METHOD a addWaveUnitWeight (Ljava/util/ArrayList;Ljava/lang/String;F)V
+	METHOD a loadMapInfo (Z)V
+	METHOD b isFogSharedWithAllies ()Z
 	METHOD b drawMapTexts (F)V
 	METHOD b logTrigger (Ljava/lang/String;)V
+	METHOD b generateWaveUnits (Z)Lcom/corrodinggames/rts/gameFramework/n/i;
 	METHOD c findObjectives ()V
+	METHOD c update (F)V
 	METHOD c logTriggerDesync (Ljava/lang/String;)V
+	METHOD c generateClassicWaveUnits (Z)Lcom/corrodinggames/rts/gameFramework/n/i;
+	METHOD d getCurrentWave ()Lcom/corrodinggames/rts/gameFramework/n/g;
+	METHOD d findTriggerById (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/n/a;
+	METHOD e updateWaveSpawnPoint ()V
+	METHOD e findTriggerByUniqueId (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/n/a;
 	METHOD f setupSurvivalWaves ()V
 	METHOD f findMapPoint (Ljava/lang/String;)Landroid/graphics/PointF;
+	METHOD g isTriggerLogEnabled ()Z
+	METHOD g loadSurvivalWaves (Ljava/lang/String;)V
+	METHOD h captureNeutralUnit ()Z
+	METHOD h logMapScript (Ljava/lang/String;)V
+	METHOD i logScriptError (Ljava/lang/String;)V

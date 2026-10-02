@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/r com/corrodinggames/rts/gameFramework/GameEngineKeyGameEvent
+	FIELD c keyCode I
+	FIELD d pressed Z

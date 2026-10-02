@@ -4,3 +4,6 @@ CLASS com/corrodinggames/rts/gameFramework/k/e com/corrodinggames/rts/gameFramew
 	FIELD b currentScore I
 	FIELD c currentNodes Lcom/corrodinggames/rts/gameFramework/k/a;
 	FIELD d pendingNodes Lcom/corrodinggames/rts/gameFramework/k/a;
+	METHOD a clearAndReturnNodes (Lcom/corrodinggames/rts/gameFramework/k/m;)V
+	METHOD c drainCurrentIntoPending ()V
+	METHOD d promoteLowestScoreToCurrent ()V

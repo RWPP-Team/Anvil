@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ah com/corrodinggames/rts/gameFramework/utility/ZipFileReader
+	FIELD a rootFolder Ljava/lang/String;
+	FIELD b zipPath Ljava/lang/String;
+	FIELD c zipFile Ljava/util/zip/ZipFile;
+	FIELD d fileNames [Ljava/lang/String;
+	FIELD e closed Z
+	METHOD a close ()V
+	METHOD a openZipFileFromStream (Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/util/zip/ZipFile;
+	METHOD a log (Ljava/lang/String;)V
+	METHOD a openZipFileWithCharset (Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/util/zip/ZipFile;
+	METHOD b buildCache ()V
+	METHOD b fileExistsExact (Ljava/lang/String;)Z
+	METHOD c fileExists (Ljava/lang/String;)Z
+	METHOD d isDirectory (Ljava/lang/String;)Z
+	METHOD e listFiles (Ljava/lang/String;)[Ljava/lang/String;
+	METHOD f getEntry (Ljava/lang/String;)Ljava/util/zip/ZipEntry;
+	METHOD g getCorrectFilename (Ljava/lang/String;)Ljava/lang/String;
+	METHOD h getEntrySize (Ljava/lang/String;)J
+	METHOD i openAssetSteam (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;

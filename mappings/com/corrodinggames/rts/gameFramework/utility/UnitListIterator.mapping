@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/v com/corrodinggames/rts/gameFramework/utility/UnitListIterator
+	FIELD a list Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD b remaining I
+	FIELD c lastReturned I
+	FIELD d expectedModCount I
+	METHOD hasNext hasNext ()Z
+	METHOD next next ()Ljava/lang/Object;
+	METHOD remove remove ()V

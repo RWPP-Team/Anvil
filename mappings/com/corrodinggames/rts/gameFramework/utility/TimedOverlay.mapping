@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/aa com/corrodinggames/rts/gameFramework/utility/TimedOverlay
+	FIELD a paint Landroid/graphics/Paint;
+	FIELD b bounds Landroid/graphics/RectF;
+	FIELD c isLine Z
+	FIELD d worldSpace Z
+	FIELD e timeRemaining F
+	FIELD f text Ljava/lang/String;

@@ -1,16 +1,33 @@
 CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramework/GameEngine
 	FIELD aA crashHandlerEnabled Z
+	FIELD aB noResources Z
+	FIELD aC disableAtlas Z
+	FIELD aD canvasGl Z
+	FIELD aE printUnits Z
+	FIELD aF outputUnitImages Z
+	FIELD aG oldReplays Z
+	FIELD aH isSteamRequested Z
+	FIELD aI sandboxMode Z
+	FIELD aJ noMods Z
+	FIELD aK connectLobby Ljava/lang/String;
 	FIELD al instance Lcom/corrodinggames/rts/gameFramework/l;
 	FIELD am context Landroid/content/Context;
+	FIELD aM postProcessingAllowed Z
+	FIELD aN teamShadersAllowed Z
 	FIELD ao gameView Lcom/corrodinggames/rts/appFramework/f;
+	FIELD aO safeMode Z
+	FIELD aP extraSafeMode Z
 	FIELD aQ launchArguments Ljava/lang/String;
 	FIELD aU isDedicatedServerPlatform Z
 	FIELD aW isDesktopPlatform Z
 	FIELD ax colorLogEnabled Z
+	FIELD aX isDesktopCanvas Z
+	FIELD ay noBackground Z
 	FIELD aZ isIOSPlatform Z
 	FIELD bB unitsMaxDefault I
 	FIELD bC unitsMaxCap I
 	FIELD bE methodTracingEnabled Z
+	FIELD bg graphicsCanvasClass Ljava/lang/Class;
 	FIELD bK assetIndex Lcom/corrodinggames/rts/gameFramework/utility/i;
 	FIELD bL map Lcom/corrodinggames/rts/game/b/b;
 	FIELD bM sound Lcom/corrodinggames/rts/gameFramework/a/e;
@@ -43,6 +60,7 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD cg leaderboard Lcom/corrodinggames/rts/gameFramework/g/a;
 	FIELD ci screenDensity F
 	FIELD cj dipScale F
+	FIELD ck screenSize Landroid/graphics/Point;
 	FIELD cl screenWidth F
 	FIELD cm screenHeight F
 	FIELD cN viewRectNear Landroid/graphics/Rect;
@@ -73,27 +91,43 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD dS anrWatchDogTask Lcom/corrodinggames/rts/gameFramework/utility/d;
 	FIELD dW outOfMemoryType Lcom/corrodinggames/rts/gameFramework/u;
 	FIELD dy gameEngineFactory Lcom/corrodinggames/rts/gameFramework/o;
+	FIELD dz gameVersion Ljava/lang/String;
 	FIELD e mouseWheelAccumulator I
+	METHOD a isGameActive ()Z
 	METHOD a setCamera (FF)V
 	METHOD a isOnScreen (FFF)Z
 	METHOD a dipToPixels (I)I
+	METHOD a checkModifierKeyMask (IZ)Z
 	METHOD a hasTimeElapsed (JJ)Z
+	METHOD a init (Landroid/content/Context;)V
 	METHOD a getOrCreate (Landroid/content/Context;Lcom/corrodinggames/rts/gameFramework/n;)Lcom/corrodinggames/rts/gameFramework/l;
 	METHOD a registerDipPaint (Landroid/graphics/Paint;)V
 	METHOD a registerDipPaint (Landroid/graphics/Paint;F)V
 	METHOD a recordUnitDamage (Lcom/corrodinggames/rts/game/units/am;F)V
 	METHOD a createLeaderboard (Lcom/corrodinggames/rts/gameFramework/g/f;Lcom/corrodinggames/rts/gameFramework/g/c;)V
 	METHOD a reportCaughtOutOfMemory (Lcom/corrodinggames/rts/gameFramework/u;Ljava/lang/Throwable;)V
+	METHOD a postRunnable (Ljava/lang/Runnable;)V
 	METHOD a logError (Ljava/lang/String;)V
 	METHOD a showAlert (Ljava/lang/String;I)V
+	METHOD a logExceptionWithContext (Ljava/lang/String;Ljava/lang/Exception;)V
+	METHOD a formatColorLog (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD a logException (Ljava/lang/String;Ljava/lang/Throwable;)V
 	METHOD a setLoadingMessage (Ljava/lang/String;Z)V
+	METHOD a getStackTraceString (Ljava/lang/Throwable;)Ljava/lang/String;
+	METHOD A isCameraMovingOrPanning ()Z
+	METHOD aa isLoadCallbackCancelled ()Z
 	METHOD aA canUseShaderEffects ()Z
 	METHOD ab showPendingMessageBox ()V
+	METHOD aB aB ()Z
+	METHOD ac hasTouchEvents ()Z
 	METHOD aC printMemoryInfo ()V
+	METHOD ad clearTouchEvents ()V
 	METHOD aD getContext ()Landroid/content/Context;
+	METHOD ae getPointerCount ()I
 	METHOD aE showMemoryWarnings ()V
+	METHOD af getPrimaryPointerX ()F
 	METHOD aF checkForLowMemory ()V
+	METHOD ag getPrimaryPointerY ()F
 	METHOD ah getModifierKeyMask ()I
 	METHOD ai getMouseWheelAccumulated ()I
 	METHOD aj processGameEvents ()V
@@ -104,56 +138,93 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	METHOD ao getCrashLogFile ()Ljava/io/File;
 	METHOD ap setupANRWatchDog ()V
 	METHOD aq setupCrashHandler ()V
+	METHOD ar isHardwareKeyboardPresent ()Z
+	METHOD as isTouchScreenPresent ()Z
 	METHOD at isNotDedicatedServer ()Z
+	METHOD au isTouchDevice ()Z
 	METHOD av isDesktopVersion ()Z
+	METHOD aw isDesktopOrMac ()Z
 	METHOD ax isDedicatedServer ()Z
 	METHOD ay isReplayOrNetworked ()Z
 	METHOD az canUseTeamShaders ()Z
+	METHOD b getGameStep ()I
 	METHOD b centerCameraOn (FF)V
 	METHOD b getPointerX (I)F
 	METHOD b setKeyState (IZ)V
 	METHOD b isDemoVersion (Landroid/content/Context;)Z
+	METHOD b setTextSizeDip (Landroid/graphics/Paint;F)V
 	METHOD b logWarning (Ljava/lang/String;)V
+	METHOD b logWithTag (Ljava/lang/String;Ljava/lang/String;)V
 	METHOD b getThrowableMessage (Ljava/lang/Throwable;)Ljava/lang/String;
 	METHOD B getInstance ()Lcom/corrodinggames/rts/gameFramework/l;
+	METHOD c isPaused ()Z
 	METHOD c getPointerY (I)F
 	METHOD c isEitherKeyDown (II)Z
 	METHOD c setContext (Landroid/content/Context;)V
+	METHOD c logInternal (Ljava/lang/String;)V
 	METHOD c showMessageBox (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD c printExceptionStackTrace (Ljava/lang/Throwable;)V
+	METHOD C isDebugBuild ()Z
+	METHOD d isGameEnded ()Z
+	METHOD d getPointerState (I)I
+	METHOD d isBlueStacksEmulator (Landroid/content/Context;)Z
+	METHOD d logDebug (Ljava/lang/String;)V
 	METHOD d queueMessageBox (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD D isProfilingEnabled ()Z
+	METHOD e updateGame ()V
 	METHOD e dipToPixels (F)I
 	METHOD e isMouseButtonDown (I)Z
 	METHOD e log (Ljava/lang/String;)V
 	METHOD e writeCrashToFile (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD E supportsMultiTouch ()Z
+	METHOD f findPointerIndexWithState (I)I
 	METHOD f logWithTimestamp (Ljava/lang/String;)V
 	METHOD f addMessage (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD F F ()V
+	METHOD g renderGame ()V
 	METHOD g consumeKeyPress (I)Z
 	METHOD g logWarningWithStack (Ljava/lang/String;)V
 	METHOD G getPlatformName ()Ljava/lang/String;
 	METHOD h isKeyDown (I)Z
+	METHOD h setLoadingMessage (Ljava/lang/String;)V
 	METHOD H getVersion ()Ljava/lang/String;
+	METHOD i isModifierKey (I)Z
+	METHOD i showAlert (Ljava/lang/String;)V
+	METHOD I isGamePaused ()Z
 	METHOD j modifierMaskToString (I)Ljava/lang/String;
 	METHOD j getParentPath (Ljava/lang/String;)Ljava/lang/String;
 	METHOD J setRunning ()V
 	METHOD k addMouseWheelEvent (I)V
 	METHOD k getFileName (Ljava/lang/String;)Ljava/lang/String;
 	METHOD K setStoppedIfNotInGameThread ()V
+	METHOD l getGameTitle ()Ljava/lang/String;
 	METHOD l getMapLevel (Ljava/lang/String;)Ljava/lang/Integer;
 	METHOD L setStopped ()V
+	METHOD m getGameBuildNumber ()Ljava/lang/String;
 	METHOD m findNextMapLevelFile (Ljava/lang/String;)Ljava/lang/String;
 	METHOD M isNetworkedClient ()Z
+	METHOD n isSaveSupported ()Z
 	METHOD n reportProblem (Ljava/lang/String;)V
 	METHOD N isMultiplayer ()Z
 	METHOD o hasCommandLineArgument (Ljava/lang/String;)Z
 	METHOD O isGameRunning ()Z
+	METHOD p isLoadSupported ()Z
 	METHOD p logWarningAndChat (Ljava/lang/String;)V
 	METHOD P isSinglePlayer ()Z
 	METHOD Q clampCamera ()V
+	METHOD r getGameVersionShort ()Ljava/lang/String;
 	METHOD R applyZoomTransform ()V
+	METHOD s showSaveDialog ()V
 	METHOD S resetZoomTransform ()V
+	METHOD t getGameVersionCode ()Ljava/lang/String;
 	METHOD T logCurrentStackTrace ()V
+	METHOD u getGameVersionFull ()Ljava/lang/String;
 	METHOD U getCurrentStackTrace ()Ljava/lang/String;
+	METHOD v getPlatformDetails ()Ljava/lang/String;
 	METHOD V currentTimeMillis ()J
 	METHOD W getUiDensity ()F
+	METHOD x cleanUp ()V
 	METHOD X refreshFontsIfDensityChanged ()V
+	METHOD Y Y ()V
+	METHOD z getNetworkPort ()I
 	METHOD Z clearLoadingMessage ()V

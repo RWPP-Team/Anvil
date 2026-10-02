@@ -3,3 +3,6 @@ CLASS com/corrodinggames/rts/gameFramework/k/n com/corrodinggames/rts/gameFramew
 	FIELD a x S
 	FIELD b y S
 	FIELD c score I
+	METHOD a computeScore (III)V
+	METHOD a set (SS)V
+	METHOD compareTo compareTo (Ljava/lang/Object;)I

@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/n/a/a com/corrodinggames/rts/gameFramework/trigger/TriggerElement
+	METHOD a shouldCheck (Lcom/corrodinggames/rts/gameFramework/n/a;)Z
+	METHOD b check (Lcom/corrodinggames/rts/gameFramework/n/a;)Z
+	METHOD c onActivate (Lcom/corrodinggames/rts/gameFramework/n/a;)Z

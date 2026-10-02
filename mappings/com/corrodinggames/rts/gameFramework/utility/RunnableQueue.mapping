@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/aj com/corrodinggames/rts/gameFramework/utility/RunnableQueue
+	FIELD a queue Ljava/util/concurrent/ConcurrentLinkedQueue;
+	METHOD a runAll ()V
+	METHOD a add (Ljava/lang/Runnable;)V

@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/k/j com/corrodinggames/rts/gameFramework/path/NodeQueue
+	METHOD a poll ()Lcom/corrodinggames/rts/gameFramework/k/n;
+	METHOD a add (Lcom/corrodinggames/rts/gameFramework/k/n;)V
+	METHOD b clear ()V

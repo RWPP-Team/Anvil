@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/j/i com/corrodinggames/rts/gameFramework/network/ForwardedSocketForwardedSocketInputStream
+	FIELD a pendingBuffers Ljava/util/concurrent/LinkedBlockingDeque;
+	FIELD b loggedFirstPacket Z
+	FIELD c singleByteBuffer [B
+	METHOD a addBuffer ([B)V

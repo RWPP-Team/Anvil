@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/i com/corrodinggames/rts/gameFramework/CustomExceptionHandler
+	FIELD a defaultUEH Ljava/lang/Thread$UncaughtExceptionHandler;

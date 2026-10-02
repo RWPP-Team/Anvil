@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/n/l com/corrodinggames/rts/gameFramework/trigger/ObjectiveType
 	COMMENT enum {none, allUnitsAndBuildings, allBuildings, mainBuildings, commandCenter, noConstructionOrTech, requiredObjectives} - win/objective target selector for wave (survival) maps. [evidence-based job name]
+	FIELD a none Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD b allUnitsAndBuildings Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD c allBuildings Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD d mainBuildings Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD e commandCenter Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD f noConstructionOrTech Lcom/corrodinggames/rts/gameFramework/n/l;
+	FIELD g requiredObjectives Lcom/corrodinggames/rts/gameFramework/n/l;

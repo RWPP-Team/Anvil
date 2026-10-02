@@ -1,1 +1,20 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/l com/corrodinggames/rts/gameFramework/utility/FastBufferedReader
+	FIELD a in Ljava/io/Reader;
+	FIELD b buf [C
+	FIELD c pos I
+	FIELD d end I
+	FIELD e markpos I
+	FIELD f marklimit I
+	METHOD a readLine ()Ljava/lang/String;
+	METHOD a checkOffsetAndCount (III)V
+	METHOD b fillbuf ()I
+	METHOD c isClosed ()Z
+	METHOD close close ()V
+	METHOD d checkNotClosed ()V
+	METHOD mark mark (I)V
+	METHOD markSupported markSupported ()Z
+	METHOD read read ()I
+	METHOD read read ([CII)I
+	METHOD ready ready ()Z
+	METHOD reset reset ()V
+	METHOD skip skip (J)J

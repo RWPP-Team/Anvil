@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/w com/corrodinggames/rts/gameFramework/utility/FastByteArrayOutputStream
+	FIELD a buffer [B
+	FIELD b count I
+	METHOD a reset ()V
+	METHOD a ensureCapacity (I)V
+	METHOD a checkOffsetAndCount (III)V
+	METHOD b size ()I
+	METHOD close close ()V
+	METHOD write write ([BII)V
+	METHOD write write (I)V

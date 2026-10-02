@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/n com/corrodinggames/rts/gameFramework/utility/FastArrayListIterator
+	FIELD a list Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b remaining I
+	FIELD c lastReturned I
+	FIELD d expectedModCount I
+	METHOD hasNext hasNext ()Z
+	METHOD next next ()Ljava/lang/Object;
+	METHOD remove remove ()V

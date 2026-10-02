@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/n/c com/corrodinggames/rts/gameFramework/trigger/TriggerLoader
+	METHOD a parse (Lcom/corrodinggames/rts/gameFramework/n/f;Lcom/corrodinggames/rts/game/b/a;)Lcom/corrodinggames/rts/gameFramework/n/a;

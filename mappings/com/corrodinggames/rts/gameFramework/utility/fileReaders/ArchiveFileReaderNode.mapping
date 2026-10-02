@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/a/c com/corrodinggames/rts/gameFramework/utility/fileReaders/ArchiveFileReaderNode
+	FIELD a path Ljava/lang/String;
+	FIELD b uri Landroid/net/Uri;
+	FIELD c isDirectory Z
+	FIELD d children Ljava/util/HashMap;
+	FIELD e childrenLowercase Ljava/util/HashMap;
+	FIELD f dirty Z
+	FIELD g loadedRevision I
+	FIELD h reader Lcom/corrodinggames/rts/gameFramework/utility/a/b;
+	METHOD a getChildren ()Ljava/util/HashMap;
+	METHOD a loadChildren (Landroid/content/Context;)V

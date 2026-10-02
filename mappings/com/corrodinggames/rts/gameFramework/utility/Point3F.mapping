@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ai com/corrodinggames/rts/gameFramework/utility/Point3F
+	FIELD a x F
+	FIELD b y F
+	FIELD c z F
+	METHOD a set (Landroid/graphics/PointF;)V

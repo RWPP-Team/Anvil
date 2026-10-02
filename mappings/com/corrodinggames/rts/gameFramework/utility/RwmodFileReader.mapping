@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ag com/corrodinggames/rts/gameFramework/utility/RwmodFileReader
+	FIELD a openZipReaders Ljava/util/HashMap;
+	METHOD d getZipFileReader (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/utility/ah;
+	METHOD e closeZipFileReader (Ljava/lang/String;Z)V
+	METHOD h log (Ljava/lang/String;)V
+	METHOD i isRwmodPath (Ljava/lang/String;)Z
+	METHOD j getRwmodPath (Ljava/lang/String;)Ljava/lang/String;
+	METHOD k closeZipFileReader (Ljava/lang/String;)V
+	METHOD l getPathInZip (Ljava/lang/String;)Ljava/lang/String;

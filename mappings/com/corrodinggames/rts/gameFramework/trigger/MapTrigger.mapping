@@ -20,8 +20,33 @@ CLASS com/corrodinggames/rts/gameFramework/n/a com/corrodinggames/rts/gameFramew
 	FIELD r delay I
 	FIELD s warmup I
 	FIELD t sourceObject Lcom/corrodinggames/rts/game/b/a;
+	FIELD u activationPending Z
 	FIELD v spawner Lcom/corrodinggames/rts/game/units/custom/bp;
 	FIELD w textOffsetX F
 	FIELD x textOffsetY F
 	FIELD y team Lcom/corrodinggames/rts/game/n;
 	FIELD z text Lcom/corrodinggames/rts/game/units/custom/bb;
+	METHOD a getTeam ()Lcom/corrodinggames/rts/game/n;
+	METHOD a containsUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a addElement (Lcom/corrodinggames/rts/gameFramework/n/a/a;)V
+	METHOD a removeProperty (Ljava/lang/String;)V
+	METHOD a getFloat (Ljava/lang/String;F)F
+	METHOD a getInt (Ljava/lang/String;I)I
+	METHOD a getText (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/bb;)Lcom/corrodinggames/rts/game/units/custom/bb;
+	METHOD a parseError (Ljava/lang/String;Ljava/lang/Exception;)Lcom/corrodinggames/rts/game/b/f;
+	METHOD a getPropertyWithDefault (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a getBooleanWithAltKey (Ljava/lang/String;Ljava/lang/String;Z)Z
+	METHOD a getBoolean (Ljava/lang/String;Z)Z
+	METHOD b getX ()I
+	METHOD b isUnitAllowed (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD b getProperty (Ljava/lang/String;)Ljava/lang/String;
+	METHOD b getTime (Ljava/lang/String;I)I
+	METHOD c getY ()I
+	METHOD c hasProperty (Ljava/lang/String;)Z
+	METHOD c getColor (Ljava/lang/String;I)I
+	METHOD d shouldActivate ()Z
+	METHOD d getIntOrNull (Ljava/lang/String;)Ljava/lang/Integer;
+	METHOD e getBooleanOrNull (Ljava/lang/String;)Ljava/lang/Boolean;
+	METHOD f parseError (Ljava/lang/String;)Lcom/corrodinggames/rts/game/b/f;
+	METHOD g reportError (Ljava/lang/String;)V
+	METHOD h logDebug (Ljava/lang/String;)V

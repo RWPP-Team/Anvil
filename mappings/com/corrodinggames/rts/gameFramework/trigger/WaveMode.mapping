@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/n/h com/corrodinggames/rts/gameFramework/trigger/WaveMode
+	FIELD a normal Lcom/corrodinggames/rts/gameFramework/n/h;

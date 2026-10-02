@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/bf com/corrodinggames/rts/gameFramework/StateEngineLevelState
+	FIELD a version I
+	FIELD b levelPath Ljava/lang/String;
+	FIELD i stateEngine Lcom/corrodinggames/rts/gameFramework/be;

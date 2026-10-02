@@ -5,3 +5,6 @@ CLASS com/corrodinggames/rts/gameFramework/j/e com/corrodinggames/rts/gameFramew
 	FIELD d dataStream Ljava/io/DataOutputStream;
 	FIELD e scratchStream Lcom/corrodinggames/rts/gameFramework/utility/w;
 	FIELD f connection Lcom/corrodinggames/rts/gameFramework/j/c;
+	METHOD a wakeUp ()V
+	METHOD a enqueuePacket (Lcom/corrodinggames/rts/gameFramework/j/au;)V
+	METHOD b waitForPackets ()V

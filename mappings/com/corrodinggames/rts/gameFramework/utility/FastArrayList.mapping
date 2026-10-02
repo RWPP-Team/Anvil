@@ -2,3 +2,27 @@ CLASS com/corrodinggames/rts/gameFramework/utility/m com/corrodinggames/rts/game
 	COMMENT FastArrayList - the engine's workhorse list (an ArrayList with direct array access). Fields: size (int, the public element count) and items (the backing Object[], initially the shared EmptyArrays.g). a() exposes the raw array, a(i) is the unchecked get, b() removes the last element (bounds-checked) and c() the unchecked variant; growth policy is "+12 when &lt;6, else +50%". Iterator = FastArrayListIterator. [field names verified from code]
 	FIELD a size I
 	FIELD b items [Ljava/lang/Object;
+	METHOD a items ()[Ljava/lang/Object;
+	METHOD a getUnchecked (I)Ljava/lang/Object;
+	METHOD a throwIndexOutOfBoundsException (II)Ljava/lang/IndexOutOfBoundsException;
+	METHOD add add (ILjava/lang/Object;)V
+	METHOD add add (Ljava/lang/Object;)Z
+	METHOD addAll addAll (ILjava/util/Collection;)Z
+	METHOD addAll addAll (Ljava/util/Collection;)Z
+	METHOD b pop ()Ljava/lang/Object;
+	METHOD b newCapacity (I)I
+	METHOD c popUnchecked ()Ljava/lang/Object;
+	METHOD clear clear ()V
+	METHOD contains contains (Ljava/lang/Object;)Z
+	METHOD get get (I)Ljava/lang/Object;
+	METHOD indexOf indexOf (Ljava/lang/Object;)I
+	METHOD isEmpty isEmpty ()Z
+	METHOD iterator iterator ()Ljava/util/Iterator;
+	METHOD lastIndexOf lastIndexOf (Ljava/lang/Object;)I
+	METHOD remove remove (I)Ljava/lang/Object;
+	METHOD remove remove (Ljava/lang/Object;)Z
+	METHOD removeRange removeRange (II)V
+	METHOD set set (ILjava/lang/Object;)Ljava/lang/Object;
+	METHOD size size ()I
+	METHOD toArray toArray ()[Ljava/lang/Object;
+	METHOD toArray toArray ([Ljava/lang/Object;)[Ljava/lang/Object;

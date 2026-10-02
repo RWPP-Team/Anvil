@@ -18,3 +18,11 @@ CLASS com/corrodinggames/rts/gameFramework/k/d com/corrodinggames/rts/gameFramew
 	FIELD s lowestQueueScore I
 	FIELD t consecutiveDrainCount I
 	FIELD u maxConsecutiveDrainCount I
+	METHOD a addToBufferAt (ILcom/corrodinggames/rts/gameFramework/k/n;)V
+	METHOD a clearAndReturnNodes (Lcom/corrodinggames/rts/gameFramework/k/m;)V
+	METHOD b addToBuffer (Lcom/corrodinggames/rts/gameFramework/k/n;)V
+	METHOD c updateLowestBufferIndex ()V
+	METHOD c addToOverflowQueue (Lcom/corrodinggames/rts/gameFramework/k/n;)V
+	METHOD d resetBufferBounds ()V
+	METHOD e pollOverflowIntoBuffer ()V
+	METHOD f reset ()V

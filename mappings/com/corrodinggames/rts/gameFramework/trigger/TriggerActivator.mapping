@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/n/d com/corrodinggames/rts/gameFramework/trigger/TriggerActivator
+	METHOD a activate (Lcom/corrodinggames/rts/gameFramework/n/f;Lcom/corrodinggames/rts/gameFramework/n/a;)V

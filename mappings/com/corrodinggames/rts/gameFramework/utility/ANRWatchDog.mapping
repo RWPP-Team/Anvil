@@ -1,0 +1,15 @@
+CLASS com/corrodinggames/rts/gameFramework/utility/d com/corrodinggames/rts/gameFramework/utility/ANRWatchDog
+	COMMENT Deferred/runnable task wrapper: holds Runnable + Handler, name String, delay/interval ints and enable flags; run() executes it. [evidence-based job name]
+	FIELD a defaultExceptionHandler Lcom/corrodinggames/rts/gameFramework/utility/e;
+	FIELD b defaultInterruptHandler Lcom/corrodinggames/rts/gameFramework/utility/f;
+	FIELD c exceptionHandler Lcom/corrodinggames/rts/gameFramework/utility/e;
+	FIELD d interruptHandler Lcom/corrodinggames/rts/gameFramework/utility/f;
+	FIELD e mainHandler Landroid/os/Handler;
+	FIELD f timeoutMillis I
+	FIELD g threadNamePrefix Ljava/lang/String;
+	FIELD h logThreadsWithoutStackTrace Z
+	FIELD i ignoreDebugger Z
+	FIELD j tickCount I
+	FIELD k tickRunnable Ljava/lang/Runnable;
+	METHOD a setExceptionHandler (Lcom/corrodinggames/rts/gameFramework/utility/e;)Lcom/corrodinggames/rts/gameFramework/utility/d;
+	METHOD run run ()V

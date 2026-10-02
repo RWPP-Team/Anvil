@@ -4,3 +4,6 @@ CLASS com/corrodinggames/rts/gameFramework/k/f com/corrodinggames/rts/gameFramew
 	FIELD b grid Lcom/corrodinggames/rts/gameFramework/k/g;
 	FIELD c debugPaint Landroid/graphics/Paint;
 	FIELD d debugOffsetPoint Landroid/graphics/Point;
+	METHOD a directionToStep (BLandroid/graphics/Point;)V
+	METHOD a getDirection (II)B
+	METHOD d drawFlowFieldDebug ()V

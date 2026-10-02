@@ -1,0 +1,19 @@
+CLASS com/corrodinggames/rts/gameFramework/utility/j com/corrodinggames/rts/gameFramework/utility/AssetInputStream
+	FIELD a stream Ljava/io/InputStream;
+	FIELD b path Ljava/lang/String;
+	FIELD c assetPath Ljava/lang/String;
+	FIELD d closed Z
+	FIELD e creationStackTrace Ljava/lang/String;
+	METHOD a hasFileDescriptor ()Z
+	METHOD available available ()I
+	METHOD b getFileDescriptor ()Ljava/io/FileDescriptor;
+	METHOD c lastModified ()J
+	METHOD close close ()V
+	METHOD d getPath ()Ljava/lang/String;
+	METHOD mark mark (I)V
+	METHOD markSupported markSupported ()Z
+	METHOD read read ()I
+	METHOD read read ([B)I
+	METHOD read read ([BII)I
+	METHOD reset reset ()V
+	METHOD skip skip (J)J

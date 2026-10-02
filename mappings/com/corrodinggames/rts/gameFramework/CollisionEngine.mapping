@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/a com/corrodinggames/rts/gameFramework/CollisionEngine
+	FIELD n collisionTypes Ljava/util/ArrayList;
+	METHOD a getOrCreateType (B)Lcom/corrodinggames/rts/gameFramework/b;

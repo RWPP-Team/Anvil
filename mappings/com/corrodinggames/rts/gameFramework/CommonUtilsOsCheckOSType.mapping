@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/h com/corrodinggames/rts/gameFramework/CommonUtilsOsCheckOSType
+	FIELD a Windows Lcom/corrodinggames/rts/gameFramework/h;
+	FIELD b MacOS Lcom/corrodinggames/rts/gameFramework/h;
+	FIELD c Linux Lcom/corrodinggames/rts/gameFramework/h;
+	FIELD d Other Lcom/corrodinggames/rts/gameFramework/h;

@@ -10,9 +10,23 @@ CLASS com/corrodinggames/rts/gameFramework/k/i com/corrodinggames/rts/gameFramew
 	FIELD h groupSizes Ljava/util/HashMap;
 	FIELD i largestGroupSize I
 	FIELD j clearanceCost [B
+	FIELD k lastInfluenceBuildTime I
 	FIELD l buildCount I
 	FIELD m buildSkipped Z
 	FIELD n tmpPoint Landroid/graphics/Point;
 	FIELD o unitInfluenceSkipped Z
 	FIELD p unitInfluenceCount I
 	FIELD q engine Lcom/corrodinggames/rts/gameFramework/k/l;
+	METHOD a rebuildAllCosts ()V
+	METHOD a calculateMapChecksum (Lcom/corrodinggames/rts/game/b/b;)I
+	METHOD a calculateClearance (Lcom/corrodinggames/rts/game/b/b;SS)B
+	METHOD a updateClearanceAround (Lcom/corrodinggames/rts/game/b/b;SS[B)V
+	METHOD a buildAndReplaceClearanceCost (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD a floodFillGroup (SSS)I
+	METHOD a flushSkippedBuilds (Z)V
+	METHOD b buildIsolatedGroups ()V
+	METHOD b updateClearanceCost (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD c isAffectedByTerrain ()Z
+	METHOD c rebuildUnitBlocked (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD d rebuildTerrainCost ()V
+	METHOD e rebuildUnitInfluence ()V

@@ -1,1 +1,22 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/al com/corrodinggames/rts/gameFramework/utility/StringUtils
+	METHOD a joinEscaped ([Ljava/lang/String;)Ljava/lang/String;
+	METHOD a getBracketDepth (Ljava/lang/String;)I
+	METHOD a splitPreserveQuotes (Ljava/lang/String;C)[Ljava/lang/String;
+	METHOD a getBracketEnd (Ljava/lang/String;I)I
+	METHOD a indexOfOutsideBrackets (Ljava/lang/String;I[Ljava/lang/String;)I
+	METHOD a indexOfOutsideBrackets (Ljava/lang/String;Ljava/lang/String;)I
+	METHOD a indexOfOutsideBrackets (Ljava/lang/String;Ljava/lang/String;I)I
+	METHOD a indexOfFirstOf (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+	METHOD a split (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/ArrayList;
+	METHOD a split (Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/ArrayList;
+	METHOD a split (Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/util/ArrayList;
+	METHOD b getBracketDepthNoQuotes (Ljava/lang/String;)I
+	METHOD b splitOnChar (Ljava/lang/String;C)[Ljava/lang/String;
+	METHOD b isLetterOrDigitAt (Ljava/lang/String;I)Z
+	METHOD b splitAtFirst (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+	METHOD b indexOfOutsideQuotesAndBrackets (Ljava/lang/String;Ljava/lang/String;I)I
+	METHOD b splitToArray (Ljava/lang/String;Ljava/lang/String;Z)[Ljava/lang/String;
+	METHOD c normalizeSign (Ljava/lang/String;)Ljava/lang/String;
+	METHOD c splitAtFirstOutsideBrackets (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+	METHOD d capitalize (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e splitOnComma (Ljava/lang/String;)[Ljava/lang/String;

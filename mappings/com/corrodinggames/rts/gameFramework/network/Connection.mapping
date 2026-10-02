@@ -23,3 +23,22 @@ CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramew
 	FIELD T commandLimitReached Z
 	FIELD W engine Lcom/corrodinggames/rts/gameFramework/j/ad;
 	FIELD z player Lcom/corrodinggames/rts/game/e;
+	METHOD a isCommandRateLimited ()Z
+	METHOD a sendPacket (Lcom/corrodinggames/rts/gameFramework/j/au;)V
+	METHOD a handleWorkerShutdown (Lcom/corrodinggames/rts/gameFramework/j/c;ZZ)V
+	METHOD a sendKickWithReason (Ljava/lang/String;)V
+	METHOD a logException (Ljava/lang/String;Ljava/lang/Throwable;)V
+	METHOD a handleRemoteDisconnect (ZZ)V
+	METHOD a handleRemoteDisconnect (ZZLjava/lang/String;)V
+	METHOD b getPing ()I
+	METHOD b logWarning (Ljava/lang/String;)V
+	METHOD c getPlayerPing ()I
+	METHOD c log (Ljava/lang/String;)V
+	METHOD d startWorkers ()V
+	METHOD d prefixLogMessage (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e getPlayerName ()Ljava/lang/String;
+	METHOD f getHostAddress ()Ljava/lang/String;
+	METHOD g getDisplayHostAddress ()Ljava/lang/String;
+	METHOD h isOpen ()Z
+	METHOD i markClosedAndRemove ()V
+	METHOD j stopSendWorkerAndRemove ()V

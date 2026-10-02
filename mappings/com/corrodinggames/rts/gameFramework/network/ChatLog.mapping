@@ -1,2 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/j/a com/corrodinggames/rts/gameFramework/network/ChatLog
 	FIELD a messages Ljava/util/concurrent/ConcurrentLinkedQueue;
+	METHOD a getAllMessages ()Ljava/lang/String;
+	METHOD a addMessage (ILjava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/j/c;)V
+	METHOD a countRecentMessagesFromConnection (Lcom/corrodinggames/rts/gameFramework/j/c;I)I
+	METHOD a escapeHtml (Ljava/lang/String;)Ljava/lang/String;
+	METHOD a getHtmlLog (Z)Ljava/lang/String;
+	METHOD b getMessages ()Ljava/util/concurrent/ConcurrentLinkedQueue;
+	METHOD b getHtmlSpanned (Z)Landroid/text/Spanned;
+	METHOD c clear ()V

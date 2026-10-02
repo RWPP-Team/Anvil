@@ -33,3 +33,35 @@ CLASS com/corrodinggames/rts/gameFramework/k/l com/corrodinggames/rts/gameFramew
 	FIELD x costsNone Lcom/corrodinggames/rts/gameFramework/k/i;
 	FIELD y costsLand Lcom/corrodinggames/rts/gameFramework/k/i;
 	FIELD z costsBuilding Lcom/corrodinggames/rts/gameFramework/k/i;
+	METHOD a drawDebugCosts ()V
+	METHOD a assignQueuedPaths (F)V
+	METHOD a isOverCliffOrWaterBlocked (II)Z
+	METHOD a setupMapCosts (Lcom/corrodinggames/rts/game/b/b;Z)V
+	METHOD a getCosts (Lcom/corrodinggames/rts/game/units/ao;)Lcom/corrodinggames/rts/gameFramework/k/i;
+	METHOD a isBlocked (Lcom/corrodinggames/rts/game/units/ao;II)Z
+	METHOD a updateUnitCosts (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD a isBlocked (Lcom/corrodinggames/rts/gameFramework/k/i;II)Z
+	METHOD a isBlocked (Lcom/corrodinggames/rts/gameFramework/k/i;IIZ)Z
+	METHOD a refreshMapCosts (Lcom/corrodinggames/rts/gameFramework/k/i;Z)V
+	METHOD a solvePathBlocking (Lcom/corrodinggames/rts/gameFramework/k/k;)V
+	METHOD a requestPath (Lcom/corrodinggames/rts/gameFramework/k/k;Z)V
+	METHOD a requestPath (Lcom/corrodinggames/rts/gameFramework/k/k;ZZ)V
+	METHOD a assignPath (Lcom/corrodinggames/rts/gameFramework/k/o;Lcom/corrodinggames/rts/gameFramework/k/k;)V
+	METHOD a createPath (Z)Lcom/corrodinggames/rts/gameFramework/k/k;
+	METHOD b rebuildAllUnitInfluence ()V
+	METHOD b update (F)V
+	METHOD b isHoverOrOverCliffWaterBlocked (II)Z
+	METHOD b isBlockedIgnoreUnits (Lcom/corrodinggames/rts/game/units/ao;II)Z
+	METHOD b getTotalCost (Lcom/corrodinggames/rts/gameFramework/k/i;II)I
+	METHOD b queuePath (Lcom/corrodinggames/rts/gameFramework/k/k;)V
+	METHOD c cancelAllActivePaths ()V
+	METHOD c drawDebug (F)V
+	METHOD c getClearanceCost (Lcom/corrodinggames/rts/gameFramework/k/i;II)I
+	METHOD d finishAllActivePaths ()V
+	METHOD d updateUnfinishedPaths (F)V
+	METHOD e hasOverduePaths ()Z
+	METHOD f getOverduePathsInfo ()Ljava/lang/String;
+	METHOD g popMostUrgentPath ()Lcom/corrodinggames/rts/gameFramework/k/k;
+	METHOD h clearQueuedPaths ()V
+	METHOD i assignQueuedPaths ()V
+	METHOD j findIdleSolver ()Lcom/corrodinggames/rts/gameFramework/k/o;

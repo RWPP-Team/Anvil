@@ -6,3 +6,9 @@ CLASS com/corrodinggames/rts/gameFramework/k/g com/corrodinggames/rts/gameFramew
 	FIELD d targetY I
 	FIELD e direction [B
 	FIELD f closed [B
+	METHOD a getDirection (II)B
+	METHOD a getDirection (Lcom/corrodinggames/rts/gameFramework/k/p;)B
+	METHOD a setDirection (Lcom/corrodinggames/rts/gameFramework/k/p;B)V
+	METHOD a setClosed (Lcom/corrodinggames/rts/gameFramework/k/p;Z)V
+	METHOD b isUnvisited (Lcom/corrodinggames/rts/gameFramework/k/p;)Z
+	METHOD c isClosed (Lcom/corrodinggames/rts/gameFramework/k/p;)Z

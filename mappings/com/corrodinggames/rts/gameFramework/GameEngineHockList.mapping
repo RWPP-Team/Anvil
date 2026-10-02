@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/q com/corrodinggames/rts/gameFramework/GameEngineHockList
+	FIELD a hooks Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a runAll ()V
+	METHOD a addHook (Ljava/lang/Runnable;)V
+	METHOD b runAllAndClear ()V

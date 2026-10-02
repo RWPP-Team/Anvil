@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/b com/corrodinggames/rts/gameFramework/CollisionEngineCollisionType
+	FIELD a id B
+	FIELD b collidesWith Ljava/util/HashMap;
+	METHOD a addCollidesWith (Lcom/corrodinggames/rts/gameFramework/b;)V

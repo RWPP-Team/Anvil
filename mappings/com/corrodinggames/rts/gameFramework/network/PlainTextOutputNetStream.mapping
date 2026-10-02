@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/j/aw com/corrodinggames/rts/gameFramework/network/PlainTextOutputNetStream
+	FIELD a textBuffer Ljava/io/ByteArrayOutputStream;
+	FIELD e rootPrintStream Ljava/io/PrintStream;
+	FIELD f currentPrintStream Ljava/io/PrintStream;
+	FIELD g blockPrintStreams Ljava/util/LinkedList;

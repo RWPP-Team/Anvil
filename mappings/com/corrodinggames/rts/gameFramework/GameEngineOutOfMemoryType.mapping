@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/u com/corrodinggames/rts/gameFramework/GameEngineOutOfMemoryType
+	FIELD a gameImage Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD b gameImageCreate Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD c gameImageColor Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD d gameImageFogBuffer Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD e gameFont Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD f gameSound Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD g uiImage Lcom/corrodinggames/rts/gameFramework/u;

@@ -1,1 +1,27 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/s com/corrodinggames/rts/gameFramework/utility/GameObjectList
+	FIELD a emptyArray [Lcom/corrodinggames/rts/gameFramework/w;
+	FIELD b size I
+	FIELD c items [Lcom/corrodinggames/rts/gameFramework/w;
+	FIELD d name Ljava/lang/String;
+	METHOD a items ()[Lcom/corrodinggames/rts/gameFramework/w;
+	METHOD a throwIndexOutOfBoundsException (II)Ljava/lang/IndexOutOfBoundsException;
+	METHOD add add (ILjava/lang/Object;)V
+	METHOD add add (Ljava/lang/Object;)Z
+	METHOD addAll addAll (ILjava/util/Collection;)Z
+	METHOD addAll addAll (Ljava/util/Collection;)Z
+	METHOD b fastClear ()V
+	METHOD c newCapacity (I)I
+	METHOD clear clear ()V
+	METHOD contains contains (Ljava/lang/Object;)Z
+	METHOD get get (I)Ljava/lang/Object;
+	METHOD indexOf indexOf (Ljava/lang/Object;)I
+	METHOD isEmpty isEmpty ()Z
+	METHOD iterator iterator ()Ljava/util/Iterator;
+	METHOD lastIndexOf lastIndexOf (Ljava/lang/Object;)I
+	METHOD remove remove (I)Ljava/lang/Object;
+	METHOD remove remove (Ljava/lang/Object;)Z
+	METHOD removeRange removeRange (II)V
+	METHOD set set (ILjava/lang/Object;)Ljava/lang/Object;
+	METHOD size size ()I
+	METHOD toArray toArray ()[Ljava/lang/Object;
+	METHOD toArray toArray ([Ljava/lang/Object;)[Ljava/lang/Object;

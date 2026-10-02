@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ac com/corrodinggames/rts/gameFramework/utility/DebugPair
+	FIELD a section Ljava/lang/String;
+	FIELD b key Ljava/lang/String;
+	METHOD a getSection ()Ljava/lang/String;
+	METHOD b getKey ()Ljava/lang/String;

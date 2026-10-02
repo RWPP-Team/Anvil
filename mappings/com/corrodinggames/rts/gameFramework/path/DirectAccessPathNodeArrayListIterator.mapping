@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/k/b com/corrodinggames/rts/gameFramework/path/DirectAccessPathNodeArrayListIterator
+	FIELD a list Lcom/corrodinggames/rts/gameFramework/k/a;
+	FIELD b remaining I
+	FIELD c lastReturned I
+	FIELD d expectedModCount I
+	METHOD hasNext hasNext ()Z
+	METHOD next next ()Ljava/lang/Object;
+	METHOD remove remove ()V

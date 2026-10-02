@@ -1,11 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD aiDifficulty aiDifficulty I
+	FIELD allowGameRecording allowGameRecording Z
 	FIELD androidNoSoundPrioritiesDebug androidNoSoundPrioritiesDebug Z
 	FIELD autosaving autosaving Z
 	FIELD banTimeInSecondsAfterKick banTimeInSecondsAfterKick I
 	FIELD batterySaving batterySaving Z
 	FIELD classicInterface classicInterface Z
 	FIELD disableDigitGrouping disableDigitGrouping Z
+	FIELD disableModLazyLoad disableModLazyLoad Z
 	FIELD displayOverCutout displayOverCutout Z
 	FIELD doubleClickToAttackMove doubleClickToAttackMove Z
 	FIELD dpad dpad Z
@@ -22,6 +24,7 @@ CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD hadStoragePermissionInPast hadStoragePermissionInPast Z
 	FIELD hasPlayedGameOrSeenHelp hasPlayedGameOrSeenHelp Z
 	FIELD hasSelectedAStorageType hasSelectedAStorageType Z
+	FIELD highGraphics highGraphics Z
 	FIELD highRefreshRate highRefreshRate Z
 	FIELD immersiveFullScreen immersiveFullScreen Z
 	FIELD interfaceVolume interfaceVolume F
@@ -38,6 +41,7 @@ CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD lastNetworkPlayerName lastNetworkPlayerName Ljava/lang/String;
 	FIELD lastSeenMessageId lastSeenMessageId I
 	FIELD lastSeenMessageIds lastSeenMessageIds Ljava/lang/String;
+	FIELD liveReloading liveReloading Z
 	FIELD loadDisabledModData loadDisabledModData Z
 	FIELD locationAction locationAction I
 	FIELD locationDpad locationDpad I
@@ -50,6 +54,7 @@ CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD mouseSupport mouseSupport Z
 	FIELD musicVolume musicVolume F
 	FIELD networkClientId networkClientId Ljava/lang/String;
+	FIELD networkClientIdMachineKey networkClientIdMachineKey Ljava/lang/String;
 	FIELD networkPort networkPort I
 	FIELD networkServerId networkServerId Ljava/lang/String;
 	FIELD newRender newRender Z
@@ -58,21 +63,34 @@ CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD numIncompleteLoadAttempts numIncompleteLoadAttempts I
 	FIELD numLoadsSinceRunningGameOrNormalExit numLoadsSinceRunningGameOrNormalExit I
 	FIELD onscreenControls onscreenControls Z
+	FIELD overrideLanguageCode overrideLanguageCode Ljava/lang/String;
+	FIELD prefs prefs Landroid/content/SharedPreferences;
 	FIELD quickRally quickRally Z
 	FIELD rateGameShown rateGameShown Z
+	FIELD renderAntiAlias renderAntiAlias Z
 	FIELD renderBackground renderBackground Z
 	FIELD renderClouds renderClouds Z
 	FIELD renderControls renderControls Z
+	FIELD renderDensity renderDensity F
 	FIELD renderDoubleScale renderDoubleScale Z
 	FIELD renderExtraLayers renderExtraLayers Z
+	FIELD renderExtraShadows renderExtraShadows Z
+	FIELD renderFancyWater renderFancyWater Z
+	FIELD renderSmoothDelta renderSmoothDelta Z
+	FIELD renderVsync renderVsync Z
 	FIELD renderWithLineWidth renderWithLineWidth Z
 	FIELD replaysShowRecordedChat replaysShowRecordedChat Z
+	FIELD replayTracing replayTracing Z
+	FIELD resizeFontWithUIScale resizeFontWithUIScale Z
 	FIELD saveMultiplayerReplays saveMultiplayerReplays Z
 	FIELD scrollSpeed scrollSpeed F
 	FIELD sendReports sendReports Z
+	FIELD settingFields settingFields Ljava/util/HashMap;
+	FIELD settingsEngine settingsEngine Lcom/corrodinggames/rts/gameFramework/SettingsEngine;
 	FIELD settingsGameVersion settingsGameVersion I
 	FIELD settingsGameVersionFirst settingsGameVersionFirst I
 	FIELD shaderEffects shaderEffects Z
+	FIELD showActionInfoHoverNearMouse showActionInfoHoverNearMouse Z
 	FIELD showChatAndPingShortcuts showChatAndPingShortcuts Z
 	FIELD showFps showFps Z
 	FIELD showHp showHp Z
@@ -81,25 +99,42 @@ CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD showMapPingsOnMinimap showMapPingsOnMinimap Z
 	FIELD shownAudioWarning shownAudioWarning Z
 	FIELD showPlayerChatInGame showPlayerChatInGame Z
+	FIELD showSelectedUnitsList showSelectedUnitsList Z
 	FIELD showUnitGroups showUnitGroups Z
 	FIELD showUnitIcons showUnitIcons Z
 	FIELD showUnitWaypoints showUnitWaypoints Z
 	FIELD showWarLogOnScreen showWarLogOnScreen Z
 	FIELD showZoomButton showZoomButton Z
+	FIELD slick2dBorderless slick2dBorderless Z
 	FIELD slick2dFullScreen slick2dFullScreen Z
 	FIELD slick2dFullScreenResolution slick2dFullScreenResolution Ljava/lang/String;
 	FIELD slick2dResolution slick2dResolution Ljava/lang/String;
 	FIELD smartSelection_v2 smartSelection_v2 Z
 	FIELD softFogFading softFogFading Z
 	FIELD storageType storageType I
+	FIELD teamColors teamColors Ljava/lang/String;
+	FIELD teamColorsNames teamColorsNames Ljava/lang/String;
 	FIELD teamShaders teamShaders Z
 	FIELD teamUnitCapHostedGame teamUnitCapHostedGame I
 	FIELD teamUnitCapSinglePlayer teamUnitCapSinglePlayer I
 	FIELD trackpad trackpad Z
 	FIELD udpInMultiplayer udpInMultiplayer Z
+	FIELD uiRenderScale uiRenderScale F
 	FIELD unlockedScreenRotation unlockedScreenRotation Z
 	FIELD upgradedToNoPublicStorage upgradedToNoPublicStorage Z
 	FIELD upgradedToNoPublicStorageWarningShown upgradedToNoPublicStorageWarningShown Z
 	FIELD useCircleSelect useCircleSelect Z
 	FIELD useMinimapAllyColors useMinimapAllyColors Z
 	FIELD uuid uuid Ljava/lang/String;
+	METHOD getBooleanPref getBooleanPref (Ljava/lang/String;Z)Z
+	METHOD getFloatPref getFloatPref (Ljava/lang/String;F)F
+	METHOD getInstance getInstance (Landroid/content/Context;)Lcom/corrodinggames/rts/gameFramework/SettingsEngine;
+	METHOD getIntPref getIntPref (Ljava/lang/String;I)I
+	METHOD getPreferencesPath getPreferencesPath ()Ljava/lang/String;
+	METHOD getStringPref getStringPref (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD getValueDynamic getValueDynamic (Ljava/lang/String;)Ljava/lang/String;
+	METHOD loadFromFileSystem loadFromFileSystem ()V
+	METHOD loadMainExternalFolder loadMainExternalFolder (Z)Z
+	METHOD save save ()Z
+	METHOD saveToFileSystem saveToFileSystem ()Z
+	METHOD setValueDynamic setValueDynamic (Ljava/lang/String;Ljava/lang/String;)Z

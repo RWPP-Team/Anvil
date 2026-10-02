@@ -1,0 +1,6 @@
+CLASS com/corrodinggames/rts/gameFramework/m/ab com/corrodinggames/rts/gameFramework/render/GraphicsUtilsCircleCache
+	COMMENT BitmapOrTexture draw entry in the render package (UNRESOLVED NAME - left obfuscated): int a, int b, boolean c, BitmapOrTexture d, plus clone()/a() copies. Intentionally not renamed (no decisive evidence).
+	FIELD a strokeWidth I
+	FIELD b radius I
+	FIELD c fill Z
+	FIELD d bitmap Lcom/corrodinggames/rts/gameFramework/m/e;

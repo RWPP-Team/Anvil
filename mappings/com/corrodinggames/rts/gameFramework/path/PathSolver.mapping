@@ -26,3 +26,21 @@ CLASS com/corrodinggames/rts/gameFramework/k/o com/corrodinggames/rts/gameFramew
 	FIELD x lock Ljava/lang/Object;
 	FIELD y startTime J
 	FIELD z endTime J
+	METHOD a notifySolver ()V
+	METHOD a followDirections (BSS)Ljava/util/LinkedList;
+	METHOD a getTileCost (II)I
+	METHOD a initClosedArrays (Lcom/corrodinggames/rts/game/b/b;)V
+	METHOD a linkToPath (Lcom/corrodinggames/rts/game/units/ao;Lcom/corrodinggames/rts/gameFramework/k/k;)V
+	METHOD a initStartNode (Lcom/corrodinggames/rts/game/units/ao;SSLjava/lang/Float;)V
+	METHOD a setupNewPath (Lcom/corrodinggames/rts/gameFramework/k/k;)V
+	METHOD a reverse (Ljava/util/LinkedList;)Ljava/util/LinkedList;
+	METHOD a initEndNode (SSS)V
+	METHOD b solveCurrentPath ()V
+	METHOD b turnCost (II)I
+	METHOD c startThread ()V
+	METHOD c turnCostCheapReverse (II)I
+	METHOD d incrementClosedStamp ()V
+	METHOD e solveAStar ()Ljava/util/LinkedList;
+	METHOD f solveFlowField ()V
+	METHOD g buildFlowField ()V
+	METHOD run run ()V
