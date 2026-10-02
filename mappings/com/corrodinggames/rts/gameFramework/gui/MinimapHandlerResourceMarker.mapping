@@ -2,4 +2,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/t com/corrodinggames/rts/gameFramew
 	COMMENT MinimapHandlerResourceMarker - a "resource pool" icon drawn on the minimap: x/y (the map position, both from the (int,int) constructor arg) and minimapHandler (the synthetic outer reference). Still obfuscated: c, d (two more ints) and e (boolean) - set elsewhere in MinimapHandler. [partial field names verified]
 	FIELD a x I
 	FIELD b y I
+	FIELD c minimapX I
+	FIELD d minimapY I
+	FIELD e visibleToPlayer Z
 	FIELD f minimapHandler Lcom/corrodinggames/rts/gameFramework/f/o;

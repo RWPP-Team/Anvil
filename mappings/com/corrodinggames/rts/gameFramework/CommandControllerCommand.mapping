@@ -2,6 +2,7 @@ CLASS com/corrodinggames/rts/gameFramework/e com/corrodinggames/rts/gameFramewor
 	COMMENT One command issued by a team (inner class of CommandController). Named fields: source (String, debug origin), team, waypoint, actionId (ActionId), targetPoint (PointF), targetUnit (Unit), attackMode, player (the Player this command is validated against), allowedTeamMask (short bitmask built in l() from every team that p() is true, tested by a(Team,Team)), changeStepRate (float, logged as "issueCommand: changeStepRate"), systemActionId (int: 1=new DebugDesyncDetector, 2=stress test, 5=spawn via build waypoint, 100=team surrender, 200=quick resync), units (FastArrayList of live OrderableUnit), cachedPaths (FastArrayList of CommandControllerCachedCommandPath), unitIdsPending (FastArrayList of Long ids resolved by i()). Remaining obfuscated: a, c, d, e, f, g, h, o, r, t, x and the private PointF z. Serialized with versioned (de)serialization ("c" markers; tags up to v80). [behaviour verified]
 	FIELD A unitIdsPending Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD b source Ljava/lang/String;
+	FIELD e queueOrder Z
 	FIELD i team Lcom/corrodinggames/rts/game/n;
 	FIELD j waypoint Lcom/corrodinggames/rts/game/units/au;
 	FIELD k actionId Lcom/corrodinggames/rts/game/units/a/c;
@@ -14,3 +15,24 @@ CLASS com/corrodinggames/rts/gameFramework/e com/corrodinggames/rts/gameFramewor
 	FIELD u systemActionId I
 	FIELD v units Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD w cachedPaths Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD x pathfindingQueued Z
+	FIELD z factoryRallyPoint Landroid/graphics/PointF;
+	METHOD a allPathsReady ()Z
+	METHOD a setFactoryRallyPoint (Landroid/graphics/PointF;)V
+	METHOD a isTeamAllowed (Lcom/corrodinggames/rts/game/n;Lcom/corrodinggames/rts/game/n;)Z
+	METHOD a setAttackMode (Lcom/corrodinggames/rts/game/units/a;)V
+	METHOD a setActionId (Lcom/corrodinggames/rts/game/units/a/c;)V
+	METHOD a setActionIdAndTarget (Lcom/corrodinggames/rts/game/units/a/c;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a addUnit (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD a addUnits (Ljava/util/AbstractList;)V
+	METHOD b queuePathfinding ()V
+	METHOD c getTeam ()Lcom/corrodinggames/rts/game/n;
+	METHOD d getUnitCount ()I
+	METHOD e isComplete ()Z
+	METHOD f copy ()Lcom/corrodinggames/rts/gameFramework/e;
+	METHOD g deferUnitsToIds ()V
+	METHOD i resolvePendingUnitIds ()V
+	METHOD k issueCommand ()V
+	METHOD l rebuildAllowedTeamMask ()Z

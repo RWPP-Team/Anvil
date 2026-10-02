@@ -1,0 +1,17 @@
+CLASS a/a/a/h net/rudp/impl/Segment
+	FIELD a flags I
+	FIELD b length I
+	FIELD c seq I
+	FIELD d ack I
+	FIELD e attempts I
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a readHeader ([BII)V
+	METHOD a setAck (I)V
+	METHOD a setHeader (III)V
+	METHOD b getLength ()I
+	METHOD b parse ([BII)La/a/a/h;
+	METHOD b setAttempts (I)V
+	METHOD d toBytes ()[B
+	METHOD m getSeq ()I
+	METHOD n getAck ()I
+	METHOD o getAttempts ()I

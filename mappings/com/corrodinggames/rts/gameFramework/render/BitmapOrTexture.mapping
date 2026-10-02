@@ -17,3 +17,26 @@ CLASS com/corrodinggames/rts/gameFramework/m/e com/corrodinggames/rts/gameFramew
 	FIELD u halfHeightFloat F
 	FIELD w keepInGpuMemory Z
 	FIELD x nextId I
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a getPixel (II)I
+	METHOD a setPixel (III)V
+	METHOD a createResizedCopy (IIZ)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a setBitmap (Landroid/graphics/Bitmap;)V
+	METHOD a getTeamImages (Lcom/corrodinggames/rts/game/o;)[Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a setTeamImages (Lcom/corrodinggames/rts/game/o;[Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD a setShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
+	METHOD a copyDimensionsFrom (Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD a setName (Ljava/lang/String;)V
+	METHOD b getBitmap ()Landroid/graphics/Bitmap;
+	METHOD b setKeepInGpuMemory (Z)V
+	METHOD B getShader ()Lcom/corrodinggames/rts/gameFramework/m/ae;
+	METHOD d isKeepInGpuMemory ()Z
+	METHOD g computeHalfSizes ()V
+	METHOD i ensurePixelData ()V
+	METHOD j loadPixelData ()V
+	METHOD l getHeight ()I
+	METHOD m getWidth ()I
+	METHOD o disposeBitmap ()V
+	METHOD r freePixelData ()V
+	METHOD u getMemoryUsage ()I
+	METHOD v invalidateTeamImages ()V

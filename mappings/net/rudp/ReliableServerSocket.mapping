@@ -1,0 +1,18 @@
+CLASS a/a/b net/rudp/ReliableServerSocket
+	FIELD a connectionFilter La/a/c;
+	FIELD b lastDebugLogTime J
+	FIELD c debugLogCount I
+	FIELD d socket Ljava/net/DatagramSocket;
+	FIELD e soTimeout I
+	FIELD f acceptBacklog I
+	FIELD g closed Z
+	FIELD h acceptQueue Ljava/util/ArrayList;
+	FIELD i clientSockets Ljava/util/HashMap;
+	FIELD j pendingClients Ljava/util/HashMap;
+	FIELD k clientDatagramHandlers Ljava/util/HashMap;
+	FIELD l stateListener La/a/s;
+	METHOD a setConnectionFilter (La/a/c;)V
+	METHOD a debugPrint (Ljava/lang/String;)V
+	METHOD a init (Ljava/net/DatagramSocket;I)V
+	METHOD a removeClientSocket (Ljava/net/SocketAddress;)La/a/e;
+	METHOD a registerClientSocket (Ljava/net/SocketAddress;La/a/e;)V

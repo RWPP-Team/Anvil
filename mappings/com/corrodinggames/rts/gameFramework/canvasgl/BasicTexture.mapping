@@ -12,3 +12,21 @@ CLASS com/corrodinggames/rts/gameFramework/b/b com/corrodinggames/rts/gameFramew
 	FIELD m recycleRequested Z
 	FIELD n allTextures Ljava/util/WeakHashMap;
 	FIELD o finalizerThreadMarker Ljava/lang/ThreadLocal;
+	METHOD a getTextureId ()I
+	METHOD a nextPowerOfTwo (I)I
+	METHOD a setSourceSize (II)V
+	METHOD a convertToNormalizedRect (Landroid/graphics/RectF;)V
+	METHOD a clampDestRect (Landroid/graphics/RectF;Landroid/graphics/RectF;)V
+	METHOD a setCanvas (Lcom/corrodinggames/rts/gameFramework/b/k;)V
+	METHOD a setRecycled (Z)V
+	METHOD b getSourceWidth ()I
+	METHOD b setTextureFilter (I)V
+	METHOD b createGlTexture (Lcom/corrodinggames/rts/gameFramework/b/k;)V
+	METHOD c getSourceHeight ()I
+	METHOD d getTextureWidth ()I
+	METHOD e getTextureHeight ()I
+	METHOD f isRecycled ()Z
+	METHOD g getGlTextureType ()I
+	METHOD h getTextureFilter ()I
+	METHOD j requestRecycle ()V
+	METHOD k releaseTexture ()V

@@ -7,3 +7,6 @@ CLASS com/corrodinggames/rts/gameFramework/n/g com/corrodinggames/rts/gameFramew
 	FIELD f name Ljava/lang/String;
 	FIELD g noTimer Z
 	FIELD h hasName Z
+	FIELD i triggerEngine Lcom/corrodinggames/rts/gameFramework/n/f;
+	METHOD a activate ()V
+	METHOD a parseWaveLine (Ljava/lang/String;)Z

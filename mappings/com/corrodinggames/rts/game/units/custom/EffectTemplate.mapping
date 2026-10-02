@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/ay com/corrodinggames/rts/game/units/custom/EffectTemplate
+	METHOD a spawnEffect (FFFFLcom/corrodinggames/rts/gameFramework/w;IS)Lcom/corrodinggames/rts/gameFramework/d/e;

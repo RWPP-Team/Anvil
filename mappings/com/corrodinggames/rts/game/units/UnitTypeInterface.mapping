@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/as com/corrodinggames/rts/game/units/UnitTypeInterface
+	METHOD a createUnit ()Lcom/corrodinggames/rts/game/units/am;
+	METHOD B getStreamingPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD c getPriceValue ()I
+	METHOD C isAvailableInDemo ()Z
+	METHOD D getBuildSpeed ()F
+	METHOD e getDisplayName ()Ljava/lang/String;
+	METHOD f getDisplayDescription ()Ljava/lang/String;
+	METHOD g getTechLevel ()I
+	METHOD j isBuilding ()Z
+	METHOD k ignoreInUnitCapCalculation ()Z
+	METHOD l canAttackUnderwaterUnits ()Z
+	METHOD m canAttackFlyingUnits ()Z
+	METHOD n canAttackLandUnits ()Z
+	METHOD o getMovementType ()Lcom/corrodinggames/rts/game/units/ao;
+	METHOD p placeOnlyOnResPool ()Z
+	METHOD q getPlacementRules ()Lcom/corrodinggames/rts/game/units/custom/be;
+	METHOD u getPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD w isLocked ()Z

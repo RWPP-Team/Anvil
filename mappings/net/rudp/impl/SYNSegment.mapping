@@ -1,0 +1,20 @@
+CLASS a/a/a/g net/rudp/impl/SYNSegment
+	FIELD a version I
+	FIELD b maxOutstandingSegs I
+	FIELD d maxSegmentSize I
+	FIELD e retransmissionTimeout I
+	FIELD f cumulativeAckTimeout I
+	FIELD g nullSegmentTimeout I
+	FIELD h maxRetrans I
+	FIELD i maxCumulativeAcks I
+	FIELD j maxOutOfSequence I
+	FIELD k maxAutoReset I
+	METHOD c getMaxOutstandingSegs ()I
+	METHOD e getMaxSegmentSize ()I
+	METHOD f getRetransmissionTimeout ()I
+	METHOD g getCumulativeAckTimeout ()I
+	METHOD h getNullSegmentTimeout ()I
+	METHOD i getMaxRetrans ()I
+	METHOD j getMaxCumulativeAcks ()I
+	METHOD k getMaxOutOfSequence ()I
+	METHOD l getMaxAutoReset ()I

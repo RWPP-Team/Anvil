@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/d/l com/corrodinggames/rts/game/units/buildings/FactoryInterface
+	METHOD a setRallyPoint (Landroid/graphics/PointF;)V
+	METHOD b PENDING_onTurretBuilt (Lcom/corrodinggames/rts/game/units/d/j;)V
+	METHOD dA isOverTransportCapacity ()Z
+	METHOD dw getCurrentQueuedItem ()Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD dx getQueuedItems ()Lcom/corrodinggames/rts/gameFramework/utility/m;

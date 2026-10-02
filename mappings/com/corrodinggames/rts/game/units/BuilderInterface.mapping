@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/d com/corrodinggames/rts/game/units/BuilderInterface
+	METHOD b getCornerPoints ()[Landroid/graphics/PointF;
+	METHOD e_ getCornerPointsOld ()[Landroid/graphics/PointF;

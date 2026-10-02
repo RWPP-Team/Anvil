@@ -1,0 +1,4 @@
+CLASS a/a/e net/rudp/ReliableClientSocket
+	FIELD a started Z
+	FIELD i incomingSegments Ljava/util/ArrayList;
+	METHOD a handleIncomingSegment (La/a/a/h;)V

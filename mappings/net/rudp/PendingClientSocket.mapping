@@ -1,0 +1,3 @@
+CLASS a/a/g net/rudp/PendingClientSocket
+	FIELD a createdAt J
+	FIELD b clientSocket La/a/e;

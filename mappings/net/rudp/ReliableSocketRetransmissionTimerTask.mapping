@@ -1,0 +1,2 @@
+CLASS a/a/n net/rudp/ReliableSocketRetransmissionTimerTask
+	FIELD a socket La/a/h;

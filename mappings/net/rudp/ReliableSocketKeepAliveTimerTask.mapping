@@ -1,0 +1,2 @@
+CLASS a/a/k net/rudp/ReliableSocketKeepAliveTimerTask
+	FIELD a socket La/a/h;

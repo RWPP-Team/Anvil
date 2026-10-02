@@ -1,0 +1,6 @@
+CLASS a/a/s net/rudp/ReliableSocketStateListener
+	METHOD a connectionEstablished (La/a/h;)V
+	METHOD b connectionAttemptFailed (La/a/h;)V
+	METHOD c connectionClosed (La/a/h;)V
+	METHOD d connectionFailure (La/a/h;)V
+	METHOD e connectionReset (La/a/h;)V

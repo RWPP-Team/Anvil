@@ -1,0 +1,2 @@
+CLASS a/a/c net/rudp/ConnectionFilter
+	METHOD a accept (Ljava/net/SocketAddress;)Z

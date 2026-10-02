@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/m/aa com/corrodinggames/rts/gameFramework/render/GraphicsUtils
+	METHOD a getColorAlpha (I)I
+	METHOD a drawCircle (Lcom/corrodinggames/rts/gameFramework/m/y;FFFLandroid/graphics/Paint;)V
+	METHOD a drawImageWrapped (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Paint;IIII)V
+	METHOD a drawImageWrapped (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/RectF;Landroid/graphics/Paint;FFII)V
+	METHOD a drawMultiLineText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
+	METHOD b getColorRed (I)I
+	METHOD c getColorGreen (I)I
+	METHOD d getColorBlue (I)I

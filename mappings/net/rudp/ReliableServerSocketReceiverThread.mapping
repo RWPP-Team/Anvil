@@ -1,0 +1,2 @@
+CLASS a/a/d net/rudp/ReliableServerSocketReceiverThread
+	FIELD a serverSocket La/a/b;

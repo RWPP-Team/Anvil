@@ -1,1 +1,27 @@
 CLASS com/corrodinggames/rts/gameFramework/m/l com/corrodinggames/rts/gameFramework/render/CanvasLike
+	METHOD a restore ()V
+	METHOD a drawLines ([FIILandroid/graphics/Paint;)V
+	METHOD a scale (FF)V
+	METHOD a rotate (FFF)V
+	METHOD a clipRect (FFFF)V
+	METHOD a drawLine (FFFFLandroid/graphics/Paint;)V
+	METHOD a drawCircle (FFFLandroid/graphics/Paint;)V
+	METHOD a drawColor (I)V
+	METHOD a setPorterDuffMode (ILandroid/graphics/PorterDuff$Mode;)V
+	METHOD a flushBitmap (Landroid/graphics/Bitmap;)V
+	METHOD a clipRect (Landroid/graphics/Rect;)V
+	METHOD a drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD a clipRect (Landroid/graphics/RectF;)V
+	METHOD a drawRect (Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a setShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)Z
+	METHOD a setBitmap (Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;)V
+	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
+	METHOD a lockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD a setEnabled (Z)V
+	METHOD b save ()V
+	METHOD b translate (FF)V
+	METHOD b unlockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD c isEnabled ()Z

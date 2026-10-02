@@ -13,6 +13,7 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD aq stripIndex I
 	FIELD ar drawLayer S
 	FIELD as shadow Z
+	FIELD b attachedTo Lcom/corrodinggames/rts/gameFramework/w;
 	FIELD B lightingColorFilter Landroid/graphics/LightingColorFilter;
 	FIELD e visibleInFog Z
 	FIELD E alpha F
@@ -21,6 +22,8 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD I x F
 	FIELD J y F
 	FIELD K height F
+	FIELD o active Z
+	FIELD p updatedInRenderPass Z
 	FIELD P speedX F
 	FIELD q priority Lcom/corrodinggames/rts/gameFramework/d/h;
 	FIELD Q speedY F

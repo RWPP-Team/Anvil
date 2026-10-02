@@ -20,3 +20,14 @@ CLASS com/corrodinggames/rts/gameFramework/d/c com/corrodinggames/rts/gameFramew
 	FIELD w paint Landroid/graphics/Paint;
 	FIELD x lavaSpawnTimer F
 	FIELD y layerUsed [Z
+	METHOD a setForceOnscreenCheck ()V
+	METHOD a updateEffects (F)V
+	METHOD a drawEffectsForLayer (FI)I
+	METHOD a loadResources (Landroid/content/Context;)V
+	METHOD a attachToGameObject (Lcom/corrodinggames/rts/gameFramework/d/e;Lcom/corrodinggames/rts/gameFramework/w;)V
+	METHOD a allocateEffect (Lcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a getStripIndex (Ljava/lang/String;)I
+	METHOD a removeAll (Z)V
+	METHOD b setIgnoreOnscreenCheckOnce ()V
+	METHOD b drawShadows (F)I
+	METHOD b setPriorityOverride (Lcom/corrodinggames/rts/gameFramework/d/h;)V

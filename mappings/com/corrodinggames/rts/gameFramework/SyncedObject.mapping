@@ -1,2 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/bq com/corrodinggames/rts/gameFramework/SyncedObject
 	COMMENT Base for network-synchronized objects; abstract write(OutputNetStream). Parent of GameObject and Team. [iOS-confirmed]
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V

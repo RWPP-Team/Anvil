@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramework/render/GraphicsEngine
+	METHOD a drawLines ([FIILandroid/graphics/Paint;)V
+	METHOD a drawLine (FFFFLandroid/graphics/Paint;)V
+	METHOD a drawCircle (FFFLandroid/graphics/Paint;)V
+	METHOD a loadImage (I)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a createImage (IIZ)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a setPorterDuffMode (ILandroid/graphics/PorterDuff$Mode;)V
+	METHOD a loadImage (IZ)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a clipRect (Landroid/graphics/Rect;)V
+	METHOD a drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD a clipRect (Landroid/graphics/RectF;)V
+	METHOD a drawRect (Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a drawImageRotated (Lcom/corrodinggames/rts/gameFramework/m/e;FFFLandroid/graphics/Paint;)V
+	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;)V
+	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a saveImageToFile (Lcom/corrodinggames/rts/gameFramework/m/e;Ljava/io/File;)V
+	METHOD a loadImageFromStream (Ljava/io/InputStream;Z)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
+	METHOD a drawTextOutlined (Ljava/lang/String;FFLandroid/graphics/Paint;Landroid/graphics/Paint;F)V
+	METHOD a measureText (Ljava/lang/String;Landroid/graphics/Paint;)I
+	METHOD a lockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD b unlockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD k restore ()V
+	METHOD l save ()V

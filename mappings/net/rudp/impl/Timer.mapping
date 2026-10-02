@@ -1,0 +1,19 @@
+CLASS a/a/a/i net/rudp/impl/Timer
+	FIELD a started Z
+	FIELD b name Ljava/lang/String;
+	FIELD c task Ljava/lang/Runnable;
+	FIELD d delay J
+	FIELD e period J
+	FIELD f cancelled Z
+	FIELD g scheduled Z
+	FIELD h resetRequested Z
+	FIELD i terminated Z
+	FIELD j runLock Ljava/lang/Object;
+	METHOD a start ()V
+	METHOD a schedule (J)V
+	METHOD a schedule (JJ)V
+	METHOD b isScheduled ()Z
+	METHOD c isIdle ()Z
+	METHOD d reset ()V
+	METHOD e cancel ()V
+	METHOD f terminate ()V

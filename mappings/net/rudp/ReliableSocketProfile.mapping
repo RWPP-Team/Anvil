@@ -1,0 +1,24 @@
+CLASS a/a/r net/rudp/ReliableSocketProfile
+	FIELD a defaultProfile La/a/r;
+	FIELD b maxSendQueueSize I
+	FIELD c maxRecvQueueSize I
+	FIELD d maxSegmentSize I
+	FIELD e maxOutstandingSegs I
+	FIELD f maxRetrans I
+	FIELD g maxCumulativeAcks I
+	FIELD h maxOutOfSequence I
+	FIELD i maxAutoReset I
+	FIELD j nullSegmentTimeout I
+	FIELD k retransmissionTimeout I
+	FIELD l cumulativeAckTimeout I
+	METHOD a getMaxSegmentSize ()I
+	METHOD a set (IIIIIIIIIII)V
+	METHOD a checkRange (Ljava/lang/String;III)V
+	METHOD b getMaxOutstandingSegs ()I
+	METHOD c getMaxRetrans ()I
+	METHOD d getMaxCumulativeAcks ()I
+	METHOD e getMaxOutOfSequence ()I
+	METHOD f getMaxAutoReset ()I
+	METHOD g getNullSegmentTimeout ()I
+	METHOD h getRetransmissionTimeout ()I
+	METHOD i getCumulativeAckTimeout ()I

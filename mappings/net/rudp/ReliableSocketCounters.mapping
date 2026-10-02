@@ -1,0 +1,20 @@
+CLASS a/a/i net/rudp/ReliableSocketCounters
+	FIELD a sendSequence I
+	FIELD b lastReceivedSeq I
+	FIELD c receivedSinceAck I
+	FIELD d outOfOrderSinceAck I
+	FIELD e unackedSentCount I
+	METHOD a nextSendSequence ()I
+	METHOD a setSendSequence (I)I
+	METHOD b getLastReceivedSeq ()I
+	METHOD b setLastReceivedSeq (I)I
+	METHOD c incrementReceivedSinceAck ()V
+	METHOD d getReceivedSinceAck ()I
+	METHOD e takeReceivedSinceAck ()I
+	METHOD f incrementOutOfOrderSinceAck ()V
+	METHOD g getOutOfOrderSinceAck ()I
+	METHOD h takeOutOfOrderSinceAck ()I
+	METHOD i incrementUnackedSent ()V
+	METHOD j getUnackedSent ()I
+	METHOD k takeUnackedSent ()I
+	METHOD l resetCounts ()V

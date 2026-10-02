@@ -1,1 +1,17 @@
 CLASS com/corrodinggames/rts/gameFramework/n/f com/corrodinggames/rts/gameFramework/trigger/TriggerEngine
+	FIELD g objectives Ljava/util/ArrayList;
+	FIELD J triggers Ljava/util/ArrayList;
+	FIELD O waves Ljava/util/ArrayList;
+	FIELD r currentWaveIndex I
+	FIELD S survivalWaveWeights Ljava/util/ArrayList;
+	FIELD T experimentalWaveWeights Ljava/util/ArrayList;
+	FIELD z nextWaveTimer F
+	METHOD a logMapWarning (Ljava/lang/String;)V
+	METHOD a addWaveUnitWeight (Ljava/util/ArrayList;Lcom/corrodinggames/rts/game/units/as;F)V
+	METHOD a addWaveUnitWeight (Ljava/util/ArrayList;Ljava/lang/String;F)V
+	METHOD b drawMapTexts (F)V
+	METHOD b logTrigger (Ljava/lang/String;)V
+	METHOD c findObjectives ()V
+	METHOD c logTriggerDesync (Ljava/lang/String;)V
+	METHOD f setupSurvivalWaves ()V
+	METHOD f findMapPoint (Ljava/lang/String;)Landroid/graphics/PointF;

@@ -1,1 +1,17 @@
 CLASS com/corrodinggames/rts/gameFramework/ba com/corrodinggames/rts/gameFramework/ReplayEngine
+	FIELD f replayTracing Z
+	FIELD g checksum Lcom/corrodinggames/rts/gameFramework/j/ak;
+	FIELD K backgroundWriter Lcom/corrodinggames/rts/gameFramework/bb;
+	FIELD N autoSaveDone Z
+	FIELD P replayActive Z
+	FIELD u isPlayingMode Z
+	METHOD a autoSaveReplayIfNeeded (Ljava/lang/String;)V
+	METHOD b cycleGameSpeed (Ljava/lang/String;)V
+	METHOD c loadReplay (Ljava/lang/String;)Z
+	METHOD d startSaving (Ljava/lang/String;)V
+	METHOD e stop ()V
+	METHOD e deleteReplayFile (Ljava/lang/String;)V
+	METHOD h updateReplayPlayback ()Z
+	METHOD i isRecordingOrPlaying ()Z
+	METHOD j isPlayingReplay ()Z
+	METHOD k isRecordingReplay ()Z

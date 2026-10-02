@@ -1,0 +1,5 @@
+CLASS a/a/p net/rudp/ReliableSocketListener
+	METHOD a packetSent ()V
+	METHOD b packetRetransmitted ()V
+	METHOD c packetReceivedInOrder ()V
+	METHOD d packetReceivedOutOfOrder ()V

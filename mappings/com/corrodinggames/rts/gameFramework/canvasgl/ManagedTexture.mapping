@@ -7,3 +7,8 @@ CLASS com/corrodinggames/rts/gameFramework/b/ah com/corrodinggames/rts/gameFrame
 	FIELD t limitUploadAttempts Z
 	FIELD u uploadRetryCount I
 	FIELD v padding I
+	METHOD a getCachedBitmap (ZLandroid/graphics/Bitmap$Config;I)Landroid/graphics/Bitmap;
+	METHOD d uploadToGpu (Lcom/corrodinggames/rts/gameFramework/b/k;)V
+	METHOD m isLoaded ()Z
+	METHOD n ensureSourceBitmap ()Landroid/graphics/Bitmap;
+	METHOD o uploadSourceBitmap ()V

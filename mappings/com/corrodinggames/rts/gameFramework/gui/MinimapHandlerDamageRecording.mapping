@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/f/q com/corrodinggames/rts/gameFramework/gui/MinimapHandlerDamageRecording
+	FIELD a isBase Z
+	FIELD b x I
+	FIELD c y I
+	FIELD d amount F
+	FIELD e flashTimer F

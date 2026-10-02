@@ -1,0 +1,2 @@
+CLASS a/a/m net/rudp/ReliableSocketThread
+	FIELD a socket La/a/h;

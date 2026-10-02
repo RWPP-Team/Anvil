@@ -1,0 +1,2 @@
+CLASS a/a/j net/rudp/ReliableSocketCumulativeAckTimerTask
+	FIELD a socket La/a/h;

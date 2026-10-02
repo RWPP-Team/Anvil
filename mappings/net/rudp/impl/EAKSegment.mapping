@@ -1,0 +1,3 @@
+CLASS a/a/a/c net/rudp/impl/EAKSegment
+	FIELD a ackedSequences [I
+	METHOD c getAckedSequences ()[I
