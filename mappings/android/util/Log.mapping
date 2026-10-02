@@ -1,0 +1,2 @@
+CLASS android/util/Log
+	METHOD b error (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I

@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/y com/corrodinggames/rts/gameFramework/GameSaver
+	METHOD a saveGame (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD b autoSaveGame (Ljava/lang/String;Z)V

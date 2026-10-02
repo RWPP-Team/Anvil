@@ -4,7 +4,7 @@ CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/Projectile
 	FIELD aP effect Lcom/corrodinggames/rts/gameFramework/d/e;
 	FIELD ar color I
 	FIELD bm parentProjectile Lcom/corrodinggames/rts/game/f;
-	FIELD g projectile Lcom/corrodinggames/rts/game/g;
+	FIELD g metadata Lcom/corrodinggames/rts/game/g;
 	FIELD j sourceUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD K targetX F
 	FIELD l targetUnit Lcom/corrodinggames/rts/game/units/am;
