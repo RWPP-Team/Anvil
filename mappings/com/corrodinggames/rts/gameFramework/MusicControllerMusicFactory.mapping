@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/aq com/corrodinggames/rts/gameFramework/MusicControllerMusicFactory
+	FIELD e musicController Lcom/corrodinggames/rts/gameFramework/am;
+	METHOD a createMusicSteam ()Lcom/corrodinggames/rts/gameFramework/as;
+	METHOD a update (F)V
+	METHOD a onLowMemory (I)V
+	METHOD a setMusicController (Lcom/corrodinggames/rts/gameFramework/am;)V
+	METHOD a loadMusicHandle (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/ar;
+	METHOD b shutdown ()V
+	METHOD c supportsStereoFade ()Z
+	METHOD d shouldRunUpdateThread ()Z
+	METHOD e getStreamCount ()I

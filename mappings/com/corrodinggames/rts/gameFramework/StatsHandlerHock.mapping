@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/bk com/corrodinggames/rts/gameFramework/StatsHandlerHock
+	METHOD a onKill (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;Ljava/lang/Object;)V

@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/an com/corrodinggames/rts/gameFramework/MusicControllerAndroidMusicFactory
+	FIELD a loadedHandles Ljava/util/ArrayList;
+	FIELD b idlePlayers Ljava/util/ArrayList;
+	FIELD c activeStreams Ljava/util/ArrayList;
+	FIELD d preloadFailed Z

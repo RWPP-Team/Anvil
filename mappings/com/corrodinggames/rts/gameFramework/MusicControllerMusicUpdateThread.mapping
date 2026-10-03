@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/au com/corrodinggames/rts/gameFramework/MusicControllerMusicUpdateThread
+	FIELD a musicController Lcom/corrodinggames/rts/gameFramework/am;

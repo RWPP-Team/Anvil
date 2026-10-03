@@ -1,8 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramework/render/GraphicsEngine
 	METHOD a drawLines ([FIILandroid/graphics/Paint;)V
+	METHOD a scale (FF)V
+	METHOD a scaleAroundPoint (FFFF)V
 	METHOD a drawLine (FFFFLandroid/graphics/Paint;)V
 	METHOD a drawCircle (FFFLandroid/graphics/Paint;)V
 	METHOD a loadImage (I)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a setSize (II)V
 	METHOD a createImage (IIZ)Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a setPorterDuffMode (ILandroid/graphics/PorterDuff$Mode;)V
 	METHOD a loadImage (IZ)Lcom/corrodinggames/rts/gameFramework/m/e;
@@ -10,8 +13,10 @@ CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramew
 	METHOD a drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD a clipRect (Landroid/graphics/RectF;)V
 	METHOD a drawRect (Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a addShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
 	METHOD a drawImageRotated (Lcom/corrodinggames/rts/gameFramework/m/e;FFFLandroid/graphics/Paint;)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;)V
+	METHOD a drawImageTiled (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Paint;IIII)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 	METHOD a saveImageToFile (Lcom/corrodinggames/rts/gameFramework/m/e;Ljava/io/File;)V
@@ -20,6 +25,17 @@ CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramew
 	METHOD a drawTextOutlined (Ljava/lang/String;FFLandroid/graphics/Paint;Landroid/graphics/Paint;F)V
 	METHOD a measureText (Ljava/lang/String;Landroid/graphics/Paint;)I
 	METHOD a lockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD b translate (FF)V
+	METHOD b drawRectAlt (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD b measureTextHeight (Ljava/lang/String;Landroid/graphics/Paint;)I
 	METHOD b unlockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD c drawRectFromSize (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD d getCurrentCanvas ()Lcom/corrodinggames/rts/gameFramework/m/l;
+	METHOD g applyPendingShaders ()V
+	METHOD i saveMatrix ()V
+	METHOD j restoreMatrix ()V
 	METHOD k restore ()V
 	METHOD l save ()V
+	METHOD m getWidth ()I
+	METHOD n getHeight ()I
+	METHOD r getOOMImage ()Lcom/corrodinggames/rts/gameFramework/m/e;

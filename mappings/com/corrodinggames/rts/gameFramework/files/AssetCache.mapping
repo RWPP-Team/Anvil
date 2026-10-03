@@ -1,2 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/e/g com/corrodinggames/rts/gameFramework/files/AssetCache
 	FIELD a logDebug Z
+	METHOD a escapeCharForName (C)Ljava/lang/String;
+	METHOD a escapeFileName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD a escapeCharInName (Ljava/lang/String;C)Ljava/lang/String;
+	METHOD a openCachedFile (Ljava/lang/String;Ljava/lang/String;)Ljava/io/FileInputStream;
+	METHOD a writeToCache (Ljava/lang/String;Ljava/lang/String;Ljava/io/InputStream;)Z
+	METHOD a writeStringToCache (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD a getCacheFilePath (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+	METHOD b readCachedString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD b openCachedEntry (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/e/h;
+	METHOD c deleteCachedFile (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD d listDirCached (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+	METHOD e openAssetCached (Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;

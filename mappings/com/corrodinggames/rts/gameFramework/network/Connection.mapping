@@ -5,26 +5,43 @@ CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramew
 	FIELD B lastPingTime J
 	FIELD c id I
 	FIELD d socket Ljava/net/Socket;
+	FIELD D clientReady Z
 	FIELD e address Ljava/net/InetAddress;
 	FIELD E version I
 	FIELD f packetQueue Ljava/util/concurrent/ConcurrentLinkedQueue;
 	FIELD F receiveWorker Lcom/corrodinggames/rts/gameFramework/j/d;
+	FIELD g lastSpamWarningNanos J
 	FIELD G sendWorker Lcom/corrodinggames/rts/gameFramework/j/e;
 	FIELD H receiveThread Ljava/lang/Thread;
 	FIELD I sendThread Ljava/lang/Thread;
 	FIELD j parent Lcom/corrodinggames/rts/gameFramework/j/c;
+	FIELD J receiveEnded Z
+	FIELD k forwardedPort I
+	FIELD K sendEnded Z
 	FIELD l lastSentPacket Lcom/corrodinggames/rts/gameFramework/j/au;
+	FIELD L packageName Ljava/lang/String;
+	FIELD M integrityCheckValue I
 	FIELD n forwardedHost Ljava/lang/String;
+	FIELD N extraChallengeFailed Z
 	FIELD p connected Z
 	FIELD q relayServer Z
 	FIELD R commandCount I
 	FIELD s isRelay Z
 	FIELD S commandRateTime J
+	FIELD t ignoreIncomingCommands Z
 	FIELD T commandLimitReached Z
+	FIELD u desyncSaveWritten Z
+	FIELD U receivingProgressTotal I
+	FIELD v desyncDetected Z
+	FIELD V receivingProgressBytes I
+	FIELD w resyncRequested Z
 	FIELD W engine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	FIELD x resyncCount I
+	FIELD y desyncCount I
 	FIELD z player Lcom/corrodinggames/rts/game/e;
 	METHOD a isCommandRateLimited ()Z
 	METHOD a sendPacket (Lcom/corrodinggames/rts/gameFramework/j/au;)V
+	METHOD a getEngine (Lcom/corrodinggames/rts/gameFramework/j/c;)Lcom/corrodinggames/rts/gameFramework/j/ad;
 	METHOD a handleWorkerShutdown (Lcom/corrodinggames/rts/gameFramework/j/c;ZZ)V
 	METHOD a sendKickWithReason (Ljava/lang/String;)V
 	METHOD a logException (Ljava/lang/String;Ljava/lang/Throwable;)V

@@ -1,1 +1,26 @@
 CLASS com/corrodinggames/rts/gameFramework/j/n com/corrodinggames/rts/gameFramework/network/MasterServerConnector
+	FIELD a logRequestThreads Z
+	FIELD b verboseLogging Z
+	FIELD c masterServerUrls [Ljava/lang/String;
+	FIELD d httpClientFactory Lcom/corrodinggames/rts/gameFramework/j/r;
+	METHOD a startGetOwnInfo ()V
+	METHOD a readResponseFirstLine ([B)Ljava/lang/String;
+	METHOD a getServerKeyForId (I)Ljava/lang/String;
+	METHOD a removeStaleServers (II)V
+	METHOD a startGetGameServerInfo (Lcom/corrodinggames/rts/gameFramework/j/w;Ljava/lang/String;ILjava/lang/String;)V
+	METHOD a startLoadRequest (Ljava/lang/Runnable;)V
+	METHOD a logVerbose (Ljava/lang/String;)V
+	METHOD a startSendErrorReport (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a doRequestToAllServers (Ljava/util/List;)Ljava/io/BufferedReader;
+	METHOD a doRequestToAllServers (Ljava/util/List;I)Ljava/io/BufferedReader;
+	METHOD a findNameValuePair (Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a addPostParameter (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a doSingleServerRequest (Ljava/util/List;Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/j/t;
+	METHOD a doRequestToAllServers (Ljava/util/List;Z[Ljava/lang/String;IZ)Ljava/io/BufferedReader;
+	METHOD a startParallelRequests (Ljava/util/List;ZLcom/corrodinggames/rts/gameFramework/j/s;[Ljava/lang/String;)V
+	METHOD b startCreateServerRequest ()V
+	METHOD b findDiscoveredServer (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/j/g;
+	METHOD b addServerInfoParameters (Ljava/util/List;)V
+	METHOD c startUpdateServerRequest ()V
+	METHOD c findOrCreateDiscoveredServer (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/j/g;
+	METHOD d startRemoveServerRequest ()V

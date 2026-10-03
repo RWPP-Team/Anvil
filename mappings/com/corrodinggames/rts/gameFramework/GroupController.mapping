@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/aa com/corrodinggames/rts/gameFramework/GroupController
+	FIELD a nextGroupId I
+	METHOD a resetGroupIds ()V
+	METHOD a generateFormationOffsets (IFF)Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD a optimizeFormationSlots (Lcom/corrodinggames/rts/gameFramework/utility/m;Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD a assignFormationSlots (Lcom/corrodinggames/rts/gameFramework/utility/m;Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/gameFramework/utility/m;FI)V
+	METHOD b createGroup ()Lcom/corrodinggames/rts/gameFramework/ab;
+	METHOD c createTempGroup ()Lcom/corrodinggames/rts/gameFramework/ab;

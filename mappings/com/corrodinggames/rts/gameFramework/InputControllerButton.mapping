@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/ad com/corrodinggames/rts/gameFramework/InputControllerButton
+	FIELD a displayName Ljava/lang/String;
+	FIELD c inputBindings Ljava/util/ArrayList;
+	METHOD a isPressed ()Z
+	METHOD a getBinding (I)Lcom/corrodinggames/rts/gameFramework/af;
+	METHOD a addKeyBinding (IIIZ)Lcom/corrodinggames/rts/gameFramework/ad;
+	METHOD a addKeyBinding (ILjava/lang/String;I)Lcom/corrodinggames/rts/gameFramework/ad;
+	METHOD a addKeyBinding (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/ad;
+	METHOD a addKeyBinding (Ljava/lang/String;I)Lcom/corrodinggames/rts/gameFramework/ad;
+	METHOD b isDown ()Z
+	METHOD b getBindingLabelAt (I)Ljava/lang/String;
+	METHOD b addJoystickBinding (IIIZ)Lcom/corrodinggames/rts/gameFramework/ad;
+	METHOD c getBindingLabel ()Ljava/lang/String;
+	METHOD c addKeyBinding (I)Lcom/corrodinggames/rts/gameFramework/ad;

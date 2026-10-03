@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/j com/corrodinggames/rts/gameFramework/gui/elements/TextElement
+	FIELD a text Ljava/lang/String;
+	FIELD b textPaint Landroid/graphics/Paint;
+	FIELD c debugStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD d textLines Ljava/util/ArrayList;
+	METHOD a setTextSizeDip (F)V
+	METHOD a setTextColor (I)V
+	METHOD a setText (Ljava/lang/String;)V
+	METHOD c getTextBounds ()Landroid/graphics/Rect;

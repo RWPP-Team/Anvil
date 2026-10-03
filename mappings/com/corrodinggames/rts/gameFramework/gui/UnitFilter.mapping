@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/f/al com/corrodinggames/rts/gameFramework/gui/UnitFilter
+	FIELD a builderFilter Lcom/corrodinggames/rts/gameFramework/f/al;
+	FIELD b builderFilter2 Lcom/corrodinggames/rts/gameFramework/f/al;
+	FIELD c extractorFilter Lcom/corrodinggames/rts/gameFramework/f/al;
+	FIELD d upgradableFabricatorFilter Lcom/corrodinggames/rts/gameFramework/f/al;
+	FIELD e landFactoryFilter Lcom/corrodinggames/rts/gameFramework/f/al;
+	FIELD f airFactoryFilter Lcom/corrodinggames/rts/gameFramework/f/al;
+	METHOD a matches (Lcom/corrodinggames/rts/game/units/y;)Z
+	METHOD a findNearestMatchingUnit (Ljava/util/ArrayList;Lcom/corrodinggames/rts/gameFramework/f/al;)Lcom/corrodinggames/rts/game/units/y;
+	METHOD a cycleSelectionList (Ljava/util/ArrayList;Lcom/corrodinggames/rts/gameFramework/f/al;Lcom/corrodinggames/rts/gameFramework/f/al;)V

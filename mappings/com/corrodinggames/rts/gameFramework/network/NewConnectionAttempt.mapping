@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ap com/corrodinggames/rts/gameFramework/network/NewConnectionAttempt
+	FIELD a address Ljava/net/InetAddress;
+	FIELD b attemptCount I
+	FIELD c limitLogged Z
+	FIELD d excessiveLogged Z

@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/h com/corrodinggames/rts/gameFramework/network/ForwardedSocket
+	FIELD a connection Lcom/corrodinggames/rts/gameFramework/j/c;
+	FIELD d inputStream Lcom/corrodinggames/rts/gameFramework/j/i;
+	FIELD e outputStream Lcom/corrodinggames/rts/gameFramework/j/j;

@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/m/z com/corrodinggames/rts/gameFramework/render/GraphicsEngineNull
+	FIELD b outOfMemoryImage Lcom/corrodinggames/rts/gameFramework/m/e;

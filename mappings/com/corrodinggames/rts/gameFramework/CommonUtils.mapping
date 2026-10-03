@@ -1,7 +1,17 @@
 CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramework/CommonUtils
 	FIELD a random Ljava/util/Random;
 	FIELD b fixedSeedRandom Ljava/util/Random;
+	FIELD i atanFallbackCount I
 	FIELD j sqrtLookupTable [B
+	FIELD k randomStringChars [C
+	FIELD l atanTableQ1 [F
+	FIELD m atanTableQ2 [F
+	FIELD n atanTableQ3 [F
+	FIELD o atanTableQ4 [F
+	FIELD p atanTableQ5 [F
+	FIELD q atanTableQ6 [F
+	FIELD r atanTableQ7 [F
+	FIELD s atanTableQ8 [F
 	FIELD t sinTable [F
 	FIELD u cosTable [F
 	METHOD a seedRandom ()V
@@ -15,12 +25,15 @@ CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramewor
 	METHOD a approachValue (FFF)F
 	METHOD a distanceSquared (FFFF)F
 	METHOD a rotatePointAround (FFFLandroid/graphics/PointF;)V
+	METHOD a deterministicRandomFloat (FFI)F
 	METHOD a formatDecimal (FI)Ljava/lang/String;
 	METHOD a normalizeAngle (FZ)F
 	METHOD a fastSqrt (I)I
 	METHOD a randomIntBetween (II)I
 	METHOD a lerpColor (IIF)I
+	METHOD a deterministicRandomInt (III)I
 	METHOD a chebyshevDistance (IIII)I
+	METHOD a formatDuration (J)Ljava/lang/String;
 	METHOD a nanosToMillis (JJ)J
 	METHOD a lineSegmentsIntersect (Landroid/graphics/PointF;Landroid/graphics/PointF;Landroid/graphics/PointF;Landroid/graphics/PointF;)Z
 	METHOD a normalizeRect (Landroid/graphics/Rect;)V
@@ -29,16 +42,28 @@ CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramewor
 	METHOD a normalizeRectF (Landroid/graphics/RectF;)V
 	METHOD a inflate (Landroid/graphics/RectF;F)V
 	METHOD a rectsIntersect (Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
+	METHOD a deterministicRandomFloat (Lcom/corrodinggames/rts/game/units/am;FFI)F
+	METHOD a deterministicRandom (Lcom/corrodinggames/rts/game/units/am;II)I
 	METHOD a deterministicRandom (Lcom/corrodinggames/rts/gameFramework/w;III)I
 	METHOD a readFileAsString (Ljava/io/File;)Ljava/lang/String;
 	METHOD a readStreamAsString (Ljava/io/InputStream;)Ljava/lang/String;
 	METHOD a copyStream (Ljava/io/InputStream;Ljava/io/OutputStream;)V
+	METHOD a joinStrings (Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+	METHOD a getStaticFieldNameForValue (Ljava/lang/Class;I)Ljava/lang/String;
 	METHOD a getExceptionStackTrace (Ljava/lang/Exception;)Ljava/lang/String;
+	METHOD a getExceptionMessage (Ljava/lang/Exception;Z)Ljava/lang/String;
+	METHOD a nullSafeEquals (Ljava/lang/Integer;Ljava/lang/Integer;)Z
+	METHOD a formatDate (Ljava/lang/String;)Ljava/lang/String;
 	METHOD a countOccurrences (Ljava/lang/String;C)I
 	METHOD a truncateString (Ljava/lang/String;I)Ljava/lang/String;
+	METHOD a padLeftWith (Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+	METHOD a stripSuffix (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a replaceIfContains (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD a booleanToString (Z)Ljava/lang/String;
 	METHOD b randomUUID ()Ljava/lang/String;
+	METHOD b sha256HexFromBytes ([B)Ljava/lang/String;
 	METHOD b doubleToString (D)Ljava/lang/String;
+	METHOD b nearlyEqualExact (DD)Z
 	METHOD b truncateDecimalString (DI)Ljava/lang/String;
 	METHOD b radiansToDegrees (F)F
 	METHOD b clampSigned (FF)F
@@ -48,9 +73,16 @@ CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramewor
 	METHOD b max (II)I
 	METHOD b clamp (III)I
 	METHOD b packArgb (IIII)I
+	METHOD b splitDuration (J)[I
+	METHOD b readInputStreamFully (Ljava/io/InputStream;)Ljava/lang/String;
+	METHOD b getExceptionMessage (Ljava/lang/Exception;)Ljava/lang/String;
 	METHOD b md5Hex (Ljava/lang/String;)Ljava/lang/String;
+	METHOD b containsChar (Ljava/lang/String;C)Z
 	METHOD b truncateStringWithEllipsis (Ljava/lang/String;I)Ljava/lang/String;
+	METHOD b joinPaths (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD c getCpuCoreCount ()I
+	METHOD c sha256Digest ([B)[B
+	METHOD c formatDouble2 (D)Ljava/lang/String;
 	METHOD c abs (F)F
 	METHOD c randomFloat (FF)F
 	METHOD c clampAngleDifference (FFF)F
@@ -58,31 +90,51 @@ CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramewor
 	METHOD c randomInt (I)I
 	METHOD c min (II)I
 	METHOD c sha256Hex14 (Ljava/lang/String;)Ljava/lang/String;
+	METHOD c splitString (Ljava/lang/String;C)[Ljava/lang/String;
 	METHOD c sha256HexRepeated (Ljava/lang/String;I)Ljava/lang/String;
 	METHOD c contains (Ljava/lang/String;Ljava/lang/String;)Z
 	METHOD d roundHalfUp (F)F
+	METHOD d randomFloat2 (FF)F
 	METHOD d angleBetweenPoints (FFFF)F
 	METHOD d abs (I)I
 	METHOD d sha256Hex4 (Ljava/lang/String;)Ljava/lang/String;
+	METHOD d repeatString (Ljava/lang/String;I)Ljava/lang/String;
+	METHOD d nullSafeEquals (Ljava/lang/String;Ljava/lang/String;)Z
 	METHOD e ceil (F)F
 	METHOD e pow (FF)F
+	METHOD e absNearlyEqual (FFF)Z
 	METHOD e randomString (I)Ljava/lang/String;
 	METHOD e sha256Hex (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e padRightSpaces (Ljava/lang/String;I)Ljava/lang/String;
 	METHOD f floor (F)I
 	METHOD f max (FF)F
 	METHOD f lerp (FFF)F
+	METHOD f getResourcePathForId (I)Ljava/lang/String;
 	METHOD f sha256Bytes (Ljava/lang/String;)[B
 	METHOD f padRight (Ljava/lang/String;I)Ljava/lang/String;
+	METHOD g formatDecimal2 (F)Ljava/lang/String;
 	METHOD g min (FF)F
 	METHOD g formatBytes (I)Ljava/lang/String;
 	METHOD g stripFileExtension (Ljava/lang/String;)Ljava/lang/String;
 	METHOD h formatSeconds (F)Ljava/lang/String;
 	METHOD h nearlyEqual (FF)Z
 	METHOD h colorToHexString (I)Ljava/lang/String;
+	METHOD h getParentDirectory (Ljava/lang/String;)Ljava/lang/String;
 	METHOD i easeInOutQuad (F)F
+	METHOD i atan2Fast (FF)F
+	METHOD i escapeXml (Ljava/lang/String;)Ljava/lang/String;
 	METHOD j sin (F)F
+	METHOD j nearlyEqualPrecise (FF)Z
+	METHOD j stripTrailingNewline (Ljava/lang/String;)Ljava/lang/String;
 	METHOD k cos (F)F
+	METHOD k nearlyEqualExact (FF)Z
+	METHOD k getBaseFileName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD l parseIntegerOrNull (Ljava/lang/String;)Ljava/lang/Integer;
+	METHOD m parseLongOrNull (Ljava/lang/String;)Ljava/lang/Long;
+	METHOD n containsNonAscii (Ljava/lang/String;)Z
 	METHOD o unescapeXml (Ljava/lang/String;)Ljava/lang/String;
 	METHOD p unquoteString (Ljava/lang/String;)Ljava/lang/String;
 	METHOD q removeBackslashes (Ljava/lang/String;)Ljava/lang/String;
+	METHOD r isNumericLoose (Ljava/lang/String;)Z
+	METHOD s isNumeric (Ljava/lang/String;)Z
 	CLASS a CpuFilter

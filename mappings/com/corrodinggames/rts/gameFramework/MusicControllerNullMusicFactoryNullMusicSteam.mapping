@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/ax com/corrodinggames/rts/gameFramework/MusicControllerNullMusicFactoryNullMusicSteam
+	FIELD a trackHandle Lcom/corrodinggames/rts/gameFramework/aw;
+	FIELD b factory Lcom/corrodinggames/rts/gameFramework/av;

@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/f/k com/corrodinggames/rts/gameFramework/gui/LeaderboardInterface
+	FIELD a interfaceEngine Lcom/corrodinggames/rts/gameFramework/f/g;
+	FIELD b gameEngine Lcom/corrodinggames/rts/gameFramework/l;
+	FIELD c regularPaint Landroid/graphics/Paint;
+	FIELD d boldPaint Landroid/graphics/Paint;
+	FIELD e tableRect Landroid/graphics/RectF;
+	METHOD a initPaint ()V
+	METHOD a paint (FI)I

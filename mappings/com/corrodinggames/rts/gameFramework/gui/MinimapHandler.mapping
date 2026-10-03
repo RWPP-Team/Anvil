@@ -2,7 +2,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	FIELD a x F
 	FIELD A selfPaintHalfAlpha Landroid/graphics/Paint;
 	FIELD aa damageNotifications Ljava/util/ArrayList;
+	FIELD ab fogSectionRect Landroid/graphics/Rect;
 	FIELD ac queuedPointsDrawPool Ljava/util/ArrayList;
+	FIELD ad tempPoint Landroid/graphics/Point;
 	FIELD af trackedUnits Ljava/util/ArrayList;
 	FIELD ag resourceMarkers Ljava/util/ArrayList;
 	FIELD b y F
@@ -13,6 +15,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	FIELD D resourceMarkerPaint Landroid/graphics/Paint;
 	FIELD e ready Z
 	FIELD E viewportRect Landroid/graphics/Rect;
+	FIELD f mapLoaded Z
 	FIELD F mapImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD g worldWidth I
 	FIELD G mapCanvas Lcom/corrodinggames/rts/gameFramework/m/y;
@@ -27,21 +30,32 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	FIELD l lastRedrawY I
 	FIELD L updateUnitsTimer F
 	FIELD m forceRedraw Z
+	FIELD M fogRedrawDelay F
 	FIELD n imagePaint Landroid/graphics/Paint;
+	FIELD N fogRedrawStepTimer F
 	FIELD o borderPaint Landroid/graphics/Paint;
+	FIELD O fogRedrawPending Z
+	FIELD p spectatorPaint Landroid/graphics/Paint;
+	FIELD P fogRedrawInProgress Z
+	FIELD q borderFlashAngle F
+	FIELD Q fogRedrawProgress F
+	FIELD r notificationPulseAngle F
 	FIELD s viewportPaint Landroid/graphics/Paint;
 	FIELD t baseNotificationPaint Landroid/graphics/Paint;
 	FIELD u unitNotificationPaint Landroid/graphics/Paint;
 	FIELD v messageNotificationPaint Landroid/graphics/Paint;
 	FIELD V resourceMarkerRect Landroid/graphics/Rect;
+	FIELD w minimapRect Landroid/graphics/Rect;
 	FIELD W fogPaints [Lcom/corrodinggames/rts/gameFramework/m/ag;
 	FIELD x selfPaint Landroid/graphics/Paint;
+	FIELD X fullFogPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
 	FIELD y allyPaint Landroid/graphics/Paint;
 	FIELD Y damageNotificationTimer F
 	FIELD z enemyPaint Landroid/graphics/Paint;
 	FIELD Z damageRecordings Ljava/util/ArrayList;
 	METHOD a updateScreenPosition ()V
 	METHOD a update (F)V
+	METHOD a renderFogSection (FF)V
 	METHOD a halfColor (I)I
 	METHOD a recordDamage (IIFLcom/corrodinggames/rts/game/units/am;)V
 	METHOD a addNotification (IILcom/corrodinggames/rts/gameFramework/f/r;)V
@@ -51,11 +65,13 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	METHOD a trackUnit (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD a recycleQueuedPointsDraw (Lcom/corrodinggames/rts/gameFramework/f/s;)V
 	METHOD a drawUnitDots (Lcom/corrodinggames/rts/gameFramework/m/y;IIFF)V
+	METHOD b getBottom ()I
 	METHOD b worldToMinimapX (F)F
 	METHOD b worldToMinimap (FF)Landroid/graphics/Point;
 	METHOD c releaseImages ()V
 	METHOD c clampX (F)F
 	METHOD c minimapToWorld (FF)Landroid/graphics/Point;
+	METHOD d getSidebarWidth ()F
 	METHOD d clampY (F)F
 	METHOD e createImageBuffers ()V
 	METHOD e render (F)V

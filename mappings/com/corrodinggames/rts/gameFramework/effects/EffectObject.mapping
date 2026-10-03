@@ -2,6 +2,10 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	COMMENT EffectObject - one live particle/effect instance (created from an EffectTemplate). Named fields, each verified from the assignment made in EffectTemplate.a(x,y,height,dir,attachedTo,...): template (the EffectTemplate), recursionDepth (short = recursion+1), visibleInFog, fadeOut, hasFadeIn, fadeInTime, atmospheric, physics, physicsGravity, priority, color, lightingColorFilter, alpha, scaleTo, scaleFrom, x, y, height, speedX, speedY, speedHeight, dirSpeed, delayedStartTimer, life, lifeMax, direction, animateFrames, animateFrameStart, animateFrameEnd, animateFrameCurrent, animateFramePingPong, animateFrameLooping, animateFrameSpeed, frameIndex, stripIndex, drawLayer, shadow. Still obfuscated (no direct assignment evidence): b (owner GameObject), C (second LightingColorFilter), c/d/f/n/o/p (flags), g/h/i/j/k/l/m (ints), aa (String), ab (Paint), ac/ad (floats), at/ax (Paint), au/av/aw, ay (effect engine), D, H, L, M, N, O, S, T, X, al, am, an, ao, aq. [field names verified from code]
 	FIELD a template Lcom/corrodinggames/rts/game/units/custom/ay;
 	FIELD A recursionDepth S
+	FIELD aa customText Ljava/lang/String;
+	FIELD ab customTextPaint Landroid/graphics/Paint;
+	FIELD ac textOffsetX F
+	FIELD ad textOffsetY F
 	FIELD ae animateFrames Z
 	FIELD af animateFrameStart I
 	FIELD ag animateFrameEnd I
@@ -9,20 +13,45 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD ai animateFrameLooping Z
 	FIELD aj animateFrameSpeed F
 	FIELD ak animateFrameCurrent F
+	FIELD al animatingBackwards Z
+	FIELD an drawCentered Z
+	FIELD ao drawOffsetY F
 	FIELD ap frameIndex I
 	FIELD aq stripIndex I
 	FIELD ar drawLayer S
 	FIELD as shadow Z
+	FIELD at effectPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD au cachedPaintAlpha F
+	FIELD av cachedPaintColor I
+	FIELD aw colorFilterApplied Z
+	FIELD ax alphaPaintCache [Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD ay effectEngine Lcom/corrodinggames/rts/gameFramework/d/c;
 	FIELD b attachedTo Lcom/corrodinggames/rts/gameFramework/w;
 	FIELD B lightingColorFilter Landroid/graphics/LightingColorFilter;
+	FIELD c attachToBase Z
+	FIELD C cachedColorFilter Landroid/graphics/LightingColorFilter;
+	FIELD D cachedFilterColor I
 	FIELD e visibleInFog Z
 	FIELD E alpha F
+	FIELD f fogChecked Z
 	FIELD F scaleTo F
 	FIELD G scaleFrom F
+	FIELD h layer1 I
+	FIELD H constantScreenSize Z
+	FIELD i layer2 I
 	FIELD I x F
+	FIELD j layer3 I
 	FIELD J y F
+	FIELD k layer4 I
 	FIELD K height F
+	FIELD l layer5 I
+	FIELD L drawLineToTarget Z
+	FIELD m layer6 I
+	FIELD M lineTargetX F
+	FIELD n layer7 I
+	FIELD N lineTargetY F
 	FIELD o active Z
+	FIELD O lineTargetHeight F
 	FIELD p updatedInRenderPass Z
 	FIELD P speedX F
 	FIELD q priority Lcom/corrodinggames/rts/gameFramework/d/h;
@@ -30,7 +59,9 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD r fadeOut Z
 	FIELD R speedHeight F
 	FIELD s hasFadeIn Z
+	FIELD S wobbleAmplitude F
 	FIELD t fadeInTime F
+	FIELD T wobblePeriod F
 	FIELD u atmospheric Z
 	FIELD U delayedStartTimer F
 	FIELD v physics Z
@@ -38,5 +69,14 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD w physicsGravity F
 	FIELD W lifeMax F
 	FIELD x color I
+	FIELD X trailEffectTimer F
+	FIELD y endColor I
 	FIELD Y direction F
+	FIELD z endColorTransitionTime F
 	FIELD Z dirSpeed F
+	METHOD a getPaintForAlpha (F)Lcom/corrodinggames/rts/gameFramework/m/ag;
+	METHOD a copyFrom (Lcom/corrodinggames/rts/gameFramework/d/e;)V
+	METHOD a draw (Lcom/corrodinggames/rts/gameFramework/l;Z)Z
+	METHOD b deactivate ()V
+	METHOD b update (F)V
+	METHOD c resetToDefaults ()V

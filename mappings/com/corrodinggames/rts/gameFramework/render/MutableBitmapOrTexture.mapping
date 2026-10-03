@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/m/ad com/corrodinggames/rts/gameFramework/render/MutableBitmapOrTexture
+	FIELD x wrappedTexture Lcom/corrodinggames/rts/gameFramework/m/e;

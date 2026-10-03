@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/ag com/corrodinggames/rts/gameFramework/InputControllerKeyInput
+	FIELD e keyCode I

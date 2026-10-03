@@ -10,6 +10,8 @@ CLASS com/corrodinggames/rts/gameFramework/d/c com/corrodinggames/rts/gameFramew
 	FIELD h trimInactiveOnUpdate Z
 	FIELD i fpsReductionMedium I
 	FIELD j fpsReductionSevere I
+	FIELD k displacementShader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD l screenBaseTexture Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD n tmpRectF Landroid/graphics/RectF;
 	FIELD o tmpRectA Landroid/graphics/Rect;
 	FIELD p tmpRectB Landroid/graphics/Rect;
@@ -22,12 +24,39 @@ CLASS com/corrodinggames/rts/gameFramework/d/c com/corrodinggames/rts/gameFramew
 	FIELD y layerUsed [Z
 	METHOD a setForceOnscreenCheck ()V
 	METHOD a updateEffects (F)V
+	METHOD a randomFloatBetween (FF)F
+	METHOD a spawnDelayedExplosions (FFF)V
+	METHOD a spawnFlame (FFFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnDelayedExplosions (FFFFF)V
+	METHOD a spawnLineEffect (FFFFFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnFlame (FFFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnFlame (FFFFII)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnLightGlow (FFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnShockwaveMoving (FFFIFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnShockwaveRing (FFFIFFF)V
+	METHOD a spawnEffectMarked (FFFLcom/corrodinggames/rts/gameFramework/d/d;ZLcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;
 	METHOD a drawEffectsForLayer (FI)I
 	METHOD a loadResources (Landroid/content/Context;)V
 	METHOD a attachToGameObject (Lcom/corrodinggames/rts/gameFramework/d/e;Lcom/corrodinggames/rts/gameFramework/w;)V
 	METHOD a allocateEffect (Lcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnEffectOnUnit (Lcom/corrodinggames/rts/gameFramework/w;I)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD a spawnEffectOnUnit (Lcom/corrodinggames/rts/gameFramework/w;IF)Lcom/corrodinggames/rts/gameFramework/d/e;
 	METHOD a getStripIndex (Ljava/lang/String;)I
 	METHOD a removeAll (Z)V
+	METHOD a getFreeEffect (ZLcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;
 	METHOD b setIgnoreOnscreenCheckOnce ()V
 	METHOD b drawShadows (F)I
+	METHOD b spawnExplosion (FFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD b spawnSmokePuff (FFFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD b spawnDebrisWithSpeed (FFFFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD b spawnFlameVariant (FFFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD b spawnLightGlowInternal (FFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD b spawnEffect (FFFLcom/corrodinggames/rts/gameFramework/d/d;ZLcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;
 	METHOD b setPriorityOverride (Lcom/corrodinggames/rts/gameFramework/d/h;)V
+	METHOD c spawnExplosionBig2 (FFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD c spawnDust (FFFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD c spawnShockwaveLarge (FFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD d spawnBugDebris (FFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD d spawnShockwave (FFFI)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD e spawnDebris (FFF)Lcom/corrodinggames/rts/gameFramework/d/e;
+	METHOD f spawnLavaBubble (FFF)Lcom/corrodinggames/rts/gameFramework/d/e;

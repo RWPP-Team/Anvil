@@ -1,2 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/e/h com/corrodinggames/rts/gameFramework/files/InputStreamHolder
 	FIELD a stream Ljava/io/InputStream;
+	METHOD a closeStream ()V

@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/c com/corrodinggames/rts/gameFramework/gui/elements/UIClick
+	FIELD a x I
+	FIELD b y I
+	FIELD c clickType Lcom/corrodinggames/rts/gameFramework/f/a/d;
+	METHOD a isMouseClick ()Z
+	METHOD a createMouseClick (II)Lcom/corrodinggames/rts/gameFramework/f/a/c;
+	METHOD b isMouseMove ()Z
+	METHOD b createMouseMove (II)Lcom/corrodinggames/rts/gameFramework/f/a/c;

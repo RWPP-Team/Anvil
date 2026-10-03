@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/m/g com/corrodinggames/rts/gameFramework/render/BitmapOrTextureAliasRegion
+	FIELD a atlas Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b x I
+	FIELD c y I
+	FIELD f version I

@@ -3,3 +3,14 @@ CLASS com/corrodinggames/rts/gameFramework/f/ap com/corrodinggames/rts/gameFrame
 	FIELD a gameEngine Lcom/corrodinggames/rts/gameFramework/l;
 	FIELD b paint Landroid/graphics/Paint;
 	FIELD c items Ljava/util/ArrayList;
+	METHOD a initPaint ()V
+	METHOD a paint (F)V
+	METHOD a addUnitCreatedEntry (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a addLogItem (Lcom/corrodinggames/rts/gameFramework/f/au;)V
+	METHOD a addCustomMessage (Ljava/lang/String;)V
+	METHOD a addCustomMessage (Ljava/lang/String;I)V
+	METHOD b clearLog ()V
+	METHOD b addUnitUpgradedEntry (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD c pruneOldItems ()V
+	METHOD c addUnitDamagedEntry (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD d jumpToOldestEntry ()V

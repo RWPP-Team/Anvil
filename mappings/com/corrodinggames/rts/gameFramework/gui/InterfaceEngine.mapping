@@ -1,81 +1,269 @@
 CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramework/gui/InterfaceEngine
+	FIELD a modernUiDesktopLayout Z
 	FIELD A mouseY F
 	FIELD aa specialActionSourceUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD aA smallestTextPaint Landroid/graphics/Paint;
+	FIELD aB smallerTextPaint Landroid/graphics/Paint;
 	FIELD ac activeSpecialAction Lcom/corrodinggames/rts/game/units/a/s;
 	FIELD aC smallTextPaint Landroid/graphics/Paint;
 	FIELD ad placementCounter I
+	FIELD aD screenMessageTextPaint Landroid/graphics/Paint;
 	FIELD ae placingBuilding Z
+	FIELD aE replayTimeTextPaint Landroid/graphics/Paint;
+	FIELD af placementTapTimer F
+	FIELD aF foreignTeamInfoTextPaint Landroid/graphics/Paint;
+	FIELD ag placingPointerX F
+	FIELD aG allyTeamInfoTextPaint Landroid/graphics/Paint;
+	FIELD ah placingPointerY F
+	FIELD aH unitInfoTextPaint Landroid/graphics/Paint;
 	FIELD ai queuePlacementMode Z
+	FIELD aI screenMessageOutlinePaint Landroid/graphics/Paint;
+	FIELD aj lastPlacementWorldX F
+	FIELD ak lastPlacementWorldY F
+	FIELD aK actionCountTextPaint Landroid/graphics/Paint;
+	FIELD al gridShiftX F
+	FIELD aL tooltipBgFillPaint Landroid/graphics/Paint;
+	FIELD am gridShiftY F
+	FIELD an placementDragPointX F
+	FIELD aN pinchLinePaint Landroid/graphics/Paint;
+	FIELD ao placementDragPointY F
+	FIELD aO pinchCenterPaint Landroid/graphics/Paint;
 	FIELD ap placementDragActive Z
+	FIELD aP tooltipBorderPaint Landroid/graphics/Paint;
+	FIELD aq lastPlacementTapX F
+	FIELD aQ richTextNormalPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD ar lastPlacementTapY F
+	FIELD aR richTextAltPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD as patrolWaypointCount I
+	FIELD aS richTextErrorPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD at resourceTextPaintTemp Landroid/graphics/Paint;
+	FIELD au circleSelectPaint Landroid/graphics/Paint;
+	FIELD aU tapSuppressionTimer F
+	FIELD av resourceTextPaint Landroid/graphics/Paint;
+	FIELD aV pointerSuppressionTimer F
+	FIELD aw resourceTextPaintAlt Landroid/graphics/Paint;
+	FIELD aW multiTouchSuppressionTimer F
+	FIELD ax resourceTextOutlinePaint Landroid/graphics/Paint;
+	FIELD aX selectedUnitCount I
+	FIELD ay debugInfoTextPaint Landroid/graphics/Paint;
+	FIELD aY selectionPulseInput F
+	FIELD az hotkeyTextPaint Landroid/graphics/Paint;
+	FIELD aZ pointerInSidebar Z
+	FIELD B pointerButtonState I
+	FIELD ba buttonNoImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bA tempDrawPaint Landroid/graphics/Paint;
+	FIELD bb buttonYesImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bc buttonMoreImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bd promptVisible Z
+	FIELD bD resourceIconPaint Landroid/graphics/Paint;
+	FIELD be promptAnimProgress F
+	FIELD bE placementDragLinePaint Landroid/graphics/Paint;
+	FIELD bf buttonEnabledPaint Landroid/graphics/Paint;
+	FIELD bF buttonBorderPaint Landroid/graphics/Paint;
+	FIELD bg buttonDisabledPaint Landroid/graphics/Paint;
 	FIELD bG notAvailableInDemoText Ljava/lang/String;
+	FIELD bh buttonAddImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bH lockedText Ljava/lang/String;
+	FIELD bi buttonSubtractImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bI notEnoughResourcesText Lcom/corrodinggames/rts/game/units/custom/bb;
+	FIELD bj iconRallyImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bJ cannotPlaceGeneralText Ljava/lang/String;
+	FIELD bk iconUpgradeImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bK cannotPlaceNeedsResourcePoolText Ljava/lang/String;
+	FIELD bl metalDarkImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bL cannotPlaceNeedsWaterText Ljava/lang/String;
+	FIELD bm touchIndicatorImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bM cycleSelectionList Ljava/util/ArrayList;
+	FIELD bn roundedGlowButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bN debugTextMode Z
+	FIELD bo roundedWhiteButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bO modernUiMode Z
+	FIELD bp ninePatchGlowButton Lcom/corrodinggames/rts/gameFramework/f/a/e;
+	FIELD bP modernUiTwoColumnActionBar Z
+	FIELD bq ninePatchGlowHighlight Lcom/corrodinggames/rts/gameFramework/f/a/e;
+	FIELD bQ modernUiHideSelectionInfoText Z
+	FIELD br ninePatchGlowButtonHover Lcom/corrodinggames/rts/gameFramework/f/a/e;
+	FIELD bR minimapBottomLeftLayout Z
+	FIELD bs ninePatchDarkBox Lcom/corrodinggames/rts/gameFramework/f/a/e;
+	FIELD bS lastMouseUIClick Lcom/corrodinggames/rts/gameFramework/f/a/c;
+	FIELD bt ninePatchDarkTitledBox Lcom/corrodinggames/rts/gameFramework/f/a/e;
+	FIELD bT sidebarStoredResources Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD bu ninePatchGreenBox Lcom/corrodinggames/rts/gameFramework/f/a/e;
+	FIELD bU lastMoveAttackCommandTime J
+	FIELD bv specialActionTooltipRect Landroid/graphics/Rect;
+	FIELD bV lastNewSelectionCommandTime J
+	FIELD bw specialActionTooltipBgRect Landroid/graphics/Rect;
 	FIELD bW lastMapPingTime J
+	FIELD bx tempRect Landroid/graphics/Rect;
 	FIELD bX mapPingWarningShown Z
+	FIELD by tempButtonRect Landroid/graphics/Rect;
+	FIELD bY indirectedActionUnitList Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD bz tempBorderRect Landroid/graphics/Rect;
 	FIELD bZ selectedUnits Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD C pointerInGameArea Z
 	FIELD ca lastSelectedUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD D doubleTapFlag Z
+	FIELD E doubleTapTimer F
 	FIELD f debugEditorUnit Lcom/corrodinggames/rts/game/units/h;
+	FIELD F lastTapX F
+	FIELD g battleInterface Lcom/corrodinggames/rts/gameFramework/f/a;
+	FIELD G lastTapY F
+	FIELD h messageInterface Lcom/corrodinggames/rts/gameFramework/f/m;
+	FIELD H pointerDownLastFrame Z
 	FIELD i warLogInterface Lcom/corrodinggames/rts/gameFramework/f/ap;
 	FIELD I pointerDown Z
 	FIELD j leaderboardInterface Lcom/corrodinggames/rts/gameFramework/f/k;
+	FIELD J pointerOnMinimap Z
 	FIELD k endGamePopup Lcom/corrodinggames/rts/gameFramework/f/f;
+	FIELD K pointerDownOverSidebar Z
 	FIELD l attackMoveAction Lcom/corrodinggames/rts/game/units/a/e;
+	FIELD L pointerOverSidebar Z
 	FIELD m guardAction Lcom/corrodinggames/rts/game/units/a/f;
+	FIELD M pointerOverUiElement Z
 	FIELD n patrolAction Lcom/corrodinggames/rts/game/units/a/i;
+	FIELD N dragStartX F
 	FIELD o attackModeToggle Lcom/corrodinggames/rts/game/units/a/d;
+	FIELD O dragStartY F
 	FIELD p pingMapAction Lcom/corrodinggames/rts/game/units/a/j;
+	FIELD P dragLastX F
+	FIELD q mapPingAction Lcom/corrodinggames/rts/game/units/a/r;
+	FIELD Q dragLastY F
 	FIELD r teamChatAction Lcom/corrodinggames/rts/game/units/a/q;
+	FIELD R scrollVelocityX F
 	FIELD s rootUiElement Lcom/corrodinggames/rts/gameFramework/f/a/l;
+	FIELD S scrollVelocityY F
+	FIELD t guardActionOffered Z
 	FIELD T pointerDragging Z
+	FIELD u pauseMenuOpen Z
 	FIELD U tapReleased Z
+	FIELD V pointerJustPressed Z
 	FIELD w pointerHoldTime F
 	FIELD W lastClickedUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD x pointerX F
+	FIELD X doubleClickTimer F
 	FIELD y pointerY F
+	FIELD Y selectionChangeCounter I
 	FIELD z mouseX F
+	FIELD Z unitPreviewRotation F
+	METHOD a isCircleSelectEnabled ()Z
 	METHOD a update (F)V
 	METHOD a isPointInGameArea (FF)Z
+	METHOD a playOrderErrorEffect (FFF)V
+	METHOD a updateUiHover (FFFF)V
 	METHOD a handleActiveSpecialAction (FFFLandroid/graphics/Point;)V
 	METHOD a handleBuildingPlacement (FFLandroid/graphics/Point;)V
 	METHOD a sendMapPing (FFLandroid/graphics/Point;Lcom/corrodinggames/rts/game/units/a/j;)V
+	METHOD a orderPatrolWaypoint (FFLandroid/graphics/Point;Z)V
+	METHOD a executeMapPing (FFLcom/corrodinggames/rts/game/n;Lcom/corrodinggames/rts/game/units/a/j;)V
 	METHOD a getUnitAtPosition (FFZ)Lcom/corrodinggames/rts/game/units/am;
+	METHOD a isButtonHovered (IIIILcom/corrodinggames/rts/gameFramework/f/i;)Z
+	METHOD a isButtonPressed (IIIILcom/corrodinggames/rts/gameFramework/f/i;Z)Z
+	METHOD a drawCenteredTextInRect (IIIILjava/lang/String;ILandroid/graphics/Paint;)V
+	METHOD a drawButtonBackground (IIIILjava/lang/String;ILandroid/graphics/Paint;ZLcom/corrodinggames/rts/gameFramework/f/a/h;Lcom/corrodinggames/rts/gameFramework/f/a/i;)V
+	METHOD a drawButtonFilled (IIIILjava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/i;ZI)Z
+	METHOD a drawButton (IIIILjava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/i;ZILandroid/graphics/Paint;ZLcom/corrodinggames/rts/gameFramework/f/a/h;)Z
 	METHOD a initializeInterface (Landroid/content/Context;)V
+	METHOD a updateUiHover (Landroid/graphics/Rect;)V
+	METHOD a drawRectBorder (Landroid/graphics/Rect;IZ)V
+	METHOD a drawStyledPanel (Landroid/graphics/Rect;Landroid/graphics/Paint;Landroid/graphics/Paint;)V
+	METHOD a isSpecialActionUsable (Lcom/corrodinggames/rts/game/units/a/s;)Z
+	METHOD a anyUnitCanQueueTargetedOrder (Lcom/corrodinggames/rts/game/units/a/s;FF)Z
+	METHOD a queueExtraActionOrder (Lcom/corrodinggames/rts/game/units/a/s;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/gameFramework/e;)V
+	METHOD a isSpecialActionAvailable (Lcom/corrodinggames/rts/game/units/a/s;Z)Z
+	METHOD a drawSpecialActionTooltip (Lcom/corrodinggames/rts/game/units/a/s;ZLcom/corrodinggames/rts/game/units/am;ZZ)Z
+	METHOD a drawSpecialActionTooltip (Lcom/corrodinggames/rts/game/units/a/s;ZLcom/corrodinggames/rts/game/units/am;ZZFZ)Z
+	METHOD a anySelectedUnitSupportsCommand (Lcom/corrodinggames/rts/game/units/ag;)Z
+	METHOD a unitSupportsCommand (Lcom/corrodinggames/rts/game/units/ag;Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD a handleUnitClick (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a selectUnitToggle (Lcom/corrodinggames/rts/game/units/am;Z)V
+	METHOD a handleUnitTap (Lcom/corrodinggames/rts/game/units/am;ZFFLandroid/graphics/Point;)Z
+	METHOD a setDebugEditorUnit (Lcom/corrodinggames/rts/game/units/h;)V
+	METHOD a findPlacementPositionsAlongLine (Lcom/corrodinggames/rts/game/units/y;FFFFZLjava/util/ArrayList;Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a checkPlacementPosition (Lcom/corrodinggames/rts/game/units/y;FFZZLcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a addSelectedUnitsToCommand (Lcom/corrodinggames/rts/gameFramework/e;)V
+	METHOD a addUnitsWithActionToCommand (Lcom/corrodinggames/rts/gameFramework/e;Lcom/corrodinggames/rts/game/units/a/s;)V
+	METHOD a addSpecialActionUnitToCommand (Lcom/corrodinggames/rts/gameFramework/e;Lcom/corrodinggames/rts/game/units/a/s;Z)V
+	METHOD a showPopupDialog (Lcom/corrodinggames/rts/gameFramework/f/a/f;)V
+	METHOD a isPromptTapped (Lcom/corrodinggames/rts/gameFramework/f/h;)Z
+	METHOD a handlePromptButton (Lcom/corrodinggames/rts/gameFramework/f/h;Z)Z
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;Z)V
 	METHOD a isShiftKeyDown (Lcom/corrodinggames/rts/gameFramework/l;)Z
+	METHOD a drawResourceEntry (Lcom/corrodinggames/rts/gameFramework/l;Lcom/corrodinggames/rts/game/n;ZLcom/corrodinggames/rts/game/units/custom/e/a;DLcom/corrodinggames/rts/game/units/custom/e/f;ILcom/corrodinggames/rts/game/units/custom/e/a;)Z
+	METHOD a drawStoredResources (Lcom/corrodinggames/rts/gameFramework/l;Lcom/corrodinggames/rts/game/n;ZLcom/corrodinggames/rts/game/units/custom/e/f;)V
+	METHOD a drawTeamResources (Lcom/corrodinggames/rts/gameFramework/l;Lcom/corrodinggames/rts/game/n;ZZ)V
 	METHOD a showScreenMessageDefault (Ljava/lang/String;)V
 	METHOD a showScreenMessage (Ljava/lang/String;I)V
+	METHOD a drawMultilineText (Ljava/lang/String;Landroid/graphics/Rect;Landroid/graphics/Paint;Landroid/graphics/Paint;)V
+	METHOD a resetInterfaceState (Z)V
+	METHOD A hasControllableSelectedUnits ()Z
+	METHOD b getCircleSelectRadius ()F
 	METHOD b drawResourceSidebar (F)V
 	METHOD b orderSetRallyPoint (FF)V
+	METHOD b selectUnitsInCircle (FFF)V
 	METHOD b orderMove (FFLandroid/graphics/Point;)V
+	METHOD b isButtonJustPressed (IIIILcom/corrodinggames/rts/gameFramework/f/i;)Z
+	METHOD b drawButtonBordered (IIIILjava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/i;ZI)Z
+	METHOD b isSpecialActionEnabled (Lcom/corrodinggames/rts/game/units/a/s;)Z
+	METHOD b orderSpecialActionTarget (Lcom/corrodinggames/rts/game/units/a/s;FF)V
 	METHOD b orderReclaim (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD b isCtrlKeyDown (Lcom/corrodinggames/rts/gameFramework/l;)Z
 	METHOD b showImportantScreenMessage (Ljava/lang/String;)V
 	METHOD b showScreenMessageAlt (Ljava/lang/String;I)V
+	METHOD b isPromptYesNoTapped (Z)Z
+	METHOD B hasAttackCapableSelectedUnits ()Z
+	METHOD c getOrderEffectScale ()F
 	METHOD c handlePointerEvents (F)V
+	METHOD c handleGroundTap (FFLandroid/graphics/Point;)V
+	METHOD c isSpecialActionLocked (Lcom/corrodinggames/rts/game/units/a/s;)Z
 	METHOD c orderAttack (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD c isAltKeyDown (Lcom/corrodinggames/rts/gameFramework/l;)Z
 	METHOD c showScreenMessageMedium (Ljava/lang/String;)V
+	METHOD C hasSelectedUnitsWithWeapon ()Z
+	METHOD d clearTapState ()V
 	METHOD d orderAttackMove (FFLandroid/graphics/Point;)V
+	METHOD d getSpecialActionLockedReason (Lcom/corrodinggames/rts/game/units/a/s;)Ljava/lang/String;
 	METHOD d orderRepair (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD d showTransientMessage (Ljava/lang/String;)V
+	METHOD D hasOnlyAirborneSelectedUnits ()Z
+	METHOD e reloadLocaleTexts ()V
+	METHOD e getUnitsForSpecialAction (Lcom/corrodinggames/rts/game/units/a/s;)Lcom/corrodinggames/rts/gameFramework/utility/u;
 	METHOD e orderGuard (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD f updateUiModeFlags ()V
+	METHOD f getSpecialActionResourceError (Lcom/corrodinggames/rts/game/units/a/s;)Ljava/lang/String;
+	METHOD f orderLoadUnit (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD g clearMessageLogs ()V
+	METHOD g orderUnloadUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD G showVictoryScreen ()V
+	METHOD h clearDebugEditorUnit ()V
 	METHOD h selectAllUnitsOfType (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD H showDefeatScreen ()V
+	METHOD i getDebugEditorUnit ()Lcom/corrodinggames/rts/game/units/h;
+	METHOD i canSelectUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD I startMapPingAction ()V
 	METHOD j selectUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD J isPointerNotDragging ()Z
+	METHOD k isPromptNoTapped ()Z
 	METHOD k addToSelection (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD K markUiDirty ()V
 	METHOD l cancelActiveAction ()Z
 	METHOD l deselectUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD m isMouseOnlyInput ()Z
 	METHOD m canPlayerControlUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD n isPlacementCancelButtonPressed ()Z
+	METHOD n canSelectedUnitsLoadUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD o isPlacementButtonPressed ()Z
+	METHOD o canSelectedUnitsUnloadNearUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD p isPlacementButtonReleased ()Z
+	METHOD p canSelectedUnitsRepairUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD q getSelectedUnitCount ()I
+	METHOD q canSelectedUnitsAttackUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD r getSelectedTeam ()Lcom/corrodinggames/rts/game/n;
+	METHOD r getSelectionPulseOffset (Lcom/corrodinggames/rts/game/units/am;)F
+	METHOD s getFirstSelectedOrderableUnit ()Lcom/corrodinggames/rts/game/units/y;
 	METHOD t getFirstControllableSelectedUnit ()Lcom/corrodinggames/rts/game/units/y;
+	METHOD u selectedUnitsCanSetRally ()Z
+	METHOD v orderStop ()V
 	METHOD w getPlayerCommand ()Lcom/corrodinggames/rts/gameFramework/e;
 	METHOD x getPlayerCommandQueued ()Lcom/corrodinggames/rts/gameFramework/e;
 	METHOD y clearUnitSelection ()V
+	METHOD z getModOfLastSelectedUnit ()Lcom/corrodinggames/rts/gameFramework/i/b;

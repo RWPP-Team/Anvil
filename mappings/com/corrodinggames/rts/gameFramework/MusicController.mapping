@@ -1,24 +1,41 @@
 CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramework/MusicController
 	FIELD a musicFactory Lcom/corrodinggames/rts/gameFramework/aq;
+	FIELD A fadingTrackHandle Lcom/corrodinggames/rts/gameFramework/as;
+	FIELD B hasFadingTrack Z
 	FIELD c updateLock Ljava/lang/Object;
+	FIELD C crossfading Z
 	FIELD d lastDeltaTime F
+	FIELD D crossfadeProgress F
+	FIELD e updateThread Lcom/corrodinggames/rts/gameFramework/au;
+	FIELD E fastFadeOut Z
 	FIELD f threadStarted Z
 	FIELD g updateRequested Z
+	FIELD G fadingTrackStopped Z
 	FIELD h watchdogTime F
+	FIELD H fadeTickTimer F
 	FIELD i watchdogFrames I
+	FIELD I recentTrackPaths Ljava/util/ArrayList;
 	FIELD j watchdogTriggered Z
+	FIELD J musicHandleCache Ljava/util/HashMap;
 	FIELD k currentTrack Lcom/corrodinggames/rts/gameFramework/as;
+	FIELD K musicLoadFailureCount I
 	FIELD l trackLoaded Z
 	FIELD L musicCrashed Z
 	FIELD m currentTrackPath Ljava/lang/String;
 	FIELD M crashReported Z
+	FIELD n currentTrackNoLoop Z
 	FIELD N lastUpdateRealtime J
 	FIELD o volumeChanged Z
 	FIELD p lastTargetVolume F
+	FIELD q trackPlayTimer F
+	FIELD r noLoopRetryTimer F
 	FIELD s trackChangeRequested Z
 	FIELD t requestedTrackPath Ljava/lang/String;
 	FIELD v pendingNowPlayingMessage Ljava/lang/String;
 	FIELD w context Landroid/content/Context;
+	FIELD x startingMoodPending Z
+	FIELD y modMusicCheckPending Z
+	FIELD z trackLoadFailureCount I
 	METHOD a getMusicVolume ()F
 	METHOD a update (F)V
 	METHOD a init (Landroid/content/Context;)V
@@ -29,8 +46,12 @@ CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramewo
 	METHOD b shouldPlayMusic ()Z
 	METHOD b safeUpdate (F)Z
 	METHOD b getTrackDisplayName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD c resetTrackState ()V
 	METHOD c playMusic (F)V
+	METHOD d getAllMoodTracks ()Ljava/util/ArrayList;
 	METHOD e requestNextTrack ()V
 	METHOD f pause ()V
 	METHOD g stop ()V
+	METHOD h resume ()V
 	METHOD i shutdown ()V
+	METHOD j isCrossfading ()Z

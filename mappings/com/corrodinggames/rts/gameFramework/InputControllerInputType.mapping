@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/af com/corrodinggames/rts/gameFramework/InputControllerInputType
+	FIELD a deviceId I
+	FIELD b modifierMask I
+	FIELD c pressed Z
+	FIELD d PENDING_bindingFlag Z
+	METHOD a isPressedEdge ()Z
+	METHOD a matches (Lcom/corrodinggames/rts/gameFramework/af;)Z
+	METHOD b isDown ()Z
+	METHOD c getBindingLabel ()Ljava/lang/String;
+	METHOD d isKeyboard ()Z

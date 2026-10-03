@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/bi com/corrodinggames/rts/gameFramework/StatsHandlerHistoryList
+	METHOD a getValueAtTime (I)I

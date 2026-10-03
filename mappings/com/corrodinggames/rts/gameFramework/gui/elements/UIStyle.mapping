@@ -1,1 +1,24 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/h com/corrodinggames/rts/gameFramework/gui/elements/UIStyle
+	FIELD j grayPanelStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD k bluePanelStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD l emptyStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD m redOutlineStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD n metalStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD o backgroundPaint Landroid/graphics/Paint;
+	FIELD p backgroundImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD q borderPaint Landroid/graphics/Paint;
+	FIELD r shadowStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD s shadowOffsetX I
+	FIELD t shadowOffsetY I
+	FIELD u outerPadding I
+	FIELD v hoverStyle Lcom/corrodinggames/rts/gameFramework/f/a/h;
+	FIELD w tmpShadowRect Landroid/graphics/Rect;
+	FIELD x tmpDrawRect Landroid/graphics/Rect;
+	FIELD y tmpInflateRect Landroid/graphics/Rect;
+	METHOD a copyFrom (Lcom/corrodinggames/rts/gameFramework/f/a/h;)V
+	METHOD a setBackgroundImage (Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD a paint (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/Rect;)V
+	METHOD a draw (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/Rect;Lcom/corrodinggames/rts/gameFramework/f/a/i;)V
+	METHOD a draw (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/RectF;)V
+	METHOD b initDefaultStyles ()V
+	METHOD c drawNormal (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/Rect;)V

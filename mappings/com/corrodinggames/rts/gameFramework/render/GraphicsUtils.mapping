@@ -1,9 +1,26 @@
 CLASS com/corrodinggames/rts/gameFramework/m/aa com/corrodinggames/rts/gameFramework/render/GraphicsUtils
-	METHOD a getColorAlpha (I)I
+	FIELD a circleSegmentCount I
+	FIELD b circleAngleStep F
+	FIELD c circleCosStep F
+	FIELD d circleSinStep F
+	FIELD e circleClipRect Landroid/graphics/Rect;
+	FIELD f circleImageCache [Lcom/corrodinggames/rts/gameFramework/m/ab;
+	FIELD g glowPaint Landroid/graphics/Paint;
+	FIELD h tileSrcRect Landroid/graphics/Rect;
+	FIELD i tileDstRect Landroid/graphics/Rect;
+	FIELD j tileDstRectF Landroid/graphics/RectF;
+	METHOD a getCachedCircleImage (FFZLcom/corrodinggames/rts/gameFramework/m/y;)Lcom/corrodinggames/rts/gameFramework/m/ab;
+	METHOD a getAlpha (I)I
+	METHOD a createCircleImage (IIZLcom/corrodinggames/rts/gameFramework/m/y;)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a applyOpaqueLightingColorFilter (Landroid/graphics/Paint;)V
+	METHOD a getBitmap (Lcom/corrodinggames/rts/gameFramework/m/e;)Landroid/graphics/Bitmap;
+	METHOD a drawCircleCached (Lcom/corrodinggames/rts/gameFramework/m/y;FFFILandroid/graphics/Paint;Landroid/graphics/Rect;)V
 	METHOD a drawCircle (Lcom/corrodinggames/rts/gameFramework/m/y;FFFLandroid/graphics/Paint;)V
+	METHOD a drawGlowCircle (Lcom/corrodinggames/rts/gameFramework/m/y;FFFLandroid/graphics/Paint;F)V
 	METHOD a drawImageWrapped (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Paint;IIII)V
+	METHOD a drawTiledImageScaled (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;IIIIF)V
 	METHOD a drawImageWrapped (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/RectF;Landroid/graphics/Paint;FFII)V
 	METHOD a drawMultiLineText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
-	METHOD b getColorRed (I)I
-	METHOD c getColorGreen (I)I
-	METHOD d getColorBlue (I)I
+	METHOD b getRed (I)I
+	METHOD c getGreen (I)I
+	METHOD d getBlue (I)I

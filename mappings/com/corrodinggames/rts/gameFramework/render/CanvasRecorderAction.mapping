@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/m/s com/corrodinggames/rts/gameFramework/render/CanvasRecorderAction
+	FIELD a type Lcom/corrodinggames/rts/gameFramework/m/p;
+	FIELD b args [Ljava/lang/Object;
+	FIELD c floatArg1 F
+	FIELD d floatArg2 F
+	FIELD e floatArg3 F
+	FIELD f floatArg4 F
+	FIELD g recorder Lcom/corrodinggames/rts/gameFramework/m/o;

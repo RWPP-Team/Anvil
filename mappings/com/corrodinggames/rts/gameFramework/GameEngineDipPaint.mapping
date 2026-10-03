@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/m com/corrodinggames/rts/gameFramework/GameEngineDipPaint
+	FIELD a dipTextSize F
+	FIELD b paint Landroid/graphics/Paint;
+	FIELD c gameEngine Lcom/corrodinggames/rts/gameFramework/l;
+	METHOD a applyDipTextSize ()V

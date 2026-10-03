@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/m/q com/corrodinggames/rts/gameFramework/render/CanvasRecorderObjectPool
+	FIELD a pool Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b nextIndex I
+	FIELD c type Ljava/lang/Class;
+	METHOD a copyRect (Landroid/graphics/Rect;)Landroid/graphics/Rect;
+	METHOD a copyRectF (Landroid/graphics/RectF;)Landroid/graphics/RectF;

@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/j/an com/corrodinggames/rts/gameFramework/network/ConnectSocketToServerRunnable
+	FIELD a host Ljava/lang/String;
+	FIELD c connecting Z
+	FIELD d connectThread Ljava/lang/Thread;
+	FIELD e errorMessage Ljava/lang/String;
+	FIELD f completionCallback Ljava/lang/Runnable;
+	FIELD g socket Ljava/net/Socket;
+	FIELD h cancelRequested Z
+	METHOD a cancel ()Z
+	METHOD b start ()V

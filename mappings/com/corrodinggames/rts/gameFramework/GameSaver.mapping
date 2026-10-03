@@ -1,3 +1,16 @@
 CLASS com/corrodinggames/rts/gameFramework/y com/corrodinggames/rts/gameFramework/GameSaver
+	FIELD c autosaveStartTimeMillis I
+	FIELD d lastAutosaveTimeMillis I
+	METHOD a shouldAutoSave ()Z
 	METHOD a saveGame (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a loadGameFromStream (Lcom/corrodinggames/rts/gameFramework/j/k;ZZZ)Z
+	METHOD a remapDemoMapPath (Ljava/lang/String;)Ljava/lang/String;
+	METHOD a writeSaveFileToStream (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a getFileInFolder (Ljava/lang/String;Ljava/lang/String;Z)Ljava/io/File;
+	METHOD a getSaveFile (Ljava/lang/String;Z)Ljava/io/File;
+	METHOD a resetAutosaveTimers (Z)V
+	METHOD b autoSaveIfDue ()V
+	METHOD b deleteSaveFile (Ljava/lang/String;)Z
 	METHOD b autoSaveGame (Ljava/lang/String;Z)V
+	METHOD c autoSaveNow ()V
+	METHOD c loadSaveFile (Ljava/lang/String;Z)Z

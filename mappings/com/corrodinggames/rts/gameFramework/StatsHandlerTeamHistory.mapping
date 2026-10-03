@@ -1,1 +1,12 @@
 CLASS com/corrodinggames/rts/gameFramework/bn com/corrodinggames/rts/gameFramework/StatsHandlerTeamHistory
+	FIELD a teamId I
+	FIELD b historyLists [Lcom/corrodinggames/rts/gameFramework/bi;
+	METHOD a setTeamId (I)V
+	METHOD a recordSnapshot (Lcom/corrodinggames/rts/game/n;IZ)V
+	METHOD a interpolateHistoryItem (Lcom/corrodinggames/rts/gameFramework/bi;Lcom/corrodinggames/rts/gameFramework/bi;)Lcom/corrodinggames/rts/gameFramework/bi;
+	METHOD a getHistoryList (Lcom/corrodinggames/rts/gameFramework/bj;)Lcom/corrodinggames/rts/gameFramework/bi;
+	METHOD a getValueAtTime (Lcom/corrodinggames/rts/gameFramework/bj;I)I
+	METHOD a copyFrom (Lcom/corrodinggames/rts/gameFramework/bn;)V
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD b getTeamId ()I

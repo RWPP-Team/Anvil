@@ -1,17 +1,64 @@
 CLASS com/corrodinggames/rts/gameFramework/ba com/corrodinggames/rts/gameFramework/ReplayEngine
+	FIELD a replaysFolder Ljava/lang/String;
+	FIELD b logUpcomingCommands Z
+	FIELD c traceCommands Z
+	FIELD C readInputStream Ljava/io/InputStream;
+	FIELD d traceTeamState Z
+	FIELD D readBufferedStream Ljava/io/BufferedInputStream;
+	FIELD E readDataStream Ljava/io/DataInputStream;
 	FIELD f replayTracing Z
+	FIELD F readNetStream Lcom/corrodinggames/rts/gameFramework/j/k;
 	FIELD g checksum Lcom/corrodinggames/rts/gameFramework/j/ak;
+	FIELD G writeOutputStream Ljava/io/OutputStream;
+	FIELD H writeBufferedStream Ljava/io/BufferedOutputStream;
+	FIELD I writeDataStream Ljava/io/DataOutputStream;
+	FIELD j commandsSinceLastChecksum I
+	FIELD J writeNetStream Lcom/corrodinggames/rts/gameFramework/j/as;
+	FIELD k desyncWarningShown Z
 	FIELD K backgroundWriter Lcom/corrodinggames/rts/gameFramework/bb;
+	FIELD l checksumFailures I
+	FIELD L backgroundWriterThread Ljava/lang/Thread;
+	FIELD m extraChecksumProcessed Z
+	FIELD M replayStateLock Ljava/lang/Object;
+	FIELD n allowVersionMismatch Z
 	FIELD N autoSaveDone Z
+	FIELD o lastCommandFrame I
+	FIELD O gameSetupReadFromReplay Z
+	FIELD p commandsRead I
 	FIELD P replayActive Z
+	FIELD q replaySaveVersion I
+	FIELD r replayPlatformDetails Ljava/lang/String;
+	FIELD s replayEnded Z
+	FIELD t replayFileName Ljava/lang/String;
 	FIELD u isPlayingMode Z
+	FIELD w pendingCommand Lcom/corrodinggames/rts/gameFramework/bd;
+	FIELD x lastLoggedCommand Lcom/corrodinggames/rts/gameFramework/bd;
+	FIELD y totalCommandsRead I
+	FIELD z commandsIssued I
+	METHOD a togglePause ()V
+	METHOD a recordResyncData ([BIIIFF)V
+	METHOD a processReplayFrame (F)V
+	METHOD a recordChatMessage (ILjava/lang/String;Ljava/lang/String;I)V
+	METHOD a recordCommand (Lcom/corrodinggames/rts/gameFramework/e;I)V
+	METHOD a recordChecksum (Lcom/corrodinggames/rts/gameFramework/j/ak;)V
+	METHOD a recordChecksum (Lcom/corrodinggames/rts/gameFramework/j/ak;Z)V
 	METHOD a autoSaveReplayIfNeeded (Ljava/lang/String;)V
+	METHOD a loadReplayFile (Ljava/lang/String;Ljava/io/File;)Z
+	METHOD a logException (Ljava/lang/String;Ljava/lang/Exception;)V
+	METHOD a getReplayFile (Ljava/lang/String;Z)Ljava/io/File;
+	METHOD a autoStartRecording (Z)V
+	METHOD b cycleReplaySpeed ()V
 	METHOD b cycleGameSpeed (Ljava/lang/String;)V
+	METHOD c saveChecksumIfTracing ()V
 	METHOD c loadReplay (Ljava/lang/String;)Z
+	METHOD d saveChecksum ()V
 	METHOD d startSaving (Ljava/lang/String;)V
 	METHOD e stop ()V
 	METHOD e deleteReplayFile (Ljava/lang/String;)V
+	METHOD f computeUnitsChecksum ()J
+	METHOD g stopIfNotAutoSaved ()V
 	METHOD h updateReplayPlayback ()Z
 	METHOD i isRecordingOrPlaying ()Z
 	METHOD j isPlayingReplay ()Z
 	METHOD k isRecordingReplay ()Z
+	METHOD l freezeAllAIs ()V

@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/z com/corrodinggames/rts/gameFramework/GameThread
+	FIELD a threadCount I
+	FIELD b running Z
+	FIELD c lastFrameTimestamp J
+	METHOD a markFrameTime ()V
+	METHOD a setRunning (Z)V

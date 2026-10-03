@@ -16,3 +16,5 @@ CLASS com/corrodinggames/rts/gameFramework/j/ak com/corrodinggames/rts/gameFrame
 	FIELD o team3Credits Lcom/corrodinggames/rts/gameFramework/j/al;
 	FIELD p commandCenter2 Lcom/corrodinggames/rts/gameFramework/j/al;
 	FIELD q commandCenter3 Lcom/corrodinggames/rts/gameFramework/j/al;
+	METHOD a reset ()V
+	METHOD b recompute ()V

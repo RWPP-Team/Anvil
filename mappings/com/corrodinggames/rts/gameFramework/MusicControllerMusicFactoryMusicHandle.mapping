@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/ar com/corrodinggames/rts/gameFramework/MusicControllerMusicFactoryMusicHandle
+	FIELD b trackPath Ljava/lang/String;

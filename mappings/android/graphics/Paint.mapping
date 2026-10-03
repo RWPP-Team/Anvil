@@ -1,0 +1,4 @@
+CLASS android/graphics/Paint
+	METHOD a setTypeface (Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
+	METHOD a setAntiAlias (Z)V
+	METHOD b setTextSize (F)V

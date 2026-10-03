@@ -3,3 +3,9 @@ CLASS com/corrodinggames/rts/gameFramework/m/ag com/corrodinggames/rts/gameFrame
 	FIELD s antiAlias Z
 	FIELD t shader Lcom/corrodinggames/rts/gameFramework/m/ae;
 	FIELD u lockedDown Z
+	METHOD a setShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
+	METHOD b lockPaint (Landroid/graphics/Paint;)V
+	METHOD c setTextSizeIgnoringLock (F)V
+	METHOD o lockDown ()V
+	METHOD p isAntiAlias ()Z
+	METHOD q getShader ()Lcom/corrodinggames/rts/gameFramework/m/ae;

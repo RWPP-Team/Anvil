@@ -6,3 +6,31 @@ CLASS com/corrodinggames/rts/gameFramework/e/c com/corrodinggames/rts/gameFramew
 	FIELD d disableAssets Z
 	FIELD e errorMessage Ljava/lang/String;
 	FIELD f externalStoragePath Ljava/lang/String;
+	METHOD a takeErrorMessage ()Ljava/lang/String;
+	METHOD a renameFile (Ljava/io/File;Ljava/io/File;)Z
+	METHOD a setErrorMessage (Ljava/lang/String;)V
+	METHOD a findFileWithAnyExtension (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a getRWFile (Ljava/lang/String;Ljava/lang/String;Z)Ljava/io/File;
+	METHOD a isDirectory (Ljava/lang/String;Z)Z
+	METHOD b getStorageRootPath ()Ljava/lang/String;
+	METHOD b deleteFile (Ljava/io/File;)Z
+	METHOD b isAssetPath (Ljava/lang/String;)Z
+	METHOD b listDir (Ljava/lang/String;Z)[Ljava/lang/String;
+	METHOD c getCachePath ()Ljava/lang/String;
+	METHOD c isAbsolutePath (Ljava/lang/String;)Z
+	METHOD c openOutput (Ljava/lang/String;Z)Ljava/io/OutputStream;
+	METHOD d getDisplayName ()Ljava/lang/String;
+	METHOD d resolveVirtualPathPrefixes (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e convertAbstractPathForDisplay (Ljava/lang/String;)Ljava/lang/String;
+	METHOD f getExternalStorageRoot ()Ljava/lang/String;
+	METHOD f convertAbstractPath (Ljava/lang/String;)Ljava/lang/String;
+	METHOD g fileExists (Ljava/lang/String;)Z
+	METHOD h findFileCaseInsensitive (Ljava/lang/String;)Ljava/io/File;
+	METHOD i openAsset (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD j openByAbstractPath (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD k createDirectory (Ljava/lang/String;)Z
+	METHOD l lastModified (Ljava/lang/String;)J
+	METHOD m getBackendName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD n stripVirtualPathTags (Ljava/lang/String;)Ljava/lang/String;
+	METHOD o addPrimaryPathTag (Ljava/lang/String;)Ljava/lang/String;
+	METHOD p isMountedPath (Ljava/lang/String;)Z

@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/n com/corrodinggames/rts/gameFramework/GameEngineLoadCallback
+	METHOD a onShowAlert (Ljava/lang/String;I)V
+	METHOD a onShowMessageBox (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a onSetLoadingMessage (Ljava/lang/String;Z)V
+	METHOD c isCancelled ()Z

@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/bl com/corrodinggames/rts/gameFramework/StatsHandlerHockList
+	FIELD a hocks Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a runAll (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;)V

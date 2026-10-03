@@ -3,3 +3,6 @@ CLASS com/corrodinggames/rts/gameFramework/e/e com/corrodinggames/rts/gameFramew
 	FIELD h secondaryBackend Lcom/corrodinggames/rts/gameFramework/e/c;
 	FIELD i primaryPathTag Ljava/lang/String;
 	FIELD j secondaryPathTag Ljava/lang/String;
+	METHOD q stripPathTag (Ljava/lang/String;)Ljava/lang/String;
+	METHOD r pickBackendByTag (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/e/c;
+	METHOD s pickBackend (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/e/c;

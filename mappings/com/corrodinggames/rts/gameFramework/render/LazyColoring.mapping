@@ -11,3 +11,6 @@ CLASS com/corrodinggames/rts/gameFramework/m/h com/corrodinggames/rts/gameFramew
 	FIELD x pureGreenShader Lcom/corrodinggames/rts/gameFramework/m/ae;
 	FIELD y hueAddShader Lcom/corrodinggames/rts/gameFramework/m/ae;
 	FIELD z hueShiftShader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	METHOD c colorImage (Z)V
+	METHOD C loadTeamShaders ()V
+	METHOD D ensureTeamShadersLoaded ()V

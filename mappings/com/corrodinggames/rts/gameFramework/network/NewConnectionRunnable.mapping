@@ -1,1 +1,18 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ao com/corrodinggames/rts/gameFramework/network/NewConnectionRunnable
+	FIELD b connectionThrottleEnabled Z
+	FIELD d serverSocket Ljava/net/ServerSocket;
+	FIELD e port I
+	FIELD f isUdp Z
+	FIELD g throttleWindowStartMillis J
+	FIELD j socketLock Ljava/lang/Object;
+	FIELD k connectionAttempts Ljava/util/ArrayList;
+	FIELD l throttleLock Ljava/lang/Object;
+	FIELD m uniqueAttemptCount I
+	FIELD n acceptedCount I
+	FIELD o lockdownLogged Z
+	FIELD p uniqueLimitLogged Z
+	FIELD q sameIpLimitLogged Z
+	FIELD r networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	METHOD a recreateServerSocket ()V
+	METHOD a isIpAllowed (Ljava/net/InetAddress;Z)Z
+	METHOD b stopListening ()V

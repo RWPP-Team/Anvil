@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/f/c com/corrodinggames/rts/gameFramework/gui/BattleInterfaceSpecialActionEffect
+	FIELD a unit Lcom/corrodinggames/rts/game/units/am;
+	FIELD b specialAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD c life F
+	FIELD d removing Z
+	FIELD f activeEffects Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a tick (F)V
+	METHOD a getEffect (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/a/s;Z)Lcom/corrodinggames/rts/gameFramework/f/c;
+	METHOD a addEffect (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/a/s;ZZ)V
+	METHOD b getFlashValue (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/a/s;Z)F

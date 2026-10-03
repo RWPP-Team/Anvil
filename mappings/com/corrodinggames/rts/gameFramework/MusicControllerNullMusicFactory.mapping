@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/av com/corrodinggames/rts/gameFramework/MusicControllerNullMusicFactory
+	FIELD a lastLoadFailed Z

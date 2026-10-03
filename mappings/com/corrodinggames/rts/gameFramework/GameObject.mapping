@@ -4,6 +4,7 @@ CLASS com/corrodinggames/rts/gameFramework/w com/corrodinggames/rts/gameFramewor
 	FIELD eh id J
 	FIELD ei renderOrderComparator Lcom/corrodinggames/rts/gameFramework/x;
 	FIELD ej removed Z
+	FIELD el renderedLastFrame Z
 	FIELD em renderOrder I
 	FIELD en secondaryRenderOrder I
 	FIELD eo x F

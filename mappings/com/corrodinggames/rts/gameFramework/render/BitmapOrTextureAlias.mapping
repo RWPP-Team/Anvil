@@ -1,1 +1,22 @@
 CLASS com/corrodinggames/rts/gameFramework/m/f com/corrodinggames/rts/gameFramework/render/BitmapOrTextureAlias
+	FIELD a atlasImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b atlasCanvas Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD c copyPaint Landroid/graphics/Paint;
+	FIELD d regionCount I
+	FIELD e atlasFull Z
+	FIELD f tickCount I
+	FIELD g needsRebuild Z
+	FIELD h cursorX I
+	FIELD i cursorY I
+	FIELD j rowMaxHeight I
+	FIELD k padding I
+	FIELD l regionMap Ljava/util/HashMap;
+	FIELD m recentlyUsed Ljava/util/ArrayList;
+	METHOD a enableClearMode ()V
+	METHOD a createAtlas (II)V
+	METHOD a getRegion (Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/m/g;
+	METHOD a drawImageIntoAtlas (Lcom/corrodinggames/rts/gameFramework/m/e;II)V
+	METHOD b reset ()V
+	METHOD b insertRegion (Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/m/g;
+	METHOD c tick ()V
+	METHOD d rebuildIfEvicted ()V

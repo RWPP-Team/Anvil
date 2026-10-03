@@ -4,3 +4,35 @@ CLASS com/corrodinggames/rts/gameFramework/e/a com/corrodinggames/rts/gameFramew
 	FIELD c externalStoragePermission Ljava/lang/Boolean;
 	FIELD d overriddenExternalPath Ljava/lang/String;
 	FIELD e loadError Ljava/lang/String;
+	METHOD a getInternalAppPath ()Ljava/lang/String;
+	METHOD a createBackendForStorageType (I)Lcom/corrodinggames/rts/gameFramework/e/c;
+	METHOD a createTempFile (Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+	METHOD a openByPath (Ljava/io/File;)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD a renameFileDirect (Ljava/io/File;Ljava/io/File;)Z
+	METHOD a openOutput (Ljava/io/File;Z)Ljava/io/OutputStream;
+	METHOD a isMountedPath (Ljava/lang/String;)Z
+	METHOD a findFileWithAnyExtension (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a getRWFile (Ljava/lang/String;Ljava/lang/String;Z)Ljava/io/File;
+	METHOD a listDir (Ljava/lang/String;Z)[Ljava/lang/String;
+	METHOD a computeFileAccessConfig (Z)Lcom/corrodinggames/rts/gameFramework/e/b;
+	METHOD b initBackends ()V
+	METHOD b deleteFile (Ljava/io/File;)Z
+	METHOD b renameFile (Ljava/io/File;Ljava/io/File;)Z
+	METHOD b setErrorMessage (Ljava/lang/String;)V
+	METHOD b openOutput (Ljava/lang/String;Z)Ljava/io/OutputStream;
+	METHOD c takeErrorMessage ()Ljava/lang/String;
+	METHOD c isAssetPath (Ljava/lang/String;)Z
+	METHOD d getStorageRootPath ()Ljava/lang/String;
+	METHOD d convertAbstractPathForDisplay (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e getCachePath ()Ljava/lang/String;
+	METHOD e convertAbstractPath (Ljava/lang/String;)Ljava/lang/String;
+	METHOD f isDirectory (Ljava/lang/String;)Z
+	METHOD g isDirectoryPreferMount (Ljava/lang/String;)Z
+	METHOD h listDir (Ljava/lang/String;)[Ljava/lang/String;
+	METHOD i fileExists (Ljava/lang/String;)Z
+	METHOD j openAsset (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD k openByPath (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/j;
+	METHOD l createDirectory (Ljava/lang/String;)Z
+	METHOD m lastModified (Ljava/lang/String;)J
+	METHOD n stripVirtualPathTags (Ljava/lang/String;)Ljava/lang/String;
+	METHOD p getBackendName (Ljava/lang/String;)Ljava/lang/String;

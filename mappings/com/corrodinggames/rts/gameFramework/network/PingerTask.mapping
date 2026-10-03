@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/j/av com/corrodinggames/rts/gameFramework/network/PingerTask
+	FIELD c networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;

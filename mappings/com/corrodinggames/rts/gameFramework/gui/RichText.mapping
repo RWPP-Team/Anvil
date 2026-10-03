@@ -8,3 +8,16 @@ CLASS com/corrodinggames/rts/gameFramework/f/ae com/corrodinggames/rts/gameFrame
 	FIELD g currentPaint Landroid/graphics/Paint;
 	FIELD h outlinePaint Landroid/graphics/Paint;
 	FIELD i elements Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a getText ()Ljava/lang/String;
+	METHOD a createWrappedDrawer (IZ)Lcom/corrodinggames/rts/gameFramework/f/aj;
+	METHOD a setCurrentPaint (Landroid/graphics/Paint;)V
+	METHOD a addElement (Lcom/corrodinggames/rts/gameFramework/f/af;)V
+	METHOD a appendImage (Lcom/corrodinggames/rts/gameFramework/m/e;II)V
+	METHOD a removeTrailingText (Ljava/lang/String;)V
+	METHOD a appendText (Ljava/lang/String;I)V
+	METHOD a appendText (Ljava/lang/String;IZ)V
+	METHOD a appendText (Ljava/lang/String;Landroid/graphics/Paint;)V
+	METHOD a useAltPaint (Z)V
+	METHOD b clear ()V
+	METHOD b appendText (Ljava/lang/String;)V
+	METHOD c measureCharWidth ()I

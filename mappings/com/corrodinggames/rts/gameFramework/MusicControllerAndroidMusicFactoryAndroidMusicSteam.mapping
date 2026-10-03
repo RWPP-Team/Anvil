@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/ap com/corrodinggames/rts/gameFramework/MusicControllerAndroidMusicFactoryAndroidMusicSteam
+	FIELD a mediaPlayer Landroid/media/MediaPlayer;
+	FIELD b trackHandle Lcom/corrodinggames/rts/gameFramework/ao;
+	FIELD c factory Lcom/corrodinggames/rts/gameFramework/an;

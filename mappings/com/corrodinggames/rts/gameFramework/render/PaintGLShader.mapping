@@ -1,5 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/m/ae com/corrodinggames/rts/gameFramework/render/PaintGLShader
 	FIELD c name Ljava/lang/String;
+	FIELD d infoText Ljava/lang/String;
 	FIELD e vertexSource Ljava/lang/String;
 	FIELD f fragmentSource Ljava/lang/String;
 	FIELD i vertexPath Ljava/lang/String;
@@ -11,3 +12,18 @@ CLASS com/corrodinggames/rts/gameFramework/m/ae com/corrodinggames/rts/gameFrame
 	FIELD p values [Lcom/corrodinggames/rts/gameFramework/m/af;
 	FIELD r errorCount I
 	FIELD s reloadCheckCounter I
+	METHOD a isTeamColorShader ()Z
+	METHOD a getUniform (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/af;
+	METHOD a setFloatUniform (Ljava/lang/String;F)V
+	METHOD a setFloat2Uniform (Ljava/lang/String;FF)V
+	METHOD a setColorUniform (Ljava/lang/String;I)V
+	METHOD a setTextureUniform (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD a setShaderPaths (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD b updateTeamColor ()Z
+	METHOD b logShader (Ljava/lang/String;)V
+	METHOD b setTextureUniformAlt (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD c attachToEngine ()V
+	METHOD c logShaderError (Ljava/lang/String;)V
+	METHOD d readSources ()V
+	METHOD e checkSourcesChanged ()Z
+	METHOD f checkForReload ()V

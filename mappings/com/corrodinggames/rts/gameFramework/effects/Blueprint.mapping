@@ -1,2 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/d/a com/corrodinggames/rts/gameFramework/effects/Blueprint
 	COMMENT Pending/planned unit placement preview ("blueprint"). Static list w of all active blueprints; isTileRectOverBlueprint(Team,RectF,int) collision test; draws a translucent ghost unit plus an animated colored outline (UniquePaint, alpha pulsing). [evidence-based job name]
+	FIELD a recheckFrameCounter F
+	FIELD A blueprintRect Landroid/graphics/RectF;
+	FIELD b lifetime F
+	FIELD c removed Z
+	FIELD C outlinePaint Landroid/graphics/Paint;
+	FIELD D outlinePaintDim Landroid/graphics/Paint;
+	FIELD E footprintRect Landroid/graphics/RectF;
+	FIELD p placementWasValid Z
+	FIELD w activeBlueprints Lcom/corrodinggames/rts/gameFramework/utility/o;
+	FIELD x tempTilePoint Landroid/graphics/Point;
+	FIELD y unitRect1 Landroid/graphics/RectF;
+	FIELD z unitRect2 Landroid/graphics/RectF;
+	METHOD a clearAll ()V
+	METHOD a updateAll (F)V
+	METHOD a getBlueprintAt (Lcom/corrodinggames/rts/game/n;FF)Lcom/corrodinggames/rts/gameFramework/d/a;
+	METHOD a isTileOverBlueprint (Lcom/corrodinggames/rts/game/n;III)Z
+	METHOD a isTileRectOverBlueprint (Lcom/corrodinggames/rts/game/n;Landroid/graphics/RectF;I)Z
+	METHOD a isFootprintOverBlueprint (Lcom/corrodinggames/rts/game/n;Lcom/corrodinggames/rts/game/units/y;I)Z
+	METHOD a doFootprintsIntersect (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/y;)Z
+	METHOD b shouldExpire ()Z
+	METHOD b drawAll (F)V
+	METHOD c update (F)V
+	METHOD d draw (F)V

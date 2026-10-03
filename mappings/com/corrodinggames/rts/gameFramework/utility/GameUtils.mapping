@@ -1,4 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/y com/corrodinggames/rts/gameFramework/utility/GameUtils
+	FIELD a redStrokePaint Landroid/graphics/Paint;
 	FIELD c timedOverlays Ljava/util/ArrayList;
 	FIELD d sourceRect Landroid/graphics/Rect;
 	FIELD e destRect Landroid/graphics/RectF;

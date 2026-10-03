@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/ah com/corrodinggames/rts/gameFramework/InputControllerDirectInputType
+	FIELD e joystickIndex I
+	FIELD f axisIndex I
+	FIELD g invertAxis Z
+	FIELD h buttonIndex I
+	FIELD i lastValue F
+	FIELD j valueChanged Z
+	METHOD a readAxis (Z)F
+	METHOD e readAxisRaw ()F

@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/c com/corrodinggames/rts/gameFramework/CommandController
+	FIELD a commandTracingEnabled Z
+	FIELD b localPendingCommands Ljava/util/ArrayList;
+	FIELD d networkPendingCommands Ljava/util/ArrayList;
+	FIELD e rateLimitCounter I
+	METHOD a clearCommands ()V
+	METHOD a createCommand (Lcom/corrodinggames/rts/game/n;)Lcom/corrodinggames/rts/gameFramework/e;
+	METHOD a logRateLimited (Ljava/lang/String;)V
+	METHOD b createCommand ()Lcom/corrodinggames/rts/gameFramework/e;
+	METHOD b createCommandForTeam (Lcom/corrodinggames/rts/game/n;)Lcom/corrodinggames/rts/gameFramework/e;
+	METHOD c dispatchQueuedCommands ()V
+	METHOD d issueLocalCommands ()V
+	METHOD e issueScheduledCommands ()V

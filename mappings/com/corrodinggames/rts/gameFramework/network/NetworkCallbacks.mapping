@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ac com/corrodinggames/rts/gameFramework/network/NetworkCallbacks
+	METHOD a onShowPasswordPrompt (Lcom/corrodinggames/rts/gameFramework/j/ae;)V
+	METHOD a onPlayerJoining (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;IILjava/lang/String;Lcom/corrodinggames/rts/game/e;)Ljava/lang/String;
+	METHOD b startGameEvent ()V

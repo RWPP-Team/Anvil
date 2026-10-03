@@ -15,4 +15,12 @@ CLASS com/corrodinggames/rts/gameFramework/j/g com/corrodinggames/rts/gameFramew
 	FIELD n playerName Ljava/lang/String;
 	FIELD q mapName Ljava/lang/String;
 	FIELD w maxPlayers I
+	FIELD x allowsAnyVersion Z
 	FIELD z requiredMods Ljava/lang/String;
+	METHOD a isCurrentServer ()Z
+	METHOD b getServerInfoText ()Ljava/lang/String;
+	METHOD c getUrl ()Ljava/lang/String;
+	METHOD d hasUrl ()Z
+	METHOD e getConnectAddress ()Ljava/lang/String;
+	METHOD f getLanConnectAddress ()Ljava/lang/String;
+	METHOD g isVersionCompatible ()Z

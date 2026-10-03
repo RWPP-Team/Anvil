@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/e com/corrodinggames/rts/gameFramework/gui/elements/NinePatchStyledBox
+	FIELD a cornerWidth I
+	FIELD b cornerHeight I
+	FIELD c cornerU F
+	FIELD d cornerV F
+	FIELD e scaleCornersToFit Z
+	FIELD f useTiledDraw Z
+	FIELD g tileScaleBlend F
+	FIELD h tmpSrcRect Landroid/graphics/Rect;
+	FIELD i tmpDstRect Landroid/graphics/Rect;
+	METHOD a setCornerSizes (Lcom/corrodinggames/rts/gameFramework/m/e;II)V
+	METHOD a drawPatch (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Paint;IIIIFFFF)V
+	METHOD a drawPatch (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Paint;IIIIFFFFZ)V
+	METHOD a drawNinePatch (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Paint;Landroid/graphics/Rect;)V
+	METHOD b paintNinePatch (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/Rect;)V
