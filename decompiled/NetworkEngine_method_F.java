@@ -1,2 +1,0 @@
-	public strictfp void F() {
-	}
