@@ -1,1 +1,16 @@
 CLASS com/corrodinggames/rts/game/units/d/p com/corrodinggames/rts/game/units/buildings/LaserDefence
+	FIELD a laserDefenceTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b laserDefenceT2TeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c laserDefenceDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d upgraded Z
+	FIELD e recharging Z
+	FIELD f PENDING_f F
+	FIELD g laserDefenceIconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h laserDefenceIconTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD i lastMuzzlePoint Landroid/graphics/PointF;
+	FIELD j PENDING_j Landroid/graphics/Rect;
+	FIELD k upgradeToLevel2Action Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD l specialActions Ljava/util/ArrayList;
+	METHOD a tryInterceptProjectile (Lcom/corrodinggames/rts/game/units/y;FFFFF)Z
+	METHOD b loadLaserDefenceImages ()V
+	CLASS 1 1

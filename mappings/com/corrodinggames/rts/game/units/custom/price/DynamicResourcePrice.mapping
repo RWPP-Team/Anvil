@@ -1,2 +1,17 @@
 CLASS com/corrodinggames/rts/game/units/custom/d/c com/corrodinggames/rts/game/units/custom/price/DynamicResourcePrice
 	COMMENT A resource-gated price (custom/price): parses "resource=amount" lists separated by "|", plus the pseudo-resources hasFlag/hasMissingFlag/setFlag/unsetFlag which test/patch the unit's cF bit flags. b(unit) = canAfford, a(unit) = pay, d/e(unit) = grant/refund. Previously mis-mapped (collision with custom/d/d). [evidence-based job name]
+	FIELD a values Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b hasDynamicValues Z
+	FIELD c setFlagBits I
+	FIELD d unsetFlagBits I
+	FIELD e hasFlagBits I
+	FIELD f hasMissingFlagBits I
+	METHOD a containsAllBits (II)Z
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/d/c;)Lcom/corrodinggames/rts/game/units/custom/d/c;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/d/c;
+	METHOD a parseAllowBareCredits (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/custom/d/c;
+	METHOD b containsAnyBits (II)Z
+	METHOD d setResourceAmounts (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD e addResourceAmounts (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD f applyFlagChanges (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD g checkFlagRequirements (Lcom/corrodinggames/rts/game/units/am;)Z

@@ -1,2 +1,8 @@
 CLASS a/a/o net/rudp/ReliableSocketInputStream
 	FIELD a socket La/a/h;
+	METHOD available available ()I
+	METHOD close close ()V
+	METHOD markSupported markSupported ()Z
+	METHOD read read ()I
+	METHOD read read ([B)I
+	METHOD read read ([BII)I

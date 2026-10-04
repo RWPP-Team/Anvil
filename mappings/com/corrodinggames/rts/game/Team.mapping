@@ -2,6 +2,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	COMMENT Team - a player/team (abstract; Player/StandardPlayer/NullPlayer/TeamPlayer are the concrete forms). Field names confirmed by cross-class evidence: teamId ("teamId:" in TriggerActivator, set in the Team(int) constructor), credits (double; initialized to 4000.0, read/written by CustomPrice as the team's credits and by TriggerActivator event_changeCredits), name (set by the Player(int,boolean,String) constructor), unitCaches (TeamUnitCaches, filled by TeamUnitCaches.a/b), teamTags (CustomTagTags; initialized to CustomTag.emptyTags and mutated by event_teamTags via Team.b(CustomTagTags)/c(CustomTagTags)) and storedResources (the team-wide StoredResources returned by V(), initialized in the constructor). The remaining obfuscated fields (a..j, l..u, w..aj, am..ar and the statics) were not renamed because the class body (55 KB on one line) could not be read back through the tooling; the visible constructor prologue/outer-class usage only proves that o=credits(4000.0), p,q (credit accounting), ai=-2 (status), au/av=-9999, T=unitCaches, ak=teamTags and al=storedResources. [partially verified]
 	FIELD a allTeamsList Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD A startingUnitsOverride Ljava/lang/Integer;
+	FIELD aa PENDING_flag_aa Z
 	FIELD ab isAFK Z
 	FIELD ac sortOrder I
 	FIELD ad cacheCheckFailCount I
@@ -10,18 +11,24 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	FIELD ag teamColors [I
 	FIELD ah teamColorNames [Ljava/lang/String;
 	FIELD ai defeatCheckTimer I
+	FIELD aj cachedSettingsAIDifficulty I
 	FIELD ak teamTags Lcom/corrodinggames/rts/game/units/custom/h;
 	FIELD al storedResources Lcom/corrodinggames/rts/game/units/custom/e/f;
 	FIELD am resourceList Lcom/corrodinggames/rts/game/units/custom/e/c;
 	FIELD an resourceUpdateTimer F
+	FIELD ao PENDING_static_float_ao F
+	FIELD ap PENDING_static_float_ap F
 	FIELD aq lastCreditsUpdateRealtime J
 	FIELD ar cachedCredits D
 	FIELD as teamArray [Lcom/corrodinggames/rts/game/n;
 	FIELD at surrenderVoted Z
 	FIELD au surrenderVoteTime I
+	FIELD av eliminatedTime I
 	FIELD b allTeamsArray [Lcom/corrodinggames/rts/game/n;
+	FIELD B PENDING_integer_B Ljava/lang/Integer;
 	FIELD c maxTeamId I
 	FIELD C colorOverride Ljava/lang/Integer;
+	FIELD d extraTeamSlots I
 	FIELD D displaySlot I
 	FIELD e maxTeamIdLimit I
 	FIELD E eliminated Z
@@ -36,16 +43,19 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	FIELD j nullTeam Lcom/corrodinggames/rts/game/n;
 	FIELD J controlShared Z
 	FIELD k teamId I
+	FIELD K PENDING_lock_K Ljava/lang/Object;
 	FIELD l creditsSyncNote Ljava/lang/String;
 	FIELD L fogWidth I
 	FIELD m hasHadUnits Z
 	FIELD M fogHeight I
-	FIELD n hasSeenNonMobileUnit Z
+	FIELD n hasSeenCreditsUsingUnit Z
+		COMMENT Sticky flag: true once any unit controlled by this team has a UnitTypeInterface.usesCredits() type (mirrors TeamUnitCaches.hasSeenCreditsUsingUnitType, copied over in updateUnitCaches). InterfaceEngine.drawTeamResources only draws the credits resource entry for teams with this set. [field names confirmed by cross-class evidence]
 	FIELD N fogGrid [[B
 	FIELD o credits D
 	FIELD O clientId Ljava/lang/String;
 	FIELD p antiLagCredits D
 	FIELD P clientId2 Ljava/lang/String;
+	FIELD q antiLagCheckCounter I
 	FIELD Q localPlayerTeamFlag I
 	FIELD r allyTeam I
 	FIELD R maxBuildingCount I
@@ -53,12 +63,15 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	FIELD S unitCachesDirty Z
 	FIELD t dummyTargetUnit Lcom/corrodinggames/rts/game/units/y;
 	FIELD T unitCaches Lcom/corrodinggames/rts/game/s;
+	FIELD u PENDING_flag_u Z
+	FIELD U PENDING_flag_U Z
 	FIELD v name Ljava/lang/String;
 	FIELD V stepsBehindCount B
 	FIELD w isAI Z
 	FIELD W ping I
 	FIELD x aiDifficulty I
 	FIELD X lastPingTimeReceivedAt J
+	FIELD y aiDifficultyLocked Z
 	FIELD Y inactiveSince J
 	FIELD z aiDifficultyOverride Ljava/lang/Integer;
 	FIELD Z inactiveSinceGameTime I
@@ -69,27 +82,38 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD a countTeamsInAllyGroup (IZ)I
 	METHOD a matchesTeamRelation (Lcom/corrodinggames/rts/game/q;Lcom/corrodinggames/rts/game/n;)Z
 	METHOD a removeUnitFromCache (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a getNegativeResourceAmount (Lcom/corrodinggames/rts/game/units/custom/e/a;)I
 	METHOD a countUnitsWithTag (Lcom/corrodinggames/rts/game/units/custom/g;ZZ)I
 	METHOD a setTeamTags (Lcom/corrodinggames/rts/game/units/custom/h;)V
 	METHOD a readPingUpdate (Lcom/corrodinggames/rts/gameFramework/j/k;)V
 	METHOD a readTeamState (Lcom/corrodinggames/rts/gameFramework/j/k;Z)V
+	METHOD a getTeamColorVariantsPureGreen (Lcom/corrodinggames/rts/gameFramework/m/e;)[Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a applyHueNewColoring (Lcom/corrodinggames/rts/gameFramework/m/e;[Lcom/corrodinggames/rts/gameFramework/m/e;[I)V
 	METHOD a applyHueShiftColoring (Lcom/corrodinggames/rts/gameFramework/m/e;[Lcom/corrodinggames/rts/gameFramework/m/e;[I[I)V
 	METHOD a createTeamColorVariants (Lcom/corrodinggames/rts/gameFramework/m/e;Lcom/corrodinggames/rts/game/o;)[Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a getTeamColorVariants (Lcom/corrodinggames/rts/gameFramework/m/e;Lcom/corrodinggames/rts/game/o;Z)[Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a findExistingPlayer (Ljava/lang/String;)Lcom/corrodinggames/rts/game/e;
+	METHOD a getSortedTeams (Z)Ljava/util/ArrayList;
 	METHOD a countUnits (ZZ)I
 	METHOD A getPing ()I
 	METHOD aa getCreditsCached ()D
+	METHOD ab getStoredResourcesAlias ()Lcom/corrodinggames/rts/game/units/custom/e/f;
 	METHOD b isSpectator ()Z
 	METHOD b updateIncome (F)V
 	METHOD b countSurrenderVotes (I)I
 	METHOD b setMaxTeamId (IZ)V
 	METHOD b canControlTeam (Lcom/corrodinggames/rts/game/n;)Z
+	METHOD b removeUnitFromCacheStatic (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD b getResourceAmount (Lcom/corrodinggames/rts/game/units/custom/e/a;)I
+	METHOD b countUnitsOnEnemyTeams (Lcom/corrodinggames/rts/game/units/custom/g;ZZ)I
 	METHOD b addTeamTag (Lcom/corrodinggames/rts/game/units/custom/h;)V
+	METHOD b notifyAllTeamsOfOrderableUnit (Lcom/corrodinggames/rts/game/units/y;)V
 	METHOD b writeTeamState (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD b readTeamStateFromNetwork (Lcom/corrodinggames/rts/gameFramework/j/k;)V
 	METHOD b applyHueAddColoring (Lcom/corrodinggames/rts/gameFramework/m/e;[Lcom/corrodinggames/rts/gameFramework/m/e;[I)V
+	METHOD b createTeamColorVariantsEager (Lcom/corrodinggames/rts/gameFramework/m/e;Lcom/corrodinggames/rts/game/o;)[Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD b findPlayerByClientId2 (Ljava/lang/String;)Lcom/corrodinggames/rts/game/e;
+	METHOD b getTeamsIncludingSpectators (Z)Ljava/util/ArrayList;
 	METHOD B isTimedOut ()Z
 	METHOD c getTeams ()Ljava/util/ArrayList;
 	METHOD c addIncome (F)V
@@ -98,6 +122,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD c isEnemy (Lcom/corrodinggames/rts/game/n;)Z
 	METHOD c addUnitToCache (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD c getStoredResourceAmount (Lcom/corrodinggames/rts/game/units/custom/e/a;)D
+	METHOD c countUnitsOnAllyTeams (Lcom/corrodinggames/rts/game/units/custom/g;ZZ)I
 	METHOD c removeTeamTag (Lcom/corrodinggames/rts/game/units/custom/h;)V
 	METHOD c read (Lcom/corrodinggames/rts/gameFramework/j/as;)V
 	METHOD c readFullState (Lcom/corrodinggames/rts/gameFramework/j/k;)V
@@ -122,6 +147,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD E getAIDifficultyIncomeMultiplier ()F
 	METHOD f getTeamIds ()Ljava/util/ArrayList;
 	METHOD f updateTeams (F)V
+	METHOD f setTeamIdForced (I)V
 	METHOD F clearAllTeams ()V
 	METHOD g countRemainingPlayers ()I
 	METHOD g updateAllTeamCaches (F)V

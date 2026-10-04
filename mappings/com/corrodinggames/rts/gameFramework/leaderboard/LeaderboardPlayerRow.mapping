@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/g/e com/corrodinggames/rts/gameFramework/leaderboard/LeaderboardPlayerRow
+	FIELD a team Lcom/corrodinggames/rts/game/n;

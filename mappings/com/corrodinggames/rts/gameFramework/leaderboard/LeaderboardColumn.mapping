@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/g/f com/corrodinggames/rts/gameFramework/leaderboard/LeaderboardColumn
+	FIELD a none Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD b income Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD c armyValue Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD d buildingValue Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD e totalValue Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD f credits Lcom/corrodinggames/rts/gameFramework/g/f;
+	METHOD a getValueForTeam (Lcom/corrodinggames/rts/game/n;)I

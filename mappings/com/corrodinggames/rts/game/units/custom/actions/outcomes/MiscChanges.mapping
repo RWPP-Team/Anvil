@@ -1,0 +1,19 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/j com/corrodinggames/rts/game/units/custom/actions/outcomes/MiscChanges
+	FIELD a deleteSelf Z
+	FIELD b switchToNeutralTeam Z
+	FIELD c switchToAggressiveTeam Z
+	FIELD d switchToTeam Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD e setBodyRotation Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD f setHeight Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD g teleportTo Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD h clearAllActionCooldowns Z
+	FIELD i addAllActionCooldownsTime F
+	FIELD j addActionCooldownTime F
+	FIELD k addActionCooldownApplyToActions Lcom/corrodinggames/rts/game/units/custom/u;
+	FIELD l removeAllQueuedItemsWithoutRefund Z
+	FIELD m refundAllQueuedItems Z
+	FIELD n setBuilt F
+	FIELD o offsetSelfAbsolute Lcom/corrodinggames/rts/gameFramework/utility/ai;
+	FIELD p resetUnitStats Z
+	FIELD q setUnitStats Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

@@ -13,3 +13,5 @@ CLASS com/corrodinggames/rts/gameFramework/d/g com/corrodinggames/rts/gameFramew
 	FIELD k imageIsSingleFrame Z
 	FIELD l tmpRect Landroid/graphics/Rect;
 	FIELD m tmpRectF Landroid/graphics/RectF;
+	METHOD a createShadowImage ()V
+	METHOD a drawFrame (IFFLandroid/graphics/Paint;)V

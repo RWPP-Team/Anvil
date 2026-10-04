@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/a/f com/corrodinggames/rts/gameFramework/sound/NullSoundFactory
+	METHOD a createNullSound (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/a/i;
+	METHOD b createOutOfMemorySound ()Lcom/corrodinggames/rts/gameFramework/a/i;

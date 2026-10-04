@@ -1,2 +1,20 @@
 CLASS com/corrodinggames/rts/game/units/d/d com/corrodinggames/rts/game/units/buildings/Building
 	COMMENT Building base: static placement, placement checks, factory/crystal parent. Extends OrderableUnit. [iOS-confirmed]
+	FIELD m overlayImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD n footprint Landroid/graphics/Rect;
+	FIELD o constructionFootprint Landroid/graphics/Rect;
+	FIELD p buildingIconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD q buildingIconTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD r PENDING_r I
+	FIELD s animFrame I
+	METHOD a canPlaceBuildingAt (Lcom/corrodinggames/rts/game/units/as;FFLcom/corrodinggames/rts/game/n;)Z
+	METHOD a canPlaceBuildingAtTile (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/as;Lcom/corrodinggames/rts/game/units/ao;III)Z
+	METHOD a canPlaceBuildingAtTile (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/as;Lcom/corrodinggames/rts/game/units/ao;IIZ)Z
+	METHOD a getPlacementError (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/as;Lcom/corrodinggames/rts/game/units/ao;IIZLcom/corrodinggames/rts/game/n;)Ljava/lang/String;
+	METHOD b getBuildingAtTile (II)Lcom/corrodinggames/rts/game/units/am;
+	METHOD ds drawOverlayTopLeft ()Z
+	METHOD dt loadBuildingIconImages ()V
+	METHOD f getBodyPaint ()Landroid/graphics/Paint;
+	METHOD g createUnitOfType (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD L PENDING_L ()Z
+	METHOD R PENDING_R (I)V

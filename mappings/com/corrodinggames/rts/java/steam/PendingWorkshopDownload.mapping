@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/java/c/i com/corrodinggames/rts/java/steam/PendingWorkshopDownload
+	FIELD a publishedFileId Lcom/codedisaster/steamworks/SteamPublishedFileID;
+	FIELD b onComplete Ljava/lang/Runnable;
+	METHOD a onFinish (Lcom/codedisaster/steamworks/SteamResult;)V

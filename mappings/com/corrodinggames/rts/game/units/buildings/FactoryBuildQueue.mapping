@@ -1,2 +1,35 @@
 CLASS com/corrodinggames/rts/game/units/d/k com/corrodinggames/rts/game/units/buildings/FactoryBuildQueue
 	COMMENT Per-building production queue + producer: owns the BuildQueueItem list, advances progress, checks affordability (CustomPrice), pops finished items and spawns the unit at the rally point/exit offset. Subclasses (e.g. LandFactory$BuildQueue) override du() in their Factory. Logs "Factory no longer has the action:", "buildQueue empty for:". Previously mis-mapped to Factory (collision). [evidence-based job name]
+	FIELD a factory Lcom/corrodinggames/rts/game/units/y;
+	FIELD b rallyPoint Landroid/graphics/PointF;
+	FIELD c buildQueue Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD d instantQueueItems Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD e buildProgress F
+	FIELD f currentBuildItem Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD a isEmpty ()Z
+	METHOD a update (F)V
+	METHOD a countQueuedUnits (Lcom/corrodinggames/rts/game/units/a/c;Z)I
+	METHOD a countQueuedUnits (Lcom/corrodinggames/rts/game/units/a/c;ZZ)I
+	METHOD a cancelInstantPurchase (Lcom/corrodinggames/rts/game/units/a/s;)V
+	METHOD a PENDING_a_SpecialAction_Z (Lcom/corrodinggames/rts/game/units/a/s;Z)V
+	METHOD a queueOrCancel (Lcom/corrodinggames/rts/game/units/a/s;ZLandroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD a enqueueUnit (Lcom/corrodinggames/rts/game/units/a/w;Z)Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD a enqueueUnit (Lcom/corrodinggames/rts/game/units/a/w;ZLandroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD a queueExitWaypoints (Lcom/corrodinggames/rts/game/units/am;FZ)V
+	METHOD a countQueuedUnits (Lcom/corrodinggames/rts/game/units/as;)I
+	METHOD a spawnUnit (Lcom/corrodinggames/rts/game/units/as;FZF)Lcom/corrodinggames/rts/game/units/am;
+	METHOD a countQueuedUnits (Lcom/corrodinggames/rts/game/units/custom/g;)I
+	METHOD a setCurrentBuildItem (Lcom/corrodinggames/rts/game/units/d/j;)V
+	METHOD a completeQueueItem (Lcom/corrodinggames/rts/game/units/d/j;FZF)Lcom/corrodinggames/rts/game/units/am;
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD a clearQueue (Z)V
+	METHOD b getCurrentBuildItem ()Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD b dequeueUnit (Lcom/corrodinggames/rts/game/units/a/w;Z)Lcom/corrodinggames/rts/game/units/d/j;
+	METHOD b getQueueActionForUnitType (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD b refundQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)V
+	METHOD c getRefundPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD d getCurrentSpecialAction ()Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD e removeInvalidItems ()V
+	METHOD f getQueueList ()Ljava/util/List;
+	METHOD g getQueueFastArrayList ()Lcom/corrodinggames/rts/gameFramework/utility/m;

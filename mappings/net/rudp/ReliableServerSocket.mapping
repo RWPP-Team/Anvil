@@ -16,3 +16,15 @@ CLASS a/a/b net/rudp/ReliableServerSocket
 	METHOD a init (Ljava/net/DatagramSocket;I)V
 	METHOD a removeClientSocket (Ljava/net/SocketAddress;)La/a/e;
 	METHOD a registerClientSocket (Ljava/net/SocketAddress;La/a/e;)V
+	METHOD accept accept ()Ljava/net/Socket;
+	METHOD bind bind (Ljava/net/SocketAddress;)V
+	METHOD bind bind (Ljava/net/SocketAddress;I)V
+	METHOD close close ()V
+	METHOD getInetAddress getInetAddress ()Ljava/net/InetAddress;
+	METHOD getLocalPort getLocalPort ()I
+	METHOD getLocalSocketAddress getLocalSocketAddress ()Ljava/net/SocketAddress;
+	METHOD getSoTimeout getSoTimeout ()I
+	METHOD isBound isBound ()Z
+	METHOD isClosed isClosed ()Z
+	METHOD setSoTimeout setSoTimeout (I)V
+	CLASS 1 1

@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/game/m com/corrodinggames/rts/game/ScorchMarkType
 	COMMENT Scorch mark size: normal or nuke. Flattened inner class of ScorchMark. [iOS-confirmed]
+	FIELD a normal Lcom/corrodinggames/rts/game/m;
+	FIELD b nuke Lcom/corrodinggames/rts/game/m;

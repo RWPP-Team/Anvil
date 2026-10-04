@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/m com/corrodinggames/rts/gameFramework/gui/elements/UILayoutStyle
+	FIELD a none Lcom/corrodinggames/rts/gameFramework/f/a/m;
+	FIELD b vertical Lcom/corrodinggames/rts/gameFramework/f/a/m;
+	FIELD c horizontal Lcom/corrodinggames/rts/gameFramework/f/a/m;

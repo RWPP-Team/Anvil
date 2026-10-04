@@ -1,1 +1,54 @@
 CLASS com/codedisaster/steamworks/SteamNetworking
+	FIELD tmpIntResult tmpIntResult [I
+	FIELD tmpLongResult tmpLongResult [J
+	METHOD acceptP2PSessionWithUser acceptP2PSessionWithUser (JJ)Z
+	METHOD acceptP2PSessionWithUser acceptP2PSessionWithUser (Lcom/codedisaster/steamworks/SteamID;)Z
+	METHOD allowP2PPacketRelay allowP2PPacketRelay (JZ)Z
+	METHOD allowP2PPacketRelay allowP2PPacketRelay (Z)Z
+	METHOD closeP2PChannelWithUser closeP2PChannelWithUser (JJI)Z
+	METHOD closeP2PChannelWithUser closeP2PChannelWithUser (Lcom/codedisaster/steamworks/SteamID;I)Z
+	METHOD closeP2PSessionWithUser closeP2PSessionWithUser (JJ)Z
+	METHOD closeP2PSessionWithUser closeP2PSessionWithUser (Lcom/codedisaster/steamworks/SteamID;)Z
+	METHOD createCallback createCallback (Lcom/codedisaster/steamworks/SteamNetworkingCallbackAdapter;Z)J
+	METHOD getP2PSessionState getP2PSessionState (JJLcom/codedisaster/steamworks/SteamNetworking$P2PSessionState;)Z
+	METHOD getP2PSessionState getP2PSessionState (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionState;)Z
+	METHOD isP2PPacketAvailable isP2PPacketAvailable (I)I
+	METHOD isP2PPacketAvailable isP2PPacketAvailable (J[II)Z
+	METHOD readP2PPacket readP2PPacket (JLjava/nio/ByteBuffer;II[I[JI)Z
+	METHOD readP2PPacket readP2PPacket (Lcom/codedisaster/steamworks/SteamID;Ljava/nio/ByteBuffer;I)I
+	METHOD readP2PPacket readP2PPacket (Lcom/codedisaster/steamworks/SteamID;Ljava/nio/ByteBuffer;III)I
+	METHOD sendP2PPacket sendP2PPacket (JJLjava/nio/ByteBuffer;IIII)Z
+	METHOD sendP2PPacket sendP2PPacket (Lcom/codedisaster/steamworks/SteamID;Ljava/nio/ByteBuffer;IILcom/codedisaster/steamworks/SteamNetworking$P2PSend;I)Z
+	METHOD sendP2PPacket sendP2PPacket (Lcom/codedisaster/steamworks/SteamID;Ljava/nio/ByteBuffer;Lcom/codedisaster/steamworks/SteamNetworking$P2PSend;I)Z
+	CLASS API
+		FIELD Client Client Lcom/codedisaster/steamworks/SteamNetworking$API;
+		FIELD Server Server Lcom/codedisaster/steamworks/SteamNetworking$API;
+	CLASS P2PSend
+		FIELD Reliable Reliable Lcom/codedisaster/steamworks/SteamNetworking$P2PSend;
+		FIELD ReliableWithBuffering ReliableWithBuffering Lcom/codedisaster/steamworks/SteamNetworking$P2PSend;
+		FIELD Unreliable Unreliable Lcom/codedisaster/steamworks/SteamNetworking$P2PSend;
+		FIELD UnreliableNoDelay UnreliableNoDelay Lcom/codedisaster/steamworks/SteamNetworking$P2PSend;
+	CLASS P2PSessionError
+		FIELD DestinationNotLoggedIn DestinationNotLoggedIn Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+		FIELD None None Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+		FIELD NoRightsToApp NoRightsToApp Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+		FIELD NotRunningApp NotRunningApp Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+		FIELD Timeout Timeout Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+		METHOD byOrdinal byOrdinal (I)Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+	CLASS P2PSessionState
+		FIELD bytesQueuedForSend bytesQueuedForSend I
+		FIELD connecting connecting B
+		FIELD connectionActive connectionActive B
+		FIELD packetsQueuedForSend packetsQueuedForSend I
+		FIELD remoteIP remoteIP I
+		FIELD remotePort remotePort S
+		FIELD sessionError sessionError B
+		FIELD usingRelay usingRelay B
+		METHOD getBytesQueuedForSend getBytesQueuedForSend ()I
+		METHOD getLastSessionError getLastSessionError ()Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;
+		METHOD getPacketsQueuedForSend getPacketsQueuedForSend ()I
+		METHOD getRemoteIP getRemoteIP ()I
+		METHOD getRemotePort getRemotePort ()S
+		METHOD isConnecting isConnecting ()Z
+		METHOD isConnectionActive isConnectionActive ()Z
+		METHOD isUsingRelay isUsingRelay ()Z

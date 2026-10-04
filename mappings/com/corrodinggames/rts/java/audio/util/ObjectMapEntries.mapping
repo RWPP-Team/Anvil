@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/java/audio/a/p com/corrodinggames/rts/java/audio/util/ObjectMapEntries
+	METHOD hasNext hasNext ()Z
+	METHOD iterator iterator ()Ljava/util/Iterator;
+	METHOD next next ()Ljava/lang/Object;

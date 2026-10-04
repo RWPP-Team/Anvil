@@ -1,1 +1,27 @@
 CLASS com/corrodinggames/rts/java/c/b com/corrodinggames/rts/java/steam/JavaSteamEngine
+	FIELD b friendsListener Lcom/corrodinggames/rts/java/c/d;
+	FIELD c friends Lcom/codedisaster/steamworks/SteamFriends;
+	FIELD d matchmaking Lcom/codedisaster/steamworks/SteamMatchmaking;
+	FIELD e matchmakingListener Lcom/corrodinggames/rts/java/c/e;
+	FIELD f networkingListener Lcom/corrodinggames/rts/java/c/f;
+	FIELD g workshop Lcom/corrodinggames/rts/java/c/g;
+	FIELD h networking Lcom/codedisaster/steamworks/SteamNetworking;
+	FIELD i utilsListener Lcom/corrodinggames/rts/java/c/c;
+	FIELD j utils Lcom/codedisaster/steamworks/SteamUtils;
+	FIELD k initialized Z
+	FIELD l steamSockets Ljava/util/HashMap;
+	FIELD m packetBuffer Ljava/nio/ByteBuffer;
+	FIELD n activeLobby Lcom/codedisaster/steamworks/SteamID;
+	FIELD o isServer Z
+	FIELD p lobbyOwner Lcom/codedisaster/steamworks/SteamID;
+	METHOD a setActiveLobby (Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD a log (Ljava/lang/String;)V
+	METHOD b addPeer (Lcom/codedisaster/steamworks/SteamID;)Lcom/corrodinggames/rts/gameFramework/j/c;
+	METHOD b logWarning (Ljava/lang/String;)V
+	METHOD c connectTo (Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD n getWorkshop ()Lcom/corrodinggames/rts/java/c/g;
+	CLASS 1
+		FIELD a lobbyId Lcom/codedisaster/steamworks/SteamID;
+		FIELD b b Lcom/corrodinggames/rts/java/c/b;
+		METHOD run run ()V
+	CLASS 1 1

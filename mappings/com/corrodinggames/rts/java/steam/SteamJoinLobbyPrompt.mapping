@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/java/c/a com/corrodinggames/rts/java/steam/SteamJoinLobbyPrompt
+	FIELD a engine Lcom/corrodinggames/rts/java/c/b;
+	FIELD b inviterName Ljava/lang/String;
+	FIELD c inviterId Lcom/codedisaster/steamworks/SteamID;
+	FIELD d lobbyId Lcom/codedisaster/steamworks/SteamID;
+	FIELD e e J
+	FIELD f thread Ljava/lang/Thread;
+	METHOD a showPrompt ()V
+	METHOD run run ()V
+	CLASS 1 1

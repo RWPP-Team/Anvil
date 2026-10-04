@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/gameFramework/d/b com/corrodinggames/rts/gameFramework/effects/Clouds
+	FIELD a textureLoaded Z
+	FIELD b noiseTexture Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c cloudPaint Landroid/graphics/Paint;
+	FIELD d drawRect Landroid/graphics/RectF;
+	FIELD e scrollX F
+	FIELD f scrollY F
+	METHOD a renderCloudsEnabled ()Z
+	METHOD a updateScroll (F)V
+	METHOD b loadNoiseTexture ()V
+	METHOD b draw (F)V

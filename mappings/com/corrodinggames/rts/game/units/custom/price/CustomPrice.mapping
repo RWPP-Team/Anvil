@@ -1,5 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/d/b com/corrodinggames/rts/game/units/custom/price/CustomPrice
 	COMMENT CustomPrice - a resource/flag cost. Every field name is the original ini sub-key, read in b(CustomUnitMetadata, String): credits, energy, hp, shield, ammo, setFlag, unsetFlag, hasFlag, hasMissingFlag and customResources (StoredResources of CustomResource amounts, i.e. mod resources). Statics: emptyPrice (the shared zero price), emptyResources (shared empty StoredResources), unusableColor (red used when the unit cannot afford the price). Supports +, * (a(CustomPrice,float)), combine (a(p1,p2)), affordability/consume/refund (a/b/g/h), RichText rendering, and net (de)serialization. [field names verified from the ini parser]
+	FIELD a emptyPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD b credits I
 	FIELD c energy F
 	FIELD d hp F
@@ -12,3 +13,47 @@ CLASS com/corrodinggames/rts/game/units/custom/d/b com/corrodinggames/rts/game/u
 	FIELD k customResources Lcom/corrodinggames/rts/game/units/custom/e/f;
 	FIELD l unusableColor I
 	FIELD m emptyResources Lcom/corrodinggames/rts/game/units/custom/e/f;
+	METHOD a getCredits ()I
+	METHOD a creditsPrice (I)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a isFlagSet (II)Z
+	METHOD a parseFlagBits (ILjava/lang/String;)I
+	METHOD a give (Lcom/corrodinggames/rts/game/units/am;DZ)V
+	METHOD a getMissingText (Lcom/corrodinggames/rts/game/units/am;IZ)Ljava/lang/String;
+	METHOD a transferCustomResources (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a getAffordableCount (Lcom/corrodinggames/rts/game/units/am;Z)I
+	METHOD a multiply (Lcom/corrodinggames/rts/game/units/custom/d/b;F)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a combine (Lcom/corrodinggames/rts/game/units/custom/d/b;Lcom/corrodinggames/rts/game/units/custom/d/b;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a parseFromIniWithDefault (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/d/b;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a parseStreaming (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a appendDisplayText (Lcom/corrodinggames/rts/gameFramework/f/ae;ZZIZ)V
+	METHOD a appendDisplayText (Lcom/corrodinggames/rts/gameFramework/f/ae;ZZIZLcom/corrodinggames/rts/game/units/am;I)V
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;Lcom/corrodinggames/rts/game/units/custom/d/b;)V
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a getDisplayText (ZZIZ)Ljava/lang/String;
+	METHOD b getCreditsEquivalent ()I
+	METHOD b validateFlagId (I)V
+	METHOD b containsAllBits (II)Z
+	METHOD b payIfCanAfford (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD b pricesEqual (Lcom/corrodinggames/rts/game/units/custom/d/b;)Z
+	METHOD b pricesEqual (Lcom/corrodinggames/rts/game/units/custom/d/b;Lcom/corrodinggames/rts/game/units/custom/d/b;)Z
+	METHOD b parseStreamingFromIniWithDefault (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/d/b;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD b parse (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD b appendDisplayTextInternal (Lcom/corrodinggames/rts/gameFramework/f/ae;ZZIZLcom/corrodinggames/rts/game/units/am;I)V
+	METHOD b readNotNull (Lcom/corrodinggames/rts/gameFramework/j/k;)Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD c isEmpty ()Z
+	METHOD c applyFlagChangesToValue (I)I
+	METHOD c containsAnyBits (II)Z
+	METHOD c canAffordWithLagHiding (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD c overlaps (Lcom/corrodinggames/rts/game/units/custom/d/b;)Z
+	METHOD d isNotEmpty ()Z
+	METHOD d clampUnitResources (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD d recordPurchase (Lcom/corrodinggames/rts/game/units/am;Z)V
+	METHOD e hasNonCustomCosts ()Z
+	METHOD e applyFlagChanges (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD e recordRefund (Lcom/corrodinggames/rts/game/units/am;Z)V
+	METHOD f checkFlagRequirements (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD g giveRecordingIncome (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD h give (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD i getMissingPrice (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/custom/d/b;

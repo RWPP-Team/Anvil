@@ -1,1 +1,11 @@
 CLASS com/codedisaster/steamworks/SteamGameServerCallback
+	METHOD onAssociateWithClanResult onAssociateWithClanResult (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onClientApprove onClientApprove (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD onClientDeny onClientDeny (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamGameServer$DenyReason;Ljava/lang/String;)V
+	METHOD onClientGroupStatus onClientGroupStatus (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;ZZ)V
+	METHOD onClientKick onClientKick (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamGameServer$DenyReason;)V
+	METHOD onComputeNewPlayerCompatibilityResult onComputeNewPlayerCompatibilityResult (Lcom/codedisaster/steamworks/SteamResult;IIILcom/codedisaster/steamworks/SteamID;)V
+	METHOD onSteamServerConnectFailure onSteamServerConnectFailure (Lcom/codedisaster/steamworks/SteamResult;Z)V
+	METHOD onSteamServersConnected onSteamServersConnected ()V
+	METHOD onSteamServersDisconnected onSteamServersDisconnected (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onValidateAuthTicketResponse onValidateAuthTicketResponse (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;Lcom/codedisaster/steamworks/SteamID;)V

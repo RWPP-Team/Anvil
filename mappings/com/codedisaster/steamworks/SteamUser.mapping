@@ -1,1 +1,14 @@
 CLASS com/codedisaster/steamworks/SteamUser
+	METHOD beginAuthSession beginAuthSession (JLjava/nio/Buffer;IJ)I
+	METHOD beginAuthSession beginAuthSession (Ljava/nio/Buffer;Lcom/codedisaster/steamworks/SteamID;)Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+	METHOD cancelAuthTicket cancelAuthTicket (JI)V
+	METHOD cancelAuthTicket cancelAuthTicket (Lcom/codedisaster/steamworks/SteamAuthTicket;)V
+	METHOD createCallback createCallback (Lcom/codedisaster/steamworks/SteamUserCallbackAdapter;)J
+	METHOD endAuthSession endAuthSession (JJ)V
+	METHOD endAuthSession endAuthSession (Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD getAuthSessionTicket getAuthSessionTicket (JLjava/nio/Buffer;I[I)I
+	METHOD getAuthSessionTicket getAuthSessionTicket (Ljava/nio/Buffer;[I)Lcom/codedisaster/steamworks/SteamAuthTicket;
+	METHOD getSteamID getSteamID ()Lcom/codedisaster/steamworks/SteamID;
+	METHOD getSteamID getSteamID (J)J
+	METHOD userHasLicenseForApp userHasLicenseForApp (JJI)I
+	METHOD userHasLicenseForApp userHasLicenseForApp (Lcom/codedisaster/steamworks/SteamID;I)Lcom/codedisaster/steamworks/SteamAuth$UserHasLicenseForAppResult;

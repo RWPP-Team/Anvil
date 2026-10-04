@@ -9,3 +9,37 @@ CLASS com/corrodinggames/rts/game/units/au com/corrodinggames/rts/game/units/Way
 	FIELD g unitId J
 	FIELD h targetUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD i group Lcom/corrodinggames/rts/gameFramework/ab;
+	FIELD j PENDING_flagJ Z
+	FIELD k PENDING_posK F
+	FIELD l PENDING_posL F
+	FIELD m PENDING_flagM Z
+	FIELD n PENDING_flagN Z
+	METHOD a getUnitType ()Lcom/corrodinggames/rts/game/units/as;
+	METHOD a setMoveTo (FF)V
+	METHOD a setBuildTo (FFLcom/corrodinggames/rts/game/units/as;I)V
+	METHOD a setAttack (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a isRoughlySamePosition (Lcom/corrodinggames/rts/game/units/au;)Z
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD b getCount ()I
+	METHOD b setAttackMoveTo (FF)V
+	METHOD b setRepair (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD b matches (Lcom/corrodinggames/rts/game/units/au;)Z
+	METHOD c convertUnitIds ()V
+	METHOD c setPatrolTo (FF)V
+	METHOD c setGuard (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD c copyFrom (Lcom/corrodinggames/rts/game/units/au;)V
+	METHOD d getType ()Lcom/corrodinggames/rts/game/units/av;
+	METHOD d setTouchTarget (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD e resetToMove ()V
+	METHOD e setFollow (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD f requiresTargetUnit ()Z
+	METHOD f setReclaim (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD g getTargetX ()F
+	METHOD g setLoadInto (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD h getTargetY ()F
+	METHOD h setLoadUp (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD i getTargetUnit ()Lcom/corrodinggames/rts/game/units/am;
+	METHOD j getUnitId ()J
+	METHOD k convertToUnitId ()V
+	METHOD l getDummyTargetUnit ()Lcom/corrodinggames/rts/game/units/am;

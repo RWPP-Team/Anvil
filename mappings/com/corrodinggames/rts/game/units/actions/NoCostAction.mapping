@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/a/a com/corrodinggames/rts/game/units/actions/NoCostAction
+	FIELD a INSTANCE Lcom/corrodinggames/rts/game/units/a/a;
+	METHOD a getCustomPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a PENDING_checkUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a PENDING_applyUnitUnit (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a PENDING_checkUnitFlag (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD b getSecondaryPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD b isNoCostForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD c getLockedReason (Lcom/corrodinggames/rts/game/units/am;)Ljava/lang/String;
+	METHOD d PENDING_checkUnitAlt (Lcom/corrodinggames/rts/game/units/am;)Z

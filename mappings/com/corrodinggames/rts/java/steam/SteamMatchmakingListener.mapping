@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/java/c/e com/corrodinggames/rts/java/steam/SteamMatchmakingListener
+	FIELD a engine Lcom/corrodinggames/rts/java/c/b;

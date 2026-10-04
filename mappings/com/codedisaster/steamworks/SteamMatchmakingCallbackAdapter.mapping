@@ -1,0 +1,13 @@
+CLASS com/codedisaster/steamworks/SteamMatchmakingCallbackAdapter
+	FIELD stateChangeValues stateChangeValues [Lcom/codedisaster/steamworks/SteamMatchmaking$ChatMemberStateChange;
+	METHOD onFavoritesListAccountsUpdated onFavoritesListAccountsUpdated (I)V
+	METHOD onFavoritesListChanged onFavoritesListChanged (IIIIIZI)V
+	METHOD onLobbyChatMessage onLobbyChatMessage (JJII)V
+	METHOD onLobbyChatUpdate onLobbyChatUpdate (JJJI)V
+	METHOD onLobbyCreated onLobbyCreated (IJ)V
+	METHOD onLobbyDataUpdate onLobbyDataUpdate (JJZ)V
+	METHOD onLobbyEnter onLobbyEnter (JIZI)V
+	METHOD onLobbyGameCreated onLobbyGameCreated (JJIS)V
+	METHOD onLobbyInvite onLobbyInvite (JJJ)V
+	METHOD onLobbyKicked onLobbyKicked (JJZ)V
+	METHOD onLobbyMatchList onLobbyMatchList (I)V

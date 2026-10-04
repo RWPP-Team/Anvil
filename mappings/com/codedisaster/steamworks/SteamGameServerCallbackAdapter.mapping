@@ -1,1 +1,11 @@
 CLASS com/codedisaster/steamworks/SteamGameServerCallbackAdapter
+	METHOD onAssociateWithClanResult onAssociateWithClanResult (I)V
+	METHOD onClientApprove onClientApprove (JJ)V
+	METHOD onClientDeny onClientDeny (JILjava/lang/String;)V
+	METHOD onClientGroupStatus onClientGroupStatus (JJZZ)V
+	METHOD onClientKick onClientKick (JI)V
+	METHOD onComputeNewPlayerCompatibilityResult onComputeNewPlayerCompatibilityResult (IIIIJ)V
+	METHOD onSteamServerConnectFailure onSteamServerConnectFailure (IZ)V
+	METHOD onSteamServersConnected onSteamServersConnected ()V
+	METHOD onSteamServersDisconnected onSteamServersDisconnected (I)V
+	METHOD onValidateAuthTicketResponse onValidateAuthTicketResponse (JIJ)V

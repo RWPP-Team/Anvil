@@ -1,1 +1,20 @@
 CLASS com/ElementDocument
+	FIELD documentPath documentPath Ljava/lang/String;
+	FIELD FOCUS FOCUS I
+	FIELD metadata metadata Ljava/util/HashMap;
+	FIELD MODAL MODAL I
+	FIELD NONE NONE I
+	FIELD pageTimers pageTimers Ljava/util/ArrayList;
+	FIELD translatedToUnicode translatedToUnicode Z
+	METHOD close close ()V
+	METHOD closeDocument closeDocument ()V
+	METHOD getMetadata getMetadata (Ljava/lang/String;)Ljava/lang/Object;
+	METHOD getMetadata getMetadata (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD getMetadataFloat getMetadataFloat (Ljava/lang/String;)Ljava/lang/Float;
+	METHOD getMetadataMap getMetadataMap ()Ljava/util/HashMap;
+	METHOD pullToFront pullToFront ()V
+	METHOD pushToBack pushToBack ()V
+	METHOD setMetadata setMetadata (Ljava/lang/String;Ljava/lang/Object;)V
+	METHOD setMetadataFloat setMetadataFloat (Ljava/lang/String;Ljava/lang/Float;)V
+	METHOD show show (I)V
+	METHOD showWithWorkaround showWithWorkaround (I)V

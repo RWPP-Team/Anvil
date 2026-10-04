@@ -1,50 +1,107 @@
 CLASS com/corrodinggames/rts/gameFramework/b/n com/corrodinggames/rts/gameFramework/canvasgl/GLES20Canvas
+	FIELD a textureAlias Lcom/corrodinggames/rts/gameFramework/b/ac;
+	FIELD A checkGLErrorsEnabled Z
+	FIELD aa destRect Landroid/graphics/RectF;
+	FIELD ab scratchIntArray [I
+	FIELD ac textureCoordProvider Lcom/corrodinggames/rts/gameFramework/b/u;
+	FIELD b viewportWidth I
+	FIELD B logGLErrorCount I
+	FIELD c viewportHeight I
+	FIELD C fonts Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD d projectionMatrix [F
+	FIELD D defaultFont Lcom/corrodinggames/rts/gameFramework/b/p;
 	FIELD e shapeShaderVariables [Lcom/corrodinggames/rts/gameFramework/b/q;
+	FIELD E canvasDirectGL Lcom/corrodinggames/rts/gameFramework/m/k;
+	FIELD f PENDING_shaderVariablesP [Lcom/corrodinggames/rts/gameFramework/b/q;
+	FIELD F lineFloatBuffer Ljava/nio/FloatBuffer;
+	FIELD g PENDING_shaderVariablesQ [Lcom/corrodinggames/rts/gameFramework/b/q;
+	FIELD G TAG Ljava/lang/String;
+	FIELD h batchActive Z
+	FIELD H quadVertexData [F
+	FIELD i textBatchActive Z
+	FIELD I quadTextureCoords [F
 	FIELD j batch Lcom/corrodinggames/rts/gameFramework/b/y;
+	FIELD J programCache Ljava/util/Map;
+	FIELD k textRenderer Lcom/corrodinggames/rts/gameFramework/b/aj;
 	FIELD K matrixStack [F
+	FIELD l textureManager Lcom/corrodinggames/rts/gameFramework/b/f;
 	FIELD L matrixStackIndex I
+	FIELD m currentMatrix [F
+	FIELD M canvasWidth I
+	FIELD n currentState Lcom/corrodinggames/rts/gameFramework/b/r;
+	FIELD N canvasHeight I
 	FIELD o stateStackIndex I
+	FIELD O shapeProgramId I
 	FIELD p stateStack Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD P PENDING_programP I
+	FIELD q currentScissorRect Landroid/graphics/RectF;
+	FIELD Q PENDING_programQ I
 	FIELD r currentProgram I
+	FIELD R shapeVertexBufferId I
 	FIELD s blendingEnabled Z
+	FIELD S currentShaderSource Lcom/corrodinggames/rts/gameFramework/b/h;
 	FIELD t programDirty Z
+	FIELD T shaderBindCallback Lcom/corrodinggames/rts/gameFramework/b/m;
+	FIELD u lastVertexOffset I
+	FIELD U renderTargetTextureIds Lcom/corrodinggames/rts/gameFramework/b/w;
 	FIELD v currentPaintShader Lcom/corrodinggames/rts/gameFramework/m/ae;
 	FIELD V framebufferIds [I
 	FIELD w batchColor I
 	FIELD W renderTargetStack Ljava/util/ArrayList;
 	FIELD x textureCount I
+	FIELD X shapeModelMatrix [F
 	FIELD y textureMemoryBytes I
+	FIELD Y colorArray [F
 	FIELD z lastBoundTexture Lcom/corrodinggames/rts/gameFramework/b/ab;
+	FIELD Z srcRect Landroid/graphics/RectF;
 	METHOD a clear ([F)V
+	METHOD a PENDING_a_FIF_V ([FIF)V
+	METHOD a setShapeModelMatrix ([Lcom/corrodinggames/rts/gameFramework/b/q;FFFFLcom/corrodinggames/rts/gameFramework/b/l;)V
+	METHOD a initShaderVariables ([Lcom/corrodinggames/rts/gameFramework/b/q;I)V
 	METHOD a drawShape ([Lcom/corrodinggames/rts/gameFramework/b/q;IIFFFFLcom/corrodinggames/rts/gameFramework/b/l;)V
 	METHOD a buildShaderProgram ([Lcom/corrodinggames/rts/gameFramework/b/q;Ljava/lang/String;Ljava/lang/String;)I
 	METHOD a rotate (F)V
 	METHOD a translate (FF)V
 	METHOD a scale (FFF)V
 	METHOD a useProgram (I)V
+	METHOD a setProjectionMatrix (I[Lcom/corrodinggames/rts/gameFramework/b/q;)V
 	METHOD a setCanvasSize (II)V
 	METHOD a createGlProgram (II[Lcom/corrodinggames/rts/gameFramework/b/q;[I)I
+	METHOD a prepareShapeDraw (IIF)V
+	METHOD a drawShapeWithColor (IIIFFFFIF)V
+	METHOD a validateTextureFilter (ILcom/corrodinggames/rts/gameFramework/b/af;)V
 	METHOD a preprocessShaderSource (ILjava/lang/String;)Ljava/lang/String;
 	METHOD a loadFont (IZZ)Lcom/corrodinggames/rts/gameFramework/b/p;
 	METHOD a setTextureFilter (Lcom/corrodinggames/rts/gameFramework/b/b;I)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/b/b;Landroid/graphics/RectF;Landroid/graphics/RectF;Lcom/corrodinggames/rts/gameFramework/b/af;Lcom/corrodinggames/rts/gameFramework/b/l;)V
 	METHOD a batchDrawImage (Lcom/corrodinggames/rts/gameFramework/b/b;Landroid/graphics/RectF;Landroid/graphics/RectF;Lcom/corrodinggames/rts/gameFramework/b/l;)V
 	METHOD a switchRenderTarget (Lcom/corrodinggames/rts/gameFramework/b/b;Lcom/corrodinggames/rts/gameFramework/b/b;)V
+	METHOD a useShaderSource (Lcom/corrodinggames/rts/gameFramework/b/h;)V
 	METHOD a setPaintShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
 	METHOD a logGLError (Ljava/lang/String;Ljava/lang/Throwable;)V
+	METHOD a updateScissor (Z)V
+	METHOD b setShapeVertexPointer ([Lcom/corrodinggames/rts/gameFramework/b/q;I)V
+	METHOD b getColorFloats (I)[F
 	METHOD b registerTextureMemory (II)V
 	METHOD b compileShader (ILjava/lang/String;)I
+	METHOD b setBatchShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
 	METHOD b setBlendingEnabled (Z)V
 	METHOD c unregisterTextureMemory (II)V
 	METHOD c loadPaintShaderUniforms (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
 	METHOD d isPaintShaderReady (Lcom/corrodinggames/rts/gameFramework/m/ae;)Z
 	METHOD g rebindShapeProgram ()V
+	METHOD h PENDING_h_F ()F
+	METHOD i getMatrix ()[F
 	METHOD j pushState ()V
 	METHOD k restore ()V
 	METHOD l save ()V
+	METHOD m beginTextureBatch ()V
+	METHOD n beginTextBatch ()V
+	METHOD o markBatchShaderDirty ()V
 	METHOD p drainGLErrors ()V
 	METHOD q checkGLErrors ()V
 	METHOD r checkGLErrorsStrict ()V
+	METHOD s PENDING_s_String ()Ljava/lang/String;
 	METHOD t peekRenderTarget ()Lcom/corrodinggames/rts/gameFramework/b/b;
 	METHOD u checkFramebufferStatus ()V
 	METHOD v checkFramebufferStatusOES ()V

@@ -1,12 +1,135 @@
 CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/Projectile
 	FIELD a allProjectiles Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD A instantHit Z
+	FIELD aa hitEnemiesOnly Z
+	FIELD aA hitRadius F
+	FIELD ab hitAlliesOnly Z
+	FIELD aB PENDING_flag_aB Z
+	FIELD ac hitUnderwater Z
+	FIELD aC PENDING_flag_aC Z
+	FIELD ad areaHitAirAndLandAtSameTime Z
+	FIELD aD spawnDepth I
+	FIELD ae requireAirLandMatch Z
 	FIELD aE onlyHitTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD af explodeOnEndOfLife Z
+	FIELD aF retargetingSearchTimer F
+	FIELD ag pushForce F
+	FIELD aG autoTargetingOnDeadTarget Z
+	FIELD ah pushVelocity F
+	FIELD aH ballistic Z
+	FIELD ai buildingDamageMultiplier F
+	FIELD aI ballisticDelaymoveHeight F
+	FIELD aj airUnitDamageMultiplier F
+	FIELD aJ ballisticHeight F
+	FIELD ak PENDING_float_ak F
+	FIELD aK ballisticDescending Z
+	FIELD al PENDING_float_al F
+	FIELD aL ballisticVerticalSpeed F
+	FIELD am PENDING_float_am F
+	FIELD aM smokeTrail Z
+	FIELD an PENDING_float_an F
+	FIELD aN trailTimer F
+	FIELD ao keepAreaDamageList Z
+	FIELD aO beamExplosionTimer F
+	FIELD ap areaDamageList Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD aP effect Lcom/corrodinggames/rts/gameFramework/d/e;
+	FIELD aq defaultColor I
+	FIELD aQ largeHitEffect Z
 	FIELD ar color I
+	FIELD aR playHitSound Z
+	FIELD as hitAnyNearbyUnit Z
+	FIELD aS destroyRequested Z
+	FIELD at PENDING_flag_at Z
+	FIELD aT drawAngle F
+	FIELD au moveWithParentObject Lcom/corrodinggames/rts/gameFramework/w;
+	FIELD aU drawAngleInitialized Z
+	FIELD av parentTurretNumber I
+	FIELD aV hitX F
+	FIELD aw parentLastX F
+	FIELD aW hitY F
+	FIELD ax parentLastY F
+	FIELD aX hitHeight F
+	FIELD ay parentLastHeight F
+	FIELD aY shouldRevealFog Z
+	FIELD az angle F
+	FIELD aZ fogChecked Z
+	FIELD b projectileSprites Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD B drawLineToTarget Z
+	FIELD ba defaultPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD bb circlePaint Landroid/graphics/Paint;
+	FIELD bc shadowPaint Landroid/graphics/Paint;
+	FIELD bd targetLinePaint Landroid/graphics/Paint;
+	FIELD be targetLineGlowPaint Landroid/graphics/Paint;
+	FIELD bf beamPaint Landroid/graphics/Paint;
+	FIELD bg lightningPaint Landroid/graphics/Paint;
+	FIELD bh PENDING_paint_bh Landroid/graphics/Paint;
+	FIELD bi areaDamageUnitList Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD bj cachedColorPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD bk sharedColorPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD bl sharedColorPaintColor I
 	FIELD bm parentProjectile Lcom/corrodinggames/rts/game/f;
+	FIELD bn hasHit Z
+	FIELD c projectileSprites2 Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD C PENDING_flag_C Z
+	FIELD d projectileSpritesLarge Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD D nukeWeapon Z
+	FIELD e PENDING_rect_e Landroid/graphics/Rect;
+	FIELD E beamWeapon Z
+	FIELD f beamImageDrawRect Landroid/graphics/RectF;
+	FIELD F chargeTime F
 	FIELD g metadata Lcom/corrodinggames/rts/game/g;
+	FIELD G spawnFireOnHit Z
+	FIELD h lifeTimer F
+	FIELD H PENDING_float_H F
+	FIELD i delayedStartTimer F
+	FIELD I randomPhase F
 	FIELD j sourceUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD J timeAlive F
+	FIELD k turretNumber S
 	FIELD K targetX F
 	FIELD l targetUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD L targetY F
+	FIELD m hasStaticTarget Z
+	FIELD M lightningEffect Z
+	FIELD n staticTargetX F
+	FIELD N lightningJitterTimer F
+	FIELD o staticTargetY F
+	FIELD O lightningJitterOffsets [F
+	FIELD p staticTargetHeight F
+	FIELD P frame S
+	FIELD q interceptTargetProjectile Lcom/corrodinggames/rts/game/f;
+	FIELD Q shadowFrame S
+	FIELD r targetSpeed F
+	FIELD R drawType S
+	FIELD s targetSpeedAcceleration F
+	FIELD S visible Z
+	FIELD t speed F
+	FIELD T PENDING_flag_T Z
+	FIELD u speedX F
 	FIELD U reloadTime F
+	FIELD v speedY F
+	FIELD V areaDamageDone Z
+	FIELD w speedHeight F
+	FIELD W areaDamageTimer F
+	FIELD x drawSize F
+	FIELD X areaDamageDelay F
+	FIELD y PENDING_secondaryDrawSize F
+	FIELD Y areaDamage F
+	FIELD z drawShadow Z
+	FIELD Z areaRadius F
+	METHOD a findNewTarget (FFLcom/corrodinggames/rts/game/units/custom/h;)V
+	METHOD a applyAreaDamageToUnit (FLcom/corrodinggames/rts/game/units/am;F)V
+	METHOD a getPaintForColor (I)Lcom/corrodinggames/rts/gameFramework/m/ag;
+	METHOD a getParentProjectile (Lcom/corrodinggames/rts/game/f;)Lcom/corrodinggames/rts/game/f;
+	METHOD a pushUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a createProjectile (Lcom/corrodinggames/rts/game/units/am;FF)Lcom/corrodinggames/rts/game/f;
+	METHOD a setSourceAndPosition (Lcom/corrodinggames/rts/game/units/am;FFF)V
+	METHOD a createProjectileWithTurretNumber (Lcom/corrodinggames/rts/game/units/am;FFFI)Lcom/corrodinggames/rts/game/f;
+	METHOD a applyDamageToUnit (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;FLcom/corrodinggames/rts/game/f;Z)V
+	METHOD b destroyWithShockwave ()V
+	METHOD b applyAreaDamage (F)V
+	METHOD b tryAreaDamageUnit (Lcom/corrodinggames/rts/game/units/am;FF)V
+	METHOD c loadProjectileImages ()V
+	METHOD d markForDestroy ()V
+	METHOD e getChargeRatio ()F
+	METHOD f getPaint ()Landroid/graphics/Paint;

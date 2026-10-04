@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/a/d com/corrodinggames/rts/gameFramework/sound/SoundThread
+	FIELD a factory Lcom/corrodinggames/rts/gameFramework/a/a;
+	METHOD run run ()V

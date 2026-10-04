@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/java/audio/lwjgl/Ogg
+	CLASS Music
+		FIELD input input Lcom/corrodinggames/rts/java/audio/lwjgl/OggInputStream;
+		FIELD previousInput previousInput Lcom/corrodinggames/rts/java/audio/lwjgl/OggInputStream;
+	CLASS MusicWithThreadedLoader
+		FIELD backgroundInput backgroundInput Lcom/corrodinggames/rts/java/audio/lwjgl/ThreadedWrappingAudioInputStream;
+		FIELD input input Lcom/corrodinggames/rts/java/audio/lwjgl/OggInputStream;
+		FIELD previousInput previousInput Lcom/corrodinggames/rts/java/audio/lwjgl/OggInputStream;
+	CLASS Sound

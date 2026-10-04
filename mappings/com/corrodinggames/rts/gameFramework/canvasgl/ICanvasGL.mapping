@@ -1,0 +1,21 @@
+CLASS com/corrodinggames/rts/gameFramework/b/k com/corrodinggames/rts/gameFramework/canvasgl/ICanvasGL
+	METHOD a getTextureCoordProvider ()Lcom/corrodinggames/rts/gameFramework/b/u;
+	METHOD a drawLines ([FIILcom/corrodinggames/rts/gameFramework/b/v;Lcom/corrodinggames/rts/gameFramework/b/h;)V
+	METHOD a drawLine (FFFFLcom/corrodinggames/rts/gameFramework/b/v;Lcom/corrodinggames/rts/gameFramework/b/h;)V
+	METHOD a drawCircle (FFFLcom/corrodinggames/rts/gameFramework/b/v;Lcom/corrodinggames/rts/gameFramework/b/h;)V
+	METHOD a clipRect (IIII)V
+	METHOD a PENDING_bitmapChanged (Landroid/graphics/Bitmap;)V
+	METHOD a isRenderTargetTexture (Lcom/corrodinggames/rts/gameFramework/b/b;)Z
+	METHOD a uploadTexturePixels (Lcom/corrodinggames/rts/gameFramework/b/b;III)V
+	METHOD a drawImageRegion (Lcom/corrodinggames/rts/gameFramework/b/b;IIIILcom/corrodinggames/rts/gameFramework/b/af;Lcom/corrodinggames/rts/gameFramework/b/l;)V
+	METHOD a uploadTextureSubImage (Lcom/corrodinggames/rts/gameFramework/b/b;IILandroid/graphics/Bitmap;II)V
+	METHOD a uploadTextureFromBitmap (Lcom/corrodinggames/rts/gameFramework/b/b;Landroid/graphics/Bitmap;I)V
+	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
+	METHOD b pushMatrix ()V
+	METHOD b bindTexture (Lcom/corrodinggames/rts/gameFramework/b/b;)V
+	METHOD c popMatrix ()V
+	METHOD c pushRenderTarget (Lcom/corrodinggames/rts/gameFramework/b/b;)V
+	METHOD d popRenderTarget ()V
+	METHOD d setTextureWrap (Lcom/corrodinggames/rts/gameFramework/b/b;)V
+	METHOD e flushBatch ()V
+	METHOD f endBatch ()V

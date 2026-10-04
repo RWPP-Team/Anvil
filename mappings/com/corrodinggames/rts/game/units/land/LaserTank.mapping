@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/e/k com/corrodinggames/rts/game/units/land/LaserTank
+	FIELD a deadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d chargeImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e teamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g PENDING_rectScratch Landroid/graphics/Rect;
+	METHOD f loadImages ()V

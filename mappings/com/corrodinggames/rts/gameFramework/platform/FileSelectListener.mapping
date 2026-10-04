@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/l/b com/corrodinggames/rts/gameFramework/platform/FileSelectListener
+	METHOD onCancelled onCancelled ()V
+	METHOD onFileSelected onFileSelected ()V

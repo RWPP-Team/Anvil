@@ -1,1 +1,22 @@
 CLASS com/corrodinggames/rts/game/units/f com/corrodinggames/rts/game/units/DamagingBorder
+	FIELD a currentRadius F
+	FIELD b shrinkRate F
+	FIELD c damageTimer F
+	FIELD d borderRadius F
+	FIELD e targetCenterX F
+	FIELD f targetCenterY F
+	FIELD g needsInit Z
+	FIELD h damageMultiplier F
+	FIELD i isShrinking Z
+	FIELD j effectTimer F
+	FIELD k borderPaint Landroid/graphics/Paint;
+	FIELD l minimapBorderPaint Landroid/graphics/Paint;
+	FIELD m shrinkingBorderPaint Landroid/graphics/Paint;
+	FIELD n shrinkingMinimapBorderPaint Landroid/graphics/Paint;
+	FIELD o zoneMarkerPaint Landroid/graphics/Paint;
+	FIELD p minimapZoneMarkerPaint Landroid/graphics/Paint;
+	FIELD q isZoneMarker Z
+	FIELD r scratchPoint Landroid/graphics/PointF;
+	METHOD a isOutsideBorder (FF)Z
+	METHOD a getPointInsideBorder (FFF)Landroid/graphics/PointF;
+	METHOD f findOtherBorder ()Lcom/corrodinggames/rts/game/units/f;

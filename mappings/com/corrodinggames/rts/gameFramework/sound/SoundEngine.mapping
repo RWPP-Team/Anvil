@@ -32,3 +32,15 @@ CLASS com/corrodinggames/rts/gameFramework/a/e com/corrodinggames/rts/gameFramew
 	FIELD x lightingBurst Lcom/corrodinggames/rts/gameFramework/a/i;
 	FIELD y plasmaFire Lcom/corrodinggames/rts/gameFramework/a/i;
 	FIELD z plasmaFire2 Lcom/corrodinggames/rts/gameFramework/a/i;
+	METHOD a isGameSoundEnabled ()Z
+	METHOD a isSoundEnabled (F)Z
+	METHOD a loadSounds (Landroid/content/Context;)V
+	METHOD a checkRecentSound (Lcom/corrodinggames/rts/gameFramework/a/i;F)Z
+	METHOD a playSoundAt (Lcom/corrodinggames/rts/gameFramework/a/i;FFF)V
+	METHOD a playSoundAt (Lcom/corrodinggames/rts/gameFramework/a/i;FFFF)V
+	METHOD a getSound (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/a/i;
+	METHOD a createSoundFromStream (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/utility/j;Z)Lcom/corrodinggames/rts/gameFramework/a/i;
+	METHOD b clearRecentSounds (F)V
+	METHOD b playInterfaceSound (Lcom/corrodinggames/rts/gameFramework/a/i;F)V
+	METHOD b createNullSound (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/a/i;
+	METHOD c playGameSound (Lcom/corrodinggames/rts/gameFramework/a/i;F)V

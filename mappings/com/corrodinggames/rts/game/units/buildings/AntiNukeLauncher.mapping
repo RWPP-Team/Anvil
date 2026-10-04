@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/d/c com/corrodinggames/rts/game/units/buildings/AntiNukeLauncher
+	FIELD a antiNukeLauncherTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b antiNukeLauncherDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c PENDING_c Z
+	FIELD d antiNukeCount I
+	FIELD e scanTimer F
+	FIELD f antiNukeIconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g antiNukeIconTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h PENDING_h Landroid/graphics/PointF;
+	FIELD i PENDING_i Landroid/graphics/Rect;
+	FIELD j PENDING_j_action Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD k buildAntiNukeAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD l specialActions Ljava/util/ArrayList;
+	METHOD a hasInterceptor (Lcom/corrodinggames/rts/game/f;)Z
+	METHOD b loadAntiNukeLauncherImages ()V
+	METHOD b launchInterceptor (Lcom/corrodinggames/rts/game/f;)V
+	METHOD M addAntiNuke ()V
+	CLASS 1 1
+	CLASS 2 2

@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/game/q com/corrodinggames/rts/game/TeamRelation
 	COMMENT Team relation filter: own, ally, allyNotOwn, enemy, neutral, any, notOwn. Flattened inner class of Team. [iOS-confirmed]
+	FIELD a own Lcom/corrodinggames/rts/game/q;
+	FIELD b ally Lcom/corrodinggames/rts/game/q;
+	FIELD c allyNotOwn Lcom/corrodinggames/rts/game/q;
+	FIELD d enemy Lcom/corrodinggames/rts/game/q;
+	FIELD e neutral Lcom/corrodinggames/rts/game/q;
+	FIELD f any Lcom/corrodinggames/rts/game/q;
+	FIELD g notOwn Lcom/corrodinggames/rts/game/q;

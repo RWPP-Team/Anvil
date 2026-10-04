@@ -1,0 +1,6 @@
+CLASS android/graphics/Point
+	METHOD describeContents describeContents ()I
+	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V
+	CLASS 1
+		METHOD createFromParcel createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+		METHOD newArray newArray (I)[Ljava/lang/Object;

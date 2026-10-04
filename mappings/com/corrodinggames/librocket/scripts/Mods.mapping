@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/librocket/scripts/Mods
+	FIELD checkWorkshopSkip checkWorkshopSkip I
+	FIELD root root Lcom/corrodinggames/librocket/scripts/Root;
+	FIELD updateModsRunnable updateModsRunnable Ljava/lang/Runnable;
+	METHOD _rememberTempModSelection _rememberTempModSelection ()V
+	METHOD _restoreTempModSelection _restoreTempModSelection ()V
+	METHOD _saveModsCommon _saveModsCommon (Z)V
+	METHOD _saveModsMessages _saveModsMessages (Z)V
+	METHOD applyModFilter applyModFilter ()V
+	METHOD deleteMod deleteMod (Ljava/lang/String;)V
+	METHOD deleteModPopup deleteModPopup (Ljava/lang/String;)V
+	METHOD disableAll disableAll ()V
+	METHOD disableAllAsk disableAllAsk ()V
+	METHOD getSteam getSteam ()Lcom/corrodinggames/rts/gameFramework/o/a;
+	METHOD loadMods loadMods ()V
+	METHOD openWorkshop openWorkshop ()V
+	METHOD refreshModList refreshModList ()V
+	METHOD reloadModData reloadModData ()V
+	METHOD reloadModDataAsk reloadModDataAsk ()V
+	METHOD saveMods saveMods ()V
+	METHOD setModFilter setModFilter (Ljava/lang/String;)V
+	METHOD updateMods updateMods ()V
+	METHOD uploadMod uploadMod (Ljava/lang/String;)V
+	METHOD uploadModAsk uploadModAsk (Ljava/lang/String;)V
+	METHOD viewMod viewMod (Ljava/lang/String;)V

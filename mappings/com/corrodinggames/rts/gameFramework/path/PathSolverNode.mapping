@@ -13,5 +13,8 @@ CLASS com/corrodinggames/rts/gameFramework/k/p com/corrodinggames/rts/gameFramew
 	METHOD a set (Lcom/corrodinggames/rts/gameFramework/k/p;)Lcom/corrodinggames/rts/gameFramework/k/p;
 	METHOD a set (SS)Lcom/corrodinggames/rts/gameFramework/k/p;
 	METHOD b isClosed (Lcom/corrodinggames/rts/gameFramework/k/o;B)Z
+	METHOD b setBlocked (Lcom/corrodinggames/rts/gameFramework/k/o;BZ)V
 	METHOD c getDirection (Lcom/corrodinggames/rts/gameFramework/k/o;B)B
+	METHOD d isBlocked (Lcom/corrodinggames/rts/gameFramework/k/o;B)Z
+	METHOD e isStampCurrent (Lcom/corrodinggames/rts/gameFramework/k/o;B)Z
 	METHOD f getNeighborNode (Lcom/corrodinggames/rts/gameFramework/k/o;B)Lcom/corrodinggames/rts/gameFramework/k/p;

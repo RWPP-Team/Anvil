@@ -1,1 +1,71 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader
+	FIELD boolArrayContextReader boolArrayContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD defaultContextReader defaultContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD numberArrayContextReader numberArrayContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD patternDoubleQuote patternDoubleQuote Ljava/util/regex/Pattern;
+	FIELD patternFloat patternFloat Ljava/util/regex/Pattern;
+	FIELD patternInteger patternInteger Ljava/util/regex/Pattern;
+	FIELD patternSingleQuote patternSingleQuote Ljava/util/regex/Pattern;
+	FIELD TRACE TRACE Z
+	FIELD unitArrayContextReader unitArrayContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD voidArrayContextReader voidArrayContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD voidBoolContextReader voidBoolContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD voidContextReader voidContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD voidNumberContextReader voidNumberContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	METHOD breakOuterLayerBrackets breakOuterLayerBrackets (Ljava/lang/String;)Ljava/lang/String;
+	METHOD convertParameterData convertParameterData (Ljava/lang/String;Ljava/lang/Class;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;Ljava/lang/String;)Ljava/lang/Object;
+	METHOD fixArguments fixArguments (Ljava/lang/String;)Ljava/lang/String;
+	METHOD getAllFieldsInherited getAllFieldsInherited (Ljava/util/List;Ljava/lang/Class;)Ljava/util/List;
+	METHOD getArgumentTextWithMapping getArgumentTextWithMapping (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping$FieldOrMethod;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD isEmptyIgnoringPlusMinus isEmptyIgnoringPlusMinus (Ljava/lang/String;)Z
+	METHOD match match (Ljava/util/regex/Pattern;Ljava/lang/String;)Ljava/util/regex/Matcher;
+	METHOD parseBooleanBlock parseBooleanBlock (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD parseNumberBlock parseNumberBlock (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD setArgumentsWithMapping setArgumentsWithMapping (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping;Ljava/lang/Object;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)V
+	METHOD setArgumentWithMapping setArgumentWithMapping (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;)V
+	CLASS ArrayContextReader
+		FIELD arrayFunctions arrayFunctions Ljava/util/HashMap;
+		FIELD arrayFunctionsUnit arrayFunctionsUnit Ljava/util/HashMap;
+		FIELD arrayType arrayType Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD addContextFunction addContextFunction (Ljava/util/HashMap;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;[Ljava/lang/String;)V
+		CLASS ArrayContains
+			FIELD elementType elementType Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+			FIELD targetArray targetArray Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			FIELD value value Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			METHOD getName getName ()Ljava/lang/String;
+			METHOD indexOf indexOf (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)I
+			METHOD validateNumberOfArguments validateNumberOfArguments (I)V
+		CLASS ArrayFunction
+			METHOD setArrayTarget setArrayTarget (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)V
+		CLASS ArrayGet
+			FIELD elementType elementType Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+			FIELD index index Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			FIELD targetArray targetArray Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			METHOD getName getName ()Ljava/lang/String;
+			METHOD readElement readElement (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			METHOD validateNumberOfArguments validateNumberOfArguments (I)V
+		CLASS ArrayGetUnit
+		CLASS ArraySize
+			FIELD targetArray targetArray Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			METHOD getName getName ()Ljava/lang/String;
+	CLASS DefaultContextReader
+	CLASS LogicBooleanContext
+		METHOD parseNextElementInChain parseNextElementInChain (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS LogicBooleanContextWithDefault
+		METHOD defaultParseNextElementInChain defaultParseNextElementInChain (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Ljava/util/HashMap;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS LogicBooleanScopeOnly
+	CLASS ParameterMapping
+		FIELD allParametersString allParametersString Ljava/lang/String;
+		FIELD numberOfPositionalParameters numberOfPositionalParameters I
+		FIELD parameters parameters Ljava/util/HashMap;
+		FIELD type type Ljava/lang/Class;
+		METHOD addParameter addParameter (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping$FieldOrMethod;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$Parameter;)V
+		CLASS FieldOrMethod
+			FIELD field field Ljava/lang/reflect/Field;
+			FIELD method method Ljava/lang/reflect/Method;
+			FIELD positionalOffset positionalOffset I
+			FIELD required required Z
+			FIELD returnType returnType Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+			FIELD type type Ljava/lang/Class;
+	CLASS VoidContextReader
+		FIELD debugType debugType Ljava/lang/String;

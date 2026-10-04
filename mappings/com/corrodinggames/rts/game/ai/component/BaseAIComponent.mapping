@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/game/a/a/a com/corrodinggames/rts/game/ai/component/BaseAIComponent
+	METHOD a getComponentType ()Lcom/corrodinggames/rts/game/a/a/b;
+	METHOD a PENDING_tickPhaseA (FLcom/corrodinggames/rts/game/a/a;)V
+	METHOD a PENDING_maybeTrackUnit (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD b PENDING_tickPhaseB (FLcom/corrodinggames/rts/game/a/a;)V
+	METHOD b PENDING_onUnitLost (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;)V
+	CLASS 1 1

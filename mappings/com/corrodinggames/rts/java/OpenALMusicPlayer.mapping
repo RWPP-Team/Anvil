@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/java/n com/corrodinggames/rts/java/OpenALMusicPlayer
+	FIELD a track Lcom/corrodinggames/rts/java/m;
+	FIELD b soundEngine Lcom/corrodinggames/rts/java/l;
+	FIELD c playingMusic Lcom/corrodinggames/rts/java/audio/Music;
+	FIELD e PENDING_booleanE Z
+	FIELD f PENDING_booleanF Z
+	METHOD f realPlay ()V

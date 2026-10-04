@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/appFramework/s com/corrodinggames/rts/appFramework/FolderSelectActivity
+	FIELD c PENDING_flag1 Z
+	FIELD d PENDING_staticFlag1 Z
+	FIELD e PENDING_delayPresets [I
+	FIELD f PENDING_callback1 Lcom/corrodinggames/rts/appFramework/d;
+	METHOD l showFolderChooser ()V
+	CLASS 1 1

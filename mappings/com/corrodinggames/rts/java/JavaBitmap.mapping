@@ -1,2 +1,29 @@
 CLASS com/corrodinggames/rts/java/s com/corrodinggames/rts/java/JavaBitmap
 	COMMENT Desktop bitmap/texture (gameFramework/m/e i.e. BitmapOrTexture implementation) backed by org.newdawn.slick.Image; nested ImageData adapter java/t. [evidence-based job name]
+	FIELD A imageByteBuffer Ljava/nio/ByteBuffer;
+	FIELD B bytesPerPixel I
+	FIELD C filepath Ljava/lang/String;
+	FIELD D isCloned Z
+	FIELD E filterMode I
+	FIELD F PENDING_flagF Z
+	FIELD G pixelDataLoaded Z
+	FIELD H pixelDataDiscarded Z
+	FIELD I disposeOnFinalize Z
+	FIELD J fileLastModified J
+	FIELD K reloadCounter I
+	FIELD x slickImage Lorg/newdawn/slick/Image;
+	FIELD y allBitmaps Ljava/util/ArrayList;
+	FIELD z slickImageData Lorg/newdawn/slick/opengl/ImageData;
+	METHOD a copyAndFlipByteBuffer (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+	METHOD a setSlickImage (Lorg/newdawn/slick/Image;Ljava/lang/String;)V
+	METHOD a setImageData (Lorg/newdawn/slick/opengl/ImageData;)V
+	METHOD a setImageData (Lorg/newdawn/slick/opengl/ImageData;Ljava/lang/String;Z)V
+	METHOD c getFileLastModified (Z)J
+	METHOD C getSlickImage ()Lorg/newdawn/slick/Image;
+	METHOD D reloadFromImageData ()V
+	METHOD E updateFilter ()V
+	METHOD F reloadImage ()V
+	METHOD G dumpDebugInfo ()V
+	METHOD H ensureImageData ()V
+	METHOD I clearImageData ()V
+	METHOD J recreateImageDataFromTexture ()V

@@ -1,4 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramework/GameEngine
+	FIELD a alertRunnable Ljava/lang/Runnable;
 	FIELD aA crashHandlerEnabled Z
 	FIELD aB noResources Z
 	FIELD aC disableAtlas Z
@@ -8,9 +9,11 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD aG oldReplays Z
 	FIELD aH isSteamRequested Z
 	FIELD aI sandboxMode Z
+	FIELD aj gameUpdateLock Ljava/lang/Object;
 	FIELD aJ noMods Z
+	FIELD ak renderLock Ljava/lang/Object;
 	FIELD aK connectLobby Ljava/lang/String;
-	FIELD al instance Lcom/corrodinggames/rts/gameFramework/l;
+	FIELD al al Lcom/corrodinggames/rts/gameFramework/l;
 	FIELD aL memoryUsageMonitorEnabled Z
 	FIELD am context Landroid/content/Context;
 	FIELD aM postProcessingAllowed Z
@@ -23,10 +26,14 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD aq touchInputDisabled Z
 	FIELD aQ launchArguments Ljava/lang/String;
 	FIELD ar demoVersion Z
+	FIELD aR PENDING_desktopEdgeScrollFlag Z
 	FIELD as isReleaseBuild Z
 	FIELD aS highMemoryUsageDetected Z
 	FIELD at automatedTestingActive Z
+	FIELD aT automatedTestingCrashOnMapError Z
+	FIELD au rateGamePopupAllowed Z
 	FIELD aU isDedicatedServerPlatform Z
+	FIELD av PENDING_av Ljava/lang/Throwable;
 	FIELD aV forceDebugBuildLabel Z
 	FIELD aw editorDesyncWarningEnabled Z
 	FIELD aW isDesktopPlatform Z
@@ -34,34 +41,44 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD aX isDesktopCanvas Z
 	FIELD ay noBackground Z
 	FIELD aY isGdxPlatform Z
+	FIELD az PENDING_az Z
 	FIELD aZ isIOSPlatform Z
+	FIELD b messageBoxRunnable Ljava/lang/Runnable;
+	FIELD ba PENDING_ba Ljava/lang/String;
 	FIELD bA frameTimeMillis I
+	FIELD bb PENDING_bb Z
 	FIELD bB unitsMaxDefault I
 	FIELD bc replayRecordingEnabledMobile Z
 	FIELD bC unitsMaxCap I
 	FIELD bd replayRecordingEnabledDesktop Z
+	FIELD bD PENDING_bD Z
 	FIELD be debugBuild Z
 	FIELD bE methodTracingEnabled Z
 	FIELD bf profilingEnabled Z
 	FIELD bF updateCompletedThisFrame Z
 	FIELD bg graphicsCanvasClass Ljava/lang/Class;
 	FIELD bG gameJustLoaded Z
-	FIELD bH pauseRequested Z
+	FIELD bh preCreatedGraphics Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD bH gamePaused Z
 	FIELD bi initialized Z
 	FIELD bI loadingGame Z
 	FIELD bj initCompleted Z
 	FIELD bJ randomSeed I
+	FIELD bk touchEventsEnabled Z
 	FIELD bK assetIndex Lcom/corrodinggames/rts/gameFramework/utility/i;
 	FIELD bl debugTempMode Z
 	FIELD bL map Lcom/corrodinggames/rts/game/b/b;
 	FIELD bm aiDebugOverlayEnabled Z
 	FIELD bM sound Lcom/corrodinggames/rts/gameFramework/a/e;
+	FIELD bn PENDING_bn Z
 	FIELD bN musicController Lcom/corrodinggames/rts/gameFramework/am;
+	FIELD bo gameRecordingActive Z
 	FIELD bO graphics Lcom/corrodinggames/rts/gameFramework/m/y;
 	FIELD bp messageBoxShowing Z
 	FIELD bP collisionEngine Lcom/corrodinggames/rts/gameFramework/a;
 	FIELD bq gameLoopActive Z
 	FIELD bQ settings Lcom/corrodinggames/rts/gameFramework/SettingsEngine;
+	FIELD br PENDING_br Z
 	FIELD bR effectEngine Lcom/corrodinggames/rts/gameFramework/d/c;
 	FIELD bs playerTeam Lcom/corrodinggames/rts/game/n;
 	FIELD bS interfaceEngine Lcom/corrodinggames/rts/gameFramework/f/g;
@@ -85,9 +102,9 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD cb replayEngine Lcom/corrodinggames/rts/gameFramework/ba;
 	FIELD cB viewHeight F
 	FIELD cc unitGeoIndex Lcom/corrodinggames/rts/game/units/f/c;
-	FIELD cC pendingCameraPanX F
+	FIELD cC cameraVelocityX F
 	FIELD cd timingStatTimer Lcom/corrodinggames/rts/gameFramework/br;
-	FIELD cD pendingCameraPanY F
+	FIELD cD cameraVelocityY F
 	FIELD ce triggerEngine Lcom/corrodinggames/rts/gameFramework/n/f;
 	FIELD cE gameAreaWorldWidth F
 	FIELD cf commandController Lcom/corrodinggames/rts/gameFramework/c;
@@ -105,7 +122,7 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD cl screenWidth F
 	FIELD cL viewWorldRect Landroid/graphics/Rect;
 	FIELD cm screenHeight F
-	FIELD cM viewWorldRectF Landroid/graphics/RectF;
+	FIELD cM viewRectF Landroid/graphics/RectF;
 	FIELD cn renderScale F
 	FIELD cN viewRectNear Landroid/graphics/Rect;
 	FIELD co screenCenterX F
@@ -137,38 +154,56 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD dA lastDipScale F
 	FIELD db zoomPivotScreenY F
 	FIELD dB dipPaintsApplied Z
+	FIELD dc PENDING_lod045_createDetails Z
 	FIELD dC dipPaints Ljava/util/ArrayList;
+	FIELD dd renderDamageEffects Z
+	FIELD dD uiHandler Landroid/os/Handler;
 	FIELD de renderSmallUnitTurrets Z
 	FIELD dE alertText Ljava/lang/String;
 	FIELD df renderMediumUnitTurrets Z
 	FIELD dF messageBoxTitle Ljava/lang/String;
+	FIELD dg PENDING_lod045_b Z
 	FIELD dG messageBoxText Ljava/lang/String;
+	FIELD dh cameraPanAnalogX F
 	FIELD dH loadCallback Lcom/corrodinggames/rts/gameFramework/n;
+	FIELD di cameraPanAnalogY F
 	FIELD dI loadingMessage Ljava/lang/String;
+	FIELD dj PENDING_dj Z
+	FIELD dJ messageBoxLock Ljava/lang/Object;
 	FIELD dk gameThread Lcom/corrodinggames/rts/gameFramework/z;
 	FIELD dK pendingMessageBoxText Ljava/lang/String;
 	FIELD dl currentMapPath Ljava/lang/String;
 	FIELD dL pendingMessageBoxTitle Ljava/lang/String;
-	FIELD dm mapTransferStream Lcom/corrodinggames/rts/gameFramework/j/k;
+	FIELD dm inputNetStream Lcom/corrodinggames/rts/gameFramework/j/k;
 	FIELD dM pointerDownStates [Z
 	FIELD dn aiDebugTextPaint Landroid/graphics/Paint;
 	FIELD dN gameEventQueue Ljava/util/concurrent/ConcurrentLinkedQueue;
+	FIELD do centerAlignedTextPaint Landroid/graphics/Paint;
+	FIELD dO PENDING_dO Z
 	FIELD dp centerMessagePaint Landroid/graphics/Paint;
-	FIELD dP crashHandlerMemoryReserve [B
+	FIELD dP crashStackReserveBuffer [B
 	FIELD dq victoryScreenShown Z
 	FIELD dQ lowMemoryCheckReserve [B
+	FIELD dr skipEndGamePopup Z
+	FIELD dR PENDING_dR [B
+	FIELD ds PENDING_ds F
 	FIELD dS anrWatchDogTask Lcom/corrodinggames/rts/gameFramework/utility/d;
 	FIELD dt defeatScreenShown Z
+	FIELD dT PENDING_dT Z
 	FIELD du loadingScreenVisible Z
-	FIELD dU reportProblemCount I
+	FIELD dU problemReportCount I
 	FIELD dv skipNextRender Z
-	FIELD dV outOfMemoryMessageShown Z
+	FIELD dV oMemoryWarningShown Z
+	FIELD dw waypointDrawCount I
 	FIELD dW outOfMemoryType Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD dx selectionPulseOffset F
 	FIELD dX lowMemoryDetected Z
 	FIELD dy gameEngineFactory Lcom/corrodinggames/rts/gameFramework/o;
 	FIELD dY lowMemoryWarningShown Z
 	FIELD dz gameVersion Ljava/lang/String;
+	FIELD dZ memoryCanaryLow B
 	FIELD e mouseWheelAccumulator I
+	FIELD ea memoryCanaryHigh B
 	FIELD eb preUpdateHooks Lcom/corrodinggames/rts/gameFramework/q;
 	FIELD ec runOnceHooks Lcom/corrodinggames/rts/gameFramework/q;
 	FIELD ed postUpdateHooks Lcom/corrodinggames/rts/gameFramework/q;
@@ -320,3 +355,9 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	METHOD Y applyDipPaintsToGraphics ()V
 	METHOD z getNetworkPort ()I
 	METHOD Z clearLoadingMessage ()V
+	CLASS 1 1
+	CLASS 2 2
+		CLASS 1 1
+		CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

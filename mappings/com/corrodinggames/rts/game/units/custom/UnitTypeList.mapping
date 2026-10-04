@@ -1,0 +1,14 @@
+CLASS com/corrodinggames/rts/game/units/custom/bp com/corrodinggames/rts/game/units/custom/UnitTypeList
+	COMMENT Ini-defined unit spawner used by produceUnits/spawnUnits/attachments_addNewUnits/takeResources: parses "unitName*count(params)" entries into ProjectileList-style entries, can spawn at a position/heading/team with optional owner, returns created units in a FastArrayList. b() = isEmpty, a() = total count. [evidence-based job name]
+	FIELD a entries Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a getCount ()I
+	METHOD a spawn (FFFFLcom/corrodinggames/rts/game/n;ZLcom/corrodinggames/rts/game/units/am;)V
+	METHOD a spawnInto (FFFFLcom/corrodinggames/rts/game/n;ZLcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/gameFramework/utility/m;Z)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/bp;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/custom/bp;
+	METHOD a deserialize (Lcom/corrodinggames/rts/gameFramework/j/k;Z)Lcom/corrodinggames/rts/game/units/custom/bp;
+	METHOD a spawnInto (Lcom/corrodinggames/rts/gameFramework/utility/m;Lcom/corrodinggames/rts/game/n;Lcom/corrodinggames/rts/game/units/am;Z)V
+	METHOD a parse (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/bp;
+	METHOD b isEmpty ()Z
+	METHOD b parseSingle (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/bp;
+	METHOD b parseInternal (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/custom/bp;

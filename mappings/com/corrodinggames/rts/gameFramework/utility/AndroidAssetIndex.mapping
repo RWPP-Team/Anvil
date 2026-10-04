@@ -8,3 +8,4 @@ CLASS com/corrodinggames/rts/gameFramework/utility/i com/corrodinggames/rts/game
 	METHOD b createIndex ()V
 	METHOD b listFiles (Ljava/lang/String;)[Ljava/lang/String;
 	METHOD c getIndex ()Ljava/util/ArrayList;
+	CLASS 1 1

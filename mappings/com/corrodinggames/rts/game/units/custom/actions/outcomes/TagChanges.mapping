@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/l com/corrodinggames/rts/game/units/custom/actions/outcomes/TagChanges
+	FIELD a resetToDefaultTags Z
+	FIELD b temporarilyAddTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD c temporarilyRemoveTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD d addGlobalTeamTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD e removeGlobalTeamTags Lcom/corrodinggames/rts/game/units/custom/h;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

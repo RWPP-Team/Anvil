@@ -2,3 +2,19 @@ CLASS android/graphics/Paint
 	METHOD a setTypeface (Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 	METHOD a setAntiAlias (Z)V
 	METHOD b setTextSize (F)V
+	CLASS Align
+		FIELD a LEFT Landroid/graphics/Paint$Align;
+		FIELD b CENTER Landroid/graphics/Paint$Align;
+		FIELD c RIGHT Landroid/graphics/Paint$Align;
+	CLASS Cap
+		FIELD a BUTT Landroid/graphics/Paint$Cap;
+		FIELD b ROUND Landroid/graphics/Paint$Cap;
+		FIELD c SQUARE Landroid/graphics/Paint$Cap;
+	CLASS Join
+		FIELD a MITER Landroid/graphics/Paint$Join;
+		FIELD b ROUND Landroid/graphics/Paint$Join;
+		FIELD c BEVEL Landroid/graphics/Paint$Join;
+	CLASS Style
+		FIELD a FILL Landroid/graphics/Paint$Style;
+		FIELD b STROKE Landroid/graphics/Paint$Style;
+		FIELD c FILL_AND_STROKE Landroid/graphics/Paint$Style;

@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/java/audio/lwjgl/ThreadedWrappingAudioInputStream
+	FIELD bufferInputStream bufferInputStream Ljava/io/PipedInputStream;
+	FIELD bufferOutputStream bufferOutputStream Ljava/io/PipedOutputStream;
+	FIELD bufferSize bufferSize I
+	FIELD isClosed isClosed Z
+	FIELD source source Ljava/io/InputStream;
+	FIELD sourceEnded sourceEnded Z
+	FIELD totalBytesRead totalBytesRead I
+	FIELD transferBuffer transferBuffer [B
+	METHOD backgroundFillBuffer backgroundFillBuffer ()V
+	METHOD close close ()V
+	METHOD read read ()I
+	METHOD read read ([B)I
+	METHOD read read ([BII)I

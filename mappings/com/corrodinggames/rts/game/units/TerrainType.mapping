@@ -1,2 +1,12 @@
 CLASS com/corrodinggames/rts/game/units/r com/corrodinggames/rts/game/units/TerrainType
 	COMMENT Editor terrain type enum: grass, sea, sand, dust (named constants preserved). a() = tile name used for the ground layer, b() = the matching tileset entry name. Used by TerrainTiler and SetTerrainTypeAction. [evidence-based job name]
+	FIELD a grass Lcom/corrodinggames/rts/game/units/r;
+	FIELD b sea Lcom/corrodinggames/rts/game/units/r;
+	FIELD c sand Lcom/corrodinggames/rts/game/units/r;
+	FIELD d dust Lcom/corrodinggames/rts/game/units/r;
+	METHOD a getTileName ()Ljava/lang/String;
+	METHOD b getTilesetName ()Ljava/lang/String;
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

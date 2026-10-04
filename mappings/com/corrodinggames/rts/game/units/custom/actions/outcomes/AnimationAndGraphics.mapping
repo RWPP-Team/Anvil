@@ -1,0 +1,9 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/d com/corrodinggames/rts/game/units/custom/actions/outcomes/AnimationAndGraphics
+	FIELD a finishPlayingLastAnimation Z
+	FIELD b stopLastAnimation Z
+	FIELD c playAnimation Lcom/corrodinggames/rts/game/units/custom/o;
+	FIELD d playAnimationIfNotPlaying Lcom/corrodinggames/rts/game/units/custom/o;
+	FIELD e playAnimation_lowPriority Z
+	FIELD f PENDING_unknownInt1 I
+	FIELD g PENDING_unknownInt2 I
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

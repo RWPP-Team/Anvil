@@ -1,1 +1,12 @@
 CLASS com/corrodinggames/rts/game/units/g com/corrodinggames/rts/game/units/DebugDesyncDetector
+	FIELD a stressTest Z
+	FIELD b cornerPoints [Landroid/graphics/PointF;
+	FIELD c cornerPointsOld [Landroid/graphics/PointF;
+	FIELD d paintGreen Landroid/graphics/Paint;
+	FIELD e paintRed Landroid/graphics/Paint;
+	FIELD f paintWhite Landroid/graphics/Paint;
+	FIELD g updateCount I
+	FIELD i spawnTimer F
+	FIELD j spawnCount I
+	METHOD a updateWorkBeamPoints (FLcom/corrodinggames/rts/game/units/d;)V
+	METHOD w spawnRandomTestUnit ()V

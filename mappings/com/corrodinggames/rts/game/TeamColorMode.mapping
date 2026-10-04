@@ -1,2 +1,7 @@
 CLASS com/corrodinggames/rts/game/o com/corrodinggames/rts/game/TeamColorMode
 	COMMENT Team unit coloring mode: pureGreen, hueAdd, hueNew, hueShift, disabled. Flattened inner class of Team. [iOS-confirmed]
+	FIELD a pureGreen Lcom/corrodinggames/rts/game/o;
+	FIELD b hueAdd Lcom/corrodinggames/rts/game/o;
+	FIELD c hueNew Lcom/corrodinggames/rts/game/o;
+	FIELD d hueShift Lcom/corrodinggames/rts/game/o;
+	FIELD e disabled Lcom/corrodinggames/rts/game/o;

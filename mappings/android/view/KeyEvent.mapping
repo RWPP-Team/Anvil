@@ -1,0 +1,8 @@
+CLASS android/view/KeyEvent
+	METHOD getDeviceId getDeviceId ()I
+	METHOD getEventTime getEventTime ()J
+	METHOD getSource getSource ()I
+	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V
+	CLASS 1
+		METHOD createFromParcel createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+		METHOD newArray newArray (I)[Ljava/lang/Object;

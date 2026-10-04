@@ -1,2 +1,8 @@
 CLASS com/corrodinggames/rts/game/a/a/d com/corrodinggames/rts/game/ai/component/NukingComponent
 	COMMENT AI component that launches nukes ("nuke: launching at", tag nukeLauncher). Extends BaseAIComponentWithUnitList. [iOS-confirmed]
+	FIELD b PENDING_alwaysTrueFlag Z
+	FIELD c nukeLauncherTag Lcom/corrodinggames/rts/game/units/custom/g;
+	METHOD a isNukeLauncher (Lcom/corrodinggames/rts/game/units/y;)Z
+	METHOD d getLaunchTargetPosition (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;)Landroid/graphics/PointF;
+	METHOD e launchNuke (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD f buildNukeAmmo (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;)V

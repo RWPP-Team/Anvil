@@ -19,3 +19,13 @@ CLASS com/corrodinggames/rts/gameFramework/b/aj com/corrodinggames/rts/gameFrame
 	FIELD r texU F
 	FIELD s texV F
 	FIELD t lineWidth F
+	METHOD a uploadProjectionMatrix ()V
+	METHOD a setLineWidth (F)V
+	METHOD a addVertex (FF)V
+	METHOD a addTransformedVertex (FF[F)V
+	METHOD a setColor (I)V
+	METHOD a begin (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
+	METHOD b flush ()V
+	METHOD b setDrawMode (I)V
+	METHOD b applyPaintShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
+	METHOD c end ()V

@@ -1,2 +1,19 @@
 CLASS com/corrodinggames/rts/game/a/o com/corrodinggames/rts/game/ai/Zone
 	COMMENT Base AI zone: position S/T, radius U, id Q, registered in AI.bm/bn. Parent of Base/PlainZone/AbstractGroup. [iOS-confirmed]
+	FIELD Q id I
+	FIELD R ai Lcom/corrodinggames/rts/game/a/a;
+	FIELD S x F
+	FIELD T y F
+	FIELD U radius F
+	FIELD V removed Z
+	FIELD W placementScratchList Ljava/util/ArrayList;
+	METHOD a distanceSquaredTo (Lcom/corrodinggames/rts/game/a/i;)F
+	METHOD a isUnitWithinZone (Lcom/corrodinggames/rts/game/units/am;F)Z
+	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
+	METHOD b containsUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD c containsPoint (FF)Z
+	METHOD c distanceSquaredToUnit (Lcom/corrodinggames/rts/game/units/am;)F
+	METHOD d distanceSquaredTo (FF)F
+	METHOD e findBuildPositionFor (Lcom/corrodinggames/rts/game/units/as;)Landroid/graphics/PointF;
+	METHOD p removeFromAI ()V
+	METHOD w getRandomPointInZone ()Landroid/graphics/PointF;

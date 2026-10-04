@@ -1,0 +1,25 @@
+CLASS com/codedisaster/steamworks/SteamAPI
+	FIELD isRunning isRunning Z
+	METHOD getSteamAppsPointer getSteamAppsPointer ()J
+	METHOD getSteamControllerPointer getSteamControllerPointer ()J
+	METHOD getSteamFriendsPointer getSteamFriendsPointer ()J
+	METHOD getSteamHTTPPointer getSteamHTTPPointer ()J
+	METHOD getSteamMatchmakingPointer getSteamMatchmakingPointer ()J
+	METHOD getSteamNetworkingPointer getSteamNetworkingPointer ()J
+	METHOD getSteamRemoteStoragePointer getSteamRemoteStoragePointer ()J
+	METHOD getSteamUGCPointer getSteamUGCPointer ()J
+	METHOD getSteamUserPointer getSteamUserPointer ()J
+	METHOD getSteamUserStatsPointer getSteamUserStatsPointer ()J
+	METHOD getSteamUtilsPointer getSteamUtilsPointer ()J
+	METHOD init init ()Z
+	METHOD init init (Ljava/lang/String;)Z
+	METHOD isSteamRunning isSteamRunning ()Z
+	METHOD isSteamRunning isSteamRunning (Z)Z
+	METHOD isSteamRunningNative isSteamRunningNative ()Z
+	METHOD nativeInit nativeInit ()Z
+	METHOD nativeShutdown nativeShutdown ()V
+	METHOD printDebugInfo printDebugInfo (Ljava/io/PrintStream;)V
+	METHOD releaseCurrentThreadMemory releaseCurrentThreadMemory ()V
+	METHOD restartAppIfNecessary restartAppIfNecessary (I)Z
+	METHOD runCallbacks runCallbacks ()V
+	METHOD shutdown shutdown ()V

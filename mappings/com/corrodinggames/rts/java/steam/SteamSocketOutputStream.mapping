@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/java/c/m com/corrodinggames/rts/java/steam/SteamSocketOutputStream
+	FIELD a firstPacket Z
+	FIELD b socket Lcom/corrodinggames/rts/java/c/k;
+	METHOD write write ([B)V
+	METHOD write write ([BII)V
+	METHOD write write (I)V

@@ -1,0 +1,2 @@
+CLASS com/codedisaster/steamworks/SteamUGCUpdateHandle
+	METHOD isValid isValid ()Z

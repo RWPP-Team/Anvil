@@ -1,0 +1,12 @@
+CLASS com/corrodinggames/rts/game/units/custom/d com/corrodinggames/rts/game/units/custom/AnimationKeyFrameSet_KeyFrameType
+	COMMENT Enum of animatable properties: frame, scale, legX, legY, legDir, legHeight, turretX, turretY, event, legAlpha. Previously mis-mapped to AnimationKeyFrameSet (collision). [evidence-based job name]
+	FIELD a frame Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD b scale Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD c legX Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD d legY Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD e legDir Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD f legHeight Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD g turretX Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD h turretY Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD i event Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD j legAlpha Lcom/corrodinggames/rts/game/units/custom/d;

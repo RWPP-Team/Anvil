@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/a/h com/corrodinggames/rts/game/units/actions/ActionConfig
+	FIELD a wrappedAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD b actionFilter Lcom/corrodinggames/rts/game/units/a/b;
+	FIELD c checkWrappedAvailability Z
+	FIELD f modInfoColor I
+	METHOD q_ getWrappedAction ()Lcom/corrodinggames/rts/game/units/a/s;

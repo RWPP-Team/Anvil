@@ -1,1 +1,20 @@
 CLASS com/codedisaster/steamworks/SteamGameServerAPI
+	FIELD isRunning isRunning Z
+	METHOD getSteamGameServerHTTPPointer getSteamGameServerHTTPPointer ()J
+	METHOD getSteamGameServerNetworkingPointer getSteamGameServerNetworkingPointer ()J
+	METHOD getSteamGameServerPointer getSteamGameServerPointer ()J
+	METHOD getSteamGameServerStatsPointer getSteamGameServerStatsPointer ()J
+	METHOD getSteamID getSteamID ()Lcom/codedisaster/steamworks/SteamID;
+	METHOD init init (ISSSLcom/codedisaster/steamworks/SteamGameServerAPI$ServerMode;Ljava/lang/String;)Z
+	METHOD init init (Ljava/lang/String;ISSSLcom/codedisaster/steamworks/SteamGameServerAPI$ServerMode;Ljava/lang/String;)Z
+	METHOD isSecure isSecure ()Z
+	METHOD nativeGetSteamID nativeGetSteamID ()J
+	METHOD nativeInit nativeInit (ISSSILjava/lang/String;)Z
+	METHOD nativeShutdown nativeShutdown ()V
+	METHOD runCallbacks runCallbacks ()V
+	METHOD shutdown shutdown ()V
+	CLASS ServerMode
+		FIELD Authentication Authentication Lcom/codedisaster/steamworks/SteamGameServerAPI$ServerMode;
+		FIELD AuthenticationAndSecure AuthenticationAndSecure Lcom/codedisaster/steamworks/SteamGameServerAPI$ServerMode;
+		FIELD Invalid Invalid Lcom/codedisaster/steamworks/SteamGameServerAPI$ServerMode;
+		FIELD NoAuthentication NoAuthentication Lcom/codedisaster/steamworks/SteamGameServerAPI$ServerMode;

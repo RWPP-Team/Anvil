@@ -6,3 +6,14 @@ CLASS com/corrodinggames/rts/gameFramework/h/a com/corrodinggames/rts/gameFramew
 	FIELD d languageOverride Ljava/lang/String;
 	FIELD e mapNameSuffixPattern Ljava/util/regex/Pattern;
 	FIELD f inlineBlockPattern Ljava/util/regex/Pattern;
+	METHOD a loadPropertyResourceBundle (Ljava/lang/String;)Ljava/util/PropertyResourceBundle;
+	METHOD a getString (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+	METHOD a PENDING_formatWithDefault (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+	METHOD a loadResourceBundle (Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
+	METHOD a PENDING_getStringForLocale (Ljava/lang/String;Ljava/util/Locale;ZZ)Ljava/lang/String;
+	METHOD b getBundle ()Ljava/util/ResourceBundle;
+	METHOD c getLanguageCode ()Ljava/lang/String;
+	METHOD c processInlineBlocks (Ljava/lang/String;)Ljava/lang/String;
+	METHOD d getCurrentLocale ()Ljava/util/Locale;
+	METHOD d PENDING_sanitizeString (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e reloadBundle ()V

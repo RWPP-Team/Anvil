@@ -1,0 +1,8 @@
+CLASS android/graphics/Canvas
+	CLASS EdgeType
+		FIELD a BW Landroid/graphics/Canvas$EdgeType;
+		FIELD b AA Landroid/graphics/Canvas$EdgeType;
+	CLASS VertexMode
+		FIELD a TRIANGLES Landroid/graphics/Canvas$VertexMode;
+		FIELD b TRIANGLE_STRIP Landroid/graphics/Canvas$VertexMode;
+		FIELD c TRIANGLE_FAN Landroid/graphics/Canvas$VertexMode;

@@ -1,0 +1,8 @@
+CLASS com/corrodinggames/rts/gameFramework/b/a/a/b com/corrodinggames/rts/gameFramework/canvasgl/gltext/programs/Program
+	FIELD a programId I
+	FIELD b vertexShaderId I
+	FIELD c fragmentShaderId I
+	FIELD d created Z
+	METHOD a create ()V
+	METHOD a create (Ljava/lang/String;Ljava/lang/String;[Lcom/corrodinggames/rts/gameFramework/b/a/a;)V
+	METHOD b getProgramId ()I

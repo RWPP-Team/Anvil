@@ -1,1 +1,29 @@
 CLASS com/corrodinggames/rts/appFramework/g com/corrodinggames/rts/appFramework/GameActivity
+	FIELD c gameView Lcom/corrodinggames/rts/appFramework/f;
+	FIELD d uiHandler Landroid/os/Handler;
+	FIELD e progressDialog Landroid/app/ProgressDialog;
+	METHOD a showChatDialog (Z)V
+	METHOD c selectMenuOption (I)V
+	METHOD d selectMenuOptionInternal (I)V
+	METHOD d loadMapAsync (Ljava/lang/String;)V
+	METHOD e showExportMapDialog (Ljava/lang/String;)V
+	METHOD f showSaveGameDialog (Ljava/lang/String;)V
+	METHOD n openAndroidMarket ()V
+	CLASS 1 1
+	CLASS 10 10
+	CLASS 11 11
+	CLASS 12 12
+	CLASS 13 13
+	CLASS 14 14
+	CLASS 15 15
+	CLASS 16 16
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+		CLASS 1 1
+	CLASS 5 5
+	CLASS 6 6
+		CLASS 1 1
+	CLASS 7 7
+	CLASS 8 8
+	CLASS 9 9

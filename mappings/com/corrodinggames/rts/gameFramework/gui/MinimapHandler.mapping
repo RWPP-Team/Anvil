@@ -78,3 +78,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	METHOD f updateSize ()V
 	METHOD g renderFullMap ()V
 	METHOD h updatePositions ()V
+	CLASS 1 1

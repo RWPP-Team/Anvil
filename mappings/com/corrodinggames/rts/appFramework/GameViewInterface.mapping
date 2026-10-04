@@ -1,1 +1,20 @@
 CLASS com/corrodinggames/rts/appFramework/f com/corrodinggames/rts/appFramework/GameViewInterface
+	METHOD a PENDING_voidAction1 ()V
+	METHOD a PENDING_floatIntAction1 (FI)V
+	METHOD a drawCanvas (Lcom/corrodinggames/rts/gameFramework/m/l;Z)V
+	METHOD a onWindowFocusChanged (Z)V
+	METHOD b PENDING_boolQuery1 ()Z
+	METHOD b PENDING_floatIntAction2 (FI)V
+	METHOD b getCanvas (Z)Lcom/corrodinggames/rts/gameFramework/m/l;
+	METHOD c PENDING_boolQuery2 ()Z
+	METHOD d getRenderer ()Lcom/corrodinggames/rts/gameFramework/m/a;
+	METHOD e PENDING_boolQuery3 ()Z
+	METHOD f PENDING_boolQuery4 ()Z
+	METHOD g PENDING_objectGetter ()Ljava/lang/Object;
+	METHOD h PENDING_voidAction2 ()V
+	METHOD i getActivity ()Lcom/corrodinggames/rts/appFramework/g;
+	METHOD j PENDING_voidAction3 ()V
+	METHOD k getTouchEvent ()Lcom/corrodinggames/rts/appFramework/m;
+	METHOD l PENDING_voidAction4 ()V
+	METHOD m PENDING_voidAction5 ()V
+	METHOD n PENDING_boolQuery5 ()Z

@@ -1,2 +1,11 @@
 CLASS com/corrodinggames/rts/java/d com/corrodinggames/rts/java/JavaGameView
 	COMMENT Implements appFramework/f (GameViewInterface) for desktop: b(boolean)->CanvasLike, d()->Basic2DGLRenderer, k()->appFramework/m, i()->GameActivity, frame/update booleans, a(float,int)/b(float,int) volume helpers. Holds CanvasNull (gameFramework/m/n), java/h and appFramework/m. [evidence-based job name]
+	FIELD a viewWidth I
+	FIELD b viewHeight I
+	FIELD c inGameActivity Lcom/corrodinggames/rts/java/h;
+	FIELD d touchEvent Lcom/corrodinggames/rts/appFramework/m;
+	FIELD e syncObj1 Ljava/lang/Object;
+	FIELD f syncObj2 Ljava/lang/Object;
+	FIELD g canvasNull Lcom/corrodinggames/rts/gameFramework/m/n;
+	METHOD o getViewWidth ()I
+	METHOD p getViewHeight ()I

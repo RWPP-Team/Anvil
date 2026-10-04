@@ -1,0 +1,8 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/e com/corrodinggames/rts/game/units/custom/components/DecalManager_Decal_StackElement
+	FIELD a image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b teamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c frameWidth I
+	FIELD d frameHeight I
+	FIELD e frameRows I
+	FIELD f frameColumns I
+	METHOD a calculateFrameSize (Lcom/corrodinggames/rts/game/units/custom/b/d;)V

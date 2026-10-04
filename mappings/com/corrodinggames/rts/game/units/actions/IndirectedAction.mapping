@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/a/g com/corrodinggames/rts/game/units/actions/IndirectedAction
+	FIELD a wrappedAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD b targetUnit Lcom/corrodinggames/rts/game/units/y;
+	FIELD c actionFilter Lcom/corrodinggames/rts/game/units/a/b;
+	FIELD d savedSelectedUnitsCache Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD e tempSelectedUnits Lcom/corrodinggames/rts/gameFramework/utility/u;
+	METHOD a matches (Lcom/corrodinggames/rts/game/units/a/g;)Z
+	METHOD K swapInSelectedUnits ()V
+	METHOD L swapOutSelectedUnits ()V
+	METHOD p_ getWrappedAction ()Lcom/corrodinggames/rts/game/units/a/s;

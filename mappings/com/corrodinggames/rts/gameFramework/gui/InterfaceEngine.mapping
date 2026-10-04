@@ -37,6 +37,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD as patrolWaypointCount I
 	FIELD aS richTextErrorPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
 	FIELD at resourceTextPaintTemp Landroid/graphics/Paint;
+	FIELD aT cyclicAnimationTimer F
 	FIELD au circleSelectPaint Landroid/graphics/Paint;
 	FIELD aU tapSuppressionTimer F
 	FIELD av resourceTextPaint Landroid/graphics/Paint;
@@ -49,6 +50,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD aY selectionPulseInput F
 	FIELD az hotkeyTextPaint Landroid/graphics/Paint;
 	FIELD aZ pointerInSidebar Z
+	FIELD b touchInterface Z
 	FIELD B pointerButtonState I
 	FIELD ba buttonNoImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bA tempDrawPaint Landroid/graphics/Paint;
@@ -102,6 +104,14 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD bZ selectedUnits Lcom/corrodinggames/rts/gameFramework/utility/u;
 	FIELD C pointerInGameArea Z
 	FIELD ca lastSelectedUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD cc lastButtonRect Landroid/graphics/Rect;
+	FIELD cf resourceColumnOffset I
+	FIELD cg resourceStackYOffset I
+	FIELD ch resourceColumnCounter I
+	FIELD ci lastResourceTextWidth F
+	FIELD cj resourceColumnUsedWidth I
+	FIELD ck previousMaxResourceTextHeight I
+	FIELD cl maxResourceTextHeight I
 	FIELD D doubleTapFlag Z
 	FIELD E doubleTapTimer F
 	FIELD f debugEditorUnit Lcom/corrodinggames/rts/game/units/h;
@@ -136,6 +146,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD T pointerDragging Z
 	FIELD u pauseMenuOpen Z
 	FIELD U tapReleased Z
+	FIELD v totalUpdateTime D
 	FIELD V pointerJustPressed Z
 	FIELD w pointerHoldTime F
 	FIELD W lastClickedUnit Lcom/corrodinggames/rts/game/units/am;
@@ -161,6 +172,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	METHOD a drawCenteredTextInRect (IIIILjava/lang/String;ILandroid/graphics/Paint;)V
 	METHOD a drawButtonBackground (IIIILjava/lang/String;ILandroid/graphics/Paint;ZLcom/corrodinggames/rts/gameFramework/f/a/h;Lcom/corrodinggames/rts/gameFramework/f/a/i;)V
 	METHOD a drawButtonFilled (IIIILjava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/i;ZI)Z
+	METHOD a drawButtonStyled (IIIILjava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/i;ZILandroid/graphics/Paint;Lcom/corrodinggames/rts/gameFramework/f/a/h;)Z
 	METHOD a drawButton (IIIILjava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/i;ZILandroid/graphics/Paint;ZLcom/corrodinggames/rts/gameFramework/f/a/h;)Z
 	METHOD a initializeInterface (Landroid/content/Context;)V
 	METHOD a updateUiHover (Landroid/graphics/Rect;)V

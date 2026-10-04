@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/java/f com/corrodinggames/rts/java/FontKey
+	FIELD a size I
+	FIELD b bold Z
+	FIELD c fallback Z
+	FIELD d font Lorg/newdawn/slick/Font;
+	FIELD e index I
+	FIELD f fallbackFonts [Ljava/lang/String;
+	FIELD g canvas Lcom/corrodinggames/rts/java/e;

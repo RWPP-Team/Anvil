@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/j/x com/corrodinggames/rts/gameFramework/network/MasterServerConnectorServerInfoError
+	FIELD a wrongPassword Lcom/corrodinggames/rts/gameFramework/j/x;
+	FIELD b unknown Lcom/corrodinggames/rts/gameFramework/j/x;

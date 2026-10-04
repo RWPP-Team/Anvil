@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/m com/corrodinggames/rts/gameFramework/network/InputNetStreamMissing
 	COMMENT Package-private enum in the network package (UNRESOLVED NAME - left obfuscated): constants expected, warn. Intentionally not renamed.
+	FIELD a expected Lcom/corrodinggames/rts/gameFramework/j/m;
+	FIELD b warn Lcom/corrodinggames/rts/gameFramework/j/m;

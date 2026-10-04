@@ -1,1 +1,14 @@
 CLASS com/codedisaster/steamworks/SteamUGCCallbackAdapter
+	METHOD onCreateItem onCreateItem (JZI)V
+	METHOD onDownloadItemResult onDownloadItemResult (IJI)V
+	METHOD onGetUserItemVote onGetUserItemVote (JZZZI)V
+	METHOD onRequestUGCDetails onRequestUGCDetails (JILjava/lang/String;Ljava/lang/String;JJLjava/lang/String;ZIIJII)V
+	METHOD onSetUserItemVote onSetUserItemVote (JZI)V
+	METHOD onStartPlaytimeTracking onStartPlaytimeTracking (I)V
+	METHOD onStopPlaytimeTracking onStopPlaytimeTracking (I)V
+	METHOD onStopPlaytimeTrackingForAllItems onStopPlaytimeTrackingForAllItems (I)V
+	METHOD onSubmitItemUpdate onSubmitItemUpdate (ZI)V
+	METHOD onSubscribeItem onSubscribeItem (JI)V
+	METHOD onUGCQueryCompleted onUGCQueryCompleted (JIIZI)V
+	METHOD onUnsubscribeItem onUnsubscribeItem (JI)V
+	METHOD onUserFavoriteItemsListChanged onUserFavoriteItemsListChanged (JZI)V

@@ -1,6 +1,17 @@
 CLASS com/corrodinggames/rts/game/units/d/l com/corrodinggames/rts/game/units/buildings/FactoryInterface
 	METHOD a setRallyPoint (Landroid/graphics/PointF;)V
+	METHOD a getQueuedCountOf (Lcom/corrodinggames/rts/game/units/a/c;Z)I
+	METHOD a completeQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)V
 	METHOD b PENDING_onTurretBuilt (Lcom/corrodinggames/rts/game/units/d/j;)V
+	METHOD c PENDING_canQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)Z
 	METHOD dA isOverTransportCapacity ()Z
 	METHOD dw getCurrentQueuedItem ()Lcom/corrodinggames/rts/game/units/d/j;
 	METHOD dx getQueuedItems ()Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD dy isQueueEmpty ()Z
+		COMMENT True when this factory has nothing in its production queue, i.e. it can accept a new build order right away. Both implementations delegate to the build queue's own a() check (Factory returns this.z.a(), CustomUnit returns this.buildQueue.a()). Callers treat it as a precondition before assigning a job: Base.a(UnitTypeInterface,boolean,boolean) requires "isQueueEmpty() || !boolean2" to pick a factory for a type, and NukingComponent.f(AI,OrderableUnit) only launches a nuke when the launcher factory reads true.
+	METHOD dz resetBuildQueue ()V
+		COMMENT Clears/refreshes the production queue so the factory is considered idle. CustomUnit sets this.buildQueue.e = 1.0F (the queue's idle timestamp/flag), which is what isQueueEmpty() then observes. Part of FactoryInterface alongside isQueueEmpty(), getCurrentQueuedItem(), getQueuedItems() and setRallyPoint(PointF).
+	METHOD f getTotalQueuedCount (Z)I
+		COMMENT Counts how many queued items this factory has for the generic SpecialAction.i (the placeholder "any action" id), optionally including the queue's shadow/cancelled entries. CustomUnit forwards to buildQueue.a(SpecialAction.i, boolean, true); FactoryBuildQueue then walks its primary list, and when the boolean is true also its secondary list, summing each BuildQueueItem's count, subtracting entries whose k flag marks them as pending cancellation. The boolean therefore means "also count entries queued for removal", not "include item amount".
+	METHOD h getQueuedCountOf (Lcom/corrodinggames/rts/game/units/as;)I
+		COMMENT How many units of the given type this factory currently has queued or under construction, used by the AI when it counts how much of a type is already "in the pipeline" so it does not over-build. CustomUnit and Factory both delegate to the build queue's a(UnitTypeInterface) lookup. Consumer: AI.getAIMapCount, which adds this on top of the live unit count when the scalar include argument asks for in-progress production to be counted too.

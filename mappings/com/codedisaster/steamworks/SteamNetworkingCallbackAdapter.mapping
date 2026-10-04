@@ -1,1 +1,3 @@
 CLASS com/codedisaster/steamworks/SteamNetworkingCallbackAdapter
+	METHOD onP2PSessionConnectFail onP2PSessionConnectFail (JI)V
+	METHOD onP2PSessionRequest onP2PSessionRequest (J)V

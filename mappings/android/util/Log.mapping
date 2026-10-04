@@ -1,2 +1,5 @@
 CLASS android/util/Log
 	METHOD b error (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+	METHOD isLoggable isLoggable (Ljava/lang/String;I)Z
+	CLASS 1
+		METHOD initialValue initialValue ()Ljava/lang/Object;

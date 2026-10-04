@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/a/a com/corrodinggames/rts/game/units/custom/actions/AbstractActionOutcome
+	METHOD a apply (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/a/s;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;I)Z

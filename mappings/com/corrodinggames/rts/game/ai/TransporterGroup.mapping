@@ -1,2 +1,27 @@
 CLASS com/corrodinggames/rts/game/a/n com/corrodinggames/rts/game/ai/TransporterGroup
 	COMMENT Group of transport units ferrying NeedsTransportGroup units ("TransporterGroup:readIn"). Extends AbstractGroup. [iOS-confirmed]
+	FIELD a PENDING_serializedFlagA Z
+	FIELD b PENDING_serializedIntB I
+	FIELD c PENDING_serializedIntC I
+	FIELD d destinationBase Lcom/corrodinggames/rts/game/a/i;
+	FIELD e PENDING_fieldE F
+	FIELD f idleRepositionTimer F
+	FIELD g findGroupDelayTimer F
+	FIELD h emptyGroupLifetimeTimer F
+	FIELD i recruitDelayTimer F
+	FIELD j orderDelayTimer F
+	FIELD k pickupScanDelayTimer F
+	FIELD l desiredUnitCount I
+	FIELD m servedGroup Lcom/corrodinggames/rts/game/a/h;
+	FIELD n pendingPickupUnit Lcom/corrodinggames/rts/game/units/y;
+	FIELD o unloadTimer F
+	FIELD p unloading Z
+	FIELD q dropOffMode Z
+	FIELD r dropOffX F
+	FIELD s dropOffY F
+	METHOD a findGroupToServe (FZ)V
+	METHOD a getRandomActiveBase (Z)Lcom/corrodinggames/rts/game/a/i;
+	METHOD c recruitUnits ()V
+	METHOD d hasServedGroup ()Z
+	METHOD e resetMission ()V
+	METHOD f pickDestination ()V

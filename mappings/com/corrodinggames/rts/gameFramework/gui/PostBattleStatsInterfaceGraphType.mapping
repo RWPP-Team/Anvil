@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ac com/corrodinggames/rts/gameFramework/gui/PostBattleStatsInterfaceGraphType
+	FIELD a A Lcom/corrodinggames/rts/gameFramework/f/ac;
+	FIELD b B Lcom/corrodinggames/rts/gameFramework/f/ac;
+	FIELD c C Lcom/corrodinggames/rts/gameFramework/f/ac;
+	FIELD d D Lcom/corrodinggames/rts/gameFramework/f/ac;
+	FIELD e E Lcom/corrodinggames/rts/gameFramework/f/ac;
+	FIELD f saveKey Ljava/lang/String;
+	FIELD g historyType Lcom/corrodinggames/rts/gameFramework/bj;
+	METHOD a getHistoryType ()Lcom/corrodinggames/rts/gameFramework/bj;

@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/a/f com/corrodinggames/rts/game/units/custom/actions/BuildType
 	COMMENT Enum: build, convert, none. [evidence-based]
+	FIELD a build Lcom/corrodinggames/rts/game/units/custom/a/f;
+	FIELD b convert Lcom/corrodinggames/rts/game/units/custom/a/f;
+	FIELD c none Lcom/corrodinggames/rts/game/units/custom/a/f;

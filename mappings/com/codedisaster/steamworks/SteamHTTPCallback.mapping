@@ -1,1 +1,4 @@
 CLASS com/codedisaster/steamworks/SteamHTTPCallback
+	METHOD onHTTPRequestCompleted onHTTPRequestCompleted (Lcom/codedisaster/steamworks/SteamHTTPRequestHandle;JZLcom/codedisaster/steamworks/SteamHTTP$HTTPStatusCode;I)V
+	METHOD onHTTPRequestDataReceived onHTTPRequestDataReceived (Lcom/codedisaster/steamworks/SteamHTTPRequestHandle;JII)V
+	METHOD onHTTPRequestHeadersReceived onHTTPRequestHeadersReceived (Lcom/codedisaster/steamworks/SteamHTTPRequestHandle;J)V

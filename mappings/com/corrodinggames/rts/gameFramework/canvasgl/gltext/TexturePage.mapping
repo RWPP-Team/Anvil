@@ -1,0 +1,18 @@
+CLASS com/corrodinggames/rts/gameFramework/b/a/e com/corrodinggames/rts/gameFramework/canvasgl/gltext/TexturePage
+	FIELD a textureId I
+	FIELD b pageSize I
+	FIELD c canvas Landroid/graphics/Canvas;
+	FIELD d bitmap Landroid/graphics/Bitmap;
+	FIELD e cellsPerRow I
+	FIELD f cellsPerColumn I
+	FIELD g nextCell I
+	FIELD j cellWidth I
+	FIELD k cellHeight I
+	FIELD l pageId I
+	FIELD m paddingX I
+	FIELD n paddingY I
+	METHOD a hasSpace ()Z
+	METHOD a drawChar (CLandroid/graphics/Paint;)Lcom/corrodinggames/rts/gameFramework/b/a/c;
+	METHOD a setTexCoords (Lcom/corrodinggames/rts/gameFramework/b/a/c;FFFF)V
+	METHOD b createBitmap ()V
+	METHOD c updateTexture ()V

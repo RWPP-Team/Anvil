@@ -1,2 +1,17 @@
 CLASS com/corrodinggames/rts/game/units/o com/corrodinggames/rts/game/units/EditorUnitCategory
 	COMMENT Editor unit-picker category enum: land, air, sea, buildings, bio. Each constant filters UnitTypeInterface by movement type / building flag; same wrap-around selection helpers as EditorUnitTab. [evidence-based job name]
+	FIELD a land Lcom/corrodinggames/rts/game/units/o;
+	FIELD b air Lcom/corrodinggames/rts/game/units/o;
+	FIELD c sea Lcom/corrodinggames/rts/game/units/o;
+	FIELD d buildings Lcom/corrodinggames/rts/game/units/o;
+	FIELD e bio Lcom/corrodinggames/rts/game/units/o;
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a jumpBy (II)Lcom/corrodinggames/rts/game/units/o;
+	METHOD a matches (Lcom/corrodinggames/rts/game/units/as;)Z
+	METHOD a getAdjacent (Z)Lcom/corrodinggames/rts/game/units/o;
+	METHOD b isEnabled ()Z
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5

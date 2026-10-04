@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/e/l com/corrodinggames/rts/game/units/land/MammothTank
+	FIELD a deadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c teamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e chargeImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f spriteFrameIndex I
+	FIELD g spriteFrameTimer F
+	FIELD h PENDING_rectScratch Landroid/graphics/Rect;
+	METHOD f loadImages ()V

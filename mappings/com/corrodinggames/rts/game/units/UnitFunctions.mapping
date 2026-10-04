@@ -1,2 +1,17 @@
 CLASS com/corrodinggames/rts/game/units/aq com/corrodinggames/rts/game/units/UnitFunctions
 	COMMENT Static unit helper functions: Bresenham line walk over MapCosts to test/clear line-of-sight (a(MovementType,...) returns whether the path is clear), finding the neighbouring open tile when a unit is stuck on a map edge/corner, and target validation (cN==null, k()/h()/i() modifier checks) for attack/reclaim/repair. [behaviour verified]
+	FIELD b scratchPoint Landroid/graphics/Point;
+	FIELD c scratchRect Landroid/graphics/Rect;
+	FIELD d scratchStart Landroid/graphics/PointF;
+	FIELD e scratchEnd Landroid/graphics/PointF;
+	FIELD f scratchResult Landroid/graphics/PointF;
+	FIELD g scratchBottomLeft Landroid/graphics/PointF;
+	FIELD h scratchTopRight Landroid/graphics/PointF;
+	FIELD i scratchTopLeft Landroid/graphics/PointF;
+	FIELD j scratchBottomRight Landroid/graphics/PointF;
+	METHOD a isLineClear (Lcom/corrodinggames/rts/game/units/ao;FFFFIII)Z
+	METHOD a findLineExitPoint (Lcom/corrodinggames/rts/game/units/ao;FFFFIIZ)Landroid/graphics/PointF;
+	METHOD a findBlockedTileAlongLine (Lcom/corrodinggames/rts/game/units/ao;IIIIIII)Landroid/graphics/Point;
+	METHOD a isValidTarget (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD b isLineClearNoRefresh (Lcom/corrodinggames/rts/game/units/ao;FFFFIII)Z
+	METHOD b isValidTargetInRange (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/am;)Z

@@ -4,6 +4,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramew
 	FIELD b stopping Z
 	FIELD B lastPingTime J
 	FIELD c id I
+	FIELD C PENDING_clientReady2 Z
 	FIELD d socket Ljava/net/Socket;
 	FIELD D clientReady Z
 	FIELD e address Ljava/net/InetAddress;
@@ -12,7 +13,9 @@ CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramew
 	FIELD F receiveWorker Lcom/corrodinggames/rts/gameFramework/j/d;
 	FIELD g lastSpamWarningNanos J
 	FIELD G sendWorker Lcom/corrodinggames/rts/gameFramework/j/e;
+	FIELD h udpConnection Z
 	FIELD H receiveThread Ljava/lang/Thread;
+	FIELD i steamConnection Z
 	FIELD I sendThread Ljava/lang/Thread;
 	FIELD j parent Lcom/corrodinggames/rts/gameFramework/j/c;
 	FIELD J receiveEnded Z
@@ -20,11 +23,17 @@ CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramew
 	FIELD K sendEnded Z
 	FIELD l lastSentPacket Lcom/corrodinggames/rts/gameFramework/j/au;
 	FIELD L packageName Ljava/lang/String;
+	FIELD m clientId Ljava/lang/String;
 	FIELD M integrityCheckValue I
 	FIELD n forwardedHost Ljava/lang/String;
 	FIELD N extraChallengeFailed Z
+	FIELD o queryString Ljava/lang/String;
+	FIELD O extraChallengeBlocked Z
 	FIELD p connected Z
+	FIELD P readCallCount I
 	FIELD q relayServer Z
+	FIELD Q sentUpdatePlayer Z
+	FIELD r multicast Z
 	FIELD R commandCount I
 	FIELD s isRelay Z
 	FIELD S commandRateTime J
@@ -59,3 +68,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/c com/corrodinggames/rts/gameFramew
 	METHOD h isOpen ()Z
 	METHOD i markClosedAndRemove ()V
 	METHOD j stopSendWorkerAndRemove ()V
+	CLASS 1 1

@@ -1,2 +1,35 @@
 CLASS com/corrodinggames/rts/game/b/e com/corrodinggames/rts/game/map/MapLayer
 	COMMENT Tiled map layer: base64/gzip/zlib tile data, drawing, fog overlays. [iOS-confirmed]
+	FIELD a fogPaintExplored Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD b fogAlphaPaints [Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD c fogPaintUnexplored Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD d tilePaintGround Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD e tilePaintGroundAA Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD f tilePaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD g tilePaintAA Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD h fogLightingPaints [Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD i map Lcom/corrodinggames/rts/game/b/b;
+	FIELD j layerIndex I
+	FIELD k name Ljava/lang/String;
+	FIELD l nameLowercase Ljava/lang/String;
+	FIELD m isItemsLayer Z
+	FIELD n width I
+	FIELD o height I
+	FIELD p properties Ljava/util/Properties;
+	FIELD q tileIds [S
+	FIELD r isGroundLayer Z
+	FIELD s usesMetaTiles Z
+	FIELD t fogTileRect Landroid/graphics/Rect;
+	FIELD u destRect Landroid/graphics/Rect;
+	FIELD v destRectF Landroid/graphics/RectF;
+	FIELD w needsSoftwareRender Z
+	FIELD x base64DecodeTable [B
+	METHOD a getTileIds ()[S
+	METHOD a decodeBase64 ([C)[B
+	METHOD a getTile (II)Lcom/corrodinggames/rts/game/b/g;
+	METHOD a setTile (IILcom/corrodinggames/rts/game/b/g;Z)V
+	METHOD a draw (Lcom/corrodinggames/rts/gameFramework/m/y;FFFFFFFFZZZ)V
+	METHOD a readTileData (Ljava/io/InputStream;)V
+	METHOD a setName (Ljava/lang/String;)V
+	METHOD a decodeTiledData (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;
+	METHOD b dispose ()V

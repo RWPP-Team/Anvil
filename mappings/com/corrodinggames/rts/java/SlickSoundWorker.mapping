@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/java/r com/corrodinggames/rts/java/SlickSoundWorker
+	FIELD a soundFactory Lcom/corrodinggames/rts/java/o;
+	METHOD run run ()V

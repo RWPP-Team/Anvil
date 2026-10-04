@@ -1,0 +1,6 @@
+CLASS com/codedisaster/steamworks/SteamInterface
+	FIELD callback callback J
+	FIELD pointer pointer J
+	METHOD deleteCallback deleteCallback (J)V
+	METHOD dispose dispose ()V
+	METHOD setCallback setCallback (J)V

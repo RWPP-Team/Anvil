@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/i com/corrodinggames/rts/gameFramework/gui/InterfaceEngineButtonIds
+	FIELD a none Lcom/corrodinggames/rts/gameFramework/f/i;
+	FIELD b zoomButton Lcom/corrodinggames/rts/gameFramework/f/i;
+	FIELD c unselectAllButton Lcom/corrodinggames/rts/gameFramework/f/i;

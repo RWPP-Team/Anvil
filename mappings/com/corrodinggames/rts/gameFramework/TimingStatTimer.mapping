@@ -13,3 +13,4 @@ CLASS com/corrodinggames/rts/gameFramework/br com/corrodinggames/rts/gameFramewo
 	METHOD b formatNanosAsMillis (D)Ljava/lang/String;
 	METHOD b stopTimer (Lcom/corrodinggames/rts/gameFramework/bs;)V
 	METHOD c draw ()V
+	CLASS 1 1

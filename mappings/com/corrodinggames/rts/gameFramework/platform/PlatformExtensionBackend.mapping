@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/l/c com/corrodinggames/rts/gameFramework/platform/PlatformExtensionBackend
+	METHOD a pickFile (Lcom/corrodinggames/rts/gameFramework/l/b;)V
+	METHOD a shareFile (Ljava/io/File;)V

@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/java/c/l com/corrodinggames/rts/java/steam/SteamSocketInputStream
+	FIELD a packetQueue Ljava/util/concurrent/LinkedBlockingDeque;
+	FIELD b firstPacket Z
+	FIELD c singleByteBuffer [B
+	FIELD d socket Lcom/corrodinggames/rts/java/c/k;
+	METHOD a addPacket ([B)V
+	METHOD read read ()I
+	METHOD read read ([B)I
+	METHOD read read ([BII)I

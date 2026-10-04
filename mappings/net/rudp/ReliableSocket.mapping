@@ -46,7 +46,11 @@ CLASS a/a/h net/rudp/ReliableSocket
 	METHOD b clearIncomingSegments ()V
 	METHOD b receiveData ([BII)I
 	METHOD b nextSequence (I)I
+	METHOD bind bind (Ljava/net/SocketAddress;)V
 	METHOD c processAck (La/a/a/h;)V
+	METHOD close close ()V
+	METHOD connect connect (Ljava/net/SocketAddress;)V
+	METHOD connect connect (Ljava/net/SocketAddress;I)V
 	METHOD d closeNow ()V
 	METHOD d sendDatagram (La/a/a/h;)V
 	METHOD e beginGracefulClose ()V
@@ -55,8 +59,26 @@ CLASS a/a/h net/rudp/ReliableSocket
 	METHOD f retransmitSegment (La/a/a/h;)V
 	METHOD g stopTimers ()V
 	METHOD g processIncomingSegment (La/a/a/h;)V
+	METHOD getChannel getChannel ()Ljava/nio/channels/SocketChannel;
+	METHOD getInetAddress getInetAddress ()Ljava/net/InetAddress;
+	METHOD getInputStream getInputStream ()Ljava/io/InputStream;
+	METHOD getKeepAlive getKeepAlive ()Z
+	METHOD getLocalAddress getLocalAddress ()Ljava/net/InetAddress;
+	METHOD getLocalPort getLocalPort ()I
+	METHOD getLocalSocketAddress getLocalSocketAddress ()Ljava/net/SocketAddress;
+	METHOD getOutputStream getOutputStream ()Ljava/io/OutputStream;
+	METHOD getPort getPort ()I
+	METHOD getReceiveBufferSize getReceiveBufferSize ()I
+	METHOD getRemoteSocketAddress getRemoteSocketAddress ()Ljava/net/SocketAddress;
+	METHOD getSendBufferSize getSendBufferSize ()I
+	METHOD getTcpNoDelay getTcpNoDelay ()Z
 	METHOD h piggybackAck (La/a/a/h;)V
 	METHOD i receiveNextSegment ()La/a/a/h;
+	METHOD isBound isBound ()Z
+	METHOD isClosed isClosed ()Z
+	METHOD isConnected isConnected ()Z
+	METHOD isInputShutdown isInputShutdown ()Z
+	METHOD isOutputShutdown isOutputShutdown ()Z
 	METHOD j onConnectionEstablished ()V
 	METHOD k fireConnectionAttemptFailed ()V
 	METHOD l fireConnectionClosed ()V
@@ -66,3 +88,13 @@ CLASS a/a/h net/rudp/ReliableSocket
 	METHOD p sendExtendedAck ()V
 	METHOD q sendAck ()V
 	METHOD r drainOutOfOrderQueue ()V
+	METHOD setKeepAlive setKeepAlive (Z)V
+	METHOD setReceiveBufferSize setReceiveBufferSize (I)V
+	METHOD setSendBufferSize setSendBufferSize (I)V
+	METHOD setSoTimeout setSoTimeout (I)V
+	METHOD setTcpNoDelay setTcpNoDelay (Z)V
+	METHOD shutdownInput shutdownInput ()V
+	METHOD shutdownOutput shutdownOutput ()V
+	CLASS 1
+		METHOD run run ()V
+	CLASS 1 1

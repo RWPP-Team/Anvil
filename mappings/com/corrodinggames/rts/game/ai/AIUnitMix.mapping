@@ -1,2 +1,15 @@
 CLASS com/corrodinggames/rts/game/a/d com/corrodinggames/rts/game/ai/AIUnitMix
 	COMMENT Weighted mix of unit types for AI production; getRandomUnitType by movementType/price. Flattened inner class of AI. [iOS-confirmed]
+	FIELD a shuffledEntries Ljava/util/ArrayList;
+	FIELD b name Ljava/lang/String;
+	FIELD c entries Ljava/util/ArrayList;
+	FIELD d ai Lcom/corrodinggames/rts/game/a/a;
+	METHOD a getShuffledEntries ()Ljava/util/ArrayList;
+	METHOD a getRandomUnitType (Lcom/corrodinggames/rts/game/units/ao;)Lcom/corrodinggames/rts/game/units/as;
+	METHOD a getRandomUnitType (Lcom/corrodinggames/rts/game/units/ao;I)Lcom/corrodinggames/rts/game/units/as;
+	METHOD a isUnitTypeIncluded (Lcom/corrodinggames/rts/game/units/as;)Z
+	METHOD a matchesMovementType (Lcom/corrodinggames/rts/game/units/as;Lcom/corrodinggames/rts/game/units/ao;)Z
+	METHOD b rebuildUnitMix ()V
+	METHOD b containsUnitType (Lcom/corrodinggames/rts/game/units/as;)Z
+	METHOD c getRandomUnitType ()Lcom/corrodinggames/rts/game/units/as;
+	METHOD c getUnitWeight (Lcom/corrodinggames/rts/game/units/as;)F

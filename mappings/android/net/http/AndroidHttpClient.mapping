@@ -1,0 +1,16 @@
+CLASS android/net/http/AndroidHttpClient
+	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
+	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
+	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
+	METHOD execute execute (Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;
+	METHOD execute execute (Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
+	METHOD execute execute (Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
+	METHOD execute execute (Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
+	METHOD getConnectionManager getConnectionManager ()Lorg/apache/http/conn/ClientConnectionManager;
+	METHOD getParams getParams ()Lorg/apache/http/params/HttpParams;
+	CLASS 1
+		METHOD process process (Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V
+	CLASS 2
+		METHOD createHttpContext createHttpContext ()Lorg/apache/http/protocol/HttpContext;
+		METHOD createHttpProcessor createHttpProcessor ()Lorg/apache/http/protocol/BasicHttpProcessor;

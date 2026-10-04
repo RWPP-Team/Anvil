@@ -13,6 +13,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/g com/corrodinggames/rts/gameFramew
 	FIELD l protocolVersion I
 	FIELD m passwordRequired Z
 	FIELD n playerName Ljava/lang/String;
+	FIELD o lastSeenTimeMillis J
 	FIELD q mapName Ljava/lang/String;
 	FIELD w maxPlayers I
 	FIELD x allowsAnyVersion Z

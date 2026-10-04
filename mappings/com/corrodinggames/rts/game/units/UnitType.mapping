@@ -1,2 +1,130 @@
 CLASS com/corrodinggames/rts/game/units/ar com/corrodinggames/rts/game/units/UnitType
 	COMMENT Built-in unit type enum (52 constants) implementing UnitTypeInterface; static registry of all built-in unit types. [iOS-confirmed]
+	FIELD a extractor Lcom/corrodinggames/rts/game/units/ar;
+	FIELD A tree Lcom/corrodinggames/rts/game/units/ar;
+	FIELD aa typeInfo Lcom/corrodinggames/rts/game/units/a/z;
+	FIELD ab localeGeneration I
+	FIELD ac cachedDisplayName Ljava/lang/String;
+	FIELD ad cachedDisplayDescription Ljava/lang/String;
+	FIELD ae allTypes Ljava/util/ArrayList;
+	FIELD af specialActionLists [Lcom/corrodinggames/rts/game/units/at;
+	FIELD ag lastDrawScaledDown Z
+	FIELD ah cachedPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD b landFactory Lcom/corrodinggames/rts/game/units/ar;
+	FIELD B repairbay Lcom/corrodinggames/rts/game/units/ar;
+	FIELD c airFactory Lcom/corrodinggames/rts/game/units/ar;
+	FIELD C NukeLaucher Lcom/corrodinggames/rts/game/units/ar;
+	FIELD d seaFactory Lcom/corrodinggames/rts/game/units/ar;
+	FIELD D AntiNukeLaucher Lcom/corrodinggames/rts/game/units/ar;
+	FIELD e commandCenter Lcom/corrodinggames/rts/game/units/ar;
+	FIELD E mammothTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD f turret Lcom/corrodinggames/rts/game/units/ar;
+	FIELD F experimentalTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD g antiAirTurret Lcom/corrodinggames/rts/game/units/ar;
+	FIELD G experimentalLandFactory Lcom/corrodinggames/rts/game/units/ar;
+	FIELD h builder Lcom/corrodinggames/rts/game/units/ar;
+	FIELD H crystalResource Lcom/corrodinggames/rts/game/units/ar;
+	FIELD i tank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD I wall_v Lcom/corrodinggames/rts/game/units/ar;
+	FIELD j hoverTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD J fabricator Lcom/corrodinggames/rts/game/units/ar;
+	FIELD k artillery Lcom/corrodinggames/rts/game/units/ar;
+	FIELD K attackSubmarine Lcom/corrodinggames/rts/game/units/ar;
+	FIELD l helicopter Lcom/corrodinggames/rts/game/units/ar;
+	FIELD L builderShip Lcom/corrodinggames/rts/game/units/ar;
+	FIELD m airShip Lcom/corrodinggames/rts/game/units/ar;
+	FIELD M amphibiousJet Lcom/corrodinggames/rts/game/units/ar;
+	FIELD n gunShip Lcom/corrodinggames/rts/game/units/ar;
+	FIELD N supplyDepot Lcom/corrodinggames/rts/game/units/ar;
+	FIELD o missileShip Lcom/corrodinggames/rts/game/units/ar;
+	FIELD O experimentalHoverTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD p gunBoat Lcom/corrodinggames/rts/game/units/ar;
+	FIELD P turret_artillery Lcom/corrodinggames/rts/game/units/ar;
+	FIELD q megaTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD Q turret_flamethrower Lcom/corrodinggames/rts/game/units/ar;
+	FIELD r laserTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD R fogRevealer Lcom/corrodinggames/rts/game/units/ar;
+	FIELD s hovercraft Lcom/corrodinggames/rts/game/units/ar;
+	FIELD S spreadingFire Lcom/corrodinggames/rts/game/units/ar;
+	FIELD t ladybug Lcom/corrodinggames/rts/game/units/ar;
+	FIELD T antiAirTurretT2 Lcom/corrodinggames/rts/game/units/ar;
+	FIELD u battleShip Lcom/corrodinggames/rts/game/units/ar;
+	FIELD U turretT2 Lcom/corrodinggames/rts/game/units/ar;
+	FIELD v tankDestroyer Lcom/corrodinggames/rts/game/units/ar;
+	FIELD V turretT3 Lcom/corrodinggames/rts/game/units/ar;
+	FIELD w heavyTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD W damagingBorder Lcom/corrodinggames/rts/game/units/ar;
+	FIELD x heavyHoverTank Lcom/corrodinggames/rts/game/units/ar;
+	FIELD X zoneMarker Lcom/corrodinggames/rts/game/units/ar;
+	FIELD y laserDefence Lcom/corrodinggames/rts/game/units/ar;
+	FIELD Y editorOrBuilder Lcom/corrodinggames/rts/game/units/ar;
+	FIELD z dropship Lcom/corrodinggames/rts/game/units/ar;
+	FIELD Z dummyNonUnitWithTeam Lcom/corrodinggames/rts/game/units/ar;
+	METHOD a isValidHere (Lcom/corrodinggames/rts/game/units/as;FFFFLcom/corrodinggames/rts/game/n;)Z
+	METHOD a drawUnit (Lcom/corrodinggames/rts/game/units/as;FFFFLcom/corrodinggames/rts/game/n;FFZZILcom/corrodinggames/rts/game/units/am;)V
+	METHOD a drawUnit (Lcom/corrodinggames/rts/game/units/as;FFFFLcom/corrodinggames/rts/game/n;FFZZIZLcom/corrodinggames/rts/game/units/am;)V
+	METHOD a getUpgradeActionPrice (Lcom/corrodinggames/rts/game/units/y;)I
+	METHOD a findUnitType (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/as;
+	METHOD a helpLine (Ljava/lang/String;F)Ljava/lang/String;
+	METHOD a helpLine (Ljava/lang/String;FLjava/lang/String;)Ljava/lang/String;
+	METHOD a helpLine (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a findUnitType (Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/as;
+	METHOD a createUnit (Z)Lcom/corrodinggames/rts/game/units/am;
+	METHOD A isTranslationOptional ()Z
+	METHOD c getUpgradePrice (I)I
+	METHOD r outputUnitImages ()V
+	METHOD s printForHelp ()V
+	METHOD t preloadDisplayNames ()V
+	CLASS 1 1
+	CLASS 10 10
+	CLASS 11 11
+	CLASS 12 12
+	CLASS 13 13
+	CLASS 14 14
+	CLASS 15 15
+	CLASS 16 16
+	CLASS 17 17
+	CLASS 18 18
+	CLASS 19 19
+	CLASS 2 2
+	CLASS 20 20
+	CLASS 21 21
+	CLASS 22 22
+	CLASS 23 23
+	CLASS 24 24
+	CLASS 25 25
+	CLASS 26 26
+	CLASS 27 27
+	CLASS 28 28
+	CLASS 29 29
+	CLASS 3 3
+	CLASS 30 30
+	CLASS 31 31
+	CLASS 32 32
+	CLASS 33 33
+	CLASS 34 34
+	CLASS 35 35
+	CLASS 36 36
+	CLASS 37 37
+	CLASS 38 38
+	CLASS 39 39
+	CLASS 4 4
+	CLASS 40 40
+	CLASS 41 41
+	CLASS 42 42
+	CLASS 43 43
+	CLASS 44 44
+	CLASS 45 45
+	CLASS 46 46
+	CLASS 47 47
+	CLASS 48 48
+	CLASS 49 49
+	CLASS 5 5
+	CLASS 50 50
+	CLASS 51 51
+	CLASS 52 52
+	CLASS 53 53
+	CLASS 6 6
+	CLASS 7 7
+	CLASS 8 8
+	CLASS 9 9

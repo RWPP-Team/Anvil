@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/java/audio/a/h com/corrodinggames/rts/java/audio/util/ObjectIntMapMapIterator
+	METHOD remove remove ()V

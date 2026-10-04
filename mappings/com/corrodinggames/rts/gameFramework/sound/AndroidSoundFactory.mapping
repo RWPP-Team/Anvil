@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/a/a com/corrodinggames/rts/gameFramework/sound/AndroidSoundFactory
+	FIELD a requestQueue Ljava/util/concurrent/LinkedBlockingQueue;
+	FIELD b poolSize I
+	FIELD c requestPool Lcom/corrodinggames/rts/gameFramework/utility/ad;
+	FIELD d soundThread Lcom/corrodinggames/rts/gameFramework/a/d;
+	FIELD e priorityCounter I
+	FIELD f context Landroid/content/Context;
+	FIELD g soundPool Landroid/media/SoundPool;

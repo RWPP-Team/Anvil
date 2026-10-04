@@ -1,0 +1,20 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/m com/corrodinggames/rts/game/units/custom/actions/outcomes/TakeResources
+	FIELD a takeResources Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD b includeUnitsInTransport Z
+	FIELD c includeParent Z
+	FIELD d includeUnitsWithinRange F
+	FIELD e includeUnitsWithinRangeTeam Lcom/corrodinggames/rts/game/q;
+	FIELD f includeReference Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD g excludeUnitsWithoutTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD h excludeUnitsWithoutAllResources Z
+	FIELD i excludeUnitsWithTheseResources Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD j excludeUnitsWithoutCustomTarget1EqualTo Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	FIELD k maxUnits I
+	FIELD l triggerActionIfAnyCollected Lcom/corrodinggames/rts/game/units/custom/u;
+	FIELD m triggerActionIfNoneCollected Lcom/corrodinggames/rts/game/units/custom/u;
+	FIELD n triggerActionForEach Lcom/corrodinggames/rts/game/units/custom/u;
+	FIELD o saveFirstUnitToCustomTarget1 Z
+	FIELD p saveFirstUnitToCustomTarget2 Z
+	FIELD q discardCollected Z
+	FIELD r keepResourcesOnTarget Z
+	FIELD s directTransferStoppingAtZero Z

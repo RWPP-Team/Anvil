@@ -1,19 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFramework/network/NetworkEngine
+	FIELD A PENDING_bool_A Z
 	FIELD aa allPlayersReady Z
 	FIELD aA savedGameStream Lcom/corrodinggames/rts/gameFramework/j/k;
 	FIELD ab startWaitElapsed F
 	FIELD aB customMapStream Lcom/corrodinggames/rts/gameFramework/j/k;
 	FIELD ac startWaitReminderTimer F
 	FIELD aC chatLog Lcom/corrodinggames/rts/gameFramework/j/a;
+	FIELD ad PENDING_bool_ad Z
 	FIELD aD tcpListenThread Ljava/lang/Thread;
+	FIELD ae PENDING_float_ae F
 	FIELD aE tcpListenRunnable Lcom/corrodinggames/rts/gameFramework/j/ao;
+	FIELD af PENDING_bool_af Z
 	FIELD aF udpListenThread Ljava/lang/Thread;
 	FIELD ag waitingForResync Z
 	FIELD aG udpListenRunnable Lcom/corrodinggames/rts/gameFramework/j/ao;
 	FIELD ah lastChecksumFrame I
+	FIELD aH pingerTimer Ljava/util/Timer;
 	FIELD ai checksumIntervalSeconds I
 	FIELD aI pingerTask Lcom/corrodinggames/rts/gameFramework/j/av;
 	FIELD aj pauseOnDesync Z
+	FIELD aJ broadcastThread Ljava/lang/Thread;
 	FIELD ak pausedDueToDesync Z
 	FIELD aK broadcastRunnable Lcom/corrodinggames/rts/gameFramework/j/af;
 	FIELD al gamePaused Z
@@ -23,6 +29,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	FIELD an checksumSent Z
 	FIELD aN incomingPacketQueue Ljava/util/concurrent/ConcurrentLinkedQueue;
 	FIELD ao showDesyncErrors Z
+	FIELD aO PENDING_bool_aO Z
 	FIELD ap desyncCount I
 	FIELD aP nextConnectionId I
 	FIELD aq checksumMatchCount I
@@ -30,6 +37,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	FIELD ar resyncCount I
 	FIELD aR sessionSecret Ljava/lang/String;
 	FIELD as disableDesyncFixing Z
+	FIELD aS PENDING_string_aS Ljava/lang/String;
 	FIELD at pingCheckTimer F
 	FIELD aT portCheckStatusMessage Ljava/lang/String;
 	FIELD au playerListDirtySince J
@@ -44,20 +52,29 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	FIELD aY returnToBattleroomPending Z
 	FIELD az mapName Ljava/lang/String;
 	FIELD aZ returnTimerActive Z
+	FIELD b preferQuickResync Z
 	FIELD B networked Z
 	FIELD ba returnToBattleroomCountdown F
 	FIELD bA localIpAddressCache Ljava/util/ArrayList;
 	FIELD bb onePlayerPerTeam Z
 	FIELD bB chatNotificationActive Z
 	FIELD bc startGameFailed Z
+	FIELD bC teamsLock Ljava/lang/Object;
+	FIELD bd startGameEventCompleted Z
+	FIELD bD masterServerTimer Ljava/util/Timer;
 	FIELD be serverEndedGame Z
 	FIELD bE passwordPrompt Lcom/corrodinggames/rts/gameFramework/j/ae;
+	FIELD bf integrityCheckInitialized Z
 	FIELD bF joinServerRunnable Lcom/corrodinggames/rts/gameFramework/j/an;
+	FIELD bg integrityCheckResult Ljava/lang/String;
+	FIELD bG localClientReady2State Z
+	FIELD bh serverListLoadError Ljava/lang/String;
 	FIELD bH clientReadyStateSent Z
 	FIELD bi discoveredServers Ljava/util/concurrent/ConcurrentLinkedQueue;
 	FIELD bI currentStepRate F
 	FIELD bj spectatorPlayer Lcom/corrodinggames/rts/game/e;
 	FIELD bk adminPlayer Lcom/corrodinggames/rts/game/e;
+	FIELD bl disconnectLock Ljava/lang/Object;
 	FIELD bm disconnectQueued Z
 	FIELD bn desyncResyncTimer F
 	FIELD bo desyncEscalationTimer F
@@ -72,14 +89,22 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	FIELD bx reconnectDialogShown Z
 	FIELD by machineKeyChecked Z
 	FIELD bz registerConnectionSent Z
+	FIELD c fullResyncEscalationEnabled Z
 	FIELD C isServer Z
 	FIELD d networkCallbacks Lcom/corrodinggames/rts/gameFramework/j/ac;
+	FIELD D usingRelayServer Z
 	FIELD e gameVersion I
+	FIELD E relayServerAddress Ljava/lang/String;
+	FIELD f PENDING_legacyArrayList Ljava/util/ArrayList;
 	FIELD F singlePlayerServer Z
 	FIELD g extraDebug Z
 	FIELD h maxMessagesPerMinute I
 	FIELD H proxyController Z
+	FIELD i PENDING_bool_i Z
+	FIELD I PENDING_int_I I
+	FIELD j PENDING_float_j F
 	FIELD J resyncStepRate F
+	FIELD k PENDING_float_k F
 	FIELD K stepRateOverride Ljava/lang/Float;
 	FIELD l saveDesyncSaves Z
 	FIELD L queryString Ljava/lang/String;
@@ -93,13 +118,16 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	FIELD P blockingLagFrameCount I
 	FIELD q serverVisible Z
 	FIELD Q blockingFrameInterval I
+	FIELD r portCheckEnabled Z
 	FIELD R blockingFrameGrace I
 	FIELD s allowJoinInProgress Z
 	FIELD S serverUUID Ljava/lang/String;
+	FIELD t udpBroadcastPort I
 	FIELD T integrityChallenge I
 	FIELD u currentGameMapPath Ljava/lang/String;
 	FIELD U extraChallenge I
 	FIELD v chatOnlyServer Z
+	FIELD V PENDING_int_V I
 	FIELD w nextUnitId J
 	FIELD W extraChallengeSeed I
 	FIELD x customUnitsEnabled Z
@@ -186,6 +214,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	METHOD az prepareClientsForResync ()V
 	METHOD b removeExpiredBans ()V
 	METHOD b updateClientConnectionStatus (F)V
+	METHOD b getAIDifficultyName2 (I)Ljava/lang/String;
 	METHOD b updateAITeamName (Lcom/corrodinggames/rts/game/n;)Z
 	METHOD b sendSetTeamCommand (Lcom/corrodinggames/rts/game/n;I)V
 	METHOD b applyProxyControl (Lcom/corrodinggames/rts/gameFramework/j/ah;)V
@@ -265,6 +294,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	METHOD k sendChatCommand (Ljava/lang/String;)V
 	METHOD K closeBattleroom ()V
 	METHOD l getMapDisplayName ()Ljava/lang/String;
+	METHOD l sendChatMessageDefaultingToTeam (Ljava/lang/String;)V
 	METHOD L sendServerInfoToAll ()V
 	METHOD m initIntegrityCheck ()V
 	METHOD m sendChatMessage (Ljava/lang/String;)V
@@ -298,3 +328,12 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	METHOD Y regenerateClientId ()V
 	METHOD z peekNextUnitId ()J
 	METHOD Z getOwnClientIdHashed ()Ljava/lang/String;
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+		CLASS 1 1
+	CLASS 6 6
+	CLASS 7 7
+	CLASS 8 8

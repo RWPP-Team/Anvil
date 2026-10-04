@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/a/b com/corrodinggames/rts/game/units/actions/ActionFilter
+	METHOD isAvailable isAvailable (Lcom/corrodinggames/rts/game/units/a/s;Lcom/corrodinggames/rts/game/units/am;)Z

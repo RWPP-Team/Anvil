@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/java/audio/a/i com/corrodinggames/rts/java/audio/util/ObjectLongMap
+	METHOD iterator iterator ()Ljava/util/Iterator;

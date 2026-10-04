@@ -34,3 +34,28 @@ CLASS com/corrodinggames/rts/game/units/custom/e/a com/corrodinggames/rts/game/u
 	FIELD x displayPos F
 	FIELD y iconImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD z iconImageUseInText Z
+	METHOD a isHidden ()Z
+	METHOD a formatAmountOneDecimal (D)Ljava/lang/String;
+	METHOD a formatAmount (DZ)Ljava/lang/String;
+	METHOD a formatAmountWithLabel (DZZ)Ljava/lang/String;
+	METHOD a formatLongWithSeparator (JLcom/corrodinggames/rts/game/units/custom/e/b;)Ljava/lang/String;
+	METHOD a getAmount (Lcom/corrodinggames/rts/game/units/am;)D
+	METHOD a setAmount (Lcom/corrodinggames/rts/game/units/am;D)V
+	METHOD a registerResource (Lcom/corrodinggames/rts/game/units/custom/e/a;)Lcom/corrodinggames/rts/game/units/custom/e/a;
+	METHOD a getByNameIgnoreCase (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/e/a;
+	METHOD a applyDigitGrouping (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/e/b;)Ljava/lang/String;
+	METHOD a getOrCreate (Ljava/lang/String;ZZ)Lcom/corrodinggames/rts/game/units/custom/e/a;
+	METHOD a getDisplayPrefix (Z)Ljava/lang/String;
+	METHOD b getValueInStats ()F
+	METHOD b addAmount (Lcom/corrodinggames/rts/game/units/am;D)V
+	METHOD b getByName (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/e/a;
+	METHOD b getDisplayPostfix (Z)Ljava/lang/String;
+	METHOD c isBuiltIn ()Z
+	METHOD d isGlobal ()Z
+	METHOD e refreshUsedResources ()V
+	METHOD f getUsedResources ()Ljava/util/ArrayList;
+	METHOD g refreshFromReferences ()V
+	METHOD h getDisplayColor ()Ljava/lang/Integer;
+	METHOD i getDisplayName ()Ljava/lang/String;
+	METHOD j getDisplayNameShort ()Ljava/lang/String;
+	METHOD k getIconImage ()Lcom/corrodinggames/rts/gameFramework/m/e;

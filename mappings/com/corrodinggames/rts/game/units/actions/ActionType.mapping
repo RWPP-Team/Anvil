@@ -1,2 +1,15 @@
 CLASS com/corrodinggames/rts/game/units/a/u com/corrodinggames/rts/game/units/actions/ActionType
 	COMMENT Action kind returned by SpecialAction.e(): none, placeBuilding, popupQueue, setRally, reclaimTarget, repairTarget, targetGround, attackMove, infoOnly, pingMap, directToAction, guardUnit, patrol. Previously mis-mapped to SpecialAction (collision). [evidence-based job name]
+	FIELD a none Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD b placeBuilding Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD c popupQueue Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD d setRally Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD e reclaimTarget Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD f repairTarget Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD g targetGround Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD h attackMove Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD i infoOnly Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD j pingMap Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD k directToAction Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD l guardUnit Lcom/corrodinggames/rts/game/units/a/u;
+	FIELD m patrol Lcom/corrodinggames/rts/game/units/a/u;

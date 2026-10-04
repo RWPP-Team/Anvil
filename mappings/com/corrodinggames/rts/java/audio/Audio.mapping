@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/java/audio/Audio
+	METHOD newAudioDevice newAudioDevice (IZ)Lcom/corrodinggames/rts/java/audio/AudioDevice;
+	METHOD newAudioRecorder newAudioRecorder (IZ)Lcom/corrodinggames/rts/java/audio/AudioRecorder;
+	METHOD newMusic newMusic (Lcom/corrodinggames/rts/java/audio/a/a;)Lcom/corrodinggames/rts/java/audio/Music;
+	METHOD newSound newSound (Lcom/corrodinggames/rts/java/audio/a/a;)Lcom/corrodinggames/rts/java/audio/Sound;

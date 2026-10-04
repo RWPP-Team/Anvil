@@ -1,1 +1,116 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean
+	FIELD activeEvent activeEvent Lcom/corrodinggames/rts/game/units/custom/k;
+	FIELD booleans booleans Ljava/util/HashMap;
+	FIELD callContext_self callContext_self Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$CallContext_self;
+	FIELD callContext_selfAndTarget callContext_selfAndTarget Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$CallContext_selfAndTarget;
+	FIELD falseBoolean falseBoolean Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticBoolean;
+	FIELD not not Z
+	FIELD outerUnitParameterContext outerUnitParameterContext Lcom/corrodinggames/rts/game/units/y;
+	FIELD parameterMappings parameterMappings Ljava/util/HashMap;
+	FIELD trueBoolean trueBoolean Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticBoolean;
+	METHOD addBooleanType addBooleanType (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;[Ljava/lang/String;)V
+	METHOD clearContext clearContext ()V
+	METHOD clearOuterUnitParameterContext clearOuterUnitParameterContext ()V
+	METHOD convertAlwaysTrueToNull convertAlwaysTrueToNull (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD create create (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD create create (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD createContext createContext ()Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	METHOD createLocked createLocked ()Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD enableContextEventSource enableContextEventSource ()V
+	METHOD forMeta forMeta (Lcom/corrodinggames/rts/game/units/custom/l;)V
+	METHOD getAllParametersDebug getAllParametersDebug (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/y;)Ljava/lang/String;
+	METHOD getArraySize getArraySize (Lcom/corrodinggames/rts/game/units/y;)I
+	METHOD getDebugDetails getDebugDetails (Lcom/corrodinggames/rts/game/units/custom/j;)Ljava/lang/String;
+	METHOD getKnownStaticNumber getKnownStaticNumber (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)F
+	METHOD getMatchFailReasonForPlayer getMatchFailReasonForPlayer (Lcom/corrodinggames/rts/game/units/y;)Ljava/lang/String;
+	METHOD getParameterContext getParameterContext (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/y;
+	METHOD getParameters getParameters ()Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$ParameterMapping;
+	METHOD getReturnType getReturnType ()Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+	METHOD getStaticNumber getStaticNumber (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Ljava/lang/Float;
+	METHOD isLocked isLocked ()Z
+	METHOD isStaticFalse isStaticFalse (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Z
+	METHOD isStaticNull isStaticNull (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Z
+	METHOD isStaticNumber isStaticNumber (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Z
+	METHOD isStaticTrue isStaticTrue (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Z
+	METHOD read read (Lcom/corrodinggames/rts/game/units/y;)Z
+	METHOD readArrayElement readArrayElement (Lcom/corrodinggames/rts/game/units/y;I)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD readNumber readNumber (Lcom/corrodinggames/rts/game/units/y;)F
+	METHOD readString readString (Lcom/corrodinggames/rts/game/units/y;)Ljava/lang/String;
+	METHOD readUnit readUnit (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD setArgumentsRaw setArgumentsRaw (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)V
+	METHOD setChild setChild (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD setContextEventSource setContextEventSource (Lcom/corrodinggames/rts/game/units/custom/k;)V
+	METHOD setOuterUnitParameterContext setOuterUnitParameterContext (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD setParent setParent (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)V
+	METHOD throwVoidReturnError throwVoidReturnError (Ljava/lang/String;)V
+	METHOD validate validate (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;Z)V
+	METHOD validateAndOptimize validateAndOptimize (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;Z)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD valueToStringDebug valueToStringDebug (Lcom/corrodinggames/rts/game/units/y;)Ljava/lang/String;
+	METHOD with with (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS AbstractNumberBoolean
+		FIELD empty empty Z
+		FIELD full full Z
+		FIELD greaterThan greaterThan F
+		FIELD lessThan lessThan F
+		METHOD equalTo equalTo (F)V
+		METHOD getMaxValue getMaxValue (Lcom/corrodinggames/rts/game/units/y;)F
+		METHOD getName getName ()Ljava/lang/String;
+		METHOD getValue getValue (Lcom/corrodinggames/rts/game/units/y;)F
+	CLASS AndBoolean
+	CLASS CallContext
+	CLASS CallContext_self
+		FIELD self self Lcom/corrodinggames/rts/game/units/custom/j;
+	CLASS CallContext_selfAndTarget
+		FIELD target target Lcom/corrodinggames/rts/game/units/am;
+	CLASS JoinerBoolean
+		FIELD children children [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD getNewJoiner getNewJoiner (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$JoinerBoolean;
+		METHOD requireBooleanChildren requireBooleanChildren ()Z
+		METHOD type type ()Ljava/lang/String;
+	CLASS LogicBooleanCommon
+		METHOD getName getName ()Ljava/lang/String;
+	CLASS LogicBooleanCommonLocking
+		FIELD locked locked Z
+	CLASS LogicNumberOnly
+		METHOD getName getName ()Ljava/lang/String;
+	CLASS NotBoolean
+		FIELD child child Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS OrBoolean
+	CLASS Parameter
+		METHOD key key ()Ljava/lang/String;
+		METHOD positional positional ()I
+		METHOD required required ()Z
+		METHOD type type ()Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+	CLASS ReturnType
+		FIELD bool bool Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD boolArray boolArray Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD number number Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD numberArray numberArray Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD point point Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD string string Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD undefined undefined Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD unit unit Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD unitArray unitArray Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD voidReturn voidReturn Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD canBeNull canBeNull (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Z
+		METHOD getArrayBaseType getArrayBaseType (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD getArrayTypeFromBase getArrayTypeFromBase (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD isArrayType isArrayType (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Z
+		METHOD toUserString toUserString (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Ljava/lang/String;
+	CLASS StaticBoolean
+	CLASS StaticBooleanFalse
+	CLASS StaticBooleanTrue
+	CLASS StaticValueBoolean
+		FIELD static_0 static_0 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticValueBoolean;
+		FIELD static_1 static_1 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticValueBoolean;
+		FIELD static_neg1 static_neg1 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticValueBoolean;
+		FIELD staticNumber staticNumber F
+		METHOD getStaticNumber getStaticNumber (F)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticValueBoolean;
+		METHOD getStaticNumber getStaticNumber (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$StaticValueBoolean;
+		METHOD getStaticValue getStaticValue ()F
+	CLASS TimeBoolean
+		FIELD laterThanSeconds laterThanSeconds F
+		FIELD withinSeconds withinSeconds F
+		METHOD getName getName ()Ljava/lang/String;
+		METHOD getTime getTime (Lcom/corrodinggames/rts/game/units/y;)I
+		METHOD msToSecondsString msToSecondsString (F)Ljava/lang/String;

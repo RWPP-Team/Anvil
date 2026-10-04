@@ -5,20 +5,24 @@ CLASS com/corrodinggames/rts/gameFramework/b/y com/corrodinggames/rts/gameFramew
 	FIELD d maxQuads I
 	FIELD e quadCount I
 	FIELD f canvas Lcom/corrodinggames/rts/gameFramework/b/n;
+	FIELD g defaultShaderId I
 	FIELD h shaderSource Lcom/corrodinggames/rts/gameFramework/b/d;
 	FIELD i shader Lcom/corrodinggames/rts/gameFramework/b/z;
 	FIELD j currentShader Lcom/corrodinggames/rts/gameFramework/b/z;
 	FIELD k currentTexture Lcom/corrodinggames/rts/gameFramework/b/b;
 	FIELD l currentPaintShader Lcom/corrodinggames/rts/gameFramework/m/ae;
+	FIELD m shaderDirty Z
 	FIELD n currentColor I
 	FIELD o colorR F
 	FIELD p colorG F
 	FIELD q colorB F
 	FIELD r colorA F
+	METHOD a uploadProjectionMatrix ()V
 	METHOD a setColor (I)V
 	METHOD a bindTexture (Lcom/corrodinggames/rts/gameFramework/b/b;)V
 	METHOD a addQuad (Lcom/corrodinggames/rts/gameFramework/b/b;Landroid/graphics/RectF;Landroid/graphics/RectF;[F)V
 	METHOD a begin (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
+	METHOD b markShaderDirty ()V
 	METHOD b applyPaintShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
 	METHOD c flush ()V
 	METHOD d end ()V

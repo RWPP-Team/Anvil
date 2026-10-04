@@ -1,0 +1,10 @@
+CLASS com/codedisaster/steamworks/SteamRemoteStorageCallback
+	METHOD onDownloadUGCResult onDownloadUGCResult (Lcom/codedisaster/steamworks/SteamUGCHandle;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onFileReadAsyncComplete onFileReadAsyncComplete (Lcom/codedisaster/steamworks/SteamAPICall;Lcom/codedisaster/steamworks/SteamResult;II)V
+	METHOD onFileShareResult onFileShareResult (Lcom/codedisaster/steamworks/SteamUGCHandle;Ljava/lang/String;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onFileWriteAsyncComplete onFileWriteAsyncComplete (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onPublishedFileDeleted onPublishedFileDeleted (Lcom/codedisaster/steamworks/SteamPublishedFileID;I)V
+	METHOD onPublishedFileSubscribed onPublishedFileSubscribed (Lcom/codedisaster/steamworks/SteamPublishedFileID;I)V
+	METHOD onPublishedFileUnsubscribed onPublishedFileUnsubscribed (Lcom/codedisaster/steamworks/SteamPublishedFileID;I)V
+	METHOD onPublishFileResult onPublishFileResult (Lcom/codedisaster/steamworks/SteamPublishedFileID;ZLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onUpdatePublishedFileResult onUpdatePublishedFileResult (Lcom/codedisaster/steamworks/SteamPublishedFileID;ZLcom/codedisaster/steamworks/SteamResult;)V

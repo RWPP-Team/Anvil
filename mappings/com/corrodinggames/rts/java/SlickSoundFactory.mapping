@@ -1,2 +1,6 @@
 CLASS com/corrodinggames/rts/java/o com/corrodinggames/rts/java/SlickSoundFactory
 	COMMENT Desktop sound factory (gameFramework/a/h subclass), log tag 'SlickSoundFactory': owns OpenALAudio, setContext() guards double-set, creates OpenALSoundEffect from resource id (gameFramework/f.f) or from a StreamWrapper, starts the 15-slot SoundThread pool with a LinkedBlockingQueue + ObjectPool. [evidence-based, name from log literal]
+	FIELD d soundThread Lcom/corrodinggames/rts/java/r;
+	FIELD e context Landroid/content/Context;
+	FIELD f openALAudio Lcom/corrodinggames/rts/java/audio/lwjgl/OpenALAudio;
+	METHOD b soundLock ()Ljava/lang/Object;

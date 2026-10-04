@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/m/w com/corrodinggames/rts/gameFramework/render/BlendMode
+	FIELD a normal Lcom/corrodinggames/rts/gameFramework/m/w;
+	FIELD b copy Lcom/corrodinggames/rts/gameFramework/m/w;
+	FIELD c additive Lcom/corrodinggames/rts/gameFramework/m/w;

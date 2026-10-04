@@ -1,1 +1,3 @@
 CLASS com/codedisaster/steamworks/SteamNetworkingCallback
+	METHOD onP2PSessionConnectFail onP2PSessionConnectFail (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamNetworking$P2PSessionError;)V
+	METHOD onP2PSessionRequest onP2PSessionRequest (Lcom/codedisaster/steamworks/SteamID;)V

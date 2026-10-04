@@ -1,1 +1,3 @@
 CLASS com/codedisaster/steamworks/SteamNativeHandle
+	FIELD handle handle J
+	METHOD getNativeHandle getNativeHandle (Lcom/codedisaster/steamworks/SteamNativeHandle;)J

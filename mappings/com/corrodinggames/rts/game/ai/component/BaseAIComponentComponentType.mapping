@@ -1,2 +1,7 @@
 CLASS com/corrodinggames/rts/game/a/a/b com/corrodinggames/rts/game/ai/component/BaseAIComponentComponentType
 	COMMENT Component type enum with per-constant factory. Flattened inner class of BaseAIComponent. [iOS-confirmed]
+	FIELD a unknown Lcom/corrodinggames/rts/game/a/a/b;
+	FIELD b nuking Lcom/corrodinggames/rts/game/a/a/b;
+	METHOD a createComponent ()Lcom/corrodinggames/rts/game/a/a/a;
+	CLASS 1 1
+	CLASS 2 2

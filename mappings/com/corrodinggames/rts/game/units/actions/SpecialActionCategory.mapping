@@ -1,2 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/a/t com/corrodinggames/rts/game/units/actions/SpecialActionCategory
 	COMMENT UI presentation category returned by SpecialAction.f(): none, rally, upgrade, queueUnit, building, action, infoOnly, infoOnlyNoBox, infoOnlyStockpile. Previously mis-mapped to SpecialAction (collision). [evidence-based job name]
+	FIELD a none Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD b rally Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD c upgrade Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD d queueUnit Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD e building Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD f action Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD g infoOnly Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD h infoOnlyNoBox Lcom/corrodinggames/rts/game/units/a/t;
+	FIELD i infoOnlyStockpile Lcom/corrodinggames/rts/game/units/a/t;

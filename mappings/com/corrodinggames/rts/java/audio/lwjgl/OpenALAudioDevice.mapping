@@ -1,1 +1,24 @@
 CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALAudioDevice
+	FIELD audio audio Lcom/corrodinggames/rts/java/audio/lwjgl/OpenALAudio;
+	FIELD bufferCount bufferCount I
+	FIELD buffers buffers Ljava/nio/IntBuffer;
+	FIELD bufferSize bufferSize I
+	FIELD bytes bytes [B
+	FIELD bytesPerSample bytesPerSample I
+	FIELD channels channels I
+	FIELD format format I
+	FIELD isPlaying isPlaying Z
+	FIELD renderedSeconds renderedSeconds F
+	FIELD sampleRate sampleRate I
+	FIELD secondsPerBuffer secondsPerBuffer F
+	FIELD sourceID sourceID I
+	FIELD tempBuffer tempBuffer Ljava/nio/ByteBuffer;
+	FIELD volume volume F
+	METHOD fillBuffer fillBuffer ([BII)I
+	METHOD getChannels getChannels ()I
+	METHOD getPosition getPosition ()F
+	METHOD getRate getRate ()I
+	METHOD isPlaying isPlaying ()Z
+	METHOD setPosition setPosition (F)V
+	METHOD stop stop ()V
+	METHOD writeSamples writeSamples ([BII)V

@@ -1,2 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/d/a/c com/corrodinggames/rts/game/units/buildings/turrets/TurretType
 	COMMENT Abstract turret weapon type (inner class of Turret, flattened): abstract range a(), damage a(int), reload b(int), image d(int), name c(), muzzle points c(int), fire a(Unit,int), upgrade cost a(TurretType) and d(). [iOS-confirmed]
+	FIELD a turret Lcom/corrodinggames/rts/game/units/d/a/b;
+	METHOD a getAttackRange ()F
+	METHOD a update (F)V
+	METHOD a getShootDelay (I)F
+	METHOD a fire (Lcom/corrodinggames/rts/game/units/am;I)V
+	METHOD a copyStateFrom (Lcom/corrodinggames/rts/game/units/d/a/c;)V
+	METHOD a matchesName (Ljava/lang/String;)Z
+	METHOD b getTechLevel ()I
+	METHOD b getDamage (I)F
+	METHOD c getConfigName ()Ljava/lang/String;
+	METHOD c getMuzzlePoint (I)Landroid/graphics/PointF;
+	METHOD d getPrice ()I
+	METHOD d getTurretTopImage (I)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD e getTurnSpeed (I)F
+	METHOD f getTurnSpeedAcceleration (I)F
+	METHOD g getBarrelY (I)F
+	METHOD h getRecoilOffset (I)F

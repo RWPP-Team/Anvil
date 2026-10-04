@@ -3,3 +3,4 @@ CLASS com/corrodinggames/rts/gameFramework/utility/a com/corrodinggames/rts/game
 	METHOD a New (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/utility/a;
 	METHOD a getThreadTitle (Ljava/lang/Thread;)Ljava/lang/String;
 	METHOD fillInStackTrace fillInStackTrace ()Ljava/lang/Throwable;
+	CLASS 1 1

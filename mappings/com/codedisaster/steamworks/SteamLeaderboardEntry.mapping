@@ -1,0 +1,9 @@
+CLASS com/codedisaster/steamworks/SteamLeaderboardEntry
+	FIELD details details I
+	FIELD globalRank globalRank I
+	FIELD score score I
+	FIELD steamIDUser steamIDUser J
+	METHOD getGlobalRank getGlobalRank ()I
+	METHOD getNumDetails getNumDetails ()I
+	METHOD getScore getScore ()I
+	METHOD getSteamIDUser getSteamIDUser ()Lcom/codedisaster/steamworks/SteamID;

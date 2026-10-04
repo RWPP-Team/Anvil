@@ -4,6 +4,7 @@ CLASS com/corrodinggames/rts/gameFramework/n/f com/corrodinggames/rts/gameFramew
 	FIELD b lastTriggerUpdateTime I
 	FIELD B waveTextDelayTimer F
 	FIELD c lastSlowUpdateTime I
+	FIELD C currentWaveMode Lcom/corrodinggames/rts/gameFramework/n/h;
 	FIELD d neutralTeam Lcom/corrodinggames/rts/game/n;
 	FIELD D attackPoints Ljava/util/ArrayList;
 	FIELD e winObjective Lcom/corrodinggames/rts/gameFramework/n/l;

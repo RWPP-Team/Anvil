@@ -5,9 +5,19 @@ CLASS com/corrodinggames/rts/gameFramework/d/a com/corrodinggames/rts/gameFramew
 	FIELD b lifetime F
 	FIELD c removed Z
 	FIELD C outlinePaint Landroid/graphics/Paint;
+	FIELD d unitType Lcom/corrodinggames/rts/game/units/as;
 	FIELD D outlinePaintDim Landroid/graphics/Paint;
+	FIELD e team Lcom/corrodinggames/rts/game/n;
 	FIELD E footprintRect Landroid/graphics/RectF;
+	FIELD g x F
+	FIELD h y F
+	FIELD j ownerTeam Lcom/corrodinggames/rts/game/n;
+	FIELD n isBuild Z
+	FIELD o buildUnit Lcom/corrodinggames/rts/game/units/y;
 	FIELD p placementWasValid Z
+	FIELD s appearAnimTimer F
+	FIELD t appearAnimRate F
+	FIELD v targetUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD w activeBlueprints Lcom/corrodinggames/rts/gameFramework/utility/o;
 	FIELD x tempTilePoint Landroid/graphics/Point;
 	FIELD y unitRect1 Landroid/graphics/RectF;

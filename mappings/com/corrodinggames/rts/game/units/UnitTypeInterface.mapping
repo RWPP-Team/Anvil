@@ -1,19 +1,41 @@
 CLASS com/corrodinggames/rts/game/units/as com/corrodinggames/rts/game/units/UnitTypeInterface
 	METHOD a createUnit ()Lcom/corrodinggames/rts/game/units/am;
+	METHOD a getSpecialActionList (I)Ljava/util/ArrayList;
+	METHOD a getExtraBuildRange (Lcom/corrodinggames/rts/game/units/am;)I
+		COMMENT Extra build range this type grants to a builder of the given unit, added on top of the builder's nano range. Unit.getBuildRange(UnitTypeInterface) computes as.getExtraBuildRange(this) + this.getNanoRange(); the same call feeds getRepairRange/getReclaimRange. CustomUnitMetadata returns extraBuildRangeWhenBuildingThis when > 0, otherwise a flat +17 for a placeOnlyOnResPool building whose builder is within nano range 20. UnitType returns 0.
+	METHOD b getPriceForTechLevel (I)I
+		COMMENT Total credit price of this type when produced at the given tech level. UnitType adds c(2) once for tech>=2 and again for tech>=3; CustomUnitMetadata ignores the level and returns getPriceValue(). Caller: Unit.getPriceForTechLevel() passes getTechLevel(). Integer counterpart of getPriceForTechLevelResources(int).
 	METHOD B getStreamingPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD c getPriceValue ()I
 	METHOD C isAvailableInDemo ()Z
+	METHOD d getTypeInfoAction ()Lcom/corrodinggames/rts/game/units/a/z;
+		COMMENT The infoOnly SpecialAction (actions.UnitTypeInfo) describing this type; UnitType returns the cached enum field, CustomUnitMetadata returns the UnitTypeInfo built during post-load. UnitTypeInfo stores the type back-reference via its own i() and is itself keyed by getActionIdName().
+	METHOD d getPriceForTechLevelResources (I)Lcom/corrodinggames/rts/game/units/custom/d/b;
+		COMMENT Multi-resource (CustomPrice) price of this type at the given tech level. UnitType wraps getPriceForTechLevel(int) in CustomPrice.a(int); CustomUnitMetadata returns the parsed price object directly. Callers: Unit.getPrice() and actions.SpecialActionBuild.B().
 	METHOD D getBuildSpeed ()F
 	METHOD e getDisplayName ()Ljava/lang/String;
 	METHOD f getDisplayDescription ()Ljava/lang/String;
 	METHOD g getTechLevel ()I
+	METHOD h buildSpecialActionLists ()V
+		COMMENT Initialises the per-tech-level special action lists (three UnitActionList buckets for tech levels 1-3) and, for CustomUnitMetadata, clears specialActionByIdCache. Called once per type from CustomUnitMetadataLoader.a(UnitTypeInterface) as the first step of post-load fixup, before canBuild/action entries are attached. Pairs with getSpecialActionList(int).
+	METHOD i getInternalName ()Ljava/lang/String;
+		COMMENT Internal unique type name, used as the serialization/lookup key. UnitType returns the enum name(); CustomUnitMetadata returns the ini "name" field. Used by InputNetStream.readUnitType, GameSaver.saveGame, Map/MapTile/GroupObject serialization, LazyUnitTypeReference.getDisplayName, CustomUnitMetadata.m(String) registry lookup and debug toString. Distinct from getDisplayName() (locale-resolved) and getActionIdName() (special-action id prefix).
 	METHOD j isBuilding ()Z
 	METHOD k ignoreInUnitCapCalculation ()Z
-	METHOD l canAttackUnderwaterUnits ()Z
-	METHOD m canAttackFlyingUnits ()Z
-	METHOD n canAttackLandUnits ()Z
+	METHOD l isBuilder ()Z
+		COMMENT True when this unit type counts as a builder. CustomUnitMetadata returns [core]isBuilder (falling back to [ai]useAsBuilder when only one of the two is set). Sole caller is Unit ak(), which UnitDetectElement.isUnitCountInRange uses verbatim as "this.onlyBuilders || var6.ak()". CustomUnitMetadata additionally uses the same value to pick the AI builder role (Builder.h vs LandUnit.dN for hover/land units that can attack underwater). NOTE: previously mis-named canAttackUnderwaterUnits - corrected after finding the loader key.
+	METHOD m useAsBuilder ()Z
+		COMMENT True when the AI should use this unit type as a builder. CustomUnitMetadata returns [ai]useAsBuilder. Unit aj() forwards it, and every AI caller uses it that way: Base.a(UnitTypeInterface,PointF,boolean) filters candidate builder units with var10.aj(), Base.a(UnitTypeInterface,boolean,boolean) requires it to let a CommandCenter build, and AI.a(UnitTypeInterface) requires !aj() for a unit to qualify as an attacker. UnitType (built-ins) returns false. NOTE: previously mis-named canAttackFlyingUnits - corrected after finding the loader key.
+	METHOD n useAsHarvester ()Z
+		COMMENT True when the AI should use this unit type as a resource harvester. CustomUnitMetadata returns [ai]useAsHarvester (forced true when canReclaimResources, then overridden by the explicit key). Base.q() picks a unit with this flag and issues it a WaypointType.reclaim order; Base.d(UnitTypeInterface) counts such units against the whenUsingAsHarvester_recommendedInEachBase / _recommendedGlobal limits. UnitType (built-ins) returns false. NOTE: previously mis-named canAttackLandUnits - corrected after finding the loader key.
 	METHOD o getMovementType ()Lcom/corrodinggames/rts/game/units/ao;
 	METHOD p placeOnlyOnResPool ()Z
 	METHOD q getPlacementRules ()Lcom/corrodinggames/rts/game/units/custom/be;
 	METHOD u getPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD v getActionIdName ()Ljava/lang/String;
+		COMMENT Name used to build special-action ids. Both implementations return the same string as getInternalName(), but it is only ever consumed by SpecialAction id construction: actions.UnitTypeInfo does super("s_" + as.getActionIdName()), actions.SpecialActionBuild does super("b_" + as.getActionIdName()), actions.SpecialQueueAction likewise. Kept separate from getInternalName() to mark the distinct role.
 	METHOD w isLocked ()Z
+	METHOD x getTags ()Lcom/corrodinggames/rts/game/units/custom/h;
+	METHOD y usesCredits ()Z
+		COMMENT True when this unit type is priced in credits. UnitType (built-ins) always returns true; CustomUnitMetadata returns the flag set by checkPriceUsesCredits(CustomPrice) whenever a parsed price has a non-zero credits component. Sole caller TeamUnitCaches.a(Unit) uses it to set hasSeenCreditsUsingUnitType, which Team mirrors into hasSeenCreditsUsingUnit; InterfaceEngine.drawTeamResources then draws the credits resource entry only for teams that own a credits-priced unit.
+	METHOD z getBuildIcon ()Lcom/corrodinggames/rts/gameFramework/m/e;

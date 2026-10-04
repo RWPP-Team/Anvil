@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/b/ag com/corrodinggames/rts/gameFramework/canvasgl/TextureUtils
+	METHOD a setSourceRect (Lcom/corrodinggames/rts/gameFramework/b/b;Landroid/graphics/RectF;)V

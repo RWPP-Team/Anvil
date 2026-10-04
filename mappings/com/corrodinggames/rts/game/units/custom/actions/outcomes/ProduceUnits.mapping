@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/k com/corrodinggames/rts/game/units/custom/actions/outcomes/ProduceUnits
+	FIELD a produceUnits Lcom/corrodinggames/rts/game/units/custom/bp;
+	FIELD b spawnUnits Lcom/corrodinggames/rts/game/units/custom/bp;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

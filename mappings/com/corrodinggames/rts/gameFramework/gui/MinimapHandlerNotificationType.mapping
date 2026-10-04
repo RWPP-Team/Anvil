@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/f/r com/corrodinggames/rts/gameFramework/gui/MinimapHandlerNotificationType
+	FIELD a base Lcom/corrodinggames/rts/gameFramework/f/r;
+	FIELD b unit Lcom/corrodinggames/rts/gameFramework/f/r;
+	FIELD c nuke Lcom/corrodinggames/rts/gameFramework/f/r;
+	FIELD d message Lcom/corrodinggames/rts/gameFramework/f/r;

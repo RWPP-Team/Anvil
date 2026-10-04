@@ -1,5 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/n/i com/corrodinggames/rts/gameFramework/trigger/WaveUnitList
 	FIELD b entries Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD c triggerEngine Lcom/corrodinggames/rts/gameFramework/n/f;
 	METHOD a spawnUnits (FF)V
 	METHOD a addUnitType (Lcom/corrodinggames/rts/game/units/as;I)V
 	METHOD b addUnitTypeDirect (Lcom/corrodinggames/rts/game/units/as;I)V

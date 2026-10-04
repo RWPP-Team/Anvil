@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/game/b/i com/corrodinggames/rts/game/map/ObjectGroup
 	COMMENT Tiled <objectgroup>: name/width/height/properties and parsed GroupObjects. [iOS-confirmed]
+	FIELD a index I
+	FIELD b name Ljava/lang/String;
+	FIELD c objects Ljava/util/ArrayList;
+	FIELD d width I
+	FIELD e height I
+	FIELD f properties Ljava/util/Properties;
+	METHOD a findObjectByName (Ljava/lang/String;)Lcom/corrodinggames/rts/game/b/a;

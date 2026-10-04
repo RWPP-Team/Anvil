@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/e/g com/corrodinggames/rts/game/units/land/HoverTank
+	FIELD a hoverBobTimer F
+	FIELD b deadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e teamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f PENDING_rectScratch Landroid/graphics/Rect;
+	METHOD f loadImages ()V

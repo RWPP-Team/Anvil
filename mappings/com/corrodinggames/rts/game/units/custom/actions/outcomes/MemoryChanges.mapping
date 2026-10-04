@@ -1,0 +1,8 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/h com/corrodinggames/rts/game/units/custom/actions/outcomes/MemoryChanges
+	FIELD a setUnitMemory Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter;
+	FIELD b swapCustomTarget1And2 Z
+	FIELD c setCustomTarget1 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD d setCustomTarget2 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD e shrinkArrays Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryNames;
+	METHOD a shrinkMemoryArrays (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryNames;)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

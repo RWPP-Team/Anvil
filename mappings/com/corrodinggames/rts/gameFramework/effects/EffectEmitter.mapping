@@ -9,6 +9,8 @@ CLASS com/corrodinggames/rts/gameFramework/d/f com/corrodinggames/rts/gameFramew
 	FIELD h burstsPerCycle F
 	FIELD i templateEffect Lcom/corrodinggames/rts/gameFramework/d/e;
 	FIELD j colorOverride I
+	FIELD k endColor I
+	FIELD l endColorTransitionTime I
 	FIELD m speedJitterX F
 	FIELD n speedJitterY F
 	FIELD o speedJitterHeight F

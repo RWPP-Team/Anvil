@@ -20,6 +20,7 @@ CLASS com/corrodinggames/rts/gameFramework/e com/corrodinggames/rts/gameFramewor
 	FIELD q allowedTeamMask S
 	FIELD r hasSystemAction Z
 	FIELD s changeStepRate F
+	FIELD t PENDING_systemCommandFloat F
 	FIELD u systemActionId I
 	FIELD v units Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD w cachedPaths Lcom/corrodinggames/rts/gameFramework/utility/m;

@@ -17,3 +17,4 @@ CLASS a/a/a/i net/rudp/impl/Timer
 	METHOD d reset ()V
 	METHOD e cancel ()V
 	METHOD f terminate ()V
+	METHOD run run ()V

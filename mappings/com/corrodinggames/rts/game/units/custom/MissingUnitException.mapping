@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/game/units/custom/bd com/corrodinggames/rts/game/units/custom/MissingUnitException
+	COMMENT DetailedUnitConfigException - UnitConfigException variant carrying the unit name explicitly: extra field a (the unit/mod name) in addition to the inherited context strings; the (name, message) constructor stores the message in the parent's b. [shape verified]
+	FIELD a unitName Ljava/lang/String;

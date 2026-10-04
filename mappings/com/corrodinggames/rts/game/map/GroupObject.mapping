@@ -1,2 +1,28 @@
 CLASS com/corrodinggames/rts/game/b/a com/corrodinggames/rts/game/map/GroupObject
 	COMMENT Tiled object parsed from an ObjectGroup; may spawn a unit/customUnit at x/y with team/rotation. [iOS-confirmed]
+	FIELD a index I
+	FIELD b name Ljava/lang/String;
+	FIELD c nameLowercase Ljava/lang/String;
+	FIELD d type Ljava/lang/String;
+	FIELD e x F
+	FIELD f y F
+	FIELD g width F
+	FIELD h height F
+	FIELD i rotation F
+	FIELD j boundingRect Landroid/graphics/RectF;
+	FIELD k gid I
+	FIELD l tileSet Lcom/corrodinggames/rts/game/b/j;
+	FIELD m localTileId I
+	FIELD n properties Ljava/util/Properties;
+	FIELD o consumedPropertyNames Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD p imageSource Ljava/lang/String;
+	METHOD a getUnconsumedPropertyNames ()[Ljava/lang/String;
+	METHOD a containsUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a addConsumedPropertyName (Ljava/lang/String;)V
+	METHOD a createLocaleStringFromProperty (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/bb;)Lcom/corrodinggames/rts/game/units/custom/bb;
+	METHOD a getPropertyOrDefault (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a parseFloatAttribute (Lorg/w3c/dom/Element;Ljava/lang/String;)F
+	METHOD b getDescription ()Ljava/lang/String;
+	METHOD b getProperty (Ljava/lang/String;)Ljava/lang/String;
+	METHOD c getIntProperty (Ljava/lang/String;)Ljava/lang/Integer;
+	METHOD d reportTriggerError (Ljava/lang/String;)V

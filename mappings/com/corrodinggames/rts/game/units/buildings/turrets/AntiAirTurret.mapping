@@ -1,2 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/d/a/a com/corrodinggames/rts/game/units/buildings/turrets/AntiAirTurret
 	COMMENT Anti-air turret building (extends Turret): images anti_air_top / anti_air_top_l2, UnitType.antiAirTurret / antiAirTurretT2, only targets air. [iOS-confirmed]
+	FIELD a antiAirTopImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b antiAirTopLevel2Image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c antiAirIconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d antiAirIconTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e upgradeToLevel2Action Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD f specialActions Ljava/util/ArrayList;
+	METHOD b loadAntiAirTurretImages ()V
+	CLASS 1 1

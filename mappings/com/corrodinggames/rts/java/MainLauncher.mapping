@@ -1,1 +1,40 @@
 CLASS com/corrodinggames/rts/java/Main com/corrodinggames/rts/java/MainLauncher
+	FIELD a PENDING_renderer2Flag Z
+	FIELD b PENDING_staticTrue Z
+	FIELD c gameTitle Ljava/lang/String;
+	FIELD d gameView Lcom/corrodinggames/rts/java/d;
+	FIELD e buildNumber Ljava/lang/String;
+	FIELD f runnableQueue Lcom/corrodinggames/rts/gameFramework/utility/aj;
+	FIELD g stdinLoopRunning Z
+	FIELD h networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	FIELD i guiEngine Lcom/corrodinggames/rts/java/b/a;
+	FIELD j mainGame Lcom/corrodinggames/rts/java/u;
+	FIELD k gameContainer Lcom/corrodinggames/rts/java/b;
+	FIELD l args [Ljava/lang/String;
+	FIELD m instance Lcom/corrodinggames/rts/java/Main;
+	FIELD n stdinErrorCount I
+	FIELD o PENDING_nanoTimestamp J
+	FIELD p libRocket Lcom/corrodinggames/rts/java/d/a;
+	FIELD q loadCallback Lcom/corrodinggames/rts/gameFramework/n;
+	FIELD r PENDING_thread Ljava/lang/Thread;
+	FIELD s PENDING_booleanS Z
+	FIELD t PENDING_syncObject Ljava/lang/Object;
+	FIELD u PENDING_booleanU Z
+	FIELD v PENDING_intV I
+	METHOD a parseArguments ([Ljava/lang/String;)V
+	METHOD a log (Ljava/lang/String;)V
+	METHOD f readStdinCommands ()V
+	METHOD g PENDING_initAndWait ()V
+	METHOD main main ([Ljava/lang/String;)V
+	CLASS 1
+		METHOD run run ()V
+	CLASS 2
+		METHOD run run ()V
+	CLASS 3
+		METHOD run run ()V
+	CLASS 4
+		METHOD run run ()V
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

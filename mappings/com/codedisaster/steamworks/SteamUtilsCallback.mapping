@@ -1,0 +1,2 @@
+CLASS com/codedisaster/steamworks/SteamUtilsCallback
+	METHOD onSteamShutdown onSteamShutdown ()V

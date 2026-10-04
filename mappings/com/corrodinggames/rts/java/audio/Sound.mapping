@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/java/audio/Sound
+	METHOD dispose dispose ()V
+	METHOD getBytesUsed getBytesUsed ()I
+	METHOD loop loop ()J
+	METHOD loop loop (F)J
+	METHOD loop loop (FFF)J
+	METHOD pause pause ()V
+	METHOD pause pause (J)V
+	METHOD play play ()J
+	METHOD play play (F)J
+	METHOD play play (FFF)J
+	METHOD resume resume ()V
+	METHOD resume resume (J)V
+	METHOD setLooping setLooping (JZ)V
+	METHOD setPan setPan (JFF)V
+	METHOD setPitch setPitch (JF)V
+	METHOD setVolume setVolume (JF)V
+	METHOD stop stop ()V
+	METHOD stop stop (J)V

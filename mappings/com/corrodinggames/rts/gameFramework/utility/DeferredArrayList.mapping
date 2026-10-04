@@ -26,3 +26,4 @@ CLASS com/corrodinggames/rts/gameFramework/utility/o com/corrodinggames/rts/game
 	METHOD size size ()I
 	METHOD toArray toArray ()[Ljava/lang/Object;
 	METHOD toArray toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+	CLASS 1 1

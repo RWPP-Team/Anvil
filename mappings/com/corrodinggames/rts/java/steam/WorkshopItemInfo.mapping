@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/java/c/h com/corrodinggames/rts/java/steam/WorkshopItemInfo
+	FIELD a publishedFileId Lcom/codedisaster/steamworks/SteamPublishedFileID;
+	FIELD b firstSeenAt J
+	FIELD c titleLoaded Z
+	FIELD d title Ljava/lang/String;

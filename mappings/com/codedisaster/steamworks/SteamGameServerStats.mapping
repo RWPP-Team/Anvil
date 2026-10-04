@@ -1,1 +1,22 @@
 CLASS com/codedisaster/steamworks/SteamGameServerStats
+	METHOD clearUserAchievement clearUserAchievement (JJLjava/lang/String;)Z
+	METHOD clearUserAchievement clearUserAchievement (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;)Z
+	METHOD createCallback createCallback (Lcom/codedisaster/steamworks/SteamGameServerStatsCallbackAdapter;)J
+	METHOD getUserAchievement getUserAchievement (JJLjava/lang/String;[Z)Z
+	METHOD getUserAchievement getUserAchievement (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;Z)Z
+	METHOD getUserStat getUserStat (JJLjava/lang/String;[F)Z
+	METHOD getUserStat getUserStat (JJLjava/lang/String;[I)Z
+	METHOD getUserStatF getUserStatF (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;F)F
+	METHOD getUserStatI getUserStatI (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;I)I
+	METHOD requestUserStats requestUserStats (JJ)J
+	METHOD requestUserStats requestUserStats (Lcom/codedisaster/steamworks/SteamID;)Lcom/codedisaster/steamworks/SteamAPICall;
+	METHOD setUserAchievement setUserAchievement (JJLjava/lang/String;)Z
+	METHOD setUserAchievement setUserAchievement (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;)Z
+	METHOD setUserStat setUserStat (JJLjava/lang/String;F)Z
+	METHOD setUserStat setUserStat (JJLjava/lang/String;I)Z
+	METHOD setUserStatF setUserStatF (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;F)Z
+	METHOD setUserStatI setUserStatI (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;I)Z
+	METHOD storeUserStats storeUserStats (JJ)J
+	METHOD storeUserStats storeUserStats (Lcom/codedisaster/steamworks/SteamID;)Lcom/codedisaster/steamworks/SteamAPICall;
+	METHOD updateUserAvgRateStat updateUserAvgRateStat (JJLjava/lang/String;FD)Z
+	METHOD updateUserAvgRateStat updateUserAvgRateStat (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;FD)Z

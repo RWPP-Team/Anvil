@@ -10,3 +10,6 @@ CLASS com/corrodinggames/rts/gameFramework/c/a com/corrodinggames/rts/gameFramew
 	FIELD h serverSocket Ljava/net/ServerSocket;
 	FIELD i running Z
 	FIELD j connections Ljava/util/ArrayList;
+	METHOD a handleCommand (Ljava/lang/String;)Ljava/lang/String;
+	METHOD b registerUpdateHook ()V
+	METHOD run run ()V

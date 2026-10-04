@@ -1,0 +1,4 @@
+CLASS com/codedisaster/steamworks/SteamHTTPCallbackAdapter
+	METHOD onHTTPRequestCompleted onHTTPRequestCompleted (JJZII)V
+	METHOD onHTTPRequestDataReceived onHTTPRequestDataReceived (JJII)V
+	METHOD onHTTPRequestHeadersReceived onHTTPRequestHeadersReceived (JJ)V

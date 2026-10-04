@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/java/q com/corrodinggames/rts/java/OpenALSoundEffect
+	FIELD a sound Lcom/corrodinggames/rts/java/audio/Sound;
+	FIELD b soundFactory Lcom/corrodinggames/rts/java/o;
+	METHOD b loop (FFIIF)V

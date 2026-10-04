@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/e/b com/corrodinggames/rts/game/units/custom/resources/ResourceSeparator
+	FIELD a none Lcom/corrodinggames/rts/game/units/custom/e/b;
+	FIELD b space Lcom/corrodinggames/rts/game/units/custom/e/b;
+	FIELD c comma Lcom/corrodinggames/rts/game/units/custom/e/b;

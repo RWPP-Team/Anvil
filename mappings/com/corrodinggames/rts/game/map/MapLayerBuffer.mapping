@@ -1,2 +1,37 @@
 CLASS com/corrodinggames/rts/game/b/c com/corrodinggames/rts/game/map/MapLayerBuffer
 	COMMENT Sliding buffer of layer bitmaps around the camera; redraws tiles. Flattened inner class of Map. [iOS-confirmed]
+	FIELD a layerBufferCount I
+	FIELD b stagingImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c stagingCanvas Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD d bufferGrid [[Lcom/corrodinggames/rts/game/b/d;
+	FIELD e drawPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD f originX I
+	FIELD g originY I
+	FIELD h cellBitmapSize I
+	FIELD i cellWorldSize I
+	FIELD j cellPixelSize I
+	FIELD k cellContentWorldSize I
+	FIELD l inverseCellSize F
+	FIELD m bufferScale F
+	FIELD n redrawBacklog Z
+	FIELD p nextBufferId I
+	METHOD a recenterBuffers ()V
+	METHOD a updateAndDraw (F)V
+	METHOD a shiftRows (I)V
+	METHOD a getBuffer (II)Lcom/corrodinggames/rts/game/b/d;
+	METHOD a markRectDirty (IIIIZ)V
+	METHOD a drawScorchMarks (IILcom/corrodinggames/rts/gameFramework/m/y;)V
+	METHOD a markTileDirty (IIZ)V
+	METHOD a redrawScorchMark (Lcom/corrodinggames/rts/game/l;)V
+	METHOD b assignCellCoords ()V
+	METHOD b shiftColumns (I)V
+	METHOD b redrawCellFog (II)V
+	METHOD b PENDING_cellSecondPass (IILcom/corrodinggames/rts/gameFramework/m/y;)V
+	METHOD c invalidateAll ()V
+	METHOD c resizeBufferGrid (I)V
+	METHOD c redrawCell (II)V
+	METHOD c redrawCell (IILcom/corrodinggames/rts/gameFramework/m/y;)V
+	METHOD d setupLayerBuffers ()V
+	METHOD e disableSmoothFogFading ()V
+	METHOD f initMissingLayerBufferImages ()V
+	METHOD g getBufferScale ()F

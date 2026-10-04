@@ -1,1 +1,72 @@
 CLASS com/corrodinggames/rts/game/units/h com/corrodinggames/rts/game/units/EditorUnit
+	FIELD a cornerPoints [Landroid/graphics/PointF;
+	FIELD A enableAIDebugAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD b cornerPointsOld [Landroid/graphics/PointF;
+	FIELD B enableTriggerDebugAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD c aiFrozen Z
+	FIELD C clearSaveHistoryAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD d paintGreen Landroid/graphics/Paint;
+	FIELD D editorSpecialActions Ljava/util/ArrayList;
+	FIELD e paintRed Landroid/graphics/Paint;
+	FIELD E modFilter Lcom/corrodinggames/rts/gameFramework/i/b;
+	FIELD f paintWhite Landroid/graphics/Paint;
+	FIELD F category Lcom/corrodinggames/rts/game/units/o;
+	FIELD g searchIcon Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD G tab Lcom/corrodinggames/rts/game/units/n;
+	FIELD h reloadUnitsAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD H PENDING_stringH Ljava/lang/String;
+	FIELD i reloadOnlyActiveUnitsAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD j unitCloneAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD k removeUnitsAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD K actionFilter Lcom/corrodinggames/rts/game/units/a/b;
+	FIELD l killUnitsAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD m finishQueueAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD n nukeAtAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD o freezeAIAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD p changeAllianceAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD q startRecordingAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD r PENDING_stringR Ljava/lang/String;
+	FIELD s startReplayPlaybackAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD t hideInterfaceAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD u freezeAllAIAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD v pauseGameAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD w slowGameAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD x fastForwardAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD y searchAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD z enableDebugAction Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a updateWorkBeamPoints (FLcom/corrodinggames/rts/game/units/d;)V
+	METHOD a isEditorAction (Lcom/corrodinggames/rts/game/units/a/s;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a copyFrom (Lcom/corrodinggames/rts/game/units/h;)V
+	METHOD a buildSpecialActionList (Ljava/util/ArrayList;I)V
+	METHOD K loadSearchIcon ()V
+	METHOD L getDebugEditorUnit ()Lcom/corrodinggames/rts/game/units/h;
+	METHOD M applyAIFreeze ()V
+	METHOD w isRecordingOrPlaying ()Z
+	CLASS 1 1
+	CLASS 10 10
+	CLASS 11 11
+	CLASS 12 12
+	CLASS 13 13
+	CLASS 14 14
+	CLASS 15 15
+	CLASS 16 16
+	CLASS 17 17
+	CLASS 18 18
+	CLASS 19 19
+	CLASS 2 2
+		CLASS 1 1
+	CLASS 20 20
+	CLASS 21 21
+	CLASS 22 22
+	CLASS 23 23
+	CLASS 3 3
+		CLASS 1 1
+		CLASS 2 2
+		CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 6 6
+	CLASS 7 7
+	CLASS 8 8
+	CLASS 9 9
+		CLASS 1 1

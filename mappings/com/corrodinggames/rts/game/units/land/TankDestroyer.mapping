@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/e/o com/corrodinggames/rts/game/units/land/TankDestroyer
+	FIELD a deadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d teamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e PENDING_rectScratch Landroid/graphics/Rect;
+	METHOD f loadImages ()V

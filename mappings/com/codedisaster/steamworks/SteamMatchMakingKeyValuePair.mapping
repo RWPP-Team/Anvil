@@ -1,1 +1,5 @@
 CLASS com/codedisaster/steamworks/SteamMatchMakingKeyValuePair
+	FIELD key key Ljava/lang/String;
+	FIELD value value Ljava/lang/String;
+	METHOD getKey getKey ()Ljava/lang/String;
+	METHOD getValue getValue ()Ljava/lang/String;

@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/java/audio/AudioDevice
+	METHOD dispose dispose ()V
+	METHOD getLatency getLatency ()I
+	METHOD isMono isMono ()Z
+	METHOD setVolume setVolume (F)V
+	METHOD writeSamples writeSamples ([FII)V
+	METHOD writeSamples writeSamples ([SII)V

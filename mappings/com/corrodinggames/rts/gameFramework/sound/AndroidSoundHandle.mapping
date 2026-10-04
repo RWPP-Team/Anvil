@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/a/b com/corrodinggames/rts/gameFramework/sound/AndroidSoundHandle
+	FIELD a androidFactory Lcom/corrodinggames/rts/gameFramework/a/a;
+	FIELD b soundId I
+	FIELD c factory Lcom/corrodinggames/rts/gameFramework/a/a;
+	METHOD b playSound (FFIIF)V

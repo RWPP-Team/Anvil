@@ -29,3 +29,5 @@ CLASS com/corrodinggames/rts/game/units/custom/e/d com/corrodinggames/rts/game/u
 	FIELD x displayTextAppendResourceWithGap Z
 	FIELD y appendResourceWhenThisZero Z
 	FIELD z equivalentGlobalResourceForAI Ljava/lang/String;
+	METHOD a linkReferences (Lcom/corrodinggames/rts/game/units/custom/l;)V
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)V

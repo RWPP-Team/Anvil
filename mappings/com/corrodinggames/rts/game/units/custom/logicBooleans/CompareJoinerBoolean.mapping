@@ -1,1 +1,22 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean
+	CLASS CompareBooleanOnly
+	CLASS CompareEqualBoolean
+	CLASS CompareEqualNumbers
+	CLASS CompareEqualStrings
+	CLASS CompareEqualUnits
+	CLASS CompareGreaterThanNumbers
+	CLASS CompareGreaterThanOrEqualNumbers
+	CLASS CompareLessThanNumbers
+	CLASS CompareLessThanOrEqualNumbers
+	CLASS CompareNotEqualBoolean
+	CLASS CompareNotEqualNumbers
+	CLASS CompareNotEqualStrings
+	CLASS CompareNotEqualUnits
+	CLASS CompareNumbers
+	CLASS MathAddJoinerBoolean
+	CLASS MathDivideJoinerBoolean
+	CLASS MathJoinerBoolean
+	CLASS MathModulusJoinerBoolean
+	CLASS MathMultiplyJoinerBoolean
+	CLASS MathSubtractJoinerBoolean
+	CLASS StringJoinerBoolean

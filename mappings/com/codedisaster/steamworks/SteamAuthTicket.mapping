@@ -1,1 +1,3 @@
 CLASS com/codedisaster/steamworks/SteamAuthTicket
+	FIELD AuthTicketInvalid AuthTicketInvalid J
+	METHOD isValid isValid ()Z

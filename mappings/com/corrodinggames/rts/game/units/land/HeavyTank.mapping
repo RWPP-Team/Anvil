@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/e/f com/corrodinggames/rts/game/units/land/HeavyTank
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e moveAnimationFrame I
+	FIELD f moveAnimationTimer F
+	FIELD g dustTimer F
+	FIELD h spriteFrameRect Landroid/graphics/Rect;
+	METHOD f loadImages ()V
+	METHOD K spawnDustTrail ()V

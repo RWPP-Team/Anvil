@@ -5,16 +5,23 @@ CLASS com/corrodinggames/rts/gameFramework/m/e com/corrodinggames/rts/gameFramew
 	FIELD c teamImagesHueShift [Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD d id I
 	FIELD e version I
+	FIELD f flushedVersion I
 	FIELD g name Ljava/lang/String;
+	FIELD h PENDING_integer_h Ljava/lang/Integer;
 	FIELD i shader Lcom/corrodinggames/rts/gameFramework/m/ae;
 	FIELD j pixelData [I
 	FIELD k bitmap Landroid/graphics/Bitmap;
+	FIELD l PENDING_boolean_l Z
+	FIELD m hasTransparency Z
+	FIELD n PENDING_boolean_n Z
+	FIELD o PENDING_boolean_o Z
 	FIELD p width I
 	FIELD q height I
 	FIELD r halfWidth I
 	FIELD s halfHeight I
 	FIELD t halfWidthFloat F
 	FIELD u halfHeightFloat F
+	FIELD v PENDING_boolean_v Z
 	FIELD w keepInGpuMemory Z
 	FIELD x nextId I
 	METHOD a getName ()Ljava/lang/String;
@@ -27,21 +34,31 @@ CLASS com/corrodinggames/rts/gameFramework/m/e com/corrodinggames/rts/gameFramew
 	METHOD a setShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
 	METHOD a copyDimensionsFrom (Lcom/corrodinggames/rts/gameFramework/m/e;)V
 	METHOD a setName (Ljava/lang/String;)V
+	METHOD a PENDING_setFlagO (Z)V
 	METHOD A isErrorImage ()Z
 	METHOD b getBitmap ()Landroid/graphics/Bitmap;
 	METHOD b setKeepInGpuMemory (Z)V
 	METHOD B getShader ()Lcom/corrodinggames/rts/gameFramework/m/ae;
 	METHOD c getLoadedImage ()Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD d isKeepInGpuMemory ()Z
+	METHOD e PENDING_onFlagOChanged ()V
+	METHOD f hasTransparency ()Z
 	METHOD g computeHalfSizes ()V
 	METHOD i ensurePixelData ()V
 	METHOD j loadPixelData ()V
+	METHOD k PENDING_k ()Z
 	METHOD l getHeight ()I
 	METHOD m getWidth ()I
+	METHOD n PENDING_noop_n ()V
 	METHOD o disposeBitmap ()V
 	METHOD p commitPixelData ()V
+	METHOD q PENDING_noop_q ()V
 	METHOD r freePixelData ()V
 	METHOD s disposePixelData ()V
+	METHOD t PENDING_noop_t ()V
 	METHOD u getMemoryUsage ()I
 	METHOD v invalidateTeamImages ()V
 	METHOD w preload ()V
+	METHOD x PENDING_noop_x ()V
+	METHOD y PENDING_noop_y ()V
+	METHOD z PENDING_noop_z ()V

@@ -1,2 +1,25 @@
 CLASS com/corrodinggames/rts/game/b/d com/corrodinggames/rts/game/map/MapLayerBufferBufferImage
 	COMMENT One buffered tile bitmap within Map.LayerBuffer (image + fade-out image). Flattened inner class. [iOS-confirmed]
+	FIELD a tileCanvas Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD b bufferId I
+	FIELD c redrawCount I
+	FIELD d tileBitmap Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e fadeOutBitmap Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f fadeOutCanvas Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD g fadeOutAlpha F
+	FIELD h fadeOutPaint Landroid/graphics/Paint;
+	FIELD i cellX I
+	FIELD j cellY I
+	FIELD k dirty Z
+	FIELD l dirtyWithFade Z
+	FIELD m fadeDelayCounter I
+	FIELD n quickFogRedrawDone Z
+	FIELD o srcRect Landroid/graphics/Rect;
+	FIELD p screenRect Landroid/graphics/Rect;
+	FIELD q destRectF Landroid/graphics/RectF;
+	FIELD r pixelRect Landroid/graphics/Rect;
+	FIELD s parentBuffer Lcom/corrodinggames/rts/game/b/c;
+	METHOD a createFadeOutBitmap ()V
+	METHOD b getPixelRect ()Landroid/graphics/Rect;
+	METHOD c getPixelX ()I
+	METHOD d getPixelY ()I

@@ -1,0 +1,10 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/f com/corrodinggames/rts/game/units/custom/actions/outcomes/ChatMessages
+	FIELD a showMessageToPlayer Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD b showMessageToAllPlayers Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD c showMessageToAllEnemyPlayers Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD d showQuickWarLogToPlayer Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD e showQuickWarLogToAllPlayers Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD f debugMessage Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD g variablePattern Ljava/util/regex/Pattern;
+	METHOD a PENDING_formatMessage (Lcom/corrodinggames/rts/game/units/custom/j;Ljava/lang/String;)Ljava/lang/String;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

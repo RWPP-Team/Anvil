@@ -29,3 +29,7 @@ CLASS com/corrodinggames/rts/gameFramework/bs com/corrodinggames/rts/gameFramewo
 	FIELD x draw_waiting_on_update Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD y load_total Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD z load_map Lcom/corrodinggames/rts/gameFramework/bs;
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

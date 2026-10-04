@@ -2,3 +2,5 @@ CLASS com/corrodinggames/rts/gameFramework/ap com/corrodinggames/rts/gameFramewo
 	FIELD a mediaPlayer Landroid/media/MediaPlayer;
 	FIELD b trackHandle Lcom/corrodinggames/rts/gameFramework/ao;
 	FIELD c factory Lcom/corrodinggames/rts/gameFramework/an;
+	CLASS 1 1
+	CLASS 2 2

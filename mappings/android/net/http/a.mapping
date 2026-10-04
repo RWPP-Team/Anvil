@@ -1,0 +1,2 @@
+CLASS android/net/http/a
+	METHOD process process (Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V

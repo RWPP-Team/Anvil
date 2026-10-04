@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/a/h com/corrodinggames/rts/gameFramework/sound/SoundFactory
+	FIELD h soundHandles Ljava/util/HashMap;
+	METHOD a startThreads ()V
+	METHOD a createSound (I)Lcom/corrodinggames/rts/gameFramework/a/i;
+	METHOD a setContext (Landroid/content/Context;)V
+	METHOD a createSoundFromStream (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/utility/j;Z)Lcom/corrodinggames/rts/gameFramework/a/i;

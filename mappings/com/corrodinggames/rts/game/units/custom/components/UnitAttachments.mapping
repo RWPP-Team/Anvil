@@ -1,0 +1,9 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/m com/corrodinggames/rts/game/units/custom/components/UnitAttachments
+	FIELD a INSTANCE Lcom/corrodinggames/rts/game/units/custom/b/m;
+	METHOD a parseSlot (Lcom/corrodinggames/rts/game/units/custom/b/n;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a getAttachedUnit (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/b/n;)Lcom/corrodinggames/rts/game/units/y;
+	METHOD a setAttachedUnit (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/b/n;Lcom/corrodinggames/rts/game/units/y;)Z
+	METHOD a addActionsFromAttachedUnits (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/gameFramework/utility/m;Z)V
+	METHOD a getAttachmentSlot (Lcom/corrodinggames/rts/game/units/custom/j;S)Lcom/corrodinggames/rts/game/units/custom/b/n;
+	METHOD a detachAllUnits (Lcom/corrodinggames/rts/game/units/custom/j;Z)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;)V

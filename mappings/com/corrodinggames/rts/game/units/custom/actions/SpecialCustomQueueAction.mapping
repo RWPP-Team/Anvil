@@ -1,0 +1,16 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/c com/corrodinggames/rts/game/units/custom/actions/SpecialCustomQueueAction
+	COMMENT Runtime action state (extends NoCostAction); built from CustomActionConfig; evaluates condition keys values lockedInGame_1/2/3, isAvailable, isGuiBlinking, plus CustomPrice cost/refund. [evidence-based job name]
+	FIELD b isAvailable Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD c lockedInGame_1 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD d lockedReason_1 Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD e lockedInGame_2 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD f lockedReason_2 Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD g lockedInGame_3 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD h lockedReason_3 Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD j isGuiBlinking Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD k customPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD l applyPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD m secondaryPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD a isLockedInGame (Lcom/corrodinggames/rts/game/units/am;I)Z
+	METHOD a createFromConfig (Lcom/corrodinggames/rts/game/units/custom/a/d;)Lcom/corrodinggames/rts/game/units/a/a;
+	METHOD a createFromTextEntry (Lcom/corrodinggames/rts/game/units/custom/p;)Lcom/corrodinggames/rts/game/units/a/a;

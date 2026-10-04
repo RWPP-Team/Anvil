@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/java/g com/corrodinggames/rts/java/GraphicsState
+	FIELD a red F
+	FIELD b green F
+	FIELD c blue F
+	FIELD d alpha F
+	FIELD e extraAlpha F
+	FIELD f clipRect Landroid/graphics/RectF;
+	FIELD g shadowRed F
+	FIELD h shadowGreen F
+	METHOD a copyFrom (Lcom/corrodinggames/rts/java/g;)V

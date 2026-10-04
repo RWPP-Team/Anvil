@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/custom/s com/corrodinggames/rts/game/units/custom/CustomUnitMetadata_CustomUnitTriggerCheckRate
+	FIELD a everyFrame Lcom/corrodinggames/rts/game/units/custom/s;
+	FIELD b every4Frames Lcom/corrodinggames/rts/game/units/custom/s;
+	FIELD c every8Frames Lcom/corrodinggames/rts/game/units/custom/s;

@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/b/h com/corrodinggames/rts/gameFramework/canvasgl/ShaderSource
+	METHOD a getVertexShaderSource ()Ljava/lang/String;
+	METHOD b getFragmentShaderSource ()Ljava/lang/String;

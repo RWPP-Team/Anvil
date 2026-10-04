@@ -1,2 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/n com/corrodinggames/rts/game/units/EditorUnitTab
 	COMMENT Editor unit-picker tab enum: all, types, terrain, modded, search, actions. Each constant filters UnitTypeInterface (a(...)); a(boolean)/a(int,int) wrap around skipping disabled tabs (b(), logs "jumpBy recursion limit hit"). Held in EditorUnit's tab field. [evidence-based job name]
+	FIELD a all Lcom/corrodinggames/rts/game/units/n;
+	FIELD b types Lcom/corrodinggames/rts/game/units/n;
+	FIELD c terrain Lcom/corrodinggames/rts/game/units/n;
+	FIELD d modded Lcom/corrodinggames/rts/game/units/n;
+	FIELD e search Lcom/corrodinggames/rts/game/units/n;
+	FIELD f actions Lcom/corrodinggames/rts/game/units/n;
+	METHOD a getName ()Ljava/lang/String;
+	METHOD a jumpBy (II)Lcom/corrodinggames/rts/game/units/n;
+	METHOD a matches (Lcom/corrodinggames/rts/game/units/as;)Z
+	METHOD a getAdjacent (Z)Lcom/corrodinggames/rts/game/units/n;
+	METHOD b isEnabled ()Z
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 6 6

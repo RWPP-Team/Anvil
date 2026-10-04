@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/d com/corrodinggames/rts/gameFramework/gui/elements/UIClickType
+	FIELD a mouseMove Lcom/corrodinggames/rts/gameFramework/f/a/d;
+	FIELD b mouseClick Lcom/corrodinggames/rts/gameFramework/f/a/d;
+	FIELD c mouseUp Lcom/corrodinggames/rts/gameFramework/f/a/d;
+	FIELD d mouseDown Lcom/corrodinggames/rts/gameFramework/f/a/d;

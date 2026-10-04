@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/q com/corrodinggames/rts/gameFramework/utility/DeferredArrayListChangeType
+	FIELD a add Lcom/corrodinggames/rts/gameFramework/utility/q;
+	FIELD b remove Lcom/corrodinggames/rts/gameFramework/utility/q;

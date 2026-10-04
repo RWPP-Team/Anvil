@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/a/i com/corrodinggames/rts/gameFramework/sound/SoundHandle
+	FIELD d volume F
+	FIELD e name Ljava/lang/String;
+	FIELD f alwaysAudible Z
+	METHOD a PENDING_getInt ()I
+	METHOD a play (FFIIF)V

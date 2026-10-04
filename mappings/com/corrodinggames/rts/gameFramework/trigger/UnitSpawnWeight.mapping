@@ -1,3 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/n/k com/corrodinggames/rts/gameFramework/trigger/UnitSpawnWeight
 	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;
 	FIELD b weight F
+	FIELD c triggerEngine Lcom/corrodinggames/rts/gameFramework/n/f;

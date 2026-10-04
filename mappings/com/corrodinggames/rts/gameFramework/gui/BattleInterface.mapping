@@ -11,11 +11,13 @@ CLASS com/corrodinggames/rts/gameFramework/f/a com/corrodinggames/rts/gameFramew
 	FIELD ad lastActionBarUnitStamp J
 	FIELD aD commonMenu Lcom/corrodinggames/rts/gameFramework/f/v;
 	FIELD ae actionBarScrollInertia F
+	FIELD af actionBarScrollPosition F
 	FIELD ag textUnselectAll Ljava/lang/String;
 	FIELD ah textAllyUnit Ljava/lang/String;
 	FIELD ai textEnemyUnit Ljava/lang/String;
 	FIELD aj textNeutralUnit Ljava/lang/String;
 	FIELD ak textOwnedBy Ljava/lang/String;
+	FIELD al unitCapReachedText Ljava/lang/String;
 	FIELD am screenMessage Ljava/lang/String;
 	FIELD an screenMessageTimer F
 	FIELD ao actionBarScrollDelta F
@@ -42,6 +44,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/a com/corrodinggames/rts/gameFramew
 	FIELD F zoomPressTimer F
 	FIELD g dragSelectRectPaint Landroid/graphics/Paint;
 	FIELD G mouseWheelZoomAccum F
+	FIELD h topButtonPaint Landroid/graphics/Paint;
 	FIELD H actionButtonSlotCounter I
 	FIELD i tempFillPaint Landroid/graphics/Paint;
 	FIELD I pinchActive Z

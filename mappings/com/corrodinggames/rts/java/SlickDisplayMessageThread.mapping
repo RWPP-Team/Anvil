@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/java/c com/corrodinggames/rts/java/SlickDisplayMessageThread
+	METHOD run run ()V

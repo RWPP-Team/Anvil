@@ -12,3 +12,14 @@ CLASS com/corrodinggames/rts/gameFramework/n/e com/corrodinggames/rts/gameFramew
 	FIELD k trigger_basic Lcom/corrodinggames/rts/gameFramework/n/e;
 	METHOD a getSerializedName ()Ljava/lang/String;
 	METHOD a fromString (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/n/e;
+	CLASS 1 1
+	CLASS 10 10
+	CLASS 11 11
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 6 6
+	CLASS 7 7
+	CLASS 8 8
+	CLASS 9 9

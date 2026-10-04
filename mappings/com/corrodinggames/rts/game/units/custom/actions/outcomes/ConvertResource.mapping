@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/g com/corrodinggames/rts/game/units/custom/actions/outcomes/ConvertResource
+	FIELD a convertFrom Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD b convertTo Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD c minAmount D
+	FIELD d maxAmount D
+	FIELD e multiplyAmountBy F
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

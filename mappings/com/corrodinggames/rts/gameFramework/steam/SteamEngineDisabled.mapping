@@ -1,1 +1,18 @@
 CLASS com/corrodinggames/rts/gameFramework/o/a com/corrodinggames/rts/gameFramework/steam/SteamEngineDisabled
+	FIELD a instance Lcom/corrodinggames/rts/gameFramework/o/a;
+	METHOD a getInstance ()Lcom/corrodinggames/rts/gameFramework/o/a;
+	METHOD a update (F)V
+	METHOD a showWorkshopItemPage (Lcom/corrodinggames/rts/gameFramework/i/b;)V
+	METHOD a uploadModToWorkshop (Lcom/corrodinggames/rts/gameFramework/i/b;ZLjava/lang/String;)V
+	METHOD b init ()V
+	METHOD b createWorkshopItem (Lcom/corrodinggames/rts/gameFramework/i/b;)V
+	METHOD c getPlayerName ()Ljava/lang/String;
+	METHOD d disableSteam ()V
+	METHOD f PENDING_returnsFalse ()Z
+	METHOD g showInviteDialog ()V
+	METHOD h alertNotEnabled ()V
+	METHOD i createLobby ()V
+	METHOD j stopLobby ()V
+	METHOD k pollSubscribedItems ()V
+	METHOD l loadWorkshopMods ()V
+	METHOD m showWorkshopBrowsePage ()V

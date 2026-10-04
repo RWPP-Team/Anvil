@@ -1,0 +1,4 @@
+CLASS android/app/Application
+	METHOD onConfigurationChanged onConfigurationChanged (Landroid/content/res/Configuration;)V
+	METHOD onLowMemory onLowMemory ()V
+	METHOD onTrimMemory onTrimMemory (I)V

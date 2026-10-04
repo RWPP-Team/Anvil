@@ -1,0 +1,14 @@
+CLASS com/codedisaster/steamworks/SteamUGCCallback
+	METHOD onCreateItem onCreateItem (Lcom/codedisaster/steamworks/SteamPublishedFileID;ZLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onDownloadItemResult onDownloadItemResult (ILcom/codedisaster/steamworks/SteamPublishedFileID;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onGetUserItemVote onGetUserItemVote (Lcom/codedisaster/steamworks/SteamPublishedFileID;ZZZLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onRequestUGCDetails onRequestUGCDetails (Lcom/codedisaster/steamworks/SteamUGCDetails;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onSetUserItemVote onSetUserItemVote (Lcom/codedisaster/steamworks/SteamPublishedFileID;ZLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onStartPlaytimeTracking onStartPlaytimeTracking (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onStopPlaytimeTracking onStopPlaytimeTracking (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onStopPlaytimeTrackingForAllItems onStopPlaytimeTrackingForAllItems (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onSubmitItemUpdate onSubmitItemUpdate (ZLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onSubscribeItem onSubscribeItem (Lcom/codedisaster/steamworks/SteamPublishedFileID;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onUGCQueryCompleted onUGCQueryCompleted (Lcom/codedisaster/steamworks/SteamUGCQuery;IIZLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onUnsubscribeItem onUnsubscribeItem (Lcom/codedisaster/steamworks/SteamPublishedFileID;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onUserFavoriteItemsListChanged onUserFavoriteItemsListChanged (Lcom/codedisaster/steamworks/SteamPublishedFileID;ZLcom/codedisaster/steamworks/SteamResult;)V

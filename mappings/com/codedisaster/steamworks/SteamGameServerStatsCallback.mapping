@@ -1,1 +1,4 @@
 CLASS com/codedisaster/steamworks/SteamGameServerStatsCallback
+	METHOD onStatsReceived onStatsReceived (Lcom/codedisaster/steamworks/SteamResult;Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD onStatsStored onStatsStored (Lcom/codedisaster/steamworks/SteamResult;Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD onStatsUnloaded onStatsUnloaded (Lcom/codedisaster/steamworks/SteamID;)V

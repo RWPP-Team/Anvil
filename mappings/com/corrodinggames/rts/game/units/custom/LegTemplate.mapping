@@ -42,3 +42,5 @@ CLASS com/corrodinggames/rts/game/units/custom/ba com/corrodinggames/rts/game/un
 	FIELD w resetAngle F
 	FIELD x middleImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD y middleImageTeamColors [Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a copyFrom (Lcom/corrodinggames/rts/game/units/custom/ba;)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/ba;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;ZLjava/util/ArrayList;)V

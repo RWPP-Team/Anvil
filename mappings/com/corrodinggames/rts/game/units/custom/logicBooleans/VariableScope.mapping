@@ -1,1 +1,127 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope
+	FIELD emptyData emptyData [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;
+	FIELD emptyNames emptyNames [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+	FIELD emptyVariableScope emptyVariableScope Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;
+	FIELD nullOrMissingString nullOrMissingString Ljava/lang/String;
+	FIELD variableData variableData [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;
+	FIELD variableDataNull variableDataNull Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDataNull;
+	FIELD variableNames variableNames [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+	METHOD clearAllData clearAllData ()V
+	METHOD createGenericKeyValueWriter createGenericKeyValueWriter (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriter;
+	METHOD createMemoryNameList createMemoryNameList (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryNames;
+	METHOD createMemoryWriter createMemoryWriter (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriter;
+	METHOD debugMemory debugMemory (ZZ)Ljava/lang/String;
+	METHOD getAsLogicBoolean getAsLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD getBoolean getBoolean (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)Z
+	METHOD getDataObjectRaw getDataObjectRaw (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;
+	METHOD getNumber getNumber (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)D
+	METHOD getSafeUnitReferenceForStorage getSafeUnitReferenceForStorage (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD getString getString (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)Ljava/lang/String;
+	METHOD getUnit getUnit (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD getUserType getUserType (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+	METHOD isEmpty isEmpty ()Z
+	METHOD isMarker isMarker (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD readIn readIn (Lcom/corrodinggames/rts/gameFramework/j/k;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;
+	METHOD readInDynamicData readInDynamicData (Lcom/corrodinggames/rts/gameFramework/j/k;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;
+	METHOD readInUnitOrPlaceholder readInUnitOrPlaceholder (Lcom/corrodinggames/rts/gameFramework/j/k;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD setArrayDataRaw setArrayDataRaw (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;I)V
+	METHOD setDataRaw setDataRaw (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;)V
+	METHOD setFromLogicBoolean setFromLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)V
+	METHOD setUnit setUnit (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDefinition;Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD writeOut writeOut (Lcom/corrodinggames/rts/gameFramework/j/as;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;)V
+	METHOD writeOutDynamicData writeOutDynamicData (Lcom/corrodinggames/rts/gameFramework/j/as;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;)V
+	METHOD writeOutUnitOrPlaceholder writeOutUnitOrPlaceholder (Lcom/corrodinggames/rts/gameFramework/j/as;Lcom/corrodinggames/rts/game/units/am;)V
+	CLASS AbstractMemoryLogicBoolean
+	CLASS CachedWriter
+		FIELD writers writers Lcom/corrodinggames/rts/gameFramework/utility/m;
+		METHOD addWriterElements addWriterElements (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$WriterFactory;)V
+		METHOD create create (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$WriterFactory;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter;
+		METHOD writeToUnit writeToUnit (Lcom/corrodinggames/rts/game/units/y;)V
+		CLASS Operator
+			FIELD add add Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$Operator;
+			FIELD set set Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$Operator;
+			FIELD subtract subtract Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$Operator;
+		CLASS WriterElement
+			METHOD writeToUnit writeToUnit (Lcom/corrodinggames/rts/game/units/y;)V
+		CLASS WriterFactory
+			METHOD createWriterElement createWriterElement (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter$WriterElement;
+	CLASS EmptyVariableScope
+	CLASS KnownMemoryReadLogicBoolean
+		FIELD name name Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+		FIELD type type Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD readAsLogicBoolean readAsLogicBoolean (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS KnownMemoryScopeLogicBoolean
+	CLASS MemoryNames
+		FIELD names names Lcom/corrodinggames/rts/gameFramework/utility/m;
+	CLASS MemoryWriter
+		METHOD writeToMemory writeToMemory (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;Lcom/corrodinggames/rts/game/units/y;)V
+	CLASS MemoryWriterFactory
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		FIELD noValues noValues Z
+		FIELD target target Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableMapping;
+		CLASS MemoryWriterElement
+			FIELD name name Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+			FIELD value value Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+			METHOD writeToMemory writeToMemory (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;Lcom/corrodinggames/rts/game/units/y;)V
+		CLASS MemoryWriterElementIndex
+			FIELD nameIndex nameIndex Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS ReadEventMemoryLogicBoolean
+	CLASS ReadUnitMemoryLogicBoolean
+		FIELD _name _name Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+		FIELD _type _type Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD defaultValue defaultValue Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD index index Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD getUnitMemory getUnitMemory (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD name name (Ljava/lang/String;)V
+		METHOD type type (Ljava/lang/String;)V
+	CLASS VariableData
+	CLASS VariableDataArray
+		FIELD size size I
+		METHOD getElementReturnType getElementReturnType ()Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD readBooleanIndex readBooleanIndex (I)Z
+		METHOD readDataAtIndex readDataAtIndex (I)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;
+		METHOD readNumberIndex readNumberIndex (I)F
+		METHOD readUnitIndex readUnitIndex (I)Lcom/corrodinggames/rts/game/units/am;
+		METHOD setDataAtIndex setDataAtIndex (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;I)V
+		METHOD shrink shrink ()V
+	CLASS VariableDataBoolArray
+		FIELD dataArray dataArray [Z
+		METHOD setBooleanIndex setBooleanIndex (IZ)V
+	CLASS VariableDataBoolean
+		FIELD bool bool Z
+	CLASS VariableDataNull
+	CLASS VariableDataNumber
+		FIELD number number D
+	CLASS VariableDataNumberArray
+		FIELD dataArray dataArray [F
+		FIELD trace trace Z
+		METHOD setNumberIndex setNumberIndex (IF)V
+	CLASS VariableDataString
+		FIELD text text Ljava/lang/String;
+	CLASS VariableDataUnit
+		FIELD unit unit Lcom/corrodinggames/rts/game/units/am;
+	CLASS VariableDataUnitArray
+		FIELD dataArray dataArray [Lcom/corrodinggames/rts/game/units/am;
+		METHOD setUnitIndex setUnitIndex (ILcom/corrodinggames/rts/game/units/am;)V
+	CLASS VariableDefinition
+		FIELD name name Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+		FIELD type type Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+	CLASS VariableMapping
+		FIELD mapping mapping Lcom/corrodinggames/rts/gameFramework/utility/m;
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		METHOD addDefineKey addDefineKey (Lcom/corrodinggames/rts/gameFramework/utility/ab;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		METHOD addDefineValue addDefineValue (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		METHOD addSingleDefine addSingleDefine (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		METHOD checkNameReserved checkNameReserved (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		METHOD create create (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDefinition;
+		METHOD defineVariables defineVariables (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)V
+		METHOD defineVariablesRaw defineVariablesRaw (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		METHOD get get (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDefinition;
+		METHOD get get (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableDefinition;
+		METHOD getListOfPossibleNames getListOfPossibleNames ()Ljava/lang/String;
+		METHOD hasArrays hasArrays ()Z
+	CLASS VariableName
+		FIELD existingVariableName existingVariableName Ljava/util/HashMap;
+		METHOD get get (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+		METHOD getExistingOrNull getExistingOrNull (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
+		METHOD getId getId ()Ljava/lang/String;

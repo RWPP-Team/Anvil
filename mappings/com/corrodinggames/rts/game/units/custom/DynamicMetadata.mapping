@@ -1,0 +1,55 @@
+CLASS com/corrodinggames/rts/game/units/custom/as com/corrodinggames/rts/game/units/custom/DynamicMetadata
+	COMMENT Percolated UnitData overrides for a custom unit: static field tables fieldsByName (all UnitDataFields by name) and syncedFieldsByName (network-synced fields), with clone(), diff-apply (applyDiff), applySyncedFields(), and compact net (de)serialization that writes only changed fields as (id, value, default) triples.
+	COMMENT
+	COMMENT The 19 registered field names are exactly the ini keys, assigned in this order with ids 0..18: mass, maxenergy, energy, maxhp, hp, maxshield, shield, shieldregen, armour, maxattackrange, shootdelaymultiplier, shootdamagemultiplier, movespeed, maxturnspeed, fogofwarsightrange, nanorange, selfregenrate, targetHeight, nanoFactorySpeed.
+	COMMENT
+	COMMENT Most fields are backed by a plain instance field here (mass->b, maxenergy->d, maxhp->c, maxshield->g, shieldregen->h, armour->l, maxattackrange->i, shootdelaymultiplier->e, shootdamagemultiplier->f, movespeed->j, maxturnspeed->k, fogofwarsightrange->n, nanorange->o, selfregenrate->p, targetHeight->q, nanoFactorySpeed->r). The three live values energy, hp and shield are UnitEngineField subclasses instead and read/write the unit directly: energy -> CustomUnit.cB, hp -> CustomUnit.cu (set through setHp), shield -> CustomUnit.cx.
+	COMMENT
+	COMMENT The remaining boolean flag a is "is this the metadata's own shared default instance" (clone()/copy() clear it to false).
+	FIELD b mass F
+	FIELD c maxHp I
+	FIELD d maxEnergy F
+	FIELD e shootDelayMultiplier F
+	FIELD f shootDamageMultiplier F
+	FIELD g maxShield I
+	FIELD h shieldRegen F
+	FIELD i maxAttackRange F
+	FIELD j moveSpeed F
+	FIELD k maxTurnSpeed F
+	FIELD l armour F
+	FIELD n fogOfWarSightRange I
+	FIELD o nanoRange I
+	FIELD p selfRegenRate F
+	FIELD q targetHeight F
+	FIELD r nanoFactorySpeed F
+	FIELD s fieldsByName Ljava/util/LinkedHashMap;
+	FIELD t syncedFieldsByName Ljava/util/LinkedHashMap;
+	METHOD a getFieldById (I)Lcom/corrodinggames/rts/game/units/custom/at;
+	METHOD a serialize (Lcom/corrodinggames/rts/game/units/custom/as;Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD a applyDiff (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/as;[Lcom/corrodinggames/rts/game/units/custom/at;)V
+	METHOD a applySyncedFields (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/as;Lcom/corrodinggames/rts/game/units/custom/l;)V
+	METHOD a deserialize (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/gameFramework/j/k;I)V
+	METHOD a parseFieldsFromIni (Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;[Lcom/corrodinggames/rts/game/units/custom/at;)[Lcom/corrodinggames/rts/game/units/custom/at;
+	METHOD a parseFieldList (Ljava/lang/String;[Lcom/corrodinggames/rts/game/units/custom/at;)[Lcom/corrodinggames/rts/game/units/custom/at;
+	METHOD a createWriter (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter;
+	METHOD a registerField (Ljava/util/LinkedHashMap;Lcom/corrodinggames/rts/game/units/custom/at;)V
+	METHOD b copy ()Lcom/corrodinggames/rts/game/units/custom/as;
+	CLASS 1 1
+	CLASS 10 10
+	CLASS 11 11
+	CLASS 12 12
+	CLASS 13 13
+	CLASS 14 14
+	CLASS 15 15
+	CLASS 16 16
+	CLASS 17 17
+	CLASS 18 18
+	CLASS 19 19
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 6 6
+	CLASS 7 7
+	CLASS 8 8
+	CLASS 9 9

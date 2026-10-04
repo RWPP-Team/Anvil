@@ -1,7 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/units/custom/CustomUnit
+	FIELD a animFrameIndex I
+		COMMENT Index of the currently displayed sprite frame within the (possibly animated) body image. Written by AnimationPlaying.applyBlend from AnimationKeyFrameType.frame keyframes and reset to meta.default_frame, and by applyMetadata when the unit configuration is (re)applied. Read by getSpriteFrameRect(boolean) to pick the source Rect, by DecalManager.a(...) when spawning decals, and by BattleInterface.getUnitInfoStatsText for the unit info readout.
 	FIELD A savedUnitDataFields [Lcom/corrodinggames/rts/game/units/custom/at;
 	FIELD b animationPlayer Lcom/corrodinggames/rts/game/units/custom/e;
 	FIELD B transportedUnits Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD c animScale F
+		COMMENT Body sprite scale driven by the running animation, initialised to 1.0F. Written only by AnimationPlaying.applyBlend, where the AnimationKeyFrameType.scale branch assigns the evaluated keyframe value (or 1.0F on reset), and by AnimationPlaying.setBaseBlendValues, which snapshots it as the blend base value for scale tracks. Read by getBodyDrawScale(), which multiplies it with meta.bH (the static [graphics]scaleImagesTo / imageScale factor) to produce the final body draw scale.
 	FIELD C attachedUnits Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD d movementEffectTimer F
 	FIELD dK tmpPoint3F Lcom/corrodinggames/rts/gameFramework/utility/ai;
@@ -44,6 +48,7 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	FIELD p generationActive Z
 	FIELD q unitMemoryUpdateTimer F
 	FIELD r exitSideToggle Z
+	FIELD s idleTimer F
 	FIELD t effectTimer F
 	FIELD v rechargingEnergy Z
 	FIELD w autoTriggerCooldown F
@@ -52,9 +57,13 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	FIELD z savedMetaBeforeTransform Lcom/corrodinggames/rts/game/units/custom/l;
 	METHOD a evaluateTriggers (F[Lcom/corrodinggames/rts/game/units/custom/r;)V
 	METHOD a processAllQueuedEvents (FI)V
+	METHOD a getTurretPosition3F (IZ)Lcom/corrodinggames/rts/gameFramework/utility/ai;
 	METHOD a configureProjectile (Lcom/corrodinggames/rts/game/f;Lcom/corrodinggames/rts/game/units/am;ILcom/corrodinggames/rts/game/units/custom/bh;FFFF)V
+	METHOD a executeSpecialAction (Lcom/corrodinggames/rts/game/units/a/s;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;I)Z
 	METHOD a executeSpecialAction (Lcom/corrodinggames/rts/game/units/a/s;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;II)Z
 	METHOD a createTurretProjectile (Lcom/corrodinggames/rts/game/units/am;FFILcom/corrodinggames/rts/game/units/custom/bh;I)Lcom/corrodinggames/rts/game/f;
+	METHOD a createProjectile (Lcom/corrodinggames/rts/game/units/am;ILcom/corrodinggames/rts/game/units/custom/bh;FFFF)Lcom/corrodinggames/rts/game/f;
+	METHOD a unloadUnit (Lcom/corrodinggames/rts/game/units/am;ZZ)Z
 	METHOD a getUnitInAttachmentSlot (Lcom/corrodinggames/rts/game/units/custom/b/n;)Lcom/corrodinggames/rts/game/units/y;
 	METHOD a hasEnergyForTurret (Lcom/corrodinggames/rts/game/units/custom/bn;)Z
 	METHOD a checkTurretTargetPosition (Lcom/corrodinggames/rts/game/units/custom/bn;IFFZ)Z
@@ -62,12 +71,16 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	METHOD a addTags (Lcom/corrodinggames/rts/game/units/custom/h;)V
 	METHOD a setTags (Lcom/corrodinggames/rts/game/units/custom/h;Z)V
 	METHOD a applyMetadata (Lcom/corrodinggames/rts/game/units/custom/l;ZZ)V
+	METHOD a applyMetadata (Lcom/corrodinggames/rts/game/units/custom/l;ZZ[Lcom/corrodinggames/rts/game/units/custom/at;)V
 	METHOD b updateAutoTriggers (FZ)V
 	METHOD b placeUnloadedUnit (Lcom/corrodinggames/rts/game/units/am;ZZ)Z
+	METHOD b executeUnitEventHooks (Lcom/corrodinggames/rts/game/units/custom/af;)V
 	METHOD b payTurretShotCost (Lcom/corrodinggames/rts/game/units/custom/bn;)V
 	METHOD b removeTags (Lcom/corrodinggames/rts/game/units/custom/h;)V
 	METHOD C addUnitToTransport (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD D onUnitRemovedFromTransport (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD dB resetLegStates ()V
+		COMMENT Resets every leg to its neutral resting pose and clears any pending leg action. Iterates legStates and raises both the deforming (n) and moved (m) flags on each LegState so the next leg update recomputes them, then calls clearLegAction(). Sole caller is startSlowDeathFall, which wants the legs to snap back before the wreck begins toppling.
 	METHOD dC getUpgradeActions ()Ljava/util/ArrayList;
 	METHOD dD clearUnitEventQueue ()V
 	METHOD dF updateDrawLayer ()V
@@ -77,10 +90,15 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	METHOD dJ copyUnitDataIfShared ()V
 	METHOD ds releaseTransportedUnitsOnDeath ()V
 	METHOD du initLegs ()V
+	METHOD dv clearLegAction ()V
+		COMMENT Clears the currently applied leg action by running the leg action hook with a zero amount, which returns every leg track to its base value. Called from resetLegStates so the legs are fully neutral before a wreck topples. Companion of the leg animation machinery driven through meta.legTemplates / LegState.
+	METHOD E PENDING_prepareUnitExit (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD F positionUnitAtExit (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD g unloadOneUnit (Z)Z
 	METHOD G hasRoomForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD h unloadAllUnits (Z)V
+	METHOD H canRepair (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD i clearBuildQueue (Z)V
 	METHOD j applyMetaTags (Z)V
 	METHOD K initCornerPoints ()V
 	METHOD L startUnloading ()V

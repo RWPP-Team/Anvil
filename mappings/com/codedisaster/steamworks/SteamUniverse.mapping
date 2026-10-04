@@ -1,0 +1,8 @@
+CLASS com/codedisaster/steamworks/SteamUniverse
+	FIELD Beta Beta Lcom/codedisaster/steamworks/SteamUniverse;
+	FIELD Dev Dev Lcom/codedisaster/steamworks/SteamUniverse;
+	FIELD Internal Internal Lcom/codedisaster/steamworks/SteamUniverse;
+	FIELD Invalid Invalid Lcom/codedisaster/steamworks/SteamUniverse;
+	FIELD Public Public Lcom/codedisaster/steamworks/SteamUniverse;
+	FIELD value value I
+	METHOD byValue byValue (I)Lcom/codedisaster/steamworks/SteamUniverse;

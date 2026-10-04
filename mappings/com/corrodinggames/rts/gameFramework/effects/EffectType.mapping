@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/d/d com/corrodinggames/rts/gameFramework/effects/EffectType
+	FIELD a custom Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD b smoke Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD c teleport Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD d hitGround Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD e playerLand Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD f playerJump Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD g gemCollect Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD h keyDoorOpen Lcom/corrodinggames/rts/gameFramework/d/d;
+	FIELD i blood Lcom/corrodinggames/rts/gameFramework/d/d;

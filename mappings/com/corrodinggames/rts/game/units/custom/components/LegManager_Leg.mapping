@@ -1,0 +1,19 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/i com/corrodinggames/rts/game/units/custom/components/LegManager_Leg
+	FIELD a legIndex I
+	FIELD b footX F
+	FIELD c footY F
+	FIELD d height F
+	FIELD e moveWarmUpTimer F
+	FIELD f targetX F
+	FIELD g targetY F
+	FIELD h targetDistanceSquared F
+	FIELD i angle F
+	FIELD j dustPlayed Z
+	FIELD k isMoving Z
+	FIELD l overWater Z
+	FIELD m needsReset Z
+	FIELD o positionChanged Z
+	FIELD p PENDING_attachOffsetX F
+	FIELD q PENDING_attachOffsetY F
+	FIELD r spinAngle F
+	FIELD s alpha F

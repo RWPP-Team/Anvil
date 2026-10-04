@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/java/audio/AudioRecorder
+	METHOD dispose dispose ()V
+	METHOD read read ([SII)V

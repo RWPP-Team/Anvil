@@ -1,0 +1,27 @@
+CLASS android/graphics/Bitmap
+	METHOD describeContents describeContents ()I
+	METHOD nativeCompress nativeCompress (IIILjava/io/OutputStream;[B)Z
+	METHOD nativeConfig nativeConfig (I)I
+	METHOD nativeCopy nativeCopy (IIZ)Landroid/graphics/Bitmap;
+	METHOD nativeCreate nativeCreate ([IIIIIIZ)Landroid/graphics/Bitmap;
+	METHOD nativeCreateFromParcel nativeCreateFromParcel (Landroid/os/Parcel;)Landroid/graphics/Bitmap;
+	METHOD nativeErase nativeErase (II)V
+	METHOD nativeGetPixel nativeGetPixel (IIIZ)I
+	METHOD nativeGetPixels nativeGetPixels (I[IIIIIIIZ)V
+	METHOD nativeSetHasAlpha nativeSetHasAlpha (IZ)V
+	METHOD nativeSetPixel nativeSetPixel (IIIIZ)V
+	METHOD nativeSetPixels nativeSetPixels (I[IIIIIIIZ)V
+	METHOD nativeWriteToParcel nativeWriteToParcel (IZILandroid/os/Parcel;)Z
+	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V
+	CLASS 1
+		METHOD createFromParcel createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+		METHOD newArray newArray (I)[Ljava/lang/Object;
+	CLASS CompressFormat
+		FIELD a JPEG Landroid/graphics/Bitmap$CompressFormat;
+		FIELD b PNG Landroid/graphics/Bitmap$CompressFormat;
+		FIELD c WEBP Landroid/graphics/Bitmap$CompressFormat;
+	CLASS Config
+		FIELD a ALPHA_8 Landroid/graphics/Bitmap$Config;
+		FIELD b RGB_565 Landroid/graphics/Bitmap$Config;
+		FIELD c ARGB_4444 Landroid/graphics/Bitmap$Config;
+		FIELD d ARGB_8888 Landroid/graphics/Bitmap$Config;

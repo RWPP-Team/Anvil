@@ -1,22 +1,52 @@
 CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Unit
+	FIELD a newUnitsDeferredList Lcom/corrodinggames/rts/gameFramework/utility/o;
 	FIELD bE unitList Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD bF placeholderUnits Ljava/util/HashMap;
+	FIELD bG placeholderUnitsDefault Ljava/util/HashMap;
+	FIELD bH placeholderUnitsAlt Ljava/util/HashMap;
+	FIELD bI minimapPaint Landroid/graphics/Paint;
+	FIELD bJ minimapPaintSelected Landroid/graphics/Paint;
+	FIELD bK minimapDimColorFilter Landroid/graphics/LightingColorFilter;
 	FIELD bL inUnitList Z
+	FIELD bQ interactTargetUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD bR queuedInteractTargetUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD bs lastDamagedAt I
+	FIELD bS queuedInteractTargetTimer F
 	FIELD bt lastAttacker Lcom/corrodinggames/rts/game/units/am;
 	FIELD bT collisionEnabled Z
+	FIELD bu variableScopeUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD bU collisionLayer I
+	FIELD bv variableScopeUnit2 Lcom/corrodinggames/rts/game/units/am;
 	FIELD bV dead Z
+	FIELD bw variableScope Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;
 	FIELD bW deathTime J
+	FIELD bx overrideBuildCostPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD bX team Lcom/corrodinggames/rts/game/n;
+	FIELD by overrideStreamingPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD bY inTeamCache Z
+	FIELD bz createdTimeMillis I
+	FIELD bZ pushVelocityX F
+	FIELD ca pushVelocityY F
 	FIELD cA maxShield F
+	FIELD cb needsCollisionRecheck Z
+	FIELD cB currentEnergy F
 	FIELD cc speedX F
 	FIELD cC lastHpChange F
 	FIELD cd speedY F
+	FIELD cD hpChangeFadeRate F
+	FIELD ce currentTurnRate F
 	FIELD cE ammo I
+	FIELD cf moveThrottle F
 	FIELD cF energy I
 	FIELD cg angle F
+	FIELD cG selected Z
+	FIELD ch moveHeading F
+	FIELD ci reversing Z
 	FIELD cj radius F
 	FIELD cJ selectionFlashTimer F
+	FIELD ck selectionRadius F
+	FIELD cK isMoving Z
+	FIELD cl directMoveSpeed F
 	FIELD cL turrets [Lcom/corrodinggames/rts/game/units/ap;
 	FIELD cm buildProgress F
 	FIELD cN transportedBy Lcom/corrodinggames/rts/game/units/am;
@@ -29,94 +59,194 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD cu hp F
 	FIELD cv maxHp F
 	FIELD cw recentDamage F
+	FIELD cW replaySelectionPaint Landroid/graphics/Paint;
 	FIELD cx shield F
+	FIELD cX selectionPaintSmall Landroid/graphics/Paint;
 	FIELD cy shieldDamageTaken F
+	FIELD cY selectionPaintFriendly Landroid/graphics/Paint;
 	FIELD cz shieldCooldown F
+	FIELD cZ selectionPaintFriendlyBuilding Landroid/graphics/Paint;
+	FIELD da selectionPaintEnemy Landroid/graphics/Paint;
+	FIELD dA scratchScreenRectF Landroid/graphics/RectF;
+	FIELD db selectionPaintFlash Landroid/graphics/Paint;
+	FIELD dB scratchTurretRectF Landroid/graphics/RectF;
+	FIELD dc selectionPaintAlly Landroid/graphics/Paint;
+	FIELD dC scratchSpriteRect Landroid/graphics/Rect;
+	FIELD dd thinGreenStrokePaint Landroid/graphics/Paint;
+	FIELD dD scratchAimPointF Landroid/graphics/PointF;
+	FIELD de thinRedStrokePaint Landroid/graphics/Paint;
+	FIELD dE scratchPredictPointF Landroid/graphics/PointF;
+	FIELD df thinYellowStrokePaint Landroid/graphics/Paint;
 	FIELD dF teamVisibility [Lcom/corrodinggames/rts/game/units/an;
+	FIELD dg lightGrayStrokePaint Landroid/graphics/Paint;
+	FIELD dG scratchTurretOffsetPointF Landroid/graphics/PointF;
+	FIELD dh grayStrokePaint Landroid/graphics/Paint;
 	FIELD dH storedResources Lcom/corrodinggames/rts/game/units/custom/e/f;
+	FIELD di redStrokePaint Landroid/graphics/Paint;
 	FIELD dI connections Lcom/corrodinggames/rts/game/units/custom/c/c;
+	FIELD dJ cachedTotalPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD do smokeTimer F
 	FIELD dp damageFlash F
 	FIELD dq sparkTimer F
+	FIELD dr scratchDrawRectF Landroid/graphics/RectF;
+	FIELD ds waypointLinePaint Landroid/graphics/Paint;
+	FIELD dw sharedFootprintRect Landroid/graphics/Rect;
+	FIELD dx sharedSpecialActionsList Ljava/util/ArrayList;
 	FIELD dz cachedUnitType Lcom/corrodinggames/rts/game/units/as;
 	METHOD a calculateAimPoint (FFFFF)Landroid/graphics/PointF;
+	METHOD a drawOnMinimap (II)Z
+	METHOD a setupPaint (Landroid/graphics/Paint;)V
+	METHOD a setupPaint (Landroid/graphics/Paint;Z)V
 	METHOD a intersects (Landroid/graphics/RectF;)Z
 	METHOD a getMinimapPosition (Lcom/corrodinggames/rts/game/b/b;Landroid/graphics/Point;)Landroid/graphics/Point;
 	METHOD a getMinimapRect (Lcom/corrodinggames/rts/game/b/b;Landroid/graphics/RectF;)Landroid/graphics/RectF;
 	METHOD a getSpecialAction (Lcom/corrodinggames/rts/game/units/a/c;)Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a dropPendingAction (Lcom/corrodinggames/rts/game/units/a/s;)V
+		COMMENT Removes a single pending entry for the given action from this factory's queue, without refunding twice. CustomUnit forwards to buildQueue.a(SpecialAction), which looks the action up in the queue's secondary (pending) list, calls either e(unit, price) or d(unit, price) on its price depending on the item's k "already cancelled" flag, then drops the entry. Contrast with toggleQueuedAction(SpecialAction, boolean), the enqueue/cancel path used by the build buttons.
+	METHOD a executeSpecialAction (Lcom/corrodinggames/rts/game/units/a/s;Z)V
+		COMMENT Executes or cancels a special action on this unit, the two-argument convenience form. CustomUnit delegates straight to a(SpecialAction, boolean, PointF, Unit) with a null target point and null target unit; the boolean is the cancel flag (false = perform, true = cancel). Base Unit declares it unchanged so subclasses such as CustomUnit and the built-in unit types can supply the semantics.
+	METHOD a handleSpecialAction (Lcom/corrodinggames/rts/game/units/a/s;ZLandroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)V
+		COMMENT Core special-action handler for this unit: performs the action when the boolean is false, or cancels it when true, optionally against a target point and target unit. CustomUnit special-cases the built-in unload actions first (Hovercraft.i starts unloading, Hovercraft.j stops it), then for ExtraAction dispatches through the action config; other actions route into checkTargetedActionOrder when a target point must be validated. Callers: executeSpecialAction(SpecialAction,boolean) and the internal paths that carry a target. The Factory counterpart implements the same contract for built-in buildings.
+	METHOD a applyDamage (Lcom/corrodinggames/rts/game/units/am;F)Z
 	METHOD a damage (Lcom/corrodinggames/rts/game/units/am;FLcom/corrodinggames/rts/game/f;)F
+	METHOD a getPlaceholder (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/am;
 	METHOD a fireUnitEvent (Lcom/corrodinggames/rts/game/units/custom/af;)V
 	METHOD a fireUnitEvent (Lcom/corrodinggames/rts/game/units/custom/af;Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD a fireUnitEvent (Lcom/corrodinggames/rts/game/units/custom/af;Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/custom/h;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;)V
 	METHOD a getStoredResourceAmount (Lcom/corrodinggames/rts/game/units/custom/e/a;)D
+	METHOD a getQueuedCountOf (Lcom/corrodinggames/rts/game/units/custom/g;)I
+	METHOD a createShadowImage (Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a createShadowImage (Lcom/corrodinggames/rts/gameFramework/m/e;II)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a addUpgradeActions (Ljava/util/ArrayList;)V
 	METHOD a getSpriteFrameRect (ZI)Landroid/graphics/Rect;
 	METHOD a getSpriteFrameRect (ZII)Landroid/graphics/Rect;
 	METHOD A getDebugStringOf (Lcom/corrodinggames/rts/game/units/am;)Ljava/lang/String;
+	METHOD a_ setTypeFromString (Ljava/lang/String;)V
 	METHOD a_ getSpriteFrameRect (Z)Landroid/graphics/Rect;
+	METHOD aj isBuilderUnit ()Z
+		COMMENT Unit-level forward of UnitTypeInterface.useAsBuilder() ([ai]useAsBuilder for custom units). OrderableUnit returns this.r().useAsBuilder(); CustomUnit returns this.meta.fq; Tree and SpreadFire return false. All three call sites are AI builder selection: Base.a(UnitTypeInterface,PointF,boolean) filters candidate builders with var10.aj(), AI.a(UnitTypeInterface) requires !aj() to qualify a unit as an attacker, and AI.n(float) only regroups/reorders idle units that pass aj(). Distinct from isBuilder() (ak), which reports [core]isBuilder.
+	METHOD ak isBuilder ()Z
+		COMMENT True when this unit's type is a builder ([core]isBuilder). OrderableUnit returns this.r().isBuilder(); CustomUnit returns this.meta.fp; Tree and SpreadFire return false. Callers: UnitDetectElement.isUnitCountInRange uses it verbatim as "this.onlyBuilders || var6.ak()"; Team.updateDefeatCheck and TriggerEngine.matchesObjective use "bJ() || ak()" to mean the team still has a factory or a builder (so it is not yet defeated / matches the noConstructionOrTech objective); BattleInterface.handleDragSelection drops builders from a drag box that also contains a combat unit. Distinct from isBuilderUnit() (aj), which reports the [ai]useAsBuilder role flag.
 	METHOD b setTeamDirect (Lcom/corrodinggames/rts/game/n;)V
+	METHOD b toggleQueuedAction (Lcom/corrodinggames/rts/game/units/a/s;Z)V
+		COMMENT Toggles a queued production action for this factory, i.e. the handler behind clicking a build button. CustomUnit forwards to buildQueue.a(SpecialAction, boolean); FactoryBuildQueue then acts on QueueUnitAction entries: when the boolean is false it queues the unit (after checking precondition s.a(unit,true), the unit-count cap via getUnitsMax and affordability via price.b(unit, queue)), and when the boolean is true it removes the entry and refunds through the action's price. The empty-action overload a(SpecialAction) instead drops a pending item from the queue's secondary list. Base Unit has no implementation; the Factory counterpart does the same for built-in buildings.
 	METHOD b getNanoBuildSpeed (Lcom/corrodinggames/rts/game/units/am;)F
 	METHOD b repair (Lcom/corrodinggames/rts/game/units/am;FLcom/corrodinggames/rts/game/f;)F
+	METHOD B setVariableScopeUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD bC updateCachedPrice ()V
 	METHOD bd getMaxEnergy ()F
 	METHOD bF getNewUnits ()Lcom/corrodinggames/rts/gameFramework/utility/o;
+	METHOD bG applyDeferredUnitChanges ()V
+	METHOD bH loadAllUnitResources ()V
 	METHOD bI isBuilding ()Z
+	METHOD bJ isFactoryBuilding ()Z
+		COMMENT True when this unit is a factory/production building. Unit returns false; every production building overrides it to true (LandFactory, AirFactory, SeaFactory, ExperimentalLandFactory, CommandCenter); CustomUnit returns this.meta.fu, which CustomUnitMetadataLoader sets by scanning all three tech-level special action lists for a non-ExtraAction entry with a non-null target, i.e. "this unit type can build something". Callers: Team.updateDefeatCheck and TriggerEngine.matchesObjective both use "bJ() || ak()" (factory or builder present) to mean the team still counts as alive; matchesObjective uses it with isBuilding() to match the mainBuildings objective; UnitDetectElement.isUnitCountInRange uses it for onlyMainBuildings.
 	METHOD bK createPlaceholderUnits ()Ljava/util/HashMap;
 	METHOD bl getTurretCount ()I
 	METHOD bL initPlaceholderUnits ()V
+	METHOD bM getPlaceholderStatsHash ()I
 	METHOD bN getDamageOutput ()F
 	METHOD bO isBio ()Z
 	METHOD bP isBug ()Z
+	METHOD bR updateCollisionLayer ()V
+	METHOD bS initTurret ()V
+	METHOD bt onDeath ()V
 	METHOD bT isBuiltAndNotTransported ()Z
 	METHOD bu kill ()V
 	METHOD bU showHealthBarChanges ()Z
 	METHOD bv die ()V
 	METHOD bV getConstructionProgress ()F
+	METHOD bw getStatsHash ()I
+	METHOD bW getSecondaryBarFill ()F
+		COMMENT Fill fraction in [0,1] of the small secondary status bar drawn under the health bar, or -1.0F for "no secondary bar". Base returns -1.0F. Consumer: Unit.drawOverlay, which draws it in blue and asks isRechargingEnergy() to pick a greyer palette while recharging. CustomUnit picks the first applicable source in order: (1) energy, currentEnergy / unitData.maxEnergy, when maxEnergy > 0, energy is below max and showEnergyBar is set; (2) shield, currentShield / maxShield, under the same conditions with showShieldBar; (3) when the unit has neither energy nor shield at all, the reload progress of meta.em (1 - reloadTimer / getTurretShootDelay) or the warmup progress of meta.en (f / getTurretWarmup).
 	METHOD bX isRechargingEnergy ()Z
+	METHOD bY getUsedTransportSlotsForDisplay ()I
+		COMMENT Number of transport slots currently occupied, or -1 to mean "this unit is not a transport, draw no slot bar". Base returns -1. Consumer: Unit.drawOverlay, which skips the whole slot-bar block when the value is negative and otherwise fills the first getUsedTransportSlotsForDisplay() cells of the getTransportSlotsForDisplay() wide grid. Implementations: Hovercraft sums getTransportSlotsNeeded() over its transported-units list; Dropship does the same; CustomUnit returns getUsedTransportSlots() but only when maxTransportingUnits is non-zero and showTransportBar is set, otherwise -1.
+	METHOD bZ getTransportSlotsForDisplay ()I
+		COMMENT Total number of transport slots this unit provides, i.e. the width of the slot grid Unit.drawOverlay draws; -1 means "not a transport". Base returns -1. Hovercraft and Dropship return their fixed capacity (Hovercraft 4). CustomUnit returns maxTransportingUnits when it is non-zero and showTransportBar is set, otherwise -1. Note that drawOverlay only enters this block when getUsedTransportSlotsForDisplay() is >= 0, so the two must agree on the -1 sentinel.
 	METHOD c getDebugString ()Ljava/lang/String;
 	METHOD c isPointWithinRadius (FFF)Z
 	METHOD c getNanoRepairSpeed (Lcom/corrodinggames/rts/game/units/am;)F
 	METHOD c canLoadUnit (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD c getPlaceholderOrDefault (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/am;
 	METHOD c hasTooManyReclaimers (Lcom/corrodinggames/rts/game/units/y;)Z
 	METHOD c updateFogOfWar (Z)V
 	METHOD c_ shouldShowOnMinimap ()Z
+	METHOD ca drawRallyPointLine ()V
+		COMMENT Draws the rally-point tether line from a factory to the point it will send newly produced units. CustomUnit draws it only when buildQueue.b (the pending rally position) is non-null, using Factory.y as the line colour. Base implementation is empty; it is invoked from Unit's selection drawing path, gated behind settings.showUnitWaypoints.
+	METHOD cA getConsumedResources ()Lcom/corrodinggames/rts/game/units/custom/e/f;
+	METHOD cb drawRangeUIGuides ()V
+		COMMENT Draws the translucent range-helper rings shown while exactly one unit is selected. Base implementation is empty; the caller is Unit's selection drawing path, which only reaches it when GameUtils.isSingleSelectedUnit is true. CustomUnit draws, in order: (1) either the unit's attack range via getAttackRange() when the unit can attack, or - for a building that cannot attack - the unit's build range from unitData.o, both suppressed when showRangeUIGuide is explicitly false; (2) one ring per entry in meta.o (the extra range-guide list); (3) when meta.bF is set, a per-turret ring for each turret whose interceptProjectilesAndTargetingGroundUnderDistance is positive, drawn in a dimmer green when another ring was already drawn.
+	METHOD cB getInternalNameWithId ()Ljava/lang/String;
 	METHOD cc getFootprint ()Landroid/graphics/Rect;
 	METHOD cC getDetailedDebugString ()Ljava/lang/String;
 	METHOD cd getConstructionFootprint ()Landroid/graphics/Rect;
+	METHOD cD getRenderScale ()F
+		COMMENT Uniform scale factor applied around the unit's centre point when rendering its body sprite; 1.0F means no scaling. Consumers: OrderableUnit.draw and aQ(), which call GraphicsEngine.scaleAroundPoint(cD(), cD(), centreX, centreY) around the body/turret blit and restore afterwards. CustomUnit returns this.meta.bH * this.animScale: the loader derives meta.bH from [graphics]scaleImagesTo (divided by total_frames, times globalScale) and then multiplies it by [graphics]imageScale, while animScale is driven by AnimationKeyFrameType.scale keyframes, so the two channels compose.
 	METHOD ce getDisplayFootprint ()Landroid/graphics/Rect;
 	METHOD cf isVisibleToPlayer ()Z
 	METHOD cF getScreenRect ()Landroid/graphics/RectF;
+	METHOD cg isVisibleToAllPlayers ()Z
+		COMMENT True when this unit is visible to all players, including enemies. CustomUnit returns unitData.m, a per-unit-data boolean; when it is false the unit counts as hidden from hostile players. Consumers all gate on team ownership: InterfaceEngine.canSelectUnit refuses to select an enemy unit that reads false, InterfaceEngine.getUnitAtPosition skips it during hit-testing, AI.j(Unit) filters it out of target picking, and CustomUnit.isVisibleUnit additionally hides it from an enemy viewer unless that viewer is a spectator.
+	METHOD cG hasShadowFrames ()Z
+		COMMENT True when the unit's spritesheet carries separate drop-shadow frames, so the renderer must blit a shadow quad instead of drawing a rotated shadow sprite. CustomUnit returns this.meta.aq, which CustomUnitMetadataLoader sets to true when the shadow image was generated as an animation strip (Unit.createShadowImage) or when [graphics]image_shadow_frames is true. Sole consumer is OrderableUnit.aQ() (the turret pass), which branches to GraphicsEngine.drawImage with a source Rect from a_(true) when true, and to drawImageRotated otherwise.
 	METHOD ch checkDeath ()V
+	METHOD cH isOnWaterSurface ()Z
 	METHOD ci killAndRemove ()V
+	METHOD cI isOverCliff ()Z
+	METHOD cj markForDeath ()V
+	METHOD cJ isOverWater ()Z
+	METHOD ck hasUpgradableActions ()Z
+		COMMENT True when this unit exposes at least one special action that is gated behind a credits price, i.e. the unit can be upgraded by spending credits. CustomUnit returns meta.gi, which CustomUnitMetadataLoader sets to true when any declared action has a non-null unit reference and a CustomPrice whose credits amount is > 0 (the price is parsed from the action's "price" key via CustomPrice.a). AntiNukeLauncher hard-codes false. Consumer: BattleInterface.getUnitInfoStatsText, which appends the literal "Upgradable" line to the unit info readout when this is true.
+	METHOD cK isOverLiquid ()Z
+	METHOD cl hasAiHighPriorityActions ()Z
+		COMMENT True when at least one of this unit's special actions is flagged ai_isHighPriority, meaning the AI should consider running it. CustomUnit returns meta.fJ, which CustomUnitMetadataLoader sets to true when any action's "ai_isHighPriority" key parses to a LogicBoolean other than falseBoolean. Consumer: AI.m(float), the AI's unit update pass, which after its normal "is this unit worth microing" checks walks the unit's SpecialAction list, filters it through SpecialAction.n(Unit) and picks one at random, then issues it.
 	METHOD cL getPriceForTechLevel ()I
+	METHOD cm getBuildActionId ()Lcom/corrodinggames/rts/game/units/a/c;
 	METHOD cM getPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD cn getAiUpgradePriority ()F
+		COMMENT Percentage chance the AI will pick this unit's upgrade action each time it evaluates the unit, or a negative value for "use the default". CustomUnit returns meta.fK, which CustomUnitMetadataLoader computes as [ai]ai_upgradePriority * 100.0F when that key is present and not -1 (the key itself must lie in [0,1]); otherwise fK stays negative. Consumer: AI.m(float), which falls back to 6.0F when the returned value is negative and then rolls against "100 - priority" (lowered by 4 when the AI is in the warned state and overridden to 50 for resource-pool placement) to decide whether to run the upgrade.
 	METHOD cN getReclaimPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD cO allowCaptureWhenNeutralByAI ()Z
+	METHOD cp getDefaultActionId ()Lcom/corrodinggames/rts/game/units/a/c;
+	METHOD cP onUnitCreated ()V
+		COMMENT Post-creation hook, called once a newly built unit has been placed into the world (OrderableUnit's waypoint/path handling calls it right after setTeamOnCreate and the build-completion branch). Base implementation is empty. CustomUnit uses it to short-circuit self-building: when meta.selfBuildRate is 0 and getResourceRate() is positive, it registers the unit with its team (Team.b(unit)), forces the construction progress cm to 1.0F so it is treated as fully built, and adds it to the team's unit cache.
 	METHOD cq countAvailableSpecialActions ()I
 	METHOD cQ getMaxReclaimers ()I
 	METHOD cr canTransportUnits ()Z
 	METHOD cR getSimilarResourcesHaveTag ()Lcom/corrodinggames/rts/game/units/custom/h;
+	METHOD cs getInteractionRadius ()F
 	METHOD cS canReclaimResourcesNextSearchRange ()I
 	METHOD ct isAirMovementType ()Z
 	METHOD cT isNonOperational ()Z
 	METHOD cu notPassivelyTargetedByOtherUnits ()Z
+	METHOD cU isOperational ()Z
 	METHOD cv isWaterUnit ()Z
 	METHOD cV isUnselectableAsTarget ()Z
 	METHOD cw getTransportSlotsNeeded ()I
 	METHOD cW canNotBeGivenOrdersByPlayer ()Z
+	METHOD cx getNanoFactorySpeed ()F
+		COMMENT Value of the per-unit [core]nanoFactorySpeed override, i.e. the build/reclaim speed multiplier used when this unit acts as a nano factory. CustomUnit returns unitData.r, whose backing UnitData field is registered from the ini key nanoFactorySpeed (UnitData$11). Contrast with CustomUnitMetadataLoader line 1884, where a turret's own nano speed is read from nanoFactorySpeed into cL.r. Base Unit.cx() returns 1.0F, the neutral multiplier.
 	METHOD cX createLostUnitBlueprint ()V
 	METHOD cy getGenerationCredits ()F
 	METHOD cY getTurretDrawOffset ()Landroid/graphics/PointF;
+	METHOD cz getGeneratedResources ()Lcom/corrodinggames/rts/game/units/custom/e/f;
 	METHOD cZ getMinimapOriginX ()F
 	METHOD d isVisibleToTeam (Lcom/corrodinggames/rts/game/n;)Z
 	METHOD d canBeAttackedBy (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD d canLoad (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD d getPlaceholderAlt (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/am;
 	METHOD d countReclaimersTargeting (Lcom/corrodinggames/rts/game/units/y;)I
 	METHOD d getDrawAngle (Z)F
 	METHOD da getMinimapOriginY ()F
+	METHOD db getMinimapSelectionPadding ()F
+		COMMENT Extra padding, in minimap pixels, added around this unit's minimap rectangle so the selection highlight stays visible for small units. Base returns map.p + 2 plus InterfaceEngine.getSelectionPulseOffset(this), i.e. the map's base unit size plus an animated pulse. CustomUnit adds meta.buildingSelectionOffset so buildings with a larger footprint get a proportionally larger highlight. Sole consumer: the minimap drawing pass in Unit, which feeds the value to CommonUtils.inflate(RectF, float).
 	METHOD dc startSlowDeathFall ()V
 	METHOD dd isExperimental ()Z
 	METHOD de getTags ()Lcom/corrodinggames/rts/game/units/custom/h;
 	METHOD df getStoredResources ()Lcom/corrodinggames/rts/game/units/custom/e/f;
 	METHOD dg getConnections ()Lcom/corrodinggames/rts/game/units/custom/c/c;
+	METHOD dh getCustomTagTags ()Lcom/corrodinggames/rts/game/units/custom/h;
 	METHOD di chargeBorrowedResources ()V
 	METHOD dj returnBorrowedResources ()V
 	METHOD dk imageSmoothingWhenZoomedIn ()Z
@@ -125,25 +255,32 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD dn getAttachmentSlot ()Lcom/corrodinggames/rts/game/units/custom/b/n;
 	METHOD do getRadius ()F
 	METHOD dp showSelectionIndicator ()Z
+	METHOD dq getCachedTotalPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD dr getParentUnit ()Lcom/corrodinggames/rts/game/units/am;
 	METHOD e doDeathEffect ()Z
 	METHOD e setTeam (Lcom/corrodinggames/rts/game/n;)V
 	METHOD e loadUnit (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD e findActionForUnitType (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/a/s;
+		COMMENT Finds the production action on this factory whose result is the given unit type, so the UI/AI can highlight or issue the matching build button. CustomUnit forwards to buildQueue.b(UnitTypeInterface), which scans the factory's own action list for a QueueUnitAction whose target type matches and returns it, or null when the type is not buildable here. Declared on UnitTypeInterface alongside getSpecialActions() and the queued-count helpers.
 	METHOD e countRepairersTargeting (Lcom/corrodinggames/rts/game/units/y;)I
 	METHOD e getAttachmentSlots (Z)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD f setPosition (FF)V
 	METHOD f setTeamOnCreate (Lcom/corrodinggames/rts/game/n;)V
 	METHOD f getDisplayNameOf (Lcom/corrodinggames/rts/game/units/am;Z)Ljava/lang/String;
+	METHOD f getBuildRange (Lcom/corrodinggames/rts/game/units/as;)F
 	METHOD f_ updateCollisionFlag ()V
 	METHOD g getResourceRate ()F
 	METHOD g updateVisibilityForTeam (Lcom/corrodinggames/rts/game/n;)V
 	METHOD g canReclaimNow (Lcom/corrodinggames/rts/game/units/am;Z)Z
 	METHOD h getMovementType ()Lcom/corrodinggames/rts/game/units/ao;
 	METHOD h setAngle (F)V
+	METHOD h canReclaim (Lcom/corrodinggames/rts/game/units/am;Z)Z
 	METHOD i isAirUnit ()Z
 	METHOD J isInvulnerable ()Z
-	METHOD l canAttackUnderwaterUnits ()Z
+	METHOD l canAttack ()Z
+		COMMENT True when this unit has any usable weapon/turret at all. CustomUnit returns [attack]canAttack. UnitType.s() (the help-sheet dump) only prints "Shoot Delay" / "Attack Range" / "Direct Damage" / "Area Damage" when var7.l() is true, and the damage block is driven by firing every turret and counting spawned projectiles. Other callers: InterfaceEngine.hasAttackCapableSelectedUnits, AI.a/as and AI.h, BattleInterface.handleDragSelection (var15.l() distinguishes combat units from builders), UnitDetectElement onlyAttack / onlyAttackAir, OrderableUnit.processAttackWaypoint and UnitType.s(). NOTE: previously mis-named canAttackUnderwaterUnits - corrected; that name belongs to ae().
 	METHOD m predictFuturePosition (F)Landroid/graphics/PointF;
+	METHOD n setup ()V
 	METHOD N getSpecialActions ()Ljava/util/ArrayList;
 	METHOD o stayNeutral ()Z
 	METHOD o setHp (F)V
@@ -155,8 +292,10 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD q getRecentAttacker (F)Lcom/corrodinggames/rts/game/units/am;
 	METHOD Q isUnderwater ()Z
 	METHOD Q setTeamFromMapId (I)V
-	METHOD r getUnitType ()Lcom/corrodinggames/rts/game/units/as;
+	METHOD r getUnitTypeInterface ()Lcom/corrodinggames/rts/game/units/as;
 	METHOD r setBuildProgress (F)V
+	METHOD s getSoftCollisionOnAll (Lcom/corrodinggames/rts/game/units/am;)I
+	METHOD s_ isOnScreen ()Z
 	METHOD t isUnselectable ()Z
 	METHOD t intersectsUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD u getRepairRange (Lcom/corrodinggames/rts/game/units/am;)I
@@ -167,4 +306,5 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD x getHealthFraction ()F
 	METHOD x isRepairRangeMelee (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD y getNanoRange ()I
+	METHOD y isResourceUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD z getNanoReclaimSpeed (Lcom/corrodinggames/rts/game/units/am;)F

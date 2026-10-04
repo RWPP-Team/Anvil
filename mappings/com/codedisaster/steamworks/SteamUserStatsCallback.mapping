@@ -1,1 +1,9 @@
 CLASS com/codedisaster/steamworks/SteamUserStatsCallback
+	METHOD onGlobalStatsReceived onGlobalStatsReceived (JLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onLeaderboardFindResult onLeaderboardFindResult (Lcom/codedisaster/steamworks/SteamLeaderboardHandle;Z)V
+	METHOD onLeaderboardScoresDownloaded onLeaderboardScoresDownloaded (Lcom/codedisaster/steamworks/SteamLeaderboardHandle;Lcom/codedisaster/steamworks/SteamLeaderboardEntriesHandle;I)V
+	METHOD onLeaderboardScoreUploaded onLeaderboardScoreUploaded (ZLcom/codedisaster/steamworks/SteamLeaderboardHandle;IZII)V
+	METHOD onUserAchievementStored onUserAchievementStored (JZLjava/lang/String;II)V
+	METHOD onUserStatsReceived onUserStatsReceived (JLcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onUserStatsStored onUserStatsStored (JLcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onUserStatsUnloaded onUserStatsUnloaded (Lcom/codedisaster/steamworks/SteamID;)V

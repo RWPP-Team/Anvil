@@ -1,1 +1,12 @@
 CLASS com/codedisaster/steamworks/SteamMatchmakingCallback
+	METHOD onFavoritesListAccountsUpdated onFavoritesListAccountsUpdated (Lcom/codedisaster/steamworks/SteamResult;)V
+	METHOD onFavoritesListChanged onFavoritesListChanged (IIIIIZI)V
+	METHOD onLobbyChatMessage onLobbyChatMessage (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamMatchmaking$ChatEntryType;I)V
+	METHOD onLobbyChatUpdate onLobbyChatUpdate (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamMatchmaking$ChatMemberStateChange;)V
+	METHOD onLobbyCreated onLobbyCreated (Lcom/codedisaster/steamworks/SteamResult;Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD onLobbyDataUpdate onLobbyDataUpdate (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;Z)V
+	METHOD onLobbyEnter onLobbyEnter (Lcom/codedisaster/steamworks/SteamID;IZLcom/codedisaster/steamworks/SteamMatchmaking$ChatRoomEnterResponse;)V
+	METHOD onLobbyGameCreated onLobbyGameCreated (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;IS)V
+	METHOD onLobbyInvite onLobbyInvite (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;J)V
+	METHOD onLobbyKicked onLobbyKicked (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;Z)V
+	METHOD onLobbyMatchList onLobbyMatchList (I)V

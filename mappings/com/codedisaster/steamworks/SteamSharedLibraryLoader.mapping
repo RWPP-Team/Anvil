@@ -1,1 +1,15 @@
 CLASS com/codedisaster/steamworks/SteamSharedLibraryLoader
+	FIELD alreadyLoaded alreadyLoaded Z
+	FIELD extractSubFolder extractSubFolder Ljava/lang/String;
+	FIELD libraryPath libraryPath Ljava/lang/String;
+	FIELD librarySystemPath librarySystemPath Ljava/io/File;
+	METHOD canExecute canExecute (Ljava/io/File;)Z
+	METHOD canWrite canWrite (Ljava/io/File;)Z
+	METHOD crc crc (Ljava/util/zip/CRC32;Ljava/io/InputStream;)Ljava/lang/String;
+	METHOD discoverExtractLocation discoverExtractLocation (Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+	METHOD extractLibrary extractLibrary (Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+	METHOD getLibNameLinux getLibNameLinux (Ljava/lang/String;Z)Ljava/lang/String;
+	METHOD getLibNameMac getLibNameMac (Ljava/lang/String;)Ljava/lang/String;
+	METHOD getLibNameWindows getLibNameWindows (Ljava/lang/String;Z)Ljava/lang/String;
+	METHOD loadLibraries loadLibraries ([Ljava/lang/String;)V
+	METHOD loadLibraries loadLibraries (Ljava/lang/String;)Z

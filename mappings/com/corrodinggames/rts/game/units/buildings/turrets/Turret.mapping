@@ -1,2 +1,38 @@
 CLASS com/corrodinggames/rts/game/units/d/a/b com/corrodinggames/rts/game/units/buildings/turrets/Turret
 	COMMENT The turret building (UnitType.turret, extends Factory): holds the current TurretType (l, default TurretGunT1), selects turret type from config strings gun/gunT2/gunT3/artillery/flamethrower, upgrade SpecialActions dL..dO, barrel-recoil animation and turret_top* images. Parent of AntiAirTurret. [evidence-based job name]
+	FIELD a turretTopImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b turretTopLevel2Image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c turretTopLevel3Image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD C TURRET_TYPE_AA_T1 Ljava/lang/String;
+	FIELD d turretTopArtilleryImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD D TURRET_TYPE_AA_T2 Ljava/lang/String;
+	FIELD dK PENDING_dK Landroid/graphics/Rect;
+	FIELD e turretTopFlameImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD E TURRET_TYPE_AA_FLAK Ljava/lang/String;
+	FIELD F turretIconImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g turretBaseImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD G turretIconTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h turretBaseTeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD H idleSweepInitialized Z
+	FIELD i turretBaseDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD I idleSweepBaseAngle F
+	FIELD j upgraded Z
+	FIELD J idleSweepTimer F
+	FIELD k fireCounter I
+	FIELD K idleSweepDirection Z
+	FIELD l currentTurretType Lcom/corrodinggames/rts/game/units/d/a/c;
+	FIELD t TURRET_TYPE_GUN Ljava/lang/String;
+	FIELD u TURRET_TYPE_GUN_T2 Ljava/lang/String;
+	FIELD v TURRET_TYPE_GUN_T3 Ljava/lang/String;
+	FIELD w TURRET_TYPE_ARTILLERY Ljava/lang/String;
+	FIELD x TURRET_TYPE_FLAMETHROWER Ljava/lang/String;
+	METHOD b selectTurretType (Ljava/lang/String;)V
+	METHOD c createTurretType (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/d/a/c;
+	METHOD dB loadTurretImages ()V
+	METHOD dC drawTurretTop ()V
+	METHOD M getTurretLevel ()I
+	METHOD s updateIdleSweep (F)V
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

@@ -1,1 +1,24 @@
 CLASS com/corrodinggames/rts/game/units/custom/f com/corrodinggames/rts/game/units/custom/AnimationSet
+	FIELD a name Ljava/lang/String;
+	FIELD b start I
+	FIELD c end I
+	FIELD d scaleStart F
+	FIELD e scaleEnd F
+	FIELD f speed F
+	FIELD g pingPong Z
+	FIELD h blendIn F
+	FIELD i blendOut F
+	FIELD j playbackRate Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD k directionSet Lcom/corrodinggames/rts/game/units/custom/m;
+	FIELD l keyFrameSets Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD m hasTargetedAnimations Z
+	FIELD n totalDuration F
+	FIELD o hasEvents Z
+	FIELD p unitAnimationTypes Ljava/util/ArrayList;
+	FIELD q onActionsQueuedUnitPlayAt F
+	METHOD a hasEvents ()Z
+	METHOD a link (Lcom/corrodinggames/rts/game/units/custom/l;)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a parseKey (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD a hasActionType (Lcom/corrodinggames/rts/game/units/custom/n;)Z
+	METHOD a getOrCreateKeyFrameSet (Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/c;

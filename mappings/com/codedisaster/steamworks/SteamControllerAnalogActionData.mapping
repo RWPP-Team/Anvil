@@ -1,1 +1,7 @@
 CLASS com/codedisaster/steamworks/SteamControllerAnalogActionData
+	FIELD active active Z
+	FIELD mode mode I
+	METHOD getActive getActive ()Z
+	METHOD getMode getMode ()Lcom/codedisaster/steamworks/SteamController$SourceMode;
+	METHOD getX getX ()F
+	METHOD getY getY ()F

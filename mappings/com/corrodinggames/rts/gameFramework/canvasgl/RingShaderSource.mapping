@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/b/g com/corrodinggames/rts/gameFramework/canvasgl/RingShaderSource
+	FIELD a lineWidth F
+	METHOD a setLineWidth (F)V

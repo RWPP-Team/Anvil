@@ -1,0 +1,43 @@
+CLASS com/codedisaster/steamworks/SteamUtils
+	FIELD callbackAdapter callbackAdapter Lcom/codedisaster/steamworks/SteamUtilsCallbackAdapter;
+	METHOD createCallback createCallback (Lcom/codedisaster/steamworks/SteamUtilsCallbackAdapter;)J
+	METHOD enableWarningMessageHook enableWarningMessageHook (JZ)V
+	METHOD getAPICallFailureReason getAPICallFailureReason (JJ)I
+	METHOD getAPICallFailureReason getAPICallFailureReason (Lcom/codedisaster/steamworks/SteamAPICall;)Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;
+	METHOD getAppID getAppID ()I
+	METHOD getAppID getAppID (J)I
+	METHOD getConnectedUniverse getConnectedUniverse ()Lcom/codedisaster/steamworks/SteamUniverse;
+	METHOD getConnectedUniverse getConnectedUniverse (J)I
+	METHOD getImageHeight getImageHeight (I)I
+	METHOD getImageHeight getImageHeight (JI)I
+	METHOD getImageRGBA getImageRGBA (ILjava/nio/ByteBuffer;I)Z
+	METHOD getImageRGBA getImageRGBA (JILjava/nio/ByteBuffer;I)Z
+	METHOD getImageWidth getImageWidth (I)I
+	METHOD getImageWidth getImageWidth (JI)I
+	METHOD getIPCountry getIPCountry (J)Ljava/lang/String;
+	METHOD getSecondsSinceAppActive getSecondsSinceAppActive ()I
+	METHOD getSecondsSinceAppActive getSecondsSinceAppActive (J)I
+	METHOD getSecondsSinceComputerActive getSecondsSinceComputerActive ()I
+	METHOD getSecondsSinceComputerActive getSecondsSinceComputerActive (J)I
+	METHOD getServerRealTime getServerRealTime ()I
+	METHOD getServerRealTime getServerRealTime (J)I
+	METHOD isAPICallCompleted isAPICallCompleted (JJ[Z)Z
+	METHOD isAPICallCompleted isAPICallCompleted (Lcom/codedisaster/steamworks/SteamAPICall;[Z)Z
+	METHOD isOverlayEnabled isOverlayEnabled ()Z
+	METHOD isOverlayEnabled isOverlayEnabled (J)Z
+	METHOD setOverlayNotificationPosition setOverlayNotificationPosition (JI)V
+	METHOD setOverlayNotificationPosition setOverlayNotificationPosition (Lcom/codedisaster/steamworks/SteamUtils$NotificationPosition;)V
+	METHOD setWarningMessageHook setWarningMessageHook (Lcom/codedisaster/steamworks/SteamAPIWarningMessageHook;)V
+	CLASS NotificationPosition
+		FIELD BottomLeft BottomLeft Lcom/codedisaster/steamworks/SteamUtils$NotificationPosition;
+		FIELD BottomRight BottomRight Lcom/codedisaster/steamworks/SteamUtils$NotificationPosition;
+		FIELD TopLeft TopLeft Lcom/codedisaster/steamworks/SteamUtils$NotificationPosition;
+		FIELD TopRight TopRight Lcom/codedisaster/steamworks/SteamUtils$NotificationPosition;
+	CLASS SteamAPICallFailure
+		FIELD code code I
+		FIELD InvalidHandle InvalidHandle Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;
+		FIELD MismatchedCallback MismatchedCallback Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;
+		FIELD NetworkFailure NetworkFailure Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;
+		FIELD None None Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;
+		FIELD SteamGone SteamGone Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;
+		METHOD byValue byValue (I)Lcom/codedisaster/steamworks/SteamUtils$SteamAPICallFailure;

@@ -1,2 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/custom/d/a com/corrodinggames/rts/game/units/custom/price/AbstractPrice
 	COMMENT Abstract price/cost (package=custom/price): abstract canAfford/take for both the full price and a partial (double) amount; c() checks then pays. [iOS-confirmed]
+	METHOD a pay (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD a pay (Lcom/corrodinggames/rts/game/units/am;D)V
+	METHOD b canAfford (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD b canAfford (Lcom/corrodinggames/rts/game/units/am;D)Z
+	METHOD c payIfCanAfford (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD c payIfCanAfford (Lcom/corrodinggames/rts/game/units/am;D)Z

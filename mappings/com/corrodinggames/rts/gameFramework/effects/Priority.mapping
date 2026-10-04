@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/d/h com/corrodinggames/rts/gameFramework/effects/Priority
+	FIELD a verylow Lcom/corrodinggames/rts/gameFramework/d/h;
+	FIELD b low Lcom/corrodinggames/rts/gameFramework/d/h;
+	FIELD c high Lcom/corrodinggames/rts/gameFramework/d/h;
+	FIELD d veryhigh Lcom/corrodinggames/rts/gameFramework/d/h;
+	FIELD e critical Lcom/corrodinggames/rts/gameFramework/d/h;
+	METHOD a isLowerPriorityThan (Lcom/corrodinggames/rts/gameFramework/d/h;)Z

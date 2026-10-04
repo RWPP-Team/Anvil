@@ -5,3 +5,4 @@ CLASS com/corrodinggames/rts/game/units/custom/k com/corrodinggames/rts/game/uni
 	FIELD c unit Lcom/corrodinggames/rts/game/units/am;
 	FIELD d tags Lcom/corrodinggames/rts/game/units/custom/h;
 	FIELD e scope Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;
+	METHOD a reset ()V

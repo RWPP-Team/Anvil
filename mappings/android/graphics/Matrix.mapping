@@ -1,0 +1,6 @@
+CLASS android/graphics/Matrix
+	CLASS ScaleToFit
+		FIELD a FILL Landroid/graphics/Matrix$ScaleToFit;
+		FIELD b START Landroid/graphics/Matrix$ScaleToFit;
+		FIELD c CENTER Landroid/graphics/Matrix$ScaleToFit;
+		FIELD d END Landroid/graphics/Matrix$ScaleToFit;

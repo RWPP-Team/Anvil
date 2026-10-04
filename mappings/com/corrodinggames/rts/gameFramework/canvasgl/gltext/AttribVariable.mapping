@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/gameFramework/b/a/a com/corrodinggames/rts/gameFramework/canvasgl/gltext/AttribVariable
+	FIELD a a_Position Lcom/corrodinggames/rts/gameFramework/b/a/a;
+	FIELD b a_TexCoordinate Lcom/corrodinggames/rts/gameFramework/b/a/a;
+	FIELD c location I
+	FIELD d name Ljava/lang/String;
+	METHOD a getLocation ()I
+	METHOD b getName ()Ljava/lang/String;

@@ -1,1 +1,12 @@
 CLASS com/codedisaster/steamworks/SteamControllerMotionData
+	FIELD data data [F
+	METHOD getPosAccelX getPosAccelX ()F
+	METHOD getPosAccelY getPosAccelY ()F
+	METHOD getPosAccelZ getPosAccelZ ()F
+	METHOD getRotQuatW getRotQuatW ()F
+	METHOD getRotQuatX getRotQuatX ()F
+	METHOD getRotQuatY getRotQuatY ()F
+	METHOD getRotQuatZ getRotQuatZ ()F
+	METHOD getRotVelX getRotVelX ()F
+	METHOD getRotVelY getRotVelY ()F
+	METHOD getRotVelZ getRotVelZ ()F

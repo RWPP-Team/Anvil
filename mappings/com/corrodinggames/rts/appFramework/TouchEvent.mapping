@@ -1,1 +1,27 @@
 CLASS com/corrodinggames/rts/appFramework/m com/corrodinggames/rts/appFramework/TouchEvent
+	FIELD a pendingPointerCount I
+	FIELD b pointerX [F
+	FIELD c pointerY [F
+	FIELD d pointerPressure [F
+	FIELD e PENDING_pointerIdArray [I
+	FIELD f x F
+	FIELD g y F
+	FIELD h pressure F
+	FIELD i PENDING_unusedFloat1 F
+	FIELD j PENDING_unusedFloat2 F
+	FIELD k pendingDown Z
+	FIELD l PENDING_unusedBool1 Z
+	FIELD m isDown Z
+	FIELD n pointerCount I
+	FIELD o PENDING_unusedBool2 Z
+	FIELD p PENDING_unusedBool3 Z
+	FIELD q PENDING_unusedBool4 Z
+	FIELD r PENDING_unusedInt1 I
+	METHOD a getPointerCount ()I
+	METHOD a setPointerPosition (FF)V
+	METHOD a setTouchEvent (FFZI)V
+	METHOD b isDown ()Z
+	METHOD c updateTouchState ()V
+	METHOD d getPointerX ()[F
+	METHOD e getPointerIds ()[I
+	METHOD f getPointerY ()[F

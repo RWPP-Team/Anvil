@@ -1,0 +1,22 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/b com/corrodinggames/rts/game/units/custom/actions/outcomes/AddWaypoints
+	FIELD a clearAllWaypoints Z
+	FIELD b clearActiveWaypoint Z
+	FIELD c addWaypointType Lcom/corrodinggames/rts/game/units/av;
+	FIELD d addWaypointUnitType Lcom/corrodinggames/rts/game/units/custom/v;
+	FIELD e addWaypointPrepend Z
+	FIELD f addWaypointNearestUnitTagged Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD g addWaypointNearestUnitTeam Lcom/corrodinggames/rts/game/q;
+	FIELD h addWaypointNearestUnitMaxRange F
+	FIELD i useRandomUnitTarget Z
+	FIELD j addWaypointRandomUnitTagged Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD k addWaypointRandomUnitTeam Lcom/corrodinggames/rts/game/q;
+	FIELD l addWaypointRandomUnitMaxRange F
+	FIELD m addWaypointMapMustBeReachable Z
+	FIELD n addWaypointPositionFromAction Z
+	FIELD o addWaypointOffsetFromSelf Landroid/graphics/PointF;
+	FIELD p addWaypointRelativeOffsetFromSelf Landroid/graphics/PointF;
+	FIELD q addWaypointRandomOffsetFromSelf Landroid/graphics/PointF;
+	FIELD r addWaypointTargetFromReference Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD s addWaypointMaxTime F
+	FIELD t addWaypointTriggerActionIfFailed Lcom/corrodinggames/rts/game/units/custom/u;
+	FIELD u addWaypointTriggerActionIfMatched Lcom/corrodinggames/rts/game/units/custom/u;

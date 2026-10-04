@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/f/i com/corrodinggames/rts/game/units/search/UnitSearchRequest
+	METHOD excludeTeam excludeTeam (Lcom/corrodinggames/rts/game/units/y;)I
+	METHOD onlyEnemiesOfTeam onlyEnemiesOfTeam (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/n;
+	METHOD onlyTeam onlyTeam (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/n;
+	METHOD setup setup (Lcom/corrodinggames/rts/game/units/y;F)V

@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/a com/corrodinggames/rts/game/units/custom/actions/outcomes/AddResources
+	FIELD a resourceAmount Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD b resourceAmountSetValue D
+	FIELD c resourceAmountAddOtherResource Lcom/corrodinggames/rts/game/units/custom/e/a;
+	FIELD d resourceAmountMultiplyBy F
+	FIELD e addResourcesWithLogic Lcom/corrodinggames/rts/game/units/custom/d/c;
+	FIELD f setResourcesWithLogic Lcom/corrodinggames/rts/game/units/custom/d/c;

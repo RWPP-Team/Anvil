@@ -1,1 +1,4 @@
 decomp/
+enigma_violation_audit.json
+*.audit.json
+*.report.json

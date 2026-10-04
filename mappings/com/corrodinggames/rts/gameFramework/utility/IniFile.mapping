@@ -5,8 +5,8 @@ CLASS com/corrodinggames/rts/gameFramework/utility/ab com/corrodinggames/rts/gam
 	FIELD d duplicateKeys Ljava/util/ArrayList;
 	FIELD e badLines Ljava/util/ArrayList;
 	FIELD f sourcePath Ljava/lang/String;
-	FIELD g hiddenCharPattern Ljava/util/regex/Pattern;
-	FIELD h sectionPattern Ljava/util/regex/Pattern;
+	FIELD g controlCharPattern Ljava/util/regex/Pattern;
+	FIELD h sectionHeaderPattern Ljava/util/regex/Pattern;
 	FIELD i keyValuePattern Ljava/util/regex/Pattern;
 	FIELD j sections Ljava/util/LinkedHashMap;
 	FIELD k locked Z

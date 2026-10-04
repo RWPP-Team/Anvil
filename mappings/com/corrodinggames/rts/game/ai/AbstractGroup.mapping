@@ -1,2 +1,15 @@
 CLASS com/corrodinggames/rts/game/a/h com/corrodinggames/rts/game/ai/AbstractGroup
 	COMMENT Abstract group of units (lists F/G); base of AIUnitGroup, NeedsTransportGroup, TransporterGroup. [iOS-confirmed]
+	FIELD F units Ljava/util/ArrayList;
+	FIELD G unitsAwaitingTransport Ljava/util/ArrayList;
+	METHOD a PENDING_isUnitSpecificGroup ()Z
+	METHOD a addUnit (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD b isDefending ()Z
+	METHOD b update (F)V
+	METHOD b removeUnit (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD c updateOrders (F)V
+	METHOD l getUnitCount ()I
+	METHOD m hasAssignedTransportGroup ()Z
+	METHOD n removeDeadUnits ()V
+	METHOD o pruneAwaitingTransportUnits ()V
+	METHOD q releaseAllUnits ()V

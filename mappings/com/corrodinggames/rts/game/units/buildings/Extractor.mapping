@@ -1,1 +1,21 @@
 CLASS com/corrodinggames/rts/game/units/d/g com/corrodinggames/rts/game/units/buildings/Extractor
+	FIELD a incomeTimer F
+	FIELD b techLevel I
+	FIELD c pumpOffset F
+	FIELD d pumpAnimFrame I
+	FIELD e extractorT1TeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f extractorT2TeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g extractorT3TeamImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h extractorBackImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD i extractorDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD j PENDING_j Landroid/graphics/Rect;
+	FIELD k PENDING_k Landroid/graphics/Rect;
+	FIELD l PENDING_l I
+	FIELD t upgradeToLevel2Action Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD u upgradeToLevel3Action Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD v specialActionsLevel1 Ljava/util/ArrayList;
+	FIELD w specialActionsLevel2 Ljava/util/ArrayList;
+	FIELD x specialActionsLevel3 Ljava/util/ArrayList;
+	METHOD K loadExtractorImages ()V
+	CLASS 1 1
+	CLASS 2 2

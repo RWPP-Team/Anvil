@@ -1,2 +1,21 @@
 CLASS com/corrodinggames/rts/appFramework/l com/corrodinggames/rts/appFramework/AndroidCompatReflection
 	COMMENT Holds 10 cached java.lang.reflect.Method fields plus float[]/int[] buffers; a() returns int[]. Android API-version compatibility shim. [evidence-based job name]
+	FIELD a multiTouchSupported Z
+	FIELD b mouseApiSupported Z
+	FIELD c getButtonStateMethod Ljava/lang/reflect/Method;
+	FIELD d getPointerCountMethod Ljava/lang/reflect/Method;
+	FIELD e findPointerIndexMethod Ljava/lang/reflect/Method;
+	FIELD f getPressureMethod Ljava/lang/reflect/Method;
+	FIELD g getHistoricalXMethod Ljava/lang/reflect/Method;
+	FIELD h getHistoricalYMethod Ljava/lang/reflect/Method;
+	FIELD i getHistoricalPressureMethod Ljava/lang/reflect/Method;
+	FIELD j getXMethod Ljava/lang/reflect/Method;
+	FIELD k getYMethod Ljava/lang/reflect/Method;
+	FIELD l ACTION_POINTER_UP I
+	FIELD m ACTION_POINTER_INDEX_SHIFT I
+	FIELD n PENDING_floatBuffer1 [F
+	FIELD o PENDING_floatBuffer2 [F
+	FIELD p PENDING_floatBuffer3 [F
+	FIELD q PENDING_intBuffer1 [I
+	FIELD r PENDING_intBuffer2 [I
+	METHOD a getPointerIds ()[I

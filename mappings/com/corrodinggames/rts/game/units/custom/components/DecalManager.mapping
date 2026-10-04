@@ -1,0 +1,21 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/c com/corrodinggames/rts/game/units/custom/components/DecalManager
+	COMMENT Parses all decal_ ini keys (layer/order/onlyWhenSelectedByX/onlyTeam/onlyWithZoomLevelOrMore/image/imageStack/total_frames/frame_width/body offsets/teamColors) and draws each decal at the right layer (shadow/beforeBody/afterBody/onTop/beforeUI). [evidence-based job name]
+	FIELD a scratchPaint Landroid/graphics/Paint;
+	FIELD b scratchUniquePaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD c shadowDecals Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD d onTopDecals Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD e beforeBodyDecals Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD f afterBodyDecals Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD g beforeUIDecals Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD h hasDecalsNotRequiringSelection Z
+	FIELD i scratchPoint Landroid/graphics/PointF;
+	FIELD j PENDING_imageAlign_j Lcom/corrodinggames/rts/game/units/custom/b/g;
+	FIELD k scratchRect Landroid/graphics/Rect;
+	FIELD l scratchRectF Landroid/graphics/RectF;
+	METHOD a getDrawRect (Lcom/corrodinggames/rts/game/units/custom/b/d;Lcom/corrodinggames/rts/game/units/custom/b/e;Lcom/corrodinggames/rts/gameFramework/m/e;FF)Landroid/graphics/RectF;
+	METHOD a getFrameRect (Lcom/corrodinggames/rts/game/units/custom/b/d;Lcom/corrodinggames/rts/game/units/custom/b/e;Lcom/corrodinggames/rts/gameFramework/m/e;I)Landroid/graphics/Rect;
+	METHOD a drawDecals (Lcom/corrodinggames/rts/game/units/custom/j;FLcom/corrodinggames/rts/game/units/custom/b/f;Lcom/corrodinggames/rts/gameFramework/utility/m;)V
+	METHOD a drawDecals (Lcom/corrodinggames/rts/game/units/custom/j;FLcom/corrodinggames/rts/game/units/custom/b/f;Lcom/corrodinggames/rts/gameFramework/utility/m;Landroid/graphics/PointF;)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;)V
+	METHOD a parseImageAlign (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/b/g;
+	METHOD c getDecalByName (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/b/d;

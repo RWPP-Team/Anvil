@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/gameFramework/b/aa com/corrodinggames/rts/gameFramework/canvasgl/VertexBuffer
+	FIELD a floatBuffer Ljava/nio/FloatBuffer;
+	FIELD b shortBuffer Ljava/nio/ShortBuffer;
+	FIELD c indexBufferId I
+	FIELD d floatCount I
+	FIELD e bufferIds [I
+	FIELD f currentBufferIndex I
+	FIELD g batch Lcom/corrodinggames/rts/gameFramework/b/y;
+	METHOD a enableAttributes ()V
+	METHOD a putVertexData ([FII)V
+	METHOD a draw (III)V
+	METHOD b uploadVertexData ()V
+	METHOD c unbindVertexBuffer ()V
+	METHOD d bindElementArrayBuffer ()V
+	METHOD e unbindElementArrayBuffer ()V

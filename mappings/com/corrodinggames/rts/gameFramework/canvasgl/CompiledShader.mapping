@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/b/z com/corrodinggames/rts/gameFramework/canvasgl/CompiledShader
+	FIELD a positionAttribute Lcom/corrodinggames/rts/gameFramework/b/o;
+	FIELD b textureCoordinateAttribute Lcom/corrodinggames/rts/gameFramework/b/o;
+	FIELD c colorAttribute Lcom/corrodinggames/rts/gameFramework/b/o;
+	FIELD d projectionUniform Lcom/corrodinggames/rts/gameFramework/b/s;
+	FIELD e textureUniform Lcom/corrodinggames/rts/gameFramework/b/s;
+	FIELD f shaderVariables [Lcom/corrodinggames/rts/gameFramework/b/q;

@@ -1,2 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/av com/corrodinggames/rts/game/units/WaypointType
 	COMMENT Waypoint/order kind: move, attack, build, repair, loadInto, unloadAt, reclaim, attackMove, loadUp, patrol, guard, guardAt, touchTarget, follow, triggerAction, ... [iOS-confirmed]
+	FIELD a move Lcom/corrodinggames/rts/game/units/av;
+	FIELD b attack Lcom/corrodinggames/rts/game/units/av;
+	FIELD c build Lcom/corrodinggames/rts/game/units/av;
+	FIELD d repair Lcom/corrodinggames/rts/game/units/av;
+	FIELD e loadInto Lcom/corrodinggames/rts/game/units/av;
+	FIELD f unloadAt Lcom/corrodinggames/rts/game/units/av;
+	FIELD g reclaim Lcom/corrodinggames/rts/game/units/av;
+	FIELD h attackMove Lcom/corrodinggames/rts/game/units/av;
+	FIELD i loadUp Lcom/corrodinggames/rts/game/units/av;
+	FIELD j patrol Lcom/corrodinggames/rts/game/units/av;
+	FIELD k guard Lcom/corrodinggames/rts/game/units/av;
+	FIELD l guardAt Lcom/corrodinggames/rts/game/units/av;
+	FIELD m touchTarget Lcom/corrodinggames/rts/game/units/av;
+	FIELD n follow Lcom/corrodinggames/rts/game/units/av;
+	FIELD o triggerAction Lcom/corrodinggames/rts/game/units/av;
+	FIELD p triggerActionWhenInRange Lcom/corrodinggames/rts/game/units/av;
+	FIELD q setPassiveTarget Lcom/corrodinggames/rts/game/units/av;

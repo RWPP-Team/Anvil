@@ -1,2 +1,19 @@
 CLASS com/corrodinggames/rts/game/b/g com/corrodinggames/rts/game/map/MapTile
 	COMMENT Map tile with terrain flags (water, lava, cliff, trees, block-buildings...) and tile-set reference. [iOS-confirmed]
+	FIELD a tileSet Lcom/corrodinggames/rts/game/b/j;
+	FIELD b tileIndex I
+	FIELD c metaTileIndex I
+	FIELD d uniqueTileId S
+	FIELD e water Z
+	FIELD f waterBridge Z
+	FIELD g lava Z
+	FIELD h cliff Z
+	FIELD i resourcePool Z
+	FIELD j blockLevel B
+	FIELD k trees Z
+	FIELD l blocksBuildings Z
+	FIELD m tileVariants [Lcom/corrodinggames/rts/game/b/g;
+	METHOD a createTile (Lcom/corrodinggames/rts/game/b/b;Lcom/corrodinggames/rts/game/b/e;Lcom/corrodinggames/rts/game/b/j;ISSZ)Lcom/corrodinggames/rts/game/b/g;
+	METHOD a tilesEqual (Lcom/corrodinggames/rts/game/b/g;Lcom/corrodinggames/rts/game/b/g;)Z
+	METHOD a draw (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/RectF;FLandroid/graphics/Paint;)V
+	METHOD a warnMissingUnitData (Ljava/lang/String;)V

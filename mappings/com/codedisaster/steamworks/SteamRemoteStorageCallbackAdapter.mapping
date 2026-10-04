@@ -1,1 +1,10 @@
 CLASS com/codedisaster/steamworks/SteamRemoteStorageCallbackAdapter
+	METHOD onDownloadUGCResult onDownloadUGCResult (JI)V
+	METHOD onFileReadAsyncComplete onFileReadAsyncComplete (JIII)V
+	METHOD onFileShareResult onFileShareResult (JLjava/lang/String;I)V
+	METHOD onFileWriteAsyncComplete onFileWriteAsyncComplete (I)V
+	METHOD onPublishedFileDeleted onPublishedFileDeleted (JI)V
+	METHOD onPublishedFileSubscribed onPublishedFileSubscribed (JI)V
+	METHOD onPublishedFileUnsubscribed onPublishedFileUnsubscribed (JI)V
+	METHOD onPublishFileResult onPublishFileResult (JZI)V
+	METHOD onUpdatePublishedFileResult onUpdatePublishedFileResult (JZI)V

@@ -4,11 +4,19 @@ CLASS com/corrodinggames/rts/gameFramework/b/ah com/corrodinggames/rts/gameFrame
 	FIELD n textureFilter I
 	FIELD o reusableCacheKey Lcom/corrodinggames/rts/gameFramework/b/ai;
 	FIELD p loaded Z
+	FIELD q PENDING_flagQ Z
+	FIELD r PENDING_flagR Z
+	FIELD s PENDING_flagS Z
 	FIELD t limitUploadAttempts Z
 	FIELD u uploadRetryCount I
 	FIELD v padding I
+	METHOD a recycleSourceBitmap (Landroid/graphics/Bitmap;)V
 	METHOD a getCachedBitmap (ZLandroid/graphics/Bitmap$Config;I)Landroid/graphics/Bitmap;
 	METHOD d uploadToGpu (Lcom/corrodinggames/rts/gameFramework/b/k;)V
+	METHOD e uploadNewTexture (Lcom/corrodinggames/rts/gameFramework/b/k;)V
+	METHOD k loadSourceBitmap ()Landroid/graphics/Bitmap;
+	METHOD l invalidateContent ()V
 	METHOD m isLoaded ()Z
 	METHOD n ensureSourceBitmap ()Landroid/graphics/Bitmap;
 	METHOD o uploadSourceBitmap ()V
+	CLASS 1 1

@@ -35,6 +35,7 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD E alpha F
 	FIELD f fogChecked Z
 	FIELD F scaleTo F
+	FIELD g layer I
 	FIELD G scaleFrom F
 	FIELD h layer1 I
 	FIELD H constantScreenSize Z
@@ -74,7 +75,9 @@ CLASS com/corrodinggames/rts/gameFramework/d/e com/corrodinggames/rts/gameFramew
 	FIELD Y direction F
 	FIELD z endColorTransitionTime F
 	FIELD Z dirSpeed F
+	METHOD a createPaint ()Lcom/corrodinggames/rts/gameFramework/m/ag;
 	METHOD a getPaintForAlpha (F)Lcom/corrodinggames/rts/gameFramework/m/ag;
+	METHOD a computeFrameRect (ILcom/corrodinggames/rts/gameFramework/d/g;Landroid/graphics/Rect;)V
 	METHOD a copyFrom (Lcom/corrodinggames/rts/gameFramework/d/e;)V
 	METHOD a draw (Lcom/corrodinggames/rts/gameFramework/l;Z)Z
 	METHOD b deactivate ()V

@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/java/t com/corrodinggames/rts/java/JavaBitmapImageData
+	FIELD a depth I
+	FIELD b ownerBitmap Lcom/corrodinggames/rts/java/s;
+	FIELD c width I
+	FIELD d height I
+	FIELD e texWidth I
+	FIELD f texHeight I
+	FIELD g textureData [B
+	METHOD a getTextureData ()[B
+	METHOD getDepth getDepth ()I
+	METHOD getHeight getHeight ()I
+	METHOD getImageBufferData getImageBufferData ()Ljava/nio/ByteBuffer;
+	METHOD getTexHeight getTexHeight ()I
+	METHOD getTexWidth getTexWidth ()I
+	METHOD getWidth getWidth ()I

@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/a/c com/corrodinggames/rts/gameFramework/sound/SoundRequest
+	FIELD a soundHandle Lcom/corrodinggames/rts/gameFramework/a/b;
+	FIELD b volumeLeft F
+	FIELD c volumeRight F
+	FIELD d priority I
+	FIELD e loop I
+	FIELD f rate F
+	METHOD a play ()V

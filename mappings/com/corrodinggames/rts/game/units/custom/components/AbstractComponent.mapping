@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/a com/corrodinggames/rts/game/units/custom/components/AbstractComponent
+	METHOD a onApplyMetadata (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/l;)V
+	METHOD b update (Lcom/corrodinggames/rts/game/units/custom/j;F)V

@@ -1,0 +1,3 @@
+CLASS com/codedisaster/steamworks/SteamUserCallbackAdapter
+	METHOD onMicroTxnAuthorization onMicroTxnAuthorization (IJZ)V
+	METHOD onValidateAuthTicket onValidateAuthTicket (JIJ)V

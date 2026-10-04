@@ -1,1 +1,8 @@
 CLASS com/codedisaster/steamworks/SteamFriendsCallback
+	METHOD onAvatarImageLoaded onAvatarImageLoaded (Lcom/codedisaster/steamworks/SteamID;III)V
+	METHOD onFriendRichPresenceUpdate onFriendRichPresenceUpdate (Lcom/codedisaster/steamworks/SteamID;I)V
+	METHOD onGameLobbyJoinRequested onGameLobbyJoinRequested (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;)V
+	METHOD onGameOverlayActivated onGameOverlayActivated (Z)V
+	METHOD onGameRichPresenceJoinRequested onGameRichPresenceJoinRequested (Lcom/codedisaster/steamworks/SteamID;Ljava/lang/String;)V
+	METHOD onPersonaStateChange onPersonaStateChange (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamFriends$PersonaChange;)V
+	METHOD onSetPersonaNameResponse onSetPersonaNameResponse (ZZLcom/codedisaster/steamworks/SteamResult;)V

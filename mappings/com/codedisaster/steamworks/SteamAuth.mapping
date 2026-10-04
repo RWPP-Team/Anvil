@@ -1,0 +1,24 @@
+CLASS com/codedisaster/steamworks/SteamAuth
+	CLASS AuthSessionResponse
+		FIELD AuthTicketCanceled AuthTicketCanceled Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD AuthTicketInvalid AuthTicketInvalid Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD AuthTicketInvalidAlreadyUsed AuthTicketInvalidAlreadyUsed Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD LoggedInElseWhere LoggedInElseWhere Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD NoLicenseOrExpired NoLicenseOrExpired Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD PublisherIssuedBan PublisherIssuedBan Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD UserNotConnectedToSteam UserNotConnectedToSteam Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD VACBanned VACBanned Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		FIELD VACCheckTimedOut VACCheckTimedOut Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+		METHOD byOrdinal byOrdinal (I)Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
+	CLASS BeginAuthSessionResult
+		FIELD DuplicateRequest DuplicateRequest Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+		FIELD ExpiredTicket ExpiredTicket Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+		FIELD GameMismatch GameMismatch Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+		FIELD InvalidTicket InvalidTicket Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+		FIELD InvalidVersion InvalidVersion Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+		METHOD byOrdinal byOrdinal (I)Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
+	CLASS UserHasLicenseForAppResult
+		FIELD DoesNotHaveLicense DoesNotHaveLicense Lcom/codedisaster/steamworks/SteamAuth$UserHasLicenseForAppResult;
+		FIELD HasLicense HasLicense Lcom/codedisaster/steamworks/SteamAuth$UserHasLicenseForAppResult;
+		FIELD NoAuth NoAuth Lcom/codedisaster/steamworks/SteamAuth$UserHasLicenseForAppResult;
+		METHOD byOrdinal byOrdinal (I)Lcom/codedisaster/steamworks/SteamAuth$UserHasLicenseForAppResult;

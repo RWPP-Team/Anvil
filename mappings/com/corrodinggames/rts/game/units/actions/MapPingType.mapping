@@ -1,2 +1,16 @@
 CLASS com/corrodinggames/rts/game/units/a/k com/corrodinggames/rts/game/units/actions/MapPingType
 	COMMENT Ping/Marker type enum: normal, attack, defend, nuke, build, upgrade, ok, no, happy, sad, retreat. Locale keys "menus.ingame.ping.type.&lt;name&gt;". Referenced as the payload field of PingMapAction. Previously mis-mapped to PingMapAction (collision). [evidence-based job name]
+	FIELD a normal Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD b attack Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD c defend Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD d nuke Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD e build Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD f upgrade Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD g ok Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD h no Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD i happy Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD j sad Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD k retreat Lcom/corrodinggames/rts/game/units/a/k;
+	METHOD a getMenuLabel ()Ljava/lang/String;
+	METHOD b getDisplayName ()Ljava/lang/String;
+	METHOD c getLocaleKey ()Ljava/lang/String;

@@ -3,3 +3,6 @@ CLASS com/corrodinggames/rts/game/units/ap com/corrodinggames/rts/game/units/Uni
 	FIELD a angle F
 	FIELD e reloadTimer F
 	FIELD j target Lcom/corrodinggames/rts/game/units/am;
+	METHOD a isSettled ()Z
+	METHOD a reset (F)V
+	METHOD b isReversing ()Z

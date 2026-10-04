@@ -5,3 +5,9 @@ CLASS com/corrodinggames/rts/game/units/custom/be com/corrodinggames/rts/game/un
 	FIELD c hasBlockingRuleWithoutCheckEachTile Z
 	FIELD d hasBlockingRuleWithCheckEachTile Z
 	FIELD e geoIndex Lcom/corrodinggames/rts/game/units/custom/bf;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;)Lcom/corrodinggames/rts/game/units/custom/be;
+	METHOD a testPlacement (Lcom/corrodinggames/rts/game/units/y;FF)Ljava/lang/String;
+	METHOD a testPlacementTile (Lcom/corrodinggames/rts/game/units/y;II)Ljava/lang/String;
+	METHOD a testRule (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/bg;FF)Z
+	METHOD b parseRules (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;)V
+	METHOD b testRules (Lcom/corrodinggames/rts/game/units/y;FF)Ljava/lang/String;

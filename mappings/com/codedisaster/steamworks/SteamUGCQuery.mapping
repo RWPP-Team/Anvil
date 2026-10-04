@@ -1,1 +1,2 @@
 CLASS com/codedisaster/steamworks/SteamUGCQuery
+	METHOD isValid isValid ()Z

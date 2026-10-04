@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/gameFramework/b/al com/corrodinggames/rts/gameFramework/canvasgl/TextMeshBuffer
+	FIELD a floatBuffer Ljava/nio/FloatBuffer;
+	FIELD b shortBuffer Ljava/nio/ShortBuffer;
+	FIELD c floatCount I
+	FIELD d bufferIds [I
+	FIELD e currentBufferIndex I
+	FIELD f textRenderer Lcom/corrodinggames/rts/gameFramework/b/aj;
+	METHOD a enableAttributes ()V
+	METHOD a putVertexData ([FII)V
+	METHOD a draw (III)V
+	METHOD b uploadVertexData ()V
+	METHOD c unbindVertexBuffer ()V
+	METHOD d prepareForRendering ()V
+	METHOD e cleanupAfterRendering ()V

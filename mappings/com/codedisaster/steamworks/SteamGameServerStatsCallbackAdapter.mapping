@@ -1,1 +1,4 @@
 CLASS com/codedisaster/steamworks/SteamGameServerStatsCallbackAdapter
+	METHOD onStatsReceived onStatsReceived (IJ)V
+	METHOD onStatsStored onStatsStored (IJ)V
+	METHOD onStatsUnloaded onStatsUnloaded (J)V

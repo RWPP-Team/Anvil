@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/gameFramework/g/a com/corrodinggames/rts/gameFramework/leaderboard/Leaderboard
+	FIELD a column Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD b groupMode Lcom/corrodinggames/rts/gameFramework/g/c;
+	FIELD c rows Ljava/util/ArrayList;
+	METHOD a buildRows ()V
+	METHOD a getRowValueText (Lcom/corrodinggames/rts/gameFramework/g/d;)Ljava/lang/String;
+	METHOD a formatColumnValue (Lcom/corrodinggames/rts/gameFramework/g/f;I)Ljava/lang/String;
+	METHOD b updateRowValues ()V
+	METHOD c cycleColumn ()V
+	METHOD d getRows ()Ljava/util/ArrayList;
+	METHOD e getColumn ()Lcom/corrodinggames/rts/gameFramework/g/f;
+	METHOD f getGroupMode ()Lcom/corrodinggames/rts/gameFramework/g/c;
+	CLASS 1 1

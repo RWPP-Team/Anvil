@@ -12,3 +12,4 @@ CLASS com/corrodinggames/rts/gameFramework/m/o com/corrodinggames/rts/gameFramew
 	METHOD a runDrawTimeCallback (Lcom/corrodinggames/rts/gameFramework/m/p;Ljava/lang/Object;Ljava/lang/Object;)V
 	METHOD a recordAction (Lcom/corrodinggames/rts/gameFramework/m/p;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 	METHOD a recordAction (Lcom/corrodinggames/rts/gameFramework/m/p;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/corrodinggames/rts/gameFramework/m/s;
+	CLASS 1 1

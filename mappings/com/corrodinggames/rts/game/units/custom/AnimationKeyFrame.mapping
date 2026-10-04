@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/custom/a com/corrodinggames/rts/game/units/custom/AnimationKeyFrame
+	FIELD a time F
+	FIELD b value F
+	FIELD c timeSlope F
+	FIELD d valueDelta F
+	METHOD compareTo compareTo (Ljava/lang/Object;)I

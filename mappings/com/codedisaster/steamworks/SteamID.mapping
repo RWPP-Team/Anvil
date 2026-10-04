@@ -1,1 +1,7 @@
 CLASS com/codedisaster/steamworks/SteamID
+	FIELD InvalidSteamID InvalidSteamID J
+	METHOD createFromNativeHandle createFromNativeHandle (J)Lcom/codedisaster/steamworks/SteamID;
+	METHOD getAccountID getAccountID ()I
+	METHOD getInvalidSteamID getInvalidSteamID ()J
+	METHOD isValid isValid ()Z
+	METHOD isValid isValid (J)Z

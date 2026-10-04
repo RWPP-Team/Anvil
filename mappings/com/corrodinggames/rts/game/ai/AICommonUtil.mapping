@@ -1,2 +1,7 @@
 CLASS com/corrodinggames/rts/game/a/f com/corrodinggames/rts/game/ai/AICommonUtil
 	COMMENT Static AI helpers: reclaim check, random list pick, tag matching, random special-action selection. [iOS-confirmed]
+	METHOD a getRandomSpecialAction (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/a/e;)Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a isIdleOrReclaiming (Lcom/corrodinggames/rts/game/units/y;)Z
+	METHOD a hasAiTag (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/g;)Z
+	METHOD a getRandomListItem (Ljava/util/AbstractList;)Ljava/lang/Object;
+	METHOD b isIdle (Lcom/corrodinggames/rts/game/units/y;)Z

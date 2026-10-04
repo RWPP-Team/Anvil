@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/e/h com/corrodinggames/rts/game/units/land/HoverUnit
+	FIELD l hoverEffectTimer F
+	FIELD m IMAGE_ICON Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD n IMAGE_ICON_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD K loadImages ()V

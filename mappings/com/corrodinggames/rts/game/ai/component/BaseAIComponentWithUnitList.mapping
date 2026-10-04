@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/game/a/a/c com/corrodinggames/rts/game/ai/component/BaseAIComponentWithUnitList
 	COMMENT AI component tracking a list of units with serialization. Extends BaseAIComponent. [iOS-confirmed]
+	FIELD a trackedUnits Lcom/corrodinggames/rts/gameFramework/utility/u;
+	METHOD c shouldTrackUnit (Lcom/corrodinggames/rts/game/a/a;Lcom/corrodinggames/rts/game/units/y;)Z

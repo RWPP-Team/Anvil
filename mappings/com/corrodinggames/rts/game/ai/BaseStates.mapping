@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/game/a/j com/corrodinggames/rts/game/ai/BaseStates
 	COMMENT Base lifecycle state (Pre, Active...). [iOS-confirmed]
+	FIELD a Pre Lcom/corrodinggames/rts/game/a/j;
+	FIELD b Prepare Lcom/corrodinggames/rts/game/a/j;
+	FIELD c Active Lcom/corrodinggames/rts/game/a/j;

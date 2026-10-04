@@ -1,2 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/g/b com/corrodinggames/rts/game/units/statusEffects/StatusEffectType
 	COMMENT Abstract enum of status-effect kinds: movementSpeed (StatusEffectMovementSpeed) and specialActionBlock (StatusEffectSpecialActionBlock); each constant's a() creates the effect instance. Used as the effect registry. Previously mis-mapped to AbstractStatusEffect (collision). [evidence-based job name]
+	FIELD a movementSpeed Lcom/corrodinggames/rts/game/units/g/b;
+	FIELD b specialActionBlock Lcom/corrodinggames/rts/game/units/g/b;
+	CLASS 1 1
+	CLASS 2 2

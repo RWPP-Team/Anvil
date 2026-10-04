@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/b/ak com/corrodinggames/rts/gameFramework/canvasgl/ShaderVariableSet
+	FIELD a positionAttribute Lcom/corrodinggames/rts/gameFramework/b/o;
+	FIELD b colorAttribute Lcom/corrodinggames/rts/gameFramework/b/o;
+	FIELD c projectionUniform Lcom/corrodinggames/rts/gameFramework/b/s;

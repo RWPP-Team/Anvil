@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/gameFramework/b/a/f com/corrodinggames/rts/gameFramework/canvasgl/gltext/Utilities
+	METHOD a createProgram (II[Lcom/corrodinggames/rts/gameFramework/b/a/a;)I
+	METHOD a createShader (ILjava/lang/String;)I

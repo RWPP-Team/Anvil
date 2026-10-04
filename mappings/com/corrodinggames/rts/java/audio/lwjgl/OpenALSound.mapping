@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALSound
+	FIELD audio audio Lcom/corrodinggames/rts/java/audio/lwjgl/OpenALAudio;
+	FIELD bufferID bufferID I
+	FIELD bytesUsed bytesUsed I
+	FIELD duration duration F
+	METHOD duration duration ()F
+	METHOD setup setup ([BII)V

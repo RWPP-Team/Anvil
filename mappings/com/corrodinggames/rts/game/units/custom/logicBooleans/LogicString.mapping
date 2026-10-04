@@ -1,1 +1,34 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString
+	METHOD arraySummaryToString arraySummaryToString (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Ljava/lang/String;
+	METHOD arrayToString arrayToString (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Ljava/lang/String;
+	CLASS Debug
+	CLASS DebugPassthrough
+		METHOD addMessage addMessage (Lcom/corrodinggames/rts/game/units/y;)V
+	CLASS LowerString
+		FIELD text text Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS Playername
+	CLASS Select
+		FIELD childA childA Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD childB childB Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD commonType commonType Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		FIELD selector selector Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD validateNumberOfArguments validateNumberOfArguments (I)V
+	CLASS StaticString
+		FIELD text text Ljava/lang/String;
+	CLASS StringCast
+		FIELD child child Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD sourceType sourceType Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;
+		METHOD castToString castToString (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$ReturnType;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/y;)Ljava/lang/String;
+		METHOD createStringCast createStringCast (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD validateNumberOfArguments validateNumberOfArguments (I)V
+		CLASS NumberToStringCast
+	CLASS Substring
+		FIELD end end Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD start start Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD text text Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS TeamName
+	CLASS UpperString
+		FIELD text text Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS WrappingLogicString
+		FIELD children children [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD validateNumberOfArguments validateNumberOfArguments (I)V

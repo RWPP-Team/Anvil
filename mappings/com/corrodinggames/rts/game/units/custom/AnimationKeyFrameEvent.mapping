@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/b com/corrodinggames/rts/game/units/custom/AnimationKeyFrameEvent
+	FIELD e effect Lcom/corrodinggames/rts/game/units/custom/z;
+	FIELD f offsetX F
+	FIELD g offsetY F
+	FIELD h finalized Z
+	METHOD a trigger (Lcom/corrodinggames/rts/game/units/custom/j;)V
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)V

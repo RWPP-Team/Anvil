@@ -1,0 +1,14 @@
+CLASS com/corrodinggames/rts/gameFramework/b/a/d com/corrodinggames/rts/gameFramework/canvasgl/gltext/SpriteBatch
+	FIELD a glText Lcom/corrodinggames/rts/gameFramework/b/a/b;
+	FIELD b meshBuffer Lcom/corrodinggames/rts/gameFramework/b/a/g;
+	FIELD c vertexData [F
+	FIELD d writeIndex I
+	FIELD e maxGlyphs I
+	FIELD f glyphCount I
+	FIELD g currentPage I
+	FIELD h mvpMatrix [F
+	FIELD i mvpUniformLocation I
+	METHOD a flush ()V
+	METHOD a begin ([F)V
+	METHOD a drawGlyph (FFFFLcom/corrodinggames/rts/gameFramework/b/a/c;)V
+	METHOD a bindGlyphTexture (Lcom/corrodinggames/rts/gameFramework/b/a/c;)V

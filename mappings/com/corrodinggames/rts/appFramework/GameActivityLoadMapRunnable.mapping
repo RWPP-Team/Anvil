@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/appFramework/h com/corrodinggames/rts/appFramework/GameActivityLoadMapRunnable
+	FIELD a filePath Ljava/lang/String;
+	FIELD b gameActivity Lcom/corrodinggames/rts/appFramework/g;
+	METHOD run run ()V

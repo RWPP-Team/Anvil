@@ -1,0 +1,30 @@
+CLASS com/corrodinggames/rts/game/units/ai SpreadingFire
+	COMMENT SpreadFire - the spreading-fire tile (UnitType.spreadingFire). Own fields: a (static BitmapOrTexture[2] resource cache, only [0] = R.drawable.fire is loaded), b (image), c (fire type, only 0 supported: "Fire type:X is not supported"), d (animation frame 0-3), e (frame timer), f (random per-instance value), g/h (frame offsets), i/j (sprite offset x/y), k (initialised flag), and the growth model l (growth per tick = 5.0E-4), m (max size = 1.0), n (spread threshold = 0.3), o (current size), p (base size), q (spread timer). r = spreading already done this cycle. Statics: s (Point scratch), t (shared static FindSpreadFireRequest used by a(x,y)), u (Rect). Inherited: radius (cj), hp/maxHp (cu/cv), angle (cg), dead (bV), deathTime (bW), damageFlash (dp). f() samples the MapTile under the fire (MapTile.e/h/k/f are the water/rock/etc. flags) and gives up when the tile cannot burn; k() spreads to all 8 neighbours. [field names verified from code]
+	FIELD a resourceCache [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c fireType I
+	FIELD d frame I
+	FIELD e frameTimer F
+	FIELD f randomValue F
+	FIELD g frameOffsetX I
+	FIELD h frameOffsetY I
+	FIELD i spriteOffsetX F
+	FIELD j spriteOffsetY F
+	FIELD k initialised Z
+	FIELD l growthRate F
+	FIELD m maxSize F
+	FIELD n spreadThreshold F
+	FIELD o size F
+	FIELD p baseSize F
+	FIELD q spreadTimer F
+	FIELD r spreadDone Z
+	FIELD s scratchPoint Landroid/graphics/Point;
+	FIELD t findRequest Lcom/corrodinggames/rts/game/units/aj;
+	FIELD u bounds Landroid/graphics/Rect;
+	METHOD a findAt (FF)Lcom/corrodinggames/rts/game/units/ai;
+	METHOD a setFireType (I)V
+	METHOD b loadResources ()V
+	METHOD b spreadTo (II)V
+	METHOD d getImage ()Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD f initialize ()V
+	METHOD k spread ()V

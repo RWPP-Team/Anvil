@@ -1,0 +1,11 @@
+CLASS com/codedisaster/steamworks/SteamApps
+	METHOD getAppBuildId getAppBuildId ()I
+	METHOD getAppBuildId getAppBuildId (J)I
+	METHOD getAppOwner getAppOwner ()Lcom/codedisaster/steamworks/SteamID;
+	METHOD getAppOwner getAppOwner (J)J
+	METHOD getAvailableGameLanguages getAvailableGameLanguages ()Ljava/lang/String;
+	METHOD getAvailableGameLanguages getAvailableGameLanguages (J)Ljava/lang/String;
+	METHOD getCurrentGameLanguage getCurrentGameLanguage ()Ljava/lang/String;
+	METHOD getCurrentGameLanguage getCurrentGameLanguage (J)Ljava/lang/String;
+	METHOD isSubscribedApp isSubscribedApp (I)Z
+	METHOD isSubscribedApp isSubscribedApp (JI)Z

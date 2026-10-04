@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/BooleanParseException
+	FIELD serialVersionUID serialVersionUID J

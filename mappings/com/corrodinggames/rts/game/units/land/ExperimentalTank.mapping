@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/e/d com/corrodinggames/rts/game/units/land/ExperimentalTank
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e spriteFrameIndex I
+	FIELD f spriteFrameTimer F
+	FIELD g spriteFrameRect Landroid/graphics/Rect;
+	METHOD f loadImages ()V
+	METHOD R isMissileTurret (I)Z

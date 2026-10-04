@@ -1,2 +1,7 @@
 CLASS a/a/q net/rudp/ReliableSocketOutputStream
 	FIELD a socket La/a/h;
+	METHOD close close ()V
+	METHOD flush flush ()V
+	METHOD write write ([B)V
+	METHOD write write ([BII)V
+	METHOD write write (I)V

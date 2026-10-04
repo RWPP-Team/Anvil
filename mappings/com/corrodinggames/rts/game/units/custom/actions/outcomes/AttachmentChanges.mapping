@@ -1,0 +1,8 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/e com/corrodinggames/rts/game/units/custom/actions/outcomes/AttachmentChanges
+	FIELD a addNewUnits Lcom/corrodinggames/rts/game/units/custom/bp;
+	FIELD b onlyOnSlots Ljava/util/ArrayList;
+	FIELD c deleteNumUnits I
+	FIELD d disconnect Z
+	FIELD e unload Z
+	FIELD f disconnectFromParent Z
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

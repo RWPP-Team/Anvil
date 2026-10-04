@@ -1,1 +1,23 @@
 CLASS com/corrodinggames/rts/gameFramework/m/k com/corrodinggames/rts/gameFramework/render/CanvasDirectGL
+	FIELD a textureManager Lcom/corrodinggames/rts/gameFramework/b/f;
+	FIELD b glCanvas Lcom/corrodinggames/rts/gameFramework/b/n;
+	FIELD c scratchGLPaint Lcom/corrodinggames/rts/gameFramework/b/v;
+	FIELD d PENDING_staticBoolean_d Z
+	FIELD e scratchRect Landroid/graphics/Rect;
+	FIELD f scratchRectF Landroid/graphics/RectF;
+	FIELD g textureFilter Lcom/corrodinggames/rts/gameFramework/b/c;
+	FIELD h scratchSrcRectF Landroid/graphics/RectF;
+	FIELD i colorFloats [F
+	FIELD j whiteImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD k onePixelRect Landroid/graphics/Rect;
+	FIELD l rectPaint Landroid/graphics/Paint;
+	FIELD m PENDING_staticRect_m Landroid/graphics/Rect;
+	FIELD n targetImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD o enabled Z
+	METHOD a getOrCreateTexture (Landroid/graphics/Bitmap;Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/b/b;
+	METHOD a toGLPaint (Landroid/graphics/Paint;)Lcom/corrodinggames/rts/gameFramework/b/v;
+	METHOD b drawRectImpl (FFFFLandroid/graphics/Paint;)V
+	METHOD b colorToFloatArray (I)[F
+	METHOD b loadTexture (Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD b drawImageImpl (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD d PENDING_flushTextures ()V

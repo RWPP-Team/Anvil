@@ -1,1 +1,16 @@
 CLASS com/corrodinggames/rts/java/audio/Music
+	METHOD dispose dispose ()V
+	METHOD getPosition getPosition ()F
+	METHOD getVolume getVolume ()F
+	METHOD isLooping isLooping ()Z
+	METHOD isPlaying isPlaying ()Z
+	METHOD pause pause ()V
+	METHOD play play ()V
+	METHOD setLooping setLooping (Z)V
+	METHOD setOnCompletionListener setOnCompletionListener (Lcom/corrodinggames/rts/java/audio/Music$OnCompletionListener;)V
+	METHOD setPan setPan (FF)V
+	METHOD setPosition setPosition (F)V
+	METHOD setVolume setVolume (F)V
+	METHOD stop stop ()V
+	CLASS OnCompletionListener
+		METHOD onCompletion onCompletion (Lcom/corrodinggames/rts/java/audio/Music;)V

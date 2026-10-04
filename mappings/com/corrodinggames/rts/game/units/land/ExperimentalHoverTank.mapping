@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/game/units/e/c com/corrodinggames/rts/game/units/land/ExperimentalHoverTank
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d shieldImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e shieldMidImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g spriteFrameIndex I
+	FIELD h hoverBobAngle F
+	FIELD i beamProjectile Lcom/corrodinggames/rts/game/f;
+	FIELD j spriteFrameRect Landroid/graphics/Rect;
+	FIELD k shieldPaint Landroid/graphics/Paint;
+	METHOD f loadImages ()V

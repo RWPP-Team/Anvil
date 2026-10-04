@@ -55,3 +55,5 @@ CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramewo
 	METHOD h resume ()V
 	METHOD i shutdown ()V
 	METHOD j isCrossfading ()Z
+	CLASS 1 1
+	CLASS 2 2

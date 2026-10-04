@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/g/c com/corrodinggames/rts/gameFramework/leaderboard/LeaderboardGroupMode
+	FIELD a player Lcom/corrodinggames/rts/gameFramework/g/c;
+	FIELD b allyGroup Lcom/corrodinggames/rts/gameFramework/g/c;
+	FIELD c combinedPlayerAndGroup Lcom/corrodinggames/rts/gameFramework/g/c;

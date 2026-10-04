@@ -1,0 +1,5 @@
+CLASS com/codedisaster/steamworks/SteamControllerDigitalActionData
+	FIELD active active Z
+	FIELD state state Z
+	METHOD getActive getActive ()Z
+	METHOD getState getState ()Z

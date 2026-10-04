@@ -1,1 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/e/b com/corrodinggames/rts/game/units/land/Builder
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e chargeImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f dechargeImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g IMAGE_ICON Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h IMAGE_ICON_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD i cornerPoints [Landroid/graphics/PointF;
+	FIELD j cornerPointsOld [Landroid/graphics/PointF;
+	FIELD k beamPaint Landroid/graphics/Paint;
+	FIELD l reclaimBeamPaint Landroid/graphics/Paint;
+	FIELD m chargeOverlayPaint Landroid/graphics/Paint;
+	FIELD n reclaimAction Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a updateWorkBeamPoints (FLcom/corrodinggames/rts/game/units/d;)V
+	METHOD a addSpecialActions (Ljava/util/ArrayList;I)V
+	METHOD b drawWorkBeams (FLcom/corrodinggames/rts/game/units/d;)V
+	METHOD K loadImages ()V

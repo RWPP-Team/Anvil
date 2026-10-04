@@ -1,0 +1,6 @@
+CLASS com/corrodinggames/rts/game/units/custom/i com/corrodinggames/rts/game/units/custom/CustomTag_CustomTagListBuilder
+	FIELD a tags Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a toCustomTagTags ()Lcom/corrodinggames/rts/game/units/custom/h;
+	METHOD a add (Lcom/corrodinggames/rts/game/units/custom/g;)Z
+	METHOD a addAll (Lcom/corrodinggames/rts/game/units/custom/h;)Z
+	METHOD b removeAll (Lcom/corrodinggames/rts/game/units/custom/h;)Z

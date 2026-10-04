@@ -1,1 +1,9 @@
 CLASS com/codedisaster/steamworks/SteamFriendsCallbackAdapter
+	FIELD personaChangeValues personaChangeValues [Lcom/codedisaster/steamworks/SteamFriends$PersonaChange;
+	METHOD onAvatarImageLoaded onAvatarImageLoaded (JIII)V
+	METHOD onFriendRichPresenceUpdate onFriendRichPresenceUpdate (JI)V
+	METHOD onGameLobbyJoinRequested onGameLobbyJoinRequested (JJ)V
+	METHOD onGameOverlayActivated onGameOverlayActivated (Z)V
+	METHOD onGameRichPresenceJoinRequested onGameRichPresenceJoinRequested (JLjava/lang/String;)V
+	METHOD onPersonaStateChange onPersonaStateChange (JI)V
+	METHOD onSetPersonaNameResponse onSetPersonaNameResponse (ZZI)V

@@ -1,5 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/as com/corrodinggames/rts/gameFramework/MusicControllerMusicFactoryMusicSteam
+	METHOD a pause ()V
 	METHOD a setVolume (F)V
 	METHOD a setStereoVolume (FF)V
 	METHOD a setTrackHandle (Lcom/corrodinggames/rts/gameFramework/ar;)V
 	METHOD a playTrack (Z)V
+	METHOD b resume ()V
+	METHOD d stop ()V
+	METHOD e dispose ()V

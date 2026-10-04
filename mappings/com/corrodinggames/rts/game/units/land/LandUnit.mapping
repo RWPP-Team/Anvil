@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/e/j com/corrodinggames/rts/game/units/land/LandUnit
+	FIELD dK verticalVelocity F
+	FIELD dL IMAGE_ICON Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD dM IMAGE_ICON_EXP Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD dN IMAGE_ICON_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD dO IMAGE_ICON_EXP_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD dt loadImages ()V

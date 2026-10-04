@@ -1,2 +1,26 @@
 CLASS com/corrodinggames/rts/appFramework/c com/corrodinggames/rts/appFramework/AppContext
 	COMMENT Android app facade: getApplicationContext() (throws if null), Activity/Context capture, immersive full-screen (SDK>=19 setSystemUiVisibility 5894), WRITE_EXTERNAL_STORAGE permission prompts, OPEN_DOCUMENT_TREE folder chooser, map-name prettifier (l1;[..]name.tmx -> Name). Static Handler for runOnUiThread. [evidence-based job name]
+	FIELD a uiHandler Landroid/os/Handler;
+	FIELD b applicationContext Landroid/content/Context;
+	FIELD c defaultRenderMode Lcom/corrodinggames/rts/appFramework/e;
+	FIELD d currentRenderMode Lcom/corrodinggames/rts/appFramework/e;
+	METHOD a getApplicationContext ()Landroid/content/Context;
+	METHOD a setApplicationContext (Landroid/app/Activity;)V
+	METHOD a showFolderChooser (Landroid/app/Activity;IZLjava/lang/String;Landroid/net/Uri;)V
+	METHOD a showStorageSetupDialog (Landroid/app/Activity;Ljava/lang/Runnable;)Z
+	METHOD a showStorageSetupDialog (Landroid/app/Activity;Ljava/lang/Runnable;Z)Z
+	METHOD a disableTransitionAnimation (Landroid/app/Activity;Z)V
+	METHOD a setupActivity (Landroid/app/Activity;ZZ)V
+	METHOD a setApplicationContext (Landroid/content/Context;)V
+	METHOD a addNewTaskFlag (Landroid/content/Intent;)V
+	METHOD a runOnUiThread (Ljava/lang/Runnable;)V
+	METHOD a getNumberOfPlayersInMap (Ljava/lang/String;)I
+	METHOD b checkAndRequestWriteStoragePermission (Landroid/app/Activity;)Z
+	METHOD b hasWriteStoragePermission (Landroid/content/Context;)Z
+	METHOD b getPrettyMapName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD c setImmersiveMode (Landroid/app/Activity;)V
+	METHOD c getMapImagePath (Ljava/lang/String;)Ljava/lang/String;
+	METHOD d clearImmersiveMode (Landroid/app/Activity;)V
+	CLASS 1 1
+	CLASS 2 2
+		CLASS 1 1

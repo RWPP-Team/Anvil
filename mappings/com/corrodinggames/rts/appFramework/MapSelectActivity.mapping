@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/appFramework/i com/corrodinggames/rts/appFramework/MapSelectActivity
+	FIELD c showStorageInfo Z
+	FIELD d selectedFile Ljava/lang/String;
+	METHOD a isDemoMap (Ljava/lang/String;Ljava/lang/String;)Z
+	METHOD a loadMapWithAI (Ljava/lang/String;ZIIZZ)V
+	METHOD d stripMapPathPrefix (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e getPrettyMapName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD f isSkirmishMap (Ljava/lang/String;)Z
+	METHOD g isSdMap (Ljava/lang/String;)Z

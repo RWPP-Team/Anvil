@@ -3,3 +3,7 @@ CLASS com/corrodinggames/rts/game/units/custom/bh com/corrodinggames/rts/game/un
 	FIELD bh name Ljava/lang/String;
 	FIELD bi id I
 	FIELD bj metadata Lcom/corrodinggames/rts/game/units/custom/l;
+	METHOD a applyToProjectile (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/f;Lcom/corrodinggames/rts/game/units/am;FFF)V
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/bh;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;)V
+	METHOD a write (Lcom/corrodinggames/rts/game/units/custom/bh;Lcom/corrodinggames/rts/gameFramework/j/as;)V
+	METHOD b read (Lcom/corrodinggames/rts/gameFramework/j/k;)Lcom/corrodinggames/rts/game/g;

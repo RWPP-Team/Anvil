@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/librocket/scripts/ScriptContext
+	FIELD guiEngine guiEngine Lcom/corrodinggames/librocket/a;
+	FIELD libRocket libRocket Lcom/corrodinggames/librocket/b;
+	FIELD methods methods Ljava/util/HashMap;
+	FIELD scriptEngine scriptEngine Lcom/corrodinggames/librocket/scripts/ScriptEngine;

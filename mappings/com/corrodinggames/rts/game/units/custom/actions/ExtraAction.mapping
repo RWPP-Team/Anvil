@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/a/g com/corrodinggames/rts/game/units/custom/actions/ExtraAction
+	FIELD a config Lcom/corrodinggames/rts/game/units/custom/a/d;
+	FIELD b delayedLinkedUnitType Lcom/corrodinggames/rts/game/units/custom/v;
+	FIELD c extraActionType Lcom/corrodinggames/rts/game/units/custom/a/e;
+	METHOD a isLockedInGame (Lcom/corrodinggames/rts/game/units/am;I)Z

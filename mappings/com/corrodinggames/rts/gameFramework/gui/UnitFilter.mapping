@@ -8,3 +8,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/al com/corrodinggames/rts/gameFrame
 	METHOD a matches (Lcom/corrodinggames/rts/game/units/y;)Z
 	METHOD a findNearestMatchingUnit (Ljava/util/ArrayList;Lcom/corrodinggames/rts/gameFramework/f/al;)Lcom/corrodinggames/rts/game/units/y;
 	METHOD a cycleSelectionList (Ljava/util/ArrayList;Lcom/corrodinggames/rts/gameFramework/f/al;Lcom/corrodinggames/rts/gameFramework/f/al;)V
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 6 6

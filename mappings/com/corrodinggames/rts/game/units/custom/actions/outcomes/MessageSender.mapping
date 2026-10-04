@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/i com/corrodinggames/rts/game/units/custom/actions/outcomes/MessageSender
+	FIELD a sendMessageWithData Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriter;
+	FIELD b sendMessageTo Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD c sendMessageWithTags Lcom/corrodinggames/rts/game/units/custom/h;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

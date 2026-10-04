@@ -5,14 +5,20 @@ CLASS com/corrodinggames/rts/gameFramework/m/x com/corrodinggames/rts/gameFramew
 	FIELD B parentEngine Lcom/corrodinggames/rts/gameFramework/m/x;
 	FIELD c softwarePixelBuffer [I
 	FIELD d pixelBufferBitmap Landroid/graphics/Bitmap;
+	FIELD e PENDING_staticIntBuffer_e Ljava/nio/IntBuffer;
+	FIELD f PENDING_staticIntBuffer_f Ljava/nio/IntBuffer;
 	FIELD g softwareRenderMode Z
 	FIELD h isTextureCanvas Z
 	FIELD i bitmap Landroid/graphics/Bitmap;
 	FIELD j texture Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD k width I
 	FIELD l height I
+	FIELD m PENDING_rect_m Landroid/graphics/Rect;
 	FIELD n tempRect Landroid/graphics/Rect;
+	FIELD o PENDING_rectF_o Landroid/graphics/RectF;
 	FIELD p tempRectF Landroid/graphics/RectF;
+	FIELD q PENDING_matrix_q Landroid/graphics/Matrix;
+	FIELD r PENDING_rectF_r Landroid/graphics/RectF;
 	FIELD s outOfMemoryImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD t textOutlineRect Landroid/graphics/RectF;
 	FIELD u textBoundsRect Landroid/graphics/RectF;

@@ -1,1 +1,2 @@
 CLASS com/codedisaster/steamworks/SteamCallbackAdapter
+	FIELD callback callback Ljava/lang/Object;

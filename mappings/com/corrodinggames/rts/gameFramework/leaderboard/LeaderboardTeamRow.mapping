@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/g/b com/corrodinggames/rts/gameFramework/leaderboard/LeaderboardTeamRow
+	FIELD a name Ljava/lang/String;
+	FIELD b teamId I
+	FIELD c teams Ljava/util/ArrayList;

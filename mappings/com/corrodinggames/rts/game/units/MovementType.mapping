@@ -1,2 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/ao com/corrodinggames/rts/game/units/MovementType
 	COMMENT Unit movement type: NONE, LAND, BUILDING, AIR, WATER, HOVER, OVER_CLIFF, OVER_CLIFF_WATER. Flattened inner class of Unit. [iOS-confirmed]
+	FIELD a NONE Lcom/corrodinggames/rts/game/units/ao;
+	FIELD b LAND Lcom/corrodinggames/rts/game/units/ao;
+	FIELD c BUILDING Lcom/corrodinggames/rts/game/units/ao;
+	FIELD d AIR Lcom/corrodinggames/rts/game/units/ao;
+	FIELD e WATER Lcom/corrodinggames/rts/game/units/ao;
+	FIELD f HOVER Lcom/corrodinggames/rts/game/units/ao;
+	FIELD g OVER_CLIFF Lcom/corrodinggames/rts/game/units/ao;
+	FIELD h OVER_CLIFF_WATER Lcom/corrodinggames/rts/game/units/ao;
+	METHOD a fromString (Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/ao;

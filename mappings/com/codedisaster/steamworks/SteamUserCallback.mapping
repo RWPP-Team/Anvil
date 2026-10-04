@@ -1,1 +1,3 @@
 CLASS com/codedisaster/steamworks/SteamUserCallback
+	METHOD onMicroTxnAuthorization onMicroTxnAuthorization (IJZ)V
+	METHOD onValidateAuthTicket onValidateAuthTicket (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;Lcom/codedisaster/steamworks/SteamID;)V

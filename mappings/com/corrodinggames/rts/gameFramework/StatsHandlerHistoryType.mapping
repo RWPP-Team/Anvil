@@ -1,3 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/bj com/corrodinggames/rts/gameFramework/StatsHandlerHistoryType
+	FIELD a income Lcom/corrodinggames/rts/gameFramework/bj;
+	FIELD b armyValue Lcom/corrodinggames/rts/gameFramework/bj;
+	FIELD c buildingValue Lcom/corrodinggames/rts/gameFramework/bj;
+	FIELD d totalValue Lcom/corrodinggames/rts/gameFramework/bj;
 	FIELD e displayedStat Lcom/corrodinggames/rts/gameFramework/g/f;
 	METHOD a getDisplayedStat ()Lcom/corrodinggames/rts/gameFramework/g/f;

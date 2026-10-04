@@ -1,1 +1,154 @@
 CLASS com/corrodinggames/rts/game/a/a com/corrodinggames/rts/game/ai/AI
+	FIELD aA PENDING_attackGroupsWaiting I
+	FIELD aB PENDING_seaAttackGroupsWaiting I
+	FIELD aC defenseGroupCount I
+	FIELD aD PENDING_defenseGroupsReady I
+	FIELD aE defenseUnitCount I
+	FIELD aF transporterGroupCount I
+	FIELD aG transporterGroupsWithUnits I
+	FIELD aH basesWithBuilderCount I
+	FIELD aI zoneIdCounter I
+	FIELD aJ aiStateFlags I
+	FIELD aK PENDING_aK Z
+	FIELD aL zoneUpdateTimer F
+	FIELD aM zoneUpdateAccumulator F
+	FIELD aN unitUpdateTimer F
+	FIELD aO unitUpdateAccumulator F
+	FIELD aP baseBuildTimer F
+	FIELD aQ baseBuildAccumulator F
+	FIELD aR specialActionCooldown F
+	FIELD as debugDrawEnabled Z
+	FIELD aS specialActionTimer F
+	FIELD at PENDING_finalInt3000 I
+	FIELD aT resourceOutpostTimer F
+	FIELD au attackGroupsCreated I
+	FIELD aU forwardOutpostTimer F
+	FIELD av defenseGroupsCreated I
+	FIELD aV PENDING_rushWaveCounter I
+	FIELD aw outpostBasesCreated I
+	FIELD aW PENDING_rushWaveTimer F
+	FIELD ax baseCount I
+	FIELD aX PENDING_aX Z
+	FIELD ay activeBaseCount I
+	FIELD aY aggressiveMode Z
+	FIELD az attackGroupCount I
+	FIELD aZ aiSleeping Z
+	FIELD ba attackingCount I
+	FIELD bA harvesterUnits Lcom/corrodinggames/rts/game/a/d;
+	FIELD bb defendingCount I
+	FIELD bB extractorUnits Lcom/corrodinggames/rts/game/a/d;
+	FIELD bc waterAttackingCount I
+	FIELD bC buildingFactories Lcom/corrodinggames/rts/game/a/d;
+	FIELD bd needsFirstRun Z
+	FIELD bD buildingFactoriesForBuilders Lcom/corrodinggames/rts/game/a/d;
+	FIELD be needsDelayedFirstRun Z
+	FIELD bE unitCountCache Lcom/corrodinggames/rts/game/a/c;
+	FIELD bf resourceOutpostScanDone Z
+	FIELD bF PENDING_cachedDifficulty I
+	FIELD bg damagingBorder Lcom/corrodinggames/rts/game/units/f;
+	FIELD bG aiDelayTimer F
+	FIELD bh landPathToEnemy Z
+	FIELD bH PENDING_actionIdScratchList Ljava/util/ArrayList;
+	FIELD bi hoverPathToEnemy Z
+	FIELD bI geoQueryScratchList Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD bj landPathToResources Z
+	FIELD bJ components Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD bk hoverPathToResources Z
+	FIELD bK scratchArrayList Ljava/util/ArrayList;
+	FIELD bl transportsBuiltCount I
+	FIELD bm zones Ljava/util/concurrent/ConcurrentLinkedQueue;
+	FIELD bn zonesSnapshot Ljava/util/ArrayList;
+	FIELD bo tempPointF Landroid/graphics/PointF;
+	FIELD bp debugPaint Landroid/graphics/Paint;
+	FIELD bq unitMixList Ljava/util/ArrayList;
+	FIELD br attackingUnitsLand Lcom/corrodinggames/rts/game/a/d;
+	FIELD bs attackingUnitsHover Lcom/corrodinggames/rts/game/a/d;
+	FIELD bt attackingUnitsAir Lcom/corrodinggames/rts/game/a/d;
+	FIELD bu attackingUnitsWater Lcom/corrodinggames/rts/game/a/d;
+	FIELD bv buildingUnits Lcom/corrodinggames/rts/game/a/d;
+	FIELD bw transportUnits Lcom/corrodinggames/rts/game/a/d;
+	FIELD bx transportUnitsFlying Lcom/corrodinggames/rts/game/a/d;
+	FIELD by transportUnitsNonFlying Lcom/corrodinggames/rts/game/a/d;
+	FIELD bz builderUnits Lcom/corrodinggames/rts/game/a/d;
+	METHOD a getNearestResourcePoint (FF)Landroid/graphics/PointF;
+	METHOD a isPathPossible (FFFFLcom/corrodinggames/rts/game/units/ao;)Z
+	METHOD a isPathPossibleToZone (FFLcom/corrodinggames/rts/game/a/o;Lcom/corrodinggames/rts/game/units/ao;)Z
+	METHOD a isValidForwardOutpostLocation (Landroid/graphics/PointF;)Z
+	METHOD a addComponent (Lcom/corrodinggames/rts/game/a/a/a;)V
+	METHOD a countUnitsOfMixNear (Lcom/corrodinggames/rts/game/a/d;FFI)I
+	METHOD a countUnitsOfMix (Lcom/corrodinggames/rts/game/a/d;Lcom/corrodinggames/rts/game/a/b;)I
+	METHOD a getZoneId (Lcom/corrodinggames/rts/game/a/o;)I
+	METHOD a findEnemyUnitNear (Lcom/corrodinggames/rts/game/n;FFF)Lcom/corrodinggames/rts/game/units/am;
+	METHOD a countFriendlyUnitsNear (Lcom/corrodinggames/rts/game/n;FFFZ)I
+	METHOD a isPathPossible (Lcom/corrodinggames/rts/game/units/am;FF)Z
+	METHOD a isUnitWithinRadius (Lcom/corrodinggames/rts/game/units/am;FFF)Z
+	METHOD a isPathPossibleToUnit (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a findNearestReachableBase (Lcom/corrodinggames/rts/game/units/ao;FFZ)Lcom/corrodinggames/rts/game/a/i;
+	METHOD a PENDING_shouldAutoUseUnitType (Lcom/corrodinggames/rts/game/units/as;)Z
+	METHOD a countUnitsOfTypeNear (Lcom/corrodinggames/rts/game/units/as;FFI)I
+	METHOD a countUnitsOfType (Lcom/corrodinggames/rts/game/units/as;Lcom/corrodinggames/rts/game/a/b;)I
+	METHOD a countUnitsOfType (Lcom/corrodinggames/rts/game/units/as;ZLcom/corrodinggames/rts/game/a/b;)I
+	METHOD a canAffordPrice (Lcom/corrodinggames/rts/game/units/custom/d/b;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a canAffordPrice (Lcom/corrodinggames/rts/game/units/custom/d/b;Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD a issueActionCommand (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/a/c;)V
+	METHOD a orderSpecialAction (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/a/s;)Z
+	METHOD a orderSpecialActionAt (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/a/s;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a PENDING_notifyBasePricePaid (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/d/b;Z)V
+	METHOD ac PENDING_isHardOrLateGame ()Z
+	METHOD ad PENDING_isMediumDifficulty ()Z
+	METHOD ae isTurtling ()Z
+	METHOD af PENDING_isTurtlingAlias ()Z
+	METHOD ag PENDING_getCachedDifficulty ()I
+	METHOD ah mapHasLargeWaterBody ()Z
+	METHOD ai shouldUseTransports ()Z
+	METHOD aj shouldUseHoverTransports ()Z
+	METHOD ak recountZoneStats ()V
+	METHOD al resetUnitMixes ()V
+	METHOD am getRandomMapPoint ()Landroid/graphics/PointF;
+	METHOD an getRandomResourcePoint ()Landroid/graphics/PointF;
+	METHOD ao countUnitsNeedingTransport ()I
+	METHOD ap getScratchArrayList ()Ljava/util/ArrayList;
+	METHOD aq validateZones ()V
+	METHOD ar getRandomAttackerUnit ()Lcom/corrodinggames/rts/game/units/am;
+	METHOD as getRandomEnemyUnit ()Lcom/corrodinggames/rts/game/units/am;
+	METHOD at getRandomEnemyUnitPosition ()Landroid/graphics/PointF;
+	METHOD au getTotalUnitCount ()I
+	METHOD av initializeAI ()V
+	METHOD b getBaseAtLocation (FF)Lcom/corrodinggames/rts/game/a/i;
+	METHOD b isValidResourceOutpostLocation (Landroid/graphics/PointF;)Z
+	METHOD b countEnemyUnitsNear (Lcom/corrodinggames/rts/game/n;FFF)I
+	METHOD b isPathPossibleNearby (Lcom/corrodinggames/rts/game/units/am;FF)Z
+	METHOD b shouldAttackTarget (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD c getNearestBaseToPoint (FF)Lcom/corrodinggames/rts/game/a/i;
+	METHOD c getAttackModeForUnit (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/a;
+	METHOD d notifyComponentsUnitAdded (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD d logAiDebug (Ljava/lang/String;)V
+	METHOD e findTeamCommandCenter (Lcom/corrodinggames/rts/game/n;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD e getBaseContainingUnit (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/a/i;
+	METHOD e notifyComponentsUnitRemoved (Lcom/corrodinggames/rts/game/units/y;)V
+	METHOD f getNearestBaseToUnit (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/a/i;
+	METHOD g PENDING_isTransportLikeUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD h isAttackerUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD i drawDebugInfo (F)V
+	METHOD i canGiveOrdersTo (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD j framesToMilliseconds (F)F
+	METHOD j canSeeUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD k framesToSeconds (F)F
+	METHOD l updateSubmersibleUnits (F)V
+	METHOD l createZoneOfType (I)Lcom/corrodinggames/rts/game/a/o;
+	METHOD m updateUnitLogic (F)V
+	METHOD m findZoneById (I)Lcom/corrodinggames/rts/game/a/o;
+	METHOD n updateZoneLogic (F)V
+	CLASS 1 1
+	CLASS 10 10
+	CLASS 11 11
+	CLASS 12 12
+	CLASS 13 13
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 6 6
+	CLASS 7 7
+	CLASS 8 8
+	CLASS 9 9

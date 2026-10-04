@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/game/k com/corrodinggames/rts/game/ReplayFrameSaver
 	COMMENT Worker thread that encodes a frame bitmap to a numbered JPEG file for replay recording ("image_%07d.jpg").
+	FIELD a frameBitmap Landroid/graphics/Bitmap;
+	FIELD c gameEngine Lcom/corrodinggames/rts/game/i;
+	METHOD run run ()V

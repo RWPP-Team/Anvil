@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/aq com/corrodinggames/rts/gameFramework/network/Obfuscation
+	FIELD a instance Lcom/corrodinggames/rts/gameFramework/j/aq;
+	METHOD a lerp (FFF)F
+	METHOD a addMasterServerAuthParameters (Ljava/lang/String;Ljava/util/List;)V

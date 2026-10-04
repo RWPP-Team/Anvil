@@ -1,2 +1,27 @@
 CLASS com/corrodinggames/rts/game/b/h com/corrodinggames/rts/game/map/MetaMapTileSet
 	COMMENT Packs tile bitmaps into 20x20 texture atlases with alpha caching; Map.l / Map.m instances. [iOS-confirmed]
+	FIELD a packedTileCount I
+	FIELD b atlasBitmap Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c atlasCanvas Lcom/corrodinggames/rts/gameFramework/m/y;
+	FIELD d drawPaint Landroid/graphics/Paint;
+	FIELD e tileSizeX I
+	FIELD f tileSizeY I
+	FIELD g tileStrideX I
+	FIELD h tileStrideY I
+	FIELD i scale F
+	FIELD j isAlphaLayer Z
+	FIELD k alphaLayerSet Lcom/corrodinggames/rts/game/b/h;
+	FIELD o cachedRect Landroid/graphics/Rect;
+	FIELD p cachedRectIndex I
+	METHOD a createAtlas ()V
+	METHOD a getAtlasForIndex (I)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a fillSlotRect (ILandroid/graphics/Rect;)V
+	METHOD a drawTileIntoAtlas (ILcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;)V
+	METHOD a computeEdgePixelRect (Landroid/graphics/Rect;Landroid/graphics/Rect;II)Landroid/graphics/Rect;
+	METHOD a computeEdgeRect (Landroid/graphics/Rect;Landroid/graphics/Rect;III)Landroid/graphics/Rect;
+	METHOD a packTile (Lcom/corrodinggames/rts/game/b/j;I)I
+	METHOD a hasImageAlpha (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;)Z
+	METHOD a drawImageWithExtendedEdges (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD b resetAtlas ()V
+	METHOD b getTileRect (I)Landroid/graphics/Rect;
+	METHOD c flushAtlas ()V

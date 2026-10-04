@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/java/c/j com/corrodinggames/rts/java/steam/SteamWorkshopListener
+	FIELD a workshop Lcom/corrodinggames/rts/java/c/g;
+	METHOD a logCallbackResult (Ljava/lang/String;Lcom/codedisaster/steamworks/SteamResult;)V

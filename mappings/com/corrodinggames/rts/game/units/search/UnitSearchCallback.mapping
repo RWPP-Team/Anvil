@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/f/j com/corrodinggames/rts/game/units/search/UnitSearchCallback
+	METHOD callback callback (Lcom/corrodinggames/rts/game/units/y;FLcom/corrodinggames/rts/game/units/am;)V

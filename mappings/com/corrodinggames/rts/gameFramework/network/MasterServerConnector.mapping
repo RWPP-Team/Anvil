@@ -3,6 +3,8 @@ CLASS com/corrodinggames/rts/gameFramework/j/n com/corrodinggames/rts/gameFramew
 	FIELD b verboseLogging Z
 	FIELD c masterServerUrls [Ljava/lang/String;
 	FIELD d httpClientFactory Lcom/corrodinggames/rts/gameFramework/j/r;
+	FIELD e PENDING_int_e I
+	FIELD f PENDING_lock_f Ljava/lang/Object;
 	METHOD a startGetOwnInfo ()V
 	METHOD a readResponseFirstLine ([B)Ljava/lang/String;
 	METHOD a getServerKeyForId (I)Ljava/lang/String;
@@ -24,3 +26,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/n com/corrodinggames/rts/gameFramew
 	METHOD c startUpdateServerRequest ()V
 	METHOD c findOrCreateDiscoveredServer (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/j/g;
 	METHOD d startRemoveServerRequest ()V
+	CLASS 1 1

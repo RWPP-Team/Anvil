@@ -1,1 +1,21 @@
 CLASS com/corrodinggames/rts/gameFramework/b/f com/corrodinggames/rts/gameFramework/canvasgl/TextureManager
+	FIELD a canvas Lcom/corrodinggames/rts/gameFramework/b/k;
+	FIELD b textureCache Ljava/util/Map;
+	FIELD c defaultShaderSource Lcom/corrodinggames/rts/gameFramework/b/a;
+	FIELD d ringShaderSource Lcom/corrodinggames/rts/gameFramework/b/g;
+	FIELD e textureFilter Lcom/corrodinggames/rts/gameFramework/b/af;
+	METHOD a popRenderTarget ()V
+	METHOD a drawLines ([FIILcom/corrodinggames/rts/gameFramework/b/v;)V
+	METHOD a drawCircle (FFFFLcom/corrodinggames/rts/gameFramework/b/v;)V
+	METHOD a drawLine (FFFLcom/corrodinggames/rts/gameFramework/b/v;)V
+	METHOD a clipRect (IIII)V
+	METHOD a PENDING_bitmapChanged (Landroid/graphics/Bitmap;)V
+	METHOD a getTexture (Landroid/graphics/Bitmap;Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/b/b;
+	METHOD a getTexture (Landroid/graphics/Bitmap;Lcom/corrodinggames/rts/gameFramework/m/e;Lcom/corrodinggames/rts/gameFramework/b/af;)Lcom/corrodinggames/rts/gameFramework/b/b;
+	METHOD a pushRenderTarget (Lcom/corrodinggames/rts/gameFramework/b/b;)V
+	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
+	METHOD b getCanvas ()Lcom/corrodinggames/rts/gameFramework/b/k;
+	METHOD c pushMatrix ()V
+	METHOD d popMatrix ()V
+	METHOD e recycleAllTextures ()V
+	CLASS 1 1

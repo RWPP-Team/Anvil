@@ -30,7 +30,9 @@ CLASS com/corrodinggames/rts/gameFramework/i/b com/corrodinggames/rts/gameFramew
 	FIELD r infoLoaded Z
 	FIELD R errorMessage Ljava/lang/String;
 	FIELD s title Ljava/lang/String;
+	FIELD S statusMessage Ljava/lang/String;
 	FIELD t fallbackTitle Ljava/lang/String;
+	FIELD T statusDetail Ljava/lang/String;
 	FIELD u description Ljava/lang/String;
 	FIELD U warnings Ljava/util/ArrayList;
 	FIELD v minVersion Ljava/lang/String;
@@ -46,6 +48,7 @@ CLASS com/corrodinggames/rts/gameFramework/i/b com/corrodinggames/rts/gameFramew
 	METHOD b addWarning (Ljava/lang/String;)V
 	METHOD c getTitleLong ()Ljava/lang/String;
 	METHOD c getInfoString (Ljava/lang/String;)Ljava/lang/String;
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
 	METHOD d getSessionId ()I
 	METHOD e getDescriptionWithInfo ()Ljava/lang/String;
 	METHOD f getDescriptionWithStorage ()Ljava/lang/String;

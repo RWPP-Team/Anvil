@@ -1,0 +1,9 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/o com/corrodinggames/rts/game/units/custom/actions/outcomes/TransportChanges
+	FIELD a addUnitsIntoTransport Lcom/corrodinggames/rts/game/units/custom/bp;
+	FIELD b deleteNumUnitsFromTransport I
+	FIELD c deleteNumUnitsFromTransport_onlyWithTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD d startUnloadingTransport Z
+	FIELD e forceUnloadTransportNow Z
+	FIELD f forceUnloadTransportNow_onlyOnSlot I
+	FIELD g transportTargetNow Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;Ljava/lang/String;Z)V

@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/game/units/custom/c com/corrodinggames/rts/game/units/custom/AnimationKeyFrameSet
+	FIELD a type Lcom/corrodinggames/rts/game/units/custom/d;
+	FIELD b index I
+	FIELD c targetName Ljava/lang/String;
+	FIELD d maxTime F
+	FIELD e keyFrames [Lcom/corrodinggames/rts/game/units/custom/a;
+	FIELD g keyFrameList Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a getLastEvent ()Lcom/corrodinggames/rts/game/units/custom/b;
+	METHOD a scaleTimes (F)V
+	METHOD a addKeyFrame (FF)V
+	METHOD a triggerEvents (Lcom/corrodinggames/rts/game/units/custom/j;FFZ)V
+	METHOD a parseKey (Lcom/corrodinggames/rts/game/units/custom/l;FLjava/lang/String;Ljava/lang/String;)V
+	METHOD b finalizeEvent ()V
+	METHOD b evaluate (F)F
+	METHOD c compile ()V

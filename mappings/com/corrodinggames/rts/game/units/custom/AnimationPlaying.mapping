@@ -1,1 +1,24 @@
 CLASS com/corrodinggames/rts/game/units/custom/e com/corrodinggames/rts/game/units/custom/AnimationPlaying
+	FIELD a animationSet Lcom/corrodinggames/rts/game/units/custom/f;
+	FIELD b time F
+	FIELD c prevTime F
+	FIELD d playbackSpeed F
+	FIELD e playing Z
+	FIELD f loop Z
+	FIELD g blending Z
+	FIELD h stopAtEnd Z
+	FIELD i restartRequested Z
+	FIELD j priority I
+	FIELD k blendWeight F
+	FIELD l blendRate F
+	FIELD m unit Lcom/corrodinggames/rts/game/units/custom/j;
+	FIELD n baseValues [F
+	METHOD a stop ()V
+	METHOD a update (F)V
+	METHOD a isPlaying (Lcom/corrodinggames/rts/game/units/custom/f;)Z
+	METHOD a play (Lcom/corrodinggames/rts/game/units/custom/f;I)V
+	METHOD a play (Lcom/corrodinggames/rts/game/units/custom/f;IZ)V
+	METHOD a applyEvents (Z)V
+	METHOD b stopInternal ()V
+	METHOD b applyBlend (Z)V
+	METHOD c setBaseBlendValues ()V

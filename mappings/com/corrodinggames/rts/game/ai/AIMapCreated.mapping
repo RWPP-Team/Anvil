@@ -1,2 +1,4 @@
 CLASS com/corrodinggames/rts/game/a/b com/corrodinggames/rts/game/ai/AIMapCreated
 	COMMENT Filter enum {include, exclude} used by AI unit counting. Flattened inner class of AI. [iOS-confirmed via (UnitTypeInterface, AI$MapCreated) signature]
+	FIELD a include Lcom/corrodinggames/rts/game/a/b;
+	FIELD b exclude Lcom/corrodinggames/rts/game/a/b;

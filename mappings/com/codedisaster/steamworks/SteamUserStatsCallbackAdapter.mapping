@@ -1,1 +1,9 @@
 CLASS com/codedisaster/steamworks/SteamUserStatsCallbackAdapter
+	METHOD onGlobalStatsReceived onGlobalStatsReceived (JI)V
+	METHOD onLeaderboardFindResult onLeaderboardFindResult (JZ)V
+	METHOD onLeaderboardScoresDownloaded onLeaderboardScoresDownloaded (JJI)V
+	METHOD onLeaderboardScoreUploaded onLeaderboardScoreUploaded (ZJIZII)V
+	METHOD onUserAchievementStored onUserAchievementStored (JZLjava/lang/String;II)V
+	METHOD onUserStatsReceived onUserStatsReceived (JJI)V
+	METHOD onUserStatsStored onUserStatsStored (JI)V
+	METHOD onUserStatsUnloaded onUserStatsUnloaded (J)V

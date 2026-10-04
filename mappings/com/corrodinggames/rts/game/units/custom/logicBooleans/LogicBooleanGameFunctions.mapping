@@ -1,1 +1,170 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions
+	METHOD addBooleanType addBooleanType (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;[Ljava/lang/String;)V
+	METHOD loadTypes loadTypes ()V
+	CLASS AmmoBoolean
+	CLASS AmmoIncludingQueuedBoolean
+	CLASS BuiltAmountBoolean
+	CLASS CompareUnitsBroken
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		FIELD sameUnitAs sameUnitAs Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+		METHOD sameUnitAs sameUnitAs (Ljava/lang/String;)V
+	CLASS CompletedBoolean
+	CLASS CustomTimerBoolean
+	CLASS EnergyBoolean
+	CLASS EnergyIncludingQueuedBoolean
+	CLASS EventTagsBoolean
+		FIELD includesTag includesTag Lcom/corrodinggames/rts/game/units/custom/g;
+		METHOD includes includes (Ljava/lang/String;)V
+	CLASS GameMapHeightBoolean
+	CLASS GameMapWidthBoolean
+	CLASS GameModeBoolean
+		FIELD nukesEnabled nukesEnabled Z
+	CLASS HasActiveWaypoint
+		FIELD type type Lcom/corrodinggames/rts/game/units/av;
+		METHOD type type (Ljava/lang/String;)V
+	CLASS HasFlagBoolean
+		FIELD flagId flagId I
+		FIELD flagMask flagMask I
+		METHOD isFlagSet isFlagSet (II)Z
+		METHOD setFlag setFlag (II)B
+		METHOD unsetFlag unsetFlag (II)B
+	CLASS HasFlagDynamicBoolean
+	CLASS HasParent
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		METHOD withTag withTag (Ljava/lang/String;)V
+	CLASS HasResourcesBoolean
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		FIELD requiredResources requiredResources Lcom/corrodinggames/rts/game/units/custom/d/b;
+	CLASS HasTakenDamage
+	CLASS HeightBoolean
+		FIELD flying flying Z
+		FIELD ground ground Z
+		FIELD underwater underwater Z
+	CLASS HeightValueBoolean
+	CLASS HpBoolean
+	CLASS InMapBoolean
+	CLASS IsAttackingBoolean
+	CLASS IsControlledByAI
+	CLASS isDead
+	CLASS isEnergyRechargingBoolean
+	CLASS IsGameFrameBoolean
+		FIELD equalTo equalTo I
+		FIELD mod mod I
+		FIELD offset offset Z
+		METHOD mod mod (I)V
+	CLASS IsOnTeam
+		FIELD teamId teamId I
+		METHOD team team (I)V
+	CLASS IsResourceLargerThan
+		FIELD byMoreThan byMoreThan F
+		FIELD compareTarget compareTarget Lcom/corrodinggames/rts/game/units/custom/e/a;
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		FIELD multiplyTargetBy multiplyTargetBy F
+		FIELD source source Lcom/corrodinggames/rts/game/units/custom/e/a;
+		METHOD compareTarget compareTarget (Ljava/lang/String;)V
+		METHOD source source (Ljava/lang/String;)V
+	CLASS IsReversingBoolean
+	CLASS isTransportUnloading
+	CLASS KillsBoolean
+	CLASS LastConvertedBoolean
+	CLASS MaxEnergyBoolean
+	CLASS MaxHpBoolean
+	CLASS MaxMoveSpeedBoolean
+	CLASS MaxShieldBoolean
+	CLASS MovingBoolean
+	CLASS NumberOfAttachedUnitsBoolean
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD attachmentId attachmentId S
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		METHOD slot slot (Ljava/lang/String;)V
+		METHOD withTag withTag (Ljava/lang/String;)V
+	CLASS NumberOfConnectionsBoolean
+		FIELD connectionMetadata connectionMetadata Lcom/corrodinggames/rts/game/units/custom/c/a;
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		METHOD name name (Ljava/lang/String;)V
+	CLASS NumberOfQueuedWaypoints
+		FIELD type type Lcom/corrodinggames/rts/game/units/av;
+		METHOD type type (Ljava/lang/String;)V
+	CLASS NumberOfUnitsInEnemyOrAllyTeam
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD ally ally Z
+		FIELD factoryQueue factoryQueue Z
+		FIELD handleCallbackCountAlly handleCallbackCountAlly Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountAlly;
+		FIELD handleCallbackCountEnemies handleCallbackCountEnemies Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInEnemyOrAllyTeam$HandleCallbackCountEnemies;
+		FIELD incompleteBuildings incompleteBuildings Z
+		FIELD withinRange withinRange F
+		FIELD withinRangeSq withinRangeSq F
+		METHOD withTag withTag (Ljava/lang/String;)V
+		CLASS HandleCallbackCountAlly
+			FIELD ally ally Lcom/corrodinggames/rts/game/n;
+			FIELD count count I
+			FIELD incompleteBuildings incompleteBuildings Z
+			FIELD tag tag Lcom/corrodinggames/rts/game/units/custom/g;
+			FIELD withinRangeSq withinRangeSq F
+		CLASS HandleCallbackCountEnemies
+			FIELD count count I
+			FIELD incompleteBuildings incompleteBuildings Z
+			FIELD tag tag Lcom/corrodinggames/rts/game/units/custom/g;
+			FIELD withinRangeSq withinRangeSq F
+	CLASS NumberOfUnitsInTeam
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD allTeams allTeams Z
+		FIELD factoryQueue factoryQueue Z
+		FIELD handleCallbackCount handleCallbackCount Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions$NumberOfUnitsInTeam$HandleCallbackCount;
+		FIELD incompleteBuildings incompleteBuildings Z
+		FIELD neutralTeam neutralTeam Z
+		FIELD useAggressiveTeamInsteadOfNeutralTeam useAggressiveTeamInsteadOfNeutralTeam Z
+		FIELD withinRange withinRange F
+		FIELD withinRangeSq withinRangeSq F
+		METHOD aggressiveTeam aggressiveTeam (Z)V
+		METHOD withTag withTag (Ljava/lang/String;)V
+		CLASS HandleCallbackCount
+			FIELD count count I
+			FIELD incompleteBuildings incompleteBuildings Z
+			FIELD tag tag Lcom/corrodinggames/rts/game/units/custom/g;
+			FIELD targetTeam targetTeam Lcom/corrodinggames/rts/game/n;
+			FIELD withinRangeSq withinRangeSq F
+	CLASS OverCliftBoolean
+	CLASS OverLiquidBoolean
+	CLASS OverPassableTileBoolean
+		FIELD movementType movementType Lcom/corrodinggames/rts/game/units/ao;
+		METHOD type type (Ljava/lang/String;)V
+	CLASS OverWaterBoolean
+	CLASS PositionXBoolean
+	CLASS PositionYBoolean
+	CLASS PriceCreditsBoolean
+	CLASS QueueSize
+		FIELD _withActionTag _withActionTag Lcom/corrodinggames/rts/game/units/custom/g;
+		METHOD withActionTag withActionTag (Ljava/lang/String;)V
+	CLASS ResourceCountBoolean
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		FIELD type type Lcom/corrodinggames/rts/game/units/custom/e/a;
+		METHOD type type (Ljava/lang/String;)V
+	CLASS ResourceScope
+	CLASS RotationBoolean
+	CLASS ShieldBoolean
+	CLASS SpeedBoolean
+		FIELD atTopSpeed atTopSpeed Z
+	CLASS SpeedValueBoolean
+	CLASS TagsBoolean
+		FIELD includesTag includesTag Lcom/corrodinggames/rts/game/units/custom/g;
+		METHOD includes includes (Ljava/lang/String;)V
+	CLASS TeamDefeatedTechBoolean
+	CLASS TeamIdBoolean
+	CLASS TeamTagBoolean
+		FIELD includesTag includesTag Lcom/corrodinggames/rts/game/units/custom/g;
+		METHOD includes includes (Ljava/lang/String;)V
+	CLASS TeamVictoryBoolean
+	CLASS TeamWipedOutBoolean
+	CLASS ThisActionRepeatedCount
+	CLASS TimeAliveBoolean
+	CLASS TouchWaterBoolean
+	CLASS TransportingCountBoolean
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD filtered filtered Z
+		FIELD slot slot I
+		METHOD withTag withTag (Ljava/lang/String;)V
+	CLASS TransportingUnitWithTagsBoolean
+		FIELD includesTag includesTag Lcom/corrodinggames/rts/game/units/custom/g;
+		METHOD includes includes (Ljava/lang/String;)V
+	CLASS UnitIdBoolean

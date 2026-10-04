@@ -1,6 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramework/render/GraphicsEngine
+	METHOD a PENDING_unknownBoolean ()Z
 	METHOD a drawLines ([FIILandroid/graphics/Paint;)V
 	METHOD a scale (FF)V
+	METHOD a rotate (FFF)V
 	METHOD a scaleAroundPoint (FFFF)V
 	METHOD a drawLine (FFFFLandroid/graphics/Paint;)V
 	METHOD a drawCircle (FFFLandroid/graphics/Paint;)V
@@ -9,33 +11,58 @@ CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramew
 	METHOD a createImage (IIZ)Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a setPorterDuffMode (ILandroid/graphics/PorterDuff$Mode;)V
 	METHOD a loadImage (IZ)Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a setContext (Landroid/content/Context;)V
+	METHOD a PENDING_noopPaint (Landroid/graphics/Paint;)V
 	METHOD a clipRect (Landroid/graphics/Rect;)V
 	METHOD a drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD a clipRect (Landroid/graphics/RectF;)V
 	METHOD a drawRect (Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a setGlRenderer (Lcom/corrodinggames/rts/gameFramework/m/a;)V
 	METHOD a addShader (Lcom/corrodinggames/rts/gameFramework/m/ae;)V
+	METHOD a createTextureCanvas (Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/m/y;
 	METHOD a drawImageRotated (Lcom/corrodinggames/rts/gameFramework/m/e;FFFLandroid/graphics/Paint;)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;)V
+	METHOD a PENDING_drawImageRotatedClipped (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;FF)V
+	METHOD a drawImageRotatedInRect (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;FFFLandroid/graphics/Paint;)V
+	METHOD a drawImageTiledSimple (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD a drawImageTiled (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Paint;IIII)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a drawImageWrapped (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/RectF;Landroid/graphics/Paint;FFII)V
 	METHOD a saveImageToFile (Lcom/corrodinggames/rts/gameFramework/m/e;Ljava/io/File;)V
+	METHOD a setCurrentCanvas (Lcom/corrodinggames/rts/gameFramework/m/l;)V
+	METHOD a PENDING_executeDrawCommand (Lcom/corrodinggames/rts/gameFramework/m/m;)V
 	METHOD a loadImageFromStream (Ljava/io/InputStream;Z)Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
 	METHOD a drawTextOutlined (Ljava/lang/String;FFLandroid/graphics/Paint;Landroid/graphics/Paint;F)V
 	METHOD a measureText (Ljava/lang/String;Landroid/graphics/Paint;)I
 	METHOD a lockCanvas (Ljava/util/concurrent/locks/Lock;)V
+	METHOD a beginSoftwareRender (Z)V
+	METHOD b loadOutOfMemoryImage ()V
 	METHOD b translate (FF)V
+	METHOD b drawCircleNoGlow (FFFLandroid/graphics/Paint;)V
+	METHOD b drawColor (I)V
+	METHOD b createImageImpl (IIZ)Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD b drawRectAlt (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD b createBitmapCanvas (Lcom/corrodinggames/rts/gameFramework/m/e;)Lcom/corrodinggames/rts/gameFramework/m/y;
+	METHOD b drawImageTopLeft (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;)V
+	METHOD b drawImageSoftware (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD b measureTextHeight (Ljava/lang/String;Landroid/graphics/Paint;)I
 	METHOD b unlockCanvas (Ljava/util/concurrent/locks/Lock;)V
 	METHOD c drawRectFromSize (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD d getCurrentCanvas ()Lcom/corrodinggames/rts/gameFramework/m/l;
+	METHOD e PENDING_noop_e ()V
+	METHOD f endSoftwareRender ()V
 	METHOD g applyPendingShaders ()V
+	METHOD h PENDING_syncCanvasPublic ()V
 	METHOD i saveMatrix ()V
 	METHOD j restoreMatrix ()V
-	METHOD k restore ()V
-	METHOD l save ()V
+	METHOD k save ()V
+	METHOD l restore ()V
 	METHOD m getWidth ()I
 	METHOD n getHeight ()I
+	METHOD o clearCanvas ()V
+	METHOD p flushBitmap ()V
+	METHOD q PENDING_noop_q ()V
 	METHOD r getOOMImage ()Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD s PENDING_scaleFactor ()F

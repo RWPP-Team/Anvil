@@ -18,6 +18,7 @@ CLASS com/corrodinggames/rts/gameFramework/m/l com/corrodinggames/rts/gameFramew
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;FFLandroid/graphics/Paint;)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 	METHOD a drawImage (Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a PENDING_executeDrawCommand (Lcom/corrodinggames/rts/gameFramework/m/m;)V
 	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
 	METHOD a lockCanvas (Ljava/util/concurrent/locks/Lock;)V
 	METHOD a setEnabled (Z)V

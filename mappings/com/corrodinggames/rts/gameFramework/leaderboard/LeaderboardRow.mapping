@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/g/d com/corrodinggames/rts/gameFramework/leaderboard/LeaderboardRow
+	FIELD a value I
+	METHOD a isGroup ()Z
+	METHOD a getColumnValue (Lcom/corrodinggames/rts/gameFramework/g/f;)I
+	METHOD b getName ()Ljava/lang/String;
+	METHOD b updateValue (Lcom/corrodinggames/rts/gameFramework/g/f;)V
+	METHOD c getColor ()I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+	METHOD d getGroupColor ()I

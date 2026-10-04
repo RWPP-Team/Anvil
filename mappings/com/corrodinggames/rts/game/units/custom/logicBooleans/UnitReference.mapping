@@ -1,1 +1,89 @@
 CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference
+	FIELD placeholderUnitContext placeholderUnitContext Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	FIELD referenceTypes referenceTypes Ljava/util/HashMap;
+	FIELD selfUnitReference selfUnitReference Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$SelfUnitReference;
+	FIELD unitContextChangingContext unitContextChangingContext Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
+	METHOD addUnitReferenceType addUnitReferenceType (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;[Ljava/lang/String;)V
+	METHOD get get (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD get get (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD getClassDebugName getClassDebugName ()Ljava/lang/String;
+	METHOD getRealUnitOnly getRealUnitOnly (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD getSingleRaw getSingleRaw (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD parseSingleUnitReferenceBlock parseSingleUnitReferenceBlock (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	METHOD parseSingleUnitReferenceElement parseSingleUnitReferenceElement (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	METHOD parseUnitReference parseUnitReference (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;Z)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	METHOD parseUnitReferenceFromConf parseUnitReferenceFromConf (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	METHOD parseUnitTypeOrReference parseUnitTypeOrReference (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitReferenceOrUnitType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitReferenceOrUnitType;
+	METHOD parseUnitTypeOrReferenceFromConf parseUnitTypeOrReferenceFromConf (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitReferenceOrUnitType;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitReferenceOrUnitType;
+	METHOD with with (Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	CLASS ActiveWaypointTargetReference
+	CLASS AttachmentUnitReference
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD attachmentId attachmentId S
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		METHOD slot slot (Ljava/lang/String;)V
+		METHOD withTag withTag (Ljava/lang/String;)V
+	CLASS AttackingReference
+	CLASS ChainedUnitReference
+		FIELD chain chain [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+	CLASS EventSourceReference
+	CLASS FirstUnitReference
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD incompleteBuildings incompleteBuildings Z
+		FIELD relation relation Lcom/corrodinggames/rts/game/q;
+		METHOD relation relation (Ljava/lang/String;)V
+		METHOD withTag withTag (Ljava/lang/String;)V
+	CLASS GetAsMarker
+	CLASS GetOffsetAbsolute
+		FIELD height height Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS GetOffsetRelative
+		FIELD dirOffset dirOffset Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD height height Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	CLASS GetOffsetRelativeStatic
+		FIELD dirOffset dirOffset F
+		FIELD height height F
+	CLASS LastDamagedByUnitReference
+	CLASS LockedUnitReference
+		FIELD target target Lcom/corrodinggames/rts/game/units/am;
+	CLASS Memory1UnitReference
+	CLASS Memory2UnitReference
+	CLASS NearestUnitReference
+		FIELD _withoutTag _withoutTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD _withTag _withTag Lcom/corrodinggames/rts/game/units/custom/g;
+		FIELD handleCallbackNearest handleCallbackNearest Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$NearestUnitReference$HandleCallbackNearest;
+		FIELD incompleteBuildings incompleteBuildings Z
+		FIELD relation relation Lcom/corrodinggames/rts/game/q;
+		FIELD withinRange withinRange F
+		FIELD withinRangeSq withinRangeSq F
+		METHOD relation relation (Ljava/lang/String;)V
+		METHOD withinRange withinRange (F)V
+		METHOD withoutTag withoutTag (Ljava/lang/String;)V
+		METHOD withTag withTag (Ljava/lang/String;)V
+		CLASS HandleCallbackNearest
+			FIELD incompleteBuildings incompleteBuildings Z
+			FIELD nearest nearest Lcom/corrodinggames/rts/game/units/am;
+			FIELD relation relation Lcom/corrodinggames/rts/game/q;
+			FIELD tag tag Lcom/corrodinggames/rts/game/units/custom/g;
+			FIELD withinRangeSq withinRangeSq F
+			FIELD withoutTag withoutTag Lcom/corrodinggames/rts/game/units/custom/g;
+	CLASS NullUnitReference
+	CLASS ParentUnitReference
+	CLASS PlaceholderUnitReference
+	CLASS SelfUnitReference
+	CLASS ThisActionTargetReference
+	CLASS TransportingUnitReference
+		FIELD meta meta Lcom/corrodinggames/rts/game/units/custom/l;
+		FIELD slot slot I
+	CLASS UnitContextChangingBooleanByLogic
+		FIELD dynamicContext dynamicContext Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD dynamicContextChain dynamicContextChain [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		FIELD targetBoolean targetBoolean Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+		METHOD create create (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$UnitContextChangingBooleanByLogic;
+		METHOD getUnitContext getUnitContext (Lcom/corrodinggames/rts/game/units/y;)Lcom/corrodinggames/rts/game/units/y;
+	CLASS UnitContextChangingContext
+	CLASS UnitReferenceOrUnitType
+		FIELD unitReference unitReference Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference;
+		FIELD unitType unitType Lcom/corrodinggames/rts/game/units/custom/v;
+		METHOD getTypeOrNull getTypeOrNull (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/as;
+		METHOD getUnitOrSharedUnit getUnitOrSharedUnit (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/am;
+		METHOD getUnitReferenceOrNull getUnitReferenceOrNull (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/am;

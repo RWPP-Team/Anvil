@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/s com/corrodinggames/rts/gameFramework/GameEngineMapType
+	FIELD a menu Lcom/corrodinggames/rts/gameFramework/s;
+	FIELD b normal Lcom/corrodinggames/rts/gameFramework/s;
+	FIELD c normalSave Lcom/corrodinggames/rts/gameFramework/s;

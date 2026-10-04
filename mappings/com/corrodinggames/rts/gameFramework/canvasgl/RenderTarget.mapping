@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/b/ad com/corrodinggames/rts/gameFramework/canvasgl/RenderTarget
+	FIELD l textureFilter I
+	METHOD a uploadBitmapAtOffset (Lcom/corrodinggames/rts/gameFramework/b/k;Landroid/graphics/Bitmap;II)V

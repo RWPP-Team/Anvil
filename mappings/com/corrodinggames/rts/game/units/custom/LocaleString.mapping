@@ -5,3 +5,8 @@ CLASS com/corrodinggames/rts/game/units/custom/bb com/corrodinggames/rts/game/un
 	FIELD c resolvedText Ljava/lang/String;
 	FIELD d cachedLocaleId I
 	FIELD e localeKey Ljava/lang/String;
+	METHOD a isEmpty ()Z
+	METHOD a fromText (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/bb;
+	METHOD a rewrite (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD b resolve ()Ljava/lang/String;
+	METHOD b fromKey (Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/bb;

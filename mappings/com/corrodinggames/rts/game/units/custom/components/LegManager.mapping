@@ -1,0 +1,6 @@
+CLASS com/corrodinggames/rts/game/units/custom/b/h com/corrodinggames/rts/game/units/custom/components/LegManager
+	FIELD a instance Lcom/corrodinggames/rts/game/units/custom/b/a;
+	FIELD b scratchRect Landroid/graphics/Rect;
+	FIELD c scratchRectF Landroid/graphics/RectF;
+	FIELD d scratchPaint Landroid/graphics/Paint;
+	METHOD a draw (Lcom/corrodinggames/rts/game/units/custom/j;FZZ)V
