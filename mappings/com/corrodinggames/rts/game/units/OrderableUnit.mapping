@@ -233,7 +233,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 		COMMENT Reciprocal of the y-axis movement scaling, applied before the facing angle is computed. CustomUnit returns this.meta.ek, which CustomUnitMetadataLoader computes as 1.0F / [movement]moveYAxisScaling (and throws if that key is <= 0). Sole caller is updateMoveThrottle, which rescales the target's y coordinate as "(var8 - this.ep) * this.ba() + this.ep" before passing it to CommonUtils.angleBetweenPoints, so a unit that visually moves slower/faster along y still turns toward the visually correct point. The forward scaling itself is exposed separately as getMoveYAxisScaling().
 	METHOD bA isUnloading ()Z
 	METHOD bb canReverse ()Z
-	METHOD bB getTransportedUnitCount ()I
+	METHOD bB getTransportCapacity ()I
 	METHOD bc getReverseSpeedPercentage ()F
 	METHOD bD getCurrentQueuedPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD be getAttackMovement ()Lcom/corrodinggames/rts/game/units/b;
@@ -342,4 +342,3 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 		COMMENT Current movement speed in world units per tick, abstract here. CustomUnit returns this.unitData.j * this.speedMultiplier, so runtime slow effects (slowDown / speedMultiplier) are already folded in. UnitType.s() prints it as "Speed". Distinct from A() (maxTurnSpeed) and from the declared [movement]moveSpeed kept in metadata.
 	METHOD z getTurretLimitingRange (I)F
 	METHOD Z hasAttackTarget ()Z
-	CLASS 1 1
