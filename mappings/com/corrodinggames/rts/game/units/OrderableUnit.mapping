@@ -89,7 +89,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD m moveTargetY F
 	FIELD M cachedBodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD n moveTargetClearance I
-	FIELD N turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD N cachedTurretImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD o pathGoalX F
 	FIELD O emptyWaypointArray [Lcom/corrodinggames/rts/game/units/au;
 	FIELD p pathGoalY F
