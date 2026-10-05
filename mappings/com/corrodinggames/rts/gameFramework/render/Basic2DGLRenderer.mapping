@@ -1,1 +1,21 @@
 CLASS com/corrodinggames/rts/gameFramework/m/a com/corrodinggames/rts/gameFramework/render/Basic2DGLRenderer
+	FIELD a surfaceCreated Z
+	FIELD b gl Ljavax/microedition/khronos/opengles/GL10;
+	FIELD c surfaceHeight F
+	FIELD d surfaceWidth F
+	FIELD e readyListIndex I
+	FIELD f drawingListIndex I
+	FIELD g drawLists [Lcom/corrodinggames/rts/gameFramework/m/c;
+	FIELD h meshBuffer Lcom/corrodinggames/rts/gameFramework/m/ac;
+	FIELD i boundTextureId I
+	FIELD j meshHeight I
+	FIELD k meshWidth I
+	FIELD l fpsElapsedMs I
+	FIELD m fpsFrameCount I
+	FIELD n fps I
+	FIELD o fpsText Ljava/lang/String;
+	FIELD p lastFrameTimeMs J
+	FIELD q bitmapOptions Landroid/graphics/BitmapFactory$Options;
+	METHOD onDrawFrame onDrawFrame (Ljavax/microedition/khronos/opengles/GL10;)V
+	METHOD onSurfaceChanged onSurfaceChanged (Ljavax/microedition/khronos/opengles/GL10;II)V
+	METHOD onSurfaceCreated onSurfaceCreated (Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V

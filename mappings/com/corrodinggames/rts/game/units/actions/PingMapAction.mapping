@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/a/j com/corrodinggames/rts/game/units/actions/PingMapAction
+	FIELD a pingType Lcom/corrodinggames/rts/game/units/a/k;
+	FIELD b allPingActions Ljava/util/ArrayList;
+	FIELD c sharedIconRect Landroid/graphics/Rect;
+	METHOD K getLocaleKey ()Ljava/lang/String;

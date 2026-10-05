@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/a/w com/corrodinggames/rts/game/units/actions/QueueUnitAction
+	METHOD K getBuildSpeed ()F

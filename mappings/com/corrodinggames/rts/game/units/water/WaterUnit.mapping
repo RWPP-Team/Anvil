@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/h/f com/corrodinggames/rts/game/units/water/WaterUnit
+	FIELD m wakeSmokeTimer F
+	FIELD n sinkingSpeed F
+	FIELD o sunkToBottom Z
+	FIELD p IMAGE_ICON Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD q IMAGE_ICON_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD K producesWakeSmoke ()Z
+	METHOD M loadImages ()V
+	METHOD s updateDepth (F)V

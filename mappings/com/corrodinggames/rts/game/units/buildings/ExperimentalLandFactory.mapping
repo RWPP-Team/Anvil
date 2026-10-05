@@ -1,2 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/d/f com/corrodinggames/rts/game/units/buildings/ExperimentalLandFactory
-	CLASS 1 1
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b baseImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImagesT2 [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f upgraded Z
+	FIELD g upgradeAction Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a addSpecialActions (Ljava/util/ArrayList;I)V
+	METHOD b loadImages ()V
+	METHOD M applyUpgrade ()V

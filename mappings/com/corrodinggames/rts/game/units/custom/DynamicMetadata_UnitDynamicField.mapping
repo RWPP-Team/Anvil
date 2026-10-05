@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/ax com/corrodinggames/rts/game/units/custom/DynamicMetadata_UnitDynamicField
-	METHOD a getValue (Lcom/corrodinggames/rts/game/units/custom/j;)D
-	METHOD b setValueOnUnit (Lcom/corrodinggames/rts/game/units/custom/j;D)V

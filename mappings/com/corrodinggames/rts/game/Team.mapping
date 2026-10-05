@@ -85,6 +85,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD a getNegativeResourceAmount (Lcom/corrodinggames/rts/game/units/custom/e/a;)I
 	METHOD a countUnitsWithTag (Lcom/corrodinggames/rts/game/units/custom/g;ZZ)I
 	METHOD a setTeamTags (Lcom/corrodinggames/rts/game/units/custom/h;)V
+	METHOD a onNewOrderableUnit (Lcom/corrodinggames/rts/game/units/y;)V
 	METHOD a readPingUpdate (Lcom/corrodinggames/rts/gameFramework/j/k;)V
 	METHOD a readTeamState (Lcom/corrodinggames/rts/gameFramework/j/k;Z)V
 	METHOD a getTeamColorVariantsPureGreen (Lcom/corrodinggames/rts/gameFramework/m/e;)[Lcom/corrodinggames/rts/gameFramework/m/e;
@@ -134,6 +135,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD d addCredits (F)V
 	METHOD d forceSurrenderAllyTeam (I)V
 	METHOD d isSameTeam (Lcom/corrodinggames/rts/game/n;)Z
+	METHOD d onUnitRemovedFromTeam (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD d writeFog (Lcom/corrodinggames/rts/gameFramework/j/as;)V
 	METHOD d readFog (Lcom/corrodinggames/rts/gameFramework/j/k;)V
 	METHOD d parseTeamColors (Ljava/lang/String;)V

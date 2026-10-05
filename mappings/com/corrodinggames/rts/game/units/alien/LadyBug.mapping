@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/c/a com/corrodinggames/rts/game/units/alien/LadyBug
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c PENDING_c_image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e animFrame I
+	FIELD f attackAnimTimer F
+	FIELD g spriteFrameRect Landroid/graphics/Rect;
+	FIELD h PENDING_h_rect Landroid/graphics/Rect;
+	METHOD f loadImages ()V

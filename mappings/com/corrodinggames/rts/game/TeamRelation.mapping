@@ -7,3 +7,4 @@ CLASS com/corrodinggames/rts/game/q com/corrodinggames/rts/game/TeamRelation
 	FIELD e neutral Lcom/corrodinggames/rts/game/q;
 	FIELD f any Lcom/corrodinggames/rts/game/q;
 	FIELD g notOwn Lcom/corrodinggames/rts/game/q;
+	FIELD h h [Lcom/corrodinggames/rts/game/q;

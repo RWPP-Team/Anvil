@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/game/units/custom/f/d com/corrodinggames/rts/game/units/custom/variables/VariableReplacementStaticVariableScope
+	FIELD a values Ljava/util/HashMap;
+	METHOD a clear ()V
+	METHOD a getValue (Ljava/lang/String;)Ljava/lang/String;
+	METHOD a setValue (Ljava/lang/String;Ljava/lang/String;)V

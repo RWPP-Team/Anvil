@@ -1,2 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/m/z com/corrodinggames/rts/gameFramework/render/GraphicsEngineNull
+	FIELD a PENDING_a Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD b outOfMemoryImage Lcom/corrodinggames/rts/gameFramework/m/e;

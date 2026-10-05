@@ -34,7 +34,10 @@
    外部类改名并迁到新包、而嵌套类没有映射时，嵌套类留在原包；Java 8 及更早的嵌套类是
    package-private，跨包访问立刻抛 `IllegalAccessError`。实测崩溃点：`gameFramework/f/o$1` 被
    `gui/MinimapHandler` 访问。做法：嵌套类跟随外部类改名，落在外部类的目标包内，名字写成
-   `Outer_suffix`（`$` 一律换成 `_`）。反向同样成立：只改名嵌套类而不改名外部类，一样会破坏可见性。
+   `OuterSuffix`（`$` 一律删除 ）。**例外**：原始名称本身就含 `_` 的必须保留下划线，不得当作
+   `$` 的替换物删掉（如 `Wall_V`、`CustomUnitMetadata$DelayedLinkedUnitType_projectile`、
+   `LogicBoolean$CallContext_self`）；拿不准时以 `rw_ios_symbols.txt` 中的原始名为准。
+   反向同样成立：只改名嵌套类而不改名外部类，一样会破坏可见性。
 
 ## 等价性自检
 

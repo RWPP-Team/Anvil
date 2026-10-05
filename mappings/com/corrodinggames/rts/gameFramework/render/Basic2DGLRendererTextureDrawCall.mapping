@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/m/b com/corrodinggames/rts/gameFramework/render/Basic2DGLRendererTextureDrawCall
+	FIELD a drawType Lcom/corrodinggames/rts/gameFramework/m/d;
+	FIELD b texture Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c x F
+	FIELD d y F
+	FIELD e srcRect Landroid/graphics/Rect;
+	FIELD f destRect Landroid/graphics/RectF;
+	FIELD g renderer Lcom/corrodinggames/rts/gameFramework/m/a;
+	METHOD a draw (Ljavax/microedition/khronos/opengles/GL10;)V

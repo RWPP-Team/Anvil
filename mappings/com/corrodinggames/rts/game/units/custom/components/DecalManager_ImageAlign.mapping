@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/b/g com/corrodinggames/rts/game/units/custom/components/DecalManager_ImageAlign
-	FIELD a decalNames Ljava/lang/String;
-	FIELD b decalsToAlign Lcom/corrodinggames/rts/gameFramework/utility/m;

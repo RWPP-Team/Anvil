@@ -8,6 +8,7 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 		COMMENT Body sprite scale driven by the running animation, initialised to 1.0F. Written only by AnimationPlaying.applyBlend, where the AnimationKeyFrameType.scale branch assigns the evaluated keyframe value (or 1.0F on reset), and by AnimationPlaying.setBaseBlendValues, which snapshots it as the blend base value for scale tracks. Read by getBodyDrawScale(), which multiplies it with meta.bH (the static [graphics]scaleImagesTo / imageScale factor) to produce the final body draw scale.
 	FIELD C attachedUnits Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD d movementEffectTimer F
+	FIELD D previousDrawDir F
 	FIELD dK tmpPoint3F Lcom/corrodinggames/rts/gameFramework/utility/ai;
 	FIELD dL buildQueue Lcom/corrodinggames/rts/game/units/d/k;
 	FIELD dM currentActionPoint Landroid/graphics/PointF;
@@ -22,8 +23,12 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	FIELD dV eventRequestPool Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD dW unitEventQueue Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD dX eventRequestFreePool Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD dY PENDING_dY Z
+	FIELD dZ PENDING_dZ Ljava/util/HashMap;
 	FIELD e heightDriftPhase F
 	FIELD E cornerPoints [Landroid/graphics/PointF;
+	FIELD ea PENDING_ea I
+	FIELD eb PENDING_eb Ljava/lang/String;
 	FIELD ec tmpEventPoint Landroid/graphics/PointF;
 	FIELD ed tags Lcom/corrodinggames/rts/game/units/custom/h;
 	FIELD ee tmpPoint3F2 Lcom/corrodinggames/rts/gameFramework/utility/ai;
@@ -50,6 +55,7 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	FIELD r exitSideToggle Z
 	FIELD s idleTimer F
 	FIELD t effectTimer F
+	FIELD u autoRepairTimer F
 	FIELD v rechargingEnergy Z
 	FIELD w autoTriggerCooldown F
 	FIELD x meta Lcom/corrodinggames/rts/game/units/custom/l;
@@ -83,6 +89,7 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 		COMMENT Resets every leg to its neutral resting pose and clears any pending leg action. Iterates legStates and raises both the deforming (n) and moved (m) flags on each LegState so the next leg update recomputes them, then calls clearLegAction(). Sole caller is startSlowDeathFall, which wants the legs to snap back before the wreck begins toppling.
 	METHOD dC getUpgradeActions ()Ljava/util/ArrayList;
 	METHOD dD clearUnitEventQueue ()V
+	METHOD dE PENDING_dE ()V
 	METHOD dF updateDrawLayer ()V
 	METHOD dG isVisibleUnit ()Z
 	METHOD dH isDamageBlockedByAttachment ()Z
@@ -103,3 +110,4 @@ CLASS com/corrodinggames/rts/game/units/custom/j com/corrodinggames/rts/game/uni
 	METHOD K initCornerPoints ()V
 	METHOD L startUnloading ()V
 	METHOD M stopUnloading ()V
+	METHOD s PENDING_s (F)V

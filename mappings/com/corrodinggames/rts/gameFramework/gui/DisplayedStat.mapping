@@ -2,3 +2,5 @@ CLASS com/corrodinggames/rts/gameFramework/f/e com/corrodinggames/rts/gameFramew
 	FIELD a title Ljava/lang/String;
 	FIELD b textValue Ljava/lang/String;
 	FIELD c numberValue F
+	FIELD d PENDING_d F
+	METHOD a createPlayerStats ()Ljava/util/ArrayList;

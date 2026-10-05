@@ -1,1 +1,14 @@
 CLASS com/corrodinggames/rts/game/units/b/f com/corrodinggames/rts/game/units/air/Helicopter
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bladesImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e shadowBladesImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g PENDING_g_boolean Z
+	FIELD o rotorSpeed F
+	FIELD p hoverBobAngle F
+	FIELD q rotorAngle F
+	FIELD r PENDING_r_rect Landroid/graphics/Rect;
+	FIELD s scratchBladesRect Landroid/graphics/Rect;
+	METHOD f loadImages ()V

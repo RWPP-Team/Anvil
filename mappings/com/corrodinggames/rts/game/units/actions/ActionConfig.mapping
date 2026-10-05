@@ -2,5 +2,7 @@ CLASS com/corrodinggames/rts/game/units/a/h com/corrodinggames/rts/game/units/ac
 	FIELD a wrappedAction Lcom/corrodinggames/rts/game/units/a/s;
 	FIELD b actionFilter Lcom/corrodinggames/rts/game/units/a/b;
 	FIELD c checkWrappedAvailability Z
+	FIELD d visibilityCacheStamp I
+	FIELD e visibilityCacheValue Z
 	FIELD f modInfoColor I
 	METHOD q_ getWrappedAction ()Lcom/corrodinggames/rts/game/units/a/s;

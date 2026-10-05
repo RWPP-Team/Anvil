@@ -14,13 +14,18 @@ CLASS com/corrodinggames/rts/game/units/custom/a/d com/corrodinggames/rts/game/u
 	FIELD aE unitShownInUIWithProgressBar Z
 	FIELD af addResourcesScaledByAIHandicaps Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD aF isGuiBlinking Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD ag fireTurretXAtGroundTurretIndex Ljava/lang/Integer;
 	FIELD aG displayType Lcom/corrodinggames/rts/game/units/a/t;
 	FIELD ah fireTurretXAtGroundWithOffset Landroid/graphics/PointF;
+	FIELD aH resetCustomTimer Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	FIELD ai fireTurretXAtGroundWithTarget Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	FIELD aI displayRemainingStockpile Z
 	FIELD aj fireTurretXAtGroundWithProjectile Lcom/corrodinggames/rts/game/units/custom/bh;
+	FIELD aJ techLevel I
 	FIELD ak fireTurretXAtGroundCount I
+	FIELD aK forceNano Z
 	FIELD al fireTurretXAtGroundOnlyOverPassableTileOf Lcom/corrodinggames/rts/game/units/ao;
+	FIELD aL type Ljava/lang/String;
 	FIELD am fireTurretXAtGroundShowGuideDecals Lcom/corrodinggames/rts/game/units/custom/b/g;
 	FIELD aM buildType Lcom/corrodinggames/rts/game/units/custom/a/f;
 	FIELD an alsoTriggerOrQueueActionWithTarget Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
@@ -66,6 +71,7 @@ CLASS com/corrodinggames/rts/game/units/custom/a/d com/corrodinggames/rts/game/u
 	FIELD o extraLagHidingInUI Z
 	FIELD O alwaysSinglePress Z
 	FIELD p pos F
+	FIELD P showAddRemoveButtons Z
 	FIELD q price Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD Q convertToKeepCurrentTags Z
 	FIELD r streamingCost Lcom/corrodinggames/rts/game/units/custom/d/b;

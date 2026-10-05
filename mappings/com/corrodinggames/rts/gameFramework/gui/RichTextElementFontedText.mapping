@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ai com/corrodinggames/rts/gameFramework/gui/RichTextElementFontedText
+	FIELD d text Ljava/lang/String;
+	FIELD e richText Lcom/corrodinggames/rts/gameFramework/f/ae;
+	METHOD b getEffectivePaint (Landroid/graphics/Paint;)Landroid/graphics/Paint;
+	METHOD b withText (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/f/ai;

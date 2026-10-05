@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/java/audio/a/m com/corrodinggames/rts/java/audio/util/MathUtils
+	FIELD a random Ljava/util/Random;
+	METHOD a sin (F)F
+	METHOD a clamp (FFF)F
+	METHOD a random (I)I
+	METHOD b cos (F)F
+	METHOD b nextPowerOfTwo (I)I

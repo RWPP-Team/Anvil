@@ -1,5 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/ba com/corrodinggames/rts/game/units/custom/LegTemplate
 	COMMENT One leg/arm definition of a custom unit. All field names are the original ones, recovered from the ini keys read in the static parser a(LegTemplate, CustomUnitMetadata, IniFile, String, boolean, ArrayList): x/y ("x"/"y"), name (section name with "_" removed), isPrimaryLeg (the boolean argument; false also forces lockMovement=true and explodeOnDeath=false), liftingHeightOffset, targetHeight, targetHeightRelative, endDirOffset, attachX/attachY ("attach_x"/"attach_y"), lockMovement, estimatingPositionMultiplier, hiddenCondition (LogicBoolean "hidden") and isHidden (hiddenCondition==trueBoolean), alpha, moveSpeed, moveWarmUp, rotateSpeed, heightSpeed, resetAngle, middleImage ("image_leg"/"image_middle"), middleImageTeamColors ("image_middle_teamColors"), endImage ("image_foot"/"image_end"), endImageTeamColors ("image_end_teamColors"), shadowImage ("image_foot_shadow"/"image_end_shadow"), hasZoomDrawOverride, drawLegWhenZoomedOut, drawFootWhenZoomedOut, drawFootOnTop ("draw_foot_on_top"), dustEffect, explodeOnDeath, holdDisMin, holdDisMinMaxMovingLegs, holdMoveOnlyIfFurthest, holdDisMinCheckNeighbours, favourOppositeSideNeighbours, holdDisMax, hardLimit, drawOverBody, drawUnderAllUnits, drawDirOffset, spinRate. Still obfuscated: a (int, limb index?), z, A, S. copyFrom support copies every field via a(LegTemplate).
+	FIELD a legIndex I
+	FIELD A PENDING_A F
 	FIELD b name Ljava/lang/String;
 	FIELD B endImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD c isPrimaryLeg Z
@@ -35,6 +37,7 @@ CLASS com/corrodinggames/rts/game/units/custom/ba com/corrodinggames/rts/game/un
 	FIELD r alpha F
 	FIELD R drawDirOffset F
 	FIELD s moveSpeed F
+	FIELD S neighbourLegIndexes [I
 	FIELD t moveWarmUp F
 	FIELD T spinRate F
 	FIELD u rotateSpeed F
@@ -42,5 +45,6 @@ CLASS com/corrodinggames/rts/game/units/custom/ba com/corrodinggames/rts/game/un
 	FIELD w resetAngle F
 	FIELD x middleImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD y middleImageTeamColors [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD z PENDING_z Z
 	METHOD a copyFrom (Lcom/corrodinggames/rts/game/units/custom/ba;)V
 	METHOD a parse (Lcom/corrodinggames/rts/game/units/custom/ba;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;ZLjava/util/ArrayList;)V

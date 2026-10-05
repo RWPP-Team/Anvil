@@ -1,0 +1,3 @@
+CLASS com/corrodinggames/rts/game/units/custom/y com/corrodinggames/rts/game/units/custom/CustomUnitMetadataDrawnRange
+	COMMENT Undetermined single-float holder in custom/ (left as PENDING_y): field a (F) only. No usage evidence - intentionally not renamed.
+	FIELD a PENDING_a F

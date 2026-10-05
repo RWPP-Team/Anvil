@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/m/j com/corrodinggames/rts/gameFramework/render/CanvasDirect
+	FIELD a canvas Landroid/graphics/Canvas;
+	FIELD b enabled Z

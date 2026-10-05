@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/java/audio/a/d com/corrodinggames/rts/java/audio/util/IntArray
+	FIELD a items [I
+	FIELD b size I
+	FIELD c ordered Z
+	METHOD a add (I)V
+	METHOD b get (I)I
+	METHOD c removeIndex (I)I
+	METHOD d resize (I)[I

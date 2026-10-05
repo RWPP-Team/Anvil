@@ -29,6 +29,7 @@ CLASS com/corrodinggames/rts/game/units/d/k com/corrodinggames/rts/game/units/bu
 	METHOD b getQueueActionForUnitType (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/a/s;
 	METHOD b refundQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)V
 	METHOD c getRefundPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD c PENDING_c_empty (Lcom/corrodinggames/rts/game/units/d/j;)V
 	METHOD d getCurrentSpecialAction ()Lcom/corrodinggames/rts/game/units/a/s;
 	METHOD e removeInvalidItems ()V
 	METHOD f getQueueList ()Ljava/util/List;

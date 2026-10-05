@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/a/p com/corrodinggames/rts/game/units/actions/CutSpecialAction
+	METHOD K getSelectedOrderableUnit ()Lcom/corrodinggames/rts/game/units/y;
+	METHOD L isSelectionOwnedByPlayer ()Z

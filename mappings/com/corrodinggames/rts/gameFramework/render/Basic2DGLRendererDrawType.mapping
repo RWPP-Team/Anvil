@@ -1,3 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/m/d com/corrodinggames/rts/gameFramework/render/Basic2DGLRendererDrawType
 	FIELD a Normal Lcom/corrodinggames/rts/gameFramework/m/d;
 	FIELD b Rect Lcom/corrodinggames/rts/gameFramework/m/d;
+	FIELD c c [Lcom/corrodinggames/rts/gameFramework/m/d;

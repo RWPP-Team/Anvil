@@ -1,6 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/h com/corrodinggames/rts/game/units/custom/CustomTag_CustomTagList
-	COMMENT CustomTagTags - immutable array of CustomTag (inner class of CustomTag, flattened by ProGuard). Field: tags. a() = isEmpty, b() = size, a(other) = same set, toString() = "{a, b}". [field name verified from code]
-	FIELD a tags [Lcom/corrodinggames/rts/game/units/custom/g;
-	METHOD a isEmpty ()Z
-	METHOD a sameSet (Lcom/corrodinggames/rts/game/units/custom/h;)Z
-	METHOD b size ()I

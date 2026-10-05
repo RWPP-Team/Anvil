@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/d/s com/corrodinggames/rts/game/units/buildings/RepairBayAutoRepairCallback
+	FIELD a searchRadiusSquared F
+	FIELD b PENDING_b_boolean Z
+	FIELD c searchReady Z
+	FIELD d searcherTeam Lcom/corrodinggames/rts/game/n;
+	FIELD e foundUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD f bestHp F
+	FIELD g bestDistanceSquared F
+	FIELD h selectNearest Z
+	METHOD a armSearch (FZ)V

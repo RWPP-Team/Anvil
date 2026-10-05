@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/f com/corrodinggames/rts/game/units/custom/connections/UnitConnectionshandleCallbackFindConnections
+	FIELD a connections Lcom/corrodinggames/rts/game/units/custom/c/c;
+	FIELD b socket Lcom/corrodinggames/rts/game/units/custom/c/a;
+	FIELD c nearestUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD d nearestDistanceSquared F

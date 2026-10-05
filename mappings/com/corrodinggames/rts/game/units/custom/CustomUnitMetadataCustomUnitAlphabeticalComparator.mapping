@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/q com/corrodinggames/rts/game/units/custom/CustomUnitMetadataCustomUnitAlphabeticalComparator
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I

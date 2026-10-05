@@ -6,6 +6,7 @@ CLASS com/corrodinggames/rts/game/units/custom/as com/corrodinggames/rts/game/un
 	COMMENT Most fields are backed by a plain instance field here (mass->b, maxenergy->d, maxhp->c, maxshield->g, shieldregen->h, armour->l, maxattackrange->i, shootdelaymultiplier->e, shootdamagemultiplier->f, movespeed->j, maxturnspeed->k, fogofwarsightrange->n, nanorange->o, selfregenrate->p, targetHeight->q, nanoFactorySpeed->r). The three live values energy, hp and shield are UnitEngineField subclasses instead and read/write the unit directly: energy -> CustomUnit.cB, hp -> CustomUnit.cu (set through setHp), shield -> CustomUnit.cx.
 	COMMENT
 	COMMENT The remaining boolean flag a is "is this the metadata's own shared default instance" (clone()/copy() clear it to false).
+	FIELD a isSharedDefault Z
 	FIELD b mass F
 	FIELD c maxHp I
 	FIELD d maxEnergy F
@@ -17,6 +18,7 @@ CLASS com/corrodinggames/rts/game/units/custom/as com/corrodinggames/rts/game/un
 	FIELD j moveSpeed F
 	FIELD k maxTurnSpeed F
 	FIELD l armour F
+	FIELD m isVisibleToEnemies Z
 	FIELD n fogOfWarSightRange I
 	FIELD o nanoRange I
 	FIELD p selfRegenRate F
@@ -34,22 +36,3 @@ CLASS com/corrodinggames/rts/game/units/custom/as com/corrodinggames/rts/game/un
 	METHOD a createWriter (Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter;
 	METHOD a registerField (Ljava/util/LinkedHashMap;Lcom/corrodinggames/rts/game/units/custom/at;)V
 	METHOD b copy ()Lcom/corrodinggames/rts/game/units/custom/as;
-	CLASS 1 1
-	CLASS 10 10
-	CLASS 11 11
-	CLASS 12 12
-	CLASS 13 13
-	CLASS 14 14
-	CLASS 15 15
-	CLASS 16 16
-	CLASS 17 17
-	CLASS 18 18
-	CLASS 19 19
-	CLASS 2 2
-	CLASS 3 3
-	CLASS 4 4
-	CLASS 5 5
-	CLASS 6 6
-	CLASS 7 7
-	CLASS 8 8
-	CLASS 9 9

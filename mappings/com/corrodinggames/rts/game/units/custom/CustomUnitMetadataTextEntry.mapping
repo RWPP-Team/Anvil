@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/custom/p com/corrodinggames/rts/game/units/custom/CustomUnitMetadataTextEntry
+	FIELD a unitName Ljava/lang/String;
+	FIELD b pos F
+	FIELD c forceNano Z
+	FIELD d sourceLocation Ljava/lang/String;
+	FIELD e resolved Z
+	FIELD f isLocked Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD g isLockedMessage Lcom/corrodinggames/rts/game/units/custom/bb;

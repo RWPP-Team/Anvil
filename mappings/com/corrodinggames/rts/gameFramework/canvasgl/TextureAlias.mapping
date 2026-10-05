@@ -11,3 +11,5 @@ CLASS com/corrodinggames/rts/gameFramework/b/ac com/corrodinggames/rts/gameFrame
 	FIELD j nextY I
 	FIELD k rowHeight I
 	FIELD l padding I
+	METHOD a getRegion (Landroid/graphics/Bitmap;)Lcom/corrodinggames/rts/gameFramework/b/b;
+	METHOD b removeRegion (Landroid/graphics/Bitmap;)V

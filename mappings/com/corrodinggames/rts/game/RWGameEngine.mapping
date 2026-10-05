@@ -74,6 +74,7 @@ CLASS com/corrodinggames/rts/game/i com/corrodinggames/rts/game/RWGameEngine
 	METHOD b endLayerRender (Lcom/corrodinggames/rts/game/j;)V
 	METHOD b drawAll (Lcom/corrodinggames/rts/gameFramework/m/l;F)V
 	METHOD b unloadMap (Z)V
+	METHOD c PENDING_c (F)V
 	METHOD c drawGame (Lcom/corrodinggames/rts/gameFramework/m/l;F)V
 	METHOD d updateCameraFollow (F)V
 	METHOD d drawGui (Lcom/corrodinggames/rts/gameFramework/m/l;F)V
@@ -86,4 +87,3 @@ CLASS com/corrodinggames/rts/game/i com/corrodinggames/rts/game/RWGameEngine
 	METHOD q isDeobfuscated ()Z
 	METHOD w cancelPendingTask ()V
 	METHOD y getRandomUnit ()Lcom/corrodinggames/rts/game/units/am;
-	CLASS a a

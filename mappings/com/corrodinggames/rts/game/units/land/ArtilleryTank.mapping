@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/e/a com/corrodinggames/rts/game/units/land/ArtilleryTank
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD f loadImages ()V

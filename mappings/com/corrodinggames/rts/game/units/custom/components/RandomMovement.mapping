@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/b/l com/corrodinggames/rts/game/units/custom/components/RandomMovement
+	FIELD a enabled Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD b speed F
+	FIELD c maxSpeed F
+	FIELD d awayFromEdge I
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;)V
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)V

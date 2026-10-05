@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/b/u com/corrodinggames/rts/gameFramework/canvasgl/TextureCoordProvider
+	METHOD a generateTextureId ()I

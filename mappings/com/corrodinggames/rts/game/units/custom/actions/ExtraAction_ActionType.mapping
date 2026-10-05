@@ -1,9 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/a/e com/corrodinggames/rts/game/units/custom/actions/ExtraAction_ActionType
-	COMMENT Enum: auto, disabled, upgrade, movementChange, sameAsBuilding, launch, launchAmmo. [evidence-based]
-	FIELD a auto Lcom/corrodinggames/rts/game/units/custom/a/e;
-	FIELD b disabled Lcom/corrodinggames/rts/game/units/custom/a/e;
-	FIELD c upgrade Lcom/corrodinggames/rts/game/units/custom/a/e;
-	FIELD d movementChange Lcom/corrodinggames/rts/game/units/custom/a/e;
-	FIELD e sameAsBuilding Lcom/corrodinggames/rts/game/units/custom/a/e;
-	FIELD f launch Lcom/corrodinggames/rts/game/units/custom/a/e;
-	FIELD g launchAmmo Lcom/corrodinggames/rts/game/units/custom/a/e;

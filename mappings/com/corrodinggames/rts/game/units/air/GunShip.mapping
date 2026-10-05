@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/b/e com/corrodinggames/rts/game/units/air/GunShip
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f hoverBobAngle F
+	FIELD g PENDING_g_rect Landroid/graphics/Rect;
+	METHOD f loadImages ()V

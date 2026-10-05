@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/custom/aq com/corrodinggames/rts/game/units/custom/DynamicLocaleStringLogicBooleanBlock
+	COMMENT DynamicLocaleTextLogicPart - abstract %{...} part backed by a LogicBoolean: field logic. a(LogicBoolean) picks the concrete subclass from the expression's return type (number/string/unit/array/boolean). [field name verified from code]
+	FIELD a logic Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	METHOD a fromLogicBoolean (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Lcom/corrodinggames/rts/game/units/custom/aq;

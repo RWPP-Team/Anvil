@@ -19,11 +19,10 @@ CLASS com/corrodinggames/rts/gameFramework/f/f com/corrodinggames/rts/gameFramew
 	FIELD q yesText Ljava/lang/String;
 	FIELD r noText Ljava/lang/String;
 	FIELD s showRatePrompt Z
+	FIELD t PENDING_t F
 	METHOD a createButtons ()V
 	METHOD a update (F)V
 	METHOD b isEndScreenShown ()Z
 	METHOD b paint (F)V
 	METHOD c createStatsInterface ()V
 	METHOD c drawRatePrompt (F)V
-	CLASS 1 1
-	CLASS 2 2

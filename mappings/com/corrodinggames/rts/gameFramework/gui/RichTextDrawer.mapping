@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/f/aj com/corrodinggames/rts/gameFramework/gui/RichTextDrawer
+	FIELD a lines Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b bounds Landroid/graphics/Rect;
+	FIELD c normalPaint Landroid/graphics/Paint;
+	FIELD d altPaint Landroid/graphics/Paint;
+	METHOD a draw (FF)V

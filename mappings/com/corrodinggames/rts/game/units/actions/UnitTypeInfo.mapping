@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/a/z com/corrodinggames/rts/game/units/actions/UnitTypeInfo
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD b PENDING_b Ljava/util/ArrayList;
+	FIELD c selectedCount I
+	FIELD d hasOtherTypesSelected Z
+	FIELD e firstSelectedUnit Lcom/corrodinggames/rts/game/units/y;
+	FIELD f lastSelectionChangeCounter I
+	METHOD K refreshSelectionStats ()V

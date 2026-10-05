@@ -23,3 +23,10 @@ CLASS com/corrodinggames/rts/gameFramework/f/y com/corrodinggames/rts/gameFramew
 	FIELD u hoverTime I
 	FIELD v hoverX I
 	FIELD w hoverY I
+	METHOD a create ()Lcom/corrodinggames/rts/gameFramework/f/y;
+	METHOD a drawStatsList (Landroid/graphics/Rect;F)V
+	METHOD a draw (Landroid/graphics/Rect;Landroid/graphics/Rect;FZZ)V
+	METHOD a drawGraph (Lcom/corrodinggames/rts/gameFramework/bj;Lcom/corrodinggames/rts/gameFramework/f/z;Landroid/graphics/Rect;)V
+	METHOD a drawGraph (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/bj;Lcom/corrodinggames/rts/gameFramework/f/z;Landroid/graphics/Rect;)V
+	METHOD b initialize ()V
+	METHOD c loadButtonImages ()V

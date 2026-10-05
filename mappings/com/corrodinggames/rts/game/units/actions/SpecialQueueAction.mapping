@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/a/l com/corrodinggames/rts/game/units/actions/SpecialQueueAction
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;

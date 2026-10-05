@@ -1,6 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/custom/bn com/corrodinggames/rts/game/units/custom/Turret
 	COMMENT One turret (or turret barrel) definition of a custom unit. Field names recovered from the ini keys in the static parser a(TurretTemplate, CustomUnitMetadata, IniFile, String): name (section name), isParsing/isLoaded (copyFrom
 	COMMENT cycle guards: "Infinite loop detected with turret copies"), offsetX/offsetY (ini "x"/"y"; named offsetX/offsetY because the obfuscated fields x/y still occupy those names), height, yAxisScaling, idleDir, idleDirReversing + hasIdleDirReversing, delay, warmup, warmupCallDownRate, warmupNoReset, warmupShootDelayTransfer, recoilOffset, recoilOutTime, recoilReturnTime, energyUsage, resourceUsage (CustomPrice), attachedTo ("attachedTo") and slaveSource/isSlave ("slave" - slaveSource is set to attachedTo), canAttack ("canShoot"/"canAttack", same meaning), invisible, shootSound, shootSound volume, shootFlame, warmupStartEffect, shootLight, usesAttackFilter, hasRangeLimit, canAttackFlyingUnits, canAttackLandUnits, canAttackUnderwaterUnits, canAttackNotTouchingWaterUnits, canAttackCondition, canOnlyAttackUnitsWithTags, canOnlyAttackUnitsWithoutTags, canAttackMaxAngle, projectileId/altProjectileId (indices into CustomUnitMetadata.fR), altProjectileCondition, turnSpeed, turnSpeedAcceleration, turnSpeedDeceleration, barrelX/barrelY/barrelHeight/barrelOffsetXOnOddShots ("barrelY"/"size" share one field), limitingRange, limitingMinRange, limitingAngle, maxRange (= limitingRange, else the unit's attack range) and maxRangeSquared, minRangeSquared, aimOffsetSpread, showRangeUIGuide, laserDefenceEnergyUse, interceptProjectilesWithTags and interceptProjectilesAndTargetingGroundUnderDistance/interceptProjectilesAndUnderDistance/interceptProjectilesAndOverHeight, linkDelayWithTurret, shouldResetTurret, idleSpin, idleSweepAngle, idleSweepDelay, idleSweepSpeed, idleSweepCondition, idleSweepAddRandomDelay, idleSweepAddRandomAngle, clearTurretTargetAfterFiring, onShootPlayAnimation, onShootFreezeBodyMovementFor, onShootTriggerActions, image/imageTeamColors/chargeEffectImage, imageDrawOffsetX/imageDrawOffsetY, unloadUpToXUnitsAndGiveAttackOrder. Still obfuscated: a, e, w, x, ap, az, aJ.
+	FIELD a PENDING_a_name Ljava/lang/String;
 	FIELD A isSlave Z
 	FIELD aa barrelHeight F
 	FIELD aA onShootPlayAnimation Lcom/corrodinggames/rts/game/units/custom/o;
@@ -21,11 +22,13 @@ CLASS com/corrodinggames/rts/game/units/custom/bn com/corrodinggames/rts/game/un
 	FIELD ai limitingAngle F
 	FIELD aI unloadUpToXUnitsAndGiveAttackOrder I
 	FIELD aj laserDefenceEnergyUse Ljava/lang/Float;
+	FIELD aJ PENDING_aJ Lcom/corrodinggames/rts/game/units/custom/h;
 	FIELD ak interceptProjectilesWithTags Lcom/corrodinggames/rts/game/units/custom/h;
 	FIELD al interceptProjectilesAndTargetingGroundUnderDistance F
 	FIELD am interceptProjectilesAndUnderDistance F
 	FIELD an interceptProjectilesAndOverHeight F
 	FIELD ao linkDelayWithTurret Lcom/corrodinggames/rts/game/units/custom/bn;
+	FIELD ap PENDING_ap I
 	FIELD aq shouldResetTurret Z
 	FIELD ar idleSpin F
 	FIELD as idleSweepAngle F
@@ -35,12 +38,14 @@ CLASS com/corrodinggames/rts/game/units/custom/bn com/corrodinggames/rts/game/un
 	FIELD aw idleSweepAddRandomDelay F
 	FIELD ax idleSweepAddRandomAngle F
 	FIELD ay clearTurretTargetAfterFiring Z
+	FIELD az PENDING_az I
 	FIELD b name Ljava/lang/String;
 	FIELD B canAttack Z
 	FIELD c isParsing Z
 	FIELD C invisible Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	FIELD d isLoaded Z
 	FIELD D shootSound Lcom/corrodinggames/rts/game/units/custom/bl;
+	FIELD e techLevel I
 	FIELD E shootFlame Lcom/corrodinggames/rts/game/units/custom/z;
 	FIELD f offsetX F
 	FIELD F warmupStartEffect Lcom/corrodinggames/rts/game/units/custom/z;
@@ -76,7 +81,9 @@ CLASS com/corrodinggames/rts/game/units/custom/bn com/corrodinggames/rts/game/un
 	FIELD U turnSpeed Ljava/lang/Float;
 	FIELD v resourceUsage Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD V turnSpeedAcceleration F
+	FIELD w attachedToTurretIndex I
 	FIELD W turnSpeedDeceleration F
+	FIELD x linkedTurretIndex I
 	FIELD X barrelY F
 	FIELD y attachedTo Lcom/corrodinggames/rts/game/units/custom/bn;
 	FIELD Y barrelX F

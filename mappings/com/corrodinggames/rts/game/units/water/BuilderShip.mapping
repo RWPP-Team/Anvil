@@ -1,1 +1,12 @@
 CLASS com/corrodinggames/rts/game/units/h/b com/corrodinggames/rts/game/units/water/BuilderShip
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f cornerPoints [Landroid/graphics/PointF;
+	FIELD g cornerPointsOld [Landroid/graphics/PointF;
+	FIELD h PENDING_h_rect Landroid/graphics/Rect;
+	FIELD i reclaimTargetAction Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a addSpecialActions (Ljava/util/ArrayList;I)V
+	METHOD t_ loadImages ()V

@@ -1,2 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/d/a/f com/corrodinggames/rts/game/units/buildings/turrets/TurretGunT2
 	COMMENT Gun turret T2: cost = turret + dL, damage 20, range 185, alternating dual barrels. [medium-high confidence]
+	FIELD b ownerTurret Lcom/corrodinggames/rts/game/units/d/a/b;

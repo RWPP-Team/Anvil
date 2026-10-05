@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/java/audio/a/s com/corrodinggames/rts/java/audio/util/StreamUtils
+	FIELD a EMPTY_BYTES [B
+	METHOD a closeQuietly (Ljava/io/Closeable;)V
+	METHOD a copyStreamToByteArray (Ljava/io/InputStream;I)[B
+	METHOD a copyStream (Ljava/io/InputStream;Ljava/io/OutputStream;)V
+	METHOD a copyStream (Ljava/io/InputStream;Ljava/io/OutputStream;[B)V

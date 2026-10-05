@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/custom/a/b com/corrodinggames/rts/game/units/custom/actions/ChainedActionConfig
+	FIELD b wrapped Lcom/corrodinggames/rts/game/units/a/a;
+	FIELD c priceOverride Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD d secondaryPriceOverride Lcom/corrodinggames/rts/game/units/custom/d/b;

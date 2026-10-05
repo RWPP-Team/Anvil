@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/b/r com/corrodinggames/rts/gameFramework/canvasgl/SaveState
+	FIELD a clipRect Landroid/graphics/RectF;
+	METHOD a copyInto (Lcom/corrodinggames/rts/gameFramework/b/r;)V

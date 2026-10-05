@@ -1,0 +1,6 @@
+CLASS com/corrodinggames/rts/game/units/custom/ac com/corrodinggames/rts/game/units/custom/CustomUnitMetadataMissingUnitInfo
+	COMMENT Undetermined record in custom/ (left as PENDING_ac): String a (name/id) plus ints b, c, d; only constructor stores the string. No usage evidence yet - intentionally not renamed.
+	FIELD a PENDING_a Ljava/lang/String;
+	FIELD b PENDING_b I
+	FIELD c PENDING_c I
+	FIELD d PENDING_d I

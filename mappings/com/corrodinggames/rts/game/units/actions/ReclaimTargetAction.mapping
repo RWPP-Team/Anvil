@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/a/m com/corrodinggames/rts/game/units/actions/ReclaimTargetAction
+	FIELD a reclaimUnits Z

@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/b/b com/corrodinggames/rts/game/units/air/AirUnit
+	FIELD h verticalVelocity F
+	FIELD i hasLanded Z
+	FIELD j steamTimer F
+	FIELD k cachedOverLiquid Ljava/lang/Boolean;
+	FIELD l cachedOverWater Ljava/lang/Boolean;
+	FIELD m IMAGE_ICON Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD n IMAGE_ICON_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD K loadImages ()V

@@ -1,7 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/b/f com/corrodinggames/rts/game/units/custom/components/DecalManager_DecalDrawLayer
-	FIELD a shadow Lcom/corrodinggames/rts/game/units/custom/b/f;
-	FIELD b beforeBody Lcom/corrodinggames/rts/game/units/custom/b/f;
-	FIELD c afterBody Lcom/corrodinggames/rts/game/units/custom/b/f;
-	FIELD d onTop Lcom/corrodinggames/rts/game/units/custom/b/f;
-	FIELD e beforeUI Lcom/corrodinggames/rts/game/units/custom/b/f;
-	FIELD f inactive Lcom/corrodinggames/rts/game/units/custom/b/f;

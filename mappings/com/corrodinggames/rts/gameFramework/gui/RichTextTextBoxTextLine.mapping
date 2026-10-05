@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ak com/corrodinggames/rts/gameFramework/gui/RichTextTextBoxTextLine
+	FIELD a elements Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD b width I
+	METHOD a addElement (Lcom/corrodinggames/rts/gameFramework/f/af;)V

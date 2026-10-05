@@ -6,9 +6,12 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD ab reclaimCreditRemainder F
 	FIELD aB groupController Lcom/corrodinggames/rts/game/a/h;
 	FIELD ac formationGroupId I
+	FIELD aC aiBase Lcom/corrodinggames/rts/game/a/i;
 	FIELD ad queueLeader Lcom/corrodinggames/rts/game/units/y;
+	FIELD aD pathPossibleToBase Z
 	FIELD ae inFormation Z
 	FIELD aE turretPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
+	FIELD af PENDING_af Z
 	FIELD aF turretPaintAntiAlias Lcom/corrodinggames/rts/gameFramework/m/ag;
 	FIELD ag followerCount I
 	FIELD aG scratchClipPointF Landroid/graphics/PointF;
@@ -16,6 +19,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD aH unitSearchCallback Lcom/corrodinggames/rts/game/units/f/j;
 	FIELD ai directMoveDelayTimer F
 	FIELD aI nearbyCollisionCount B
+	FIELD aj formationSlotAssigned Z
 	FIELD aJ nearbyCollisionUnits [Lcom/corrodinggames/rts/game/units/am;
 	FIELD ak formationOffsetX F
 	FIELD aK nearbyCollisionDists [F
@@ -25,7 +29,9 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD aM scratchQueryUnitList Lcom/corrodinggames/rts/gameFramework/utility/u;
 	FIELD an lastFormationPathMillis I
 	FIELD aN PENDING_canAttackWhileWorking Z
+	FIELD ao formationSlotDistanceSquared F
 	FIELD aO insufficientResources Z
+	FIELD ap PENDING_ap Z
 	FIELD aP scratchMoveDirective Lcom/corrodinggames/rts/game/units/ad;
 	FIELD aq fleeHeading F
 	FIELD aQ passiveTargetCallback1 Lcom/corrodinggames/rts/game/units/ae;
@@ -79,6 +85,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD j directMoveRequested Z
 	FIELD k hasMoveTarget Z
 	FIELD l moveTargetX F
+	FIELD L PENDING_L Z
 	FIELD m moveTargetY F
 	FIELD M cachedBodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD n moveTargetClearance I
@@ -143,6 +150,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD a isValidNewWaypoint (Lcom/corrodinggames/rts/game/units/au;Z)Z
 	METHOD a setQueueLeader (Lcom/corrodinggames/rts/game/units/y;)V
 	METHOD a findNearestUnitWithTag (Lcom/corrodinggames/rts/game/units/y;FFFLcom/corrodinggames/rts/game/units/custom/h;)Lcom/corrodinggames/rts/game/units/am;
+	METHOD a resolveUnitCollisionCallback (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/am;FZ)V
 	METHOD a attachRequest (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/b/n;)Z
 	METHOD a copyWaypoints (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/y;)V
 	METHOD a updateTurretTargets (Lcom/corrodinggames/rts/gameFramework/l;F)V
@@ -209,6 +217,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD ax cancelCurrentWaypoint ()V
 	METHOD aX getTurretStatsList ()Ljava/util/ArrayList;
 	METHOD ay popWaypoint ()V
+	METHOD aY PENDING_aY ()Z
 	METHOD az clearWaypoints ()V
 	METHOD aZ getMoveYAxisScaling ()F
 	METHOD b delayTurning (F)V
@@ -229,6 +238,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD b getPlacementError (ZLcom/corrodinggames/rts/game/n;)Ljava/lang/String;
 	METHOD B getTurnAcceleration ()F
 	METHOD B getTurretIdleDir (I)F
+	METHOD b_ canBeGivenBuildOrders ()Z
 	METHOD ba getMoveYAxisScaleReciprocal ()F
 		COMMENT Reciprocal of the y-axis movement scaling, applied before the facing angle is computed. CustomUnit returns this.meta.ek, which CustomUnitMetadataLoader computes as 1.0F / [movement]moveYAxisScaling (and throws if that key is <= 0). Sole caller is updateMoveThrottle, which rescales the target's y coordinate as "(var8 - this.ep) * this.ba() + this.ep" before passing it to CommonUtils.angleBetweenPoints, so a unit that visually moves slower/faster along y still turns toward the visually correct point. The forward scaling itself is exposed separately as getMoveYAxisScaling().
 	METHOD bA isUnloading ()Z
@@ -243,6 +253,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD bh getRequiredPathClearance ()I
 	METHOD bi isMoveSlidingMode ()Z
 	METHOD bj isMoveIgnoringBody ()Z
+	METHOD bk PENDING_bk ()Z
 	METHOD bm turretRotateWithBody ()Z
 	METHOD bn getUpgradeTurretMuzzlePosition ()Lcom/corrodinggames/rts/gameFramework/utility/ai;
 	METHOD bo spawnDeathDebris ()V
@@ -250,6 +261,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD bq drawScorchMark ()V
 	METHOD br destroyObstaclesUnder ()V
 	METHOD bs findOtherInstanceOfSameType ()Lcom/corrodinggames/rts/game/units/y;
+	METHOD bx deattachFromParent ()V
 	METHOD by getQueuedTotalPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD bz getTransportedUnits ()Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD c turnBodyTowardsPoint (FF)F
@@ -317,6 +329,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD N drawPlacementPreview (I)V
 	METHOD o getPathNode (I)Lcom/corrodinggames/rts/game/units/af;
 	METHOD o getAttackRangeAgainst (Lcom/corrodinggames/rts/game/units/am;)F
+	METHOD p getTurretDrawScale (I)F
 	METHOD p getMaxAttackRangeAgainst (Lcom/corrodinggames/rts/game/units/am;)F
 	METHOD q getTurretDamage (I)F
 	METHOD q getAttackPathClearance (Lcom/corrodinggames/rts/game/units/am;)I

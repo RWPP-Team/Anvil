@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/m/c com/corrodinggames/rts/gameFramework/render/Basic2DGLRendererTextureDrawList
+	FIELD a drawCalls [Lcom/corrodinggames/rts/gameFramework/m/b;
+	FIELD b drawCount I

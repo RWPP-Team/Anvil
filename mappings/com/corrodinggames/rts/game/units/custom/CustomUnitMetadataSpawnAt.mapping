@@ -1,0 +1,7 @@
+CLASS com/corrodinggames/rts/game/units/custom/ad com/corrodinggames/rts/game/units/custom/CustomUnitMetadataSpawnAt
+	COMMENT SpawnLocationType - where a spawned unit is placed: emptyResourcePools_asNeutral, emptyOrOccupiedResourcePools_asNeutral, mapCenter_asNeutral, mapCenter_eachActiveTeam, spawnPoint_eachActiveTeam. [verified from the class]
+	FIELD a emptyResourcePools_asNeutral Lcom/corrodinggames/rts/game/units/custom/ad;
+	FIELD b emptyOrOccupiedResourcePools_asNeutral Lcom/corrodinggames/rts/game/units/custom/ad;
+	FIELD c mapCenter_asNeutral Lcom/corrodinggames/rts/game/units/custom/ad;
+	FIELD d mapCenter_eachActiveTeam Lcom/corrodinggames/rts/game/units/custom/ad;
+	FIELD e spawnPoint_eachActiveTeam Lcom/corrodinggames/rts/game/units/custom/ad;

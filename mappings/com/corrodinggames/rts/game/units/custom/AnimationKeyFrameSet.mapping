@@ -4,6 +4,7 @@ CLASS com/corrodinggames/rts/game/units/custom/c com/corrodinggames/rts/game/uni
 	FIELD c targetName Ljava/lang/String;
 	FIELD d maxTime F
 	FIELD e keyFrames [Lcom/corrodinggames/rts/game/units/custom/a;
+	FIELD f PENDING_f Z
 	FIELD g keyFrameList Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD a getLastEvent ()Lcom/corrodinggames/rts/game/units/custom/b;
 	METHOD a scaleTimes (F)V

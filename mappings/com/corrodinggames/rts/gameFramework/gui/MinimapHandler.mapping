@@ -5,6 +5,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	FIELD ab fogSectionRect Landroid/graphics/Rect;
 	FIELD ac queuedPointsDrawPool Ljava/util/ArrayList;
 	FIELD ad tempPoint Landroid/graphics/Point;
+	FIELD ae PENDING_ae Lcom/corrodinggames/rts/gameFramework/m/m;
 	FIELD af trackedUnits Ljava/util/ArrayList;
 	FIELD ag resourceMarkers Ljava/util/ArrayList;
 	FIELD b y F
@@ -40,9 +41,13 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	FIELD q borderFlashAngle F
 	FIELD Q fogRedrawProgress F
 	FIELD r notificationPulseAngle F
+	FIELD R PENDING_R I
 	FIELD s viewportPaint Landroid/graphics/Paint;
+	FIELD S PENDING_S I
 	FIELD t baseNotificationPaint Landroid/graphics/Paint;
+	FIELD T PENDING_T Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD u unitNotificationPaint Landroid/graphics/Paint;
+	FIELD U PENDING_U Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD v messageNotificationPaint Landroid/graphics/Paint;
 	FIELD V resourceMarkerRect Landroid/graphics/Rect;
 	FIELD w minimapRect Landroid/graphics/Rect;
@@ -78,4 +83,3 @@ CLASS com/corrodinggames/rts/gameFramework/f/o com/corrodinggames/rts/gameFramew
 	METHOD f updateSize ()V
 	METHOD g renderFullMap ()V
 	METHOD h updatePositions ()V
-	CLASS 1 1

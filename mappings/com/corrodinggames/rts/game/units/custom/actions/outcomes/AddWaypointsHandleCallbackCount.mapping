@@ -1,0 +1,9 @@
+CLASS com/corrodinggames/rts/game/units/custom/a/a/c com/corrodinggames/rts/game/units/custom/actions/outcomes/AddWaypointsHandleCallbackCount
+	FIELD a requirePathPossible Z
+	FIELD b withTags Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD c maxDistanceSquared F
+	FIELD d includeUnbuiltUnits Z
+	FIELD e teamRelation Lcom/corrodinggames/rts/game/q;
+	FIELD f collectAllMatches Z
+	FIELD g matchingUnits Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD h nearestMatch Lcom/corrodinggames/rts/game/units/am;

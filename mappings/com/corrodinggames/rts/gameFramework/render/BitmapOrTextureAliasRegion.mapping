@@ -2,4 +2,6 @@ CLASS com/corrodinggames/rts/gameFramework/m/g com/corrodinggames/rts/gameFramew
 	FIELD a atlas Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD b x I
 	FIELD c y I
+	FIELD d width F
+	FIELD e height F
 	FIELD f version I

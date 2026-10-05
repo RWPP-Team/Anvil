@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/b/v com/corrodinggames/rts/gameFramework/canvasgl/GLPaint
+	FIELD a strokeWidth F
+	FIELD b color I
+	FIELD c style Landroid/graphics/Paint$Style;
+	METHOD a getColor ()I
+	METHOD a setStrokeWidth (F)V
+	METHOD a setColor (I)V
+	METHOD a setStyle (Landroid/graphics/Paint$Style;)V
+	METHOD b getStrokeWidth ()F
+	METHOD c getStyle ()Landroid/graphics/Paint$Style;

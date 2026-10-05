@@ -7,6 +7,7 @@ CLASS com/corrodinggames/rts/game/units/custom/a/c com/corrodinggames/rts/game/u
 	FIELD f lockedReason_2 Lcom/corrodinggames/rts/game/units/custom/aj;
 	FIELD g lockedInGame_3 Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	FIELD h lockedReason_3 Lcom/corrodinggames/rts/game/units/custom/aj;
+	FIELD i hasIsLocked Z
 	FIELD j isGuiBlinking Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	FIELD k customPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD l applyPrice Lcom/corrodinggames/rts/game/units/custom/d/b;

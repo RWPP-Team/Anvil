@@ -1,1 +1,13 @@
 CLASS com/corrodinggames/rts/game/units/d/r com/corrodinggames/rts/game/units/buildings/RepairBay
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d autoRepairTimer F
+	FIELD e autoRepairCallback Lcom/corrodinggames/rts/game/units/d/s;
+	FIELD f PENDING_f_rect Landroid/graphics/Rect;
+	FIELD g PENDING_g_rect Landroid/graphics/Rect;
+	FIELD h specialActions Ljava/util/ArrayList;
+	FIELD i cornerPoints [Landroid/graphics/PointF;
+	FIELD j cornerPointsOld [Landroid/graphics/PointF;
+	METHOD a queueRepairWaypoint (Lcom/corrodinggames/rts/game/units/y;FFZ)Lcom/corrodinggames/rts/game/units/au;
+	METHOD M loadImages ()V

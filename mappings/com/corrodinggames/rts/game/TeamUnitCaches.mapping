@@ -1,5 +1,6 @@
 CLASS com/corrodinggames/rts/game/s com/corrodinggames/rts/game/TeamUnitCaches
 	COMMENT TeamUnitCaches - the aggregate statistics a Team keeps about its units, updated from a(Unit)/b(Unit) as units are created/destroyed. Fields: buildingCount (units whose type reports "not mobile", i.e. non-mobile units, plus every factory build-queue entry), builtCount (finished units, damage/cm >= 1), inProgressCount (units still under construction, cm < 1), totalCount (all units), queuedBuildCount (entries in the factories' build queues), totalValue (sum of every unit's value cy()), resourceTotal / resourceGained / resourceLost (StoredResources accumulations from the units' stored resources), costPositive / costNegative (the positive/negative parts of every unit's price dq()), hasSeenCreditsUsingUnitType (sticky flag set when a real, non-virtual unit whose UnitTypeInterface.usesCredits() is true enters the team) and n/o (int totals split by UnitTypeInterface.j()). Field a (default 5, overwritten by Team with GameEngine.bB) and p are left obfuscated. CORRECTION: this field was earlier named hasSeenNonMobileUnitType - that was wrong; the guard is UnitTypeInterface.usesCredits() (true when a CustomUnitMetadata's parsed prices carry a non-zero credits component, set by CustomUnitMetadata.checkPriceUsesCredits), not a mobility check. [field names derived from this class' update logic]
+	FIELD a unitsMax I
 	FIELD b buildingCount I
 	FIELD c builtCount I
 	FIELD d totalCount I
@@ -12,8 +13,14 @@ CLASS com/corrodinggames/rts/game/s com/corrodinggames/rts/game/TeamUnitCaches
 	FIELD k costPositive Lcom/corrodinggames/rts/game/units/custom/e/f;
 	FIELD l costNegative Lcom/corrodinggames/rts/game/units/custom/e/f;
 	FIELD m hasSeenCreditsUsingUnitType Z
+	FIELD n unitsCreditsValue I
+	FIELD o buildingsCreditsValue I
 	FIELD p tagCountList Lcom/corrodinggames/rts/game/t;
 	FIELD q tagCounts Lcom/corrodinggames/rts/game/t;
 	METHOD a onUnitAdded (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD a getTagCount (Lcom/corrodinggames/rts/game/units/custom/g;)Lcom/corrodinggames/rts/game/p;
+	METHOD a addQueuedTagCounts (Lcom/corrodinggames/rts/game/units/d/l;)V
 	METHOD b onUnitRemoved (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD b removeQueuedTagCounts (Lcom/corrodinggames/rts/game/units/d/l;)V
+	METHOD c addTagCounts (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD d removeTagCounts (Lcom/corrodinggames/rts/game/units/am;)V

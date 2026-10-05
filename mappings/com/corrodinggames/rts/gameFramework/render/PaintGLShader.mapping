@@ -3,16 +3,21 @@ CLASS com/corrodinggames/rts/gameFramework/m/ae com/corrodinggames/rts/gameFrame
 	FIELD d infoText Ljava/lang/String;
 	FIELD e vertexSource Ljava/lang/String;
 	FIELD f fragmentSource Ljava/lang/String;
+	FIELD g vertexShaderId I
+	FIELD h fragmentShaderId I
 	FIELD i vertexPath Ljava/lang/String;
 	FIELD j fragmentPath Ljava/lang/String;
 	FIELD k vertexLastModified J
 	FIELD l fragmentLastModified J
 	FIELD m needsReload Z
+	FIELD n programId I
 	FIELD o errorState I
 	FIELD p values [Lcom/corrodinggames/rts/gameFramework/m/af;
+	FIELD q compiledShader Ljava/lang/Object;
 	FIELD r errorCount I
 	FIELD s reloadCheckCounter I
 	METHOD a isTeamColorShader ()Z
+	METHOD a prepareDraw (Landroid/graphics/Paint;Lcom/corrodinggames/rts/gameFramework/m/e;)Z
 	METHOD a getUniform (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/af;
 	METHOD a setFloatUniform (Ljava/lang/String;F)V
 	METHOD a setFloat2Uniform (Ljava/lang/String;FF)V

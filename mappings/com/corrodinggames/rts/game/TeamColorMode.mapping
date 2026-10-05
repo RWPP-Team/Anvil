@@ -5,3 +5,4 @@ CLASS com/corrodinggames/rts/game/o com/corrodinggames/rts/game/TeamColorMode
 	FIELD c hueNew Lcom/corrodinggames/rts/game/o;
 	FIELD d hueShift Lcom/corrodinggames/rts/game/o;
 	FIELD e disabled Lcom/corrodinggames/rts/game/o;
+	FIELD f f [Lcom/corrodinggames/rts/game/o;

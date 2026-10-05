@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/java/audio/a/g com/corrodinggames/rts/java/audio/util/ObjectIntMapEntry
+	FIELD a key I
+	FIELD b value Ljava/lang/Object;

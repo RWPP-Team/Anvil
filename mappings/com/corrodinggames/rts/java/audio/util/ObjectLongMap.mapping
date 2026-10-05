@@ -1,2 +1,33 @@
 CLASS com/corrodinggames/rts/java/audio/a/i com/corrodinggames/rts/java/audio/util/ObjectLongMap
+	FIELD a size I
+	FIELD b keyTable [J
+	FIELD c valueTable [Ljava/lang/Object;
+	FIELD d capacity I
+	FIELD e stashSize I
+	FIELD f zeroValue Ljava/lang/Object;
+	FIELD g hasZeroValue Z
+	FIELD h loadFactor F
+	FIELD i hashShift I
+	FIELD j mask I
+	FIELD k threshold I
+	FIELD l stashCapacity I
+	FIELD m pushIterations I
+	FIELD n entries1 Lcom/corrodinggames/rts/java/audio/a/j;
+	FIELD o entries2 Lcom/corrodinggames/rts/java/audio/a/j;
+	METHOD a clear ()V
+	METHOD a removeStashIndex (I)V
+	METHOD a get (J)Ljava/lang/Object;
+	METHOD a put (JLjava/lang/Object;)Ljava/lang/Object;
+	METHOD a push (JLjava/lang/Object;IJIJIJ)V
+	METHOD b entries ()Lcom/corrodinggames/rts/java/audio/a/j;
+	METHOD b resize (I)V
+	METHOD b remove (J)Ljava/lang/Object;
+	METHOD b putResize (JLjava/lang/Object;)V
+	METHOD c removeStash (J)Ljava/lang/Object;
+	METHOD c putStash (JLjava/lang/Object;)V
+	METHOD d containsKey (J)Z
+	METHOD d getStash (JLjava/lang/Object;)Ljava/lang/Object;
+	METHOD e containsKeyStash (J)Z
+	METHOD f hash1 (J)I
+	METHOD g hash2 (J)I
 	METHOD iterator iterator ()Ljava/util/Iterator;

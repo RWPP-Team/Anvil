@@ -1,0 +1,5 @@
+CLASS com/corrodinggames/rts/game/units/custom/c/e com/corrodinggames/rts/game/units/custom/connections/UnitConnectionsUnitConnectorType
+	COMMENT Groups the UnitConnectors that share one SocketMetadata (field a); list b is a DirectAccessArrayList of UnitConnector. [iOS-confirmed]
+	FIELD a socketMetadata Lcom/corrodinggames/rts/game/units/custom/c/a;
+	FIELD b connectors Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD a findConnector (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/custom/c/d;

@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ah com/corrodinggames/rts/gameFramework/gui/RichTextElementImage
+	FIELD a image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b scale F
+	FIELD c width I
+	FIELD d height I
+	FIELD e richText Lcom/corrodinggames/rts/gameFramework/f/ae;

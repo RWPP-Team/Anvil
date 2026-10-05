@@ -1,3 +1,15 @@
 CLASS com/corrodinggames/rts/game/units/d/h com/corrodinggames/rts/game/units/buildings/Fabricator
-	CLASS 1 1
-	CLASS 2 2
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImageT2 Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyImageT3 Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyTeamColorImagesT2 [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f bodyTeamColorImagesT3 [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h incomeTimer F
+	FIELD i animTimer F
+	FIELD j animFrameCounter I
+	FIELD k upgradeActionT2 Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD l upgradeActionT3 Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD t specialActions Ljava/util/ArrayList;
+	METHOD K loadImages ()V

@@ -1,3 +1,11 @@
 CLASS com/corrodinggames/rts/game/units/custom/b/a com/corrodinggames/rts/game/units/custom/components/AbstractComponent
+	METHOD a onUnitCreated (Lcom/corrodinggames/rts/game/units/custom/j;)V
+	METHOD a preUpdate (Lcom/corrodinggames/rts/game/units/custom/j;F)V
 	METHOD a onApplyMetadata (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/l;)V
+	METHOD b onUnitKilled (Lcom/corrodinggames/rts/game/units/custom/j;)V
 	METHOD b update (Lcom/corrodinggames/rts/game/units/custom/j;F)V
+	METHOD c onUnitDestroyed (Lcom/corrodinggames/rts/game/units/custom/j;)V
+	METHOD c drawOnTop (Lcom/corrodinggames/rts/game/units/custom/j;F)V
+	METHOD d drawBeforeBody (Lcom/corrodinggames/rts/game/units/custom/j;F)V
+	METHOD e drawAfterBody (Lcom/corrodinggames/rts/game/units/custom/j;F)V
+	METHOD f onDestroyEffects (Lcom/corrodinggames/rts/game/units/custom/j;F)V

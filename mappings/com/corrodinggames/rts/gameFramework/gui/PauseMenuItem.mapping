@@ -3,3 +3,45 @@ CLASS com/corrodinggames/rts/gameFramework/f/w com/corrodinggames/rts/gameFramew
 	FIELD a title Ljava/lang/CharSequence;
 	FIELD b icon Landroid/graphics/drawable/Drawable;
 	FIELD c itemId I
+	METHOD a setItemId (I)Landroid/view/MenuItem;
+	METHOD collapseActionView collapseActionView ()Z
+	METHOD expandActionView expandActionView ()Z
+	METHOD getActionProvider getActionProvider ()Landroid/view/ActionProvider;
+	METHOD getActionView getActionView ()Landroid/view/View;
+	METHOD getAlphabeticShortcut getAlphabeticShortcut ()C
+	METHOD getGroupId getGroupId ()I
+	METHOD getIcon getIcon ()Landroid/graphics/drawable/Drawable;
+	METHOD getIntent getIntent ()Landroid/content/Intent;
+	METHOD getItemId getItemId ()I
+	METHOD getMenuInfo getMenuInfo ()Landroid/view/ContextMenu$ContextMenuInfo;
+	METHOD getNumericShortcut getNumericShortcut ()C
+	METHOD getOrder getOrder ()I
+	METHOD getSubMenu getSubMenu ()Landroid/view/SubMenu;
+	METHOD getTitle getTitle ()Ljava/lang/CharSequence;
+	METHOD getTitleCondensed getTitleCondensed ()Ljava/lang/CharSequence;
+	METHOD hasSubMenu hasSubMenu ()Z
+	METHOD isActionViewExpanded isActionViewExpanded ()Z
+	METHOD isCheckable isCheckable ()Z
+	METHOD isChecked isChecked ()Z
+	METHOD isEnabled isEnabled ()Z
+	METHOD isVisible isVisible ()Z
+	METHOD setActionProvider setActionProvider (Landroid/view/ActionProvider;)Landroid/view/MenuItem;
+	METHOD setActionView setActionView (I)Landroid/view/MenuItem;
+	METHOD setActionView setActionView (Landroid/view/View;)Landroid/view/MenuItem;
+	METHOD setAlphabeticShortcut setAlphabeticShortcut (C)Landroid/view/MenuItem;
+	METHOD setCheckable setCheckable (Z)Landroid/view/MenuItem;
+	METHOD setChecked setChecked (Z)Landroid/view/MenuItem;
+	METHOD setEnabled setEnabled (Z)Landroid/view/MenuItem;
+	METHOD setIcon setIcon (I)Landroid/view/MenuItem;
+	METHOD setIcon setIcon (Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
+	METHOD setIntent setIntent (Landroid/content/Intent;)Landroid/view/MenuItem;
+	METHOD setNumericShortcut setNumericShortcut (C)Landroid/view/MenuItem;
+	METHOD setOnActionExpandListener setOnActionExpandListener (Landroid/view/MenuItem$OnActionExpandListener;)Landroid/view/MenuItem;
+	METHOD setOnMenuItemClickListener setOnMenuItemClickListener (Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
+	METHOD setShortcut setShortcut (CC)Landroid/view/MenuItem;
+	METHOD setShowAsAction setShowAsAction (I)V
+	METHOD setShowAsActionFlags setShowAsActionFlags (I)Landroid/view/MenuItem;
+	METHOD setTitle setTitle (I)Landroid/view/MenuItem;
+	METHOD setTitle setTitle (Ljava/lang/CharSequence;)Landroid/view/MenuItem;
+	METHOD setTitleCondensed setTitleCondensed (Ljava/lang/CharSequence;)Landroid/view/MenuItem;
+	METHOD setVisible setVisible (Z)Landroid/view/MenuItem;

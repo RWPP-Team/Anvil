@@ -50,6 +50,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/a com/corrodinggames/rts/gameFramew
 	FIELD I pinchActive Z
 	FIELD j actionButtonPaint Landroid/graphics/Paint;
 	FIELD J pinchStartX F
+	FIELD k PENDING_k Landroid/graphics/Paint;
 	FIELD K pinchStartY F
 	FIELD l actionCooldownOverlayPaint Landroid/graphics/Paint;
 	FIELD L pinchStartSpread F
@@ -61,7 +62,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/a com/corrodinggames/rts/gameFramew
 	FIELD O pinchSpread F
 	FIELD p actionIconPaint Landroid/graphics/Paint;
 	FIELD P pinchPointerCount I
+	FIELD q PENDING_q Landroid/graphics/Paint;
 	FIELD Q pinchStartZoom F
+	FIELD r PENDING_r Landroid/graphics/Paint;
 	FIELD R pinchTimer F
 	FIELD s actionButtonRect Landroid/graphics/Rect;
 	FIELD S zoomButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;
@@ -71,6 +74,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/a com/corrodinggames/rts/gameFramew
 	FIELD U pauseButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD v topButtonRect Landroid/graphics/Rect;
 	FIELD V replayPauseButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD w PENDING_w Landroid/graphics/Rect;
 	FIELD W fastForwardButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD x actionButtonClipRect Landroid/graphics/RectF;
 	FIELD X replayLeaderboardButtonImage Lcom/corrodinggames/rts/gameFramework/m/e;

@@ -1,2 +1,30 @@
 CLASS com/corrodinggames/rts/java/audio/a/o com/corrodinggames/rts/java/audio/util/ObjectMap
+	FIELD a size I
+	FIELD b keyTable [Ljava/lang/Object;
+	FIELD c valueTable [Ljava/lang/Object;
+	FIELD d capacity I
+	FIELD e stashSize I
+	FIELD f loadFactor F
+	FIELD g hashShift I
+	FIELD h mask I
+	FIELD i threshold I
+	FIELD j stashCapacity I
+	FIELD k pushIterations I
+	FIELD l entries1 Lcom/corrodinggames/rts/java/audio/a/p;
+	FIELD m entries2 Lcom/corrodinggames/rts/java/audio/a/p;
+	METHOD a removeStashIndex (I)V
+	METHOD a get (Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD a put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD a push (Ljava/lang/Object;Ljava/lang/Object;ILjava/lang/Object;ILjava/lang/Object;ILjava/lang/Object;)V
+	METHOD a toString (Ljava/lang/String;Z)Ljava/lang/String;
+	METHOD b entries ()Lcom/corrodinggames/rts/java/audio/a/p;
+	METHOD b resize (I)V
+	METHOD b containsKey (Ljava/lang/Object;)Z
+	METHOD b putResize (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD c hash1 (I)I
+	METHOD c containsKeyStash (Ljava/lang/Object;)Z
+	METHOD c putResizeNoCheck (Ljava/lang/Object;Ljava/lang/Object;)V
+	METHOD d hash2 (I)I
+	METHOD d putStash (Ljava/lang/Object;Ljava/lang/Object;)V
+	METHOD e getStash (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 	METHOD iterator iterator ()Ljava/util/Iterator;

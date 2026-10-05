@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/b/q com/corrodinggames/rts/gameFramework/canvasgl/ShaderVariable
+	FIELD a handle I
+	FIELD b name Ljava/lang/String;
+	FIELD c programHandle I
+	METHOD a setMatrix4 ([F)V
+	METHOD a loadHandle (I)V

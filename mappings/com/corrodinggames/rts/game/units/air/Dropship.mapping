@@ -1,3 +1,18 @@
 CLASS com/corrodinggames/rts/game/units/b/d com/corrodinggames/rts/game/units/air/Dropship
-	CLASS 1 1
-	CLASS 2 2
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e hoverBobAngle F
+	FIELD f unloadTimer F
+	FIELD g unloading Z
+	FIELD o transportedUnits Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD p PENDING_p_rect Landroid/graphics/Rect;
+	FIELD q specialActionUnload Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD r specialActionStopUnload Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD s specialActionsList Ljava/util/ArrayList;
+	METHOD C addTransportedUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD ds stopUnloading ()V
+	METHOD f unloadTransportedUnits (Z)V
+	METHOD L loadImages ()V
+	METHOD M startUnloading ()V

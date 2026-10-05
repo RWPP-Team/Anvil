@@ -4,6 +4,7 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD aa imageSmoothingWhenZoomedIn Z
 	FIELD aA attachmentSlots Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD ab imageSmoothing Z
+	FIELD aB attachmentsAddTransportedUnits Z
 	FIELD ac teamColorMode Lcom/corrodinggames/rts/game/o;
 	FIELD aC displayText Lcom/corrodinggames/rts/game/units/custom/bb;
 	FIELD ad image Lcom/corrodinggames/rts/gameFramework/m/e;
@@ -50,10 +51,12 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD aX nanoRangeForRepair I
 	FIELD ay drawLegsOnTop Z
 	FIELD aY nanoRangeForRepairIsMelee Z
+	FIELD az drawLegsUnderAllUnits Z
 	FIELD aZ nanoRangeForReclaim I
 	FIELD b defaultUnitMetadata Lcom/corrodinggames/rts/game/units/custom/l;
 	FIELD B isLargeUnit Z
 	FIELD ba nanoRangeForReclaimIsMelee Z
+	FIELD bA PENDING_bA I
 	FIELD bb nanoRepairSpeed F
 	FIELD bB fireTurretAtSelfOnDeathIndex I
 	FIELD bc nanoReclaimSpeed F
@@ -61,9 +64,11 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD bd resourceReclaimMultiplier F
 	FIELD bD unitsSpawnedOnDeath_setToTeamOfLastAttacker Z
 	FIELD be nanoUnbuildSpeed F
+	FIELD bE hasLaserDefenceTurret Z
 	FIELD bf nanoBuildSpeed F
 	FIELD bF drawInterceptRanges Z
 	FIELD bg hasWhenBuildingActions Z
+	FIELD bG hasTurretLimitingAngle Z
 	FIELD bh selfBuildRate F
 	FIELD bH imageScale F
 	FIELD bi dieOnConstruct Z
@@ -108,6 +113,7 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD cA allowCaptureWhenNeutralByAI Z
 	FIELD cb autoTriggerCheckRate Lcom/corrodinggames/rts/game/units/custom/s;
 	FIELD cB whileNeutralTransportAnyTeam Z
+	FIELD cc PENDING_cc Z
 	FIELD cC whileNeutralConvertToTransportedTeam Z
 	FIELD cd autoTriggerCheckWhileNotBuilt Z
 	FIELD cD convertToNeutralIfNotTransporting Z
@@ -212,6 +218,7 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD e pendingNetworkUnits Ljava/util/ArrayList;
 	FIELD E configStreamPath Ljava/lang/String;
 	FIELD ea turretSize F
+	FIELD eA hasInstantReuseLastAimChange Z
 	FIELD eb turretTurnSpeed F
 	FIELD eB softCollisionOnAll I
 	FIELD ec attackMovement Lcom/corrodinggames/rts/game/units/b;
@@ -272,6 +279,7 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD fC noneInBaseExtraPriority F
 	FIELD fd transportUnitsCanUnloadUnitsLandOnly Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 	FIELD fD noneGlobalExtraPriority F
+	FIELD fe PENDING_fe Z
 	FIELD fE whenUsingAsHarvester_recommendedInEachBase I
 	FIELD ff placementRules Lcom/corrodinggames/rts/game/units/custom/be;
 	FIELD fF whenUsingAsHarvester_recommendedGlobal I
@@ -316,9 +324,13 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD fz buildPriority F
 	FIELD fZ autoTriggersEvery4Frames [Lcom/corrodinggames/rts/game/units/custom/r;
 	FIELD g extraSlotUnits Ljava/util/ArrayList;
+	FIELD G PENDING_G Z
 	FIELD ga autoTriggersEvery8Frames [Lcom/corrodinggames/rts/game/units/custom/r;
 	FIELD gb postLoadHooks Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD gc effectReferences Ljava/util/ArrayList;
 	FIELD gd customEffectTemplates Ljava/util/ArrayList;
+	FIELD ge emptyEffectTemplates [Lcom/corrodinggames/rts/game/units/custom/ay;
+	FIELD gf noneEffectTemplates [Lcom/corrodinggames/rts/game/units/custom/ay;
 	FIELD gg builtFromEntries Ljava/util/ArrayList;
 	FIELD gh actionConfigs Ljava/util/ArrayList;
 	FIELD gi hasCreditCostActions Z
@@ -336,6 +348,7 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD h onCreateHooks Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD H checksum I
 	FIELD i onDestroyHooks Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD I mismatchDebugText Ljava/lang/String;
 	FIELD j resourceReferences Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD J mod Lcom/corrodinggames/rts/gameFramework/i/b;
 	FIELD k watchedFiles Lcom/corrodinggames/rts/gameFramework/utility/m;
@@ -355,6 +368,7 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 	FIELD r variableMapping Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableMapping;
 	FIELD R strictLevel I
 	FIELD s teamColorsOnTurret Z
+	FIELD S rndSeed I
 	FIELD t showHealthBar Z
 	FIELD T onNewMapSpawn Lcom/corrodinggames/rts/game/units/custom/ad;
 	FIELD u showHealthBarChanges Z
@@ -439,4 +453,3 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 		COMMENT Thin wrapper over resolveUnitTypeByName(name, true). Callers: TriggerEngine.addWaveUnitWeight, LazyUnitTypeReference.resolve and CustomUnitMetadataLoader.a(UnitTypeInterface) (for the [ai]upgradedFrom key).
 	METHOD t getOwningModTitle ()Ljava/lang/String;
 		COMMENT Display title of the Mod that owns this unit, or null when the unit did not come from a mod. Serialized by writeCustomUnitsToStream and read back for the mod browser listing.
-	CLASS 1 1

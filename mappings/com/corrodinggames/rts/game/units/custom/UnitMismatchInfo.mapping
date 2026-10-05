@@ -4,4 +4,6 @@ CLASS com/corrodinggames/rts/game/units/custom/ab com/corrodinggames/rts/game/un
 	FIELD b unitName Ljava/lang/String;
 	FIELD c serverChecksum I
 	FIELD d localChecksum I
+	FIELD e serverText Ljava/lang/String;
+	FIELD f localMetadata Lcom/corrodinggames/rts/game/units/custom/l;
 	METHOD a formatMessage ()Ljava/lang/String;

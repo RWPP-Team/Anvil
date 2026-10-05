@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/h/d com/corrodinggames/rts/game/units/water/MissileShip
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e scratchMuzzlePointF Landroid/graphics/PointF;
+	FIELD f PENDING_f_rect Landroid/graphics/Rect;
+	METHOD f loadImages ()V

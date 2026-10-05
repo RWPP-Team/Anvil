@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/h/c com/corrodinggames/rts/game/units/water/GunBoat
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e PENDING_e_rect Landroid/graphics/Rect;
+	METHOD f loadImages ()V

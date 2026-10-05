@@ -1,10 +1,12 @@
 CLASS com/corrodinggames/rts/gameFramework/m/o com/corrodinggames/rts/gameFramework/render/CanvasRecorder
+	FIELD a PENDING_a Lcom/corrodinggames/rts/gameFramework/m/l;
 	FIELD b saveStackSize I
 	FIELD c objectPools Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD d paintPool Lcom/corrodinggames/rts/gameFramework/m/q;
 	FIELD e rectPool Lcom/corrodinggames/rts/gameFramework/m/q;
 	FIELD f rectFPool Lcom/corrodinggames/rts/gameFramework/m/q;
 	FIELD g matrixPool Lcom/corrodinggames/rts/gameFramework/m/q;
+	FIELD h actionPool Lcom/corrodinggames/rts/gameFramework/m/q;
 	FIELD i actionList Lcom/corrodinggames/rts/gameFramework/m/t;
 	FIELD j nextActionIndex I
 	FIELD k enabled Z
@@ -12,4 +14,3 @@ CLASS com/corrodinggames/rts/gameFramework/m/o com/corrodinggames/rts/gameFramew
 	METHOD a runDrawTimeCallback (Lcom/corrodinggames/rts/gameFramework/m/p;Ljava/lang/Object;Ljava/lang/Object;)V
 	METHOD a recordAction (Lcom/corrodinggames/rts/gameFramework/m/p;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 	METHOD a recordAction (Lcom/corrodinggames/rts/gameFramework/m/p;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/corrodinggames/rts/gameFramework/m/s;
-	CLASS 1 1

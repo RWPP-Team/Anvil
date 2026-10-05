@@ -4,12 +4,14 @@ CLASS com/corrodinggames/rts/game/units/custom/ag com/corrodinggames/rts/game/un
 	FIELD c modUnitsLoadedCount I
 	FIELD d changedUnitsCount I
 	FIELD e currentMod Lcom/corrodinggames/rts/gameFramework/i/b;
+	FIELD f PENDING_f Z
 	FIELD g imageCache Ljava/util/HashMap;
 	FIELD h soundCache Ljava/util/HashMap;
 	FIELD i imageCacheMisses I
 	FIELD j imageCacheHits I
 	FIELD k logImageCacheMisses Z
 	FIELD l oomErrors I
+	FIELD m PENDING_m Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD n iniCache Ljava/util/HashMap;
 	FIELD o lock Ljava/lang/Object;
 	FIELD p maxUnitRadius F
@@ -45,6 +47,7 @@ CLASS com/corrodinggames/rts/game/units/custom/ag com/corrodinggames/rts/game/un
 	METHOD a loadSound (Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/a/i;
 	METHOD a parseNamedValuesWithParams (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 	METHOD a isPathInsideMod (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/i/b;)Z
+	METHOD a loadImage (Ljava/lang/String;Ljava/lang/String;ZLcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a loadImage (Ljava/lang/String;Ljava/lang/String;ZLcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD a getLoadedModsSummary (Ljava/util/ArrayList;)Ljava/lang/String;
 	METHOD a getNetworkSyncedUnits (Z)Ljava/util/ArrayList;

@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/custom/b/k com/corrodinggames/rts/game/units/custom/components/ProjectileDefence
+	FIELD a instance Lcom/corrodinggames/rts/game/units/custom/b/a;
+	FIELD b tmpPointF Landroid/graphics/PointF;
+	METHOD a isAlreadyTargetedByInterceptor (Lcom/corrodinggames/rts/game/f;)Z
+	METHOD a interceptTaggedProjectiles (Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/custom/bn;)V

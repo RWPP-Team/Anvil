@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/f/j com/corrodinggames/rts/gameFramework/gui/InterfaceHelpers
+	FIELD a tempPoint Landroid/graphics/Point;
+	METHOD a findNearestFreeResourcePool (III)Landroid/graphics/Point;

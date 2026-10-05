@@ -237,6 +237,7 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	METHOD a logException (Ljava/lang/String;Ljava/lang/Throwable;)V
 	METHOD a setLoadingMessage (Ljava/lang/String;Z)V
 	METHOD a getStackTraceString (Ljava/lang/Throwable;)Ljava/lang/String;
+	METHOD a isGamePaused (Z)Z
 	METHOD a loadMap (ZLcom/corrodinggames/rts/gameFramework/s;)V
 	METHOD a loadMap (ZZLcom/corrodinggames/rts/gameFramework/s;)V
 	METHOD A isCameraMovingOrPanning ()Z
@@ -355,9 +356,3 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	METHOD Y applyDipPaintsToGraphics ()V
 	METHOD z getNetworkPort ()I
 	METHOD Z clearLoadingMessage ()V
-	CLASS 1 1
-	CLASS 2 2
-		CLASS 1 1
-		CLASS 2 2
-	CLASS 3 3
-	CLASS 4 4

@@ -3,6 +3,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD A mouseY F
 	FIELD aa specialActionSourceUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD aA smallestTextPaint Landroid/graphics/Paint;
+	FIELD ab PENDING_ab Z
 	FIELD aB smallerTextPaint Landroid/graphics/Paint;
 	FIELD ac activeSpecialAction Lcom/corrodinggames/rts/game/units/a/s;
 	FIELD aC smallTextPaint Landroid/graphics/Paint;
@@ -19,11 +20,13 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD ai queuePlacementMode Z
 	FIELD aI screenMessageOutlinePaint Landroid/graphics/Paint;
 	FIELD aj lastPlacementWorldX F
+	FIELD aJ PENDING_aJ Landroid/graphics/Paint;
 	FIELD ak lastPlacementWorldY F
 	FIELD aK actionCountTextPaint Landroid/graphics/Paint;
 	FIELD al gridShiftX F
 	FIELD aL tooltipBgFillPaint Landroid/graphics/Paint;
 	FIELD am gridShiftY F
+	FIELD aM graphAxisBackgroundPaint Landroid/graphics/Paint;
 	FIELD an placementDragPointX F
 	FIELD aN pinchLinePaint Landroid/graphics/Paint;
 	FIELD ao placementDragPointY F
@@ -55,7 +58,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD ba buttonNoImage Lcom/corrodinggames/rts/gameFramework/m/e;
 	FIELD bA tempDrawPaint Landroid/graphics/Paint;
 	FIELD bb buttonYesImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bB PENDING_bB Landroid/graphics/Paint;
 	FIELD bc buttonMoreImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD bC PENDING_bC Landroid/graphics/Paint;
 	FIELD bd promptVisible Z
 	FIELD bD resourceIconPaint Landroid/graphics/Paint;
 	FIELD be promptAnimProgress F
@@ -102,9 +107,13 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD bY indirectedActionUnitList Lcom/corrodinggames/rts/gameFramework/utility/u;
 	FIELD bz tempBorderRect Landroid/graphics/Rect;
 	FIELD bZ selectedUnits Lcom/corrodinggames/rts/gameFramework/utility/u;
+	FIELD c statsPanelExpanded Z
 	FIELD C pointerInGameArea Z
 	FIELD ca lastSelectedUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD cb PENDING_cb Landroid/graphics/Paint;
 	FIELD cc lastButtonRect Landroid/graphics/Rect;
+	FIELD cd uiDirtyCounter I
+	FIELD ce uiDirty Z
 	FIELD cf resourceColumnOffset I
 	FIELD cg resourceStackYOffset I
 	FIELD ch resourceColumnCounter I
@@ -112,7 +121,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	FIELD cj resourceColumnUsedWidth I
 	FIELD ck previousMaxResourceTextHeight I
 	FIELD cl maxResourceTextHeight I
+	FIELD d statsPanelExpandProgress F
 	FIELD D doubleTapFlag Z
+	FIELD e PENDING_e Z
 	FIELD E doubleTapTimer F
 	FIELD f debugEditorUnit Lcom/corrodinggames/rts/game/units/h;
 	FIELD F lastTapX F
@@ -240,9 +251,11 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	METHOD e reloadLocaleTexts ()V
 	METHOD e getUnitsForSpecialAction (Lcom/corrodinggames/rts/game/units/a/s;)Lcom/corrodinggames/rts/gameFramework/utility/u;
 	METHOD e orderGuard (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD E PENDING_E ()V
 	METHOD f updateUiModeFlags ()V
 	METHOD f getSpecialActionResourceError (Lcom/corrodinggames/rts/game/units/a/s;)Ljava/lang/String;
 	METHOD f orderLoadUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD F PENDING_F ()Z
 	METHOD g clearMessageLogs ()V
 	METHOD g orderUnloadUnit (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD G showVictoryScreen ()V
@@ -252,6 +265,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/g com/corrodinggames/rts/gameFramew
 	METHOD i getDebugEditorUnit ()Lcom/corrodinggames/rts/game/units/h;
 	METHOD i canSelectUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD I startMapPingAction ()V
+	METHOD j PENDING_j ()V
 	METHOD j selectUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD J isPointerNotDragging ()Z
 	METHOD k isPromptNoTapped ()Z

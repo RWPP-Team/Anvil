@@ -5,3 +5,5 @@ CLASS com/corrodinggames/rts/gameFramework/f/n com/corrodinggames/rts/gameFramew
 	FIELD d timeText Ljava/lang/String;
 	FIELD e msPerChar I
 	FIELD f color I
+	METHOD a getAgeMillis ()I
+	METHOD b isVisible ()Z

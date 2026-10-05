@@ -1,1 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/b/p com/corrodinggames/rts/gameFramework/canvasgl/GLFont
+	FIELD a textSize I
+	FIELD b bold Z
+	FIELD c glText Lcom/corrodinggames/rts/gameFramework/b/a/b;
+	FIELD d canvas Lcom/corrodinggames/rts/gameFramework/b/n;

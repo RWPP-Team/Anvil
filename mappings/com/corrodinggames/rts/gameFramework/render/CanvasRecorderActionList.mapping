@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/m/t com/corrodinggames/rts/gameFramework/render/CanvasRecorderActionList
+	FIELD a size I
+	FIELD b actions [Lcom/corrodinggames/rts/gameFramework/m/s;
+	METHOD a add (Lcom/corrodinggames/rts/gameFramework/m/s;)Z

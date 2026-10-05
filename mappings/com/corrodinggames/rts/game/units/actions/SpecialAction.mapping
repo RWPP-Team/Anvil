@@ -5,28 +5,40 @@ CLASS com/corrodinggames/rts/game/units/a/s com/corrodinggames/rts/game/units/ac
 	FIELD h noCostAction Lcom/corrodinggames/rts/game/units/a/a;
 	FIELD i emptyActionId Lcom/corrodinggames/rts/game/units/a/c;
 	METHOD a getDisplayDescription ()Ljava/lang/String;
+	METHOD a suppressesOrderEffect (FF)Z
 	METHOD a isSameAction (Lcom/corrodinggames/rts/game/units/a/s;Lcom/corrodinggames/rts/game/units/a/s;)Z
+	METHOD a isGuiBlinkingForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD a isVisibleForTeam (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/n;)Z
+	METHOD a applyAddResources (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD a appendTooltipDescription (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/gameFramework/f/ae;)V
 	METHOD a appendTooltipTitleAndPrice (Lcom/corrodinggames/rts/game/units/am;Lcom/corrodinggames/rts/gameFramework/f/ae;Landroid/graphics/Paint;Landroid/graphics/Paint;)V
 	METHOD a canAffordForUnit (Lcom/corrodinggames/rts/game/units/am;Z)Z
+	METHOD a applyLagHidingResources (Lcom/corrodinggames/rts/game/units/y;)V
 	METHOD a setActionIdFromString (Ljava/lang/String;)V
 	METHOD A isBuildingPlacementAction ()Z
 	METHOD b getDisplayName ()Ljava/lang/String;
 	METHOD b isEmptyActionId (Lcom/corrodinggames/rts/game/units/a/c;)Z
+	METHOD b isAvailableForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD b getCountForUnit (Lcom/corrodinggames/rts/game/units/am;Z)I
 	METHOD B getCustomPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD c getPriceValue ()I
 	METHOD c isRealActionId (Lcom/corrodinggames/rts/game/units/a/c;)Z
+	METHOD c performDirectAction (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD c onButtonClicked (Lcom/corrodinggames/rts/game/units/am;Z)Z
 	METHOD C isClickableInfoAction ()Z
 	METHOD compareTo compareTo (Ljava/lang/Object;)I
 	METHOD d getDisplayNameWithCount ()Ljava/lang/String;
 	METHOD d hasActionId (Lcom/corrodinggames/rts/game/units/a/c;)Z
 	METHOD d getDisplayNameForUnit (Lcom/corrodinggames/rts/game/units/am;)Ljava/lang/String;
+	METHOD d canPlayerCancel (Lcom/corrodinggames/rts/game/units/am;Z)Z
 	METHOD D showUnitPreviewInTooltip ()Z
 	METHOD e getActionType ()Lcom/corrodinggames/rts/game/units/a/u;
 	METHOD e setActionId (Lcom/corrodinggames/rts/game/units/a/c;)V
 	METHOD e getDisplayDescriptionForUnit (Lcom/corrodinggames/rts/game/units/am;)Ljava/lang/String;
+	METHOD E getAiConsiderSameAsBuildingType ()Lcom/corrodinggames/rts/game/units/as;
 	METHOD f getActionCategory ()Lcom/corrodinggames/rts/game/units/a/t;
+	METHOD f onQueueItemCompleted (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD F isConvertAction ()Z
 	METHOD g canQueueMultiple ()Z
 	METHOD g isNoCostForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD G isDimmedInActionBar ()Z
@@ -35,28 +47,41 @@ CLASS com/corrodinggames/rts/game/units/a/s com/corrodinggames/rts/game/units/ac
 	METHOD H isHighPriorityQueueItem ()Z
 	METHOD h_ shouldShowTooltipTitle ()Z
 	METHOD i getUnitType ()Lcom/corrodinggames/rts/game/units/as;
+	METHOD i getUnitShownInUI (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/am;
 	METHOD I isUnitSpecificAction ()Z
 	METHOD j getIcon ()Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD j getLockedReason (Lcom/corrodinggames/rts/game/units/am;)Ljava/lang/String;
 	METHOD J getButtonColor ()I
 	METHOD k shouldDismissOnRepeatClick (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD l getButtonWidthScale ()F
 	METHOD l supportsAddRemoveButtons (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD m getButtonColumnSpan ()I
 	METHOD m isQueuedForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD M getHotkeyButton ()Lcom/corrodinggames/rts/gameFramework/ad;
 	METHOD m_ getSortOrder ()F
 	METHOD n isRemovableForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD N getStoredActionId ()Lcom/corrodinggames/rts/game/units/a/c;
 	METHOD n_ isCooldownBlocked ()Z
+	METHOD o staysActiveAfterOrder ()Z
+	METHOD o canTargetUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD O getActionIdString ()Ljava/lang/String;
 	METHOD o_ isInstantAction ()Z
+	METHOD p isContinuousPlacement ()Z
 	METHOD p getProgress (Lcom/corrodinggames/rts/game/units/am;)F
 	METHOD P getCustomTagList ()Lcom/corrodinggames/rts/game/units/custom/h;
 	METHOD q getActionOverrides (Lcom/corrodinggames/rts/game/units/am;)Ljava/util/ArrayList;
+	METHOD Q usesExtraLagHidingInUI ()Z
+	METHOD r isVisibleForUnit (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD r_ getSecondaryPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
 	METHOD s isAvailableForSelection ()Z
 	METHOD s shouldShowHealthOverlay (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD t getTechLevel ()I
 	METHOD t shouldShowConstructionProgress (Lcom/corrodinggames/rts/game/units/am;)Z
 	METHOD u hasPersistentTooltip ()Z
+	METHOD u hasIsLockedCondition (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD v getIconRect ()Landroid/graphics/Rect;
 	METHOD v getExtraActionType (Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/custom/a/e;
 	METHOD w getTooltipTitle (Lcom/corrodinggames/rts/game/units/am;)Ljava/lang/String;
+	METHOD x ignoresUnitCap ()Z
+	METHOD y getGuiBuildUnitType ()Lcom/corrodinggames/rts/game/units/as;
 	METHOD z getActionId ()Lcom/corrodinggames/rts/game/units/a/c;

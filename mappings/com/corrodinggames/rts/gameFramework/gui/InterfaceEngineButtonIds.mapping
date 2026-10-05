@@ -2,3 +2,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/i com/corrodinggames/rts/gameFramew
 	FIELD a none Lcom/corrodinggames/rts/gameFramework/f/i;
 	FIELD b zoomButton Lcom/corrodinggames/rts/gameFramework/f/i;
 	FIELD c unselectAllButton Lcom/corrodinggames/rts/gameFramework/f/i;
+	FIELD d VALUES [Lcom/corrodinggames/rts/gameFramework/f/i;

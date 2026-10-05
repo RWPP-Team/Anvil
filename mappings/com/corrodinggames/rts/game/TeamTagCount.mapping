@@ -4,3 +4,4 @@ CLASS com/corrodinggames/rts/game/p com/corrodinggames/rts/game/TeamTagCount
 	FIELD b builtCount I
 	FIELD c inProgressCount I
 	FIELD d queuedCount I
+	FIELD e lookupMissCount S

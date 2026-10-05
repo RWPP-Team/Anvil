@@ -1,6 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/a/a/n com/corrodinggames/rts/game/units/custom/actions/outcomes/TakeResources_HandleCallbackCount
-	FIELD a withTags Lcom/corrodinggames/rts/game/units/custom/h;
-	FIELD b maxDistanceSquared F
-	FIELD c includeUnbuiltUnits Z
-	FIELD d teamRelation Lcom/corrodinggames/rts/game/q;
-	FIELD e matchingUnits Lcom/corrodinggames/rts/gameFramework/utility/m;

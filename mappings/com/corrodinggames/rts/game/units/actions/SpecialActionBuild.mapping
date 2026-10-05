@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/game/units/a/v com/corrodinggames/rts/game/units/actions/SpecialActionBuild
+	FIELD a unitType Lcom/corrodinggames/rts/game/units/as;
+	FIELD b techLevel I

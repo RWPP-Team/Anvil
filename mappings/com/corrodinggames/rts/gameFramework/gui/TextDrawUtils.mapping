@@ -3,3 +3,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/d com/corrodinggames/rts/gameFramew
 	FIELD b wrappedLines Ljava/util/ArrayList;
 	FIELD c tmpHighlightRect Landroid/graphics/RectF;
 	FIELD d tmpTextRect Landroid/graphics/RectF;
+	METHOD a getTextLineHeightPadded (Landroid/graphics/Paint;)I
+	METHOD a calculateImageScale (Lcom/corrodinggames/rts/gameFramework/m/e;FF)F
+	METHOD a calculateImageScale (Lcom/corrodinggames/rts/gameFramework/m/e;FFFF)F
+	METHOD a drawTextWithHighlight (Ljava/lang/String;FFLandroid/graphics/Paint;Landroid/graphics/Paint;FFFF)V
+	METHOD a wrapText (Ljava/lang/String;Landroid/graphics/Rect;Landroid/graphics/Paint;Landroid/graphics/Paint;Z)Ljava/util/ArrayList;
+	METHOD b getTextLineHeight (Landroid/graphics/Paint;)I

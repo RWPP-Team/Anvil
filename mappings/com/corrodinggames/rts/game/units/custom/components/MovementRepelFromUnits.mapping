@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/custom/b/j com/corrodinggames/rts/game/units/custom/components/MovementRepelFromUnits
+	FIELD a enabled Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
+	FIELD b speed F
+	FIELD c maxSpeed F
+	FIELD d otherUnitHasTag Lcom/corrodinggames/rts/game/units/custom/h;
+	FIELD e onlySameTeam Z
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;)V
+	METHOD a parseFromIni (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)V

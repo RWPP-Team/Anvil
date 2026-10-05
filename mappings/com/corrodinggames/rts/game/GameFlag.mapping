@@ -1,2 +1,6 @@
 CLASS com/corrodinggames/rts/game/a com/corrodinggames/rts/game/GameFlag
 	COMMENT Abstract flag base holding an int value plus three boolean flags. Only known subclass is BasicGameFlag; appears to be a type-marker/data pair from the same source file.
+	FIELD a PENDING_a I
+	FIELD b PENDING_b Z
+	FIELD c PENDING_c Z
+	FIELD d PENDING_d Z

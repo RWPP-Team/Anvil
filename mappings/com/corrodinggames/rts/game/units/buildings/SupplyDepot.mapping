@@ -1,2 +1,14 @@
 CLASS com/corrodinggames/rts/game/units/d/v com/corrodinggames/rts/game/units/buildings/SupplyDepot
-	CLASS 1 1
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImageT2 Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImagesT2 [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f techLevel I
+	FIELD g PENDING_g_float F
+	FIELD h PENDING_h_int I
+	FIELD i PENDING_i_int I
+	FIELD j upgradeAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD k specialActions Ljava/util/ArrayList;
+	METHOD K loadImages ()V
+	METHOD M applyUpgrade ()V

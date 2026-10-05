@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/a/y com/corrodinggames/rts/game/units/actions/UnitInfoBox
+	FIELD a showTeamInfo Z
+	METHOD K getSelectedOrderableUnit ()Lcom/corrodinggames/rts/game/units/y;
+	METHOD L isSelectionOwnedByPlayer ()Z

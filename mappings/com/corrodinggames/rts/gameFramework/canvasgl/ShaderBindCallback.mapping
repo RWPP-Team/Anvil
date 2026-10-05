@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/b/m com/corrodinggames/rts/gameFramework/canvasgl/ShaderBindCallback
+	METHOD a onShaderBound (ILcom/corrodinggames/rts/gameFramework/b/h;)V

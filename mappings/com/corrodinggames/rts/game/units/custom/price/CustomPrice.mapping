@@ -47,6 +47,7 @@ CLASS com/corrodinggames/rts/game/units/custom/d/b com/corrodinggames/rts/game/u
 	METHOD c containsAnyBits (II)Z
 	METHOD c canAffordWithLagHiding (Lcom/corrodinggames/rts/game/units/am;Z)Z
 	METHOD c overlaps (Lcom/corrodinggames/rts/game/units/custom/d/b;)Z
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
 	METHOD d isNotEmpty ()Z
 	METHOD d clampUnitResources (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD d recordPurchase (Lcom/corrodinggames/rts/game/units/am;Z)V

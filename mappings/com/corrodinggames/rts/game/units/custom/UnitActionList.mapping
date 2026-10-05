@@ -7,4 +7,5 @@ CLASS com/corrodinggames/rts/game/units/custom/u com/corrodinggames/rts/game/uni
 	METHOD a getActions ()Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD a queueToBuild (Lcom/corrodinggames/rts/game/units/custom/j;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD a queueAll (Lcom/corrodinggames/rts/game/units/custom/j;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;II)V
+	METHOD a PENDING_a (Lcom/corrodinggames/rts/game/units/custom/l;)V
 	METHOD b link (Lcom/corrodinggames/rts/game/units/custom/l;)V

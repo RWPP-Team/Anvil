@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/custom/ai com/corrodinggames/rts/game/units/custom/CustomUnitMetadataModReadInfo
+	COMMENT Undetermined holder in custom/ (left as PENDING_ai): String a plus a HashMap b (lazily allocated). Likely a named value/definition map, but no usage evidence - intentionally not renamed.
+	FIELD a PENDING_a Ljava/lang/String;
+	FIELD b PENDING_b Ljava/util/HashMap;

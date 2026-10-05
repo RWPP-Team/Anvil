@@ -1,3 +1,15 @@
 CLASS com/corrodinggames/rts/game/units/h/e com/corrodinggames/rts/game/units/water/SubmarineUnit
-	CLASS 1 1
-	CLASS 2 2
+	FIELD a surfaced Z
+	FIELD b onSurface Z
+	FIELD c diveSpeed F
+	FIELD d bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g IMAGE_ICON Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD h IMAGE_ICON_TEAM_COLORS [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD i bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD j surfaceAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD k diveAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD l specialActions Ljava/util/ArrayList;
+	METHOD b loadImages ()V
+	METHOD L updateRenderOrder ()V

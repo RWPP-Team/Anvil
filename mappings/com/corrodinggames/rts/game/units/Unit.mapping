@@ -1,5 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Unit
 	FIELD a newUnitsDeferredList Lcom/corrodinggames/rts/gameFramework/utility/o;
+	FIELD bA customTimer I
+	FIELD bB lastConvertedTime I
+	FIELD bC randomSeed I
+	FIELD bD registeredWithAI Z
 	FIELD bE unitList Lcom/corrodinggames/rts/gameFramework/utility/u;
 	FIELD bF placeholderUnits Ljava/util/HashMap;
 	FIELD bG placeholderUnitsDefault Ljava/util/HashMap;
@@ -8,7 +12,12 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD bJ minimapPaintSelected Landroid/graphics/Paint;
 	FIELD bK minimapDimColorFilter Landroid/graphics/LightingColorFilter;
 	FIELD bL inUnitList Z
+	FIELD bM aiLimitedUse Z
+	FIELD bN unitAIDisabled Z
+	FIELD bO placedAsBuilder Z
+	FIELD bP placedAsCommandCenter Z
 	FIELD bQ interactTargetUnit Lcom/corrodinggames/rts/game/units/am;
+	FIELD br PENDING_br F
 	FIELD bR queuedInteractTargetUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD bs lastDamagedAt I
 	FIELD bS queuedInteractTargetTimer F
@@ -41,7 +50,9 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD cg angle F
 	FIELD cG selected Z
 	FIELD ch moveHeading F
+	FIELD cH selectionTimeMillis I
 	FIELD ci reversing Z
+	FIELD cI PENDING_cI Z
 	FIELD cj radius F
 	FIELD cJ selectionFlashTimer F
 	FIELD ck selectionRadius F
@@ -49,15 +60,24 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD cl directMoveSpeed F
 	FIELD cL turrets [Lcom/corrodinggames/rts/game/units/ap;
 	FIELD cm buildProgress F
+	FIELD cM PENDING_cM Z
+	FIELD cn PENDING_cn F
 	FIELD cN transportedBy Lcom/corrodinggames/rts/game/units/am;
+	FIELD co drawnScaledDown Z
 	FIELD cO attachedToUnit Lcom/corrodinggames/rts/game/units/y;
 	FIELD cp isPlaceholder Z
 	FIELD cP attachmentSlot Lcom/corrodinggames/rts/game/units/custom/b/n;
+	FIELD cq PENDING_cq Z
+	FIELD cr PENDING_cr Z
 	FIELD cR hasMinimapPosition Z
+	FIELD cs previewPlaceable Z
 	FIELD cS minimapX I
+	FIELD ct previewBlocked Z
 	FIELD cT minimapY I
 	FIELD cu hp F
+	FIELD cU killCount I
 	FIELD cv maxHp F
+	FIELD cV totalDamageDealt F
 	FIELD cw recentDamage F
 	FIELD cW replaySelectionPaint Landroid/graphics/Paint;
 	FIELD cx shield F
@@ -84,14 +104,23 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD dH storedResources Lcom/corrodinggames/rts/game/units/custom/e/f;
 	FIELD di redStrokePaint Landroid/graphics/Paint;
 	FIELD dI connections Lcom/corrodinggames/rts/game/units/custom/c/c;
+	FIELD dj PENDING_dj Landroid/graphics/Paint;
 	FIELD dJ cachedTotalPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
+	FIELD dk rangeCirclePaint Landroid/graphics/Paint;
+	FIELD dl geoCellX I
+	FIELD dm geoCellY I
+	FIELD dn geoCellTeamId I
 	FIELD do smokeTimer F
 	FIELD dp damageFlash F
 	FIELD dq sparkTimer F
 	FIELD dr scratchDrawRectF Landroid/graphics/RectF;
 	FIELD ds waypointLinePaint Landroid/graphics/Paint;
+	FIELD dt PENDING_dt Landroid/graphics/Paint;
+	FIELD du scratchDestRectF Landroid/graphics/RectF;
+	FIELD dv scratchSrcRect Landroid/graphics/Rect;
 	FIELD dw sharedFootprintRect Landroid/graphics/Rect;
 	FIELD dx sharedSpecialActionsList Ljava/util/ArrayList;
+	FIELD dy PENDING_dy Ljava/util/ArrayList;
 	FIELD dz cachedUnitType Lcom/corrodinggames/rts/game/units/as;
 	METHOD a calculateAimPoint (FFFFF)Landroid/graphics/PointF;
 	METHOD a drawOnMinimap (II)Z
@@ -132,6 +161,7 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 		COMMENT Toggles a queued production action for this factory, i.e. the handler behind clicking a build button. CustomUnit forwards to buildQueue.a(SpecialAction, boolean); FactoryBuildQueue then acts on QueueUnitAction entries: when the boolean is false it queues the unit (after checking precondition s.a(unit,true), the unit-count cap via getUnitsMax and affordability via price.b(unit, queue)), and when the boolean is true it removes the entry and refunds through the action's price. The empty-action overload a(SpecialAction) instead drops a pending item from the queue's secondary list. Base Unit has no implementation; the Factory counterpart does the same for built-in buildings.
 	METHOD b getNanoBuildSpeed (Lcom/corrodinggames/rts/game/units/am;)F
 	METHOD b repair (Lcom/corrodinggames/rts/game/units/am;FLcom/corrodinggames/rts/game/f;)F
+	METHOD b PENDING_b (Lcom/corrodinggames/rts/game/units/as;)Lcom/corrodinggames/rts/game/units/am;
 	METHOD B setVariableScopeUnit (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD bC updateCachedPrice ()V
 	METHOD bd getMaxEnergy ()F
@@ -148,6 +178,7 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD bN getDamageOutput ()F
 	METHOD bO isBio ()Z
 	METHOD bP isBug ()Z
+	METHOD bQ getPushResistance ()F
 	METHOD bR updateCollisionLayer ()V
 	METHOD bS initTurret ()V
 	METHOD bt onDeath ()V
@@ -184,6 +215,7 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD cD getRenderScale ()F
 		COMMENT Uniform scale factor applied around the unit's centre point when rendering its body sprite; 1.0F means no scaling. Consumers: OrderableUnit.draw and aQ(), which call GraphicsEngine.scaleAroundPoint(cD(), cD(), centreX, centreY) around the body/turret blit and restore afterwards. CustomUnit returns this.meta.bH * this.animScale: the loader derives meta.bH from [graphics]scaleImagesTo (divided by total_frames, times globalScale) and then multiplies it by [graphics]imageScale, while animScale is driven by AnimationKeyFrameType.scale keyframes, so the two channels compose.
 	METHOD ce getDisplayFootprint ()Landroid/graphics/Rect;
+	METHOD cE getBodyScreenRect ()Landroid/graphics/RectF;
 	METHOD cf isVisibleToPlayer ()Z
 	METHOD cF getScreenRect ()Landroid/graphics/RectF;
 	METHOD cg isVisibleToAllPlayers ()Z
@@ -207,6 +239,7 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD cn getAiUpgradePriority ()F
 		COMMENT Percentage chance the AI will pick this unit's upgrade action each time it evaluates the unit, or a negative value for "use the default". CustomUnit returns meta.fK, which CustomUnitMetadataLoader computes as [ai]ai_upgradePriority * 100.0F when that key is present and not -1 (the key itself must lie in [0,1]); otherwise fK stays negative. Consumer: AI.m(float), which falls back to 6.0F when the returned value is negative and then rolls against "100 - priority" (lowered by 4 when the AI is in the warned state and overridden to 50 for resource-pool placement) to decide whether to run the upgrade.
 	METHOD cN getReclaimPrice ()Lcom/corrodinggames/rts/game/units/custom/d/b;
+	METHOD co PENDING_co ()Z
 	METHOD cO allowCaptureWhenNeutralByAI ()Z
 	METHOD cp getDefaultActionId ()Lcom/corrodinggames/rts/game/units/a/c;
 	METHOD cP onUnitCreated ()V
@@ -287,6 +320,7 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD O drawWaypointLines ()V
 	METHOD O ensureTurretCount (I)V
 	METHOD p placeOnlyOnResPool ()Z
+	METHOD P isFixedToMap ()Z
 	METHOD P setTeamById (I)V
 	METHOD q isUnrepairable ()Z
 	METHOD q getRecentAttacker (F)Lcom/corrodinggames/rts/game/units/am;
@@ -298,6 +332,7 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	METHOD s_ isOnScreen ()Z
 	METHOD t isUnselectable ()Z
 	METHOD t intersectsUnit (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD u isVirtualUnit ()Z
 	METHOD u getRepairRange (Lcom/corrodinggames/rts/game/units/am;)I
 	METHOD v getMinimapImage ()Lcom/corrodinggames/rts/gameFramework/m/e;
 	METHOD v getReclaimRange (Lcom/corrodinggames/rts/game/units/am;)I

@@ -1,2 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/m/i com/corrodinggames/rts/gameFramework/render/TeamColorShader
 	FIELD a lastTeamColor I
+	FIELD b teamColorShader Z

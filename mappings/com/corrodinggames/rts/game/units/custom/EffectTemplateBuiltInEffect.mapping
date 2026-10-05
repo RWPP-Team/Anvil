@@ -1,0 +1,11 @@
+CLASS com/corrodinggames/rts/game/units/custom/az com/corrodinggames/rts/game/units/custom/EffectTemplateBuiltInEffect
+	COMMENT BuiltInEffectType - the built-in particle presets an EffectTemplate can reference: small, medium, large, smoke, shockwave, largeExplosion, smallExplosion, resourcePoolSmoke, noneExplosion. [verified from the class]
+	FIELD a small Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD b medium Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD c large Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD d smoke Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD e shockwave Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD f largeExplosion Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD g smallExplosion Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD h resourcePoolSmoke Lcom/corrodinggames/rts/game/units/custom/az;
+	FIELD i noneExplosion Lcom/corrodinggames/rts/game/units/custom/az;

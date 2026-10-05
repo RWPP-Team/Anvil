@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/ag com/corrodinggames/rts/gameFramework/gui/RichTextElementText
+	FIELD a customPaint Landroid/graphics/Paint;
+	FIELD b color I
+	FIELD c ownerRichText Lcom/corrodinggames/rts/gameFramework/f/ae;

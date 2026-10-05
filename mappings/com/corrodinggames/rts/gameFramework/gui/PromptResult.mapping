@@ -2,3 +2,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/h com/corrodinggames/rts/gameFramew
 	FIELD a yes Lcom/corrodinggames/rts/gameFramework/f/h;
 	FIELD b no Lcom/corrodinggames/rts/gameFramework/f/h;
 	FIELD c more Lcom/corrodinggames/rts/gameFramework/f/h;
+	FIELD d VALUES [Lcom/corrodinggames/rts/gameFramework/f/h;

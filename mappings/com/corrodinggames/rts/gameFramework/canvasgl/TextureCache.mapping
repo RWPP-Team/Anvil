@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/b/i com/corrodinggames/rts/gameFramework/canvasgl/TextureCache
+	FIELD a filters Ljava/util/List;
+	FIELD b renderTargets Ljava/util/List;
+	FIELD c outputTexture Lcom/corrodinggames/rts/gameFramework/b/b;
+	FIELD d sourceTexture Lcom/corrodinggames/rts/gameFramework/b/b;
+	METHOD a recycleRenderTargets ()V
+	METHOD a createRenderTargets (Lcom/corrodinggames/rts/gameFramework/b/b;)V
+	METHOD a render (Lcom/corrodinggames/rts/gameFramework/b/b;Lcom/corrodinggames/rts/gameFramework/b/k;Lcom/corrodinggames/rts/gameFramework/b/j;)Lcom/corrodinggames/rts/gameFramework/b/b;

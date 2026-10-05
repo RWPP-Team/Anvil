@@ -1,3 +1,27 @@
 CLASS com/corrodinggames/rts/game/units/b/c com/corrodinggames/rts/game/units/air/AmphibiousJet
-	CLASS 1 1
-	CLASS 2 2
+	FIELD a bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD A specialActionsList Ljava/util/ArrayList;
+	FIELD b bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c shadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d turretImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f pod1TeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g pod2TeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD o pod1ShadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD p pod2ShadowImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD q hoverBobAngle F
+	FIELD r surfaceMode Z
+	FIELD s aboveWater Z
+	FIELD t altitudeChangeRate F
+	FIELD u submergeProgress F
+	FIELD v translucentPaint Landroid/graphics/Paint;
+	FIELD w scratchPodPointF Landroid/graphics/PointF;
+	FIELD x PENDING_x_rect Landroid/graphics/Rect;
+	FIELD y surfaceAction Lcom/corrodinggames/rts/game/units/a/s;
+	FIELD z diveAction Lcom/corrodinggames/rts/game/units/a/s;
+	METHOD a getPodPosition (IZ)Landroid/graphics/PointF;
+	METHOD b isInWaterMode ()Z
+	METHOD ds getBodyTurretIndex ()I
+	METHOD f drawPodImages (Z)V
+	METHOD L loadImages ()V
+	METHOD M updateSizeForWaterState ()V

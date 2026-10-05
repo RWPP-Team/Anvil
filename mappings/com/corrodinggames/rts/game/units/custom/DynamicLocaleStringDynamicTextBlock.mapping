@@ -1,0 +1,2 @@
+CLASS com/corrodinggames/rts/game/units/custom/ak com/corrodinggames/rts/game/units/custom/DynamicLocaleStringDynamicTextBlock
+	METHOD a render (Lcom/corrodinggames/rts/game/units/y;)Ljava/lang/String;

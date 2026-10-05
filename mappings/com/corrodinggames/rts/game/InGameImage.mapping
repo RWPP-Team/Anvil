@@ -7,3 +7,7 @@ CLASS com/corrodinggames/rts/game/j com/corrodinggames/rts/game/InGameImage
 	FIELD e paint Landroid/graphics/Paint;
 	FIELD f bounds Landroid/graphics/Rect;
 	FIELD g disabled Z
+	METHOD a isDisabled ()Z
+	METHOD a ensureImageSize (Lcom/corrodinggames/rts/gameFramework/m/y;)V
+	METHOD a ensureImageSize (Lcom/corrodinggames/rts/gameFramework/m/y;III)V
+	METHOD b draw ()V

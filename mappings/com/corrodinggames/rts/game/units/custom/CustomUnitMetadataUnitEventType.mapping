@@ -1,0 +1,20 @@
+CLASS com/corrodinggames/rts/game/units/custom/af com/corrodinggames/rts/game/units/custom/CustomUnitMetadataUnitEventType
+	COMMENT UnitEventType - the unit event hooks a custom unit can react to (enum constants are the original names): created, completeAndActive, destroyed, killedAnyUnit, queuedUnitFinished, queueItemAdded, queueItemCancelled, teleported, touchTargetSuccess, newWaypointGivenByPlayer, teamChanged, transportingNewUnit, transportUnloadedOrRemovedUnit, tookDamage, enteredTransport, leftTransport, newMessage, attachmentRemoved. [verified from the class]
+	FIELD a created Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD b completeAndActive Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD c destroyed Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD d killedAnyUnit Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD e queuedUnitFinished Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD f queueItemAdded Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD g queueItemCancelled Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD h teleported Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD i touchTargetSuccess Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD j newWaypointGivenByPlayer Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD k teamChanged Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD l transportingNewUnit Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD m transportUnloadedOrRemovedUnit Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD n tookDamage Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD o enteredTransport Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD p leftTransport Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD q newMessage Lcom/corrodinggames/rts/game/units/custom/af;
+	FIELD r attachmentRemoved Lcom/corrodinggames/rts/game/units/custom/af;

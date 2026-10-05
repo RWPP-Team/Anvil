@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/b/j com/corrodinggames/rts/gameFramework/canvasgl/TextureBinder
+	METHOD a drawFiltered (Lcom/corrodinggames/rts/gameFramework/b/b;Lcom/corrodinggames/rts/gameFramework/b/af;Z)V

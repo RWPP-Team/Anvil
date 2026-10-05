@@ -7,3 +7,4 @@ CLASS com/corrodinggames/rts/game/h com/corrodinggames/rts/game/ProjectileMetada
 	FIELD e addResourcesDirectHit Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD f addResourcesAreaHit Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD g changedExplodeEffect Lcom/corrodinggames/rts/game/units/custom/z;
+	METHOD a matches (Lcom/corrodinggames/rts/game/units/am;)Z

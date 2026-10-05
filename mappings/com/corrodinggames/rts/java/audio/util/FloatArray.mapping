@@ -1,1 +1,11 @@
 CLASS com/corrodinggames/rts/java/audio/a/b com/corrodinggames/rts/java/audio/util/FloatArray
+	FIELD a items [F
+	FIELD b size I
+	FIELD c ordered Z
+	METHOD a pop ()F
+	METHOD a add (F)V
+	METHOD a resize (I)[F
+	METHOD a set (IF)V
+	METHOD b first ()F
+	METHOD b insert (IF)V
+	METHOD c clear ()V

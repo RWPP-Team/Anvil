@@ -1,1 +1,25 @@
 CLASS com/corrodinggames/rts/gameFramework/m/ac com/corrodinggames/rts/gameFramework/render/Basic2DGLRendererMeshBuffer
+	FIELD b floatVertexBuffer Ljava/nio/FloatBuffer;
+	FIELD c floatTexCoordBuffer Ljava/nio/FloatBuffer;
+	FIELD d floatColorBuffer Ljava/nio/FloatBuffer;
+	FIELD e fixedVertexBuffer Ljava/nio/IntBuffer;
+	FIELD f fixedTexCoordBuffer Ljava/nio/IntBuffer;
+	FIELD g fixedColorBuffer Ljava/nio/IntBuffer;
+	FIELD h indexBuffer Ljava/nio/CharBuffer;
+	FIELD i vertexBuffer Ljava/nio/Buffer;
+	FIELD j texCoordBuffer Ljava/nio/Buffer;
+	FIELD k colorBuffer Ljava/nio/Buffer;
+	FIELD l glDataType I
+	FIELD m columns I
+	FIELD n rows I
+	FIELD o indexCount I
+	FIELD p useVBO Z
+	FIELD q vertexBufferId I
+	FIELD r indexBufferId I
+	FIELD s texCoordBufferId I
+	FIELD t colorBufferId I
+	METHOD a setTexCoord (IIFF)V
+	METHOD a setVertex (IIFFFFF[F)V
+	METHOD a disableClientState (Ljavax/microedition/khronos/opengles/GL10;)V
+	METHOD a enableClientState (Ljavax/microedition/khronos/opengles/GL10;ZZ)V
+	METHOD b render (Ljavax/microedition/khronos/opengles/GL10;ZZ)V

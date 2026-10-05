@@ -1,0 +1,4 @@
+CLASS com/corrodinggames/rts/game/units/custom/f/c com/corrodinggames/rts/game/units/custom/variables/VariableReplacementVariable
+	FIELD a section Ljava/lang/String;
+	FIELD b key Ljava/lang/String;
+	FIELD c value Ljava/lang/String;

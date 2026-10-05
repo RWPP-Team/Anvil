@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/d/t com/corrodinggames/rts/game/units/buildings/SeaFactory
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyImageT2 Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c PENDING_c_image Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e bodyTeamColorImagesT2 [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD f bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD g upgradeActionId Lcom/corrodinggames/rts/game/units/a/c;
+	METHOD a addSpecialActions (Ljava/util/ArrayList;I)V
+	METHOD b loadImages ()V

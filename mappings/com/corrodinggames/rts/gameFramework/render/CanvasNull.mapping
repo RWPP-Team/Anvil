@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/m/n com/corrodinggames/rts/gameFramework/render/CanvasNull
+	FIELD a enabled Z

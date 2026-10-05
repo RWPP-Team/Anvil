@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/d/i com/corrodinggames/rts/game/units/buildings/Factory
+	FIELD A PENDING_A_rect Landroid/graphics/Rect;
+	FIELD B PENDING_B_rect Landroid/graphics/Rect;
+	FIELD y rallyPointPaint Landroid/graphics/Paint;
+	FIELD z buildQueue Lcom/corrodinggames/rts/game/units/d/k;
+	METHOD du createBuildQueue ()Lcom/corrodinggames/rts/game/units/d/k;
+	METHOD dv getSpawnExitYOffset ()I

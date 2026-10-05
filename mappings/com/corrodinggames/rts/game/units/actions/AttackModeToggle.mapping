@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/game/units/a/d com/corrodinggames/rts/game/units/actions/AttackModeToggle
+	FIELD a lastSelectionChangeCounter I
+	FIELD b cachedAttackMode Lcom/corrodinggames/rts/game/units/a;
+	METHOD a getNextAttackMode (Lcom/corrodinggames/rts/game/units/a;)Lcom/corrodinggames/rts/game/units/a;
+	METHOD q getAndCacheAttackMode ()Lcom/corrodinggames/rts/game/units/a;
+	METHOD r getCurrentAttackMode ()Lcom/corrodinggames/rts/game/units/a;

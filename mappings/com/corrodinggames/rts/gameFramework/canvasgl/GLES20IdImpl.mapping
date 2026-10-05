@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/b/t com/corrodinggames/rts/gameFramework/canvasgl/GLES20IdImpl
+	FIELD a idArray [I

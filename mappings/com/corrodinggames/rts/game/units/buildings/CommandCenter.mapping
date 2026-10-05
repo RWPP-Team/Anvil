@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/game/units/d/e com/corrodinggames/rts/game/units/buildings/CommandCenter
+	FIELD a bodyImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD b bodyTeamColorImages [Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD c bodyDeadImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD d backImage Lcom/corrodinggames/rts/gameFramework/m/e;
+	FIELD e incomeTimer F
+	FIELD f PENDING_f_float F
+	FIELD g PENDING_g_float F
+	FIELD h PENDING_h_int I
+	FIELD i PENDING_i_float F
+	FIELD j PENDING_j_float F
+	FIELD k animTimer F
+	FIELD l animFrameCounter I
+	METHOD a addSpecialActions (Ljava/util/ArrayList;I)V
+	METHOD b loadImages ()V

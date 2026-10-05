@@ -3,3 +3,4 @@ CLASS com/corrodinggames/rts/game/t com/corrodinggames/rts/game/TeamUnitCachesTa
 	FIELD a EMPTY [Lcom/corrodinggames/rts/game/p;
 	FIELD b items [Lcom/corrodinggames/rts/game/p;
 	FIELD c size I
+	METHOD a add (Lcom/corrodinggames/rts/game/p;)Z

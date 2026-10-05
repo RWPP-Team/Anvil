@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/java/audio/a/r com/corrodinggames/rts/java/audio/util/ObjectMapMapIterator
+	FIELD b hasNext Z
+	FIELD c map Lcom/corrodinggames/rts/java/audio/a/o;
+	FIELD d nextIndex I
+	FIELD e currentIndex I
+	FIELD f valid Z
+	METHOD c reset ()V
+	METHOD d advance ()V
 	METHOD remove remove ()V

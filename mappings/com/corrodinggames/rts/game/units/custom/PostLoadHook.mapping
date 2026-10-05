@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/custom/t com/corrodinggames/rts/game/units/custom/PostLoadHook
+	METHOD a runPostLoad (Lcom/corrodinggames/rts/game/units/custom/l;)V
