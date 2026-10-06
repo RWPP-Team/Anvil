@@ -8,7 +8,7 @@ CLASS android/graphics/RectF
 	METHOD a set (FFFF)V
 	METHOD a set (Landroid/graphics/Rect;)V
 	METHOD a set (Landroid/graphics/RectF;)V
-	METHOD a setIntersect (Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
+	METHOD a intersects (Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
 	METHOD b width ()F
 	METHOD b contains (FF)Z
 	METHOD b intersect (Landroid/graphics/RectF;)Z
