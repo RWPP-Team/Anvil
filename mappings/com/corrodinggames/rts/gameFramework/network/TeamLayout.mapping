@@ -3,3 +3,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/am com/corrodinggames/rts/gameFrame
 	FIELD b layout_3sides Lcom/corrodinggames/rts/gameFramework/j/am;
 	FIELD c layout_ffa Lcom/corrodinggames/rts/gameFramework/j/am;
 	FIELD d layout_spectators Lcom/corrodinggames/rts/gameFramework/j/am;
+	FIELD e valuesArray [Lcom/corrodinggames/rts/gameFramework/j/am;

@@ -13,3 +13,5 @@ CLASS com/corrodinggames/rts/game/units/h/e com/corrodinggames/rts/game/units/wa
 	FIELD l specialActions Ljava/util/ArrayList;
 	METHOD b loadImages ()V
 	METHOD L updateRenderOrder ()V
+	CLASS 1 1
+	CLASS 2 2

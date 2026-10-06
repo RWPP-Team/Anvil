@@ -2,3 +2,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/a/m com/corrodinggames/rts/gameFram
 	FIELD a none Lcom/corrodinggames/rts/gameFramework/f/a/m;
 	FIELD b vertical Lcom/corrodinggames/rts/gameFramework/f/a/m;
 	FIELD c horizontal Lcom/corrodinggames/rts/gameFramework/f/a/m;
+	FIELD d valuesArray [Lcom/corrodinggames/rts/gameFramework/f/a/m;

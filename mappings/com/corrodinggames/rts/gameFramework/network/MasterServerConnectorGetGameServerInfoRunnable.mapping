@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ab com/corrodinggames/rts/gameFramework/network/MasterServerConnectorGetGameServerInfoRunnable
+	FIELD a infoCallback Lcom/corrodinggames/rts/gameFramework/j/w;
+	FIELD b PENDING_b Ljava/lang/String;
+	FIELD c serverIndex I
+	FIELD d PENDING_d Ljava/lang/String;
+	METHOD run run ()V

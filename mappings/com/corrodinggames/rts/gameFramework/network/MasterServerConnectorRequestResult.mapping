@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/t com/corrodinggames/rts/gameFramework/network/MasterServerConnectorRequestResult
+	FIELD a responseReader Ljava/io/BufferedReader;
+	FIELD b PENDING_b Z
+	FIELD c PENDING_c Z

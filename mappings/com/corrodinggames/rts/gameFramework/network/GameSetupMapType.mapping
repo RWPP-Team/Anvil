@@ -2,6 +2,8 @@ CLASS com/corrodinggames/rts/gameFramework/j/ai com/corrodinggames/rts/gameFrame
 	FIELD a skirmishMap Lcom/corrodinggames/rts/gameFramework/j/ai;
 	FIELD b customMap Lcom/corrodinggames/rts/gameFramework/j/ai;
 	FIELD c savedGame Lcom/corrodinggames/rts/gameFramework/j/ai;
-	CLASS 1 1
-	CLASS 2 2
-	CLASS 3 3
+	FIELD d valuesArray [Lcom/corrodinggames/rts/gameFramework/j/ai;
+	METHOD a getDisplayName ()Ljava/lang/String;
+	CLASS 1
+	CLASS 2
+	CLASS 3

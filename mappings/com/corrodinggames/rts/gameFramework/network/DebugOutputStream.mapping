@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/j/f com/corrodinggames/rts/gameFramework/network/DebugOutputStream
+	FIELD a debugText Ljava/lang/String;

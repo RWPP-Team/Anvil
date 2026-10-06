@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/j/af com/corrodinggames/rts/gameFramework/network/NetworkBroadcastRunnable
-	CLASS 1 1
+	FIELD a running Z
+	FIELD b datagramSocket Ljava/net/DatagramSocket;
+	FIELD c pingTimer Ljava/util/Timer;
+	FIELD d networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	METHOD a sendBroadcastPing ()V
+	METHOD b stop ()V
+	METHOD run run ()V
+	CLASS 1

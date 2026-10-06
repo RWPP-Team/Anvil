@@ -1,5 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/utility/ad com/corrodinggames/rts/gameFramework/utility/ObjectPool
 	FIELD a items [Ljava/lang/Object;
 	FIELD b size I
+	FIELD c PENDING_c Z
 	METHOD a obtain ()Ljava/lang/Object;
 	METHOD a free (Ljava/lang/Object;)Z

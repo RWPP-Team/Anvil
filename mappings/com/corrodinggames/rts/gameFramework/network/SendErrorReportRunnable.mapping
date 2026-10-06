@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/j/v com/corrodinggames/rts/gameFramework/network/SendErrorReportRunnable
+	FIELD a message Ljava/lang/String;
+	FIELD b stackTrace Ljava/lang/String;
+	METHOD run run ()V

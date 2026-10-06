@@ -355,3 +355,4 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 		COMMENT Current movement speed in world units per tick, abstract here. CustomUnit returns this.unitData.j * this.speedMultiplier, so runtime slow effects (slowDown / speedMultiplier) are already folded in. UnitType.s() prints it as "Speed". Distinct from A() (maxTurnSpeed) and from the declared [movement]moveSpeed kept in metadata.
 	METHOD z getTurretLimitingRange (I)F
 	METHOD Z hasAttackTarget ()Z
+	CLASS 1 1

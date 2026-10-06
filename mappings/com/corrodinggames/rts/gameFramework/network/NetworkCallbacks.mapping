@@ -1,4 +1,18 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ac com/corrodinggames/rts/gameFramework/network/NetworkCallbacks
+	METHOD a onAllPlayersReady ()V
+	METHOD a onChatMessage (ILjava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/j/c;)V
+	METHOD a onPlayerAdded (Lcom/corrodinggames/rts/game/n;)V
 	METHOD a onShowPasswordPrompt (Lcom/corrodinggames/rts/gameFramework/j/ae;)V
+	METHOD a PENDING_serverInfoBoolean1 (Lcom/corrodinggames/rts/gameFramework/j/c;)Z
+	METHOD a shouldRelayChatMessage (Lcom/corrodinggames/rts/gameFramework/j/c;Lcom/corrodinggames/rts/game/n;Ljava/lang/String;Z)Z
+	METHOD a getKickReasonForJoiningPlayer (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;)Ljava/lang/String;
 	METHOD a onPlayerJoining (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;IILjava/lang/String;Lcom/corrodinggames/rts/game/e;)Ljava/lang/String;
+	METHOD a canSendChatMessage (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;Ljava/lang/String;)Z
 	METHOD b startGameEvent ()V
+	METHOD b isProxyController (Lcom/corrodinggames/rts/gameFramework/j/c;)Z
+	METHOD b onPlayerDisconnected (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;)V
+	METHOD b onChatMessageRelayed (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD c onBattleroomUIUpdate ()V
+	METHOD c onPlayerJoined (Lcom/corrodinggames/rts/gameFramework/j/c;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD d onBattleroomClosed ()V
+	METHOD e isGameStarting ()Z

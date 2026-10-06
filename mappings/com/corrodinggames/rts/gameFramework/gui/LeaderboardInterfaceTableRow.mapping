@@ -1,1 +1,9 @@
 CLASS com/corrodinggames/rts/gameFramework/f/l com/corrodinggames/rts/gameFramework/gui/LeaderboardInterfaceTableRow
+	FIELD a labelPaint Landroid/graphics/Paint;
+	FIELD b label Ljava/lang/String;
+	FIELD c labelColumnIndex I
+	FIELD d labelHeight F
+	FIELD e valuePaint Landroid/graphics/Paint;
+	FIELD f value Ljava/lang/String;
+	FIELD g valueColumnIndex I
+	FIELD h valueHeight F

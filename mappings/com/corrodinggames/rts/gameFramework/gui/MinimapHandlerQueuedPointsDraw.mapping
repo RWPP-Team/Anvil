@@ -1,4 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/f/s com/corrodinggames/rts/gameFramework/gui/MinimapHandlerQueuedPointsDraw
+	FIELD a points [F
 	FIELD b pointCount I
 	FIELD c paint Landroid/graphics/Paint;
 	FIELD d capacity I
+	FIELD e drawAsPoints Z
+	FIELD f scratchRect Landroid/graphics/RectF;
+	METHOD a addPoint (FF)V

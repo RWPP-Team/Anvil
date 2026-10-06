@@ -8,6 +8,7 @@ CLASS com/corrodinggames/rts/gameFramework/bs com/corrodinggames/rts/gameFramewo
 	FIELD d draw_game Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD D init_unitcolour Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD e draw_end Lcom/corrodinggames/rts/gameFramework/bs;
+	FIELD E valuesArray [Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD f draw_gui Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD g draw_game_effects Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD h update_game_shouldDraw Lcom/corrodinggames/rts/gameFramework/bs;
@@ -29,7 +30,7 @@ CLASS com/corrodinggames/rts/gameFramework/bs com/corrodinggames/rts/gameFramewo
 	FIELD x draw_waiting_on_update Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD y load_total Lcom/corrodinggames/rts/gameFramework/bs;
 	FIELD z load_map Lcom/corrodinggames/rts/gameFramework/bs;
-	CLASS 1 1
-	CLASS 2 2
-	CLASS 3 3
-	CLASS 4 4
+	CLASS 1
+	CLASS 2
+	CLASS 3
+	CLASS 4

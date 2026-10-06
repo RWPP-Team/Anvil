@@ -5,3 +5,9 @@ CLASS com/corrodinggames/rts/gameFramework/ay com/corrodinggames/rts/gameFramewo
 	FIELD eu halfWidth F
 	FIELD ev halfHeight F
 	FIELD ew usingTextureSize Z
+	METHOD a setBitmapOrTextureSizeScaled (Lcom/corrodinggames/rts/gameFramework/m/e;I)V
+	METHOD b setBitmapOrTextureSize (Lcom/corrodinggames/rts/gameFramework/m/e;)V
+	METHOD T setSpriteWidth (I)V
+	METHOD U setSpriteHeight (I)V
+	METHOD V setSpriteWidthPrecise (I)V
+	METHOD W setSpriteHeightPrecise (I)V

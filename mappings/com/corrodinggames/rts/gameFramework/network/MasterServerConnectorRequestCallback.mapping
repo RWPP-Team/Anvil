@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/s com/corrodinggames/rts/gameFramework/network/MasterServerConnectorRequestCallback
+	FIELD d errorMessage Ljava/lang/String;
+	FIELD e succeeded Z
+	FIELD f pendingRequestCount I
+	METHOD a onAllRequestsComplete ()V
+	METHOD a onServerListResponse (Ljava/io/BufferedReader;ILjava/lang/String;)V

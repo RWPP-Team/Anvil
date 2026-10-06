@@ -4,4 +4,5 @@ CLASS com/corrodinggames/rts/gameFramework/bj com/corrodinggames/rts/gameFramewo
 	FIELD c buildingValue Lcom/corrodinggames/rts/gameFramework/bj;
 	FIELD d totalValue Lcom/corrodinggames/rts/gameFramework/bj;
 	FIELD e displayedStat Lcom/corrodinggames/rts/gameFramework/g/f;
+	FIELD f valuesArray [Lcom/corrodinggames/rts/gameFramework/bj;
 	METHOD a getDisplayedStat ()Lcom/corrodinggames/rts/gameFramework/g/f;

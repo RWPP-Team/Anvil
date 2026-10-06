@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/j/p com/corrodinggames/rts/gameFramework/network/GetOwnInfoRunnable
+	METHOD run run ()V

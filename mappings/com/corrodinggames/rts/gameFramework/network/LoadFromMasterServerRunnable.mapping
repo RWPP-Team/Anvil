@@ -1,2 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/q com/corrodinggames/rts/gameFramework/network/LoadFromMasterServerRunnable
-	CLASS 1 1
+	METHOD run run ()V
+	CLASS 1
+		FIELD a serverIndex I
+		FIELD b gameEngine Lcom/corrodinggames/rts/gameFramework/l;
+		FIELD c outerRunnable Lcom/corrodinggames/rts/gameFramework/j/q;

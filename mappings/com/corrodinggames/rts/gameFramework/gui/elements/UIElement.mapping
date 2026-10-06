@@ -1,11 +1,16 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/l com/corrodinggames/rts/gameFramework/gui/elements/UIElement
 	FIELD A tmpPoint Landroid/graphics/PointF;
 	FIELD B clickCallback Lcom/corrodinggames/rts/gameFramework/f/a/k;
+	FIELD e PENDING_scratchPointF Landroid/graphics/PointF;
 	FIELD f tmpHitRect Landroid/graphics/RectF;
 	FIELD g x F
 	FIELD h y F
 	FIELD i width F
 	FIELD j height F
+	FIELD k paddingTop F
+	FIELD l paddingBottom F
+	FIELD m PENDING_paddingH1 F
+	FIELD n PENDING_paddingH2 F
 	FIELD o marginTop F
 	FIELD p marginBottom F
 	FIELD q marginLeft F
@@ -40,5 +45,7 @@ CLASS com/corrodinggames/rts/gameFramework/f/a/l com/corrodinggames/rts/gameFram
 	METHOD e markLayoutDirty ()V
 	METHOD e setMargin (F)V
 	METHOD f draw ()V
+	METHOD f setAllPadding (F)V
 	METHOD g getWidthWithMargins ()F
 	METHOD h getHeightWithMargins ()F
+	METHOD i removeFromParent ()V

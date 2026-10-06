@@ -2,3 +2,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/al com/corrodinggames/rts/gameFrame
 	FIELD a name Ljava/lang/String;
 	FIELD b value J
 	FIELD c active Z
+	FIELD d checksum Lcom/corrodinggames/rts/gameFramework/j/ak;

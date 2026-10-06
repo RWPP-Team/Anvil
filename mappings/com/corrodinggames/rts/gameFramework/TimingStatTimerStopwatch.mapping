@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/bu com/corrodinggames/rts/gameFramework/TimingStatTimerStopwatch
+	FIELD a PENDING_a [J
+	FIELD b PENDING_b [J
+	FIELD c PENDING_c [F
+	FIELD d PENDING_d [J
+	FIELD e PENDING_e [J
+	FIELD f timer Lcom/corrodinggames/rts/gameFramework/br;

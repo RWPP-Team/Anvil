@@ -1,4 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/f/p com/corrodinggames/rts/gameFramework/gui/MinimapHandlerDamageNotification
 	FIELD a x I
 	FIELD b y I
+	FIELD c scaleX F
+	FIELD d scaleY F
 	FIELD e type Lcom/corrodinggames/rts/gameFramework/f/r;
+	FIELD f minimapHandler Lcom/corrodinggames/rts/gameFramework/f/o;

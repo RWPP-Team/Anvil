@@ -1,2 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/k com/corrodinggames/rts/gameFramework/FileChangeEngineThread
 	FIELD a running Z
+	METHOD run run ()V

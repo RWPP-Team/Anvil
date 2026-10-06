@@ -1,3 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/bp com/corrodinggames/rts/gameFramework/StatsHandlerSaveVersion
 	FIELD a original Lcom/corrodinggames/rts/gameFramework/bp;
 	FIELD b v220911_added_history Lcom/corrodinggames/rts/gameFramework/bp;
+	FIELD c valuesArray [Lcom/corrodinggames/rts/gameFramework/bp;

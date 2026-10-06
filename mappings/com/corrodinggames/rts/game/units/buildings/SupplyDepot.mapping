@@ -12,3 +12,4 @@ CLASS com/corrodinggames/rts/game/units/d/v com/corrodinggames/rts/game/units/bu
 	FIELD k specialActions Ljava/util/ArrayList;
 	METHOD K loadImages ()V
 	METHOD M applyUpgrade ()V
+	CLASS 1 1

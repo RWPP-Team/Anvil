@@ -87,3 +87,4 @@ CLASS com/corrodinggames/rts/game/i com/corrodinggames/rts/game/RWGameEngine
 	METHOD q isDeobfuscated ()Z
 	METHOD w cancelPendingTask ()V
 	METHOD y getRandomUnit ()Lcom/corrodinggames/rts/game/units/am;
+	CLASS a 1disconnectThread

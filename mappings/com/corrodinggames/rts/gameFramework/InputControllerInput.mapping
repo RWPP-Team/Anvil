@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/ai com/corrodinggames/rts/gameFramework/InputControllerInput
+	METHOD a getControllerCount ()I
+	METHOD a isJoystickButtonPressed (II)Z
+	METHOD a isKeyDownWithModifierMask (IIZ)Z
+	METHOD b getJoystickAxisValue (II)F
+	METHOD c getKeyBindingLabel (II)Ljava/lang/String;

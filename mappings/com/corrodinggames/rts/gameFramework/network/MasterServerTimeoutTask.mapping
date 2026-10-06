@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/j/o com/corrodinggames/rts/gameFramework/network/MasterServerTimeoutTask
+	FIELD a serverIndex I
+	METHOD run run ()V

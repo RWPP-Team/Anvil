@@ -13,3 +13,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/a/e com/corrodinggames/rts/gameFram
 	METHOD a drawPatch (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Paint;IIIIFFFFZ)V
 	METHOD a drawNinePatch (Lcom/corrodinggames/rts/gameFramework/m/y;Lcom/corrodinggames/rts/gameFramework/m/e;Landroid/graphics/Paint;Landroid/graphics/Rect;)V
 	METHOD b paintNinePatch (Lcom/corrodinggames/rts/gameFramework/m/y;Landroid/graphics/Rect;)V
+	METHOD c PENDING_c ()Z

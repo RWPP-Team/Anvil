@@ -1,1 +1,2 @@
 CLASS com/corrodinggames/rts/gameFramework/j/y com/corrodinggames/rts/gameFramework/network/StartCreateOnMasterServerRunnable
+	METHOD run run ()V

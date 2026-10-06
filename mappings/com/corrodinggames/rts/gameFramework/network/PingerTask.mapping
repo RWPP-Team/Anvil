@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/j/av com/corrodinggames/rts/gameFramework/network/PingerTask
+	FIELD a sendPingThisTick Z
+	FIELD b lastTickTimeMillis J
 	FIELD c networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;
+	METHOD run run ()V

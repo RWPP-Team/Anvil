@@ -25,3 +25,5 @@ CLASS com/corrodinggames/rts/game/units/b/c com/corrodinggames/rts/game/units/ai
 	METHOD f drawPodImages (Z)V
 	METHOD L loadImages ()V
 	METHOD M updateSizeForWaterState ()V
+	CLASS 1 1
+	CLASS 2 2

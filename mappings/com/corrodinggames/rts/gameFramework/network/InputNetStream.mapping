@@ -3,6 +3,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/k com/corrodinggames/rts/gameFramew
 	FIELD a byteStream Ljava/io/ByteArrayInputStream;
 	FIELD b version I
 	FIELD c protocolVersion I
+	FIELD d PENDING_d I
 	FIELD e rootStream Ljava/io/DataInputStream;
 	FIELD f currentStream Ljava/io/DataInputStream;
 	FIELD g blockStack Ljava/util/LinkedList;
