@@ -1,0 +1,4 @@
+CLASS android/os/Handler
+	METHOD a obtainMessage ()Landroid/os/Message;
+	METHOD a post (Ljava/lang/Runnable;)Z
+	METHOD c sendMessage (Landroid/os/Message;)Z

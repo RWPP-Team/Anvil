@@ -1,0 +1,2 @@
+CLASS android/support/v4/app/ActivityCompat
+	METHOD a requestPermissions (Landroid/app/Activity;[Ljava/lang/String;I)V
