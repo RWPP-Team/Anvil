@@ -1,4 +1,25 @@
 CLASS android/graphics/Canvas
+	METHOD a save ()I
+	METHOD a drawText ([CIIFFLandroid/graphics/Paint;)V
+	METHOD a drawLines ([FIILandroid/graphics/Paint;)V
+	METHOD a translate (FF)V
+	METHOD a rotate (FFF)V
+	METHOD a scale (FFFF)V
+	METHOD a drawLine (FFFFLandroid/graphics/Paint;)V
+	METHOD a drawCircle (FFFLandroid/graphics/Paint;)V
+	METHOD a drawColor (I)V
+	METHOD a drawColor (ILandroid/graphics/PorterDuff$Mode;)V
+	METHOD a setBitmap (Landroid/graphics/Bitmap;)V
+	METHOD a drawBitmap (Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
+	METHOD a drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD a drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a clipRect (Landroid/graphics/Rect;)Z
+	METHOD a drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+	METHOD a clipRect (Landroid/graphics/RectF;)Z
+	METHOD a drawRect (Landroid/graphics/RectF;Landroid/graphics/Paint;)V
+	METHOD a drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V
+	METHOD b restore ()V
+	METHOD b scale (FF)V
 	CLASS EdgeType
 		FIELD a BW Landroid/graphics/Canvas$EdgeType;
 		FIELD b AA Landroid/graphics/Canvas$EdgeType;

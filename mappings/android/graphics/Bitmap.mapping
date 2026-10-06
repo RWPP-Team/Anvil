@@ -1,4 +1,16 @@
 CLASS android/graphics/Bitmap
+	METHOD a getPixels ([IIIIIII)V
+	METHOD a eraseColor (I)V
+	METHOD a getPixel (II)I
+	METHOD a setPixel (III)V
+	METHOD a createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+	METHOD a compress (Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
+	METHOD a copy (Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+	METHOD a setHasAlpha (Z)V
+	METHOD b getWidth ()I
+	METHOD b setPixels ([IIIIIII)V
+	METHOD c getHeight ()I
+	METHOD d getConfig ()Landroid/graphics/Bitmap$Config;
 	METHOD describeContents describeContents ()I
 	METHOD nativeCompress nativeCompress (IIILjava/io/OutputStream;[B)Z
 	METHOD nativeConfig nativeConfig (I)I

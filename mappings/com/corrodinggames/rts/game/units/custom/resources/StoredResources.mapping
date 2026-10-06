@@ -46,5 +46,5 @@ CLASS com/corrodinggames/rts/game/units/custom/e/f com/corrodinggames/rts/game/u
 	METHOD e resourcesEqual (Lcom/corrodinggames/rts/game/units/custom/e/f;)Z
 	METHOD f overlaps (Lcom/corrodinggames/rts/game/units/custom/e/f;)Z
 	METHOD g copyFrom (Lcom/corrodinggames/rts/game/units/custom/e/f;)V
-	CLASS 1 StoredResourcesDisplayPosComparator
+	CLASS 1 DisplayPosComparator
 		METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I

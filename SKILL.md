@@ -33,10 +33,12 @@
 2. **外部类被映射时，它的嵌套类与匿名类必须一并给出映射**。一条 `CLASS` 只改名一个 class 文件。
    外部类改名并迁到新包、而嵌套类没有映射时，嵌套类留在原包；Java 8 及更早的嵌套类是
    package-private，跨包访问立刻抛 `IllegalAccessError`。实测崩溃点：`gameFramework/f/o$1` 被
-   `gui/MinimapHandler` 访问。做法：嵌套类跟随外部类改名，落在外部类的目标包内，名字写成
-   `OuterSuffix`（`$` 一律删除 ）。**例外**：原始名称本身就含 `_` 的必须保留下划线，不得当作
-   `$` 的替换物删掉（如 `Wall_V`、`CustomUnitMetadata$DelayedLinkedUnitType_projectile`、
-   `LogicBoolean$CallContext_self`）；拿不准时以 `rw_ios_symbols.txt` 中的原始名为准。
+   `gui/MinimapHandler` 访问。做法：嵌套类跟随外部类改名，落在外部类的目标包内。匿名类的数字
+   后缀保留，写成 `Outer$1`；有名称的嵌套类把名字接在外部类之后、首字母大写，写成 `OuterName`。
+   分隔符只有这两种，`_` 不得用作分隔符。**例外**：原始名称本身就含 `_` 的必须保留下划线，
+   不得当作 `$` 的替换物删掉（如 `Wall_V`、`CustomUnitMetadataDelayedLinkedUnitType_projectile`）；
+   拿不准时以 `rw_ios_symbols.txt` 中的原始名为准。`:remapFromEnigma` 的
+   `normaliseNestedTargetNames` 与 `nestedTarget` 按此规则统一处理映射与派生出的嵌套类名字。
    反向同样成立：只改名嵌套类而不改名外部类，一样会破坏可见性。
 
 3. **不要把一个成员改名成祖先或子类已声明的、名字与描述符相同而静态性相反的成员**。解析命中
@@ -68,7 +70,8 @@
 ## 禁止事项
 - 禁止只传简单类名调用 rename。
 - 禁止将类重命名/移动到其父包的子包下。
-- 禁止保留或引入 `$`。
+- 禁止保留或引入 `$`；唯一允许的 `$` 是匿名嵌套类的数字后缀（`Outer$1`）。
+- 禁止用 `_` 连接外部类名与嵌套类名。
 - 禁止把成员改名成它的子类已声明的同名同描述符成员。
 - 禁止把成员改名成祖先或子类已声明的同名同描述符、而静态性相反的成员。
 - 禁止只映射外部类而遗漏它的嵌套类与匿名类，反之亦然。

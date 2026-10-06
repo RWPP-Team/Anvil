@@ -7,5 +7,6 @@ CLASS com/corrodinggames/rts/gameFramework/m/ag com/corrodinggames/rts/gameFrame
 	METHOD b lockPaint (Landroid/graphics/Paint;)V
 	METHOD c setTextSizeIgnoringLock (F)V
 	METHOD o lockDown ()V
-	METHOD p isAntiAlias ()Z
+	METHOD p isAntiAliasCached ()Z
+		COMMENT Reads the anti-alias flag this wrapper caches in its own field. It cannot be named isAntiAlias: android/graphics/Paint.isAntiAlias is final in the bundled obfuscated SDK copy, and the raw jar keeps the two methods under different names (c and p), so they never formed one override group. CanvasDirectGL reads this flag for the unique-paint branch and the platform getter otherwise.
 	METHOD q getShader ()Lcom/corrodinggames/rts/gameFramework/m/ae;

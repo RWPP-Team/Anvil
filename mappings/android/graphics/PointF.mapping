@@ -1,3 +1,8 @@
 CLASS android/graphics/PointF
+	FIELD a x F
+	FIELD b y F
+	METHOD a set (FF)V
+	METHOD a set (Landroid/graphics/PointF;)V
+	METHOD b offset (FF)V
 	METHOD describeContents describeContents ()I
 	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V

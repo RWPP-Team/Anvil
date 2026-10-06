@@ -1,7 +1,37 @@
 CLASS android/graphics/Paint
+	METHOD a reset ()V
+	METHOD a getTextWidths ([CII[F)I
+	METHOD a setStrokeWidth (F)V
+	METHOD a setARGB (IIII)V
+	METHOD a setColorFilter (Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
+	METHOD a set (Landroid/graphics/Paint;)V
+	METHOD a setTextAlign (Landroid/graphics/Paint$Align;)V
+	METHOD a setStrokeCap (Landroid/graphics/Paint$Cap;)V
+	METHOD a setStyle (Landroid/graphics/Paint$Style;)V
 	METHOD a setTypeface (Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
+	METHOD a setXfermode (Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+	METHOD a breakText (Ljava/lang/CharSequence;IIZF[F)I
+	METHOD a measureText (Ljava/lang/String;)F
+	METHOD a getTextBounds (Ljava/lang/String;IILandroid/graphics/Rect;)V
 	METHOD a setAntiAlias (Z)V
 	METHOD b setTextSize (F)V
+	METHOD b setColor (I)V
+	METHOD b setDither (Z)V
+	METHOD c isAntiAlias ()Z
+	METHOD c setAlpha (I)V
+	METHOD c setSubpixelText (Z)V
+	METHOD d getStyle ()Landroid/graphics/Paint$Style;
+	METHOD d setFilterBitmap (Z)V
+	METHOD e getColor ()I
+	METHOD f getAlpha ()I
+	METHOD g getStrokeWidth ()F
+	METHOD h getColorFilter ()Landroid/graphics/ColorFilter;
+	METHOD i getTypeface ()Landroid/graphics/Typeface;
+	METHOD j getTextAlign ()Landroid/graphics/Paint$Align;
+	METHOD k getTextSize ()F
+	METHOD l ascent ()F
+	METHOD m descent ()F
+	METHOD n getFontMetrics ()Landroid/graphics/Paint$FontMetrics;
 	CLASS Align
 		FIELD a LEFT Landroid/graphics/Paint$Align;
 		FIELD b CENTER Landroid/graphics/Paint$Align;
@@ -10,6 +40,11 @@ CLASS android/graphics/Paint
 		FIELD a BUTT Landroid/graphics/Paint$Cap;
 		FIELD b ROUND Landroid/graphics/Paint$Cap;
 		FIELD c SQUARE Landroid/graphics/Paint$Cap;
+	CLASS FontMetrics
+		FIELD a top F
+		FIELD b ascent F
+		FIELD c descent F
+		FIELD d bottom F
 	CLASS Join
 		FIELD a MITER Landroid/graphics/Paint$Join;
 		FIELD b ROUND Landroid/graphics/Paint$Join;

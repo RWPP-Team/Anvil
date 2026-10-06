@@ -1,4 +1,6 @@
 CLASS android/net/http/AndroidHttpClient
+	METHOD a close ()V
+	METHOD a newInstance (Ljava/lang/String;)Landroid/net/http/AndroidHttpClient;
 	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
 	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
 	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;

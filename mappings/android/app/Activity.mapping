@@ -1,4 +1,7 @@
 CLASS android/app/Activity
+	METHOD a getWindow ()Landroid/view/Window;
+	METHOD a overridePendingTransition (II)V
+	METHOD a startActivityForResult (Landroid/content/Intent;I)V
 	METHOD a onPrepareOptionsMenu (Landroid/view/Menu;)Z
 	METHOD dispatchGenericMotionEvent dispatchGenericMotionEvent (Landroid/view/MotionEvent;)Z
 	METHOD dispatchKeyEvent dispatchKeyEvent (Landroid/view/KeyEvent;)Z

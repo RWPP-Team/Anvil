@@ -1,5 +1,24 @@
 CLASS android/graphics/RectF
+	FIELD a left F
+	FIELD b top F
+	FIELD c right F
+	FIELD d bottom F
+	METHOD a isEmpty ()Z
+	METHOD a offset (FF)V
+	METHOD a set (FFFF)V
+	METHOD a set (Landroid/graphics/Rect;)V
+	METHOD a set (Landroid/graphics/RectF;)V
+	METHOD a setIntersect (Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
+	METHOD b width ()F
+	METHOD b contains (FF)Z
+	METHOD b intersect (Landroid/graphics/RectF;)Z
+	METHOD c height ()F
+	METHOD c union (FF)V
+	METHOD d centerX ()F
 	METHOD describeContents describeContents ()I
+	METHOD e centerY ()F
+	METHOD f setEmpty ()V
+	METHOD g sort ()V
 	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V
 	CLASS 1
 		METHOD createFromParcel createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;

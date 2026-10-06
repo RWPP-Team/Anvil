@@ -1,4 +1,7 @@
 CLASS android/graphics/Point
+	FIELD a x I
+	FIELD b y I
+	METHOD a set (II)V
 	METHOD describeContents describeContents ()I
 	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V
 	CLASS 1

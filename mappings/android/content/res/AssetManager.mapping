@@ -1,4 +1,7 @@
 CLASS android/content/res/AssetManager
+	METHOD a open (Ljava/lang/String;)Ljava/io/InputStream;
+	METHOD b openFd (Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+	METHOD c list (Ljava/lang/String;)[Ljava/lang/String;
 	METHOD destroyAsset destroyAsset (I)V
 	METHOD getAssetRemainingLength getAssetRemainingLength (I)J
 	METHOD openAssetFd openAssetFd (Ljava/lang/String;[J)Landroid/os/ParcelFileDescriptor;

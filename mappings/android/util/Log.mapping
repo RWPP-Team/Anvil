@@ -1,5 +1,11 @@
 CLASS android/util/Log
-	METHOD b error (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+	METHOD a v (Ljava/lang/String;Ljava/lang/String;)I
+	METHOD a w (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+	METHOD b d (Ljava/lang/String;Ljava/lang/String;)I
+	METHOD b e (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+	METHOD c w (Ljava/lang/String;Ljava/lang/String;)I
+	METHOD c wtf (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+	METHOD d e (Ljava/lang/String;Ljava/lang/String;)I
 	METHOD isLoggable isLoggable (Ljava/lang/String;I)Z
 	CLASS 1
 		METHOD initialValue initialValue ()Ljava/lang/Object;

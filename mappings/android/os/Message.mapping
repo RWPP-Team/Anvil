@@ -1,4 +1,5 @@
 CLASS android/os/Message
+	METHOD d getData ()Landroid/os/Bundle;
 	METHOD describeContents describeContents ()I
 	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V
 	CLASS 1
