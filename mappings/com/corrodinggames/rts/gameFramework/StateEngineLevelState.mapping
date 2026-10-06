@@ -1,4 +1,10 @@
 CLASS com/corrodinggames/rts/gameFramework/bf com/corrodinggames/rts/gameFramework/StateEngineLevelState
 	FIELD a version I
 	FIELD b levelPath Ljava/lang/String;
+	FIELD c PENDING_savedInt_c I
+	FIELD d PENDING_savedBool_d Z
+	FIELD e PENDING_savedBool_e Z
+	FIELD f PENDING_savedBool_f Z
+	FIELD g PENDING_savedLong_g J
+	FIELD h PENDING_savedInt_h I
 	FIELD i stateEngine Lcom/corrodinggames/rts/gameFramework/be;

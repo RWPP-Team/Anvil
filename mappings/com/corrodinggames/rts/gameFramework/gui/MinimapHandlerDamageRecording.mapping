@@ -4,3 +4,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/q com/corrodinggames/rts/gameFramew
 	FIELD c y I
 	FIELD d amount F
 	FIELD e flashTimer F
+	FIELD f minimapHandler Lcom/corrodinggames/rts/gameFramework/f/o;

@@ -3,3 +3,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/r com/corrodinggames/rts/gameFramew
 	FIELD b unit Lcom/corrodinggames/rts/gameFramework/f/r;
 	FIELD c nuke Lcom/corrodinggames/rts/gameFramework/f/r;
 	FIELD d message Lcom/corrodinggames/rts/gameFramework/f/r;
+	FIELD e valuesArray [Lcom/corrodinggames/rts/gameFramework/f/r;

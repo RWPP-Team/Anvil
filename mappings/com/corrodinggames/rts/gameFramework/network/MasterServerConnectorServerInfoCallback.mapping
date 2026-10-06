@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/w com/corrodinggames/rts/gameFramework/network/MasterServerConnectorServerInfoCallback
+	FIELD a serverInfoText Ljava/lang/String;
+	FIELD b errorMessage Ljava/lang/String;
+	FIELD c error Lcom/corrodinggames/rts/gameFramework/j/x;
+	METHOD a onServerInfoReceived (Ljava/lang/String;)V
+	METHOD a onError (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/j/x;Ljava/lang/Exception;)V

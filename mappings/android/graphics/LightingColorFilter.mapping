@@ -1,0 +1,3 @@
+CLASS android/graphics/LightingColorFilter
+	FIELD a mMul I
+	FIELD b mAdd I

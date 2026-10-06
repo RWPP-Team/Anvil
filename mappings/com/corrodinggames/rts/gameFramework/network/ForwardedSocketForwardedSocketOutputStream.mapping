@@ -1,3 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/j com/corrodinggames/rts/gameFramework/network/ForwardedSocketForwardedSocketOutputStream
 	FIELD a PENDING_a Z
 	FIELD b parentSocket Lcom/corrodinggames/rts/gameFramework/j/h;
+	METHOD write write ([B)V
+	METHOD write write ([BII)V
+	METHOD write write (I)V

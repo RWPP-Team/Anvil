@@ -9,6 +9,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ah com/corrodinggames/rts/gameFrame
 	FIELD g startingUnits I
 	FIELD h incomeMultiplier F
 	FIELD i noNukes Z
+	FIELD j PENDING_j Z
 	FIELD k actionCostsEnabled Z
 	FIELD l sharedControl Z
 	FIELD m teamsLocked Z

@@ -5,15 +5,19 @@ CLASS com/corrodinggames/rts/gameFramework/utility/m com/corrodinggames/rts/game
 	METHOD a items ()[Ljava/lang/Object;
 	METHOD a getUnchecked (I)Ljava/lang/Object;
 	METHOD a throwIndexOutOfBoundsException (II)Ljava/lang/IndexOutOfBoundsException;
+	METHOD a PENDING_accessModCount1 (Lcom/corrodinggames/rts/gameFramework/utility/m;)I
 	METHOD add add (ILjava/lang/Object;)V
 	METHOD add add (Ljava/lang/Object;)Z
 	METHOD addAll addAll (ILjava/util/Collection;)Z
 	METHOD addAll addAll (Ljava/util/Collection;)Z
 	METHOD b pop ()Ljava/lang/Object;
 	METHOD b newCapacity (I)I
+	METHOD b PENDING_accessModCount2 (Lcom/corrodinggames/rts/gameFramework/utility/m;)I
 	METHOD c popUnchecked ()Ljava/lang/Object;
+	METHOD c PENDING_accessModCount3 (Lcom/corrodinggames/rts/gameFramework/utility/m;)I
 	METHOD clear clear ()V
 	METHOD contains contains (Ljava/lang/Object;)Z
+	METHOD d PENDING_accessIncrementModCount (Lcom/corrodinggames/rts/gameFramework/utility/m;)I
 	METHOD get get (I)Ljava/lang/Object;
 	METHOD indexOf indexOf (Ljava/lang/Object;)I
 	METHOD isEmpty isEmpty ()Z
@@ -26,4 +30,4 @@ CLASS com/corrodinggames/rts/gameFramework/utility/m com/corrodinggames/rts/game
 	METHOD size size ()I
 	METHOD toArray toArray ()[Ljava/lang/Object;
 	METHOD toArray toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
-	CLASS 1 1
+	CLASS 1

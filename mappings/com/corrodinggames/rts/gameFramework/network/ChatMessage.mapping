@@ -4,5 +4,6 @@ CLASS com/corrodinggames/rts/gameFramework/j/b com/corrodinggames/rts/gameFramew
 	FIELD c message Ljava/lang/String;
 	FIELD d connectionId I
 	FIELD e timeStamp J
+	FIELD f chatLog Lcom/corrodinggames/rts/gameFramework/j/a;
 	METHOD a getPlainText ()Ljava/lang/String;
 	METHOD b getHtml ()Ljava/lang/String;

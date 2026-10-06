@@ -8,3 +8,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/e com/corrodinggames/rts/gameFramew
 	METHOD a wakeUp ()V
 	METHOD a enqueuePacket (Lcom/corrodinggames/rts/gameFramework/j/au;)V
 	METHOD b waitForPackets ()V
+	METHOD run run ()V

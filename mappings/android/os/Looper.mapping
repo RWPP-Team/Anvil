@@ -1,0 +1,5 @@
+CLASS android/os/Looper
+	METHOD a prepareMainLooper ()V
+	METHOD b getMainLooper ()Landroid/os/Looper;
+	METHOD c loop ()V
+	METHOD e getThread ()Ljava/lang/Thread;

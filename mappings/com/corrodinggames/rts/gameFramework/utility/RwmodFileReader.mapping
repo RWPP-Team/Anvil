@@ -7,4 +7,7 @@ CLASS com/corrodinggames/rts/gameFramework/utility/ag com/corrodinggames/rts/gam
 	METHOD j getRwmodPath (Ljava/lang/String;)Ljava/lang/String;
 	METHOD k closeZipFileReader (Ljava/lang/String;)V
 	METHOD l getPathInZip (Ljava/lang/String;)Ljava/lang/String;
-	CLASS 1 1
+	CLASS 1
+		FIELD a filePath Ljava/lang/String;
+		FIELD b zipReader Lcom/corrodinggames/rts/gameFramework/utility/ah;
+		METHOD run run ()V

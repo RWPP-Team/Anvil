@@ -6,4 +6,5 @@ CLASS com/corrodinggames/rts/gameFramework/f/ac com/corrodinggames/rts/gameFrame
 	FIELD e E Lcom/corrodinggames/rts/gameFramework/f/ac;
 	FIELD f saveKey Ljava/lang/String;
 	FIELD g historyType Lcom/corrodinggames/rts/gameFramework/bj;
+	FIELD h valuesArray [Lcom/corrodinggames/rts/gameFramework/f/ac;
 	METHOD a getHistoryType ()Lcom/corrodinggames/rts/gameFramework/bj;

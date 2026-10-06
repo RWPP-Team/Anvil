@@ -1,3 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/aj com/corrodinggames/rts/gameFramework/network/BanEntry
+	FIELD a address Ljava/lang/String;
 	FIELD b expiryTime J
 	FIELD c reason Ljava/lang/String;
+	METHOD a getBanReason ()Ljava/lang/String;
+	METHOD b getSecondsRemaining ()F

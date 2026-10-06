@@ -1,1 +1,12 @@
 CLASS com/corrodinggames/rts/gameFramework/bd com/corrodinggames/rts/gameFramework/ReplayEngineSavedCommand
+	FIELD a frame I
+	FIELD b isWaitCommand Z
+	FIELD c checksum Ljava/lang/Long;
+	FIELD d extraChecksumData [B
+	FIELD e command Lcom/corrodinggames/rts/gameFramework/e;
+	FIELD f resyncData [B
+	FIELD g chatMessage Lcom/corrodinggames/rts/gameFramework/bc;
+	FIELD h resyncGameTimeSeconds I
+	FIELD i resyncGameTimeMillis I
+	FIELD j resyncCurrentStepRate F
+	FIELD k resyncStepRate F

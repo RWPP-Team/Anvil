@@ -1,1 +1,3 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ar com/corrodinggames/rts/gameFramework/network/Obfuscation2
+	METHOD a getAppSignatureHash ()Ljava/lang/String;
+	METHOD a PENDING_addFive (I)I

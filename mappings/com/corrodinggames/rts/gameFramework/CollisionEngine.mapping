@@ -1,3 +1,16 @@
 CLASS com/corrodinggames/rts/gameFramework/a com/corrodinggames/rts/gameFramework/CollisionEngine
+	FIELD a PENDING_collisionType1 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD b PENDING_collisionType2 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD c PENDING_collisionType3 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD d PENDING_collisionType4 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD e PENDING_collisionType10 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD f PENDING_collisionType11 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD g PENDING_collisionType13 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD h PENDING_collisionType21 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD i PENDING_collisionType35 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD j PENDING_collisionType40 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD k PENDING_collisionType45 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD l PENDING_collisionType52 Lcom/corrodinggames/rts/gameFramework/b;
+	FIELD m PENDING_collisionType60 Lcom/corrodinggames/rts/gameFramework/b;
 	FIELD n collisionTypes Ljava/util/ArrayList;
 	METHOD a getOrCreateType (B)Lcom/corrodinggames/rts/gameFramework/b;

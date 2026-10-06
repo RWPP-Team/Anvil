@@ -453,3 +453,4 @@ CLASS com/corrodinggames/rts/game/units/custom/l com/corrodinggames/rts/game/uni
 		COMMENT Thin wrapper over resolveUnitTypeByName(name, true). Callers: TriggerEngine.addWaveUnitWeight, LazyUnitTypeReference.resolve and CustomUnitMetadataLoader.a(UnitTypeInterface) (for the [ai]upgradedFrom key).
 	METHOD t getOwningModTitle ()Ljava/lang/String;
 		COMMENT Display title of the Mod that owns this unit, or null when the unit did not come from a mod. Serialized by writeCustomUnitsToStream and read back for the mod browser listing.
+	CLASS 1 1

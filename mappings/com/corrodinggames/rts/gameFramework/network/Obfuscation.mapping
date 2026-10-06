@@ -1,4 +1,18 @@
 CLASS com/corrodinggames/rts/gameFramework/j/aq com/corrodinggames/rts/gameFramework/network/Obfuscation
 	FIELD a instance Lcom/corrodinggames/rts/gameFramework/j/aq;
+	FIELD b PENDING_authConst_b I
+	FIELD c PENDING_authConst_c I
+	FIELD d PENDING_authConst_d I
+	FIELD e PENDING_authConst_e I
+	FIELD f PENDING_authConst_f I
+	FIELD g txAuthParamPrefix Ljava/lang/String;
+	FIELD h underscoreAuthParamPrefix Ljava/lang/String;
+	FIELD i PENDING_authConst_i I
+	FIELD j PENDING_authConst_j I
+	FIELD k PENDING_authConst_k I
+	FIELD l PENDING_authFlag_l Z
 	METHOD a lerp (FFF)F
+	METHOD a checkExtraChallenge (Lcom/corrodinggames/rts/gameFramework/j/c;)V
 	METHOD a addMasterServerAuthParameters (Ljava/lang/String;Ljava/util/List;)V
+	METHOD b addAuthParameterTx3 (Ljava/lang/String;Ljava/util/List;)V
+	METHOD c addAuthParameterTx4 (Ljava/lang/String;Ljava/util/List;)V

@@ -1,0 +1,14 @@
+CLASS android/content/Context
+	METHOD a startActivity (Landroid/content/Intent;)V
+	METHOD a openFileInput (Ljava/lang/String;)Ljava/io/FileInputStream;
+	METHOD a getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;
+	METHOD b getExternalFilesDir (Ljava/lang/String;)Ljava/io/File;
+	METHOD b openFileOutput (Ljava/lang/String;I)Ljava/io/FileOutputStream;
+	METHOD c getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+	METHOD d getAssets ()Landroid/content/res/AssetManager;
+	METHOD e getResources ()Landroid/content/res/Resources;
+	METHOD f getPackageManager ()Landroid/content/pm/PackageManager;
+	METHOD g getApplicationContext ()Landroid/content/Context;
+	METHOD h getPackageName ()Ljava/lang/String;
+	METHOD i getCacheDir ()Ljava/io/File;
+	METHOD j getFilesDir ()Ljava/io/File;

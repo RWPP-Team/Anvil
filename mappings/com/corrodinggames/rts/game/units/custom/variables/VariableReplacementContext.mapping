@@ -7,3 +7,4 @@ CLASS com/corrodinggames/rts/game/units/custom/f/b com/corrodinggames/rts/game/u
 	METHOD b cloneWithFreshLocalScope ()Lcom/corrodinggames/rts/game/units/custom/f/b;
 	METHOD b resolveIdentifier (Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 	METHOD b containsMathOperator (Ljava/lang/String;)Z
+	CLASS 1 1

@@ -1,1 +1,15 @@
 CLASS com/corrodinggames/rts/gameFramework/bb com/corrodinggames/rts/gameFramework/ReplayEngineBackgroundFileWriteRunnable
+	FIELD a running Z
+	FIELD b stoppedFrame I
+	FIELD c stoppedTimeMillis I
+	FIELD d stoppedCommandCount I
+	FIELD e stoppedResyncCount I
+	FIELD f lastCommandFrame I
+	FIELD g lastWrittenFrame I
+	FIELD h stopped Z
+	FIELD i pendingCommands Ljava/util/concurrent/ConcurrentLinkedQueue;
+	FIELD j lastFlushTimeMillis J
+	FIELD k replayEngine Lcom/corrodinggames/rts/gameFramework/ba;
+	METHOD a stopRecording ()V
+	METHOD a addCommand (Lcom/corrodinggames/rts/gameFramework/bd;)V
+	METHOD b waitForCommands ()V

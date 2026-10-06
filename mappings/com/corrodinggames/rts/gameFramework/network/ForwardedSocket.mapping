@@ -5,3 +5,43 @@ CLASS com/corrodinggames/rts/gameFramework/j/h com/corrodinggames/rts/gameFramew
 	FIELD d inputStream Lcom/corrodinggames/rts/gameFramework/j/i;
 	FIELD e outputStream Lcom/corrodinggames/rts/gameFramework/j/j;
 	METHOD a forwardPacket (Lcom/corrodinggames/rts/gameFramework/j/au;)V
+	METHOD bind bind (Ljava/net/SocketAddress;)V
+	METHOD close close ()V
+	METHOD connect connect (Ljava/net/SocketAddress;)V
+	METHOD connect connect (Ljava/net/SocketAddress;I)V
+	METHOD getChannel getChannel ()Ljava/nio/channels/SocketChannel;
+	METHOD getInetAddress getInetAddress ()Ljava/net/InetAddress;
+	METHOD getInputStream getInputStream ()Ljava/io/InputStream;
+	METHOD getKeepAlive getKeepAlive ()Z
+	METHOD getLocalAddress getLocalAddress ()Ljava/net/InetAddress;
+	METHOD getLocalPort getLocalPort ()I
+	METHOD getLocalSocketAddress getLocalSocketAddress ()Ljava/net/SocketAddress;
+	METHOD getOOBInline getOOBInline ()Z
+	METHOD getOutputStream getOutputStream ()Ljava/io/OutputStream;
+	METHOD getPort getPort ()I
+	METHOD getReceiveBufferSize getReceiveBufferSize ()I
+	METHOD getRemoteSocketAddress getRemoteSocketAddress ()Ljava/net/SocketAddress;
+	METHOD getReuseAddress getReuseAddress ()Z
+	METHOD getSendBufferSize getSendBufferSize ()I
+	METHOD getSoLinger getSoLinger ()I
+	METHOD getSoTimeout getSoTimeout ()I
+	METHOD getTcpNoDelay getTcpNoDelay ()Z
+	METHOD getTrafficClass getTrafficClass ()I
+	METHOD isBound isBound ()Z
+	METHOD isClosed isClosed ()Z
+	METHOD isConnected isConnected ()Z
+	METHOD isInputShutdown isInputShutdown ()Z
+	METHOD isOutputShutdown isOutputShutdown ()Z
+	METHOD sendUrgentData sendUrgentData (I)V
+	METHOD setKeepAlive setKeepAlive (Z)V
+	METHOD setOOBInline setOOBInline (Z)V
+	METHOD setPerformancePreferences setPerformancePreferences (III)V
+	METHOD setReceiveBufferSize setReceiveBufferSize (I)V
+	METHOD setReuseAddress setReuseAddress (Z)V
+	METHOD setSendBufferSize setSendBufferSize (I)V
+	METHOD setSoLinger setSoLinger (ZI)V
+	METHOD setSoTimeout setSoTimeout (I)V
+	METHOD setTcpNoDelay setTcpNoDelay (Z)V
+	METHOD setTrafficClass setTrafficClass (I)V
+	METHOD shutdownInput shutdownInput ()V
+	METHOD shutdownOutput shutdownOutput ()V

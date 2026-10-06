@@ -3,3 +3,4 @@ CLASS com/corrodinggames/rts/gameFramework/f/a/d com/corrodinggames/rts/gameFram
 	FIELD b mouseClick Lcom/corrodinggames/rts/gameFramework/f/a/d;
 	FIELD c mouseUp Lcom/corrodinggames/rts/gameFramework/f/a/d;
 	FIELD d mouseDown Lcom/corrodinggames/rts/gameFramework/f/a/d;
+	FIELD e valuesArray [Lcom/corrodinggames/rts/gameFramework/f/a/d;

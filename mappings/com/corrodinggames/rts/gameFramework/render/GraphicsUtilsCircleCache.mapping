@@ -4,3 +4,4 @@ CLASS com/corrodinggames/rts/gameFramework/m/ab com/corrodinggames/rts/gameFrame
 	FIELD b radius I
 	FIELD c fill Z
 	FIELD d bitmap Lcom/corrodinggames/rts/gameFramework/m/e;
+	METHOD a copy ()Lcom/corrodinggames/rts/gameFramework/m/ab;

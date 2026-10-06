@@ -26,4 +26,9 @@ CLASS com/corrodinggames/rts/gameFramework/j/n com/corrodinggames/rts/gameFramew
 	METHOD c startUpdateServerRequest ()V
 	METHOD c findOrCreateDiscoveredServer (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/j/g;
 	METHOD d startRemoveServerRequest ()V
-	CLASS 1 1
+	CLASS 1
+		FIELD a requestUrl Ljava/lang/String;
+		FIELD b postParameters Ljava/util/List;
+		FIELD c PENDING_requestFlag_c Z
+		FIELD d printStackTraceOnFailure Z
+		METHOD call call ()Ljava/lang/Object;

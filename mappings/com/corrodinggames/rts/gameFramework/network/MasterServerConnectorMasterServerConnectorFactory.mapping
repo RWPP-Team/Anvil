@@ -1,1 +1,6 @@
 CLASS com/corrodinggames/rts/gameFramework/j/r com/corrodinggames/rts/gameFramework/network/MasterServerConnectorMasterServerConnectorFactory
+	FIELD a httpClientLock Ljava/util/concurrent/locks/ReentrantLock;
+	METHOD a getHttpClient ()Lorg/apache/http/client/HttpClient;
+	METHOD a PENDING_createHttpClient (IZ)Lorg/apache/http/client/HttpClient;
+	METHOD a setHttpClient (Lorg/apache/http/client/HttpClient;)V
+	METHOD b getSharedHttpClient ()Lorg/apache/http/client/HttpClient;

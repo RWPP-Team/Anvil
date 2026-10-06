@@ -1,2 +1,8 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/f com/corrodinggames/rts/gameFramework/gui/elements/PopupDialog
-	CLASS 1 1
+	FIELD a buttonSection Lcom/corrodinggames/rts/gameFramework/f/a/g;
+	METHOD a createButton (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/f/a/b;
+	METHOD a addButton (Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/f/a/k;)Lcom/corrodinggames/rts/gameFramework/f/a/b;
+	METHOD a createDialog (Ljava/lang/String;Z)Lcom/corrodinggames/rts/gameFramework/f/a/f;
+	METHOD b addButton (Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/f/a/b;
+	METHOD u_ relayoutIfDirty ()V
+	CLASS 1

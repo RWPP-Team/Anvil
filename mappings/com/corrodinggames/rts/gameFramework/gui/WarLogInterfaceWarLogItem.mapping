@@ -6,3 +6,8 @@ CLASS com/corrodinggames/rts/gameFramework/f/au com/corrodinggames/rts/gameFrame
 	FIELD g cachedText Ljava/lang/String;
 	FIELD h dimmed Z
 	FIELD i alwaysShow Z
+	METHOD a getText ()Ljava/lang/String;
+	METHOD a canMergeWith (Lcom/corrodinggames/rts/gameFramework/f/au;)Z
+	METHOD b getDisplayDuration ()J
+	METHOD b mergeWith (Lcom/corrodinggames/rts/gameFramework/f/au;)V
+	METHOD compareTo compareTo (Ljava/lang/Object;)I

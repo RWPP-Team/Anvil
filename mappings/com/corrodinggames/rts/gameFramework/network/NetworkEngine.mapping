@@ -1,4 +1,5 @@
 CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFramework/network/NetworkEngine
+	FIELD a PENDING_a Z
 	FIELD A PENDING_bool_A Z
 	FIELD aa allPlayersReady Z
 	FIELD aA savedGameStream Lcom/corrodinggames/rts/gameFramework/j/k;
@@ -98,6 +99,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	FIELD f PENDING_legacyArrayList Ljava/util/ArrayList;
 	FIELD F singlePlayerServer Z
 	FIELD g extraDebug Z
+	FIELD G PENDING_G Z
 	FIELD h maxMessagesPerMinute I
 	FIELD H proxyController Z
 	FIELD i PENDING_bool_i Z
@@ -266,6 +268,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	METHOD f sendPacketToServer (Lcom/corrodinggames/rts/gameFramework/j/au;)V
 	METHOD f sendServerInfoRequest (Lcom/corrodinggames/rts/gameFramework/j/c;)V
 	METHOD f reportProblem (Ljava/lang/String;)V
+	METHOD F PENDING_F ()V
 	METHOD g getFogModeName ()Ljava/lang/String;
 	METHOD g getIntegrityResponse (I)Ljava/lang/String;
 	METHOD g announceVictory (Lcom/corrodinggames/rts/game/n;)V
@@ -315,6 +318,7 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	METHOD R startSandboxMode ()Z
 	METHOD s resetGameNetworkState ()V
 	METHOD S startSingleplayerServer ()Z
+	METHOD t PENDING_t ()V
 	METHOD T isUdpMultiplayerEnabled ()Z
 	METHOD u waitForNetworkGameToEnd ()V
 	METHOD U showReconnectDialog ()V
@@ -328,12 +332,12 @@ CLASS com/corrodinggames/rts/gameFramework/j/ad com/corrodinggames/rts/gameFrame
 	METHOD Y regenerateClientId ()V
 	METHOD z peekNextUnitId ()J
 	METHOD Z getOwnClientIdHashed ()Ljava/lang/String;
-	CLASS 1 1
-	CLASS 2 2
-	CLASS 3 3
-	CLASS 4 4
-	CLASS 5 5
-		CLASS 1 1
-	CLASS 6 6
-	CLASS 7 7
-	CLASS 8 8
+	CLASS 1
+	CLASS 2
+	CLASS 3
+	CLASS 4
+	CLASS 5
+		CLASS 1
+	CLASS 6
+	CLASS 7
+	CLASS 8

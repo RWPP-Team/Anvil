@@ -1,0 +1,19 @@
+CLASS android/graphics/Rect
+	FIELD a left I
+	FIELD b top I
+	FIELD c right I
+	FIELD d bottom I
+	METHOD a isEmpty ()Z
+	METHOD a offset (II)V
+	METHOD a set (IIII)V
+	METHOD a set (Landroid/graphics/Rect;)V
+	METHOD b width ()I
+	METHOD b contains (II)Z
+	METHOD b intersects (IIII)Z
+	METHOD b contains (Landroid/graphics/Rect;)Z
+	METHOD c height ()I
+	METHOD d centerX ()I
+	METHOD e centerY ()I
+	METHOD f exactCenterX ()F
+	METHOD g exactCenterY ()F
+	METHOD h setEmpty ()V

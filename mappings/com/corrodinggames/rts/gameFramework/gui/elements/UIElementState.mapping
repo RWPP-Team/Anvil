@@ -1,3 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/f/a/i com/corrodinggames/rts/gameFramework/gui/elements/UIElementState
 	FIELD a normal Lcom/corrodinggames/rts/gameFramework/f/a/i;
 	FIELD b hovered Lcom/corrodinggames/rts/gameFramework/f/a/i;
+	FIELD c valuesArray [Lcom/corrodinggames/rts/gameFramework/f/a/i;

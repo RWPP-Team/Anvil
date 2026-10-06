@@ -3,3 +3,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/ap com/corrodinggames/rts/gameFrame
 	FIELD b attemptCount I
 	FIELD c limitLogged Z
 	FIELD d excessiveLogged Z
+	FIELD e newConnectionRunnable Lcom/corrodinggames/rts/gameFramework/j/ao;

@@ -356,3 +356,9 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	METHOD Y applyDipPaintsToGraphics ()V
 	METHOD z getNetworkPort ()I
 	METHOD Z clearLoadingMessage ()V
+	CLASS 1 1
+	CLASS 2 2
+		CLASS 1 1
+		CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

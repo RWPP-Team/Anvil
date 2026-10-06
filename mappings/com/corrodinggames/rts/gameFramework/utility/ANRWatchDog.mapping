@@ -11,8 +11,12 @@ CLASS com/corrodinggames/rts/gameFramework/utility/d com/corrodinggames/rts/game
 	FIELD i ignoreDebugger Z
 	FIELD j tickCount I
 	FIELD k tickRunnable Ljava/lang/Runnable;
+	METHOD a PENDING_accessTickCount (Lcom/corrodinggames/rts/gameFramework/utility/d;)I
+	METHOD a PENDING_accessSetTickCount (Lcom/corrodinggames/rts/gameFramework/utility/d;I)I
 	METHOD a setExceptionHandler (Lcom/corrodinggames/rts/gameFramework/utility/e;)Lcom/corrodinggames/rts/gameFramework/utility/d;
 	METHOD run run ()V
-	CLASS 1 1
-	CLASS 2 2
-	CLASS 3 3
+	CLASS 1
+	CLASS 2
+	CLASS 3
+		FIELD a anrWatchDog Lcom/corrodinggames/rts/gameFramework/utility/d;
+		METHOD run run ()V

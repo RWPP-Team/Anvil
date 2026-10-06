@@ -6,6 +6,7 @@ CLASS com/corrodinggames/rts/gameFramework/ab com/corrodinggames/rts/gameFramewo
 	FIELD e groupId I
 	FIELD f formationFaceEnemy Z
 	FIELD g cachedPaths Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD h groupController Lcom/corrodinggames/rts/gameFramework/aa;
 	METHOD a rebuildFromWaypoints ()V
 	METHOD a pickFormationGroup (FFZ)Lcom/corrodinggames/rts/gameFramework/utility/m;
 	METHOD a cancelGroupWaypoint (Lcom/corrodinggames/rts/game/units/au;)V
@@ -13,3 +14,5 @@ CLASS com/corrodinggames/rts/gameFramework/ab com/corrodinggames/rts/gameFramewo
 	METHOD a addUnitWithWaypoint (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/au;)V
 	METHOD a findNearestUnit (Lcom/corrodinggames/rts/gameFramework/utility/m;FFZ)Lcom/corrodinggames/rts/game/units/y;
 	METHOD a findNearbySameMovementGroup (Lcom/corrodinggames/rts/gameFramework/utility/m;Lcom/corrodinggames/rts/game/units/y;ZZ)Lcom/corrodinggames/rts/gameFramework/utility/m;
+	METHOD b assignFormationsTimed ()V
+	METHOD c assignFormations ()V

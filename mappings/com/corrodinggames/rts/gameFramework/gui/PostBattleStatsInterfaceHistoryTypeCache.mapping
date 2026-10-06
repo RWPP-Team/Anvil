@@ -4,3 +4,9 @@ CLASS com/corrodinggames/rts/gameFramework/f/ab com/corrodinggames/rts/gameFrame
 	FIELD c minValue I
 	FIELD d maxTime I
 	FIELD e relativeItems Ljava/util/ArrayList;
+	METHOD a PENDING_accessB (Lcom/corrodinggames/rts/gameFramework/f/ab;)I
+	METHOD a addValues (Ljava/util/ArrayList;)V
+	METHOD b PENDING_accessC (Lcom/corrodinggames/rts/gameFramework/f/ab;)I
+	METHOD c PENDING_accessHistoryType (Lcom/corrodinggames/rts/gameFramework/f/ab;)Lcom/corrodinggames/rts/gameFramework/bj;
+	METHOD d PENDING_accessD (Lcom/corrodinggames/rts/gameFramework/f/ab;)I
+	METHOD e PENDING_accessValues (Lcom/corrodinggames/rts/gameFramework/f/ab;)Ljava/util/ArrayList;

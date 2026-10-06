@@ -2,3 +2,6 @@ CLASS com/corrodinggames/rts/gameFramework/f/ad com/corrodinggames/rts/gameFrame
 	FIELD a time I
 	FIELD b values [I
 	FIELD c total I
+	METHOD a getRelativeValue (I)F
+	METHOD a setValue (II)V
+	METHOD a PENDING_accessTime (Lcom/corrodinggames/rts/gameFramework/f/ad;)I

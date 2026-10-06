@@ -6,3 +6,4 @@ CLASS com/corrodinggames/rts/gameFramework/u com/corrodinggames/rts/gameFramewor
 	FIELD e gameFont Lcom/corrodinggames/rts/gameFramework/u;
 	FIELD f gameSound Lcom/corrodinggames/rts/gameFramework/u;
 	FIELD g uiImage Lcom/corrodinggames/rts/gameFramework/u;
+	FIELD h valuesArray [Lcom/corrodinggames/rts/gameFramework/u;

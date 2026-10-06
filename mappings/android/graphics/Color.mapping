@@ -1,0 +1,8 @@
+CLASS android/graphics/Color
+	METHOD a alpha (I)I
+	METHOD a rgb (III)I
+	METHOD a argb (IIII)I
+	METHOD a parseColor (Ljava/lang/String;)I
+	METHOD b red (I)I
+	METHOD c green (I)I
+	METHOD d blue (I)I

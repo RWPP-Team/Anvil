@@ -4,3 +4,6 @@ CLASS com/corrodinggames/rts/gameFramework/j/i com/corrodinggames/rts/gameFramew
 	FIELD c singleByteBuffer [B
 	FIELD d parentSocket Lcom/corrodinggames/rts/gameFramework/j/h;
 	METHOD a addBuffer ([B)V
+	METHOD read read ()I
+	METHOD read read ([B)I
+	METHOD read read ([BII)I

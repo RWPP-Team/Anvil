@@ -2,3 +2,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/d com/corrodinggames/rts/gameFramew
 	FIELD a running Ljava/lang/Boolean;
 	FIELD b connection Lcom/corrodinggames/rts/gameFramework/j/c;
 	METHOD a readPackets ()V
+	METHOD run run ()V

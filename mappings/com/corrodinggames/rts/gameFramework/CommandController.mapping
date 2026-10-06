@@ -1,6 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/c com/corrodinggames/rts/gameFramework/CommandController
 	FIELD a commandTracingEnabled Z
 	FIELD b localPendingCommands Ljava/util/ArrayList;
+	FIELD c issuedCommands Ljava/util/ArrayList;
 	FIELD d networkPendingCommands Ljava/util/ArrayList;
 	FIELD e rateLimitCounter I
 	METHOD a clearCommands ()V

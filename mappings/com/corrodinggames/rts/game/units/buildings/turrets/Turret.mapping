@@ -44,3 +44,7 @@ CLASS com/corrodinggames/rts/game/units/d/a/b com/corrodinggames/rts/game/units/
 	METHOD dC drawTurretTop ()V
 	METHOD M getTurretLevel ()I
 	METHOD s updateIdleSweep (F)V
+	CLASS 1 1
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4

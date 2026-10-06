@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/gameFramework/bc com/corrodinggames/rts/gameFramework/ReplayEngineChatMessage
+	FIELD a teamId I
+	FIELD b sender Ljava/lang/String;
+	FIELD c message Ljava/lang/String;

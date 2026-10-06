@@ -1,16 +1,21 @@
 CLASS com/corrodinggames/rts/gameFramework/ba com/corrodinggames/rts/gameFramework/ReplayEngine
 	FIELD a replaysFolder Ljava/lang/String;
+	FIELD A commandsRecorded I
 	FIELD b logUpcomingCommands Z
+	FIELD B resyncsRecorded I
 	FIELD c traceCommands Z
 	FIELD C readInputStream Ljava/io/InputStream;
 	FIELD d traceTeamState Z
 	FIELD D readBufferedStream Ljava/io/BufferedInputStream;
+	FIELD e PENDING_staticFlag Z
 	FIELD E readDataStream Ljava/io/DataInputStream;
 	FIELD f replayTracing Z
 	FIELD F readNetStream Lcom/corrodinggames/rts/gameFramework/j/k;
 	FIELD g checksum Lcom/corrodinggames/rts/gameFramework/j/ak;
 	FIELD G writeOutputStream Ljava/io/OutputStream;
+	FIELD h silentLoad Z
 	FIELD H writeBufferedStream Ljava/io/BufferedOutputStream;
+	FIELD i PENDING_i I
 	FIELD I writeDataStream Ljava/io/DataOutputStream;
 	FIELD j commandsSinceLastChecksum I
 	FIELD J writeNetStream Lcom/corrodinggames/rts/gameFramework/j/as;
@@ -31,6 +36,7 @@ CLASS com/corrodinggames/rts/gameFramework/ba com/corrodinggames/rts/gameFramewo
 	FIELD s replayEnded Z
 	FIELD t replayFileName Ljava/lang/String;
 	FIELD u isPlayingMode Z
+	FIELD v playbackSpeedMultiplier I
 	FIELD w pendingCommand Lcom/corrodinggames/rts/gameFramework/bd;
 	FIELD x lastLoggedCommand Lcom/corrodinggames/rts/gameFramework/bd;
 	FIELD y totalCommandsRead I
@@ -39,6 +45,9 @@ CLASS com/corrodinggames/rts/gameFramework/ba com/corrodinggames/rts/gameFramewo
 	METHOD a recordResyncData ([BIIIFF)V
 	METHOD a processReplayFrame (F)V
 	METHOD a recordChatMessage (ILjava/lang/String;Ljava/lang/String;I)V
+	METHOD a init (Landroid/content/Context;)V
+	METHOD a isReplayActive (Lcom/corrodinggames/rts/gameFramework/ba;)Z
+	METHOD a setReplayActive (Lcom/corrodinggames/rts/gameFramework/ba;Z)Z
 	METHOD a recordCommand (Lcom/corrodinggames/rts/gameFramework/e;I)V
 	METHOD a recordChecksum (Lcom/corrodinggames/rts/gameFramework/j/ak;)V
 	METHOD a recordChecksum (Lcom/corrodinggames/rts/gameFramework/j/ak;Z)V

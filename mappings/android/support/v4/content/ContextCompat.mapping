@@ -1,0 +1,2 @@
+CLASS android/support/v4/content/ContextCompat
+	METHOD a checkSelfPermission (Landroid/content/Context;Ljava/lang/String;)I

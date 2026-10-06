@@ -62,3 +62,4 @@ CLASS com/corrodinggames/rts/gameFramework/m/e com/corrodinggames/rts/gameFramew
 	METHOD x PENDING_noop_x ()V
 	METHOD y PENDING_noop_y ()V
 	METHOD z PENDING_noop_z ()V
+	METHOD h copy ()Lcom/corrodinggames/rts/gameFramework/m/e;

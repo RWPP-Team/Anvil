@@ -5,3 +5,5 @@ CLASS com/corrodinggames/rts/gameFramework/j/at com/corrodinggames/rts/gameFrame
 	FIELD d byteStream Ljava/io/ByteArrayOutputStream;
 	FIELD e dataStream Ljava/io/DataOutputStream;
 	FIELD f wrapped Z
+	METHOD a flush ()V
+	METHOD b close ()V

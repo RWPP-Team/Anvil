@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/j/u com/corrodinggames/rts/gameFramework/network/MasterServerConnectorLoadFromMasterServerRunnable
+	FIELD a serverIndex I
+	FIELD b postParameters Ljava/util/List;
+	FIELD c requestCallback Lcom/corrodinggames/rts/gameFramework/j/s;
+	FIELD d requestUrl Ljava/lang/String;
+	FIELD e PENDING_requestFlag_e Z
+	METHOD run run ()V

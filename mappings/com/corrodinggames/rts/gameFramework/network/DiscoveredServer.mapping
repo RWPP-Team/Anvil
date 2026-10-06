@@ -9,14 +9,22 @@ CLASS com/corrodinggames/rts/gameFramework/j/g com/corrodinggames/rts/gameFramew
 	FIELD g port I
 	FIELD h portOpen Z
 	FIELD i pingTime J
+	FIELD j protocolVersionText Ljava/lang/String;
 	FIELD k gameVersion Ljava/lang/String;
 	FIELD l protocolVersion I
 	FIELD m passwordRequired Z
 	FIELD n playerName Ljava/lang/String;
 	FIELD o lastSeenTimeMillis J
+	FIELD p lastListedSourceIndex I
 	FIELD q mapName Ljava/lang/String;
+	FIELD r PENDING_masterListColumn10 Ljava/lang/String;
+	FIELD s gameState Ljava/lang/String;
+	FIELD t playerCountText Ljava/lang/String;
+	FIELD u maxPlayersText Ljava/lang/String;
+	FIELD v playerCount I
 	FIELD w maxPlayers I
 	FIELD x allowsAnyVersion Z
+	FIELD y PENDING_masterListColumn19 Z
 	FIELD z requiredMods Ljava/lang/String;
 	METHOD a isCurrentServer ()Z
 	METHOD b getServerInfoText ()Ljava/lang/String;

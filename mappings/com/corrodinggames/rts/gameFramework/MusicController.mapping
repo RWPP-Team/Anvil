@@ -1,6 +1,7 @@
 CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramework/MusicController
 	FIELD a musicFactory Lcom/corrodinggames/rts/gameFramework/aq;
 	FIELD A fadingTrackHandle Lcom/corrodinggames/rts/gameFramework/as;
+	FIELD b musicLock Ljava/lang/Object;
 	FIELD B hasFadingTrack Z
 	FIELD c updateLock Ljava/lang/Object;
 	FIELD C crossfading Z
@@ -9,6 +10,7 @@ CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramewo
 	FIELD e updateThread Lcom/corrodinggames/rts/gameFramework/au;
 	FIELD E fastFadeOut Z
 	FIELD f threadStarted Z
+	FIELD F fastCrossfadeDebug Z
 	FIELD g updateRequested Z
 	FIELD G fadingTrackStopped Z
 	FIELD h watchdogTime F
@@ -31,6 +33,7 @@ CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramewo
 	FIELD r noLoopRetryTimer F
 	FIELD s trackChangeRequested Z
 	FIELD t requestedTrackPath Ljava/lang/String;
+	FIELD u musicMuted Z
 	FIELD v pendingNowPlayingMessage Ljava/lang/String;
 	FIELD w context Landroid/content/Context;
 	FIELD x startingMoodPending Z
@@ -55,5 +58,5 @@ CLASS com/corrodinggames/rts/gameFramework/am com/corrodinggames/rts/gameFramewo
 	METHOD h resume ()V
 	METHOD i shutdown ()V
 	METHOD j isCrossfading ()Z
-	CLASS 1 1
-	CLASS 2 2
+	CLASS 1
+	CLASS 2

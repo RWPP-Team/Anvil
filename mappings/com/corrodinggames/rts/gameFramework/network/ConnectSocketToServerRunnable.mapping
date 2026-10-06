@@ -9,3 +9,4 @@ CLASS com/corrodinggames/rts/gameFramework/j/an com/corrodinggames/rts/gameFrame
 	FIELD h PENDING_bool_h Z
 	METHOD a cancel ()Z
 	METHOD b start ()V
+	METHOD run run ()V

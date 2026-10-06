@@ -1,6 +1,12 @@
 CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramework/CommonUtils
 	FIELD a random Ljava/util/Random;
 	FIELD b fixedSeedRandom Ljava/util/Random;
+	FIELD c PENDING_scratchPointF_c Landroid/graphics/PointF;
+	FIELD d PENDING_scratchPointF_d Landroid/graphics/PointF;
+	FIELD e PENDING_scratchPointF_e Landroid/graphics/PointF;
+	FIELD f PENDING_scratchPointF_f Landroid/graphics/PointF;
+	FIELD g PENDING_scratchPointF_g Landroid/graphics/PointF;
+	FIELD h tempDrawPoint Landroid/graphics/PointF;
 	FIELD i atanFallbackCount I
 	FIELD j sqrtLookupTable [B
 	FIELD k randomStringChars [C
@@ -69,11 +75,14 @@ CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramewor
 	METHOD b clampSigned (FF)F
 	METHOD b clamp (FFF)F
 	METHOD b distance (FFFF)F
+	METHOD b deterministicRandomFloatPrecise (FFI)F
 	METHOD b clampToByte (I)I
 	METHOD b max (II)I
 	METHOD b clamp (III)I
 	METHOD b packArgb (IIII)I
 	METHOD b splitDuration (J)[I
+	METHOD b expandRect (Landroid/graphics/Rect;F)V
+	METHOD b deterministicRandomFloatForUnit (Lcom/corrodinggames/rts/game/units/am;FFI)F
 	METHOD b readInputStreamFully (Ljava/io/InputStream;)Ljava/lang/String;
 	METHOD b getExceptionMessage (Ljava/lang/Exception;)Ljava/lang/String;
 	METHOD b md5Hex (Ljava/lang/String;)Ljava/lang/String;
@@ -95,6 +104,7 @@ CLASS com/corrodinggames/rts/gameFramework/f com/corrodinggames/rts/gameFramewor
 	METHOD c contains (Ljava/lang/String;Ljava/lang/String;)Z
 	METHOD d roundHalfUp (F)F
 	METHOD d randomFloat2 (FF)F
+	METHOD d getDrawPoint (FFF)Landroid/graphics/PointF;
 	METHOD d angleBetweenPoints (FFFF)F
 	METHOD d abs (I)I
 	METHOD d sha256Hex4 (Ljava/lang/String;)Ljava/lang/String;
