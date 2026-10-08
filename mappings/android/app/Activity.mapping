@@ -30,3 +30,5 @@ CLASS android/app/Activity
 	METHOD onWindowAttributesChanged onWindowAttributesChanged (Landroid/view/WindowManager$LayoutParams;)V
 	METHOD onWindowFocusChanged onWindowFocusChanged (Z)V
 	METHOD onWindowStartingActionMode onWindowStartingActionMode (Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
+	METHOD b finish ()V
+	METHOD c isFinishing ()Z
