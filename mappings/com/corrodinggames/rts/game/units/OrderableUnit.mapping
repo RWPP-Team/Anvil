@@ -126,7 +126,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD a processTriggerActionWaypoint (FLcom/corrodinggames/rts/game/units/au;Lcom/corrodinggames/rts/game/units/ad;)V
 	METHOD a processMoveWaypoint (FLcom/corrodinggames/rts/game/units/au;Lcom/corrodinggames/rts/game/units/ad;Z)V
 	METHOD a applyCollisionDriftMove (FLcom/corrodinggames/rts/gameFramework/l;FF)V
-	METHOD a setRadius (I)V
+	METHOD a setTechLevel (I)V
 	METHOD a rotateTurret (IF)V
 	METHOD a setPathNode (IFF)V
 	METHOD a getTintedPaint (ILandroid/graphics/ColorFilter;Z)Landroid/graphics/Paint;

@@ -3,7 +3,7 @@ CLASS com/corrodinggames/rts/gameFramework/e com/corrodinggames/rts/gameFramewor
 	FIELD a isReplayCommand Z
 	FIELD A unitIdsPending Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD b source Ljava/lang/String;
-	FIELD c scheduledGameSecond I
+	FIELD c scheduledTick I
 	FIELD d createdGameTimeMillis I
 	FIELD e queueOrder Z
 	FIELD f finishNonBuildWaypoints Z
@@ -57,5 +57,6 @@ CLASS com/corrodinggames/rts/gameFramework/e com/corrodinggames/rts/gameFramewor
 	METHOD g deferUnitsToIds ()V
 	METHOD h setClearWaypointsFirst ()V
 	METHOD i resolvePendingUnitIds ()V
+	METHOD j applyQueuedActionBookkeeping ()V
 	METHOD k issueCommand ()V
 	METHOD l rebuildAllowedTeamMask ()Z

@@ -9,11 +9,11 @@ CLASS com/corrodinggames/rts/game/units/au com/corrodinggames/rts/game/units/Way
 	FIELD g unitId J
 	FIELD h targetUnit Lcom/corrodinggames/rts/game/units/am;
 	FIELD i group Lcom/corrodinggames/rts/gameFramework/ab;
-	FIELD j PENDING_flagJ Z
-	FIELD k PENDING_posK F
-	FIELD l PENDING_posL F
+	FIELD j formationFaceEnemy Z
+	FIELD k repairReclaimRangePadding F
+	FIELD l maxWaypointDuration F
 	FIELD m PENDING_flagM Z
-	FIELD n PENDING_flagN Z
+	FIELD n addedByAction Z
 	METHOD a getUnitType ()Lcom/corrodinggames/rts/game/units/as;
 	METHOD a setMoveTo (FF)V
 	METHOD a setBuildTo (FFLcom/corrodinggames/rts/game/units/as;I)V

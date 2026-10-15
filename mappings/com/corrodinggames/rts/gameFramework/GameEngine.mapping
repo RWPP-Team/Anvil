@@ -46,7 +46,7 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD b messageBoxRunnable Ljava/lang/Runnable;
 	FIELD ba PENDING_ba Ljava/lang/String;
 	FIELD bA frameTimeMillis I
-	FIELD bb PENDING_bb Z
+	FIELD bb disableAutomaticGameThread Z
 	FIELD bB unitsMaxDefault I
 	FIELD bc replayRecordingEnabledMobile Z
 	FIELD bC unitsMaxCap I
@@ -90,7 +90,7 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	FIELD bV groupController Lcom/corrodinggames/rts/gameFramework/aa;
 	FIELD bw debugInvincibleUnits Z
 	FIELD bW minimap Lcom/corrodinggames/rts/gameFramework/f/o;
-	FIELD bx gameTimeSeconds I
+	FIELD bx simulationTick I
 	FIELD bX networkEngine Lcom/corrodinggames/rts/gameFramework/j/ad;
 	FIELD by gameTimeMillis I
 	FIELD bY statsHandler Lcom/corrodinggames/rts/gameFramework/bg;
@@ -309,7 +309,7 @@ CLASS com/corrodinggames/rts/gameFramework/l com/corrodinggames/rts/gameFramewor
 	METHOD f logWithTimestamp (Ljava/lang/String;)V
 	METHOD f addMessage (Ljava/lang/String;Ljava/lang/String;)V
 	METHOD F F ()V
-	METHOD g renderGame ()V
+	METHOD g clearAllGameObjects ()V
 	METHOD g consumeKeyPress (I)Z
 	METHOD g logWarningWithStack (Ljava/lang/String;)V
 	METHOD G getPlatformName ()Ljava/lang/String;

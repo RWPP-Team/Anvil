@@ -56,7 +56,7 @@ CLASS com/corrodinggames/rts/game/i com/corrodinggames/rts/game/RWGameEngine
 	FIELD w PENDING_list_w Ljava/util/ArrayList;
 	FIELD W allOnScreenObjects Lcom/corrodinggames/rts/gameFramework/utility/s;
 	FIELD x PENDING_paint_x Landroid/graphics/Paint;
-	FIELD X allOnScreenObjectsDirty Lcom/corrodinggames/rts/gameFramework/utility/s;
+	FIELD X onScreenObjectsBuildBuffer Lcom/corrodinggames/rts/gameFramework/utility/s;
 	FIELD y PENDING_paint_y Landroid/graphics/Paint;
 	FIELD Y PENDING_matrix_Y Landroid/graphics/Matrix;
 	FIELD z PENDING_paint_z Landroid/graphics/Paint;

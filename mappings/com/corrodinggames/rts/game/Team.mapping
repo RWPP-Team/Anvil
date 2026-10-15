@@ -63,7 +63,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	FIELD S unitCachesDirty Z
 	FIELD t dummyTargetUnit Lcom/corrodinggames/rts/game/units/y;
 	FIELD T unitCaches Lcom/corrodinggames/rts/game/s;
-	FIELD u PENDING_flag_u Z
+	FIELD u explicitAllyTeam Z
 	FIELD U PENDING_flag_U Z
 	FIELD v name Ljava/lang/String;
 	FIELD V stepsBehindCount B
@@ -156,7 +156,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD g canAffordIncludingPending (I)Z
 	METHOD G findFreeTeamId ()I
 	METHOD h getTeamLetter ()Ljava/lang/String;
-	METHOD h updateAITeams (F)V
+	METHOD h drawAIDebugInfo (F)V
 	METHOD h getAllyTeamColor (I)I
 	METHOD H findFreeSpectatorTeamId ()I
 	METHOD i resetSurrenderState ()V
