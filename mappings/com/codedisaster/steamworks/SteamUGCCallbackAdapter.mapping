@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUGCCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamUGCCallbackAdapter com/codedisaster/steamworks/SteamUGCCallbackAdapter
 	METHOD onCreateItem onCreateItem (JZI)V
 	METHOD onDownloadItemResult onDownloadItemResult (IJI)V
 	METHOD onGetUserItemVote onGetUserItemVote (JZZZI)V

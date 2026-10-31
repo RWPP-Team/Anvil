@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamAuth
+CLASS com/codedisaster/steamworks/SteamAuth com/codedisaster/steamworks/SteamAuth
 	CLASS AuthSessionResponse
 		FIELD AuthTicketCanceled AuthTicketCanceled Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;
 		FIELD AuthTicketInvalid AuthTicketInvalid Lcom/codedisaster/steamworks/SteamAuth$AuthSessionResponse;

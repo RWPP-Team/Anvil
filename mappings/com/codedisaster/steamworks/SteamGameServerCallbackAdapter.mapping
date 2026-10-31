@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamGameServerCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamGameServerCallbackAdapter com/codedisaster/steamworks/SteamGameServerCallbackAdapter
 	METHOD onAssociateWithClanResult onAssociateWithClanResult (I)V
 	METHOD onClientApprove onClientApprove (JJ)V
 	METHOD onClientDeny onClientDeny (JILjava/lang/String;)V

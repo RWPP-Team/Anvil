@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamFriendsCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamFriendsCallbackAdapter com/codedisaster/steamworks/SteamFriendsCallbackAdapter
 	FIELD personaChangeValues personaChangeValues [Lcom/codedisaster/steamworks/SteamFriends$PersonaChange;
 	METHOD onAvatarImageLoaded onAvatarImageLoaded (JIII)V
 	METHOD onFriendRichPresenceUpdate onFriendRichPresenceUpdate (JI)V

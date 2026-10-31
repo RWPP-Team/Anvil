@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanGameFunctions
 	METHOD addBooleanType addBooleanType (Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;[Ljava/lang/String;)V
 	METHOD loadTypes loadTypes ()V
 	CLASS AmmoBoolean

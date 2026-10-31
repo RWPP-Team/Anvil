@@ -1,4 +1,4 @@
-CLASS com/Element
+CLASS com/Element com/Element
 	FIELD charsetsLoaded charsetsLoaded Ljava/util/HashSet;
 	FIELD loadedChinese loadedChinese Z
 	FIELD nativeHandle nativeHandle J

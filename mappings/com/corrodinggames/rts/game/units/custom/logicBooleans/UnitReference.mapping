@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference com/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference
 	FIELD placeholderUnitContext placeholderUnitContext Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
 	FIELD referenceTypes referenceTypes Ljava/util/HashMap;
 	FIELD selfUnitReference selfUnitReference Lcom/corrodinggames/rts/game/units/custom/logicBooleans/UnitReference$SelfUnitReference;

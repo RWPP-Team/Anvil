@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/Music
+CLASS com/corrodinggames/rts/java/audio/Music com/corrodinggames/rts/java/audio/Music
 	METHOD dispose dispose ()V
 	METHOD getPosition getPosition ()F
 	METHOD getVolume getVolume ()F

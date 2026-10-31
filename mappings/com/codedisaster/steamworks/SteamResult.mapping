@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamResult
+CLASS com/codedisaster/steamworks/SteamResult com/codedisaster/steamworks/SteamResult
 	FIELD AccessDenied AccessDenied Lcom/codedisaster/steamworks/SteamResult;
 	FIELD AccountActivityLimitExceeded AccountActivityLimitExceeded Lcom/codedisaster/steamworks/SteamResult;
 	FIELD AccountAssociatedToMultiplePartners AccountAssociatedToMultiplePartners Lcom/codedisaster/steamworks/SteamResult;

@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/librocket/scripts/Multiplayer
+CLASS com/corrodinggames/librocket/scripts/Multiplayer com/corrodinggames/librocket/scripts/Multiplayer
 	FIELD currentDropdownRawArray currentDropdownRawArray [Ljava/lang/String;
 	FIELD lastPlayerTable lastPlayerTable Lcom/corrodinggames/librocket/scripts/Root$TableData;
 	FIELD root root Lcom/corrodinggames/librocket/scripts/Root;

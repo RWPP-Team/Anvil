@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/ThreadedWrappingAudioInputStream
+CLASS com/corrodinggames/rts/java/audio/lwjgl/ThreadedWrappingAudioInputStream com/corrodinggames/rts/java/audio/lwjgl/ThreadedWrappingAudioInputStream
 	FIELD bufferInputStream bufferInputStream Ljava/io/PipedInputStream;
 	FIELD bufferOutputStream bufferOutputStream Ljava/io/PipedOutputStream;
 	FIELD bufferSize bufferSize I

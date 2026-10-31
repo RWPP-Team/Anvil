@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/librocket/scripts/Debug
+CLASS com/corrodinggames/librocket/scripts/Debug com/corrodinggames/librocket/scripts/Debug
 	FIELD allFeatures allFeatures Z
 	FIELD backgroundClientConnections backgroundClientConnections Ljava/util/concurrent/ConcurrentLinkedQueue;
 	FIELD backgroundConnectionRunnable backgroundConnectionRunnable Ljava/lang/Runnable;

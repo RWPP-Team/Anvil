@@ -1,0 +1,2 @@
+CLASS android/net/http/Headers android/net/http/Headers
+	CLASS HeaderCallback

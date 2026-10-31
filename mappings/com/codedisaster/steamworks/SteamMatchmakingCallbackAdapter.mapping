@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamMatchmakingCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamMatchmakingCallbackAdapter com/codedisaster/steamworks/SteamMatchmakingCallbackAdapter
 	FIELD stateChangeValues stateChangeValues [Lcom/codedisaster/steamworks/SteamMatchmaking$ChatMemberStateChange;
 	METHOD onFavoritesListAccountsUpdated onFavoritesListAccountsUpdated (I)V
 	METHOD onFavoritesListChanged onFavoritesListChanged (IIIIIZI)V

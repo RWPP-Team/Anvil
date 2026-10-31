@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamNetworking
+CLASS com/codedisaster/steamworks/SteamNetworking com/codedisaster/steamworks/SteamNetworking
 	FIELD tmpIntResult tmpIntResult [I
 	FIELD tmpLongResult tmpLongResult [J
 	METHOD acceptP2PSessionWithUser acceptP2PSessionWithUser (JJ)Z

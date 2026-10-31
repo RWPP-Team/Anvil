@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUserStatsCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamUserStatsCallbackAdapter com/codedisaster/steamworks/SteamUserStatsCallbackAdapter
 	METHOD onGlobalStatsReceived onGlobalStatsReceived (JI)V
 	METHOD onLeaderboardFindResult onLeaderboardFindResult (JZ)V
 	METHOD onLeaderboardScoresDownloaded onLeaderboardScoresDownloaded (JJI)V

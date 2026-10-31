@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamAPI
+CLASS com/codedisaster/steamworks/SteamAPI com/codedisaster/steamworks/SteamAPI
 	FIELD isRunning isRunning Z
 	METHOD getSteamAppsPointer getSteamAppsPointer ()J
 	METHOD getSteamControllerPointer getSteamControllerPointer ()J

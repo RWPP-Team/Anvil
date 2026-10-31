@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamID
+CLASS com/codedisaster/steamworks/SteamID com/codedisaster/steamworks/SteamID
 	FIELD InvalidSteamID InvalidSteamID J
 	METHOD createFromNativeHandle createFromNativeHandle (J)Lcom/codedisaster/steamworks/SteamID;
 	METHOD getAccountID getAccountID ()I

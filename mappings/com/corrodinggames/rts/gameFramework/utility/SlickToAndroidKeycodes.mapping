@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes
+CLASS com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes com/corrodinggames/rts/gameFramework/utility/SlickToAndroidKeycodes
 	FIELD a slickToAndroidCodes Ljava/util/HashMap;
 	FIELD b gdxToAndroidCodes Ljava/util/HashMap;
 	FIELD c gdxToSlickCodes Ljava/util/HashMap;

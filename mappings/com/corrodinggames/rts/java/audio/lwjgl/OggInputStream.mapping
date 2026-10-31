@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/OggInputStream
+CLASS com/corrodinggames/rts/java/audio/lwjgl/OggInputStream com/corrodinggames/rts/java/audio/lwjgl/OggInputStream
 	FIELD bigEndian bigEndian Z
 	FIELD buffer buffer [B
 	FIELD BUFFER_SIZE BUFFER_SIZE I

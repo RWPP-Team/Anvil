@@ -1,2 +1,2 @@
-CLASS com/corrodinggames/rts/game/units/at
+CLASS com/corrodinggames/rts/game/units/at com/corrodinggames/rts/game/units/at
 	COMMENT Plain ArrayList holder (UNRESOLVED NAME - left obfuscated): a single ArrayList field a, no methods other than the default constructor. Intentionally not renamed (insufficient evidence).

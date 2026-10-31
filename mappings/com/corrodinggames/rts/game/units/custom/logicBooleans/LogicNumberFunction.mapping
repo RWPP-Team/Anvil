@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction
 	CLASS CreateMarker
 		FIELD dir dir Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
 		FIELD height height Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;

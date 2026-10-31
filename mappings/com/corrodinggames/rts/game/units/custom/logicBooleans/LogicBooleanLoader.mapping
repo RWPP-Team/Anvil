@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader
 	FIELD boolArrayContextReader boolArrayContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
 	FIELD defaultContextReader defaultContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;
 	FIELD numberArrayContextReader numberArrayContextReader Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanLoader$LogicBooleanContext;

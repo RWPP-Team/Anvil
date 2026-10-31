@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/librocket/scripts/Root
+CLASS com/corrodinggames/librocket/scripts/Root com/corrodinggames/librocket/scripts/Root
 	FIELD convertTextStopwatch convertTextStopwatch Lcom/corrodinggames/rts/gameFramework/bt;
 	FIELD DEBUG_TIMING DEBUG_TIMING Z
 	FIELD lastConnectingPopup lastConnectingPopup Lcom/ElementDocument;

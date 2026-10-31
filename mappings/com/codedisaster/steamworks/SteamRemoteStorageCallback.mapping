@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamRemoteStorageCallback
+CLASS com/codedisaster/steamworks/SteamRemoteStorageCallback com/codedisaster/steamworks/SteamRemoteStorageCallback
 	METHOD onDownloadUGCResult onDownloadUGCResult (Lcom/codedisaster/steamworks/SteamUGCHandle;Lcom/codedisaster/steamworks/SteamResult;)V
 	METHOD onFileReadAsyncComplete onFileReadAsyncComplete (Lcom/codedisaster/steamworks/SteamAPICall;Lcom/codedisaster/steamworks/SteamResult;II)V
 	METHOD onFileShareResult onFileShareResult (Lcom/codedisaster/steamworks/SteamUGCHandle;Ljava/lang/String;Lcom/codedisaster/steamworks/SteamResult;)V

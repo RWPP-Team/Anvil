@@ -1,2 +1,2 @@
-CLASS android/content/ContextWrapper
+CLASS android/content/ContextWrapper android/content/ContextWrapper
 	METHOD k getBaseContext ()Landroid/content/Context;

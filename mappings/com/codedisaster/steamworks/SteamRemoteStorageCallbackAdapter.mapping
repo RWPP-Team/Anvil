@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamRemoteStorageCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamRemoteStorageCallbackAdapter com/codedisaster/steamworks/SteamRemoteStorageCallbackAdapter
 	METHOD onDownloadUGCResult onDownloadUGCResult (JI)V
 	METHOD onFileReadAsyncComplete onFileReadAsyncComplete (JIII)V
 	METHOD onFileShareResult onFileShareResult (JLjava/lang/String;I)V

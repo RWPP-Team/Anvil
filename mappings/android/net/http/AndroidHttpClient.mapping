@@ -1,4 +1,4 @@
-CLASS android/net/http/AndroidHttpClient
+CLASS android/net/http/AndroidHttpClient android/net/http/AndroidHttpClient
 	METHOD a close ()V
 	METHOD a newInstance (Ljava/lang/String;)Landroid/net/http/AndroidHttpClient;
 	METHOD execute execute (Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;

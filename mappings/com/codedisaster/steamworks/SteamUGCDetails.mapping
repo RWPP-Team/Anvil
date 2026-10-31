@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUGCDetails
+CLASS com/codedisaster/steamworks/SteamUGCDetails com/codedisaster/steamworks/SteamUGCDetails
 	FIELD description description Ljava/lang/String;
 	FIELD fileHandle fileHandle J
 	FIELD fileName fileName Ljava/lang/String;

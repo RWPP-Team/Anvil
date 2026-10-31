@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALAudioDevice
+CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALAudioDevice com/corrodinggames/rts/java/audio/lwjgl/OpenALAudioDevice
 	FIELD audio audio Lcom/corrodinggames/rts/java/audio/lwjgl/OpenALAudio;
 	FIELD bufferCount bufferCount I
 	FIELD buffers buffers Ljava/nio/IntBuffer;

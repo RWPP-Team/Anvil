@@ -1,4 +1,4 @@
-CLASS android/util/Log
+CLASS android/util/Log android/util/Log
 	METHOD a v (Ljava/lang/String;Ljava/lang/String;)I
 	METHOD a w (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 	METHOD b d (Ljava/lang/String;Ljava/lang/String;)I
@@ -9,3 +9,4 @@ CLASS android/util/Log
 	METHOD isLoggable isLoggable (Ljava/lang/String;I)Z
 	CLASS 1
 		METHOD initialValue initialValue ()Ljava/lang/Object;
+	CLASS TerribleFailureHandler

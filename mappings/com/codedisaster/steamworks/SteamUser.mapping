@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUser
+CLASS com/codedisaster/steamworks/SteamUser com/codedisaster/steamworks/SteamUser
 	METHOD beginAuthSession beginAuthSession (JLjava/nio/Buffer;IJ)I
 	METHOD beginAuthSession beginAuthSession (Ljava/nio/Buffer;Lcom/codedisaster/steamworks/SteamID;)Lcom/codedisaster/steamworks/SteamAuth$BeginAuthSessionResult;
 	METHOD cancelAuthTicket cancelAuthTicket (JI)V

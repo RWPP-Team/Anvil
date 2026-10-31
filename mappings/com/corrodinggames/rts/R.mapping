@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/R
+CLASS com/corrodinggames/rts/R com/corrodinggames/rts/R
 	CLASS anim
 		FIELD mainfadein mainfadein I
 		FIELD splashfadeout splashfadeout I

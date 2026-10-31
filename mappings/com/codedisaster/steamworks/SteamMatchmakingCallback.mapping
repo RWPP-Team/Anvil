@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamMatchmakingCallback
+CLASS com/codedisaster/steamworks/SteamMatchmakingCallback com/codedisaster/steamworks/SteamMatchmakingCallback
 	METHOD onFavoritesListAccountsUpdated onFavoritesListAccountsUpdated (Lcom/codedisaster/steamworks/SteamResult;)V
 	METHOD onFavoritesListChanged onFavoritesListChanged (IIIIIZI)V
 	METHOD onLobbyChatMessage onLobbyChatMessage (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamMatchmaking$ChatEntryType;I)V

@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean com/corrodinggames/rts/game/units/custom/logicBooleans/CompareJoinerBoolean
 	CLASS CompareBooleanOnly
 	CLASS CompareEqualBoolean
 	CLASS CompareEqualNumbers

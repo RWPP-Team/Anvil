@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/librocket/scripts/Mods
+CLASS com/corrodinggames/librocket/scripts/Mods com/corrodinggames/librocket/scripts/Mods
 	FIELD checkWorkshopSkip checkWorkshopSkip I
 	FIELD root root Lcom/corrodinggames/librocket/scripts/Root;
 	FIELD updateModsRunnable updateModsRunnable Ljava/lang/Runnable;

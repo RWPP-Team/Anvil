@@ -1,4 +1,4 @@
-CLASS com/ElementDocument
+CLASS com/ElementDocument com/ElementDocument
 	FIELD documentPath documentPath Ljava/lang/String;
 	FIELD FOCUS FOCUS I
 	FIELD metadata metadata Ljava/util/HashMap;

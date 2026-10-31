@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/Wav
+CLASS com/corrodinggames/rts/java/audio/lwjgl/Wav com/corrodinggames/rts/java/audio/lwjgl/Wav
 	CLASS Music
 		FIELD input input Lcom/corrodinggames/rts/java/audio/lwjgl/Wav$WavInputStream;
 	CLASS Sound

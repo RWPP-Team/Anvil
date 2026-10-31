@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamFriends
+CLASS com/codedisaster/steamworks/SteamFriends com/codedisaster/steamworks/SteamFriends
 	METHOD activateGameOverlay activateGameOverlay (JLjava/lang/String;)V
 	METHOD activateGameOverlay activateGameOverlay (Lcom/codedisaster/steamworks/SteamFriends$OverlayDialog;)V
 	METHOD activateGameOverlayInviteDialog activateGameOverlayInviteDialog (JJ)V

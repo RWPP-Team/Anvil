@@ -1,4 +1,4 @@
-CLASS android/graphics/Typeface
+CLASS android/graphics/Typeface android/graphics/Typeface
 	FIELD c SANS_SERIF Landroid/graphics/Typeface;
 	METHOD a isBold ()Z
 	METHOD a create (Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;

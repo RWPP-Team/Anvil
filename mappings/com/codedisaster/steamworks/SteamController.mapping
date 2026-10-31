@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamController
+CLASS com/codedisaster/steamworks/SteamController com/codedisaster/steamworks/SteamController
 	FIELD actionOrigins actionOrigins [I
 	FIELD controllerHandles controllerHandles [J
 	FIELD STEAM_CONTROLLER_HANDLE_ALL_CONTROLLERS STEAM_CONTROLLER_HANDLE_ALL_CONTROLLERS J

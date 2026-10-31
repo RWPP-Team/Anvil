@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamMatchmaking
+CLASS com/codedisaster/steamworks/SteamMatchmaking com/codedisaster/steamworks/SteamMatchmaking
 	METHOD addRequestLobbyListCompatibleMembersFilter addRequestLobbyListCompatibleMembersFilter (JJ)V
 	METHOD addRequestLobbyListCompatibleMembersFilter addRequestLobbyListCompatibleMembersFilter (Lcom/codedisaster/steamworks/SteamID;)V
 	METHOD addRequestLobbyListDistanceFilter addRequestLobbyListDistanceFilter (JI)V

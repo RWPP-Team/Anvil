@@ -1,4 +1,4 @@
-CLASS android/graphics/Bitmap
+CLASS android/graphics/Bitmap android/graphics/Bitmap
 	METHOD a getPixels ([IIIIIII)V
 	METHOD a eraseColor (I)V
 	METHOD a getPixel (II)I

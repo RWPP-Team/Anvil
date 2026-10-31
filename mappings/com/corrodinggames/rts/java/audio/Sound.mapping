@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/Sound
+CLASS com/corrodinggames/rts/java/audio/Sound com/corrodinggames/rts/java/audio/Sound
 	METHOD dispose dispose ()V
 	METHOD getBytesUsed getBytesUsed ()I
 	METHOD loop loop ()J

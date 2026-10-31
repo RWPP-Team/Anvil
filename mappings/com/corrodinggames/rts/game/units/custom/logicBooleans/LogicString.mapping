@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString com/corrodinggames/rts/game/units/custom/logicBooleans/LogicString
 	METHOD arraySummaryToString arraySummaryToString (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Ljava/lang/String;
 	METHOD arrayToString arrayToString (Lcom/corrodinggames/rts/game/units/y;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;)Ljava/lang/String;
 	CLASS Debug

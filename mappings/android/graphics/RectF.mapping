@@ -1,4 +1,4 @@
-CLASS android/graphics/RectF
+CLASS android/graphics/RectF android/graphics/RectF
 	FIELD a left F
 	FIELD b top F
 	FIELD c right F

@@ -1,4 +1,4 @@
-CLASS android/graphics/Canvas
+CLASS android/graphics/Canvas android/graphics/Canvas
 	METHOD a save ()I
 	METHOD a drawText ([CIIFFLandroid/graphics/Paint;)V
 	METHOD a drawLines ([FIILandroid/graphics/Paint;)V

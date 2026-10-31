@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUserStatsCallback
+CLASS com/codedisaster/steamworks/SteamUserStatsCallback com/codedisaster/steamworks/SteamUserStatsCallback
 	METHOD onGlobalStatsReceived onGlobalStatsReceived (JLcom/codedisaster/steamworks/SteamResult;)V
 	METHOD onLeaderboardFindResult onLeaderboardFindResult (Lcom/codedisaster/steamworks/SteamLeaderboardHandle;Z)V
 	METHOD onLeaderboardScoresDownloaded onLeaderboardScoresDownloaded (Lcom/codedisaster/steamworks/SteamLeaderboardHandle;Lcom/codedisaster/steamworks/SteamLeaderboardEntriesHandle;I)V

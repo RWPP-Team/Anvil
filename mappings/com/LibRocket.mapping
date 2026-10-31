@@ -1,4 +1,4 @@
-CLASS com/LibRocket
+CLASS com/LibRocket com/LibRocket
 	FIELD activeDocumentCss activeDocumentCss [Ljava/lang/String;
 	FIELD compiledGeometryList compiledGeometryList Ljava/util/ArrayList;
 	FIELD currentDocument currentDocument Lcom/ElementDocument;

@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamSharedLibraryLoader
+CLASS com/codedisaster/steamworks/SteamSharedLibraryLoader com/codedisaster/steamworks/SteamSharedLibraryLoader
 	FIELD alreadyLoaded alreadyLoaded Z
 	FIELD extractSubFolder extractSubFolder Ljava/lang/String;
 	FIELD libraryPath libraryPath Ljava/lang/String;

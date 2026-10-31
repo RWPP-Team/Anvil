@@ -1,4 +1,4 @@
-CLASS android/content/Context
+CLASS android/content/Context android/content/Context
 	METHOD a startActivity (Landroid/content/Intent;)V
 	METHOD a openFileInput (Ljava/lang/String;)Ljava/io/FileInputStream;
 	METHOD a getSharedPreferences (Ljava/lang/String;I)Landroid/content/SharedPreferences;

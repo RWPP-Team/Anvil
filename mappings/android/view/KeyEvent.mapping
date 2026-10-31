@@ -1,4 +1,4 @@
-CLASS android/view/KeyEvent
+CLASS android/view/KeyEvent android/view/KeyEvent
 	METHOD a getMaxKeyCode ()I
 	METHOD getDeviceId getDeviceId ()I
 	METHOD getEventTime getEventTime ()J
@@ -7,3 +7,5 @@ CLASS android/view/KeyEvent
 	CLASS 1
 		METHOD createFromParcel createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
 		METHOD newArray newArray (I)[Ljava/lang/Object;
+	CLASS Callback
+	CLASS DispatcherState

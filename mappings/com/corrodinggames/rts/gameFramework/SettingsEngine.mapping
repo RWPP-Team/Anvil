@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/gameFramework/SettingsEngine
+CLASS com/corrodinggames/rts/gameFramework/SettingsEngine com/corrodinggames/rts/gameFramework/SettingsEngine
 	FIELD aiDifficulty aiDifficulty I
 	FIELD allowGameRecording allowGameRecording Z
 	FIELD androidNoSoundPrioritiesDebug androidNoSoundPrioritiesDebug Z

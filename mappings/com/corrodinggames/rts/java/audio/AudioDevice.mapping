@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/AudioDevice
+CLASS com/corrodinggames/rts/java/audio/AudioDevice com/corrodinggames/rts/java/audio/AudioDevice
 	METHOD dispose dispose ()V
 	METHOD getLatency getLatency ()I
 	METHOD isMono isMono ()Z

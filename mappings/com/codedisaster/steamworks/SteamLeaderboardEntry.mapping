@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamLeaderboardEntry
+CLASS com/codedisaster/steamworks/SteamLeaderboardEntry com/codedisaster/steamworks/SteamLeaderboardEntry
 	FIELD details details I
 	FIELD globalRank globalRank I
 	FIELD score score I

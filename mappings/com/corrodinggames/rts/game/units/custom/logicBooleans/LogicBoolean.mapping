@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean
 	FIELD activeEvent activeEvent Lcom/corrodinggames/rts/game/units/custom/k;
 	FIELD booleans booleans Ljava/util/HashMap;
 	FIELD callContext_self callContext_self Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$CallContext_self;

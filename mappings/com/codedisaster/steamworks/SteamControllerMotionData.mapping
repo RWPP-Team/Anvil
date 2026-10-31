@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamControllerMotionData
+CLASS com/codedisaster/steamworks/SteamControllerMotionData com/codedisaster/steamworks/SteamControllerMotionData
 	FIELD data data [F
 	METHOD getPosAccelX getPosAccelX ()F
 	METHOD getPosAccelY getPosAccelY ()F

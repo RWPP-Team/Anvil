@@ -1,4 +1,4 @@
-CLASS android/graphics/Color
+CLASS android/graphics/Color android/graphics/Color
 	METHOD a alpha (I)I
 	METHOD a rgb (III)I
 	METHOD a argb (IIII)I

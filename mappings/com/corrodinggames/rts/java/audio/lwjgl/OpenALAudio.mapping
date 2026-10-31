@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALAudio
+CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALAudio com/corrodinggames/rts/java/audio/lwjgl/OpenALAudio
 	FIELD allSources allSources Lcom/corrodinggames/rts/java/audio/a/d;
 	FIELD deviceBufferCount deviceBufferCount I
 	FIELD deviceBufferSize deviceBufferSize I

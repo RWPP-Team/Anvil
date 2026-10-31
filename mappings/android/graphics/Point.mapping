@@ -1,4 +1,4 @@
-CLASS android/graphics/Point
+CLASS android/graphics/Point android/graphics/Point
 	FIELD a x I
 	FIELD b y I
 	METHOD a set (II)V

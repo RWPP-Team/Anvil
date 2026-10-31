@@ -1,4 +1,32 @@
-CLASS android/graphics/Paint
+CLASS android/graphics/Paint android/graphics/Paint
+	FIELD a mNativePaint I
+	FIELD r mColorFilter Landroid/graphics/ColorFilter;
+	FIELD s mMaskFilter Landroid/graphics/MaskFilter;
+	FIELD t mPathEffect Landroid/graphics/PathEffect;
+	FIELD u mRasterizer Landroid/graphics/Rasterizer;
+	FIELD v mShader Landroid/graphics/Shader;
+	FIELD w mTypeface Landroid/graphics/Typeface;
+	FIELD x mXfermode Landroid/graphics/Xfermode;
+	FIELD y mHasCompatScaling Z
+	FIELD z mCompatScaling F
+	FIELD A mInvCompatScaling F
+	FIELD B mLocale Ljava/util/Locale;
+	FIELD b hasShadow Z
+	FIELD c shadowDx F
+	FIELD d shadowDy F
+	FIELD e shadowRadius F
+	FIELD f shadowColor I
+	FIELD g mBidiFlags I
+	FIELD h sStyleArray [Landroid/graphics/Paint$Style;
+	FIELD i sCapArray [Landroid/graphics/Paint$Cap;
+	FIELD j sJoinArray [Landroid/graphics/Paint$Join;
+	FIELD k sAlignArray [Landroid/graphics/Paint$Align;
+	FIELD l flags I
+	FIELD m style Landroid/graphics/Paint$Style;
+	FIELD n color I
+	FIELD o strokeWidth F
+	FIELD p textAlign Landroid/graphics/Paint$Align;
+	FIELD q textSize F
 	METHOD a reset ()V
 	METHOD a getTextWidths ([CII[F)I
 	METHOD a setStrokeWidth (F)V
@@ -36,10 +64,12 @@ CLASS android/graphics/Paint
 		FIELD a LEFT Landroid/graphics/Paint$Align;
 		FIELD b CENTER Landroid/graphics/Paint$Align;
 		FIELD c RIGHT Landroid/graphics/Paint$Align;
+		FIELD d nativeInt I
 	CLASS Cap
 		FIELD a BUTT Landroid/graphics/Paint$Cap;
 		FIELD b ROUND Landroid/graphics/Paint$Cap;
 		FIELD c SQUARE Landroid/graphics/Paint$Cap;
+		FIELD d nativeInt I
 	CLASS FontMetrics
 		FIELD a top F
 		FIELD b ascent F
@@ -49,7 +79,15 @@ CLASS android/graphics/Paint
 		FIELD a MITER Landroid/graphics/Paint$Join;
 		FIELD b ROUND Landroid/graphics/Paint$Join;
 		FIELD c BEVEL Landroid/graphics/Paint$Join;
+		FIELD d nativeInt I
 	CLASS Style
 		FIELD a FILL Landroid/graphics/Paint$Style;
 		FIELD b STROKE Landroid/graphics/Paint$Style;
 		FIELD c FILL_AND_STROKE Landroid/graphics/Paint$Style;
+		FIELD d nativeInt I
+	CLASS FontMetricsInt
+		FIELD a top I
+		FIELD b ascent I
+		FIELD c descent I
+		FIELD d bottom I
+		FIELD e leading I

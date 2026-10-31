@@ -28,7 +28,7 @@ CLASS com/corrodinggames/rts/game/a/a com/corrodinggames/rts/game/ai/AI
 	FIELD aw outpostBasesCreated I
 	FIELD aW PENDING_rushWaveTimer F
 	FIELD ax baseCount I
-	FIELD aX PENDING_aX Z
+	FIELD aX aiUpdatePaused Z
 	FIELD ay activeBaseCount I
 	FIELD aY aggressiveMode Z
 	FIELD az attackGroupCount I

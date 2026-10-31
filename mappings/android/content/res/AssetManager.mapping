@@ -1,4 +1,4 @@
-CLASS android/content/res/AssetManager
+CLASS android/content/res/AssetManager android/content/res/AssetManager
 	METHOD a open (Ljava/lang/String;)Ljava/io/InputStream;
 	METHOD b openFd (Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
 	METHOD c list (Ljava/lang/String;)[Ljava/lang/String;

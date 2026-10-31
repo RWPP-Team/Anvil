@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamGameServerCallback
+CLASS com/codedisaster/steamworks/SteamGameServerCallback com/codedisaster/steamworks/SteamGameServerCallback
 	METHOD onAssociateWithClanResult onAssociateWithClanResult (Lcom/codedisaster/steamworks/SteamResult;)V
 	METHOD onClientApprove onClientApprove (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamID;)V
 	METHOD onClientDeny onClientDeny (Lcom/codedisaster/steamworks/SteamID;Lcom/codedisaster/steamworks/SteamGameServer$DenyReason;Ljava/lang/String;)V

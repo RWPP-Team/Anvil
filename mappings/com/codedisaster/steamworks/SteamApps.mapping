@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamApps
+CLASS com/codedisaster/steamworks/SteamApps com/codedisaster/steamworks/SteamApps
 	METHOD getAppBuildId getAppBuildId ()I
 	METHOD getAppBuildId getAppBuildId (J)I
 	METHOD getAppOwner getAppOwner ()Lcom/codedisaster/steamworks/SteamID;

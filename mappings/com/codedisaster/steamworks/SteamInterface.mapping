@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamInterface
+CLASS com/codedisaster/steamworks/SteamInterface com/codedisaster/steamworks/SteamInterface
 	FIELD callback callback J
 	FIELD pointer pointer J
 	METHOD deleteCallback deleteCallback (J)V

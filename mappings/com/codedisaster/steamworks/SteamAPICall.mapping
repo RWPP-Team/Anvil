@@ -1,2 +1,2 @@
-CLASS com/codedisaster/steamworks/SteamAPICall
+CLASS com/codedisaster/steamworks/SteamAPICall com/codedisaster/steamworks/SteamAPICall
 	METHOD isValid isValid ()Z

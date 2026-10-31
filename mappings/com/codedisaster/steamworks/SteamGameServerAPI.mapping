@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamGameServerAPI
+CLASS com/codedisaster/steamworks/SteamGameServerAPI com/codedisaster/steamworks/SteamGameServerAPI
 	FIELD isRunning isRunning Z
 	METHOD getSteamGameServerHTTPPointer getSteamGameServerHTTPPointer ()J
 	METHOD getSteamGameServerNetworkingPointer getSteamGameServerNetworkingPointer ()J

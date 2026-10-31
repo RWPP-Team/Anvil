@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUtils
+CLASS com/codedisaster/steamworks/SteamUtils com/codedisaster/steamworks/SteamUtils
 	FIELD callbackAdapter callbackAdapter Lcom/codedisaster/steamworks/SteamUtilsCallbackAdapter;
 	METHOD createCallback createCallback (Lcom/codedisaster/steamworks/SteamUtilsCallbackAdapter;)J
 	METHOD enableWarningMessageHook enableWarningMessageHook (JZ)V

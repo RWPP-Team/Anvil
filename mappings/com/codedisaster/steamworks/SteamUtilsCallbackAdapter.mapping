@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUtilsCallbackAdapter
+CLASS com/codedisaster/steamworks/SteamUtilsCallbackAdapter com/codedisaster/steamworks/SteamUtilsCallbackAdapter
 	FIELD messageHook messageHook Lcom/codedisaster/steamworks/SteamAPIWarningMessageHook;
 	METHOD onSteamShutdown onSteamShutdown ()V
 	METHOD onWarningMessage onWarningMessage (ILjava/lang/String;)V

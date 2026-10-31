@@ -1,0 +1,2 @@
+CLASS android/os/MessageQueue android/os/MessageQueue
+	CLASS IdleHandler

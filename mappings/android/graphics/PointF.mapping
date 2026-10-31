@@ -1,4 +1,4 @@
-CLASS android/graphics/PointF
+CLASS android/graphics/PointF android/graphics/PointF
 	FIELD a x F
 	FIELD b y F
 	METHOD a set (FF)V

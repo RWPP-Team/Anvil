@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope
+CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope
 	FIELD emptyData emptyData [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableData;
 	FIELD emptyNames emptyNames [Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$VariableName;
 	FIELD emptyVariableScope emptyVariableScope Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;

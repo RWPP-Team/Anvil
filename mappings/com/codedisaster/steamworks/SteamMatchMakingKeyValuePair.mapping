@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamMatchMakingKeyValuePair
+CLASS com/codedisaster/steamworks/SteamMatchMakingKeyValuePair com/codedisaster/steamworks/SteamMatchMakingKeyValuePair
 	FIELD key key Ljava/lang/String;
 	FIELD value value Ljava/lang/String;
 	METHOD getKey getKey ()Ljava/lang/String;

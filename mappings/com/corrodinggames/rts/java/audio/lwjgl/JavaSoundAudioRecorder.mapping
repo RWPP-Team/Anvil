@@ -1,3 +1,3 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/JavaSoundAudioRecorder
+CLASS com/corrodinggames/rts/java/audio/lwjgl/JavaSoundAudioRecorder com/corrodinggames/rts/java/audio/lwjgl/JavaSoundAudioRecorder
 	FIELD buffer buffer [B
 	FIELD line line Ljavax/sound/sampled/TargetDataLine;

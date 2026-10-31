@@ -1,4 +1,4 @@
-CLASS android/graphics/Rect
+CLASS android/graphics/Rect android/graphics/Rect
 	FIELD a left I
 	FIELD b top I
 	FIELD c right I

@@ -1,4 +1,4 @@
-CLASS android/app/Activity
+CLASS android/app/Activity android/app/Activity
 	METHOD a getWindow ()Landroid/view/Window;
 	METHOD a overridePendingTransition (II)V
 	METHOD a startActivityForResult (Landroid/content/Intent;I)V

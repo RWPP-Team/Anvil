@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamHTTP
+CLASS com/codedisaster/steamworks/SteamHTTP com/codedisaster/steamworks/SteamHTTP
 	METHOD createCallback createCallback (Lcom/codedisaster/steamworks/SteamHTTPCallbackAdapter;Z)J
 	METHOD createHTTPRequest createHTTPRequest (JILjava/lang/String;)J
 	METHOD createHTTPRequest createHTTPRequest (Lcom/codedisaster/steamworks/SteamHTTP$HTTPMethod;Ljava/lang/String;)Lcom/codedisaster/steamworks/SteamHTTPRequestHandle;

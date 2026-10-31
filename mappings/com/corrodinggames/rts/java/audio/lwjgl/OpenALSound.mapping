@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALSound
+CLASS com/corrodinggames/rts/java/audio/lwjgl/OpenALSound com/corrodinggames/rts/java/audio/lwjgl/OpenALSound
 	FIELD audio audio Lcom/corrodinggames/rts/java/audio/lwjgl/OpenALAudio;
 	FIELD bufferID bufferID I
 	FIELD bytesUsed bytesUsed I

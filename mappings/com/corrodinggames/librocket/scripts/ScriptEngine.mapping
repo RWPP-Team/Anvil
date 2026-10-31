@@ -1,4 +1,4 @@
-CLASS com/corrodinggames/librocket/scripts/ScriptEngine
+CLASS com/corrodinggames/librocket/scripts/ScriptEngine com/corrodinggames/librocket/scripts/ScriptEngine
 	FIELD globals globals Ljava/util/HashMap;
 	FIELD inDebugScript inDebugScript Z
 	FIELD isMainScriptThread isMainScriptThread Ljava/lang/ThreadLocal;

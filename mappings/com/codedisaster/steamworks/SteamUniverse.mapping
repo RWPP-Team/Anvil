@@ -1,4 +1,4 @@
-CLASS com/codedisaster/steamworks/SteamUniverse
+CLASS com/codedisaster/steamworks/SteamUniverse com/codedisaster/steamworks/SteamUniverse
 	FIELD Beta Beta Lcom/codedisaster/steamworks/SteamUniverse;
 	FIELD Dev Dev Lcom/codedisaster/steamworks/SteamUniverse;
 	FIELD Internal Internal Lcom/codedisaster/steamworks/SteamUniverse;
