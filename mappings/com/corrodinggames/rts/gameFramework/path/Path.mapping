@@ -9,7 +9,7 @@ CLASS com/corrodinggames/rts/gameFramework/k/k com/corrodinggames/rts/gameFramew
 	FIELD g createdFrame I
 	FIELD h startX S
 	FIELD i startY S
-	FIELD j targetHeight Ljava/lang/Float;
+	FIELD j startHeading Ljava/lang/Float;
 	FIELD k useAlternateTurnCosts Z
 	FIELD l endX S
 	FIELD m endY S

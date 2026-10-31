@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/f/b com/corrodinggames/rts/game/units/search/AreaList
+	FIELD a EMPTY_ARRAY [Lcom/corrodinggames/rts/game/units/am;
+	FIELD b size I
+	FIELD c items [Lcom/corrodinggames/rts/game/units/am;
+	METHOD a getBackingArray ()[Lcom/corrodinggames/rts/game/units/am;
+	METHOD a add (Lcom/corrodinggames/rts/game/units/am;)Z
+	METHOD b remove (Lcom/corrodinggames/rts/game/units/am;)Z

@@ -65,4 +65,4 @@ CLASS com/corrodinggames/rts/gameFramework/m/y com/corrodinggames/rts/gameFramew
 	METHOD p flushBitmap ()V
 	METHOD q PENDING_noop_q ()V
 	METHOD r getOOMImage ()Lcom/corrodinggames/rts/gameFramework/m/e;
-	METHOD s PENDING_scaleFactor ()F
+	METHOD s getUiScaleFactor ()F

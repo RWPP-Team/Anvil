@@ -1,7 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/OrderableUnit
 	FIELD a blockedSlideClearCounter I
 	FIELD A cachedTintPaintAntiAliasColor I
-	FIELD aa lastCollisionTimeSeconds I
+	FIELD aa lastCollisionTick I
 	FIELD aA PENDING_secondNoTurnTimer F
 	FIELD ab reclaimCreditRemainder F
 	FIELD aB groupController Lcom/corrodinggames/rts/game/a/h;
@@ -11,7 +11,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD aD pathPossibleToBase Z
 	FIELD ae inFormation Z
 	FIELD aE turretPaint Lcom/corrodinggames/rts/gameFramework/m/ag;
-	FIELD af PENDING_af Z
+	FIELD af retainsFormationSlot Z
 	FIELD aF turretPaintAntiAlias Lcom/corrodinggames/rts/gameFramework/m/ag;
 	FIELD ag followerCount I
 	FIELD aG scratchClipPointF Landroid/graphics/PointF;
@@ -28,10 +28,10 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD am queueAlignHeading F
 	FIELD aM scratchQueryUnitList Lcom/corrodinggames/rts/gameFramework/utility/u;
 	FIELD an lastFormationPathMillis I
-	FIELD aN PENDING_canAttackWhileWorking Z
+	FIELD aN keepWarmupWhileWorking Z
 	FIELD ao formationSlotDistanceSquared F
 	FIELD aO insufficientResources Z
-	FIELD ap PENDING_ap Z
+	FIELD ap formationSearchSelected Z
 	FIELD aP scratchMoveDirective Lcom/corrodinggames/rts/game/units/ad;
 	FIELD aq fleeHeading F
 	FIELD aQ passiveTargetCallback1 Lcom/corrodinggames/rts/game/units/ae;
@@ -98,7 +98,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	FIELD Q lastBuildFailMillis I
 	FIELD r moveGoalDriftTolerance I
 	FIELD R attackTarget Lcom/corrodinggames/rts/game/units/am;
-	FIELD s pathFollowSpeed F
+	FIELD s pathRequestCooldown F
 	FIELD S targetSearchCooldown F
 	FIELD t lowPriorityPathFlag Z
 	FIELD T turretAssignTimer F
@@ -132,7 +132,7 @@ CLASS com/corrodinggames/rts/game/units/y com/corrodinggames/rts/game/units/Orde
 	METHOD a getTintedPaint (ILandroid/graphics/ColorFilter;Z)Landroid/graphics/Paint;
 	METHOD a canTurretAttack (ILcom/corrodinggames/rts/game/units/am;ZZ)Z
 	METHOD a checkTargetedActionOrder (Lcom/corrodinggames/rts/game/units/a/s;FF)Z
-	METHOD a PENDING_drawActionRangeOverlay (Lcom/corrodinggames/rts/game/units/a/s;ZFF)V
+	METHOD a drawActionRangeOverlay (Lcom/corrodinggames/rts/game/units/a/s;ZFF)V
 	METHOD a spawnDeathEffects (Lcom/corrodinggames/rts/game/units/ab;)V
 	METHOD a spawnDeathEffects (Lcom/corrodinggames/rts/game/units/ab;Z)V
 	METHOD a playCommandSound (Lcom/corrodinggames/rts/game/units/ag;)Z

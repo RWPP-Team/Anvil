@@ -1,19 +1,22 @@
 CLASS com/corrodinggames/rts/gameFramework/h/a com/corrodinggames/rts/gameFramework/localization/LocaleEngine
-	COMMENT LocaleEngine - the translation engine. Fields: bundle (the loaded ResourceBundle, from translations/Strings[_lang].properties), lastForceEnglish (the forceEnglish setting of the previous load, used to skip reloads), generation (int bumped on every reload, used as the cache tag by LocaleString/DynamicLocaleText/CustomResource), languageOverride (a language code that overrides the system locale), mapNameSuffixPattern (regex "(.*)(\\(.*\\)( *\\[by.*\\])?)" - strips the author suffix off map names) and inlineBlockPattern (regex "\\[i:(...)\\]" - inline translation placeholders expanded by c(String)). [field names verified from code]
+	COMMENT LocaleEngine - the translation engine. Fields: bundle (the loaded ResourceBundle, from translations/Strings[_lang].properties), lastForceEnglish (the forceEnglish setting of the previous load, used to skip reloads), generation (int bumped on every reload, used as the cache tag by LocaleString/DynamicLocaleText/CustomResource), languageOverride (a language code that overrides the system locale), mapNameSuffixPattern (regex "(.*)(\\(.*\\)( *\\[by.*\\])?)" - strips the author suffix off map names) and inlineBlockPattern (regex "\\[i:(...)\\]" - inline translation placeholders expanded by c(String)). [field names verified from code] Methods: init() (the startup entry point RWGameEngine.init calls, forwards to reloadBundle), getString(key, args) (bundle lookup through getStringWithNormalizedMarkup, then MessageFormat when args are given), getStringOrDefault(key, default, args) (getString with the default returned on MissingResourceException), loadResourceBundle / loadPropertyResourceBundle (translations/Strings[_lang].properties), bundleNameForLocale(base, locale, withCountry, withVariant) (appends _lang[_country[_variant]]), hasString(key), translateMapName(mapName) (rewrites "maps.name.<name>" lookups and appends the author suffix), getStringWithNormalizedMarkup (bundle lookup plus the bracket markup rewrite that turns [a][b] into dash-prefixed lines), getBundle, getLanguageCode, getCurrentLocale, processInlineBlocks (expands [i:key] placeholders) and reloadBundle.
 	FIELD a bundle Ljava/util/ResourceBundle;
 	FIELD b lastForceEnglish Z
 	FIELD c generation I
 	FIELD d languageOverride Ljava/lang/String;
 	FIELD e mapNameSuffixPattern Ljava/util/regex/Pattern;
 	FIELD f inlineBlockPattern Ljava/util/regex/Pattern;
+	METHOD a init ()V
+	METHOD b translateMapName (Ljava/lang/String;)Ljava/lang/String;
+	METHOD e hasString (Ljava/lang/String;)Z
 	METHOD a loadPropertyResourceBundle (Ljava/lang/String;)Ljava/util/PropertyResourceBundle;
 	METHOD a getString (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-	METHOD a PENDING_formatWithDefault (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+	METHOD a getStringOrDefault (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 	METHOD a loadResourceBundle (Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
-	METHOD a PENDING_getStringForLocale (Ljava/lang/String;Ljava/util/Locale;ZZ)Ljava/lang/String;
+	METHOD a bundleNameForLocale (Ljava/lang/String;Ljava/util/Locale;ZZ)Ljava/lang/String;
 	METHOD b getBundle ()Ljava/util/ResourceBundle;
 	METHOD c getLanguageCode ()Ljava/lang/String;
 	METHOD c processInlineBlocks (Ljava/lang/String;)Ljava/lang/String;
 	METHOD d getCurrentLocale ()Ljava/util/Locale;
-	METHOD d PENDING_sanitizeString (Ljava/lang/String;)Ljava/lang/String;
+	METHOD d getStringWithNormalizedMarkup (Ljava/lang/String;)Ljava/lang/String;
 	METHOD e reloadBundle ()V

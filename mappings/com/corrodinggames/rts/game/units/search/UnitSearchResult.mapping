@@ -1,1 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/f/f com/corrodinggames/rts/game/units/search/UnitSearchResult
+	FIELD a remainingCount I
+	FIELD b items [Lcom/corrodinggames/rts/game/units/am;
+	METHOD a resetFrom (Lcom/corrodinggames/rts/gameFramework/utility/u;)V

@@ -6,7 +6,7 @@ CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/Projectile
 	FIELD ab hitAlliesOnly Z
 	FIELD aB PENDING_flag_aB Z
 	FIELD ac hitUnderwater Z
-	FIELD aC PENDING_flag_aC Z
+	FIELD aC usesTargetCoordinates Z
 	FIELD ad areaHitAirAndLandAtSameTime Z
 	FIELD aD spawnDepth I
 	FIELD ae requireAirLandMatch Z
@@ -21,13 +21,13 @@ CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/Projectile
 	FIELD aI ballisticDelaymoveHeight F
 	FIELD aj airUnitDamageMultiplier F
 	FIELD aJ ballisticHeight F
-	FIELD ak PENDING_float_ak F
+	FIELD ak shieldDamageMultiplier F
 	FIELD aK ballisticDescending Z
-	FIELD al PENDING_float_al F
+	FIELD al shieldDefectionMultiplier F
 	FIELD aL ballisticVerticalSpeed F
-	FIELD am PENDING_float_am F
+	FIELD am hullDamageMultiplier F
 	FIELD aM smokeTrail Z
-	FIELD an PENDING_float_an F
+	FIELD an armourIgnoreAmount F
 	FIELD aN trailTimer F
 	FIELD ao keepAreaDamageList Z
 	FIELD aO beamExplosionTimer F
@@ -39,7 +39,7 @@ CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/Projectile
 	FIELD aR playHitSound Z
 	FIELD as hitAnyNearbyUnit Z
 	FIELD aS destroyRequested Z
-	FIELD at PENDING_flag_at Z
+	FIELD at collidesWithTerrain Z
 	FIELD aT drawAngle F
 	FIELD au moveWithParentObject Lcom/corrodinggames/rts/gameFramework/w;
 	FIELD aU drawAngleInitialized Z
@@ -113,7 +113,7 @@ CLASS com/corrodinggames/rts/game/f com/corrodinggames/rts/game/Projectile
 	FIELD W areaDamageTimer F
 	FIELD x drawSize F
 	FIELD X areaDamageDelay F
-	FIELD y PENDING_secondaryDrawSize F
+	FIELD y drawCircleRadius F
 	FIELD Y areaDamage F
 	FIELD z drawShadow Z
 	FIELD Z areaRadius F

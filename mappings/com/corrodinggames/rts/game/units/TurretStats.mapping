@@ -1,2 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/aa com/corrodinggames/rts/game/units/TurretStats
-	COMMENT Timing/damage record (UNRESOLVED NAME - left obfuscated): floats a,b,c and int d (=1); a() returns (b + c) / 60.0f (ticks -> seconds). No code evidence for the original name -> intentionally not renamed.
+	COMMENT TurretStats - one row of the turret summary the unit info panel shows, built by OrderableUnit.getTurretStatsList. Fields: damage (getTurretDamage of one turret), shootDelayTicks (getTurretShootDelay, with the 9000 no-delay sentinel stored as 0), warmupTicks (getTurretWarmup) and turretCount (how many of the unit's turrets share this damage/delay pair; the constructor value 1 covers the first turret and every match increments it). getShotCycleSeconds returns (shootDelayTicks + warmupTicks) / 60.0F, the full shot cycle in seconds. [names verified against getTurretStatsList and BattleInterface.getUnitInfoStatsText]
+	FIELD a damage F
+	FIELD b shootDelayTicks F
+	FIELD c warmupTicks F
+	FIELD d turretCount I
+	METHOD a getShotCycleSeconds ()F

@@ -1,2 +1,5 @@
 CLASS com/corrodinggames/rts/game/units/an com/corrodinggames/rts/game/units/an
-	COMMENT Data holder in game/units: boolean a=false, int b, gameFramework/effects/Blueprint c. VERIFIED SHAPE. The previous tentative name UnitTurretInstance was withdrawn because a turret-state class must expose float a + float e and a()/b() (see Unit's turret array used by Turret), which this class does not; and its third field is a Blueprint, not an effect. Left obfuscated per the no-evidence-no-rename rule.
+	COMMENT an (class name still obfuscated) - the per-team visibility memory Unit keeps in Unit.teamVisibility[], one instance per team id. Fields: lastSeenAlive (the team has seen this unit alive; set while isVisibleToTeam is true, cleared once a dead unit becomes visible to the team), lastSeenTechLevel (the getTechLevel value captured while it was visible) and fogGhost (the Blueprint Unit.createLostUnitBlueprint leaves behind when the unit drops out of the team's vision; it records the unit type, position, team and lastSeenTechLevel). Only Unit.updateVisibilityForTeam and Unit.createLostUnitBlueprint touch these fields. [names verified from those two methods]
+	FIELD a lastSeenAlive Z
+	FIELD b lastSeenTechLevel I
+	FIELD c fogGhost Lcom/corrodinggames/rts/gameFramework/d/a;

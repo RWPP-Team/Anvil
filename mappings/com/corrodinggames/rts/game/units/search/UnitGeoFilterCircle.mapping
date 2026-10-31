@@ -1,1 +1,10 @@
 CLASS com/corrodinggames/rts/game/units/f/d com/corrodinggames/rts/game/units/search/UnitGeoFilterCircle
+
+	FIELD a bounds Landroid/graphics/RectF;
+	FIELD b minX F
+	FIELD c maxX F
+	FIELD d minY F
+	FIELD e maxY F
+	FIELD f centerX F
+	FIELD g centerY F
+	FIELD h radiusSquared F

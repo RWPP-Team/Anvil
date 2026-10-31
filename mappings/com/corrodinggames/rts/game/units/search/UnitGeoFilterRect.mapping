@@ -1,1 +1,7 @@
 CLASS com/corrodinggames/rts/game/units/f/g com/corrodinggames/rts/game/units/search/UnitGeoFilterRect
+	FIELD a bounds Landroid/graphics/RectF;
+	FIELD b minX F
+	FIELD c maxX F
+	FIELD d minY F
+	FIELD e maxY F
+	METHOD a setBounds (FFFF)V

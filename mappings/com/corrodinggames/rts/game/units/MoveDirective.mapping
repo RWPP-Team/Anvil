@@ -1,2 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/ad com/corrodinggames/rts/game/units/MoveDirective
-	COMMENT Small resettable unit state block (UNRESOLVED NAME - left obfuscated): 4 booleans + 2 floats, a() resets them (d := true). Roles inferred only from shape; no code evidence for the original name -> intentionally not renamed.
+	COMMENT MoveDirective - the per-frame movement directive OrderableUnit fills in while processing the active waypoint and reads back when it moves the unit. Fields: workBeamActive (the work-beam branch of the repair/reclaim and build waypoints sets it; OrderableUnit then copies it into its own workBeamActive field after the waypoint pass), hasMoveTarget (a move target was produced this frame; read by the mover and by the cK moving flag), slowApproach (a formation catch-up path node was chosen, so updateMoveThrottle scales the speed factor down as the unit closes in), allowFormationFollow (left true the unit takes the queue leader's formation target instead of the target it computed itself; every waypoint branch that decides otherwise clears it) and targetX/targetY (the produced move target). reset() clears the whole block and sets allowFormationFollow to true. [field roles verified in the OrderableUnit waypoint pass]
+	FIELD a workBeamActive Z
+	FIELD b hasMoveTarget Z
+	FIELD c slowApproach Z
+	FIELD d allowFormationFollow Z
+	FIELD e targetX F
+	FIELD f targetY F
+	METHOD a reset ()V

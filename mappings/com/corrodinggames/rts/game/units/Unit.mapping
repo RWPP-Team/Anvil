@@ -61,13 +61,14 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD cL turrets [Lcom/corrodinggames/rts/game/units/ap;
 	FIELD cm buildProgress F
 	FIELD cM PENDING_cM Z
-	FIELD cn PENDING_cn F
+	FIELD cn paidBuildProgress F
 	FIELD cN transportedBy Lcom/corrodinggames/rts/game/units/am;
 	FIELD co drawnScaledDown Z
 	FIELD cO attachedToUnit Lcom/corrodinggames/rts/game/units/y;
 	FIELD cp isPlaceholder Z
 	FIELD cP attachmentSlot Lcom/corrodinggames/rts/game/units/custom/b/n;
 	FIELD cq PENDING_cq Z
+	FIELD cQ attachmentStartMillis I
 	FIELD cr PENDING_cr Z
 	FIELD cR hasMinimapPosition Z
 	FIELD cs previewPlaceable Z

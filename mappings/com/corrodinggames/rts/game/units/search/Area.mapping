@@ -1,1 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/f/a com/corrodinggames/rts/game/units/search/Area
+	FIELD a allUnits Lcom/corrodinggames/rts/game/units/f/b;
+	FIELD b unitsByTeam [Lcom/corrodinggames/rts/game/units/f/b;
+	FIELD c teamMinusTwoUnits Lcom/corrodinggames/rts/game/units/f/b;
+	FIELD d teamMinusOneUnits Lcom/corrodinggames/rts/game/units/f/b;
+	FIELD e radiusUpperBound F
+	METHOD a addUnit (Lcom/corrodinggames/rts/game/units/am;)V
+	METHOD b removeUnit (Lcom/corrodinggames/rts/game/units/am;)V

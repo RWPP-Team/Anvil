@@ -1,9 +1,9 @@
 CLASS com/corrodinggames/rts/game/units/au com/corrodinggames/rts/game/units/Waypoint
-	COMMENT A single queued order. Fields (descriptive job names verified against usage): type (WaypointType), unitType (UnitTypeInterface, for build), actionId (ActionId), count (build count), x/y (target position), unitId (deferred unit id, converted by c() via GameObject.a(long)), targetUnit (Unit), group (GroupControllerUnitGroup), plus flags j/m/n and positions k/l. Net (de)serialization is versioned: v40 count, v46 k/l, v58 m, v65 j, v79 n, v82 actionId. l() hands out a shared dummy target unit (Team.i.t) for position-only orders; e() resets to a plain move order. [behaviour verified]
+	COMMENT A single queued order, reused through a pool. Fields: type (WaypointType), unitType (UnitTypeInterface, set for build orders), actionId (ActionId), buildTechLevel (the tech level to build the unit at; only set by setBuildTo and passed straight to tryBuildUnit and getSpecialAction), x/y (target position), unitId (deferred unit id, resolved by convertToUnitId via GameObject's id lookup), targetUnit (Unit), group (GroupControllerUnitGroup), formationFaceEnemy, automatic (marks a repair order the mover queued by itself when it passed a damaged ally; OrderableUnit pops such a waypoint again once the next waypoint is a guard/patrol or the queue is exhausted), addedByAction, repairReclaimRangePadding and maxWaypointDuration. Net (de)serialization is versioned: v40 buildTechLevel, v46 repairReclaimRangePadding/maxWaypointDuration, v58 automatic, v65 formationFaceEnemy, v79 addedByAction, v82 actionId. getDummyTargetUnit hands out the shared gray-team dummy for position-only orders; resetToMove resets to a plain move order. [behaviour verified]
 	FIELD a type Lcom/corrodinggames/rts/game/units/av;
 	FIELD b unitType Lcom/corrodinggames/rts/game/units/as;
 	FIELD c actionId Lcom/corrodinggames/rts/game/units/a/c;
-	FIELD d count I
+	FIELD d buildTechLevel I
 	FIELD e x F
 	FIELD f y F
 	FIELD g unitId J
@@ -12,7 +12,7 @@ CLASS com/corrodinggames/rts/game/units/au com/corrodinggames/rts/game/units/Way
 	FIELD j formationFaceEnemy Z
 	FIELD k repairReclaimRangePadding F
 	FIELD l maxWaypointDuration F
-	FIELD m PENDING_flagM Z
+	FIELD m automatic Z
 	FIELD n addedByAction Z
 	METHOD a getUnitType ()Lcom/corrodinggames/rts/game/units/as;
 	METHOD a setMoveTo (FF)V
@@ -21,7 +21,7 @@ CLASS com/corrodinggames/rts/game/units/au com/corrodinggames/rts/game/units/Way
 	METHOD a isRoughlySamePosition (Lcom/corrodinggames/rts/game/units/au;)Z
 	METHOD a write (Lcom/corrodinggames/rts/gameFramework/j/as;)V
 	METHOD a read (Lcom/corrodinggames/rts/gameFramework/j/k;)V
-	METHOD b getCount ()I
+	METHOD b getBuildTechLevel ()I
 	METHOD b setAttackMoveTo (FF)V
 	METHOD b setRepair (Lcom/corrodinggames/rts/game/units/am;)V
 	METHOD b matches (Lcom/corrodinggames/rts/game/units/au;)Z

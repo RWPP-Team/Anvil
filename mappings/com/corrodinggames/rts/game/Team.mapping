@@ -1,5 +1,5 @@
 CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
-	COMMENT Team - a player/team (abstract; Player/StandardPlayer/NullPlayer/TeamPlayer are the concrete forms). Field names confirmed by cross-class evidence: teamId ("teamId:" in TriggerActivator, set in the Team(int) constructor), credits (double; initialized to 4000.0, read/written by CustomPrice as the team's credits and by TriggerActivator event_changeCredits), name (set by the Player(int,boolean,String) constructor), unitCaches (TeamUnitCaches, filled by TeamUnitCaches.a/b), teamTags (CustomTagTags; initialized to CustomTag.emptyTags and mutated by event_teamTags via Team.b(CustomTagTags)/c(CustomTagTags)) and storedResources (the team-wide StoredResources returned by V(), initialized in the constructor). The remaining obfuscated fields (a..j, l..u, w..aj, am..ar and the statics) were not renamed because the class body (55 KB on one line) could not be read back through the tooling; the visible constructor prologue/outer-class usage only proves that o=credits(4000.0), p,q (credit accounting), ai=-2 (status), au/av=-9999, T=unitCaches, ak=teamTags and al=storedResources. [partially verified]
+	COMMENT Team - a player/team (abstract; Player/StandardPlayer/NullPlayer/TeamPlayer are the concrete forms). Field names confirmed by cross-class evidence: teamId ("teamId:" in TriggerActivator, set in the Team(int) constructor), credits (double; initialized to 4000.0, read/written by CustomPrice as the team's credits and by TriggerActivator event_changeCredits), name (set by the Player(int,boolean,String) constructor), unitCaches (TeamUnitCaches, filled by TeamUnitCaches.a/b), teamTags (CustomTagTags; initialized to CustomTag.emptyTags and mutated by event_teamTags via Team.b(CustomTagTags)/c(CustomTagTags)) and storedResources (the team-wide StoredResources returned by V(), initialized in the constructor). The remaining obfuscated fields (a..j, l..u, w..aj, am..ar and the statics) were not renamed because the class body (55 KB on one line) could not be read back through the tooling; the visible constructor prologue/outer-class usage only proves that o=credits(4000.0), p,q (credit accounting), ai=-2 (status), au/av=-9999, T=unitCaches, ak=teamTags and al=storedResources. [partially verified] Unit-cap accounting: maxUnitCapCount (obf R) is the highest unitCaches.unitCapCount seen since resetState, refreshed in updateUnitCaches, and getUnitCapCount() (obf w) hands the cached unitCapCount to the build and unit-cap checks (OrderableUnit.tryBuildUnit, UnitTypeList.spawnInto, FactoryBuildQueue.queueOrCancel, the checksum and the UI bars). Both were earlier named after buildings, which is wrong: the value counts every unit that occupies unit capacity, including units under construction and queued build entries.
 	FIELD a allTeamsList Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD A startingUnitsOverride Ljava/lang/Integer;
 	FIELD aa PENDING_flag_aa Z
@@ -58,7 +58,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	FIELD q antiLagCheckCounter I
 	FIELD Q localPlayerTeamFlag I
 	FIELD r allyTeam I
-	FIELD R maxBuildingCount I
+	FIELD R maxUnitCapCount I
 	FIELD s dummyUnit Lcom/corrodinggames/rts/game/units/y;
 	FIELD S unitCachesDirty Z
 	FIELD t dummyTargetUnit Lcom/corrodinggames/rts/game/units/y;
@@ -190,7 +190,7 @@ CLASS com/corrodinggames/rts/game/n com/corrodinggames/rts/game/Team
 	METHOD U getTeamTags ()Lcom/corrodinggames/rts/game/units/custom/h;
 	METHOD v getAIDifficultyArmyValue ()I
 	METHOD V getStoredResources ()Lcom/corrodinggames/rts/game/units/custom/e/f;
-	METHOD w getBuildingCount ()I
+	METHOD w getUnitCapCount ()I
 	METHOD W debugUnitCountByType ()V
 	METHOD x getUnitsMax ()I
 	METHOD X refreshUnitCaps ()V

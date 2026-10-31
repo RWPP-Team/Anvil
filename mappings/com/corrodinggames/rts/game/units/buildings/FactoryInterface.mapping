@@ -2,8 +2,8 @@ CLASS com/corrodinggames/rts/game/units/d/l com/corrodinggames/rts/game/units/bu
 	METHOD a setRallyPoint (Landroid/graphics/PointF;)V
 	METHOD a getQueuedCountOf (Lcom/corrodinggames/rts/game/units/a/c;Z)I
 	METHOD a completeQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)V
-	METHOD b PENDING_onTurretBuilt (Lcom/corrodinggames/rts/game/units/d/j;)V
-	METHOD c PENDING_canQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)Z
+	METHOD b onQueueItemStarted (Lcom/corrodinggames/rts/game/units/d/j;)V
+	METHOD c shouldRefundQueueItem (Lcom/corrodinggames/rts/game/units/d/j;)Z
 	METHOD dA isOverTransportCapacity ()Z
 	METHOD dw getCurrentQueuedItem ()Lcom/corrodinggames/rts/game/units/d/j;
 	METHOD dx getQueuedItems ()Lcom/corrodinggames/rts/gameFramework/utility/m;
