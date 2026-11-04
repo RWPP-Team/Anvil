@@ -1,9 +1,19 @@
 CLASS com/corrodinggames/rts/game/units/ap com/corrodinggames/rts/game/units/UnitTurretInstance
 	COMMENT Per-turret runtime state (element type of Unit's turret array): float angle (current turret angle), b, c, d (the value clamped by a(int)/b(int), used as rotation direction/speed - isSettled() means d==0 i.e. settled, isReversing() means d<0), reloadTimer (reload/cooldown timer - Turret tests cL[i].reloadTimer > 0.0f to show the reload progress), warmupTimer (turret warmup, ramped up by the firing pass while the turret is on target and decayed by getTurretWarmupCooldownRate when it is not), flags g/m, h/i, target Unit and k/l. reset(float) resets everything. Evidence: Turret reads float angle, reloadTimer and isSettled(), CustomUnit reads warmupTimer against getTurretWarmup to draw the warmup effects. The class previously carried the low-confidence job name UnitMovementState; renamed to UnitTurretInstance and the withdrawn name of game/units/an. Fields without a reader keep their obfuscated names.
 	FIELD a angle F
+	FIELD b idleBaseAngle F
+	FIELD d turnDelay F
 	FIELD e reloadTimer F
 	FIELD f warmupTimer F
+	FIELD g aimAligned Z
+	FIELD h aimOffsetX F
+	FIELD i aimOffsetY F
 	FIELD j target Lcom/corrodinggames/rts/game/units/am;
-	METHOD a isSettled ()Z
+	FIELD k idleSweepElapsed F
+	FIELD l idleSweepOffset F
+	FIELD m alternateShot Z
+	METHOD a isTurnDelayExpired ()Z
 	METHOD a reset (F)V
-	METHOD b isReversing ()Z
+	METHOD a extendTurnDelay (I)V
+	METHOD b hasNegativeTurnDelay ()Z
+	METHOD b forceNegativeTurnDelay (I)V

@@ -1,5 +1,4 @@
 CLASS com/corrodinggames/rts/game/units/f/d com/corrodinggames/rts/game/units/search/UnitGeoFilterCircle
-
 	FIELD a bounds Landroid/graphics/RectF;
 	FIELD b minX F
 	FIELD c maxX F

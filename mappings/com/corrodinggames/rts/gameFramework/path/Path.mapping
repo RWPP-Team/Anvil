@@ -20,8 +20,8 @@ CLASS com/corrodinggames/rts/gameFramework/k/k com/corrodinggames/rts/gameFramew
 	FIELD r lowPriority Z
 	FIELD s allowedDelay F
 	FIELD t remainingTime F
-	FIELD u hasResult Z
-	FIELD v cancelled Z
+	FIELD u releasedForUse Z
+	FIELD v assignedToWorker Z
 	FIELD w cancelRequested Z
 	FIELD x nodes Ljava/util/LinkedList;
 	FIELD y terrainCost [B

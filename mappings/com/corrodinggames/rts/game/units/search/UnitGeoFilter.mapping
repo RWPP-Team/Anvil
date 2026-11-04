@@ -1,3 +1,2 @@
 CLASS com/corrodinggames/rts/game/units/f/e com/corrodinggames/rts/game/units/search/UnitGeoFilter
-
 	METHOD a matches (Lcom/corrodinggames/rts/game/units/am;)Z

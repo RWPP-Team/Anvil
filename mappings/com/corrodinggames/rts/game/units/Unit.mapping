@@ -34,8 +34,8 @@ CLASS com/corrodinggames/rts/game/units/am com/corrodinggames/rts/game/units/Uni
 	FIELD by overrideStreamingPrice Lcom/corrodinggames/rts/game/units/custom/d/b;
 	FIELD bY inTeamCache Z
 	FIELD bz createdTimeMillis I
-	FIELD bZ pushVelocityX F
-	FIELD ca pushVelocityY F
+	FIELD bZ pendingPushX F
+	FIELD ca pendingPushY F
 	FIELD cA maxShield F
 	FIELD cb needsCollisionRecheck Z
 	FIELD cB currentEnergy F
