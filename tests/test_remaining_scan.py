@@ -27,7 +27,8 @@ class RemainingScanTests(unittest.TestCase):
         subprocess.run(
             [javac, "--release", "8", "-d", str(cls.classes)]
             + [str(path) for path in sorted(FIXTURES.rglob("*.java"))],
-            check=True, capture_output=True, text=True,
+            # javac diagnostics use the JDK's encoding, which may differ from Python's.
+            check=True, capture_output=True,
         )
 
     def prepare(self, names, mappings):
@@ -53,13 +54,15 @@ class RemainingScanTests(unittest.TestCase):
                          if name.endswith(".class")]
             for command in (["unzip", "-Z1", str(root / "game-lib.jar")],
                             ["javap", "-p", "-cp", str(root / "game-lib.jar"), *names]):
-                probe = subprocess.run(command, capture_output=True, text=True)
+                probe = subprocess.run(
+                    command, capture_output=True, encoding="utf-8", errors="replace",
+                )
                 self.assertEqual(probe.returncode, 0, probe.stderr)
                 self.assertTrue(probe.stdout.strip(), command)
                 print(f"Baseline tool probe: {command[0]} exit=0\n{probe.stdout}", file=sys.stderr)
         result = subprocess.run(
             [sys.executable, str(root / "remaining_scan.py"), *map(str, args)],
-            cwd=root, capture_output=True, text=True,
+            cwd=root, capture_output=True, encoding="utf-8", errors="replace",
         )
         self.assertEqual(result.returncode, 0, result.stderr)
         return result.stdout
@@ -152,7 +155,7 @@ class RemainingScanTests(unittest.TestCase):
         shutil.rmtree(mappings)
         result = subprocess.run(
             [sys.executable, "-c", "import remaining_scan"],
-            cwd=root, capture_output=True, text=True,
+            cwd=root, capture_output=True, encoding="utf-8", errors="replace",
         )
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(result.stdout, "")
@@ -164,7 +167,7 @@ class RemainingScanTests(unittest.TestCase):
             archive.writestr("fixture/Broken.class", b"not a class file")
         result = subprocess.run(
             [sys.executable, str(root / "remaining_scan.py")],
-            cwd=root, capture_output=True, text=True,
+            cwd=root, capture_output=True, encoding="utf-8", errors="replace",
         )
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("fixture/Broken.class", result.stderr)
