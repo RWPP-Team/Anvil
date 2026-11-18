@@ -1,7 +1,8 @@
 CLASS com/corrodinggames/rts/game/units/ap com/corrodinggames/rts/game/units/UnitTurretInstance
-	COMMENT Per-turret runtime state (element type of Unit's turret array): float angle (current turret angle), b, c, d (the value clamped by a(int)/b(int), used as rotation direction/speed - isSettled() means d==0 i.e. settled, isReversing() means d<0), reloadTimer (reload/cooldown timer - Turret tests cL[i].reloadTimer > 0.0f to show the reload progress), warmupTimer (turret warmup, ramped up by the firing pass while the turret is on target and decayed by getTurretWarmupCooldownRate when it is not), flags g/m, h/i, target Unit and k/l. reset(float) resets everything. Evidence: Turret reads float angle, reloadTimer and isSettled(), CustomUnit reads warmupTimer against getTurretWarmup to draw the warmup effects. The class previously carried the low-confidence job name UnitMovementState; renamed to UnitTurretInstance and the withdrawn name of game/units/an. Fields without a reader keep their obfuscated names.
+	COMMENT Per-turret runtime state stored in a unit's turret array. angle is the current turret angle; reset(float) initializes idleBaseAngle to the same supplied angle. currentTurnRate is the signed turn-rate state used by the accelerated turnTurretTowards path; other paths may leave its previous value unchanged. turnDelay is tested by isTurnDelayExpired() (== 0) and hasNegativeTurnDelay() (< 0), and adjusted by extendTurnDelay(int) and forceNegativeTurnDelay(int). reloadTimer and warmupTimer hold firing timing state. reset(float) sets angle and idleBaseAngle to its argument and clears all other fields to zero, false or null.
 	FIELD a angle F
 	FIELD b idleBaseAngle F
+	FIELD c currentTurnRate F
 	FIELD d turnDelay F
 	FIELD e reloadTimer F
 	FIELD f warmupTimer F

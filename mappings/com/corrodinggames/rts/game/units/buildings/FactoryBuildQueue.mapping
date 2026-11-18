@@ -3,7 +3,7 @@ CLASS com/corrodinggames/rts/game/units/d/k com/corrodinggames/rts/game/units/bu
 	FIELD a factory Lcom/corrodinggames/rts/game/units/y;
 	FIELD b rallyPoint Landroid/graphics/PointF;
 	FIELD c buildQueue Lcom/corrodinggames/rts/gameFramework/utility/m;
-	FIELD d instantQueueItems Lcom/corrodinggames/rts/gameFramework/utility/m;
+	FIELD d pendingQueueItems Lcom/corrodinggames/rts/gameFramework/utility/m;
 	FIELD e buildProgress F
 	FIELD f currentBuildItem Lcom/corrodinggames/rts/game/units/d/j;
 	METHOD a isEmpty ()Z
@@ -11,7 +11,7 @@ CLASS com/corrodinggames/rts/game/units/d/k com/corrodinggames/rts/game/units/bu
 	METHOD a countQueuedUnits (Lcom/corrodinggames/rts/game/units/a/c;Z)I
 	METHOD a countQueuedUnits (Lcom/corrodinggames/rts/game/units/a/c;ZZ)I
 	METHOD a cancelInstantPurchase (Lcom/corrodinggames/rts/game/units/a/s;)V
-	METHOD a PENDING_a_SpecialAction_Z (Lcom/corrodinggames/rts/game/units/a/s;Z)V
+	METHOD a applyQueuedActionPrediction (Lcom/corrodinggames/rts/game/units/a/s;Z)V
 	METHOD a queueOrCancel (Lcom/corrodinggames/rts/game/units/a/s;ZLandroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/d/j;
 	METHOD a enqueueUnit (Lcom/corrodinggames/rts/game/units/a/w;Z)Lcom/corrodinggames/rts/game/units/d/j;
 	METHOD a enqueueUnit (Lcom/corrodinggames/rts/game/units/a/w;ZLandroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/am;)Lcom/corrodinggames/rts/game/units/d/j;

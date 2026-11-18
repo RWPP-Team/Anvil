@@ -10,7 +10,7 @@ CLASS com/corrodinggames/rts/game/units/d/j com/corrodinggames/rts/game/units/bu
 	FIELD h rallyPoint Landroid/graphics/PointF;
 	FIELD i PENDING_i Lcom/corrodinggames/rts/game/units/am;
 	FIELD j actionId Lcom/corrodinggames/rts/game/units/a/c;
-	FIELD k PENDING_k Z
+	FIELD k pendingCancellation Z
 	FIELD l priority Z
 	FIELD m progress F
 	FIELD n paidAmount D
